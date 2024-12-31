@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../BuildDependencies/ISM/Schematron/ISM/ISM_XML.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<xsd:schema xmlns:usaru="urn:us:gov:ic:cvenum:usagency:auditRoutingUnique"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            xml:lang="en"
+            targetNamespace="urn:us:gov:ic:cvenum:usagency:auditRoutingUnique"
+            version="202207">
+   <xsd:annotation>
+      <xsd:documentation>
+                    The W3C XML Schema fragment encoding types for CVEnumAuditRoutingUnique Version 2.1 controlled vocabulary enumerations. This file is generated, so edits should be made to the CVEnumAuditRoutingUnique.xml CVE it is based on, instead of here.
+                </xsd:documentation>
+   </xsd:annotation>
+   <!--*************************************************************-->
+   <!--Generated TYPE DEFINITIONS ..................................-->
+   <!--*************************************************************-->
+   <xsd:simpleType name="CVEnumAuditRoutingUniqueValues">
+      <xsd:annotation>
+         <xsd:documentation>(U) All ICAS approved values for organization to which Audit Records are routed 
+			that are not already in USAgency CVE.
+                         PERMISSIBLE VALUES
+                         
+                         The permissible values for this simple type are defined in the Controlled Value Enumeration:
+                         
+                         CVEnumAuditRoutingUnique.xml
+                         
+                     </xsd:documentation>
+      </xsd:annotation>
+      <xsd:restriction base="xsd:token">
+         <xsd:enumeration value="USA.USAFRICOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Africa Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USCENTCOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Central Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USCYBERCOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Strategic Command, US Cyber Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USEUCOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States European Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USFK">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Pacific Command, US Forces Korea (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USNORTHCOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Northern Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USPACOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Pacific Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USSOCOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Special Operations Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USSOUTHCOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Southern Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USSTRATCOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Strategic Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.USTRANSCOM">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Transportation Command (Type: COCOM)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.DARPA">
+            <xsd:annotation>
+               <xsd:documentation>
+				Defense Advanced Research Projects Agency  (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.DISA">
+            <xsd:annotation>
+               <xsd:documentation>
+				Defense Information Systems Agency (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.DODCIO">
+            <xsd:annotation>
+               <xsd:documentation>
+				Assistant Secretary of Defense for Networks and Information Integration and DoD Chief Information Officer (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.DODIG">
+            <xsd:annotation>
+               <xsd:documentation>
+				Department of Defense Inspector General (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.DODIO">
+            <xsd:annotation>
+               <xsd:documentation>
+				Assistant to the Secretary of Defense for Intelligence Oversight (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.DSS">
+            <xsd:annotation>
+               <xsd:documentation>
+				Defense Security Service (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.DTRA">
+            <xsd:annotation>
+               <xsd:documentation>
+				Defense Threat-Reduction Agency (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.JCS">
+            <xsd:annotation>
+               <xsd:documentation>
+				Office of the Joint Chiefs of Staff (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.JIDA">
+            <xsd:annotation>
+               <xsd:documentation>
+				Joint Improvised-Threat Defeat Agency (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.MDA">
+            <xsd:annotation>
+               <xsd:documentation>
+				Missile Defense Agency (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.OUSDATL">
+            <xsd:annotation>
+               <xsd:documentation>
+				Office of the Undersecretary of Defense (Acquisition, Technology and Logistics) (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.OUSDI">
+            <xsd:annotation>
+               <xsd:documentation>
+				Office of the Undersecretary of Defense (Intelligence) (Type: DOD)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.INA">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Department of Homeland Security, Office of Intelligence and Analysis (Type: IC)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="USA.TSA">
+            <xsd:annotation>
+               <xsd:documentation>
+				United States Department of Homeland Security, Transportation Security Administration (Type: IC)
+			</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="CVEnumAuditRoutingUnique">
+      <xsd:annotation>
+         <xsd:documentation>(U) usaru:CVEnumAuditRoutingUnique definition</xsd:documentation>
+      </xsd:annotation>
+      <xsd:restriction>
+         <xsd:simpleType>
+            <xsd:annotation>
+               <xsd:documentation>(U) A list of usaru:CVEnumAuditRoutingUniqueValues</xsd:documentation>
+            </xsd:annotation>
+            <xsd:list itemType="usaru:CVEnumAuditRoutingUniqueValues"/>
+         </xsd:simpleType>
+         <xsd:maxLength value="25"/>
+      </xsd:restriction>
+   </xsd:simpleType>
+</xsd:schema>

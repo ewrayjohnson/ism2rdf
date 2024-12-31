@@ -1,0 +1,20 @@
+{
+  "node": {
+    "version": ">=18.20.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@entryscape/rdfjson": "^2.7.7",
+    "awaits-until": "^12.0.1",
+    "fast-xml-parser": "^4.4.1",
+    "jsonld": "^8.3.2",
+    "ldtr": "^0.6.4",
+    "lodash": "^4.17.21",
+    "xml2js": "^0.6.2",
+    "xmldom": "^0.6.0",
+    "xsd": "^0.0.2"
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "@context": {
+    "ismattrib": "urn:us:gov:ic:cvenum:ism:attributes#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismattrib:CVEnumISMAttributes",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismattrib:CVEnumISMAttributes definition"
+    },
+    {
+      "@id": "ismattrib:compliesWith",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "compliesWith",
+      "skos:prefLabel": "compliesWith attribute"
+    },
+    {
+      "@id": "ismattrib:classification",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "classification",
+      "skos:prefLabel": "classification attribute"
+    },
+    {
+      "@id": "ismattrib:ownerProducer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "ownerProducer",
+      "skos:prefLabel": "ownerProducer attribute"
+    },
+    {
+      "@id": "ismattrib:SCIcontrols",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "SCIcontrols",
+      "skos:prefLabel": "SCIcontrols attribute"
+    },
+    {
+      "@id": "ismattrib:SARIdentifier",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "SARIdentifier",
+      "skos:prefLabel": "SARIdentifier attribute"
+    },
+    {
+      "@id": "ismattrib:atomicEnergyMarkings",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "atomicEnergyMarkings",
+      "skos:prefLabel": "atomicEnergyMarkings attribute"
+    },
+    {
+      "@id": "ismattrib:disseminationControls",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "disseminationControls",
+      "skos:prefLabel": "disseminationControls attribute"
+    },
+    {
+      "@id": "ismattrib:FGIsourceOpen",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "FGIsourceOpen",
+      "skos:prefLabel": "FGIsourceOpen attribute"
+    },
+    {
+      "@id": "ismattrib:FGIsourceProtected",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "FGIsourceProtected",
+      "skos:prefLabel": "FGIsourceProtected attribute"
+    },
+    {
+      "@id": "ismattrib:hasApproximateMarkings",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "hasApproximateMarkings",
+      "skos:prefLabel": "hasApproximateMarkings attribute"
+    },
+    {
+      "@id": "ismattrib:releasableTo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "releasableTo",
+      "skos:prefLabel": "releasableTo attribute"
+    },
+    {
+      "@id": "ismattrib:displayOnlyTo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "displayOnlyTo",
+      "skos:prefLabel": "displayOnlyTo attribute"
+    },
+    {
+      "@id": "ismattrib:nonICmarkings",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "nonICmarkings",
+      "skos:prefLabel": "nonICmarkings attribute"
+    },
+    {
+      "@id": "ismattrib:classifiedBy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "classifiedBy",
+      "skos:prefLabel": "classifiedBy attribute"
+    },
+    {
+      "@id": "ismattrib:derivativelyClassifiedBy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "derivativelyClassifiedBy",
+      "skos:prefLabel": "derivativelyClassifiedBy attribute"
+    },
+    {
+      "@id": "ismattrib:classificationReason",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "classificationReason",
+      "skos:prefLabel": "classificationReason attribute"
+    },
+    {
+      "@id": "ismattrib:nonUSControls",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "nonUSControls",
+      "skos:prefLabel": "nonUSControls attribute"
+    },
+    {
+      "@id": "ismattrib:derivedFrom",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "derivedFrom",
+      "skos:prefLabel": "derivedFrom attribute"
+    },
+    {
+      "@id": "ismattrib:declassDate",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "declassDate",
+      "skos:prefLabel": "declassDate attribute"
+    },
+    {
+      "@id": "ismattrib:declassEvent",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "declassEvent",
+      "skos:prefLabel": "declassEvent attribute"
+    },
+    {
+      "@id": "ismattrib:declassException",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "declassException",
+      "skos:prefLabel": "declassException attribute"
+    },
+    {
+      "@id": "ismattrib:resourceElement",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "resourceElement",
+      "skos:prefLabel": "resourceElement attribute"
+    },
+    {
+      "@id": "ismattrib:highWaterNATO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "highWaterNATO",
+      "skos:prefLabel": "highWaterNATO attribute"
+    },
+    {
+      "@id": "ismattrib:excludeFromRollup",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "excludeFromRollup",
+      "skos:prefLabel": "excludeFromRollup attribute"
+    },
+    {
+      "@id": "ismattrib:createDate",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "createDate",
+      "skos:prefLabel": "createDate attribute"
+    },
+    {
+      "@id": "ismattrib:compilationReason",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "compilationReason",
+      "skos:prefLabel": "compilationReason attribute"
+    },
+    {
+      "@id": "ismattrib:noAggregation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "noAggregation",
+      "skos:prefLabel": "noAggregation attribute"
+    },
+    {
+      "@id": "ismattrib:noticeType",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "noticeType",
+      "skos:prefLabel": "noticeType attribute"
+    },
+    {
+      "@id": "ismattrib:noticeProseID",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "noticeProseID",
+      "skos:prefLabel": "noticeProseID attribute"
+    },
+    {
+      "@id": "ismattrib:externalNotice",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "externalNotice",
+      "skos:prefLabel": "externalNotice attribute"
+    },
+    {
+      "@id": "ismattrib:DESVersion",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "DESVersion",
+      "skos:prefLabel": "DESVersion attribute"
+    },
+    {
+      "@id": "ismattrib:ISMCATCESVersion",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "ISMCATCESVersion",
+      "skos:prefLabel": "ISMCATCESVersion attribute"
+    },
+    {
+      "@id": "ismattrib:noticeDate",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "noticeDate",
+      "skos:prefLabel": "notice date attribute"
+    },
+    {
+      "@id": "ismattrib:noticeReason",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "noticeReason",
+      "skos:prefLabel": "notice Reason attribute"
+    },
+    {
+      "@id": "ismattrib:exemptFrom",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "exemptFrom",
+      "skos:prefLabel": "exemptFrom attribute"
+    },
+    {
+      "@id": "ismattrib:unregisteredNoticeType",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "unregisteredNoticeType",
+      "skos:prefLabel": "unregisteredNoticeType attribute"
+    },
+    {
+      "@id": "ismattrib:pocType",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "pocType",
+      "skos:prefLabel": "Specifies a point-of contact for a security-related requirement."
+    },
+    {
+      "@id": "ismattrib:joint",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "joint",
+      "skos:prefLabel": "Indicator that multiple ownerProducers should be interpreted as JOINT."
+    },
+    {
+      "@id": "ismattrib:cuiBasic",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "cuiBasic",
+      "skos:prefLabel": "CUI Basic markings."
+    },
+    {
+      "@id": "ismattrib:cuiSpecified",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "cuiSpecified",
+      "skos:prefLabel": "CUI Specified markings."
+    },
+    {
+      "@id": "ismattrib:cuiDecontrolDate",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "cuiDecontrolDate",
+      "skos:prefLabel": "Decontrol date for CUI."
+    },
+    {
+      "@id": "ismattrib:cuiDecontrolEvent",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "cuiDecontrolEvent",
+      "skos:prefLabel": "Decontrol event for CUI."
+    },
+    {
+      "@id": "ismattrib:cuiControlledBy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "cuiControlledBy",
+      "skos:prefLabel": "Person or authority for labeling and controlling information as CUI."
+    },
+    {
+      "@id": "ismattrib:cuiControlledByOffice",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "cuiControlledByOffice",
+      "skos:prefLabel": "Office in an agency or department that is responsible for labeling and controlling information as CUI. Ref DOD INSTRUCTION 5200.48."
+    },
+    {
+      "@id": "ismattrib:cuiPOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "cuiPOC",
+      "skos:prefLabel": "Point of Contact for labeling and controlling information as CUI. Ref DOD INSTRUCTION 5200.48."
+    },
+    {
+      "@id": "ismattrib:secondBannerLine",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "secondBannerLine",
+      "skos:prefLabel": "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner."
+    },
+    {
+      "@id": "ismattrib:handleViaChannels",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismattrib:CVEnumISMAttributes"
+      },
+      "skos:notation": "handleViaChannels",
+      "skos:prefLabel": "Handle VIA Channels that may appear in the second banner line."
+    }
+  ]
+}

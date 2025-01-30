@@ -4,8 +4,8 @@ const _ = require('lodash');
 const jsonld = require('jsonld');
 const ldtr = require('ldtr');
 
-const rdfjson = require('@entryscape/rdfjson');
-const { Graph, Rdfs, print, namespaces, converters, utils } = require('@entryscape/rdfjson');
+// const rdfjson = require('@entryscape/rdfjson');
+const { Graph, /*Rdfs, print,*/ namespaces, converters, utils } = require('@entryscape/rdfjson');
 const xml2js = require('xml2js');
 const XML_SCHEMA_URI = 'http://www.w3.org/2001/XMLSchema';
 const RDF_URI = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
@@ -220,13 +220,12 @@ type Import = {
             const dirname = path.dirname(inputFilepath);
             const basename = path.basename(inputFilepath, extname);
             const relative = path.relative(INPUT_DIR, dirname);
-            const outputDir = path.join(__dirname, relative);
+            const outputDir = path.join(__dirname, '..', 'transformed', relative);
             if (!fs.existsSync(outputDir)) {
               fs.mkdirSync(outputDir, { recursive: true });
             }
             const outputFilepath = path.join(outputDir, `${basename}.jsonld`);
             fs.writeFileSync(outputFilepath, JSON.stringify(json2, null, 2));
-
           }
         }
       }

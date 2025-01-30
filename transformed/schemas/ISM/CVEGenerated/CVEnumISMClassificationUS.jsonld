@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "ismclassus": "urn:us:gov:ic:cvenum:ism:classification:us#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismclassus:CVEnumISMClassificationUS",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) All currently valid US classification marks. This file is not imported by the schema. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMClassificationUS.xml"
+    },
+    {
+      "@id": "ismclassus:TS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismclassus:CVEnumISMClassificationUS"
+      },
+      "skos:notation": "TS",
+      "skos:prefLabel": "TOP SECRET"
+    },
+    {
+      "@id": "ismclassus:S",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismclassus:CVEnumISMClassificationUS"
+      },
+      "skos:notation": "S",
+      "skos:prefLabel": "SECRET"
+    },
+    {
+      "@id": "ismclassus:C",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismclassus:CVEnumISMClassificationUS"
+      },
+      "skos:notation": "C",
+      "skos:prefLabel": "CONFIDENTIAL"
+    },
+    {
+      "@id": "ismclassus:U",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismclassus:CVEnumISMClassificationUS"
+      },
+      "skos:notation": "U",
+      "skos:prefLabel": "UNCLASSIFIED"
+    }
+  ]
+}

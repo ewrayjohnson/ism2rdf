@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "ismsar": "urn:us:gov:ic:cvenum:ism:sar#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismsar:CVEnumISMSARAuthorities",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) E.O. 13526 Sec. 4.3. Special Access Programs states that only the Secretaries of State, Defense, Energy, and Homeland Security, the Attorney General, and the Director of National Intelligence, or the principal deputy of each, may create a special access program. This CVE lists the agencies that are authorized to establish SAPs, which we are calling the Special Access Required (SAR) Authorities. The ISM encoding of SAP values uses the SAR Authorities values as part of a SAP value in @ism:SARIdentifier, because there is no central registry or requirement to deconflict names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMSARAuthorities.xml"
+    },
+    {
+      "@id": "ismsar:STATE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsar:CVEnumISMSARAuthorities"
+      },
+      "skos:notation": "STATE",
+      "skos:prefLabel": "STATE"
+    },
+    {
+      "@id": "ismsar:DOD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsar:CVEnumISMSARAuthorities"
+      },
+      "skos:notation": "DOD",
+      "skos:prefLabel": "DOD"
+    },
+    {
+      "@id": "ismsar:DOE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsar:CVEnumISMSARAuthorities"
+      },
+      "skos:notation": "DOE",
+      "skos:prefLabel": "DOE"
+    },
+    {
+      "@id": "ismsar:DHS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsar:CVEnumISMSARAuthorities"
+      },
+      "skos:notation": "DHS",
+      "skos:prefLabel": "DHS"
+    },
+    {
+      "@id": "ismsar:AG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsar:CVEnumISMSARAuthorities"
+      },
+      "skos:notation": "AG",
+      "skos:prefLabel": "AG"
+    },
+    {
+      "@id": "ismsar:DNI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsar:CVEnumISMSARAuthorities"
+      },
+      "skos:notation": "DNI",
+      "skos:prefLabel": "DNI"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "ismpoctype": "urn:us:gov:ic:cvenum:ism:pocType#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismpoctype:CVEnumISMPocType",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismpoctype:CVEnumISMPocType definition"
+    },
+    {
+      "@id": "ismpoctype:ICD-710",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "ICD-710",
+      "skos:prefLabel": "Point-of-contact for an ICD-710 notice."
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-B",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-B",
+      "skos:prefLabel": "DoD Distribution statement B from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-C",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-C",
+      "skos:prefLabel": "DoD Distribution statement C from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-D",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-D",
+      "skos:prefLabel": "DoD Distribution statement D from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-E",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-E",
+      "skos:prefLabel": "DoD Distribution statement E from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-F",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-F",
+      "skos:prefLabel": "DoD Distribution statement F from DoD Directive 5230.24"
+    }
+  ]
+}

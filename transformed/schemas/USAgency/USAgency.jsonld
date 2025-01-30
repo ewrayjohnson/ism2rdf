@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "xs": "http://www.w3.org/2001/XMLSchema",
+    "ism": "urn:us:gov:ic:ism#",
+    "usagency": "urn:us:gov:ic:usagency#",
+    "usaa": "urn:us:gov:ic:cvenum:usagency:agencyacronym#",
+    "usgaa": "urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#",
+    "xhtml": "http://www.w3.org/1999/xhtml-StopBrowserRendering",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "usagency:usagency",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:comment": "An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies.",
+      "rdfs:range": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      }
+    },
+    {
+      "@id": "usagency:usgovagency",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:comment": "An attribute limited to allowable agency acronyms for USA. Contains the Executive branch agencies.",
+      "rdfs:range": {
+        "@id": "usgaa:CVEnumUSGOVAgencyAcronym"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "ismsecondbannerline": "urn:us:gov:ic:cvenum:ism:secondbannerline#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismsecondbannerline:CVEnumISMSecondBannerLine definition"
+    },
+    {
+      "@id": "ismsecondbannerline:ACPI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "skos:notation": "ACPI",
+      "skos:prefLabel": "ATTORNEY-CLIENT PRIVILEGED INFO"
+    },
+    {
+      "@id": "ismsecondbannerline:AWP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "skos:notation": "AWP",
+      "skos:prefLabel": "ATTORNEY WORK PRODUCT"
+    },
+    {
+      "@id": "ismsecondbannerline:CUSPI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "skos:notation": "CUSPI",
+      "skos:prefLabel": "CONTENTS INCLUDE US PERSON INFORMATION"
+    },
+    {
+      "@id": "ismsecondbannerline:DPPD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "skos:notation": "DPPD",
+      "skos:prefLabel": "DELIBERATIVE PROCESS PRIVILEGED DOCUMENT"
+    },
+    {
+      "@id": "ismsecondbannerline:HVCO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "skos:notation": "HVCO",
+      "skos:prefLabel": "HANDLE VIA CHANNELS ONLY"
+    },
+    {
+      "@id": "ismsecondbannerline:SSS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "skos:notation": "SSS",
+      "skos:prefLabel": "SOURCE SELECTION SENSITIVE"
+    }
+  ]
+}

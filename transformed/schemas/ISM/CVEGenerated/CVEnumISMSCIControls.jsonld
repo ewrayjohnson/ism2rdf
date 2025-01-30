@@ -1,0 +1,194 @@
+{
+  "@context": {
+    "ismscicon": "urn:us:gov:ic:cvenum:ism:scicontrols#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismscicon:CVEnumISMSCIControls",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismscicon:CVEnumISMSCIControls definition"
+    },
+    {
+      "@id": "ismscicon:BUR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "BUR",
+      "skos:prefLabel": "BUR"
+    },
+    {
+      "@id": "ismscicon:BUR-BLG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "BUR-BLG",
+      "skos:prefLabel": "BUR-BLG"
+    },
+    {
+      "@id": "ismscicon:BUR-DTP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "BUR-DTP",
+      "skos:prefLabel": "BUR-DTP"
+    },
+    {
+      "@id": "ismscicon:BUR-WRG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "BUR-WRG",
+      "skos:prefLabel": "BUR-WRG"
+    },
+    {
+      "@id": "ismscicon:HCS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "HCS",
+      "skos:prefLabel": "HCS"
+    },
+    {
+      "@id": "ismscicon:HCS-O",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "HCS-O",
+      "skos:prefLabel": "HCS-O"
+    },
+    {
+      "@id": "ismscicon:HCS-P",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "HCS-P",
+      "skos:prefLabel": "HCS-P"
+    },
+    {
+      "@id": "ismscicon:HCS-X",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "HCS-X",
+      "skos:prefLabel": "HCS-X"
+    },
+    {
+      "@id": "ismscicon:KLM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "KLM",
+      "skos:prefLabel": "KLAMATH"
+    },
+    {
+      "@id": "ismscicon:KLM-R",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "KLM-R",
+      "skos:prefLabel": "KLAMATH-R"
+    },
+    {
+      "@id": "ismscicon:MVL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "MVL",
+      "skos:prefLabel": "MARVEL"
+    },
+    {
+      "@id": "ismscicon:RSV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "RSV",
+      "skos:prefLabel": "RESERVE"
+    },
+    {
+      "@id": "ismscicon:SI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "SI",
+      "skos:prefLabel": "SPECIAL INTELLIGENCE"
+    },
+    {
+      "@id": "ismscicon:SI-EU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "SI-EU",
+      "skos:prefLabel": "ECRU"
+    },
+    {
+      "@id": "ismscicon:SI-G",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "SI-G",
+      "skos:prefLabel": "SI-GAMMA"
+    },
+    {
+      "@id": "ismscicon:SI-NK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "SI-NK",
+      "skos:prefLabel": "NONBOOK"
+    },
+    {
+      "@id": "ismscicon:TK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "TK",
+      "skos:prefLabel": "TALENT KEYHOLE"
+    },
+    {
+      "@id": "ismscicon:TK-BLFH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "TK-BLFH",
+      "skos:prefLabel": "BLUEFISH"
+    },
+    {
+      "@id": "ismscicon:TK-IDIT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "TK-IDIT",
+      "skos:prefLabel": "IDITAROD"
+    },
+    {
+      "@id": "ismscicon:TK-KAND",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "TK-KAND",
+      "skos:prefLabel": "KANDIK"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "ismnonic": "urn:us:gov:ic:cvenum:ism:nonic#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismnonic:CVEnumISMNonIC",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismnonic:CVEnumISMNonIC definition"
+    },
+    {
+      "@id": "ismnonic:DS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "DS",
+      "skos:prefLabel": "LIMITED DISTRIBUTION"
+    },
+    {
+      "@id": "ismnonic:XD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "XD",
+      "skos:prefLabel": "EXCLUSIVE DISTRIBUTION"
+    },
+    {
+      "@id": "ismnonic:ND",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "ND",
+      "skos:prefLabel": "NO DISTRIBUTION"
+    },
+    {
+      "@id": "ismnonic:SBU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "SBU",
+      "skos:prefLabel": "SENSITIVE BUT UNCLASSIFIED"
+    },
+    {
+      "@id": "ismnonic:SBU-NF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "SBU-NF",
+      "skos:prefLabel": "SENSITIVE BUT UNCLASSIFIED NOFORN"
+    },
+    {
+      "@id": "ismnonic:LES",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "LES",
+      "skos:prefLabel": "LAW ENFORCEMENT SENSITIVE"
+    },
+    {
+      "@id": "ismnonic:LES-NF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "LES-NF",
+      "skos:prefLabel": "LAW ENFORCEMENT SENSITIVE NOFORN"
+    },
+    {
+      "@id": "ismnonic:SSI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "SSI",
+      "skos:prefLabel": "SENSITIVE SECURITY INFORMATION"
+    },
+    {
+      "@id": "ismnonic:NNPI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "NNPI",
+      "skos:prefLabel": "NAVAL NUCLEAR PROPULSION INFORMATION"
+    }
+  ]
+}

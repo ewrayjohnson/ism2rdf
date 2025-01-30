@@ -1,0 +1,2534 @@
+{
+  "@context": {
+    "ismcatre": "urn:us:gov:ic:cvenum:ismcat:responsibleentity#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismcatre:CVEnumISMCATResponsibleEntity",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) GENC trigraphs (except AX1) in alphabetical order by trigraph, plus the NATO tetragraph. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMCATResponsibleEntity.xml"
+    },
+    {
+      "@id": "ismcatre:ABW",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ABW",
+      "skos:prefLabel": "Aruba"
+    },
+    {
+      "@id": "ismcatre:AFG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "AFG",
+      "skos:prefLabel": "Islamic Republic of Afghanistan"
+    },
+    {
+      "@id": "ismcatre:AGO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "AGO",
+      "skos:prefLabel": "Republic of Angola"
+    },
+    {
+      "@id": "ismcatre:AIA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "AIA",
+      "skos:prefLabel": "Anguilla"
+    },
+    {
+      "@id": "ismcatre:ALB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ALB",
+      "skos:prefLabel": "Republic of Albania"
+    },
+    {
+      "@id": "ismcatre:AND",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "AND",
+      "skos:prefLabel": "Principality of Andorra"
+    },
+    {
+      "@id": "ismcatre:ARE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ARE",
+      "skos:prefLabel": "United Arab Emirates"
+    },
+    {
+      "@id": "ismcatre:ARG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ARG",
+      "skos:prefLabel": "Argentine Republic"
+    },
+    {
+      "@id": "ismcatre:ARM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ARM",
+      "skos:prefLabel": "Republic of Armenia"
+    },
+    {
+      "@id": "ismcatre:ASM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ASM",
+      "skos:prefLabel": "Territory of American Samoa"
+    },
+    {
+      "@id": "ismcatre:ATA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ATA",
+      "skos:prefLabel": "Antarctica"
+    },
+    {
+      "@id": "ismcatre:ATF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ATF",
+      "skos:prefLabel": "French Southern and Antarctic Lands"
+    },
+    {
+      "@id": "ismcatre:ATG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ATG",
+      "skos:prefLabel": "Antigua and Barbuda"
+    },
+    {
+      "@id": "ismcatre:AUS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "AUS",
+      "skos:prefLabel": "Commonwealth of Australia"
+    },
+    {
+      "@id": "ismcatre:AUT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "AUT",
+      "skos:prefLabel": "Republic of Austria"
+    },
+    {
+      "@id": "ismcatre:AX2",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "AX2",
+      "skos:prefLabel": "Guantanamo Bay Naval Base"
+    },
+    {
+      "@id": "ismcatre:AX3",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "AX3",
+      "skos:prefLabel": "Entity 6"
+    },
+    {
+      "@id": "ismcatre:AZE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "AZE",
+      "skos:prefLabel": "Republic of Azerbaijan"
+    },
+    {
+      "@id": "ismcatre:BDI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BDI",
+      "skos:prefLabel": "Republic of Burundi"
+    },
+    {
+      "@id": "ismcatre:BEL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BEL",
+      "skos:prefLabel": "Kingdom of Belgium"
+    },
+    {
+      "@id": "ismcatre:BEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BEN",
+      "skos:prefLabel": "Republic of Benin"
+    },
+    {
+      "@id": "ismcatre:BES",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BES",
+      "skos:prefLabel": "Bonaire, Sint Eustatius, and Saba"
+    },
+    {
+      "@id": "ismcatre:BFA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BFA",
+      "skos:prefLabel": "Burkina Faso"
+    },
+    {
+      "@id": "ismcatre:BGD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BGD",
+      "skos:prefLabel": "People’s Republic of Bangladesh"
+    },
+    {
+      "@id": "ismcatre:BGR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BGR",
+      "skos:prefLabel": "Republic of Bulgaria"
+    },
+    {
+      "@id": "ismcatre:BHR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BHR",
+      "skos:prefLabel": "Kingdom of Bahrain"
+    },
+    {
+      "@id": "ismcatre:BHS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BHS",
+      "skos:prefLabel": "Commonwealth of The Bahamas"
+    },
+    {
+      "@id": "ismcatre:BIH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BIH",
+      "skos:prefLabel": "Bosnia and Herzegovina"
+    },
+    {
+      "@id": "ismcatre:BLM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BLM",
+      "skos:prefLabel": "Saint Barthelemy"
+    },
+    {
+      "@id": "ismcatre:BLR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BLR",
+      "skos:prefLabel": "Republic of Belarus"
+    },
+    {
+      "@id": "ismcatre:BLZ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BLZ",
+      "skos:prefLabel": "Belize"
+    },
+    {
+      "@id": "ismcatre:BMU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BMU",
+      "skos:prefLabel": "Bermuda"
+    },
+    {
+      "@id": "ismcatre:BOL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BOL",
+      "skos:prefLabel": "Plurinational State of Bolivia"
+    },
+    {
+      "@id": "ismcatre:BRA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BRA",
+      "skos:prefLabel": "Federative Republic of Brazil"
+    },
+    {
+      "@id": "ismcatre:BRB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BRB",
+      "skos:prefLabel": "Barbados"
+    },
+    {
+      "@id": "ismcatre:BRN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BRN",
+      "skos:prefLabel": "Brunei Darussalam"
+    },
+    {
+      "@id": "ismcatre:BTN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BTN",
+      "skos:prefLabel": "Kingdom of Bhutan"
+    },
+    {
+      "@id": "ismcatre:BVT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BVT",
+      "skos:prefLabel": "Bouvet Island"
+    },
+    {
+      "@id": "ismcatre:BWA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "BWA",
+      "skos:prefLabel": "Republic of Botswana"
+    },
+    {
+      "@id": "ismcatre:CAF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CAF",
+      "skos:prefLabel": "Central African Republic"
+    },
+    {
+      "@id": "ismcatre:CAN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CAN",
+      "skos:prefLabel": "Canada"
+    },
+    {
+      "@id": "ismcatre:CCK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CCK",
+      "skos:prefLabel": "Territory of Cocos (Keeling) Islands"
+    },
+    {
+      "@id": "ismcatre:CHE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CHE",
+      "skos:prefLabel": "Swiss Confederation"
+    },
+    {
+      "@id": "ismcatre:CHL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CHL",
+      "skos:prefLabel": "Republic of Chile"
+    },
+    {
+      "@id": "ismcatre:CHN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CHN",
+      "skos:prefLabel": "People’s Republic of China"
+    },
+    {
+      "@id": "ismcatre:CIV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CIV",
+      "skos:prefLabel": "Republic of Côte d’Ivoire"
+    },
+    {
+      "@id": "ismcatre:CMR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CMR",
+      "skos:prefLabel": "Republic of Cameroon"
+    },
+    {
+      "@id": "ismcatre:COD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "COD",
+      "skos:prefLabel": "Democratic Republic of the Congo"
+    },
+    {
+      "@id": "ismcatre:COG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "COG",
+      "skos:prefLabel": "Republic of the Congo"
+    },
+    {
+      "@id": "ismcatre:COK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "COK",
+      "skos:prefLabel": "Cook Islands"
+    },
+    {
+      "@id": "ismcatre:COL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "COL",
+      "skos:prefLabel": "Republic of Colombia"
+    },
+    {
+      "@id": "ismcatre:COM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "COM",
+      "skos:prefLabel": "Union of the Comoros"
+    },
+    {
+      "@id": "ismcatre:CPT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CPT",
+      "skos:prefLabel": "Clipperton Island"
+    },
+    {
+      "@id": "ismcatre:CPV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CPV",
+      "skos:prefLabel": "Republic of Cabo Verde"
+    },
+    {
+      "@id": "ismcatre:CRI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CRI",
+      "skos:prefLabel": "Republic of Costa Rica"
+    },
+    {
+      "@id": "ismcatre:CUB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CUB",
+      "skos:prefLabel": "Republic of Cuba"
+    },
+    {
+      "@id": "ismcatre:CUW",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CUW",
+      "skos:prefLabel": "Curaçao"
+    },
+    {
+      "@id": "ismcatre:CXR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CXR",
+      "skos:prefLabel": "Territory of Christmas Island"
+    },
+    {
+      "@id": "ismcatre:CYM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CYM",
+      "skos:prefLabel": "Cayman Islands"
+    },
+    {
+      "@id": "ismcatre:CYP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CYP",
+      "skos:prefLabel": "Republic of Cyprus"
+    },
+    {
+      "@id": "ismcatre:CZE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "CZE",
+      "skos:prefLabel": "Czech Republic"
+    },
+    {
+      "@id": "ismcatre:DEU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "DEU",
+      "skos:prefLabel": "Federal Republic of Germany"
+    },
+    {
+      "@id": "ismcatre:DGA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "DGA",
+      "skos:prefLabel": "Diego Garcia"
+    },
+    {
+      "@id": "ismcatre:DJI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "DJI",
+      "skos:prefLabel": "Republic of Djibouti"
+    },
+    {
+      "@id": "ismcatre:DMA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "DMA",
+      "skos:prefLabel": "Commonwealth of Dominica"
+    },
+    {
+      "@id": "ismcatre:DNK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "DNK",
+      "skos:prefLabel": "Kingdom of Denmark"
+    },
+    {
+      "@id": "ismcatre:DOM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "DOM",
+      "skos:prefLabel": "Dominican Republic"
+    },
+    {
+      "@id": "ismcatre:DZA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "DZA",
+      "skos:prefLabel": "People’s Democratic Republic of Algeria"
+    },
+    {
+      "@id": "ismcatre:ECU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ECU",
+      "skos:prefLabel": "Republic of Ecuador"
+    },
+    {
+      "@id": "ismcatre:EGY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "EGY",
+      "skos:prefLabel": "Arab Republic of Egypt"
+    },
+    {
+      "@id": "ismcatre:ERI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ERI",
+      "skos:prefLabel": "State of Eritrea"
+    },
+    {
+      "@id": "ismcatre:ESH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ESH",
+      "skos:prefLabel": "Western Sahara"
+    },
+    {
+      "@id": "ismcatre:ESP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ESP",
+      "skos:prefLabel": "Kingdom of Spain"
+    },
+    {
+      "@id": "ismcatre:EST",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "EST",
+      "skos:prefLabel": "Republic of Estonia"
+    },
+    {
+      "@id": "ismcatre:ETH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ETH",
+      "skos:prefLabel": "Federal Democratic Republic of Ethiopia"
+    },
+    {
+      "@id": "ismcatre:FIN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "FIN",
+      "skos:prefLabel": "Republic of Finland"
+    },
+    {
+      "@id": "ismcatre:FJI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "FJI",
+      "skos:prefLabel": "Republic of Fiji"
+    },
+    {
+      "@id": "ismcatre:FLK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "FLK",
+      "skos:prefLabel": "Falkland Islands (Islas Malvinas)"
+    },
+    {
+      "@id": "ismcatre:FRA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "FRA",
+      "skos:prefLabel": "French Republic"
+    },
+    {
+      "@id": "ismcatre:FRO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "FRO",
+      "skos:prefLabel": "Faroe Islands"
+    },
+    {
+      "@id": "ismcatre:FSM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "FSM",
+      "skos:prefLabel": "Federated States of Micronesia"
+    },
+    {
+      "@id": "ismcatre:GAB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GAB",
+      "skos:prefLabel": "Gabonese Republic"
+    },
+    {
+      "@id": "ismcatre:GBR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GBR",
+      "skos:prefLabel": "United Kingdom of Great Britain and Northern Ireland"
+    },
+    {
+      "@id": "ismcatre:GEO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GEO",
+      "skos:prefLabel": "Georgia"
+    },
+    {
+      "@id": "ismcatre:GGY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GGY",
+      "skos:prefLabel": "Bailiwick of Guernsey"
+    },
+    {
+      "@id": "ismcatre:GHA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GHA",
+      "skos:prefLabel": "Republic of Ghana"
+    },
+    {
+      "@id": "ismcatre:GIB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GIB",
+      "skos:prefLabel": "Gibraltar"
+    },
+    {
+      "@id": "ismcatre:GIN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GIN",
+      "skos:prefLabel": "Republic of Guinea"
+    },
+    {
+      "@id": "ismcatre:GLP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GLP",
+      "skos:prefLabel": "Region of Guadeloupe"
+    },
+    {
+      "@id": "ismcatre:GMB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GMB",
+      "skos:prefLabel": "Republic of The Gambia"
+    },
+    {
+      "@id": "ismcatre:GNB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GNB",
+      "skos:prefLabel": "Republic of Guinea-Bissau"
+    },
+    {
+      "@id": "ismcatre:GNQ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GNQ",
+      "skos:prefLabel": "Republic of Equatorial Guinea"
+    },
+    {
+      "@id": "ismcatre:GRC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GRC",
+      "skos:prefLabel": "Hellenic Republic"
+    },
+    {
+      "@id": "ismcatre:GRD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GRD",
+      "skos:prefLabel": "Grenada"
+    },
+    {
+      "@id": "ismcatre:GRL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GRL",
+      "skos:prefLabel": "Greenland"
+    },
+    {
+      "@id": "ismcatre:GTM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GTM",
+      "skos:prefLabel": "Republic of Guatemala"
+    },
+    {
+      "@id": "ismcatre:GUF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GUF",
+      "skos:prefLabel": "Territorial Collectivity of Guiana"
+    },
+    {
+      "@id": "ismcatre:GUM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GUM",
+      "skos:prefLabel": "Territory of Guam"
+    },
+    {
+      "@id": "ismcatre:GUY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "GUY",
+      "skos:prefLabel": "Co-operative Republic of Guyana"
+    },
+    {
+      "@id": "ismcatre:HKG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "HKG",
+      "skos:prefLabel": "Hong Kong Special Administrative Region"
+    },
+    {
+      "@id": "ismcatre:HMD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "HMD",
+      "skos:prefLabel": "Territory of Heard Island and McDonald Islands"
+    },
+    {
+      "@id": "ismcatre:HND",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "HND",
+      "skos:prefLabel": "Republic of Honduras"
+    },
+    {
+      "@id": "ismcatre:HRV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "HRV",
+      "skos:prefLabel": "Republic of Croatia"
+    },
+    {
+      "@id": "ismcatre:HTI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "HTI",
+      "skos:prefLabel": "Republic of Haiti"
+    },
+    {
+      "@id": "ismcatre:HUN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "HUN",
+      "skos:prefLabel": "Hungary"
+    },
+    {
+      "@id": "ismcatre:IDN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "IDN",
+      "skos:prefLabel": "Republic of Indonesia"
+    },
+    {
+      "@id": "ismcatre:IMN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "IMN",
+      "skos:prefLabel": "Isle of Man"
+    },
+    {
+      "@id": "ismcatre:IND",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "IND",
+      "skos:prefLabel": "Republic of India"
+    },
+    {
+      "@id": "ismcatre:IOT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "IOT",
+      "skos:prefLabel": "British Indian Ocean Territory"
+    },
+    {
+      "@id": "ismcatre:IRL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "IRL",
+      "skos:prefLabel": "Ireland"
+    },
+    {
+      "@id": "ismcatre:IRN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "IRN",
+      "skos:prefLabel": "Islamic Republic of Iran"
+    },
+    {
+      "@id": "ismcatre:IRQ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "IRQ",
+      "skos:prefLabel": "Republic of Iraq"
+    },
+    {
+      "@id": "ismcatre:ISL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ISL",
+      "skos:prefLabel": "Republic of Iceland"
+    },
+    {
+      "@id": "ismcatre:ISR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ISR",
+      "skos:prefLabel": "State of Israel"
+    },
+    {
+      "@id": "ismcatre:ITA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ITA",
+      "skos:prefLabel": "Italian Republic"
+    },
+    {
+      "@id": "ismcatre:JAM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "JAM",
+      "skos:prefLabel": "Jamaica"
+    },
+    {
+      "@id": "ismcatre:JEY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "JEY",
+      "skos:prefLabel": "Bailiwick of Jersey"
+    },
+    {
+      "@id": "ismcatre:JOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "JOR",
+      "skos:prefLabel": "Hashemite Kingdom of Jordan"
+    },
+    {
+      "@id": "ismcatre:JPN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "JPN",
+      "skos:prefLabel": "Japan"
+    },
+    {
+      "@id": "ismcatre:KAZ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "KAZ",
+      "skos:prefLabel": "Republic of Kazakhstan"
+    },
+    {
+      "@id": "ismcatre:KEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "KEN",
+      "skos:prefLabel": "Republic of Kenya"
+    },
+    {
+      "@id": "ismcatre:KGZ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "KGZ",
+      "skos:prefLabel": "Kyrgyz Republic"
+    },
+    {
+      "@id": "ismcatre:KHM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "KHM",
+      "skos:prefLabel": "Kingdom of Cambodia"
+    },
+    {
+      "@id": "ismcatre:KIR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "KIR",
+      "skos:prefLabel": "Republic of Kiribati"
+    },
+    {
+      "@id": "ismcatre:KNA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "KNA",
+      "skos:prefLabel": "Federation of Saint Kitts and Nevis"
+    },
+    {
+      "@id": "ismcatre:KOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "KOR",
+      "skos:prefLabel": "Republic of Korea"
+    },
+    {
+      "@id": "ismcatre:KWT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "KWT",
+      "skos:prefLabel": "State of Kuwait"
+    },
+    {
+      "@id": "ismcatre:LAO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LAO",
+      "skos:prefLabel": "Lao People’s Democratic Republic"
+    },
+    {
+      "@id": "ismcatre:LBN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LBN",
+      "skos:prefLabel": "Lebanese Republic"
+    },
+    {
+      "@id": "ismcatre:LBR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LBR",
+      "skos:prefLabel": "Republic of Liberia"
+    },
+    {
+      "@id": "ismcatre:LBY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LBY",
+      "skos:prefLabel": "State of Libya"
+    },
+    {
+      "@id": "ismcatre:LCA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LCA",
+      "skos:prefLabel": "Saint Lucia"
+    },
+    {
+      "@id": "ismcatre:LIE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LIE",
+      "skos:prefLabel": "Principality of Liechtenstein"
+    },
+    {
+      "@id": "ismcatre:LKA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LKA",
+      "skos:prefLabel": "Democratic Socialist Republic of Sri Lanka"
+    },
+    {
+      "@id": "ismcatre:LSO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LSO",
+      "skos:prefLabel": "Kingdom of Lesotho"
+    },
+    {
+      "@id": "ismcatre:LTU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LTU",
+      "skos:prefLabel": "Republic of Lithuania"
+    },
+    {
+      "@id": "ismcatre:LUX",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LUX",
+      "skos:prefLabel": "Grand Duchy of Luxembourg"
+    },
+    {
+      "@id": "ismcatre:LVA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "LVA",
+      "skos:prefLabel": "Republic of Latvia"
+    },
+    {
+      "@id": "ismcatre:MAC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MAC",
+      "skos:prefLabel": "Macau Special Administrative Region"
+    },
+    {
+      "@id": "ismcatre:MAF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MAF",
+      "skos:prefLabel": "Saint Martin"
+    },
+    {
+      "@id": "ismcatre:MAR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MAR",
+      "skos:prefLabel": "Kingdom of Morocco"
+    },
+    {
+      "@id": "ismcatre:MCO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MCO",
+      "skos:prefLabel": "Principality of Monaco"
+    },
+    {
+      "@id": "ismcatre:MDA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MDA",
+      "skos:prefLabel": "Republic of Moldova"
+    },
+    {
+      "@id": "ismcatre:MDG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MDG",
+      "skos:prefLabel": "Republic of Madagascar"
+    },
+    {
+      "@id": "ismcatre:MDV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MDV",
+      "skos:prefLabel": "Republic of Maldives"
+    },
+    {
+      "@id": "ismcatre:MEX",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MEX",
+      "skos:prefLabel": "United Mexican States"
+    },
+    {
+      "@id": "ismcatre:MHL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MHL",
+      "skos:prefLabel": "Republic of the Marshall Islands"
+    },
+    {
+      "@id": "ismcatre:MKD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MKD",
+      "skos:prefLabel": "Republic of North Macedonia"
+    },
+    {
+      "@id": "ismcatre:MLI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MLI",
+      "skos:prefLabel": "Republic of Mali"
+    },
+    {
+      "@id": "ismcatre:MLT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MLT",
+      "skos:prefLabel": "Republic of Malta"
+    },
+    {
+      "@id": "ismcatre:MMR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MMR",
+      "skos:prefLabel": "Union of Burma"
+    },
+    {
+      "@id": "ismcatre:MNE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MNE",
+      "skos:prefLabel": "Montenegro"
+    },
+    {
+      "@id": "ismcatre:MNG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MNG",
+      "skos:prefLabel": "Mongolia"
+    },
+    {
+      "@id": "ismcatre:MNP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MNP",
+      "skos:prefLabel": "Commonwealth of the Northern Mariana Islands"
+    },
+    {
+      "@id": "ismcatre:MOZ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MOZ",
+      "skos:prefLabel": "Republic of Mozambique"
+    },
+    {
+      "@id": "ismcatre:MRT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MRT",
+      "skos:prefLabel": "Islamic Republic of Mauritania"
+    },
+    {
+      "@id": "ismcatre:MSR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MSR",
+      "skos:prefLabel": "Montserrat"
+    },
+    {
+      "@id": "ismcatre:MTQ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MTQ",
+      "skos:prefLabel": "Territorial Collectivity of Martinique"
+    },
+    {
+      "@id": "ismcatre:MUS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MUS",
+      "skos:prefLabel": "Republic of Mauritius"
+    },
+    {
+      "@id": "ismcatre:MWI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MWI",
+      "skos:prefLabel": "Republic of Malawi"
+    },
+    {
+      "@id": "ismcatre:MYS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MYS",
+      "skos:prefLabel": "Malaysia"
+    },
+    {
+      "@id": "ismcatre:MYT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "MYT",
+      "skos:prefLabel": "Department of Mayotte"
+    },
+    {
+      "@id": "ismcatre:NAM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NAM",
+      "skos:prefLabel": "Republic of Namibia"
+    },
+    {
+      "@id": "ismcatre:NCL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NCL",
+      "skos:prefLabel": "New Caledonia"
+    },
+    {
+      "@id": "ismcatre:NER",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NER",
+      "skos:prefLabel": "Republic of Niger"
+    },
+    {
+      "@id": "ismcatre:NFK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NFK",
+      "skos:prefLabel": "Territory of Norfolk Island"
+    },
+    {
+      "@id": "ismcatre:NGA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NGA",
+      "skos:prefLabel": "Federal Republic of Nigeria"
+    },
+    {
+      "@id": "ismcatre:NIC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NIC",
+      "skos:prefLabel": "Republic of Nicaragua"
+    },
+    {
+      "@id": "ismcatre:NIU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NIU",
+      "skos:prefLabel": "Niue"
+    },
+    {
+      "@id": "ismcatre:NLD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NLD",
+      "skos:prefLabel": "Kingdom of the Netherlands"
+    },
+    {
+      "@id": "ismcatre:NOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NOR",
+      "skos:prefLabel": "Kingdom of Norway"
+    },
+    {
+      "@id": "ismcatre:NPL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NPL",
+      "skos:prefLabel": "Federal Democratic Republic of Nepal"
+    },
+    {
+      "@id": "ismcatre:NRU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NRU",
+      "skos:prefLabel": "Republic of Nauru"
+    },
+    {
+      "@id": "ismcatre:NZL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NZL",
+      "skos:prefLabel": "New Zealand"
+    },
+    {
+      "@id": "ismcatre:OMN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "OMN",
+      "skos:prefLabel": "Sultanate of Oman"
+    },
+    {
+      "@id": "ismcatre:PAK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PAK",
+      "skos:prefLabel": "Islamic Republic of Pakistan"
+    },
+    {
+      "@id": "ismcatre:PAN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PAN",
+      "skos:prefLabel": "Republic of Panama"
+    },
+    {
+      "@id": "ismcatre:PCN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PCN",
+      "skos:prefLabel": "Pitcairn, Henderson, Ducie, and Oeno Islands"
+    },
+    {
+      "@id": "ismcatre:PER",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PER",
+      "skos:prefLabel": "Republic of Peru"
+    },
+    {
+      "@id": "ismcatre:PHL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PHL",
+      "skos:prefLabel": "Republic of the Philippines"
+    },
+    {
+      "@id": "ismcatre:PLW",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PLW",
+      "skos:prefLabel": "Republic of Palau"
+    },
+    {
+      "@id": "ismcatre:PNG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PNG",
+      "skos:prefLabel": "Independent State of Papua New Guinea"
+    },
+    {
+      "@id": "ismcatre:POL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "POL",
+      "skos:prefLabel": "Republic of Poland"
+    },
+    {
+      "@id": "ismcatre:PRI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PRI",
+      "skos:prefLabel": "Commonwealth of Puerto Rico"
+    },
+    {
+      "@id": "ismcatre:PRK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PRK",
+      "skos:prefLabel": "Democratic People’s Republic of Korea"
+    },
+    {
+      "@id": "ismcatre:PRT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PRT",
+      "skos:prefLabel": "Portuguese Republic"
+    },
+    {
+      "@id": "ismcatre:PRY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PRY",
+      "skos:prefLabel": "Republic of Paraguay"
+    },
+    {
+      "@id": "ismcatre:PYF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "PYF",
+      "skos:prefLabel": "French Polynesia"
+    },
+    {
+      "@id": "ismcatre:QAT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "QAT",
+      "skos:prefLabel": "State of Qatar"
+    },
+    {
+      "@id": "ismcatre:REU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "REU",
+      "skos:prefLabel": "Region of Reunion"
+    },
+    {
+      "@id": "ismcatre:ROU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ROU",
+      "skos:prefLabel": "Romania"
+    },
+    {
+      "@id": "ismcatre:RUS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "RUS",
+      "skos:prefLabel": "Russian Federation"
+    },
+    {
+      "@id": "ismcatre:RWA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "RWA",
+      "skos:prefLabel": "Republic of Rwanda"
+    },
+    {
+      "@id": "ismcatre:SAU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SAU",
+      "skos:prefLabel": "Kingdom of Saudi Arabia"
+    },
+    {
+      "@id": "ismcatre:SDN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SDN",
+      "skos:prefLabel": "Republic of the Sudan"
+    },
+    {
+      "@id": "ismcatre:SEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SEN",
+      "skos:prefLabel": "Republic of Senegal"
+    },
+    {
+      "@id": "ismcatre:SGP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SGP",
+      "skos:prefLabel": "Republic of Singapore"
+    },
+    {
+      "@id": "ismcatre:SGS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SGS",
+      "skos:prefLabel": "South Georgia and the South Sandwich Islands"
+    },
+    {
+      "@id": "ismcatre:SHN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SHN",
+      "skos:prefLabel": "Saint Helena, Ascension, and Tristan da Cunha"
+    },
+    {
+      "@id": "ismcatre:SLB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SLB",
+      "skos:prefLabel": "Solomon Islands"
+    },
+    {
+      "@id": "ismcatre:SLE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SLE",
+      "skos:prefLabel": "Republic of Sierra Leone"
+    },
+    {
+      "@id": "ismcatre:SLV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SLV",
+      "skos:prefLabel": "Republic of El Salvador"
+    },
+    {
+      "@id": "ismcatre:SMR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SMR",
+      "skos:prefLabel": "Republic of San Marino"
+    },
+    {
+      "@id": "ismcatre:SOM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SOM",
+      "skos:prefLabel": "Federal Republic of Somalia"
+    },
+    {
+      "@id": "ismcatre:SPM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SPM",
+      "skos:prefLabel": "Territorial Collectivity of Saint Pierre and Miquelon"
+    },
+    {
+      "@id": "ismcatre:SRB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SRB",
+      "skos:prefLabel": "Republic of Serbia"
+    },
+    {
+      "@id": "ismcatre:SSD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SSD",
+      "skos:prefLabel": "Republic of South Sudan"
+    },
+    {
+      "@id": "ismcatre:STP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "STP",
+      "skos:prefLabel": "Democratic Republic of Sao Tome and Principe"
+    },
+    {
+      "@id": "ismcatre:SUR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SUR",
+      "skos:prefLabel": "Republic of Suriname"
+    },
+    {
+      "@id": "ismcatre:SVK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SVK",
+      "skos:prefLabel": "Slovak Republic"
+    },
+    {
+      "@id": "ismcatre:SVN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SVN",
+      "skos:prefLabel": "Republic of Slovenia"
+    },
+    {
+      "@id": "ismcatre:SWE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SWE",
+      "skos:prefLabel": "Kingdom of Sweden"
+    },
+    {
+      "@id": "ismcatre:SWZ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SWZ",
+      "skos:prefLabel": "Kingdom of Eswatini"
+    },
+    {
+      "@id": "ismcatre:SXM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SXM",
+      "skos:prefLabel": "Sint Maarten"
+    },
+    {
+      "@id": "ismcatre:SYC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SYC",
+      "skos:prefLabel": "Republic of Seychelles"
+    },
+    {
+      "@id": "ismcatre:SYR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "SYR",
+      "skos:prefLabel": "Syrian Arab Republic"
+    },
+    {
+      "@id": "ismcatre:TCA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TCA",
+      "skos:prefLabel": "Turks and Caicos Islands"
+    },
+    {
+      "@id": "ismcatre:TCD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TCD",
+      "skos:prefLabel": "Republic of Chad"
+    },
+    {
+      "@id": "ismcatre:TGO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TGO",
+      "skos:prefLabel": "Togolese Republic"
+    },
+    {
+      "@id": "ismcatre:THA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "THA",
+      "skos:prefLabel": "Kingdom of Thailand"
+    },
+    {
+      "@id": "ismcatre:TJK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TJK",
+      "skos:prefLabel": "Republic of Tajikistan"
+    },
+    {
+      "@id": "ismcatre:TKL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TKL",
+      "skos:prefLabel": "Tokelau"
+    },
+    {
+      "@id": "ismcatre:TKM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TKM",
+      "skos:prefLabel": "Turkmenistan"
+    },
+    {
+      "@id": "ismcatre:TLS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TLS",
+      "skos:prefLabel": "Democratic Republic of Timor-Leste"
+    },
+    {
+      "@id": "ismcatre:TON",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TON",
+      "skos:prefLabel": "Kingdom of Tonga"
+    },
+    {
+      "@id": "ismcatre:TTO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TTO",
+      "skos:prefLabel": "Republic of Trinidad and Tobago"
+    },
+    {
+      "@id": "ismcatre:TUN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TUN",
+      "skos:prefLabel": "Republic of Tunisia"
+    },
+    {
+      "@id": "ismcatre:TUR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TUR",
+      "skos:prefLabel": "Republic of Turkey"
+    },
+    {
+      "@id": "ismcatre:TUV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TUV",
+      "skos:prefLabel": "Tuvalu"
+    },
+    {
+      "@id": "ismcatre:TWN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TWN",
+      "skos:prefLabel": "Taiwan"
+    },
+    {
+      "@id": "ismcatre:TZA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "TZA",
+      "skos:prefLabel": "United Republic of Tanzania"
+    },
+    {
+      "@id": "ismcatre:UGA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "UGA",
+      "skos:prefLabel": "Republic of Uganda"
+    },
+    {
+      "@id": "ismcatre:UKR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "UKR",
+      "skos:prefLabel": "Ukraine"
+    },
+    {
+      "@id": "ismcatre:URY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "URY",
+      "skos:prefLabel": "Oriental Republic of Uruguay"
+    },
+    {
+      "@id": "ismcatre:USA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "USA",
+      "skos:prefLabel": "United States of America"
+    },
+    {
+      "@id": "ismcatre:UZB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "UZB",
+      "skos:prefLabel": "Republic of Uzbekistan"
+    },
+    {
+      "@id": "ismcatre:VAT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "VAT",
+      "skos:prefLabel": "State of the Vatican City"
+    },
+    {
+      "@id": "ismcatre:VCT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "VCT",
+      "skos:prefLabel": "Saint Vincent and the Grenadines"
+    },
+    {
+      "@id": "ismcatre:VEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "VEN",
+      "skos:prefLabel": "Bolivarian Republic of Venezuela"
+    },
+    {
+      "@id": "ismcatre:VGB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "VGB",
+      "skos:prefLabel": "British Virgin Islands"
+    },
+    {
+      "@id": "ismcatre:VIR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "VIR",
+      "skos:prefLabel": "United States Virgin Islands"
+    },
+    {
+      "@id": "ismcatre:VNM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "VNM",
+      "skos:prefLabel": "Socialist Republic of Vietnam"
+    },
+    {
+      "@id": "ismcatre:VUT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "VUT",
+      "skos:prefLabel": "Republic of Vanuatu"
+    },
+    {
+      "@id": "ismcatre:WLF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "WLF",
+      "skos:prefLabel": "Wallis and Futuna"
+    },
+    {
+      "@id": "ismcatre:WSM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "WSM",
+      "skos:prefLabel": "Independent State of Samoa"
+    },
+    {
+      "@id": "ismcatre:XAC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XAC",
+      "skos:prefLabel": "Territory of Ashmore and Cartier Islands"
+    },
+    {
+      "@id": "ismcatre:XAZ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XAZ",
+      "skos:prefLabel": "Entity 1"
+    },
+    {
+      "@id": "ismcatre:XBI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XBI",
+      "skos:prefLabel": "Bassas da India"
+    },
+    {
+      "@id": "ismcatre:XBK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XBK",
+      "skos:prefLabel": "Baker Island"
+    },
+    {
+      "@id": "ismcatre:XCR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XCR",
+      "skos:prefLabel": "Entity 2"
+    },
+    {
+      "@id": "ismcatre:XCS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XCS",
+      "skos:prefLabel": "Coral Sea Islands Territory"
+    },
+    {
+      "@id": "ismcatre:XCY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XCY",
+      "skos:prefLabel": "Entity 3"
+    },
+    {
+      "@id": "ismcatre:XEU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XEU",
+      "skos:prefLabel": "Europa Island"
+    },
+    {
+      "@id": "ismcatre:XGL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XGL",
+      "skos:prefLabel": "Glorioso Islands"
+    },
+    {
+      "@id": "ismcatre:XGZ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XGZ",
+      "skos:prefLabel": "Gaza Strip"
+    },
+    {
+      "@id": "ismcatre:XHO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XHO",
+      "skos:prefLabel": "Howland Island"
+    },
+    {
+      "@id": "ismcatre:XJA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XJA",
+      "skos:prefLabel": "Johnston Atoll"
+    },
+    {
+      "@id": "ismcatre:XJM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XJM",
+      "skos:prefLabel": "Jan Mayen"
+    },
+    {
+      "@id": "ismcatre:XJN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XJN",
+      "skos:prefLabel": "Juan de Nova Island"
+    },
+    {
+      "@id": "ismcatre:XJV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XJV",
+      "skos:prefLabel": "Jarvis Island"
+    },
+    {
+      "@id": "ismcatre:XKM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XKM",
+      "skos:prefLabel": "Entity 4"
+    },
+    {
+      "@id": "ismcatre:XKN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XKN",
+      "skos:prefLabel": "Entity 5"
+    },
+    {
+      "@id": "ismcatre:XKR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XKR",
+      "skos:prefLabel": "Kingman Reef"
+    },
+    {
+      "@id": "ismcatre:XKS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XKS",
+      "skos:prefLabel": "Republic of Kosovo"
+    },
+    {
+      "@id": "ismcatre:XMW",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XMW",
+      "skos:prefLabel": "Midway Islands"
+    },
+    {
+      "@id": "ismcatre:XNV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XNV",
+      "skos:prefLabel": "Navassa Island"
+    },
+    {
+      "@id": "ismcatre:XPL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XPL",
+      "skos:prefLabel": "Palmyra Atoll"
+    },
+    {
+      "@id": "ismcatre:XPR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XPR",
+      "skos:prefLabel": "Paracel Islands"
+    },
+    {
+      "@id": "ismcatre:XQZ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XQZ",
+      "skos:prefLabel": "Akrotiri"
+    },
+    {
+      "@id": "ismcatre:XSP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XSP",
+      "skos:prefLabel": "Spratly Islands"
+    },
+    {
+      "@id": "ismcatre:XSV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XSV",
+      "skos:prefLabel": "Svalbard"
+    },
+    {
+      "@id": "ismcatre:XTR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XTR",
+      "skos:prefLabel": "Tromelin Island"
+    },
+    {
+      "@id": "ismcatre:XWB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XWB",
+      "skos:prefLabel": "West Bank"
+    },
+    {
+      "@id": "ismcatre:XWK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XWK",
+      "skos:prefLabel": "Wake Island"
+    },
+    {
+      "@id": "ismcatre:XXD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "XXD",
+      "skos:prefLabel": "Dhekelia"
+    },
+    {
+      "@id": "ismcatre:YEM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "YEM",
+      "skos:prefLabel": "Republic of Yemen"
+    },
+    {
+      "@id": "ismcatre:ZAF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ZAF",
+      "skos:prefLabel": "Republic of South Africa"
+    },
+    {
+      "@id": "ismcatre:ZMB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ZMB",
+      "skos:prefLabel": "Republic of Zambia"
+    },
+    {
+      "@id": "ismcatre:ZWE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "ZWE",
+      "skos:prefLabel": "Republic of Zimbabwe"
+    },
+    {
+      "@id": "ismcatre:NATO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "skos:notation": "NATO",
+      "skos:prefLabel": "North Atlantic Treaty Organization"
+    }
+  ]
+}

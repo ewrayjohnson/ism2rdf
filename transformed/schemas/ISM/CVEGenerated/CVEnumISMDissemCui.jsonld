@@ -1,0 +1,113 @@
+{
+  "@context": {
+    "ismdissemcui": "urn:us:gov:ic:cvenum:ism:dissem:cui#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismdissemcui:CVEnumISMDissemCui",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismdissemcui:CVEnumISMDissemCui definition"
+    },
+    {
+      "@id": "ismdissemcui:AC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "AC",
+      "skos:prefLabel": "Attorney-Client"
+    },
+    {
+      "@id": "ismdissemcui:AWP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "AWP",
+      "skos:prefLabel": "Attorney-WP"
+    },
+    {
+      "@id": "ismdissemcui:DISPLAYONLY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "DISPLAYONLY",
+      "skos:prefLabel": "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO"
+    },
+    {
+      "@id": "ismdissemcui:DL_ONLY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "DL_ONLY",
+      "skos:prefLabel": "DL ONLY"
+    },
+    {
+      "@id": "ismdissemcui:EXEMPT_FROM_ICD501_DISCOVERY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "EXEMPT_FROM_ICD501_DISCOVERY",
+      "skos:prefLabel": "EXEMPT FROM ICD501 DISCOVERY"
+    },
+    {
+      "@id": "ismdissemcui:FED_ONLY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "FED_ONLY",
+      "skos:prefLabel": "FED ONLY"
+    },
+    {
+      "@id": "ismdissemcui:FEDCON",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "FEDCON",
+      "skos:prefLabel": "FEDCON"
+    },
+    {
+      "@id": "ismdissemcui:NF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "NF",
+      "skos:prefLabel": "NOT RELEASABLE TO FOREIGN NATIONALS"
+    },
+    {
+      "@id": "ismdissemcui:NOCON",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "NOCON",
+      "skos:prefLabel": "NOCON"
+    },
+    {
+      "@id": "ismdissemcui:REL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "REL",
+      "skos:prefLabel": "AUTHORIZED FOR RELEASE TO"
+    },
+    {
+      "@id": "ismdissemcui:RELIDO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "RELIDO",
+      "skos:prefLabel": "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL"
+    }
+  ]
+}

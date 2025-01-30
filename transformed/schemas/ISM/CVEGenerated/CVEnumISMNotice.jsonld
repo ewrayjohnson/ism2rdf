@@ -1,0 +1,257 @@
+{
+  "@context": {
+    "ismnotice": "urn:us:gov:ic:cvenum:ism:notice#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismnotice:CVEnumISMNotice",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismnotice:CVEnumISMNotice definition"
+    },
+    {
+      "@id": "ismnotice:FISA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "FISA",
+      "skos:prefLabel": "FISA Warning statement"
+    },
+    {
+      "@id": "ismnotice:RAWFISA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "RAWFISA",
+      "skos:prefLabel": "RAWFISA Warning statement"
+    },
+    {
+      "@id": "ismnotice:IMC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "IMC",
+      "skos:prefLabel": "IMCON Warning statement"
+    },
+    {
+      "@id": "ismnotice:CNWDI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "CNWDI",
+      "skos:prefLabel": "Controled Nuclear Weapon Design Information Warning statement"
+    },
+    {
+      "@id": "ismnotice:RD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "RD",
+      "skos:prefLabel": "RD Warning statement"
+    },
+    {
+      "@id": "ismnotice:FRD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "FRD",
+      "skos:prefLabel": "FRD Warning statement"
+    },
+    {
+      "@id": "ismnotice:DS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "DS",
+      "skos:prefLabel": "LIMDIS caveat"
+    },
+    {
+      "@id": "ismnotice:LES",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "LES",
+      "skos:prefLabel": "LES Notice"
+    },
+    {
+      "@id": "ismnotice:LES-NF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "LES-NF",
+      "skos:prefLabel": "LES-NF Notice"
+    },
+    {
+      "@id": "ismnotice:DSEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "DSEN",
+      "skos:prefLabel": "DSEN Notice"
+    },
+    {
+      "@id": "ismnotice:DoD-Dist-A",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "DoD-Dist-A",
+      "skos:prefLabel": "DoD Distribution statement A from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismnotice:DoD-Dist-B",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "DoD-Dist-B",
+      "skos:prefLabel": "DoD Distribution statement B from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismnotice:DoD-Dist-C",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "DoD-Dist-C",
+      "skos:prefLabel": "DoD Distribution statement C from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismnotice:DoD-Dist-D",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "DoD-Dist-D",
+      "skos:prefLabel": "DoD Distribution statement D from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismnotice:DoD-Dist-E",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "DoD-Dist-E",
+      "skos:prefLabel": "DoD Distribution statement E from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismnotice:DoD-Dist-F",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "DoD-Dist-F",
+      "skos:prefLabel": "DoD Distribution statement F from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismnotice:US-Person",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "US-Person",
+      "skos:prefLabel": "US Person info Notice"
+    },
+    {
+      "@id": "ismnotice:pre13526ORCON",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "pre13526ORCON",
+      "skos:prefLabel": "Indicates that an instance document must abide by rules pertaining to ORIGINATOR CONTROLLED data issued prior to Executive Order 13526."
+    },
+    {
+      "@id": "ismnotice:POC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "POC",
+      "skos:prefLabel": "Indicates that the contents of this notice specify the contact information for a required point-of-contact."
+    },
+    {
+      "@id": "ismnotice:COMSEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "COMSEC",
+      "skos:prefLabel": "COMSEC Notice"
+    },
+    {
+      "@id": "ismnotice:SSI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "SSI",
+      "skos:prefLabel": "Indicates that this is the notice for Sensitive Security Information"
+    },
+    {
+      "@id": "ismnotice:RSEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "RSEN",
+      "skos:prefLabel": "Risk Sensitive Notice"
+    },
+    {
+      "@id": "ismnotice:IMCON_RSEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "IMCON_RSEN",
+      "skos:prefLabel": "Indicates SAT warning statements include IMCON and RSEN markings"
+    },
+    {
+      "@id": "ismnotice:GEOCAP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "GEOCAP",
+      "skos:prefLabel": "GEOCAP Warning statement"
+    },
+    {
+      "@id": "ismnotice:NATO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "NATO",
+      "skos:prefLabel": "NATO Warning statement"
+    },
+    {
+      "@id": "ismnotice:RC_Dissemination_Control_Required",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "RC_Dissemination_Control_Required",
+      "skos:prefLabel": "This product was collected in a restricted collection mode. Redaction, chipping and release determination shall not result in more permissive release than NOFORN regardless of the Security Indicator Codes (SIC) associated with the product"
+    },
+    {
+      "@id": "ismnotice:ITAR-EAR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "skos:notation": "ITAR-EAR",
+      "skos:prefLabel": "Warning statement for International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR) in accordance with DoD 5230.24, Distribution Statements on Technical Documents."
+    }
+  ]
+}

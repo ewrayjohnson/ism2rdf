@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "ismnonus": "urn:us:gov:ic:cvenum:ism:nonuscontrols#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "ismnonus:CVEnumISMNonUSControls",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismnonus:CVEnumISMNonUSControls definition"
+    },
+    {
+      "@id": "ismnonus:NATO-ATOMAL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonus:CVEnumISMNonUSControls"
+      },
+      "skos:notation": "NATO-ATOMAL",
+      "skos:prefLabel": "NATO Atomal mark"
+    },
+    {
+      "@id": "ismnonus:NATO-BOHEMIA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonus:CVEnumISMNonUSControls"
+      },
+      "skos:notation": "NATO-BOHEMIA",
+      "skos:prefLabel": "NATO Bohemia mark"
+    },
+    {
+      "@id": "ismnonus:NATO-BALK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonus:CVEnumISMNonUSControls"
+      },
+      "skos:notation": "NATO-BALK",
+      "skos:prefLabel": "NATO Balk mark"
+    }
+  ]
+}

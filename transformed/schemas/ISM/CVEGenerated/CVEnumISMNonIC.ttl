@@ -1,0 +1,129 @@
+@prefix : <urn:us:gov:ic:cvenum:ism:nonic#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:us:gov:ic:cvenum:ism:nonic> .
+
+<urn:us:gov:ic:cvenum:ism:nonic> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC
+:CVEnumISMNonIC rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                <http://purl.org/dc/elements/1.1/title> "(U) ismnonic:CVEnumISMNonIC definition" .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#DS
+:DS rdf:type owl:NamedIndividual ,
+             <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNonIC ;
+    <http://www.w3.org/2004/02/skos/core#notation> "DS" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "LIMITED DISTRIBUTION" .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#LES
+:LES rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNonIC ;
+     <http://www.w3.org/2004/02/skos/core#notation> "LES" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "LAW ENFORCEMENT SENSITIVE" .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#LES-NF
+:LES-NF rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNonIC ;
+        <http://www.w3.org/2004/02/skos/core#notation> "LES-NF" ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "LAW ENFORCEMENT SENSITIVE NOFORN" .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#ND
+:ND rdf:type owl:NamedIndividual ,
+             <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNonIC ;
+    <http://www.w3.org/2004/02/skos/core#notation> "ND" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "NO DISTRIBUTION" .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#NNPI
+:NNPI rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNonIC ;
+      <http://www.w3.org/2004/02/skos/core#notation> "NNPI" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "NAVAL NUCLEAR PROPULSION INFORMATION" .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#SBU
+:SBU rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNonIC ;
+     <http://www.w3.org/2004/02/skos/core#notation> "SBU" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "SENSITIVE BUT UNCLASSIFIED" .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#SBU-NF
+:SBU-NF rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNonIC ;
+        <http://www.w3.org/2004/02/skos/core#notation> "SBU-NF" ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "SENSITIVE BUT UNCLASSIFIED NOFORN" .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#SSI
+:SSI rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNonIC ;
+     <http://www.w3.org/2004/02/skos/core#notation> "SSI" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "SENSITIVE SECURITY INFORMATION" .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#XD
+:XD rdf:type owl:NamedIndividual ,
+             <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNonIC ;
+    <http://www.w3.org/2004/02/skos/core#notation> "XD" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "EXCLUSIVE DISTRIBUTION" .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

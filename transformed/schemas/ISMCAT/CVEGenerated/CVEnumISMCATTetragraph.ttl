@@ -1,0 +1,545 @@
+@prefix : <urn:us:gov:ic:cvenum:ismcat:tetragraph#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:us:gov:ic:cvenum:ismcat:tetragraph> .
+
+<urn:us:gov:ic:cvenum:ismcat:tetragraph> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#ACGU
+:ACGU rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "ACGU" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "FOUR EYES" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#AMSP
+:AMSP rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "AMSP" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "AFRICOM Multinational Strategic Partners" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#AOSC
+:AOSC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "AOSC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Athens Olympics Security Coalition" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#APFS
+:APFS rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "APFS" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "African Peacekeeping Force Somalia" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#ASEA
+:ASEA rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "ASEA" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Association of Southeast Asian Nations (ASEAN)" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#AUSTRALIA_GROUP
+:AUSTRALIA_GROUP rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                 <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+                 <http://www.w3.org/2004/02/skos/core#notation> "AUSTRALIA_GROUP" ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Australia Group" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#BHTF
+:BHTF rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "BHTF" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Boko Haram Task Force" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#BWCS
+:BWCS rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "BWCS" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Biological Weapons Convention States" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CFCK
+:CFCK rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "CFCK" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Combined Forces Command Korea" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CFOD
+:CFOD rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "CFOD" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Coalition Forces Odyssey Dawn" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CFUP
+:CFUP rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "CFUP" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Coalition Forces Unified Protector" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CLFC
+:CLFC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "CLFC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Combined Libya Fusion Cell" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CMFC
+:CMFC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "CMFC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Combined Maritime Forces Central" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CMFP
+:CMFP rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "CMFP" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Cooperative Maritime Forces Pacific" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CPMT
+:CPMT rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "CPMT" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Civilian Protection Monitoring Team for Sudan" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CTOC
+:CTOC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "CTOC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Countering Transnational Organized Crime" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph
+:CVEnumISMCATTetragraph rdf:type owl:NamedIndividual ,
+                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                        <http://purl.org/dc/elements/1.1/title> "(U) ismcattetra:CVEnumISMCATTetragraph definition" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#CWCS
+:CWCS rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "CWCS" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Chemical Weapons Convention States" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#ECTF
+:ECTF rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "ECTF" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "European Counter-Terrorism Forces" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#EFOR
+:EFOR rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "EFOR" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "European Union Stabilization Forces in Bosnia" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#EU
+:EU rdf:type owl:NamedIndividual ,
+             <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+    <http://www.w3.org/2004/02/skos/core#notation> "EU" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "European Union" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#EUDA
+:EUDA rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "EUDA" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "European Union DARFUR" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#FRME
+:FRME rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "FRME" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Counter Violent Extremist Organizations Framework Partners" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#FVEY
+:FVEY rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "FVEY" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "FIVE EYES" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#GCCH
+:GCCH rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "GCCH" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Gulf Cooperation Council" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#GCTF
+:GCTF rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "GCTF" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Global Counter-Terrorism Forces" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#GFNX
+:GFNX rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "GFNX" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Global Foreign Terrorist Fighter Network Exchange" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#GMIF
+:GMIF rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "GMIF" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Global Maritime Interception Forces" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#IESC
+:IESC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "IESC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "International Events Security Coalition" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#IMSC
+:IMSC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "IMSC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "International Maritime Security Construct" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#IMSP
+:IMSP rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "IMSP" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "INDOPACOM Multinational Strategic Partners" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#IPMC
+:IPMC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "IPMC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "INDO PACIFIC Maritime Call" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#IRKS
+:IRKS rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "IRKS" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Inherent Resolve Kinetic Support" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#ISAF
+:ISAF rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "ISAF" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "International Security Assistance Force for Afghanistan" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#ISSG
+:ISSG rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "ISSG" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "International Syria Support Group" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#KFOR
+:KFOR rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "KFOR" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Stabilization Forces in Kosovo" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#MCFI
+:MCFI rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "MCFI" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational Coalition Forces-Iraq" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#MESF
+:MESF rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "MESF" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Middle East Stability Force" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#MGEU
+:MGEU rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "MGEU" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational GEOINT Europe" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#MIFH
+:MIFH rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "MIFH" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational Interim Force Haiti" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#MLEC
+:MLEC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "MLEC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multi-Lateral Enduring Contingency" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#MNTF
+:MNTF rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "MNTF" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational Task Force" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#MPFL
+:MPFL rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "MPFL" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational Peacekeeping Forces" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#NACT
+:NACT rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "NACT" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "North African Counter-Terrorism Forces" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#NATO
+:NATO rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "NATO" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "North Atlantic Treaty Organization" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#NCFE
+:NCFE rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "NCFE" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO CFE Treaty on Conventional Armed Forces in Europe" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#NKIC
+:NKIC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "NKIC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "North Korea Intelligence Coalition" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#NRDC
+:NRDC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "NRDC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "NORDIC" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#NSG
+:NSG rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+     <http://www.w3.org/2004/02/skos/core#notation> "NSG" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Suppliers' Group" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#OSAG
+:OSAG rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "OSAG" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Olympic Security Advisory Group" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#OSTY
+:OSTY rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "OSTY" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Skies Treaty" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#PAWA
+:PAWA rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "PAWA" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Partnership for Actions in West Africa" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#PGMF
+:PGMF rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "PGMF" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Persian Gulf Multinational Forces" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#PSMX
+:PSMX rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "PSMX" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Pacific Security Monitoring Exchange" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#RISC
+:RISC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "RISC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Russia Intelligence Sharing Coalition" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#RSMA
+:RSMA rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "RSMA" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Resolute Support Mission Afghanistan" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#SFOR
+:SFOR rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "SFOR" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Stabilization Force" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#SOFP
+:SOFP rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "SOFP" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Special Operations Forces Partners" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#SPAA
+:SPAA rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "SPAA" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#TEYE
+:TEYE rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "TEYE" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "THREE EYES" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#TFTC
+:TFTC rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "TFTC" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Terrorist Financing Targeting Center" .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:tetragraph#UNCK
+:UNCK rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATTetragraph ;
+      <http://www.w3.org/2004/02/skos/core#notation> "UNCK" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "United Nations Command, Korea" .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

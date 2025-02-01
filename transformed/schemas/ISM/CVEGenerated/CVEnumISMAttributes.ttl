@@ -1,0 +1,433 @@
+@prefix : <urn:us:gov:ic:cvenum:ism:attributes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:us:gov:ic:cvenum:ism:attributes> .
+
+<urn:us:gov:ic:cvenum:ism:attributes> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes
+:CVEnumISMAttributes rdf:type owl:NamedIndividual ,
+                              <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                     <http://purl.org/dc/elements/1.1/title> "(U) ismattrib:CVEnumISMAttributes definition" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#DESVersion
+:DESVersion rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+            <http://www.w3.org/2004/02/skos/core#notation> "DESVersion" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "DESVersion attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#FGIsourceOpen
+:FGIsourceOpen rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+               <http://www.w3.org/2004/02/skos/core#notation> "FGIsourceOpen" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "FGIsourceOpen attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#FGIsourceProtected
+:FGIsourceProtected rdf:type owl:NamedIndividual ,
+                             <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                    <http://www.w3.org/2004/02/skos/core#notation> "FGIsourceProtected" ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "FGIsourceProtected attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#ISMCATCESVersion
+:ISMCATCESVersion rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                  <http://www.w3.org/2004/02/skos/core#notation> "ISMCATCESVersion" ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "ISMCATCESVersion attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#SARIdentifier
+:SARIdentifier rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+               <http://www.w3.org/2004/02/skos/core#notation> "SARIdentifier" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "SARIdentifier attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#SCIcontrols
+:SCIcontrols rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+             <http://www.w3.org/2004/02/skos/core#notation> "SCIcontrols" ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "SCIcontrols attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#atomicEnergyMarkings
+:atomicEnergyMarkings rdf:type owl:NamedIndividual ,
+                               <http://www.w3.org/2004/02/skos/core#Concept> ;
+                      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                      <http://www.w3.org/2004/02/skos/core#notation> "atomicEnergyMarkings" ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "atomicEnergyMarkings attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#classification
+:classification rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                <http://www.w3.org/2004/02/skos/core#notation> "classification" ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "classification attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#classificationReason
+:classificationReason rdf:type owl:NamedIndividual ,
+                               <http://www.w3.org/2004/02/skos/core#Concept> ;
+                      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                      <http://www.w3.org/2004/02/skos/core#notation> "classificationReason" ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "classificationReason attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#classifiedBy
+:classifiedBy rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+              <http://www.w3.org/2004/02/skos/core#notation> "classifiedBy" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "classifiedBy attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#compilationReason
+:compilationReason rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                   <http://www.w3.org/2004/02/skos/core#notation> "compilationReason" ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "compilationReason attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#compliesWith
+:compliesWith rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+              <http://www.w3.org/2004/02/skos/core#notation> "compliesWith" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "compliesWith attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#createDate
+:createDate rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+            <http://www.w3.org/2004/02/skos/core#notation> "createDate" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "createDate attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#cuiBasic
+:cuiBasic rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+          <http://www.w3.org/2004/02/skos/core#notation> "cuiBasic" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "CUI Basic markings." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#cuiControlledBy
+:cuiControlledBy rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                 <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                 <http://www.w3.org/2004/02/skos/core#notation> "cuiControlledBy" ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Person or authority for labeling and controlling information as CUI." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#cuiControlledByOffice
+:cuiControlledByOffice rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/2004/02/skos/core#Concept> ;
+                       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                       <http://www.w3.org/2004/02/skos/core#notation> "cuiControlledByOffice" ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Office in an agency or department that is responsible for labeling and controlling information as CUI. Ref DOD INSTRUCTION 5200.48." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolDate
+:cuiDecontrolDate rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                  <http://www.w3.org/2004/02/skos/core#notation> "cuiDecontrolDate" ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Decontrol date for CUI." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolEvent
+:cuiDecontrolEvent rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                   <http://www.w3.org/2004/02/skos/core#notation> "cuiDecontrolEvent" ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Decontrol event for CUI." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#cuiPOC
+:cuiPOC rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+        <http://www.w3.org/2004/02/skos/core#notation> "cuiPOC" ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Point of Contact for labeling and controlling information as CUI. Ref DOD INSTRUCTION 5200.48." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#cuiSpecified
+:cuiSpecified rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+              <http://www.w3.org/2004/02/skos/core#notation> "cuiSpecified" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "CUI Specified markings." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#declassDate
+:declassDate rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+             <http://www.w3.org/2004/02/skos/core#notation> "declassDate" ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "declassDate attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#declassEvent
+:declassEvent rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+              <http://www.w3.org/2004/02/skos/core#notation> "declassEvent" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "declassEvent attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#declassException
+:declassException rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                  <http://www.w3.org/2004/02/skos/core#notation> "declassException" ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "declassException attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#derivativelyClassifiedBy
+:derivativelyClassifiedBy rdf:type owl:NamedIndividual ,
+                                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+                          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                          <http://www.w3.org/2004/02/skos/core#notation> "derivativelyClassifiedBy" ;
+                          <http://www.w3.org/2004/02/skos/core#prefLabel> "derivativelyClassifiedBy attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#derivedFrom
+:derivedFrom rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+             <http://www.w3.org/2004/02/skos/core#notation> "derivedFrom" ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "derivedFrom attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#displayOnlyTo
+:displayOnlyTo rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+               <http://www.w3.org/2004/02/skos/core#notation> "displayOnlyTo" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "displayOnlyTo attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#disseminationControls
+:disseminationControls rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/2004/02/skos/core#Concept> ;
+                       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                       <http://www.w3.org/2004/02/skos/core#notation> "disseminationControls" ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "disseminationControls attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#excludeFromRollup
+:excludeFromRollup rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                   <http://www.w3.org/2004/02/skos/core#notation> "excludeFromRollup" ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "excludeFromRollup attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#exemptFrom
+:exemptFrom rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+            <http://www.w3.org/2004/02/skos/core#notation> "exemptFrom" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "exemptFrom attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#externalNotice
+:externalNotice rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                <http://www.w3.org/2004/02/skos/core#notation> "externalNotice" ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "externalNotice attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#handleViaChannels
+:handleViaChannels rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                   <http://www.w3.org/2004/02/skos/core#notation> "handleViaChannels" ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Handle VIA Channels that may appear in the second banner line." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#hasApproximateMarkings
+:hasApproximateMarkings rdf:type owl:NamedIndividual ,
+                                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+                        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                        <http://www.w3.org/2004/02/skos/core#notation> "hasApproximateMarkings" ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "hasApproximateMarkings attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#highWaterNATO
+:highWaterNATO rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+               <http://www.w3.org/2004/02/skos/core#notation> "highWaterNATO" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "highWaterNATO attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#joint
+:joint rdf:type owl:NamedIndividual ,
+                <http://www.w3.org/2004/02/skos/core#Concept> ;
+       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+       <http://www.w3.org/2004/02/skos/core#notation> "joint" ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicator that multiple ownerProducers should be interpreted as JOINT." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#noAggregation
+:noAggregation rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+               <http://www.w3.org/2004/02/skos/core#notation> "noAggregation" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "noAggregation attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#nonICmarkings
+:nonICmarkings rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+               <http://www.w3.org/2004/02/skos/core#notation> "nonICmarkings" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "nonICmarkings attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#nonUSControls
+:nonUSControls rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+               <http://www.w3.org/2004/02/skos/core#notation> "nonUSControls" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "nonUSControls attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#noticeDate
+:noticeDate rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+            <http://www.w3.org/2004/02/skos/core#notation> "noticeDate" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "notice date attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#noticeProseID
+:noticeProseID rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+               <http://www.w3.org/2004/02/skos/core#notation> "noticeProseID" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "noticeProseID attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#noticeReason
+:noticeReason rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+              <http://www.w3.org/2004/02/skos/core#notation> "noticeReason" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "notice Reason attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#noticeType
+:noticeType rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+            <http://www.w3.org/2004/02/skos/core#notation> "noticeType" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "noticeType attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#ownerProducer
+:ownerProducer rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+               <http://www.w3.org/2004/02/skos/core#notation> "ownerProducer" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "ownerProducer attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#pocType
+:pocType rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+         <http://www.w3.org/2004/02/skos/core#notation> "pocType" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Specifies a point-of contact for a security-related requirement." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#releasableTo
+:releasableTo rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+              <http://www.w3.org/2004/02/skos/core#notation> "releasableTo" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "releasableTo attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#resourceElement
+:resourceElement rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                 <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                 <http://www.w3.org/2004/02/skos/core#notation> "resourceElement" ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "resourceElement attribute" .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#secondBannerLine
+:secondBannerLine rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                  <http://www.w3.org/2004/02/skos/core#notation> "secondBannerLine" ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner." .
+
+
+###  urn:us:gov:ic:cvenum:ism:attributes#unregisteredNoticeType
+:unregisteredNoticeType rdf:type owl:NamedIndividual ,
+                                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+                        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMAttributes ;
+                        <http://www.w3.org/2004/02/skos/core#notation> "unregisteredNoticeType" ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "unregisteredNoticeType attribute" .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

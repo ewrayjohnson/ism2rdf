@@ -1,0 +1,2065 @@
+@prefix : <urn:us:gov:ic:cvenum:usagency:agencyacronym#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:us:gov:ic:cvenum:usagency:agencyacronym> .
+
+<urn:us:gov:ic:cvenum:usagency:agencyacronym> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#CVEnumUSAgencyAcronym
+:CVEnumUSAgencyAcronym rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                       <http://purl.org/dc/elements/1.1/title> "(U) All valid acronyms for use with USA publishing organizations/agencies/Cabinet Offices. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSAgencyAcronym.xml" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ABMC
+:USA.ABMC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.ABMC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "American Battle Monuments Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACCESS
+:USA.ACCESS rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.ACCESS" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Architectural and Transportation Barriers Compliance Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACFR
+:USA.ACFR rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.ACFR" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Administrative Committee of the Federal Register" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACHP
+:USA.ACHP rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.ACHP" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Advisory Council on Historic Preservation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACUS
+:USA.ACUS rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.ACUS" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Administrative Conference of the United States" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ADF
+:USA.ADF rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.ADF" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "African Development Foundation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.AMICC
+:USA.AMICC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.AMICC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Arthritis and Musculoskeletal Interagency Coordinating Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.AMTRAK
+:USA.AMTRAK rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.AMTRAK" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "National Railroad Passenger Corporation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.AOC
+:USA.AOC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.AOC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Architect of the Capitol" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ARC
+:USA.ARC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.ARC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Appalachian Regional Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ARCTIC
+:USA.ARCTIC rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.ARCTIC" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Arctic Research Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.BBG
+:USA.BBG rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.BBG" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Broadcasting Board of Governors" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.BMGS
+:USA.BMGS rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.BMGS" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Barry M. Goldwater Scholarship and Excellence in Education Foundation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CAOC
+:USA.CAOC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CAOC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Chief Acquisition Officers Council" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CBO
+:USA.CBO rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.CBO" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Congressional Budget Office" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CCJJ
+:USA.CCJJ rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CCJJ" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Coordinating Council on Juvenile Justice and Delinquency Prevention" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CCR
+:USA.CCR rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.CCR" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Commission on Civil Rights" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CEA
+:USA.CEA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.CEA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Council of Economic Advisers" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFA
+:USA.CFA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.CFA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Commission of Fine Arts" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFI
+:USA.CFI rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.CFI" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Committee on Foreign Investments in the United States" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFOC
+:USA.CFOC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CFOC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Chief Financial Officers Council" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFTC
+:USA.CFTC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CFTC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Commodity Futures Trading Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CHCOC
+:USA.CHCOC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.CHCOC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Chief Human Capital Officers Council" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CIA
+:USA.CIA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.CIA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Central Intelligence Agency" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CIOC
+:USA.CIOC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CIOC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Chief Information Officers Council" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CIRF
+:USA.CIRF rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CIRF" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Commission on International Religious Freedom" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CITA
+:USA.CITA rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CITA" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Committee for the Implementation of Textile Agreements" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CNCS
+:USA.CNCS rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CNCS" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Corporation for National and Community Service" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.COMP
+:USA.COMP rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.COMP" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Compliance" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CPSC
+:USA.CPSC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CPSC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Consumer Product Safety Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CRS
+:USA.CRS rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.CRS" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Congressional Research Service" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CSAC
+:USA.CSAC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.CSAC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Citizens' Stamp Advisory Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CSHIB
+:USA.CSHIB rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.CSHIB" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Chemical Safety and Hazard Investigation Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CSOSA
+:USA.CSOSA rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.CSOSA" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Court Services and Offender Supervision Agency for the District of Columbia" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DEA
+:USA.DEA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DEA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Drug Enforcement Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DENALI
+:USA.DENALI rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.DENALI" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Denali Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DFC
+:USA.DFC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DFC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "U.S. International Development Finance Corporation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DHS
+:USA.DHS rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DHS" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Homeland Security" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DIA
+:USA.DIA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DIA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Defense Intelligence Agency" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DNFSB
+:USA.DNFSB rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.DNFSB" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Defense Nuclear Facilities Safety Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DNI
+:USA.DNI rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DNI" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the Director of National Intelligence" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOC
+:USA.DOC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DOC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Commerce" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOD
+:USA.DOD rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DOD" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Defense" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOE
+:USA.DOE rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DOE" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Energy" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOI
+:USA.DOI rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DOI" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of the Interior" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOJ
+:USA.DOJ rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DOJ" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Justice" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOL
+:USA.DOL rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DOL" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Labor" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOT
+:USA.DOT rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.DOT" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Transportation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DRBC
+:USA.DRBC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.DRBC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Delaware River Basin Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EAC
+:USA.EAC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.EAC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Election Assistance Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ED
+:USA.ED rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+        <http://www.w3.org/2004/02/skos/core#notation> "USA.ED" ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Education" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EEOC
+:USA.EEOC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.EEOC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Equal Employment Opportunity Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EIBUS
+:USA.EIBUS rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.EIBUS" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Export-Import Bank of the United States" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EOP
+:USA.EOP rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.EOP" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Executive Office of the President" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EPA
+:USA.EPA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.EPA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Environmental Protection Agency" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ESC
+:USA.ESC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.ESC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Endangered Species Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FAC
+:USA.FAC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FAC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Advisory Committees" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FASAB
+:USA.FASAB rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.FASAB" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Accounting Standards Advisory Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FBI
+:USA.FBI rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FBI" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Bureau of Investigation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCA
+:USA.FCA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FCA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Farm Credit Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCC
+:USA.FCC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FCC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Communications Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCIC
+:USA.FCIC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.FCIC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Financial Crisis Inquiry Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCSIC
+:USA.FCSIC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.FCSIC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Farm Credit System Insurance Corporation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FDIC
+:USA.FDIC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.FDIC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Deposit Insurance Corporation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FEB
+:USA.FEB rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FEB" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Executive Boards" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FEC
+:USA.FEC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FEC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Election Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FERC
+:USA.FERC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.FERC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Energy Regulatory Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FFB
+:USA.FFB rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FFB" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Financing Bank" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FFIEC
+:USA.FFIEC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.FFIEC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Financial Institutions Examination Council" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FGDC
+:USA.FGDC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.FGDC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Geographic Data Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FHRA
+:USA.FHRA rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.FHRA" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Housing Finance Agency" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FICE
+:USA.FICE rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.FICE" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Interagency Committee on Education" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FICMNEW
+:USA.FICMNEW rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+             <http://www.w3.org/2004/02/skos/core#notation> "USA.FICMNEW" ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Interagency Committee for the Management of Noxious and Exotic Weeds" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FICSP
+:USA.FICSP rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.FICSP" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Interagency Council on Statistical Policy" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FLCTT
+:USA.FLCTT rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.FLCTT" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Laboratory Consortium for Technology Transfer" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FLICC
+:USA.FLICC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.FLICC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Library and Information Center Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FLRA
+:USA.FLRA rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.FLRA" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Labor Relations Authority" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FMC
+:USA.FMC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FMC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Maritime Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FMCS
+:USA.FMCS rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.FMCS" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Mediation and Conciliation Service" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FMSHRC
+:USA.FMSHRC rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.FMSHRC" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Mine Safety and Health Review Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FRS
+:USA.FRS rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FRS" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Reserve System" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FRTIB
+:USA.FRTIB rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.FRTIB" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Retirement Thrift Investment Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FTC
+:USA.FTC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.FTC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Trade Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.GAO
+:USA.GAO rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.GAO" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Government Accountability Office" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.GPO
+:USA.GPO rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.GPO" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Government Printing Office" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.GSA
+:USA.GSA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.GSA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "General Services Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-ADM
+:USA.H-ADM rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-ADM" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Committee on House Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-AGR
+:USA.H-AGR rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-AGR" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Agriculture" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-APP
+:USA.H-APP rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-APP" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Appropriations" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-ARM
+:USA.H-ARM rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-ARM" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Armed Services Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-BUD
+:USA.H-BUD rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-BUD" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on the Budget" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-CAO
+:USA.H-CAO rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-CAO" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Office of the Chief Administrative Officer" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-CHAP
+:USA.H-CHAP rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.H-CHAP" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "House Office of the Chaplain" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-CLRK
+:USA.H-CLRK rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.H-CLRK" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "House Office of the Clerk" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-EC
+:USA.H-EC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.H-EC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Ethics" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-EDW
+:USA.H-EDW rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-EDW" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Education and the Workforce Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-E_C
+:USA.H-E_C rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-E_C" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Energy and Commerce Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-FIN
+:USA.H-FIN rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-FIN" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Financial Services" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-FOR
+:USA.H-FOR rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-FOR" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Foreign Affairs" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-HIST
+:USA.H-HIST rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.H-HIST" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "House Office of the Historian" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-HLS
+:USA.H-HLS rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-HLS" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Homeland Security" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-JUD
+:USA.H-JUD rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-JUD" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Judiciary Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-LDRS
+:USA.H-LDRS rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.H-LDRS" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "House Leadership" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-LRC
+:USA.H-LRC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-LRC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Office of the Law Revision Counsel" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-NAT
+:USA.H-NAT rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-NAT" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Natural Resources" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-OGR
+:USA.H-OGR rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-OGR" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Oversight and Government Reform" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-OIG
+:USA.H-OIG rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-OIG" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Office of the Inspector General" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-OLC
+:USA.H-OLC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-OLC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Office of the Legislative Counsel" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-PAR
+:USA.H-PAR rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-PAR" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Office of the Parliamentarian" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-RUL
+:USA.H-RUL rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-RUL" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Rules" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-SAA
+:USA.H-SAA rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-SAA" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Office of the Sergeant at Arms" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-SCI
+:USA.H-SCI rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-SCI" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Science, Space, and Technology" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-SMB
+:USA.H-SMB rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-SMB" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Small Business" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-T_I
+:USA.H-T_I rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-T_I" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Transportation and Infrastructure Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-VET
+:USA.H-VET rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-VET" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Veterans’ Affairs" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-W_M
+:USA.H-W_M rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.H-W_M" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Committee on Ways and Means" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HELSINKI
+:USA.HELSINKI rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+              <http://www.w3.org/2004/02/skos/core#notation> "USA.HELSINKI" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Commission on Security and Cooperation in Europe" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HHS
+:USA.HHS rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.HHS" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Health and Human Services" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HMM
+:USA.HMM rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.HMM" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Holocaust Memorial Museum" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HPSCI
+:USA.HPSCI rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.HPSCI" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "House Permanent Select Committee on Intelligence" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HSTSF
+:USA.HSTSF rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.HSTSF" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Harry S. Truman Scholarship Foundation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HUD
+:USA.HUD rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.HUD" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Housing and Urban Development" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IACB
+:USA.IACB rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.IACB" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Indian Arts and Crafts Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IADRWG
+:USA.IADRWG rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.IADRWG" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Interagency Alternative Dispute Resolution Working Group" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IAF
+:USA.IAF rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.IAF" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Inter-American Foundation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IBB
+:USA.IBB rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.IBB" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "International Broadcasting Bureau" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ICH
+:USA.ICH rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.ICH" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Interagency Council on Homelessness" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ICPRB
+:USA.ICPRB rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.ICPRB" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Interstate Commission on the Potomac River Basin" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IMCNHCC
+:USA.IMCNHCC rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+             <http://www.w3.org/2004/02/skos/core#notation> "USA.IMCNHCC" ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Illinois and Michigan Canal National Heritage Corridor Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IMLS
+:USA.IMLS rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.IMLS" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Institute of Museum and Library Services" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ITC
+:USA.ITC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.ITC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "United States International Trade Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.J-JCP
+:USA.J-JCP rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.J-JCP" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Joint Committee on Printing" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.J-JCT
+:USA.J-JCT rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.J-JCT" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Joint Committee on Taxation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.J-JEC
+:USA.J-JEC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.J-JEC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Joint Economic Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JBEA
+:USA.JBEA rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.JBEA" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Joint Board for the Enrollment of Actuaries" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JCLDS
+:USA.JCLDS rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.JCLDS" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Joint Committee on the Library" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JFSP
+:USA.JFSP rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.JFSP" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Joint Fire Science Program" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JMMFF
+:USA.JMMFF rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.JMMFF" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "James Madison Memorial Fellowship Foundation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JUSFC
+:USA.JUSFC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.JUSFC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Japan-United States Friendship Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JWFFSB
+:USA.JWFFSB rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.JWFFSB" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "J. William Fulbright Foreign Scholarship Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.LOC
+:USA.LOC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.LOC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Library of Congress" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.LSC
+:USA.LSC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.LSC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal Services Corporation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MACPAC
+:USA.MACPAC rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.MACPAC" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Medicaid and CHIP Payment and Access Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MBCC
+:USA.MBCC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.MBCC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Migratory Bird Conservation Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MCC
+:USA.MCC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.MCC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Millennium Challenge Corporation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MKUF
+:USA.MKUF rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.MKUF" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Morris K. Udall Foundation: Scholarship and Excellence in National Environmental Policy" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MMC
+:USA.MMC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.MMC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Marine Mammal Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MRC
+:USA.MRC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.MRC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Mississippi River Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MSPB
+:USA.MSPB rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.MSPB" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Merit Systems Protection Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MedPAC
+:USA.MedPAC rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.MedPAC" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Medicare Payment Advisory Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NARA
+:USA.NARA rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.NARA" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "National Archives and Records Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NASA
+:USA.NASA rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.NASA" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "National Aeronautics and Space Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NBCFM
+:USA.NBCFM rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.NBCFM" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "National Bipartisan Commission on the Future of Medicare" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCD
+:USA.NCD rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NCD" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "National Council on Disability" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCFRR
+:USA.NCFRR rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.NCFRR" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "National Commission on Fiscal Responsibility and Reform" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCPC
+:USA.NCPC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.NCPC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "National Capital Planning Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCUA
+:USA.NCUA rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.NCUA" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "National Credit Union Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NEA
+:USA.NEA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NEA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "National Endowment for the Arts" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NEH
+:USA.NEH rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NEH" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "National Endowment for the Humanities" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NGA
+:USA.NGA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NGA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "National Geospatial-Intelligence Agency" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NIGC
+:USA.NIGC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.NIGC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "National Indian Gaming Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NLRB
+:USA.NLRB rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.NLRB" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "National Labor Relations Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NMB
+:USA.NMB rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NMB" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "National Mediation Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NPF
+:USA.NPF rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NPF" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "National Park Foundation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NPPC
+:USA.NPPC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.NPPC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Northwest Power Planning Council" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NRC
+:USA.NRC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NRC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Regulatory Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NRO
+:USA.NRO rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NRO" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "National Reconnaissance Office" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NSA
+:USA.NSA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NSA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "National Security Agency" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NSF
+:USA.NSF rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.NSF" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "National Science Foundation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NTSB
+:USA.NTSB rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.NTSB" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "National Transportation Safety Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NWTRB
+:USA.NWTRB rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.NWTRB" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Waste Technical Review Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OGE
+:USA.OGE rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.OGE" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Government Ethics" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OMB
+:USA.OMB rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.OMB" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Management and Budget" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ONCIX
+:USA.ONCIX rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.ONCIX" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the National Counterintelligence Executive" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OPIC
+:USA.OPIC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.OPIC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Overseas Private Investment Corporation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OPM
+:USA.OPM rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.OPM" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Personnel Management" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OSC
+:USA.OSC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.OSC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Special Counsel" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OSHRC
+:USA.OSHRC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.OSHRC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Occupational Safety and Health Review Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OVP
+:USA.OVP rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.OVP" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the Vice President" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OWLC
+:USA.OWLC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.OWLC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Open World Leadership Center" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OtherUSG
+:USA.OtherUSG rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+              <http://www.w3.org/2004/02/skos/core#notation> "USA.OtherUSG" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Other United State Federal Government" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PBGC
+:USA.PBGC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.PBGC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Pension Benefit Guaranty Corporation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PCC
+:USA.PCC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.PCC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Panama Canal Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PEACE
+:USA.PEACE rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.PEACE" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Peace Corps" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PRC
+:USA.PRC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.PRC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Postal Regulatory Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PRESIDIO
+:USA.PRESIDIO rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+              <http://www.w3.org/2004/02/skos/core#notation> "USA.PRESIDIO" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Presidio Trust" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.RISC
+:USA.RISC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.RISC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Regulatory Information Service Center" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.RRB
+:USA.RRB rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.RRB" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Railroad Retirement Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-AGE
+:USA.S-AGE rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-AGE" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Special Committee on Aging" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-AGR
+:USA.S-AGR rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-AGR" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Agriculture, Nutrition, and Forestry" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-APP
+:USA.S-APP rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-APP" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Appropriations" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-ARM
+:USA.S-ARM rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-ARM" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Armed Services" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-BNK
+:USA.S-BNK rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-BNK" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Banking, Housing, and Urban Affairs" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-BUD
+:USA.S-BUD rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-BUD" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Budget Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-CHAP
+:USA.S-CHAP rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.S-CHAP" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Office of the Chaplain" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-COE
+:USA.S-COE rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-COE" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Select Committee on Ethics" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-CST
+:USA.S-CST rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-CST" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Commerce, Science, and Transportation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-ENR
+:USA.S-ENR rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-ENR" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Energy and Natural Resources" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-EPW
+:USA.S-EPW rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-EPW" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Environment and Public Works" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-FIN
+:USA.S-FIN rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-FIN" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Finance" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-FOR
+:USA.S-FOR rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-FOR" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Foreign Relations" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-HELP
+:USA.S-HELP rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.S-HELP" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Health, Education, Labor, and Pensions" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-HSG
+:USA.S-HSG rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-HSG" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Homeland Security and Governmental Affairs" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-IND
+:USA.S-IND rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-IND" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Indian Affairs" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-JUD
+:USA.S-JUD rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-JUD" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on the Judiciary" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-LDRS
+:USA.S-LDRS rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+            <http://www.w3.org/2004/02/skos/core#notation> "USA.S-LDRS" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Leadership" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-MAJSEC
+:USA.S-MAJSEC rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+              <http://www.w3.org/2004/02/skos/core#notation> "USA.S-MAJSEC" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Office of the Secretary for the Majority" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-MINSEC
+:USA.S-MINSEC rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+              <http://www.w3.org/2004/02/skos/core#notation> "USA.S-MINSEC" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Office of the Secretary for the Minority" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-PAR
+:USA.S-PAR rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-PAR" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Office of the Parliamentarian" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-R_A
+:USA.S-R_A rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-R_A" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Rules and Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-SAA
+:USA.S-SAA rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-SAA" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Office of the Sergeant at Arms" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-SEC
+:USA.S-SEC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-SEC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the Secretary of the Senate" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-SMB
+:USA.S-SMB rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-SMB" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Small Business and Entrepreneurship" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-VET
+:USA.S-VET rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.S-VET" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Committee on Veterans’ Affairs" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SBA
+:USA.SBA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.SBA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Small Business Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SCPS
+:USA.SCPS rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.SCPS" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Stennis Center for Public Service" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SEC
+:USA.SEC rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.SEC" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Securities and Exchange Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SJI
+:USA.SJI rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.SJI" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "State Justice Institute" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SLT
+:USA.SLT rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.SLT" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "State, Local, Tribal Government" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SMITH
+:USA.SMITH rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.SMITH" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Smithsonian Institution" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SRBC
+:USA.SRBC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.SRBC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Susquehanna River Basin Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSA
+:USA.SSA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.SSA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Social Security Administration" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSAB
+:USA.SSAB rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.SSAB" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Social Security Advisory Board" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSCI
+:USA.SSCI rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.SSCI" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Senate Select Committee on Intelligence" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSS
+:USA.SSS rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.SSS" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Selective Service System" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.STATE
+:USA.STATE rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.STATE" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of State" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TAP
+:USA.TAP rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.TAP" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Taxpayer Advocacy Panel" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TDA
+:USA.TDA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.TDA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "U.S. Trade and Development Agency" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TREAS
+:USA.TREAS rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.TREAS" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of the Treasury" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TVA
+:USA.TVA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.TVA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Tennessee Valley Authority" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USA
+:USA.USA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.USA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "US Army" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USAF
+:USA.USAF rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USAF" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "US Air Force" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USAID
+:USA.USAID rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.USAID" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Agency for International Development" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USAOC
+:USA.USAOC rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.USAOC" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "U.S. AbilityOne Commission" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USBG
+:USA.USBG rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USBG" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "U.S. Botanic Garden" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USCG
+:USA.USCG rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USCG" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "US Coast Guard" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USCO
+:USA.USCO rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USCO" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Copyright Office" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USCP
+:USA.USCP rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USCP" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "U.S. Capitol Police" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USDA
+:USA.USDA rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USDA" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Agriculture" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USIP
+:USA.USIP rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USIP" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Institute of Peace" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USMC
+:USA.USMC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USMC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "US Marine Corps" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USN
+:USA.USN rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.USN" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "US Navy" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USPS
+:USA.USPS rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USPS" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Postal Service" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USSF
+:USA.USSF rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USSF" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Space Force" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USTR
+:USA.USTR rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USTR" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Office of the Trade Representative" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USUN
+:USA.USUN rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.USUN" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Mission to the United Nations" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.VA
+:USA.VA rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+        <http://www.w3.org/2004/02/skos/core#notation> "USA.VA" ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Veterans Affairs" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.VDNC
+:USA.VDNC rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.VDNC" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Veterans Day National Committee" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.VEF
+:USA.VEF rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+         <http://www.w3.org/2004/02/skos/core#notation> "USA.VEF" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Vietnam Educational Foundation" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.WHCPS
+:USA.WHCPS rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+           <http://www.w3.org/2004/02/skos/core#notation> "USA.WHCPS" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "White House Commission on Presidential Scholars: Presidential Scholars Program" .
+
+
+###  urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.WHMO
+:USA.WHMO rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumUSAgencyAcronym ;
+          <http://www.w3.org/2004/02/skos/core#notation> "USA.WHMO" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "White House Military Office" .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

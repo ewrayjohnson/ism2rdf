@@ -1,0 +1,257 @@
+@prefix : <urn:us:gov:ic:cvenum:ism:25x#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:us:gov:ic:cvenum:ism:25x> .
+
+<urn:us:gov:ic:cvenum:ism:25x> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:us:gov:ic:cvenum:ism:25x#AEA
+:AEA rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+     <http://www.w3.org/2004/02/skos/core#notation> "AEA" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "When using a source document that contains portions of Restricted Data (RD) or Formerly Restricted Data (FRD) where the RD/FRD source document(s) do not have declassification instructions, the derivatively classified document shall not contain a declassification date or event on the Declassify On line. The following shall be annotated on the Declassify On line: \"Not Applicable or (N/A) to RD/FRD portions\" and \"See source list for NSI portions\" separated by a period. The source list must include the declassification instruction for each of the source documents classified under E.O. 13526 and shall not appear in the classification authority block" .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#CVEnumISM25X
+:CVEnumISM25X rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+              <http://purl.org/dc/elements/1.1/title> "(U) ism25x:CVEnumISM25X definition" .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#NATO
+:NATO rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "NATO" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Since NATO information is not to be declassified or downgraded without the prior consent of NATO, the “Declassify on” line of documents that commingle information classified by NATO and U.S. classified NSI, will read “N/A to NATO portions. See source list for NSI portions.” The NSI source list will appear beneath the classification authority block in a manner that clearly identifies it as separate and distinct." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#NATO-AEA
+:NATO-AEA rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+          <http://www.w3.org/2004/02/skos/core#notation> "NATO-AEA" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Handles special case of BOTH NATO and AEA as a single exemption." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X1
+:25X1 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "25X1" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal the identity of a confidential human source, a human intelligence source, a relationship with an intelligence or security service of a foreign government or international organization, or a non-human intelligence source; or impair the effectiveness of an intelligence method currently in use, available for use, or under development." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X1-EO-12951
+:25X1-EO-12951 rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+               <http://www.w3.org/2004/02/skos/core#notation> "25X1-EO-12951" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "\"25X1, EO 12951\" (prescribed by the DNI for use on information described in E.O. 12951, Release of Imagery Acquired by Space-Based National Intelligence Reconnaissance Systems)" .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X2
+:25X2 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "25X2" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would assist in the development, production, or use of weapons of mass destruction." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X3
+:25X3 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "25X3" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would impair U.S. cryptologic systems or activities." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X4
+:25X4 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "25X4" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would impair the application of state-of-the-art technology within a U.S. weapon system." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X5
+:25X5 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "25X5" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal formally named or numbered U.S. military war plans that remain in effect, or reveal operational or tactical elements of prior plans that are contained in such active plans;" .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X6
+:25X6 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "25X6" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information, including foreign government information, that would cause serious harm to relations between the United States and a foreign government, or to ongoing diplomatic activities of the United States" .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X7
+:25X7 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "25X7" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would impair the current ability of United States Government officials to protect the President, Vice President, and other protectees for whom protection services, in the interest of the national security, are authorized." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X8
+:25X8 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "25X8" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would seriously impair current national security emergency preparedness plans or reveal current vulnerabilities of systems, installations, or infrastructures relating to the national security." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#25X9
+:25X9 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "25X9" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Violate a statute, treaty, or international agreement that does not permit the automatic or unilateral declassification of information at 25 years." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X1
+:50X1 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "50X1" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "The ISCAP has authorized use of this code in the FBI’s classification guidance (which results in a 75-year classification period) for any agency sourcing/reusing the information." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X1-HUM
+:50X1-HUM rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+          <http://www.w3.org/2004/02/skos/core#notation> "50X1-HUM" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "When the information clearly and demonstrably could be expected to reveal the identity of a confidential human source or a human intelligence source." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X2
+:50X2 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "50X2" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would assist in the development, production, or use of weapons of mass destruction." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X2-WMD
+:50X2-WMD rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+          <http://www.w3.org/2004/02/skos/core#notation> "50X2-WMD" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "When the information clearly and demonstrably could reveal key design concepts of weapons of mass destruction." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X3
+:50X3 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "50X3" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would impair U.S. cryptologic systems or activities." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X4
+:50X4 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "50X4" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would impair the application of state-of-the-art technology within a U.S. weapon system." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X5
+:50X5 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "50X5" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal formally named or numbered U.S. military war plans that remain in effect, or reveal operational or tactical elements of prior plans that are contained in such active plans;" .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X6
+:50X6 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "50X6" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information, including foreign government information, that would cause serious harm to relations between the United States and a foreign government, or to ongoing diplomatic activities of the United States" .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X7
+:50X7 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "50X7" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would impair the current ability of United States Government officials to protect the President, Vice President, and other protectees for whom protection services, in the interest of the national security, are authorized." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X8
+:50X8 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "50X8" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Reveal information that would seriously impair current national security emergency preparedness plans or reveal current vulnerabilities of systems, installations, or infrastructures relating to the national security." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#50X9
+:50X9 rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+      <http://www.w3.org/2004/02/skos/core#notation> "50X9" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Violate a statute, treaty, or international agreement that does not permit the automatic or unilateral declassification of information at 25 years." .
+
+
+###  urn:us:gov:ic:cvenum:ism:25x#75X
+:75X rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISM25X ;
+     <http://www.w3.org/2004/02/skos/core#notation> "75X" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Specific information that has been formally approved by the ISCAP as information that does not permit the automatic or unilateral declassification of information at 75 years." .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

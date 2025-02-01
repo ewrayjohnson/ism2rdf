@@ -1,0 +1,273 @@
+@prefix : <urn:us:gov:ic:cvenum:ism:notice#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:us:gov:ic:cvenum:ism:notice> .
+
+<urn:us:gov:ic:cvenum:ism:notice> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:us:gov:ic:cvenum:ism:notice#CNWDI
+:CNWDI rdf:type owl:NamedIndividual ,
+                <http://www.w3.org/2004/02/skos/core#Concept> ;
+       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+       <http://www.w3.org/2004/02/skos/core#notation> "CNWDI" ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Controled Nuclear Weapon Design Information Warning statement" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#COMSEC
+:COMSEC rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+        <http://www.w3.org/2004/02/skos/core#notation> "COMSEC" ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "COMSEC Notice" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice
+:CVEnumISMNotice rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                 <http://purl.org/dc/elements/1.1/title> "(U) ismnotice:CVEnumISMNotice definition" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#DS
+:DS rdf:type owl:NamedIndividual ,
+             <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+    <http://www.w3.org/2004/02/skos/core#notation> "DS" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "LIMDIS caveat" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#DSEN
+:DSEN rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+      <http://www.w3.org/2004/02/skos/core#notation> "DSEN" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "DSEN Notice" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-A
+:DoD-Dist-A rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-A" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement A from DoD Directive 5230.24" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-B
+:DoD-Dist-B rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-B" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement B from DoD Directive 5230.24" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-C
+:DoD-Dist-C rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-C" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement C from DoD Directive 5230.24" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-D
+:DoD-Dist-D rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-D" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement D from DoD Directive 5230.24" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-E
+:DoD-Dist-E rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-E" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement E from DoD Directive 5230.24" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-F
+:DoD-Dist-F rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-F" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement F from DoD Directive 5230.24" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#FISA
+:FISA rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+      <http://www.w3.org/2004/02/skos/core#notation> "FISA" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "FISA Warning statement" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#FRD
+:FRD rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+     <http://www.w3.org/2004/02/skos/core#notation> "FRD" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "FRD Warning statement" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#GEOCAP
+:GEOCAP rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+        <http://www.w3.org/2004/02/skos/core#notation> "GEOCAP" ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "GEOCAP Warning statement" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#IMC
+:IMC rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+     <http://www.w3.org/2004/02/skos/core#notation> "IMC" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "IMCON Warning statement" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#IMCON_RSEN
+:IMCON_RSEN rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+            <http://www.w3.org/2004/02/skos/core#notation> "IMCON_RSEN" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicates SAT warning statements include IMCON and RSEN markings" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#ITAR-EAR
+:ITAR-EAR rdf:type owl:NamedIndividual ,
+                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+          <http://www.w3.org/2004/02/skos/core#notation> "ITAR-EAR" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Warning statement for International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR) in accordance with DoD 5230.24, Distribution Statements on Technical Documents." .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#LES
+:LES rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+     <http://www.w3.org/2004/02/skos/core#notation> "LES" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "LES Notice" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#LES-NF
+:LES-NF rdf:type owl:NamedIndividual ,
+                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+        <http://www.w3.org/2004/02/skos/core#notation> "LES-NF" ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "LES-NF Notice" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#NATO
+:NATO rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+      <http://www.w3.org/2004/02/skos/core#notation> "NATO" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO Warning statement" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#POC
+:POC rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+     <http://www.w3.org/2004/02/skos/core#notation> "POC" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicates that the contents of this notice specify the contact information for a required point-of-contact." .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#RAWFISA
+:RAWFISA rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+         <http://www.w3.org/2004/02/skos/core#notation> "RAWFISA" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "RAWFISA Warning statement" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#RC_Dissemination_Control_Required
+:RC_Dissemination_Control_Required rdf:type owl:NamedIndividual ,
+                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                   <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+                                   <http://www.w3.org/2004/02/skos/core#notation> "RC_Dissemination_Control_Required" ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "This product was collected in a restricted collection mode. Redaction, chipping and release determination shall not result in more permissive release than NOFORN regardless of the Security Indicator Codes (SIC) associated with the product" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#RD
+:RD rdf:type owl:NamedIndividual ,
+             <http://www.w3.org/2004/02/skos/core#Concept> ;
+    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+    <http://www.w3.org/2004/02/skos/core#notation> "RD" ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "RD Warning statement" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#RSEN
+:RSEN rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+      <http://www.w3.org/2004/02/skos/core#notation> "RSEN" ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Risk Sensitive Notice" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#SSI
+:SSI rdf:type owl:NamedIndividual ,
+              <http://www.w3.org/2004/02/skos/core#Concept> ;
+     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+     <http://www.w3.org/2004/02/skos/core#notation> "SSI" ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicates that this is the notice for Sensitive Security Information" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#US-Person
+:US-Person rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+           <http://www.w3.org/2004/02/skos/core#notation> "US-Person" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "US Person info Notice" .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#pre13526ORCON
+:pre13526ORCON rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNotice ;
+               <http://www.w3.org/2004/02/skos/core#notation> "pre13526ORCON" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicates that an instance document must abide by rules pertaining to ORIGINATOR CONTROLLED data issued prior to Executive Order 13526." .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

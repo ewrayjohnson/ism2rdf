@@ -1,0 +1,267 @@
+@prefix : <urn:us:gov:ic:ism#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:us:gov:ic:ism> .
+
+<urn:us:gov:ic:ism> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+###  urn:us:gov:ic:ism#FGIsourceOpen
+:FGIsourceOpen rdf:type owl:ObjectProperty ;
+               rdfs:range <urn:us:gov:ic:cvenum:ismcat:fgiopen#CVEnumISMCATFGIOpen> ;
+               rdfs:comment "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information is not concealed (also used for cases when the source is unknown)" .
+
+
+###  urn:us:gov:ic:ism#FGIsourceProtected
+:FGIsourceProtected rdf:type owl:ObjectProperty ;
+                    rdfs:range <urn:us:gov:ic:cvenum:ismcat:fgiprotected#CVEnumISMCATFGIProtected> ;
+                    rdfs:comment "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information must be concealed" .
+
+
+###  urn:us:gov:ic:ism#SARIdentifier
+:SARIdentifier rdf:type owl:ObjectProperty ;
+               rdfs:range <urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR> ;
+               rdfs:comment "This attribute is used at both the resource and the portion levels. One or more indicators identifying the defense or intelligence programs for which special access is required. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSAR.xml" .
+
+
+###  urn:us:gov:ic:ism#SCIcontrols
+:SCIcontrols rdf:type owl:ObjectProperty ;
+             rdfs:range <urn:us:gov:ic:cvenum:ism:scicontrols#CVEnumISMSCIControls> ;
+             rdfs:comment "This attribute is used at both the resource and the portion levels. One or more indicators identifying sensitive compartmented information control system(s). It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSCIControls.xml" .
+
+
+###  urn:us:gov:ic:ism#atomicEnergyMarkings
+:atomicEnergyMarkings rdf:type owl:ObjectProperty ;
+                      rdfs:range <urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings> ;
+                      rdfs:comment "Applicable atomic energy information markings for a document or portion" .
+
+
+###  urn:us:gov:ic:ism#classification
+:classification rdf:type owl:ObjectProperty ;
+                rdfs:range <urn:us:gov:ic:cvenum:ism:classification:all#CVEnumISMClassificationAll> ;
+                rdfs:comment "The highest level of classification applicable to the containing document or portion" .
+
+
+###  urn:us:gov:ic:ism#compliesWith
+:compliesWith rdf:type owl:ObjectProperty ;
+              rdfs:range <urn:us:gov:ic:cvenum:ism:complieswith#CVEnumISMCompliesWith> ;
+              rdfs:comment "The ISM rule sets a document complies with" .
+
+
+###  urn:us:gov:ic:ism#cuiBasic
+:cuiBasic rdf:type owl:ObjectProperty ;
+          rdfs:range <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> ;
+          rdfs:comment "Applicable CUI Basic markings for a document or portion" .
+
+
+###  urn:us:gov:ic:ism#cuiSpecified
+:cuiSpecified rdf:type owl:ObjectProperty ;
+              rdfs:range <urn:us:gov:ic:cvenum:ism:cuispecified#CVEnumISMCUISpecified> ;
+              rdfs:comment "Applicable CUI Specified markings for a document or portion" .
+
+
+###  urn:us:gov:ic:ism#declassException
+:declassException rdf:type owl:ObjectProperty ;
+                  rdfs:range <urn:us:gov:ic:cvenum:ism:25x#CVEnumISM25X> ;
+                  rdfs:comment "The exemption from automatic declassification that is claimed for a document" .
+
+
+###  urn:us:gov:ic:ism#displayOnlyTo
+:displayOnlyTo rdf:type owl:ObjectProperty ;
+               rdfs:range <urn:us:gov:ic:cvenum:ismcat:relto#CVEnumISMCATRelTo> ;
+               rdfs:comment "The set of countries and/or international organizations associated with a \"Display Only To\" marking" .
+
+
+###  urn:us:gov:ic:ism#disseminationControls
+:disseminationControls rdf:type owl:ObjectProperty ;
+                       rdfs:range <urn:us:gov:ic:cvenum:ism:dissem#CVEnumISMDissem> ;
+                       rdfs:comment "Applicable dissemination control markings for a document or portion" .
+
+
+###  urn:us:gov:ic:ism#exemptFrom
+:exemptFrom rdf:type owl:ObjectProperty ;
+            rdfs:range <urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom> ;
+            rdfs:comment "Specific exemptions within an ISM rule set that are claimed for a document" .
+
+
+###  urn:us:gov:ic:ism#highWaterNATO
+:highWaterNATO rdf:type owl:ObjectProperty ;
+               rdfs:range <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> ;
+               rdfs:comment "Applicable NATO highwater markings for a document or portion" .
+
+
+###  urn:us:gov:ic:ism#nonICmarkings
+:nonICmarkings rdf:type owl:ObjectProperty ;
+               rdfs:range <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> ;
+               rdfs:comment "One or more indicators of an expansion or limitation on the distribution of a document or portion originating from non-intelligence components" .
+
+
+###  urn:us:gov:ic:ism#nonUSControls
+:nonUSControls rdf:type owl:ObjectProperty ;
+               rdfs:range <urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> ;
+               rdfs:comment "One or more indicators of an expansion or limitation on the distribution of a document or portion originating from non-US components (foreign government or international organization)." .
+
+
+###  urn:us:gov:ic:ism#noticeProseID
+:noticeProseID rdf:type owl:ObjectProperty ;
+               rdfs:range <urn:us:gov:ic:cvenum:ism:noticeprose#CVEnumISMNoticeProse> ;
+               rdfs:comment "An indicator that can be used to identify a security-related notice in an out-of-band fashion without actually having the notice text in the record but rather a notice text prose identifier. This prose identifier maps to the notice text which is stored in a CVE. The permissible values for this attribute are defined in the ISM Notice Prose CVE: CVEnumISMNoticeProse.xml" .
+
+
+###  urn:us:gov:ic:ism#noticeType
+:noticeType rdf:type owl:ObjectProperty ;
+            rdfs:range <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> ;
+            rdfs:comment "An indicator that the containing element contains a security-related notice. This attribute is used to categorize which of the required notices is specified in the element. These categories include those described in the Intelligence Community Markings System Register and Manual, as well as additional well-defined and formally recognized security notice types described in other directives, such as US-Person and DoD Distribution. The element could contain any structure that the implementing schema defines, and rendering details are relegated to the implementing schema. The permissible values for this attribute are defined in the ISM Notice CVE: CVEnumISMNotice.xml" .
+
+
+###  urn:us:gov:ic:ism#ownerProducer
+:ownerProducer rdf:type owl:ObjectProperty ;
+               rdfs:range <urn:us:gov:ic:cvenum:ismcat:ownerproducer#CVEnumISMCATOwnerProducer> ;
+               rdfs:comment "The set of national governments and/or international organizations that have purview over the containing classification marking" .
+
+
+###  urn:us:gov:ic:ism#pocType
+:pocType rdf:type owl:ObjectProperty ;
+         rdfs:range <urn:us:gov:ic:cvenum:ism:pocType#CVEnumISMPocType> ;
+         rdfs:comment "Indicates that the element specifies a point-of-contact (POC) and the methods with which to contact that individual. As certain POCs are required for different reasons (ICD-710 compliance, DoD Distribution statements, etc), the values for this attribute specify the reason(s) why the POC is provided." .
+
+
+###  urn:us:gov:ic:ism#releasableTo
+:releasableTo rdf:type owl:ObjectProperty ;
+              rdfs:range <urn:us:gov:ic:cvenum:ismcat:relto#CVEnumISMCATRelTo> ;
+              rdfs:comment "This attribute is used at both the resource and the portion levels. One or more indicators identifying the country or countries and/or international organization(s) to which classified information may be released based on the determination of an originator in accordance with established foreign disclosure procedures. This element is used in conjunction with the Dissemination Controls element. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMRelTo.xml" .
+
+
+###  urn:us:gov:ic:ism#secondBannerLine
+:secondBannerLine rdf:type owl:ObjectProperty ;
+                  rdfs:range <urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> ;
+                  rdfs:comment "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  urn:us:gov:ic:ism#handleViaChannels
+:handleViaChannels rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Handle VIA Channels that may appear in the second banner line." .
+
+
+###  urn:us:gov:ic:ism#hasApproximateMarkings
+:hasApproximateMarkings rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:boolean ;
+                        rdfs:comment "When true, indicates the ISM markings specified are estimated (e.g. system high)." .
+
+
+###  urn:us:gov:ic:ism#joint
+:joint rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:boolean ;
+       rdfs:comment "When true, an indicator that entities in the @ism:ownerProducer attribute are JOINT owners of the data" .
+
+
+###  urn:us:gov:ic:ism#noAggregation
+:noAggregation rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "When true, an indicator that there is no classification by compilation across any combination of portions extracted from the document." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  urn:us:gov:ic:cvenum:ism:25x#CVEnumISM25X
+<urn:us:gov:ic:cvenum:ism:25x#CVEnumISM25X> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO
+<urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings
+<urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:classification:all#CVEnumISMClassificationAll
+<urn:us:gov:ic:cvenum:ism:classification:all#CVEnumISMClassificationAll> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:complieswith#CVEnumISMCompliesWith
+<urn:us:gov:ic:cvenum:ism:complieswith#CVEnumISMCompliesWith> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic
+<urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:cuispecified#CVEnumISMCUISpecified
+<urn:us:gov:ic:cvenum:ism:cuispecified#CVEnumISMCUISpecified> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:dissem#CVEnumISMDissem
+<urn:us:gov:ic:cvenum:ism:dissem#CVEnumISMDissem> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom
+<urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls
+<urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:noticeprose#CVEnumISMNoticeProse
+<urn:us:gov:ic:cvenum:ism:noticeprose#CVEnumISMNoticeProse> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:pocType#CVEnumISMPocType
+<urn:us:gov:ic:cvenum:ism:pocType#CVEnumISMPocType> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR
+<urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:scicontrols#CVEnumISMSCIControls
+<urn:us:gov:ic:cvenum:ism:scicontrols#CVEnumISMSCIControls> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:fgiopen#CVEnumISMCATFGIOpen
+<urn:us:gov:ic:cvenum:ismcat:fgiopen#CVEnumISMCATFGIOpen> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:fgiprotected#CVEnumISMCATFGIProtected
+<urn:us:gov:ic:cvenum:ismcat:fgiprotected#CVEnumISMCATFGIProtected> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:ownerproducer#CVEnumISMCATOwnerProducer
+<urn:us:gov:ic:cvenum:ismcat:ownerproducer#CVEnumISMCATOwnerProducer> rdf:type owl:Class .
+
+
+###  urn:us:gov:ic:cvenum:ismcat:relto#CVEnumISMCATRelTo
+<urn:us:gov:ic:cvenum:ismcat:relto#CVEnumISMCATRelTo> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

@@ -1,2777 +1,1712 @@
-@prefix : <urn:us:gov:ic:cvenum:ismcat:relto#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ismcatrelto: <urn:us:gov:ic:cvenum:ismcat:relto#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:ismcat:relto> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+skos:inScheme a owl:ObjectProperty .
+
+ismcatrelto:ABW a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ABW" ;
+    skos:prefLabel "Aruba" .
+
+ismcatrelto:ACGU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ACGU" ;
+    skos:prefLabel "FOUR EYES" .
+
+ismcatrelto:AFG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AFG" ;
+    skos:prefLabel "Islamic Republic of Afghanistan" .
+
+ismcatrelto:AGO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AGO" ;
+    skos:prefLabel "Republic of Angola" .
+
+ismcatrelto:AIA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AIA" ;
+    skos:prefLabel "Anguilla" .
+
+ismcatrelto:ALB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ALB" ;
+    skos:prefLabel "Republic of Albania" .
+
+ismcatrelto:AMSP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AMSP" ;
+    skos:prefLabel "AFRICOM Multinational Strategic Partners" .
+
+ismcatrelto:AND a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AND" ;
+    skos:prefLabel "Principality of Andorra" .
+
+ismcatrelto:AOSC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AOSC" ;
+    skos:prefLabel "Athens Olympics Security Coalition" .
+
+ismcatrelto:APFS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "APFS" ;
+    skos:prefLabel "African Peacekeeping Force Somalia" .
+
+ismcatrelto:ARE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ARE" ;
+    skos:prefLabel "United Arab Emirates" .
+
+ismcatrelto:ARG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ARG" ;
+    skos:prefLabel "Argentine Republic" .
+
+ismcatrelto:ARM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ARM" ;
+    skos:prefLabel "Republic of Armenia" .
+
+ismcatrelto:ASEA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ASEA" ;
+    skos:prefLabel "Association of Southeast Asian Nations (ASEAN)" .
+
+ismcatrelto:ASM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ASM" ;
+    skos:prefLabel "Territory of American Samoa" .
+
+ismcatrelto:ATA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ATA" ;
+    skos:prefLabel "Antarctica" .
+
+ismcatrelto:ATF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ATF" ;
+    skos:prefLabel "French Southern and Antarctic Lands" .
+
+ismcatrelto:ATG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ATG" ;
+    skos:prefLabel "Antigua and Barbuda" .
+
+ismcatrelto:AUS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AUS" ;
+    skos:prefLabel "Commonwealth of Australia" .
+
+ismcatrelto:AUSTRALIA_GROUP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AUSTRALIA_GROUP" ;
+    skos:prefLabel "Australia Group" .
+
+ismcatrelto:AUT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AUT" ;
+    skos:prefLabel "Republic of Austria" .
+
+ismcatrelto:AX2 a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AX2" ;
+    skos:prefLabel "Guantanamo Bay Naval Base" .
+
+ismcatrelto:AX3 a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AX3" ;
+    skos:prefLabel "Entity 6" .
+
+ismcatrelto:AZE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "AZE" ;
+    skos:prefLabel "Republic of Azerbaijan" .
+
+ismcatrelto:BDI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BDI" ;
+    skos:prefLabel "Republic of Burundi" .
+
+ismcatrelto:BEL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BEL" ;
+    skos:prefLabel "Kingdom of Belgium" .
+
+ismcatrelto:BEN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BEN" ;
+    skos:prefLabel "Republic of Benin" .
+
+ismcatrelto:BES a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BES" ;
+    skos:prefLabel "Bonaire, Sint Eustatius, and Saba" .
+
+ismcatrelto:BFA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BFA" ;
+    skos:prefLabel "Burkina Faso" .
+
+ismcatrelto:BGD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BGD" ;
+    skos:prefLabel "People’s Republic of Bangladesh" .
+
+ismcatrelto:BGR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BGR" ;
+    skos:prefLabel "Republic of Bulgaria" .
+
+ismcatrelto:BHR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BHR" ;
+    skos:prefLabel "Kingdom of Bahrain" .
+
+ismcatrelto:BHS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BHS" ;
+    skos:prefLabel "Commonwealth of The Bahamas" .
+
+ismcatrelto:BHTF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BHTF" ;
+    skos:prefLabel "Boko Haram Task Force" .
+
+ismcatrelto:BIH a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BIH" ;
+    skos:prefLabel "Bosnia and Herzegovina" .
+
+ismcatrelto:BLM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BLM" ;
+    skos:prefLabel "Saint Barthelemy" .
+
+ismcatrelto:BLR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BLR" ;
+    skos:prefLabel "Republic of Belarus" .
+
+ismcatrelto:BLZ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BLZ" ;
+    skos:prefLabel "Belize" .
+
+ismcatrelto:BMU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BMU" ;
+    skos:prefLabel "Bermuda" .
+
+ismcatrelto:BOL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BOL" ;
+    skos:prefLabel "Plurinational State of Bolivia" .
+
+ismcatrelto:BRA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BRA" ;
+    skos:prefLabel "Federative Republic of Brazil" .
+
+ismcatrelto:BRB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BRB" ;
+    skos:prefLabel "Barbados" .
+
+ismcatrelto:BRN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BRN" ;
+    skos:prefLabel "Brunei Darussalam" .
+
+ismcatrelto:BTN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BTN" ;
+    skos:prefLabel "Kingdom of Bhutan" .
+
+ismcatrelto:BVT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BVT" ;
+    skos:prefLabel "Bouvet Island" .
+
+ismcatrelto:BWA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BWA" ;
+    skos:prefLabel "Republic of Botswana" .
+
+ismcatrelto:BWCS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "BWCS" ;
+    skos:prefLabel "Biological Weapons Convention States" .
+
+ismcatrelto:CAF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CAF" ;
+    skos:prefLabel "Central African Republic" .
+
+ismcatrelto:CAN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CAN" ;
+    skos:prefLabel "Canada" .
+
+ismcatrelto:CCK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CCK" ;
+    skos:prefLabel "Territory of Cocos (Keeling) Islands" .
+
+ismcatrelto:CFCK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CFCK" ;
+    skos:prefLabel "Combined Forces Command Korea" .
+
+ismcatrelto:CFOD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CFOD" ;
+    skos:prefLabel "Coalition Forces Odyssey Dawn" .
+
+ismcatrelto:CFUP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CFUP" ;
+    skos:prefLabel "Coalition Forces Unified Protector" .
+
+ismcatrelto:CHE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CHE" ;
+    skos:prefLabel "Swiss Confederation" .
+
+ismcatrelto:CHL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CHL" ;
+    skos:prefLabel "Republic of Chile" .
+
+ismcatrelto:CHN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CHN" ;
+    skos:prefLabel "People’s Republic of China" .
+
+ismcatrelto:CIV a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CIV" ;
+    skos:prefLabel "Republic of Côte d’Ivoire" .
+
+ismcatrelto:CLFC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CLFC" ;
+    skos:prefLabel "Combined Libya Fusion Cell" .
+
+ismcatrelto:CMFC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CMFC" ;
+    skos:prefLabel "Combined Maritime Forces Central" .
+
+ismcatrelto:CMFP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CMFP" ;
+    skos:prefLabel "Cooperative Maritime Forces Pacific" .
+
+ismcatrelto:CMR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CMR" ;
+    skos:prefLabel "Republic of Cameroon" .
+
+ismcatrelto:COD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "COD" ;
+    skos:prefLabel "Democratic Republic of the Congo" .
+
+ismcatrelto:COG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "COG" ;
+    skos:prefLabel "Republic of the Congo" .
+
+ismcatrelto:COK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "COK" ;
+    skos:prefLabel "Cook Islands" .
+
+ismcatrelto:COL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "COL" ;
+    skos:prefLabel "Republic of Colombia" .
+
+ismcatrelto:COM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "COM" ;
+    skos:prefLabel "Union of the Comoros" .
+
+ismcatrelto:CPMT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CPMT" ;
+    skos:prefLabel "Civilian Protection Monitoring Team for Sudan" .
+
+ismcatrelto:CPT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CPT" ;
+    skos:prefLabel "Clipperton Island" .
+
+ismcatrelto:CPV a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CPV" ;
+    skos:prefLabel "Republic of Cabo Verde" .
+
+ismcatrelto:CRI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CRI" ;
+    skos:prefLabel "Republic of Costa Rica" .
+
+ismcatrelto:CTOC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CTOC" ;
+    skos:prefLabel "Countering Transnational Organized Crime" .
+
+ismcatrelto:CUB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CUB" ;
+    skos:prefLabel "Republic of Cuba" .
+
+ismcatrelto:CUW a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CUW" ;
+    skos:prefLabel "Curaçao" .
+
+ismcatrelto:CWCS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CWCS" ;
+    skos:prefLabel "Chemical Weapons Convention States" .
+
+ismcatrelto:CXR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CXR" ;
+    skos:prefLabel "Territory of Christmas Island" .
+
+ismcatrelto:CYM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CYM" ;
+    skos:prefLabel "Cayman Islands" .
+
+ismcatrelto:CYP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CYP" ;
+    skos:prefLabel "Republic of Cyprus" .
+
+ismcatrelto:CZE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "CZE" ;
+    skos:prefLabel "Czech Republic" .
+
+ismcatrelto:DEU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "DEU" ;
+    skos:prefLabel "Federal Republic of Germany" .
+
+ismcatrelto:DGA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "DGA" ;
+    skos:prefLabel "Diego Garcia" .
+
+ismcatrelto:DJI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "DJI" ;
+    skos:prefLabel "Republic of Djibouti" .
+
+ismcatrelto:DMA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "DMA" ;
+    skos:prefLabel "Commonwealth of Dominica" .
+
+ismcatrelto:DNK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "DNK" ;
+    skos:prefLabel "Kingdom of Denmark" .
+
+ismcatrelto:DOM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "DOM" ;
+    skos:prefLabel "Dominican Republic" .
+
+ismcatrelto:DZA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "DZA" ;
+    skos:prefLabel "People’s Democratic Republic of Algeria" .
+
+ismcatrelto:ECTF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ECTF" ;
+    skos:prefLabel "European Counter-Terrorism Forces" .
+
+ismcatrelto:ECU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ECU" ;
+    skos:prefLabel "Republic of Ecuador" .
+
+ismcatrelto:EFOR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "EFOR" ;
+    skos:prefLabel "European Union Stabilization Forces in Bosnia" .
+
+ismcatrelto:EGY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "EGY" ;
+    skos:prefLabel "Arab Republic of Egypt" .
+
+ismcatrelto:ERI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ERI" ;
+    skos:prefLabel "State of Eritrea" .
+
+ismcatrelto:ESH a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ESH" ;
+    skos:prefLabel "Western Sahara" .
+
+ismcatrelto:ESP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ESP" ;
+    skos:prefLabel "Kingdom of Spain" .
+
+ismcatrelto:EST a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "EST" ;
+    skos:prefLabel "Republic of Estonia" .
+
+ismcatrelto:ETH a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ETH" ;
+    skos:prefLabel "Federal Democratic Republic of Ethiopia" .
+
+ismcatrelto:EU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "EU" ;
+    skos:prefLabel "European Union" .
+
+ismcatrelto:EUDA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "EUDA" ;
+    skos:prefLabel "European Union DARFUR" .
+
+ismcatrelto:FIN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "FIN" ;
+    skos:prefLabel "Republic of Finland" .
+
+ismcatrelto:FJI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "FJI" ;
+    skos:prefLabel "Republic of Fiji" .
+
+ismcatrelto:FLK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "FLK" ;
+    skos:prefLabel "Falkland Islands (Islas Malvinas)" .
+
+ismcatrelto:FRA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "FRA" ;
+    skos:prefLabel "French Republic" .
+
+ismcatrelto:FRME a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "FRME" ;
+    skos:prefLabel "Counter Violent Extremist Organizations Framework Partners" .
+
+ismcatrelto:FRO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "FRO" ;
+    skos:prefLabel "Faroe Islands" .
+
+ismcatrelto:FSM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "FSM" ;
+    skos:prefLabel "Federated States of Micronesia" .
+
+ismcatrelto:FVEY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "FVEY" ;
+    skos:prefLabel "FIVE EYES" .
+
+ismcatrelto:GAB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GAB" ;
+    skos:prefLabel "Gabonese Republic" .
+
+ismcatrelto:GBR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GBR" ;
+    skos:prefLabel "United Kingdom of Great Britain and Northern Ireland" .
+
+ismcatrelto:GCCH a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GCCH" ;
+    skos:prefLabel "Gulf Cooperation Council" .
+
+ismcatrelto:GCTF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GCTF" ;
+    skos:prefLabel "Global Counter-Terrorism Forces" .
+
+ismcatrelto:GEO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GEO" ;
+    skos:prefLabel "Georgia" .
+
+ismcatrelto:GFNX a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GFNX" ;
+    skos:prefLabel "Global Foreign Terrorist Fighter Network Exchange" .
+
+ismcatrelto:GGY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GGY" ;
+    skos:prefLabel "Bailiwick of Guernsey" .
+
+ismcatrelto:GHA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GHA" ;
+    skos:prefLabel "Republic of Ghana" .
+
+ismcatrelto:GIB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GIB" ;
+    skos:prefLabel "Gibraltar" .
+
+ismcatrelto:GIN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GIN" ;
+    skos:prefLabel "Republic of Guinea" .
+
+ismcatrelto:GLP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GLP" ;
+    skos:prefLabel "Region of Guadeloupe" .
+
+ismcatrelto:GMB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GMB" ;
+    skos:prefLabel "Republic of The Gambia" .
+
+ismcatrelto:GMIF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GMIF" ;
+    skos:prefLabel "Global Maritime Interception Forces" .
+
+ismcatrelto:GNB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GNB" ;
+    skos:prefLabel "Republic of Guinea-Bissau" .
+
+ismcatrelto:GNQ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GNQ" ;
+    skos:prefLabel "Republic of Equatorial Guinea" .
+
+ismcatrelto:GRC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GRC" ;
+    skos:prefLabel "Hellenic Republic" .
+
+ismcatrelto:GRD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GRD" ;
+    skos:prefLabel "Grenada" .
+
+ismcatrelto:GRL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GRL" ;
+    skos:prefLabel "Greenland" .
+
+ismcatrelto:GTM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GTM" ;
+    skos:prefLabel "Republic of Guatemala" .
+
+ismcatrelto:GUF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GUF" ;
+    skos:prefLabel "Territorial Collectivity of Guiana" .
+
+ismcatrelto:GUM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GUM" ;
+    skos:prefLabel "Territory of Guam" .
+
+ismcatrelto:GUY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "GUY" ;
+    skos:prefLabel "Co-operative Republic of Guyana" .
+
+ismcatrelto:HKG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "HKG" ;
+    skos:prefLabel "Hong Kong Special Administrative Region" .
+
+ismcatrelto:HMD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "HMD" ;
+    skos:prefLabel "Territory of Heard Island and McDonald Islands" .
+
+ismcatrelto:HND a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "HND" ;
+    skos:prefLabel "Republic of Honduras" .
+
+ismcatrelto:HRV a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "HRV" ;
+    skos:prefLabel "Republic of Croatia" .
+
+ismcatrelto:HTI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "HTI" ;
+    skos:prefLabel "Republic of Haiti" .
+
+ismcatrelto:HUN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "HUN" ;
+    skos:prefLabel "Hungary" .
+
+ismcatrelto:IDN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IDN" ;
+    skos:prefLabel "Republic of Indonesia" .
+
+ismcatrelto:IESC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IESC" ;
+    skos:prefLabel "International Events Security Coalition" .
+
+ismcatrelto:IMN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IMN" ;
+    skos:prefLabel "Isle of Man" .
+
+ismcatrelto:IMSC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IMSC" ;
+    skos:prefLabel "International Maritime Security Construct" .
+
+ismcatrelto:IMSP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IMSP" ;
+    skos:prefLabel "INDOPACOM Multinational Strategic Partners" .
+
+ismcatrelto:IND a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IND" ;
+    skos:prefLabel "Republic of India" .
+
+ismcatrelto:IOT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IOT" ;
+    skos:prefLabel "British Indian Ocean Territory" .
+
+ismcatrelto:IPMC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IPMC" ;
+    skos:prefLabel "INDO PACIFIC Maritime Call" .
+
+ismcatrelto:IRKS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IRKS" ;
+    skos:prefLabel "Inherent Resolve Kinetic Support" .
+
+ismcatrelto:IRL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IRL" ;
+    skos:prefLabel "Ireland" .
+
+ismcatrelto:IRN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IRN" ;
+    skos:prefLabel "Islamic Republic of Iran" .
+
+ismcatrelto:IRQ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "IRQ" ;
+    skos:prefLabel "Republic of Iraq" .
+
+ismcatrelto:ISAF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ISAF" ;
+    skos:prefLabel "International Security Assistance Force for Afghanistan" .
+
+ismcatrelto:ISL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ISL" ;
+    skos:prefLabel "Republic of Iceland" .
+
+ismcatrelto:ISR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ISR" ;
+    skos:prefLabel "State of Israel" .
+
+ismcatrelto:ISSG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ISSG" ;
+    skos:prefLabel "International Syria Support Group" .
+
+ismcatrelto:ITA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ITA" ;
+    skos:prefLabel "Italian Republic" .
+
+ismcatrelto:JAM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "JAM" ;
+    skos:prefLabel "Jamaica" .
+
+ismcatrelto:JEY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "JEY" ;
+    skos:prefLabel "Bailiwick of Jersey" .
+
+ismcatrelto:JOR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "JOR" ;
+    skos:prefLabel "Hashemite Kingdom of Jordan" .
+
+ismcatrelto:JPN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "JPN" ;
+    skos:prefLabel "Japan" .
+
+ismcatrelto:KAZ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "KAZ" ;
+    skos:prefLabel "Republic of Kazakhstan" .
+
+ismcatrelto:KEN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "KEN" ;
+    skos:prefLabel "Republic of Kenya" .
+
+ismcatrelto:KFOR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "KFOR" ;
+    skos:prefLabel "Stabilization Forces in Kosovo" .
+
+ismcatrelto:KGZ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "KGZ" ;
+    skos:prefLabel "Kyrgyz Republic" .
+
+ismcatrelto:KHM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "KHM" ;
+    skos:prefLabel "Kingdom of Cambodia" .
+
+ismcatrelto:KIR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "KIR" ;
+    skos:prefLabel "Republic of Kiribati" .
+
+ismcatrelto:KNA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "KNA" ;
+    skos:prefLabel "Federation of Saint Kitts and Nevis" .
+
+ismcatrelto:KOR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "KOR" ;
+    skos:prefLabel "Republic of Korea" .
+
+ismcatrelto:KWT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "KWT" ;
+    skos:prefLabel "State of Kuwait" .
+
+ismcatrelto:LAO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LAO" ;
+    skos:prefLabel "Lao People’s Democratic Republic" .
+
+ismcatrelto:LBN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LBN" ;
+    skos:prefLabel "Lebanese Republic" .
+
+ismcatrelto:LBR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LBR" ;
+    skos:prefLabel "Republic of Liberia" .
+
+ismcatrelto:LBY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LBY" ;
+    skos:prefLabel "State of Libya" .
+
+ismcatrelto:LCA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LCA" ;
+    skos:prefLabel "Saint Lucia" .
+
+ismcatrelto:LIE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LIE" ;
+    skos:prefLabel "Principality of Liechtenstein" .
+
+ismcatrelto:LKA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LKA" ;
+    skos:prefLabel "Democratic Socialist Republic of Sri Lanka" .
+
+ismcatrelto:LSO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LSO" ;
+    skos:prefLabel "Kingdom of Lesotho" .
+
+ismcatrelto:LTU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LTU" ;
+    skos:prefLabel "Republic of Lithuania" .
+
+ismcatrelto:LUX a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LUX" ;
+    skos:prefLabel "Grand Duchy of Luxembourg" .
+
+ismcatrelto:LVA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "LVA" ;
+    skos:prefLabel "Republic of Latvia" .
+
+ismcatrelto:MAC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MAC" ;
+    skos:prefLabel "Macau Special Administrative Region" .
+
+ismcatrelto:MAF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MAF" ;
+    skos:prefLabel "Saint Martin" .
+
+ismcatrelto:MAR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MAR" ;
+    skos:prefLabel "Kingdom of Morocco" .
+
+ismcatrelto:MCFI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MCFI" ;
+    skos:prefLabel "Multinational Coalition Forces-Iraq" .
+
+ismcatrelto:MCO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MCO" ;
+    skos:prefLabel "Principality of Monaco" .
+
+ismcatrelto:MDA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MDA" ;
+    skos:prefLabel "Republic of Moldova" .
+
+ismcatrelto:MDG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MDG" ;
+    skos:prefLabel "Republic of Madagascar" .
+
+ismcatrelto:MDV a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MDV" ;
+    skos:prefLabel "Republic of Maldives" .
+
+ismcatrelto:MESF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MESF" ;
+    skos:prefLabel "Middle East Stability Force" .
+
+ismcatrelto:MEX a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MEX" ;
+    skos:prefLabel "United Mexican States" .
+
+ismcatrelto:MGEU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MGEU" ;
+    skos:prefLabel "Multinational GEOINT Europe" .
+
+ismcatrelto:MHL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MHL" ;
+    skos:prefLabel "Republic of the Marshall Islands" .
+
+ismcatrelto:MIFH a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MIFH" ;
+    skos:prefLabel "Multinational Interim Force Haiti" .
+
+ismcatrelto:MKD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MKD" ;
+    skos:prefLabel "Republic of North Macedonia" .
+
+ismcatrelto:MLEC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MLEC" ;
+    skos:prefLabel "Multi-Lateral Enduring Contingency" .
+
+ismcatrelto:MLI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MLI" ;
+    skos:prefLabel "Republic of Mali" .
+
+ismcatrelto:MLT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MLT" ;
+    skos:prefLabel "Republic of Malta" .
+
+ismcatrelto:MMR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MMR" ;
+    skos:prefLabel "Union of Burma" .
+
+ismcatrelto:MNE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MNE" ;
+    skos:prefLabel "Montenegro" .
+
+ismcatrelto:MNG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MNG" ;
+    skos:prefLabel "Mongolia" .
+
+ismcatrelto:MNP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MNP" ;
+    skos:prefLabel "Commonwealth of the Northern Mariana Islands" .
+
+ismcatrelto:MNTF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MNTF" ;
+    skos:prefLabel "Multinational Task Force" .
+
+ismcatrelto:MOZ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MOZ" ;
+    skos:prefLabel "Republic of Mozambique" .
+
+ismcatrelto:MPFL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MPFL" ;
+    skos:prefLabel "Multinational Peacekeeping Forces" .
+
+ismcatrelto:MRT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MRT" ;
+    skos:prefLabel "Islamic Republic of Mauritania" .
+
+ismcatrelto:MSR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MSR" ;
+    skos:prefLabel "Montserrat" .
+
+ismcatrelto:MTQ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MTQ" ;
+    skos:prefLabel "Territorial Collectivity of Martinique" .
+
+ismcatrelto:MUS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MUS" ;
+    skos:prefLabel "Republic of Mauritius" .
+
+ismcatrelto:MWI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MWI" ;
+    skos:prefLabel "Republic of Malawi" .
+
+ismcatrelto:MYS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MYS" ;
+    skos:prefLabel "Malaysia" .
+
+ismcatrelto:MYT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "MYT" ;
+    skos:prefLabel "Department of Mayotte" .
+
+ismcatrelto:NACT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NACT" ;
+    skos:prefLabel "North African Counter-Terrorism Forces" .
+
+ismcatrelto:NAM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NAM" ;
+    skos:prefLabel "Republic of Namibia" .
+
+ismcatrelto:NATO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NATO" ;
+    skos:prefLabel "North Atlantic Treaty Organization" .
+
+ismcatrelto:NCFE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NCFE" ;
+    skos:prefLabel "NATO CFE Treaty on Conventional Armed Forces in Europe" .
+
+ismcatrelto:NCL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NCL" ;
+    skos:prefLabel "New Caledonia" .
+
+ismcatrelto:NER a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NER" ;
+    skos:prefLabel "Republic of Niger" .
+
+ismcatrelto:NFK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NFK" ;
+    skos:prefLabel "Territory of Norfolk Island" .
+
+ismcatrelto:NGA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NGA" ;
+    skos:prefLabel "Federal Republic of Nigeria" .
+
+ismcatrelto:NIC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NIC" ;
+    skos:prefLabel "Republic of Nicaragua" .
+
+ismcatrelto:NIU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NIU" ;
+    skos:prefLabel "Niue" .
+
+ismcatrelto:NKIC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NKIC" ;
+    skos:prefLabel "North Korea Intelligence Coalition" .
+
+ismcatrelto:NLD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NLD" ;
+    skos:prefLabel "Kingdom of the Netherlands" .
+
+ismcatrelto:NOR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NOR" ;
+    skos:prefLabel "Kingdom of Norway" .
+
+ismcatrelto:NPL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NPL" ;
+    skos:prefLabel "Federal Democratic Republic of Nepal" .
+
+ismcatrelto:NRDC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NRDC" ;
+    skos:prefLabel "NORDIC" .
+
+ismcatrelto:NRU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NRU" ;
+    skos:prefLabel "Republic of Nauru" .
+
+ismcatrelto:NSG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NSG" ;
+    skos:prefLabel "Nuclear Suppliers' Group" .
+
+ismcatrelto:NZL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "NZL" ;
+    skos:prefLabel "New Zealand" .
+
+ismcatrelto:OMN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "OMN" ;
+    skos:prefLabel "Sultanate of Oman" .
+
+ismcatrelto:OSAG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "OSAG" ;
+    skos:prefLabel "Olympic Security Advisory Group" .
+
+ismcatrelto:OSTY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "OSTY" ;
+    skos:prefLabel "Open Skies Treaty" .
+
+ismcatrelto:PAK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PAK" ;
+    skos:prefLabel "Islamic Republic of Pakistan" .
+
+ismcatrelto:PAN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PAN" ;
+    skos:prefLabel "Republic of Panama" .
+
+ismcatrelto:PAWA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PAWA" ;
+    skos:prefLabel "Partnership for Actions in West Africa" .
+
+ismcatrelto:PCN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PCN" ;
+    skos:prefLabel "Pitcairn, Henderson, Ducie, and Oeno Islands" .
+
+ismcatrelto:PER a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PER" ;
+    skos:prefLabel "Republic of Peru" .
+
+ismcatrelto:PGMF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PGMF" ;
+    skos:prefLabel "Persian Gulf Multinational Forces" .
+
+ismcatrelto:PHL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PHL" ;
+    skos:prefLabel "Republic of the Philippines" .
+
+ismcatrelto:PLW a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PLW" ;
+    skos:prefLabel "Republic of Palau" .
+
+ismcatrelto:PNG a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PNG" ;
+    skos:prefLabel "Independent State of Papua New Guinea" .
+
+ismcatrelto:POL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "POL" ;
+    skos:prefLabel "Republic of Poland" .
+
+ismcatrelto:PRI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PRI" ;
+    skos:prefLabel "Commonwealth of Puerto Rico" .
+
+ismcatrelto:PRK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PRK" ;
+    skos:prefLabel "Democratic People’s Republic of Korea" .
+
+ismcatrelto:PRT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PRT" ;
+    skos:prefLabel "Portuguese Republic" .
+
+ismcatrelto:PRY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PRY" ;
+    skos:prefLabel "Republic of Paraguay" .
+
+ismcatrelto:PSMX a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PSMX" ;
+    skos:prefLabel "Pacific Security Monitoring Exchange" .
+
+ismcatrelto:PYF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "PYF" ;
+    skos:prefLabel "French Polynesia" .
+
+ismcatrelto:QAT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "QAT" ;
+    skos:prefLabel "State of Qatar" .
+
+ismcatrelto:REU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "REU" ;
+    skos:prefLabel "Region of Reunion" .
+
+ismcatrelto:RISC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "RISC" ;
+    skos:prefLabel "Russia Intelligence Sharing Coalition" .
+
+ismcatrelto:ROU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ROU" ;
+    skos:prefLabel "Romania" .
+
+ismcatrelto:RSMA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "RSMA" ;
+    skos:prefLabel "Resolute Support Mission Afghanistan" .
+
+ismcatrelto:RUS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "RUS" ;
+    skos:prefLabel "Russian Federation" .
+
+ismcatrelto:RWA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "RWA" ;
+    skos:prefLabel "Republic of Rwanda" .
+
+ismcatrelto:SAU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SAU" ;
+    skos:prefLabel "Kingdom of Saudi Arabia" .
+
+ismcatrelto:SDN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SDN" ;
+    skos:prefLabel "Republic of the Sudan" .
+
+ismcatrelto:SEN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SEN" ;
+    skos:prefLabel "Republic of Senegal" .
+
+ismcatrelto:SFOR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SFOR" ;
+    skos:prefLabel "Stabilization Force" .
+
+ismcatrelto:SGP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SGP" ;
+    skos:prefLabel "Republic of Singapore" .
+
+ismcatrelto:SGS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SGS" ;
+    skos:prefLabel "South Georgia and the South Sandwich Islands" .
+
+ismcatrelto:SHN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SHN" ;
+    skos:prefLabel "Saint Helena, Ascension, and Tristan da Cunha" .
+
+ismcatrelto:SLB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SLB" ;
+    skos:prefLabel "Solomon Islands" .
+
+ismcatrelto:SLE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SLE" ;
+    skos:prefLabel "Republic of Sierra Leone" .
+
+ismcatrelto:SLV a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SLV" ;
+    skos:prefLabel "Republic of El Salvador" .
+
+ismcatrelto:SMR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SMR" ;
+    skos:prefLabel "Republic of San Marino" .
+
+ismcatrelto:SOFP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SOFP" ;
+    skos:prefLabel "Special Operations Forces Partners" .
+
+ismcatrelto:SOM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SOM" ;
+    skos:prefLabel "Federal Republic of Somalia" .
+
+ismcatrelto:SPAA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SPAA" ;
+    skos:prefLabel "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")" .
+
+ismcatrelto:SPM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SPM" ;
+    skos:prefLabel "Territorial Collectivity of Saint Pierre and Miquelon" .
+
+ismcatrelto:SRB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SRB" ;
+    skos:prefLabel "Republic of Serbia" .
+
+ismcatrelto:SSD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SSD" ;
+    skos:prefLabel "Republic of South Sudan" .
+
+ismcatrelto:STP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "STP" ;
+    skos:prefLabel "Democratic Republic of Sao Tome and Principe" .
+
+ismcatrelto:SUR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SUR" ;
+    skos:prefLabel "Republic of Suriname" .
+
+ismcatrelto:SVK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SVK" ;
+    skos:prefLabel "Slovak Republic" .
+
+ismcatrelto:SVN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SVN" ;
+    skos:prefLabel "Republic of Slovenia" .
+
+ismcatrelto:SWE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SWE" ;
+    skos:prefLabel "Kingdom of Sweden" .
+
+ismcatrelto:SWZ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SWZ" ;
+    skos:prefLabel "Kingdom of Eswatini" .
+
+ismcatrelto:SXM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SXM" ;
+    skos:prefLabel "Sint Maarten" .
+
+ismcatrelto:SYC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SYC" ;
+    skos:prefLabel "Republic of Seychelles" .
+
+ismcatrelto:SYR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "SYR" ;
+    skos:prefLabel "Syrian Arab Republic" .
+
+ismcatrelto:TCA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TCA" ;
+    skos:prefLabel "Turks and Caicos Islands" .
+
+ismcatrelto:TCD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TCD" ;
+    skos:prefLabel "Republic of Chad" .
+
+ismcatrelto:TEYE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TEYE" ;
+    skos:prefLabel "THREE EYES" .
+
+ismcatrelto:TFTC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TFTC" ;
+    skos:prefLabel "Terrorist Financing Targeting Center" .
+
+ismcatrelto:TGO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TGO" ;
+    skos:prefLabel "Togolese Republic" .
+
+ismcatrelto:THA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "THA" ;
+    skos:prefLabel "Kingdom of Thailand" .
+
+ismcatrelto:TJK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TJK" ;
+    skos:prefLabel "Republic of Tajikistan" .
+
+ismcatrelto:TKL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TKL" ;
+    skos:prefLabel "Tokelau" .
+
+ismcatrelto:TKM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TKM" ;
+    skos:prefLabel "Turkmenistan" .
+
+ismcatrelto:TLS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TLS" ;
+    skos:prefLabel "Democratic Republic of Timor-Leste" .
+
+ismcatrelto:TON a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TON" ;
+    skos:prefLabel "Kingdom of Tonga" .
+
+ismcatrelto:TTO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TTO" ;
+    skos:prefLabel "Republic of Trinidad and Tobago" .
+
+ismcatrelto:TUN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TUN" ;
+    skos:prefLabel "Republic of Tunisia" .
+
+ismcatrelto:TUR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TUR" ;
+    skos:prefLabel "Republic of Turkey" .
+
+ismcatrelto:TUV a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TUV" ;
+    skos:prefLabel "Tuvalu" .
+
+ismcatrelto:TWN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TWN" ;
+    skos:prefLabel "Taiwan" .
+
+ismcatrelto:TZA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "TZA" ;
+    skos:prefLabel "United Republic of Tanzania" .
+
+ismcatrelto:UGA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "UGA" ;
+    skos:prefLabel "Republic of Uganda" .
+
+ismcatrelto:UKR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "UKR" ;
+    skos:prefLabel "Ukraine" .
+
+ismcatrelto:UNCK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "UNCK" ;
+    skos:prefLabel "United Nations Command, Korea" .
+
+ismcatrelto:URY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "URY" ;
+    skos:prefLabel "Oriental Republic of Uruguay" .
+
+ismcatrelto:USA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "USA" ;
+    skos:prefLabel "United States of America" .
+
+ismcatrelto:UZB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "UZB" ;
+    skos:prefLabel "Republic of Uzbekistan" .
+
+ismcatrelto:VAT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "VAT" ;
+    skos:prefLabel "State of the Vatican City" .
+
+ismcatrelto:VCT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "VCT" ;
+    skos:prefLabel "Saint Vincent and the Grenadines" .
+
+ismcatrelto:VEN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "VEN" ;
+    skos:prefLabel "Bolivarian Republic of Venezuela" .
+
+ismcatrelto:VGB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "VGB" ;
+    skos:prefLabel "British Virgin Islands" .
+
+ismcatrelto:VIR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "VIR" ;
+    skos:prefLabel "United States Virgin Islands" .
+
+ismcatrelto:VNM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "VNM" ;
+    skos:prefLabel "Socialist Republic of Vietnam" .
+
+ismcatrelto:VUT a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "VUT" ;
+    skos:prefLabel "Republic of Vanuatu" .
+
+ismcatrelto:WLF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "WLF" ;
+    skos:prefLabel "Wallis and Futuna" .
+
+ismcatrelto:WSM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "WSM" ;
+    skos:prefLabel "Independent State of Samoa" .
+
+ismcatrelto:XAC a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XAC" ;
+    skos:prefLabel "Territory of Ashmore and Cartier Islands" .
+
+ismcatrelto:XAZ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XAZ" ;
+    skos:prefLabel "Entity 1" .
+
+ismcatrelto:XBI a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XBI" ;
+    skos:prefLabel "Bassas da India" .
+
+ismcatrelto:XBK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XBK" ;
+    skos:prefLabel "Baker Island" .
+
+ismcatrelto:XCR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XCR" ;
+    skos:prefLabel "Entity 2" .
+
+ismcatrelto:XCS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XCS" ;
+    skos:prefLabel "Coral Sea Islands Territory" .
+
+ismcatrelto:XCY a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XCY" ;
+    skos:prefLabel "Entity 3" .
+
+ismcatrelto:XEU a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XEU" ;
+    skos:prefLabel "Europa Island" .
+
+ismcatrelto:XGL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XGL" ;
+    skos:prefLabel "Glorioso Islands" .
+
+ismcatrelto:XGZ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XGZ" ;
+    skos:prefLabel "Gaza Strip" .
+
+ismcatrelto:XHO a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XHO" ;
+    skos:prefLabel "Howland Island" .
+
+ismcatrelto:XJA a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XJA" ;
+    skos:prefLabel "Johnston Atoll" .
+
+ismcatrelto:XJM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XJM" ;
+    skos:prefLabel "Jan Mayen" .
+
+ismcatrelto:XJN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XJN" ;
+    skos:prefLabel "Juan de Nova Island" .
+
+ismcatrelto:XJV a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XJV" ;
+    skos:prefLabel "Jarvis Island" .
+
+ismcatrelto:XKM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XKM" ;
+    skos:prefLabel "Entity 4" .
+
+ismcatrelto:XKN a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XKN" ;
+    skos:prefLabel "Entity 5" .
+
+ismcatrelto:XKR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XKR" ;
+    skos:prefLabel "Kingman Reef" .
+
+ismcatrelto:XKS a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XKS" ;
+    skos:prefLabel "Republic of Kosovo" .
+
+ismcatrelto:XMW a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XMW" ;
+    skos:prefLabel "Midway Islands" .
+
+ismcatrelto:XNV a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XNV" ;
+    skos:prefLabel "Navassa Island" .
+
+ismcatrelto:XPL a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XPL" ;
+    skos:prefLabel "Palmyra Atoll" .
+
+ismcatrelto:XPR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XPR" ;
+    skos:prefLabel "Paracel Islands" .
+
+ismcatrelto:XQZ a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XQZ" ;
+    skos:prefLabel "Akrotiri" .
+
+ismcatrelto:XSP a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XSP" ;
+    skos:prefLabel "Spratly Islands" .
+
+ismcatrelto:XSV a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XSV" ;
+    skos:prefLabel "Svalbard" .
+
+ismcatrelto:XTR a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XTR" ;
+    skos:prefLabel "Tromelin Island" .
+
+ismcatrelto:XWB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XWB" ;
+    skos:prefLabel "West Bank" .
+
+ismcatrelto:XWK a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XWK" ;
+    skos:prefLabel "Wake Island" .
+
+ismcatrelto:XXD a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "XXD" ;
+    skos:prefLabel "Dhekelia" .
+
+ismcatrelto:YEM a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "YEM" ;
+    skos:prefLabel "Republic of Yemen" .
+
+ismcatrelto:ZAF a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ZAF" ;
+    skos:prefLabel "Republic of South Africa" .
+
+ismcatrelto:ZMB a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ZMB" ;
+    skos:prefLabel "Republic of Zambia" .
+
+ismcatrelto:ZWE a skos:Concept ;
+    skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+    skos:notation "ZWE" ;
+    skos:prefLabel "Republic of Zimbabwe" .
+
+<urn:us:gov:ic:s:ISMCAT:CVEGenerated:CVEnumISMCATRelTo> a owl:Ontology .
+
+ismcatrelto:CVEnumISMCATRelTo a skos:ConceptScheme ;
+    dc:title "(U) ismcatrelto:CVEnumISMCATRelTo definition" .
 
-<urn:us:gov:ic:cvenum:ismcat:relto> rdf:type owl:Ontology .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ABW
-:ABW rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ABW" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Aruba" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ACGU
-:ACGU rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "ACGU" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "FOUR EYES" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AFG
-:AFG rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AFG" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Islamic Republic of Afghanistan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AGO
-:AGO rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AGO" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Angola" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AIA
-:AIA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AIA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Anguilla" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ALB
-:ALB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ALB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Albania" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AMSP
-:AMSP rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "AMSP" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "AFRICOM Multinational Strategic Partners" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AND
-:AND rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AND" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Principality of Andorra" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AOSC
-:AOSC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "AOSC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Athens Olympics Security Coalition" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#APFS
-:APFS rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "APFS" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "African Peacekeeping Force Somalia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ARE
-:ARE rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ARE" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "United Arab Emirates" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ARG
-:ARG rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ARG" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Argentine Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ARM
-:ARM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ARM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Armenia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ASEA
-:ASEA rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "ASEA" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Association of Southeast Asian Nations (ASEAN)" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ASM
-:ASM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ASM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territory of American Samoa" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ATA
-:ATA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ATA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Antarctica" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ATF
-:ATF rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ATF" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "French Southern and Antarctic Lands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ATG
-:ATG rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ATG" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Antigua and Barbuda" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AUS
-:AUS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AUS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Commonwealth of Australia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AUSTRALIA_GROUP
-:AUSTRALIA_GROUP rdf:type owl:NamedIndividual ,
-                          <http://www.w3.org/2004/02/skos/core#Concept> ;
-                 <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-                 <http://www.w3.org/2004/02/skos/core#notation> "AUSTRALIA_GROUP" ;
-                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Australia Group" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AUT
-:AUT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AUT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Austria" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AX2
-:AX2 rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AX2" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Guantanamo Bay Naval Base" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AX3
-:AX3 rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AX3" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Entity 6" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#AZE
-:AZE rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AZE" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Azerbaijan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BDI
-:BDI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BDI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Burundi" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BEL
-:BEL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BEL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Belgium" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BEN
-:BEN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BEN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Benin" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BES
-:BES rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BES" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bonaire, Sint Eustatius, and Saba" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BFA
-:BFA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BFA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Burkina Faso" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BGD
-:BGD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BGD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "People’s Republic of Bangladesh" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BGR
-:BGR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BGR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Bulgaria" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BHR
-:BHR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BHR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Bahrain" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BHS
-:BHS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BHS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Commonwealth of The Bahamas" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BHTF
-:BHTF rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "BHTF" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Boko Haram Task Force" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BIH
-:BIH rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BIH" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bosnia and Herzegovina" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BLM
-:BLM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BLM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Saint Barthelemy" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BLR
-:BLR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BLR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Belarus" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BLZ
-:BLZ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BLZ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Belize" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BMU
-:BMU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BMU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bermuda" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BOL
-:BOL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BOL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Plurinational State of Bolivia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BRA
-:BRA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BRA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Federative Republic of Brazil" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BRB
-:BRB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BRB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Barbados" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BRN
-:BRN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BRN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Brunei Darussalam" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BTN
-:BTN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BTN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Bhutan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BVT
-:BVT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BVT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bouvet Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BWA
-:BWA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BWA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Botswana" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#BWCS
-:BWCS rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "BWCS" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Biological Weapons Convention States" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CAF
-:CAF rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CAF" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Central African Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CAN
-:CAN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CAN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Canada" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CCK
-:CCK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CCK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territory of Cocos (Keeling) Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CFCK
-:CFCK rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "CFCK" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Combined Forces Command Korea" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CFOD
-:CFOD rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "CFOD" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Coalition Forces Odyssey Dawn" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CFUP
-:CFUP rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "CFUP" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Coalition Forces Unified Protector" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CHE
-:CHE rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CHE" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Swiss Confederation" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CHL
-:CHL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CHL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Chile" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CHN
-:CHN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CHN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "People’s Republic of China" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CIV
-:CIV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CIV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Côte d’Ivoire" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CLFC
-:CLFC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "CLFC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Combined Libya Fusion Cell" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CMFC
-:CMFC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "CMFC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Combined Maritime Forces Central" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CMFP
-:CMFP rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "CMFP" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Cooperative Maritime Forces Pacific" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CMR
-:CMR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CMR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Cameroon" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#COD
-:COD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "COD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Democratic Republic of the Congo" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#COG
-:COG rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "COG" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of the Congo" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#COK
-:COK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "COK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Cook Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#COL
-:COL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "COL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Colombia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#COM
-:COM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "COM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Union of the Comoros" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CPMT
-:CPMT rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "CPMT" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Civilian Protection Monitoring Team for Sudan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CPT
-:CPT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CPT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Clipperton Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CPV
-:CPV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CPV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Cabo Verde" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CRI
-:CRI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CRI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Costa Rica" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CTOC
-:CTOC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "CTOC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Countering Transnational Organized Crime" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CUB
-:CUB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CUB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Cuba" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CUW
-:CUW rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CUW" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Curaçao" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CVEnumISMCATRelTo
-:CVEnumISMCATRelTo rdf:type owl:NamedIndividual ,
-                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                   <http://purl.org/dc/elements/1.1/title> "(U) ismcatrelto:CVEnumISMCATRelTo definition" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CWCS
-:CWCS rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "CWCS" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Chemical Weapons Convention States" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CXR
-:CXR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CXR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territory of Christmas Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CYM
-:CYM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CYM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Cayman Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CYP
-:CYP rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CYP" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Cyprus" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#CZE
-:CZE rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "CZE" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Czech Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#DEU
-:DEU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "DEU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Republic of Germany" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#DGA
-:DGA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "DGA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Diego Garcia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#DJI
-:DJI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "DJI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Djibouti" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#DMA
-:DMA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "DMA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Commonwealth of Dominica" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#DNK
-:DNK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "DNK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Denmark" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#DOM
-:DOM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "DOM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Dominican Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#DZA
-:DZA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "DZA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "People’s Democratic Republic of Algeria" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ECTF
-:ECTF rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "ECTF" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "European Counter-Terrorism Forces" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ECU
-:ECU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ECU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Ecuador" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#EFOR
-:EFOR rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "EFOR" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "European Union Stabilization Forces in Bosnia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#EGY
-:EGY rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "EGY" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Arab Republic of Egypt" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ERI
-:ERI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ERI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "State of Eritrea" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ESH
-:ESH rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ESH" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Western Sahara" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ESP
-:ESP rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ESP" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Spain" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#EST
-:EST rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "EST" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Estonia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ETH
-:ETH rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ETH" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Democratic Republic of Ethiopia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#EU
-:EU rdf:type owl:NamedIndividual ,
-             <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-    <http://www.w3.org/2004/02/skos/core#notation> "EU" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "European Union" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#EUDA
-:EUDA rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "EUDA" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "European Union DARFUR" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#FIN
-:FIN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "FIN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Finland" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#FJI
-:FJI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "FJI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Fiji" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#FLK
-:FLK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "FLK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Falkland Islands (Islas Malvinas)" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#FRA
-:FRA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "FRA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "French Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#FRME
-:FRME rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "FRME" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Counter Violent Extremist Organizations Framework Partners" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#FRO
-:FRO rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "FRO" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Faroe Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#FSM
-:FSM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "FSM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Federated States of Micronesia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#FVEY
-:FVEY rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "FVEY" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "FIVE EYES" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GAB
-:GAB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GAB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Gabonese Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GBR
-:GBR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GBR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "United Kingdom of Great Britain and Northern Ireland" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GCCH
-:GCCH rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "GCCH" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Gulf Cooperation Council" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GCTF
-:GCTF rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "GCTF" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Global Counter-Terrorism Forces" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GEO
-:GEO rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GEO" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Georgia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GFNX
-:GFNX rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "GFNX" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Global Foreign Terrorist Fighter Network Exchange" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GGY
-:GGY rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GGY" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bailiwick of Guernsey" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GHA
-:GHA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GHA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Ghana" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GIB
-:GIB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GIB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Gibraltar" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GIN
-:GIN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GIN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Guinea" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GLP
-:GLP rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GLP" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Region of Guadeloupe" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GMB
-:GMB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GMB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of The Gambia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GMIF
-:GMIF rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "GMIF" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Global Maritime Interception Forces" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GNB
-:GNB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GNB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Guinea-Bissau" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GNQ
-:GNQ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GNQ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Equatorial Guinea" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GRC
-:GRC rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GRC" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Hellenic Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GRD
-:GRD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GRD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Grenada" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GRL
-:GRL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GRL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Greenland" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GTM
-:GTM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GTM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Guatemala" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GUF
-:GUF rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GUF" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territorial Collectivity of Guiana" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GUM
-:GUM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GUM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territory of Guam" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#GUY
-:GUY rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "GUY" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Co-operative Republic of Guyana" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#HKG
-:HKG rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "HKG" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Hong Kong Special Administrative Region" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#HMD
-:HMD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "HMD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territory of Heard Island and McDonald Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#HND
-:HND rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "HND" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Honduras" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#HRV
-:HRV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "HRV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Croatia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#HTI
-:HTI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "HTI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Haiti" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#HUN
-:HUN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "HUN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Hungary" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IDN
-:IDN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "IDN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Indonesia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IESC
-:IESC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "IESC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "International Events Security Coalition" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IMN
-:IMN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "IMN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Isle of Man" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IMSC
-:IMSC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "IMSC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "International Maritime Security Construct" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IMSP
-:IMSP rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "IMSP" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "INDOPACOM Multinational Strategic Partners" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IND
-:IND rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "IND" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of India" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IOT
-:IOT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "IOT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "British Indian Ocean Territory" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IPMC
-:IPMC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "IPMC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "INDO PACIFIC Maritime Call" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IRKS
-:IRKS rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "IRKS" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Inherent Resolve Kinetic Support" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IRL
-:IRL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "IRL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Ireland" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IRN
-:IRN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "IRN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Islamic Republic of Iran" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#IRQ
-:IRQ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "IRQ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Iraq" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ISAF
-:ISAF rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "ISAF" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "International Security Assistance Force for Afghanistan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ISL
-:ISL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ISL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Iceland" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ISR
-:ISR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ISR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "State of Israel" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ISSG
-:ISSG rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "ISSG" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "International Syria Support Group" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ITA
-:ITA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ITA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Italian Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#JAM
-:JAM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "JAM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Jamaica" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#JEY
-:JEY rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "JEY" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bailiwick of Jersey" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#JOR
-:JOR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "JOR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Hashemite Kingdom of Jordan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#JPN
-:JPN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "JPN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Japan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#KAZ
-:KAZ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "KAZ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Kazakhstan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#KEN
-:KEN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "KEN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Kenya" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#KFOR
-:KFOR rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "KFOR" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Stabilization Forces in Kosovo" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#KGZ
-:KGZ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "KGZ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kyrgyz Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#KHM
-:KHM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "KHM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Cambodia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#KIR
-:KIR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "KIR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Kiribati" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#KNA
-:KNA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "KNA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Federation of Saint Kitts and Nevis" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#KOR
-:KOR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "KOR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Korea" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#KWT
-:KWT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "KWT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "State of Kuwait" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LAO
-:LAO rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LAO" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Lao People’s Democratic Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LBN
-:LBN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LBN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Lebanese Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LBR
-:LBR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LBR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Liberia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LBY
-:LBY rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LBY" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "State of Libya" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LCA
-:LCA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LCA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Saint Lucia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LIE
-:LIE rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LIE" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Principality of Liechtenstein" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LKA
-:LKA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LKA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Democratic Socialist Republic of Sri Lanka" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LSO
-:LSO rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LSO" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Lesotho" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LTU
-:LTU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LTU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Lithuania" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LUX
-:LUX rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LUX" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Grand Duchy of Luxembourg" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#LVA
-:LVA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "LVA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Latvia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MAC
-:MAC rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MAC" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Macau Special Administrative Region" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MAF
-:MAF rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MAF" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Saint Martin" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MAR
-:MAR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MAR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Morocco" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MCFI
-:MCFI rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "MCFI" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational Coalition Forces-Iraq" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MCO
-:MCO rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MCO" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Principality of Monaco" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MDA
-:MDA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MDA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Moldova" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MDG
-:MDG rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MDG" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Madagascar" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MDV
-:MDV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MDV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Maldives" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MESF
-:MESF rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "MESF" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Middle East Stability Force" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MEX
-:MEX rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MEX" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "United Mexican States" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MGEU
-:MGEU rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "MGEU" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational GEOINT Europe" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MHL
-:MHL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MHL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of the Marshall Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MIFH
-:MIFH rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "MIFH" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational Interim Force Haiti" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MKD
-:MKD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MKD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of North Macedonia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MLEC
-:MLEC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "MLEC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multi-Lateral Enduring Contingency" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MLI
-:MLI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MLI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Mali" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MLT
-:MLT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MLT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Malta" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MMR
-:MMR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MMR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Union of Burma" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MNE
-:MNE rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MNE" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Montenegro" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MNG
-:MNG rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MNG" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Mongolia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MNP
-:MNP rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MNP" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Commonwealth of the Northern Mariana Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MNTF
-:MNTF rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "MNTF" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational Task Force" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MOZ
-:MOZ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MOZ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Mozambique" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MPFL
-:MPFL rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "MPFL" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Multinational Peacekeeping Forces" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MRT
-:MRT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MRT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Islamic Republic of Mauritania" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MSR
-:MSR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MSR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Montserrat" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MTQ
-:MTQ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MTQ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territorial Collectivity of Martinique" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MUS
-:MUS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MUS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Mauritius" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MWI
-:MWI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MWI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Malawi" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MYS
-:MYS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MYS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Malaysia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#MYT
-:MYT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MYT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Mayotte" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NACT
-:NACT rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "NACT" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "North African Counter-Terrorism Forces" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NAM
-:NAM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NAM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Namibia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NATO
-:NATO rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "NATO" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "North Atlantic Treaty Organization" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NCFE
-:NCFE rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "NCFE" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO CFE Treaty on Conventional Armed Forces in Europe" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NCL
-:NCL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NCL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "New Caledonia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NER
-:NER rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NER" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Niger" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NFK
-:NFK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NFK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territory of Norfolk Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NGA
-:NGA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NGA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Republic of Nigeria" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NIC
-:NIC rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NIC" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Nicaragua" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NIU
-:NIU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NIU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Niue" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NKIC
-:NKIC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "NKIC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "North Korea Intelligence Coalition" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NLD
-:NLD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NLD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of the Netherlands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NOR
-:NOR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NOR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Norway" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NPL
-:NPL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NPL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Democratic Republic of Nepal" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NRDC
-:NRDC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "NRDC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "NORDIC" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NRU
-:NRU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NRU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Nauru" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NSG
-:NSG rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NSG" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Suppliers' Group" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#NZL
-:NZL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "NZL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "New Zealand" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#OMN
-:OMN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "OMN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Sultanate of Oman" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#OSAG
-:OSAG rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "OSAG" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Olympic Security Advisory Group" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#OSTY
-:OSTY rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "OSTY" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Skies Treaty" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PAK
-:PAK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PAK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Islamic Republic of Pakistan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PAN
-:PAN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PAN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Panama" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PAWA
-:PAWA rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "PAWA" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Partnership for Actions in West Africa" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PCN
-:PCN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PCN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Pitcairn, Henderson, Ducie, and Oeno Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PER
-:PER rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PER" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Peru" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PGMF
-:PGMF rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "PGMF" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Persian Gulf Multinational Forces" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PHL
-:PHL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PHL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of the Philippines" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PLW
-:PLW rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PLW" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Palau" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PNG
-:PNG rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PNG" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Independent State of Papua New Guinea" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#POL
-:POL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "POL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Poland" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PRI
-:PRI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PRI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Commonwealth of Puerto Rico" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PRK
-:PRK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PRK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Democratic People’s Republic of Korea" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PRT
-:PRT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PRT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Portuguese Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PRY
-:PRY rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PRY" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Paraguay" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PSMX
-:PSMX rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "PSMX" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Pacific Security Monitoring Exchange" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#PYF
-:PYF rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "PYF" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "French Polynesia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#QAT
-:QAT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "QAT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "State of Qatar" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#REU
-:REU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "REU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Region of Reunion" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#RISC
-:RISC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "RISC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Russia Intelligence Sharing Coalition" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ROU
-:ROU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ROU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Romania" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#RSMA
-:RSMA rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "RSMA" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Resolute Support Mission Afghanistan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#RUS
-:RUS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "RUS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Russian Federation" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#RWA
-:RWA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "RWA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Rwanda" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SAU
-:SAU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SAU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Saudi Arabia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SDN
-:SDN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SDN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of the Sudan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SEN
-:SEN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SEN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Senegal" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SFOR
-:SFOR rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "SFOR" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Stabilization Force" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SGP
-:SGP rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SGP" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Singapore" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SGS
-:SGS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SGS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "South Georgia and the South Sandwich Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SHN
-:SHN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SHN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Saint Helena, Ascension, and Tristan da Cunha" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SLB
-:SLB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SLB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Solomon Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SLE
-:SLE rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SLE" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Sierra Leone" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SLV
-:SLV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SLV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of El Salvador" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SMR
-:SMR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SMR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of San Marino" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SOFP
-:SOFP rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "SOFP" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Special Operations Forces Partners" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SOM
-:SOM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SOM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Republic of Somalia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SPAA
-:SPAA rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "SPAA" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SPM
-:SPM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SPM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territorial Collectivity of Saint Pierre and Miquelon" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SRB
-:SRB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SRB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Serbia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SSD
-:SSD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SSD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of South Sudan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#STP
-:STP rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "STP" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Democratic Republic of Sao Tome and Principe" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SUR
-:SUR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SUR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Suriname" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SVK
-:SVK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SVK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Slovak Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SVN
-:SVN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SVN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Slovenia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SWE
-:SWE rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SWE" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Sweden" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SWZ
-:SWZ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SWZ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Eswatini" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SXM
-:SXM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SXM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Sint Maarten" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SYC
-:SYC rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SYC" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Seychelles" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#SYR
-:SYR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SYR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Syrian Arab Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TCA
-:TCA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TCA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Turks and Caicos Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TCD
-:TCD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TCD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Chad" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TEYE
-:TEYE rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "TEYE" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "THREE EYES" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TFTC
-:TFTC rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "TFTC" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Terrorist Financing Targeting Center" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TGO
-:TGO rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TGO" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Togolese Republic" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#THA
-:THA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "THA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Thailand" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TJK
-:TJK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TJK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Tajikistan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TKL
-:TKL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TKL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Tokelau" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TKM
-:TKM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TKM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Turkmenistan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TLS
-:TLS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TLS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Democratic Republic of Timor-Leste" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TON
-:TON rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TON" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingdom of Tonga" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TTO
-:TTO rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TTO" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Trinidad and Tobago" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TUN
-:TUN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TUN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Tunisia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TUR
-:TUR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TUR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Turkey" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TUV
-:TUV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TUV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Tuvalu" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TWN
-:TWN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TWN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Taiwan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#TZA
-:TZA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "TZA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "United Republic of Tanzania" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#UGA
-:UGA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "UGA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Uganda" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#UKR
-:UKR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "UKR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Ukraine" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#UNCK
-:UNCK rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-      <http://www.w3.org/2004/02/skos/core#notation> "UNCK" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "United Nations Command, Korea" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#URY
-:URY rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "URY" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Oriental Republic of Uruguay" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#USA
-:USA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "USA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "United States of America" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#UZB
-:UZB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "UZB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Uzbekistan" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#VAT
-:VAT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "VAT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "State of the Vatican City" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#VCT
-:VCT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "VCT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Saint Vincent and the Grenadines" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#VEN
-:VEN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "VEN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bolivarian Republic of Venezuela" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#VGB
-:VGB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "VGB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "British Virgin Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#VIR
-:VIR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "VIR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Virgin Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#VNM
-:VNM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "VNM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Socialist Republic of Vietnam" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#VUT
-:VUT rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "VUT" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Vanuatu" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#WLF
-:WLF rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "WLF" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Wallis and Futuna" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#WSM
-:WSM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "WSM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Independent State of Samoa" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XAC
-:XAC rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XAC" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Territory of Ashmore and Cartier Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XAZ
-:XAZ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XAZ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Entity 1" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XBI
-:XBI rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XBI" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Bassas da India" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XBK
-:XBK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XBK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Baker Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XCR
-:XCR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XCR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Entity 2" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XCS
-:XCS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XCS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Coral Sea Islands Territory" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XCY
-:XCY rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XCY" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Entity 3" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XEU
-:XEU rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XEU" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Europa Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XGL
-:XGL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XGL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Glorioso Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XGZ
-:XGZ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XGZ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Gaza Strip" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XHO
-:XHO rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XHO" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Howland Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XJA
-:XJA rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XJA" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Johnston Atoll" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XJM
-:XJM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XJM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Jan Mayen" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XJN
-:XJN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XJN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Juan de Nova Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XJV
-:XJV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XJV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Jarvis Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XKM
-:XKM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XKM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Entity 4" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XKN
-:XKN rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XKN" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Entity 5" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XKR
-:XKR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XKR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Kingman Reef" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XKS
-:XKS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XKS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Kosovo" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XMW
-:XMW rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XMW" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Midway Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XNV
-:XNV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XNV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Navassa Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XPL
-:XPL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XPL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Palmyra Atoll" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XPR
-:XPR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XPR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Paracel Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XQZ
-:XQZ rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XQZ" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Akrotiri" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XSP
-:XSP rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XSP" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Spratly Islands" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XSV
-:XSV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XSV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Svalbard" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XTR
-:XTR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XTR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Tromelin Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XWB
-:XWB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XWB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "West Bank" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XWK
-:XWK rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XWK" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Wake Island" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#XXD
-:XXD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "XXD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Dhekelia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#YEM
-:YEM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "YEM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Yemen" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ZAF
-:ZAF rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ZAF" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of South Africa" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ZMB
-:ZMB rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ZMB" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Zambia" .
-
-
-###  urn:us:gov:ic:cvenum:ismcat:relto#ZWE
-:ZWE rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMCATRelTo ;
-     <http://www.w3.org/2004/02/skos/core#notation> "ZWE" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Republic of Zimbabwe" .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

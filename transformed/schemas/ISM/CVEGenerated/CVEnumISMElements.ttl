@@ -1,97 +1,37 @@
-@prefix : <urn:us:gov:ic:cvenum:ism:elements#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ismelements: <urn:us:gov:ic:cvenum:ism:elements#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:ism:elements> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<urn:us:gov:ic:cvenum:ism:elements> rdf:type owl:Ontology .
+skos:inScheme a owl:ObjectProperty .
 
-#################################################################
-#    Annotation properties
-#################################################################
+ismelements:Notice a skos:Concept ;
+    skos:inScheme ismelements:CVEnumISMElements ;
+    skos:notation "Notice" ;
+    skos:prefLabel "Notice element" .
 
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+ismelements:NoticeExternal a skos:Concept ;
+    skos:inScheme ismelements:CVEnumISMElements ;
+    skos:notation "NoticeExternal" ;
+    skos:prefLabel "NoticeExternal element" .
 
+ismelements:NoticeExternalList a skos:Concept ;
+    skos:inScheme ismelements:CVEnumISMElements ;
+    skos:notation "NoticeExternalList" ;
+    skos:prefLabel "NoticeExternalList element" .
 
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+ismelements:NoticeList a skos:Concept ;
+    skos:inScheme ismelements:CVEnumISMElements ;
+    skos:notation "NoticeList" ;
+    skos:prefLabel "NoticeList element" .
 
+ismelements:NoticeText a skos:Concept ;
+    skos:inScheme ismelements:CVEnumISMElements ;
+    skos:notation "NoticeText" ;
+    skos:prefLabel "NoticeText element" .
 
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+<urn:us:gov:ic:s:ISM:CVEGenerated:CVEnumISMElements> a owl:Ontology .
 
+ismelements:CVEnumISMElements a skos:ConceptScheme ;
+    dc:title "(U) All currently authorized ISM element names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMElements.xml" .
 
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements
-:CVEnumISMElements rdf:type owl:NamedIndividual ,
-                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                   <http://purl.org/dc/elements/1.1/title> "(U) All currently authorized ISM element names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMElements.xml" .
-
-
-###  urn:us:gov:ic:cvenum:ism:elements#Notice
-:Notice rdf:type owl:NamedIndividual ,
-                 <http://www.w3.org/2004/02/skos/core#Concept> ;
-        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMElements ;
-        <http://www.w3.org/2004/02/skos/core#notation> "Notice" ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Notice element" .
-
-
-###  urn:us:gov:ic:cvenum:ism:elements#NoticeExternal
-:NoticeExternal rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMElements ;
-                <http://www.w3.org/2004/02/skos/core#notation> "NoticeExternal" ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "NoticeExternal element" .
-
-
-###  urn:us:gov:ic:cvenum:ism:elements#NoticeExternalList
-:NoticeExternalList rdf:type owl:NamedIndividual ,
-                             <http://www.w3.org/2004/02/skos/core#Concept> ;
-                    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMElements ;
-                    <http://www.w3.org/2004/02/skos/core#notation> "NoticeExternalList" ;
-                    <http://www.w3.org/2004/02/skos/core#prefLabel> "NoticeExternalList element" .
-
-
-###  urn:us:gov:ic:cvenum:ism:elements#NoticeList
-:NoticeList rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMElements ;
-            <http://www.w3.org/2004/02/skos/core#notation> "NoticeList" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "NoticeList element" .
-
-
-###  urn:us:gov:ic:cvenum:ism:elements#NoticeText
-:NoticeText rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMElements ;
-            <http://www.w3.org/2004/02/skos/core#notation> "NoticeText" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "NoticeText element" .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

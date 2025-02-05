@@ -1,257 +1,137 @@
-@prefix : <urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:usagency:auditRoutingUnique> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix usaru: <urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#> .
+
+skos:inScheme a owl:ObjectProperty .
+
+usaru:USA.DARPA a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.DARPA" ;
+    skos:prefLabel "Defense Advanced Research Projects Agency (Type: DOD)" .
+
+usaru:USA.DISA a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.DISA" ;
+    skos:prefLabel "Defense Information Systems Agency (Type: DOD)" .
+
+usaru:USA.DODCIO a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.DODCIO" ;
+    skos:prefLabel "Assistant Secretary of Defense for Networks and Information Integration and DoD Chief Information Officer (Type: DOD)" .
+
+usaru:USA.DODIG a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.DODIG" ;
+    skos:prefLabel "Department of Defense Inspector General (Type: DOD)" .
+
+usaru:USA.DODIO a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.DODIO" ;
+    skos:prefLabel "Assistant to the Secretary of Defense for Intelligence Oversight (Type: DOD)" .
+
+usaru:USA.DSS a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.DSS" ;
+    skos:prefLabel "Defense Security Service (Type: DOD)" .
+
+usaru:USA.DTRA a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.DTRA" ;
+    skos:prefLabel "Defense Threat-Reduction Agency (Type: DOD)" .
+
+usaru:USA.INA a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.INA" ;
+    skos:prefLabel "United States Department of Homeland Security, Office of Intelligence and Analysis (Type: IC)" .
+
+usaru:USA.JCS a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.JCS" ;
+    skos:prefLabel "Office of the Joint Chiefs of Staff (Type: DOD)" .
+
+usaru:USA.JIDA a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.JIDA" ;
+    skos:prefLabel "Joint Improvised-Threat Defeat Agency (Type: DOD)" .
+
+usaru:USA.MDA a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.MDA" ;
+    skos:prefLabel "Missile Defense Agency (Type: DOD)" .
+
+usaru:USA.OUSDATL a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.OUSDATL" ;
+    skos:prefLabel "Office of the Undersecretary of Defense (Acquisition, Technology and Logistics) (Type: DOD)" .
+
+usaru:USA.OUSDI a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.OUSDI" ;
+    skos:prefLabel "Office of the Undersecretary of Defense (Intelligence) (Type: DOD)" .
+
+usaru:USA.TSA a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.TSA" ;
+    skos:prefLabel "United States Department of Homeland Security, Transportation Security Administration (Type: IC)" .
+
+usaru:USA.USAFRICOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USAFRICOM" ;
+    skos:prefLabel "United States Africa Command (Type: COCOM)" .
+
+usaru:USA.USCENTCOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USCENTCOM" ;
+    skos:prefLabel "United States Central Command (Type: COCOM)" .
+
+usaru:USA.USCYBERCOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USCYBERCOM" ;
+    skos:prefLabel "United States Strategic Command, US Cyber Command (Type: COCOM)" .
+
+usaru:USA.USEUCOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USEUCOM" ;
+    skos:prefLabel "United States European Command (Type: COCOM)" .
+
+usaru:USA.USFK a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USFK" ;
+    skos:prefLabel "United States Pacific Command, US Forces Korea (Type: COCOM)" .
+
+usaru:USA.USNORTHCOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USNORTHCOM" ;
+    skos:prefLabel "United States Northern Command (Type: COCOM)" .
+
+usaru:USA.USPACOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USPACOM" ;
+    skos:prefLabel "United States Pacific Command (Type: COCOM)" .
+
+usaru:USA.USSOCOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USSOCOM" ;
+    skos:prefLabel "United States Special Operations Command (Type: COCOM)" .
+
+usaru:USA.USSOUTHCOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USSOUTHCOM" ;
+    skos:prefLabel "United States Southern Command (Type: COCOM)" .
+
+usaru:USA.USSTRATCOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USSTRATCOM" ;
+    skos:prefLabel "United States Strategic Command (Type: COCOM)" .
+
+usaru:USA.USTRANSCOM a skos:Concept ;
+    skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+    skos:notation "USA.USTRANSCOM" ;
+    skos:prefLabel "United States Transportation Command (Type: COCOM)" .
+
+<urn:us:gov:ic:s:USAgency:CVEGenerated:CVEnumAuditRoutingUnique> a owl:Ontology .
+
+usaru:CVEnumAuditRoutingUnique a skos:ConceptScheme ;
+    dc:title "(U) usaru:CVEnumAuditRoutingUnique definition" .
 
-<urn:us:gov:ic:cvenum:usagency:auditRoutingUnique> rdf:type owl:Ontology .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#CVEnumAuditRoutingUnique
-:CVEnumAuditRoutingUnique rdf:type owl:NamedIndividual ,
-                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                          <http://purl.org/dc/elements/1.1/title> "(U) usaru:CVEnumAuditRoutingUnique definition" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.DARPA
-:USA.DARPA rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-           <http://www.w3.org/2004/02/skos/core#notation> "USA.DARPA" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "Defense Advanced Research Projects Agency (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.DISA
-:USA.DISA rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-          <http://www.w3.org/2004/02/skos/core#notation> "USA.DISA" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "Defense Information Systems Agency (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.DODCIO
-:USA.DODCIO rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-            <http://www.w3.org/2004/02/skos/core#notation> "USA.DODCIO" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "Assistant Secretary of Defense for Networks and Information Integration and DoD Chief Information Officer (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.DODIG
-:USA.DODIG rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-           <http://www.w3.org/2004/02/skos/core#notation> "USA.DODIG" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Defense Inspector General (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.DODIO
-:USA.DODIO rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-           <http://www.w3.org/2004/02/skos/core#notation> "USA.DODIO" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "Assistant to the Secretary of Defense for Intelligence Oversight (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.DSS
-:USA.DSS rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-         <http://www.w3.org/2004/02/skos/core#notation> "USA.DSS" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "Defense Security Service (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.DTRA
-:USA.DTRA rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-          <http://www.w3.org/2004/02/skos/core#notation> "USA.DTRA" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "Defense Threat-Reduction Agency (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.INA
-:USA.INA rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-         <http://www.w3.org/2004/02/skos/core#notation> "USA.INA" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Department of Homeland Security, Office of Intelligence and Analysis (Type: IC)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.JCS
-:USA.JCS rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-         <http://www.w3.org/2004/02/skos/core#notation> "USA.JCS" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the Joint Chiefs of Staff (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.JIDA
-:USA.JIDA rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-          <http://www.w3.org/2004/02/skos/core#notation> "USA.JIDA" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "Joint Improvised-Threat Defeat Agency (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.MDA
-:USA.MDA rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-         <http://www.w3.org/2004/02/skos/core#notation> "USA.MDA" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "Missile Defense Agency (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.OUSDATL
-:USA.OUSDATL rdf:type owl:NamedIndividual ,
-                      <http://www.w3.org/2004/02/skos/core#Concept> ;
-             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-             <http://www.w3.org/2004/02/skos/core#notation> "USA.OUSDATL" ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the Undersecretary of Defense (Acquisition, Technology and Logistics) (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.OUSDI
-:USA.OUSDI rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-           <http://www.w3.org/2004/02/skos/core#notation> "USA.OUSDI" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the Undersecretary of Defense (Intelligence) (Type: DOD)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.TSA
-:USA.TSA rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-         <http://www.w3.org/2004/02/skos/core#notation> "USA.TSA" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Department of Homeland Security, Transportation Security Administration (Type: IC)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USAFRICOM
-:USA.USAFRICOM rdf:type owl:NamedIndividual ,
-                        <http://www.w3.org/2004/02/skos/core#Concept> ;
-               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-               <http://www.w3.org/2004/02/skos/core#notation> "USA.USAFRICOM" ;
-               <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Africa Command (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USCENTCOM
-:USA.USCENTCOM rdf:type owl:NamedIndividual ,
-                        <http://www.w3.org/2004/02/skos/core#Concept> ;
-               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-               <http://www.w3.org/2004/02/skos/core#notation> "USA.USCENTCOM" ;
-               <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Central Command (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USCYBERCOM
-:USA.USCYBERCOM rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-                <http://www.w3.org/2004/02/skos/core#notation> "USA.USCYBERCOM" ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Strategic Command, US Cyber Command (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USEUCOM
-:USA.USEUCOM rdf:type owl:NamedIndividual ,
-                      <http://www.w3.org/2004/02/skos/core#Concept> ;
-             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-             <http://www.w3.org/2004/02/skos/core#notation> "USA.USEUCOM" ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "United States European Command (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USFK
-:USA.USFK rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-          <http://www.w3.org/2004/02/skos/core#notation> "USA.USFK" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Pacific Command, US Forces Korea (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USNORTHCOM
-:USA.USNORTHCOM rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-                <http://www.w3.org/2004/02/skos/core#notation> "USA.USNORTHCOM" ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Northern Command (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USPACOM
-:USA.USPACOM rdf:type owl:NamedIndividual ,
-                      <http://www.w3.org/2004/02/skos/core#Concept> ;
-             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-             <http://www.w3.org/2004/02/skos/core#notation> "USA.USPACOM" ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Pacific Command (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USSOCOM
-:USA.USSOCOM rdf:type owl:NamedIndividual ,
-                      <http://www.w3.org/2004/02/skos/core#Concept> ;
-             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-             <http://www.w3.org/2004/02/skos/core#notation> "USA.USSOCOM" ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Special Operations Command (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USSOUTHCOM
-:USA.USSOUTHCOM rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-                <http://www.w3.org/2004/02/skos/core#notation> "USA.USSOUTHCOM" ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Southern Command (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USSTRATCOM
-:USA.USSTRATCOM rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-                <http://www.w3.org/2004/02/skos/core#notation> "USA.USSTRATCOM" ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Strategic Command (Type: COCOM)" .
-
-
-###  urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#USA.USTRANSCOM
-:USA.USTRANSCOM rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumAuditRoutingUnique ;
-                <http://www.w3.org/2004/02/skos/core#notation> "USA.USTRANSCOM" ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Transportation Command (Type: COCOM)" .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

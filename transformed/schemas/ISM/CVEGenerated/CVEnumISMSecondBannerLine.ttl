@@ -1,105 +1,42 @@
-@prefix : <urn:us:gov:ic:cvenum:ism:secondbannerline#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ismsecondbannerline: <urn:us:gov:ic:cvenum:ism:secondbannerline#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:ism:secondbannerline> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<urn:us:gov:ic:cvenum:ism:secondbannerline> rdf:type owl:Ontology .
+skos:inScheme a owl:ObjectProperty .
 
-#################################################################
-#    Annotation properties
-#################################################################
+ismsecondbannerline:ACPI a skos:Concept ;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine ;
+    skos:notation "ACPI" ;
+    skos:prefLabel "ATTORNEY-CLIENT PRIVILEGED INFO" .
 
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+ismsecondbannerline:AWP a skos:Concept ;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine ;
+    skos:notation "AWP" ;
+    skos:prefLabel "ATTORNEY WORK PRODUCT" .
 
+ismsecondbannerline:CUSPI a skos:Concept ;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine ;
+    skos:notation "CUSPI" ;
+    skos:prefLabel "CONTENTS INCLUDE US PERSON INFORMATION" .
 
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+ismsecondbannerline:DPPD a skos:Concept ;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine ;
+    skos:notation "DPPD" ;
+    skos:prefLabel "DELIBERATIVE PROCESS PRIVILEGED DOCUMENT" .
 
+ismsecondbannerline:HVCO a skos:Concept ;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine ;
+    skos:notation "HVCO" ;
+    skos:prefLabel "HANDLE VIA CHANNELS ONLY" .
 
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+ismsecondbannerline:SSS a skos:Concept ;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine ;
+    skos:notation "SSS" ;
+    skos:prefLabel "SOURCE SELECTION SENSITIVE" .
 
+<urn:us:gov:ic:s:ISM:CVEGenerated:CVEnumISMSecondBannerLine> a owl:Ontology .
 
-#################################################################
-#    Object Properties
-#################################################################
+ismsecondbannerline:CVEnumISMSecondBannerLine a skos:ConceptScheme ;
+    dc:title "(U) ismsecondbannerline:CVEnumISMSecondBannerLine definition" .
 
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  urn:us:gov:ic:cvenum:ism:secondbannerline#ACPI
-:ACPI rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSecondBannerLine ;
-      <http://www.w3.org/2004/02/skos/core#notation> "ACPI" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "ATTORNEY-CLIENT PRIVILEGED INFO" .
-
-
-###  urn:us:gov:ic:cvenum:ism:secondbannerline#AWP
-:AWP rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSecondBannerLine ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AWP" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "ATTORNEY WORK PRODUCT" .
-
-
-###  urn:us:gov:ic:cvenum:ism:secondbannerline#CUSPI
-:CUSPI rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/2004/02/skos/core#Concept> ;
-       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSecondBannerLine ;
-       <http://www.w3.org/2004/02/skos/core#notation> "CUSPI" ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> "CONTENTS INCLUDE US PERSON INFORMATION" .
-
-
-###  urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine
-:CVEnumISMSecondBannerLine rdf:type owl:NamedIndividual ,
-                                    <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                           <http://purl.org/dc/elements/1.1/title> "(U) ismsecondbannerline:CVEnumISMSecondBannerLine definition" .
-
-
-###  urn:us:gov:ic:cvenum:ism:secondbannerline#DPPD
-:DPPD rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSecondBannerLine ;
-      <http://www.w3.org/2004/02/skos/core#notation> "DPPD" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "DELIBERATIVE PROCESS PRIVILEGED DOCUMENT" .
-
-
-###  urn:us:gov:ic:cvenum:ism:secondbannerline#HVCO
-:HVCO rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSecondBannerLine ;
-      <http://www.w3.org/2004/02/skos/core#notation> "HVCO" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "HANDLE VIA CHANNELS ONLY" .
-
-
-###  urn:us:gov:ic:cvenum:ism:secondbannerline#SSS
-:SSS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSecondBannerLine ;
-     <http://www.w3.org/2004/02/skos/core#notation> "SSS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "SOURCE SELECTION SENSITIVE" .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

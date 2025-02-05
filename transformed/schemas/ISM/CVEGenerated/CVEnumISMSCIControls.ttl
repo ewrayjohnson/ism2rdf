@@ -1,217 +1,112 @@
-@prefix : <urn:us:gov:ic:cvenum:ism:scicontrols#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ismscicon: <urn:us:gov:ic:cvenum:ism:scicontrols#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:ism:scicontrols> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<urn:us:gov:ic:cvenum:ism:scicontrols> rdf:type owl:Ontology .
+skos:inScheme a owl:ObjectProperty .
 
-#################################################################
-#    Annotation properties
-#################################################################
+ismscicon:BUR a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "BUR" ;
+    skos:prefLabel "BUR" .
 
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+ismscicon:BUR-BLG a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "BUR-BLG" ;
+    skos:prefLabel "BUR-BLG" .
 
+ismscicon:BUR-DTP a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "BUR-DTP" ;
+    skos:prefLabel "BUR-DTP" .
 
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+ismscicon:BUR-WRG a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "BUR-WRG" ;
+    skos:prefLabel "BUR-WRG" .
 
+ismscicon:HCS a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "HCS" ;
+    skos:prefLabel "HCS" .
 
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+ismscicon:HCS-O a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "HCS-O" ;
+    skos:prefLabel "HCS-O" .
 
+ismscicon:HCS-P a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "HCS-P" ;
+    skos:prefLabel "HCS-P" .
 
-#################################################################
-#    Object Properties
-#################################################################
+ismscicon:HCS-X a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "HCS-X" ;
+    skos:prefLabel "HCS-X" .
 
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+ismscicon:KLM a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "KLM" ;
+    skos:prefLabel "KLAMATH" .
 
+ismscicon:KLM-R a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "KLM-R" ;
+    skos:prefLabel "KLAMATH-R" .
 
-#################################################################
-#    Classes
-#################################################################
+ismscicon:MVL a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "MVL" ;
+    skos:prefLabel "MARVEL" .
 
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+ismscicon:RSV a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "RSV" ;
+    skos:prefLabel "RESERVE" .
 
+ismscicon:SI a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "SI" ;
+    skos:prefLabel "SPECIAL INTELLIGENCE" .
 
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+ismscicon:SI-EU a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "SI-EU" ;
+    skos:prefLabel "ECRU" .
 
+ismscicon:SI-G a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "SI-G" ;
+    skos:prefLabel "SI-GAMMA" .
 
-#################################################################
-#    Individuals
-#################################################################
+ismscicon:SI-NK a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "SI-NK" ;
+    skos:prefLabel "NONBOOK" .
 
-###  urn:us:gov:ic:cvenum:ism:scicontrols#BUR
-:BUR rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-     <http://www.w3.org/2004/02/skos/core#notation> "BUR" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "BUR" .
+ismscicon:TK a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "TK" ;
+    skos:prefLabel "TALENT KEYHOLE" .
 
+ismscicon:TK-BLFH a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "TK-BLFH" ;
+    skos:prefLabel "BLUEFISH" .
 
-###  urn:us:gov:ic:cvenum:ism:scicontrols#BUR-BLG
-:BUR-BLG rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-         <http://www.w3.org/2004/02/skos/core#notation> "BUR-BLG" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "BUR-BLG" .
+ismscicon:TK-IDIT a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "TK-IDIT" ;
+    skos:prefLabel "IDITAROD" .
 
+ismscicon:TK-KAND a skos:Concept ;
+    skos:inScheme ismscicon:CVEnumISMSCIControls ;
+    skos:notation "TK-KAND" ;
+    skos:prefLabel "KANDIK" .
 
-###  urn:us:gov:ic:cvenum:ism:scicontrols#BUR-DTP
-:BUR-DTP rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-         <http://www.w3.org/2004/02/skos/core#notation> "BUR-DTP" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "BUR-DTP" .
+<urn:us:gov:ic:s:ISM:CVEGenerated:CVEnumISMSCIControls> a owl:Ontology .
 
+ismscicon:CVEnumISMSCIControls a skos:ConceptScheme ;
+    dc:title "(U) ismscicon:CVEnumISMSCIControls definition" .
 
-###  urn:us:gov:ic:cvenum:ism:scicontrols#BUR-WRG
-:BUR-WRG rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-         <http://www.w3.org/2004/02/skos/core#notation> "BUR-WRG" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "BUR-WRG" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#CVEnumISMSCIControls
-:CVEnumISMSCIControls rdf:type owl:NamedIndividual ,
-                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                      <http://purl.org/dc/elements/1.1/title> "(U) ismscicon:CVEnumISMSCIControls definition" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#HCS
-:HCS rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-     <http://www.w3.org/2004/02/skos/core#notation> "HCS" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "HCS" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#HCS-O
-:HCS-O rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/2004/02/skos/core#Concept> ;
-       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-       <http://www.w3.org/2004/02/skos/core#notation> "HCS-O" ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> "HCS-O" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#HCS-P
-:HCS-P rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/2004/02/skos/core#Concept> ;
-       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-       <http://www.w3.org/2004/02/skos/core#notation> "HCS-P" ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> "HCS-P" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#HCS-X
-:HCS-X rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/2004/02/skos/core#Concept> ;
-       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-       <http://www.w3.org/2004/02/skos/core#notation> "HCS-X" ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> "HCS-X" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#KLM
-:KLM rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-     <http://www.w3.org/2004/02/skos/core#notation> "KLM" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "KLAMATH" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#KLM-R
-:KLM-R rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/2004/02/skos/core#Concept> ;
-       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-       <http://www.w3.org/2004/02/skos/core#notation> "KLM-R" ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> "KLAMATH-R" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#MVL
-:MVL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-     <http://www.w3.org/2004/02/skos/core#notation> "MVL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "MARVEL" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#RSV
-:RSV rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-     <http://www.w3.org/2004/02/skos/core#notation> "RSV" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "RESERVE" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#SI
-:SI rdf:type owl:NamedIndividual ,
-             <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-    <http://www.w3.org/2004/02/skos/core#notation> "SI" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPECIAL INTELLIGENCE" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#SI-EU
-:SI-EU rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/2004/02/skos/core#Concept> ;
-       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-       <http://www.w3.org/2004/02/skos/core#notation> "SI-EU" ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> "ECRU" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#SI-G
-:SI-G rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-      <http://www.w3.org/2004/02/skos/core#notation> "SI-G" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "SI-GAMMA" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#SI-NK
-:SI-NK rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/2004/02/skos/core#Concept> ;
-       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-       <http://www.w3.org/2004/02/skos/core#notation> "SI-NK" ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> "NONBOOK" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#TK
-:TK rdf:type owl:NamedIndividual ,
-             <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-    <http://www.w3.org/2004/02/skos/core#notation> "TK" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "TALENT KEYHOLE" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#TK-BLFH
-:TK-BLFH rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-         <http://www.w3.org/2004/02/skos/core#notation> "TK-BLFH" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "BLUEFISH" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#TK-IDIT
-:TK-IDIT rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-         <http://www.w3.org/2004/02/skos/core#notation> "TK-IDIT" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "IDITAROD" .
-
-
-###  urn:us:gov:ic:cvenum:ism:scicontrols#TK-KAND
-:TK-KAND rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMSCIControls ;
-         <http://www.w3.org/2004/02/skos/core#notation> "TK-KAND" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "KANDIK" .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

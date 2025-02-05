@@ -1,105 +1,42 @@
-@prefix : <urn:us:gov:ic:cvenum:ism:pocType#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ismpoctype: <urn:us:gov:ic:cvenum:ism:pocType#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:ism:pocType> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<urn:us:gov:ic:cvenum:ism:pocType> rdf:type owl:Ontology .
+skos:inScheme a owl:ObjectProperty .
 
-#################################################################
-#    Annotation properties
-#################################################################
+ismpoctype:DoD-Dist-B a skos:Concept ;
+    skos:inScheme ismpoctype:CVEnumISMPocType ;
+    skos:notation "DoD-Dist-B" ;
+    skos:prefLabel "DoD Distribution statement B from DoD Directive 5230.24" .
 
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+ismpoctype:DoD-Dist-C a skos:Concept ;
+    skos:inScheme ismpoctype:CVEnumISMPocType ;
+    skos:notation "DoD-Dist-C" ;
+    skos:prefLabel "DoD Distribution statement C from DoD Directive 5230.24" .
 
+ismpoctype:DoD-Dist-D a skos:Concept ;
+    skos:inScheme ismpoctype:CVEnumISMPocType ;
+    skos:notation "DoD-Dist-D" ;
+    skos:prefLabel "DoD Distribution statement D from DoD Directive 5230.24" .
 
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+ismpoctype:DoD-Dist-E a skos:Concept ;
+    skos:inScheme ismpoctype:CVEnumISMPocType ;
+    skos:notation "DoD-Dist-E" ;
+    skos:prefLabel "DoD Distribution statement E from DoD Directive 5230.24" .
 
+ismpoctype:DoD-Dist-F a skos:Concept ;
+    skos:inScheme ismpoctype:CVEnumISMPocType ;
+    skos:notation "DoD-Dist-F" ;
+    skos:prefLabel "DoD Distribution statement F from DoD Directive 5230.24" .
 
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+ismpoctype:ICD-710 a skos:Concept ;
+    skos:inScheme ismpoctype:CVEnumISMPocType ;
+    skos:notation "ICD-710" ;
+    skos:prefLabel "Point-of-contact for an ICD-710 notice." .
 
+<urn:us:gov:ic:s:ISM:CVEGenerated:CVEnumISMPocType> a owl:Ontology .
 
-#################################################################
-#    Object Properties
-#################################################################
+ismpoctype:CVEnumISMPocType a skos:ConceptScheme ;
+    dc:title "(U) ismpoctype:CVEnumISMPocType definition" .
 
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  urn:us:gov:ic:cvenum:ism:pocType#CVEnumISMPocType
-:CVEnumISMPocType rdf:type owl:NamedIndividual ,
-                           <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                  <http://purl.org/dc/elements/1.1/title> "(U) ismpoctype:CVEnumISMPocType definition" .
-
-
-###  urn:us:gov:ic:cvenum:ism:pocType#DoD-Dist-B
-:DoD-Dist-B rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMPocType ;
-            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-B" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement B from DoD Directive 5230.24" .
-
-
-###  urn:us:gov:ic:cvenum:ism:pocType#DoD-Dist-C
-:DoD-Dist-C rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMPocType ;
-            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-C" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement C from DoD Directive 5230.24" .
-
-
-###  urn:us:gov:ic:cvenum:ism:pocType#DoD-Dist-D
-:DoD-Dist-D rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMPocType ;
-            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-D" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement D from DoD Directive 5230.24" .
-
-
-###  urn:us:gov:ic:cvenum:ism:pocType#DoD-Dist-E
-:DoD-Dist-E rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMPocType ;
-            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-E" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement E from DoD Directive 5230.24" .
-
-
-###  urn:us:gov:ic:cvenum:ism:pocType#DoD-Dist-F
-:DoD-Dist-F rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMPocType ;
-            <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-F" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement F from DoD Directive 5230.24" .
-
-
-###  urn:us:gov:ic:cvenum:ism:pocType#ICD-710
-:ICD-710 rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMPocType ;
-         <http://www.w3.org/2004/02/skos/core#notation> "ICD-710" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "Point-of-contact for an ICD-710 notice." .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

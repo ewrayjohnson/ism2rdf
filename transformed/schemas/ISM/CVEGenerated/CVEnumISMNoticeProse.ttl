@@ -1,225 +1,117 @@
-@prefix : <urn:us:gov:ic:cvenum:ism:noticeprose#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ismnoticeprose: <urn:us:gov:ic:cvenum:ism:noticeprose#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:ism:noticeprose> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<urn:us:gov:ic:cvenum:ism:noticeprose> rdf:type owl:Ontology .
+skos:inScheme a owl:ObjectProperty .
 
-#################################################################
-#    Annotation properties
-#################################################################
+ismnoticeprose:CNWDI_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "CNWDI_00001" ;
+    skos:prefLabel "Critical Nuclear Weapons Design Information - DoD Instruction 5210.02 applies." .
 
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+ismnoticeprose:COMSEC_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "COMSEC_00001" ;
+    skos:prefLabel "COMSEC Material - Access by Contractor Personnel Restricted to U.S. Citizens Holding Final Government Clearance." .
 
+ismnoticeprose:DISPLAYONLY_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "DISPLAYONLY_00001" ;
+    skos:prefLabel "Derivative use of this DISPLAY ONLY or REL TO in conjunction with DISPLAY ONLY marked information into other products is prohibited without prior authorization from the originating agency. Disclosure of DISPLAY ONLY or REL TO in conjunction with DISPLAY ONLY information is not authorized for other purposes or for disclosure or release and disclosure to other countries, international organizations, or coalitions not specified in the banner line or portion marking. Removal of this caveat is required once authorization is received by the originating agency." .
 
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+ismnoticeprose:DSEN_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "DSEN_00001" ;
+    skos:prefLabel "This document is the property of the DEA and may be distributed within the Federal Government (and its contractors), and to US intelligence, law enforcement, and public safety or protection officials with a need to know. Distribution beyond these entities without DEA authorization is strictly prohibited. Precautions should be taken to ensure this information is stored and/or destroyed in a manner that precludes unauthorized access. The use of information in this report is pre-approved for US government Intelligence Community products, including finished analytic products distributed to US Executive Branch departments/agencies. Cited portions must carry the same classification and controls, and readers of this report must hold all appropriate clearances. The information in this report may not be used in legal proceedings, for operational or intelligence collection activities, shared with foreign persons or agencies, entered into non-DEA databases for operational purposes or reproduced in additional formats unless express permission is granted by the DEA based on a written request submitted to dea.onsi@dea.ic.gov (Top Secret), dea.onsi@dea.usdoj.sgov.gov (Secret), or dea.onsi-dl@dea.usdoj.gov (Unclassified)." .
 
+ismnoticeprose:DS_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "DS_00001" ;
+    skos:prefLabel "Distribution authorized to DoD, IAW 10 U.S.C. Section 130 and Section 455. Release authorized to U.S. DoD contractors IAW 48 C.F.R. Section 252.245-7000. Refer other requests to: Headquarters, NGA, ATTN: Release Officer, Mail Stop S82-OIA, 7500 GEOINT Drive, Springfield, VA 22150. Destroy IAW DoDD 5030.59. Removal of this caveat is prohibited." .
 
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+ismnoticeprose:DoD-Dist-A_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "DoD-Dist-A_00001" ;
+    skos:prefLabel "DISTRIBUTION STATEMENT A. Approved for public release." .
 
+ismnoticeprose:FISA_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "FISA_00001" ;
+    skos:prefLabel "CIA Special Procedures FISA: This dissemination includes FBI information from FBI FISA collection. Such information, and any information derived therefrom, may only be used in a US legal or administrative proceeding with the advance authorization of the Attorney General. Any recipient interested in obtaining authorization for such use in a US legal or administrative proceeding should contact FBI Headquarters. Any further dissemination outside of intelligence channels and/or for law enforcement purposes must be made through FBI Headquarters. Any reproduction, dissemination, or communication (including, but not limited to oral briefings) of this information must be accompanied by a statement of these restrictions." .
 
-#################################################################
-#    Object Properties
-#################################################################
+ismnoticeprose:FISA_00002 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "FISA_00002" ;
+    skos:prefLabel "FBI Minimized FISA: This report includes information from FBI FISA collection. Such information, and any information derived therefrom, may only be used in a US legal or administrative proceeding with the advance authorization of the Attorney General. Any recipient interested in obtaining authorization for such use in a US legal or administrative proceeding should contact FBI Headquarters. Any further dissemination outside of intelligence channels and/or for law enforcement purposes must be made through FBI Headquarters. Any reproduction, dissemination, or communication (including, but not limited to oral briefings) of this information must be accompanied by a statement of these restrictions." .
 
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+ismnoticeprose:FISA_00003 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "FISA_00003" ;
+    skos:prefLabel "This report includes information from FISA collection. Such information, and any information derived therefrom, may NOT be used in a domestic or foreign legal, judicial, or administrative proceeding without the advance authorization of the Attorney General. Any recipient interested in obtaining authorization for such use should contact NCTC Operations Center on (571) 280- 6000 (STE III) or 931-6000 secure. Any reproduction, dissemination, or communication (including but not limited to oral briefings) of this information must be accompanied by a statement of these restrictions." .
 
+ismnoticeprose:FRD_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "FRD_00001" ;
+    skos:prefLabel "FORMERLY RESTRICTED DATA: Unauthorized disclosure is subject to Administrative and Criminal Sanctions. Handle as RESTRICTED DATA in foreign dissemination. Section 144b, Atomic Energy Act of 1954." .
 
-#################################################################
-#    Classes
-#################################################################
+ismnoticeprose:GEOCAP_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "GEOCAP_00001" ;
+    skos:prefLabel "WARNING STATEMENT: This document contains Geospatial Intelligence Controlled Access Program (GEOCAP) information and must adhere to established handling instructions. Contact the GEOCAP program office at (S) 579-3848 or TCS_Security@coe.ic.gov for additional guidance." .
 
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+ismnoticeprose:ITAR-EAR_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "ITAR-EAR_00001" ;
+    skos:prefLabel "WARNING - This document contains technical data whose export is restricted by the Arms Export Control Act (Title 22, U.S.C., Sec 2751, et seq.) or the Export Administration Act of 1979 (Title 50, U.S.C., App. 2401 et seq.), as amended. Violations of these export laws are subject to severe criminal penalties. Disseminate in accordance with provisions of DoD Directive 5230.25." .
 
+ismnoticeprose:NATO_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "NATO_00001" ;
+    skos:prefLabel "This document contains COSMIC TOP SECRET information." .
 
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+ismnoticeprose:NATO_00002 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "NATO_00002" ;
+    skos:prefLabel "This document contains NATO SECRET information." .
 
+ismnoticeprose:NATO_00003 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "NATO_00003" ;
+    skos:prefLabel "This document contains NATO CONFIDENTIAL information." .
 
-#################################################################
-#    Individuals
-#################################################################
+ismnoticeprose:NATO_00004 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "NATO_00004" ;
+    skos:prefLabel "This document contains NATO RESTRICTED information." .
 
-###  urn:us:gov:ic:cvenum:ism:noticeprose#CNWDI_00001
-:CNWDI_00001 rdf:type owl:NamedIndividual ,
-                      <http://www.w3.org/2004/02/skos/core#Concept> ;
-             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-             <http://www.w3.org/2004/02/skos/core#notation> "CNWDI_00001" ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "Critical Nuclear Weapons Design Information - DoD Instruction 5210.02 applies." .
+ismnoticeprose:NATO_00005 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "NATO_00005" ;
+    skos:prefLabel "This document contains NATO UNCLASSIFIED information." .
 
+ismnoticeprose:RAWFISA_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "RAWFISA_00001" ;
+    skos:prefLabel "FBI RAWFISA: This report includes information from FBI FISA collection that has not been evaluated in accordance with minimization procedures (raw FISA-acquired information). FBI personnel with authorized access to raw FISA-acquired information may review, translate, copy, transcribe, analyze, summarize, and use the information contained herein only in accordance with relevant minimization procedures and internal FBI policies. If the raw FISA-acquired information contained herein is not accompanied by handling instructions, then the recipient, following his/her review of the information, must either return the information to the sender of the information or destroy the information, unless the recipient determines the information meets the minimization standard. Once raw FISA-acquired information, and any information derived therefrom, has been minimized by FBI personnel, such minimized FISA-acquired information may only be used in a U.S. legal or administrative proceeding with the advance authorization of the Attorney General, and in coordination with FBI Headquarters." .
 
-###  urn:us:gov:ic:cvenum:ism:noticeprose#COMSEC_00001
-:COMSEC_00001 rdf:type owl:NamedIndividual ,
-                       <http://www.w3.org/2004/02/skos/core#Concept> ;
-              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-              <http://www.w3.org/2004/02/skos/core#notation> "COMSEC_00001" ;
-              <http://www.w3.org/2004/02/skos/core#prefLabel> "COMSEC Material - Access by Contractor Personnel Restricted to U.S. Citizens Holding Final Government Clearance." .
+ismnoticeprose:RC_Dissemination_Control_Required_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "RC_Dissemination_Control_Required_00001" ;
+    skos:prefLabel "This product was collected in a restricted collection mode. Redaction, chipping and release determination shall not result in more permissive release than NOFORN regardless of the Security Indicator Codes (SIC) associated with the product." .
 
+ismnoticeprose:RD_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "RD_00001" ;
+    skos:prefLabel "RESTRICTED DATA: This document contains Restricted Data as defined in the Atomic Energy Act of 1954, as amended. Unauthorized disclosure is subject to Administrative and Criminal Sanctions." .
 
-###  urn:us:gov:ic:cvenum:ism:noticeprose#CVEnumISMNoticeProse
-:CVEnumISMNoticeProse rdf:type owl:NamedIndividual ,
-                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                      <http://purl.org/dc/elements/1.1/title> "(U) ismnoticeprose:CVEnumISMNoticeProse definition" .
+ismnoticeprose:SSI_00001 a skos:Concept ;
+    skos:inScheme ismnoticeprose:CVEnumISMNoticeProse ;
+    skos:notation "SSI_00001" ;
+    skos:prefLabel "Warning: This record contains Sensitive Security Information that is controlled under 49 CFR parts 15 and 1520. No part of this record may be disclosed to persons without a \"need-to-know,\" as defined in 49 CFR parts 15 and 1520, except with the written permission of the Administrator of the Transportation Security Administration or the Secretary of Transportation. Unauthorized release may result in civil penalty or other action. For U.S. government agencies, public disclosure is governed by 5 USC 552 and 49 CFR parts 15 and 1520." .
 
+<urn:us:gov:ic:s:ISM:CVEGenerated:CVEnumISMNoticeProse> a owl:Ontology .
 
-###  urn:us:gov:ic:cvenum:ism:noticeprose#DISPLAYONLY_00001
-:DISPLAYONLY_00001 rdf:type owl:NamedIndividual ,
-                            <http://www.w3.org/2004/02/skos/core#Concept> ;
-                   <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-                   <http://www.w3.org/2004/02/skos/core#notation> "DISPLAYONLY_00001" ;
-                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Derivative use of this DISPLAY ONLY or REL TO in conjunction with DISPLAY ONLY marked information into other products is prohibited without prior authorization from the originating agency. Disclosure of DISPLAY ONLY or REL TO in conjunction with DISPLAY ONLY information is not authorized for other purposes or for disclosure or release and disclosure to other countries, international organizations, or coalitions not specified in the banner line or portion marking. Removal of this caveat is required once authorization is received by the originating agency." .
+ismnoticeprose:CVEnumISMNoticeProse a skos:ConceptScheme ;
+    dc:title "(U) ismnoticeprose:CVEnumISMNoticeProse definition" .
 
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#DSEN_00001
-:DSEN_00001 rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-            <http://www.w3.org/2004/02/skos/core#notation> "DSEN_00001" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "This document is the property of the DEA and may be distributed within the Federal Government (and its contractors), and to US intelligence, law enforcement, and public safety or protection officials with a need to know. Distribution beyond these entities without DEA authorization is strictly prohibited. Precautions should be taken to ensure this information is stored and/or destroyed in a manner that precludes unauthorized access. The use of information in this report is pre-approved for US government Intelligence Community products, including finished analytic products distributed to US Executive Branch departments/agencies. Cited portions must carry the same classification and controls, and readers of this report must hold all appropriate clearances. The information in this report may not be used in legal proceedings, for operational or intelligence collection activities, shared with foreign persons or agencies, entered into non-DEA databases for operational purposes or reproduced in additional formats unless express permission is granted by the DEA based on a written request submitted to dea.onsi@dea.ic.gov (Top Secret), dea.onsi@dea.usdoj.sgov.gov (Secret), or dea.onsi-dl@dea.usdoj.gov (Unclassified)." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#DS_00001
-:DS_00001 rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-          <http://www.w3.org/2004/02/skos/core#notation> "DS_00001" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "Distribution authorized to DoD, IAW 10 U.S.C. Section 130 and Section 455. Release authorized to U.S. DoD contractors IAW 48 C.F.R. Section 252.245-7000. Refer other requests to: Headquarters, NGA, ATTN: Release Officer, Mail Stop S82-OIA, 7500 GEOINT Drive, Springfield, VA 22150. Destroy IAW DoDD 5030.59. Removal of this caveat is prohibited." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#DoD-Dist-A_00001
-:DoD-Dist-A_00001 rdf:type owl:NamedIndividual ,
-                           <http://www.w3.org/2004/02/skos/core#Concept> ;
-                  <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-                  <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-A_00001" ;
-                  <http://www.w3.org/2004/02/skos/core#prefLabel> "DISTRIBUTION STATEMENT A. Approved for public release." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#FISA_00001
-:FISA_00001 rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-            <http://www.w3.org/2004/02/skos/core#notation> "FISA_00001" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "CIA Special Procedures FISA: This dissemination includes FBI information from FBI FISA collection. Such information, and any information derived therefrom, may only be used in a US legal or administrative proceeding with the advance authorization of the Attorney General. Any recipient interested in obtaining authorization for such use in a US legal or administrative proceeding should contact FBI Headquarters. Any further dissemination outside of intelligence channels and/or for law enforcement purposes must be made through FBI Headquarters. Any reproduction, dissemination, or communication (including, but not limited to oral briefings) of this information must be accompanied by a statement of these restrictions." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#FISA_00002
-:FISA_00002 rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-            <http://www.w3.org/2004/02/skos/core#notation> "FISA_00002" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "FBI Minimized FISA: This report includes information from FBI FISA collection. Such information, and any information derived therefrom, may only be used in a US legal or administrative proceeding with the advance authorization of the Attorney General. Any recipient interested in obtaining authorization for such use in a US legal or administrative proceeding should contact FBI Headquarters. Any further dissemination outside of intelligence channels and/or for law enforcement purposes must be made through FBI Headquarters. Any reproduction, dissemination, or communication (including, but not limited to oral briefings) of this information must be accompanied by a statement of these restrictions." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#FISA_00003
-:FISA_00003 rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-            <http://www.w3.org/2004/02/skos/core#notation> "FISA_00003" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "This report includes information from FISA collection. Such information, and any information derived therefrom, may NOT be used in a domestic or foreign legal, judicial, or administrative proceeding without the advance authorization of the Attorney General. Any recipient interested in obtaining authorization for such use should contact NCTC Operations Center on (571) 280- 6000 (STE III) or 931-6000 secure. Any reproduction, dissemination, or communication (including but not limited to oral briefings) of this information must be accompanied by a statement of these restrictions." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#FRD_00001
-:FRD_00001 rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-           <http://www.w3.org/2004/02/skos/core#notation> "FRD_00001" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "FORMERLY RESTRICTED DATA: Unauthorized disclosure is subject to Administrative and Criminal Sanctions. Handle as RESTRICTED DATA in foreign dissemination. Section 144b, Atomic Energy Act of 1954." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#GEOCAP_00001
-:GEOCAP_00001 rdf:type owl:NamedIndividual ,
-                       <http://www.w3.org/2004/02/skos/core#Concept> ;
-              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-              <http://www.w3.org/2004/02/skos/core#notation> "GEOCAP_00001" ;
-              <http://www.w3.org/2004/02/skos/core#prefLabel> "WARNING STATEMENT: This document contains Geospatial Intelligence Controlled Access Program (GEOCAP) information and must adhere to established handling instructions. Contact the GEOCAP program office at (S) 579-3848 or TCS_Security@coe.ic.gov for additional guidance." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#ITAR-EAR_00001
-:ITAR-EAR_00001 rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-                <http://www.w3.org/2004/02/skos/core#notation> "ITAR-EAR_00001" ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "WARNING - This document contains technical data whose export is restricted by the Arms Export Control Act (Title 22, U.S.C., Sec 2751, et seq.) or the Export Administration Act of 1979 (Title 50, U.S.C., App. 2401 et seq.), as amended. Violations of these export laws are subject to severe criminal penalties. Disseminate in accordance with provisions of DoD Directive 5230.25." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#NATO_00001
-:NATO_00001 rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-            <http://www.w3.org/2004/02/skos/core#notation> "NATO_00001" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "This document contains COSMIC TOP SECRET information." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#NATO_00002
-:NATO_00002 rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-            <http://www.w3.org/2004/02/skos/core#notation> "NATO_00002" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "This document contains NATO SECRET information." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#NATO_00003
-:NATO_00003 rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-            <http://www.w3.org/2004/02/skos/core#notation> "NATO_00003" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "This document contains NATO CONFIDENTIAL information." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#NATO_00004
-:NATO_00004 rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-            <http://www.w3.org/2004/02/skos/core#notation> "NATO_00004" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "This document contains NATO RESTRICTED information." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#NATO_00005
-:NATO_00005 rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-            <http://www.w3.org/2004/02/skos/core#notation> "NATO_00005" ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "This document contains NATO UNCLASSIFIED information." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#RAWFISA_00001
-:RAWFISA_00001 rdf:type owl:NamedIndividual ,
-                        <http://www.w3.org/2004/02/skos/core#Concept> ;
-               <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-               <http://www.w3.org/2004/02/skos/core#notation> "RAWFISA_00001" ;
-               <http://www.w3.org/2004/02/skos/core#prefLabel> "FBI RAWFISA: This report includes information from FBI FISA collection that has not been evaluated in accordance with minimization procedures (raw FISA-acquired information). FBI personnel with authorized access to raw FISA-acquired information may review, translate, copy, transcribe, analyze, summarize, and use the information contained herein only in accordance with relevant minimization procedures and internal FBI policies. If the raw FISA-acquired information contained herein is not accompanied by handling instructions, then the recipient, following his/her review of the information, must either return the information to the sender of the information or destroy the information, unless the recipient determines the information meets the minimization standard. Once raw FISA-acquired information, and any information derived therefrom, has been minimized by FBI personnel, such minimized FISA-acquired information may only be used in a U.S. legal or administrative proceeding with the advance authorization of the Attorney General, and in coordination with FBI Headquarters." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#RC_Dissemination_Control_Required_00001
-:RC_Dissemination_Control_Required_00001 rdf:type owl:NamedIndividual ,
-                                                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-                                         <http://www.w3.org/2004/02/skos/core#notation> "RC_Dissemination_Control_Required_00001" ;
-                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "This product was collected in a restricted collection mode. Redaction, chipping and release determination shall not result in more permissive release than NOFORN regardless of the Security Indicator Codes (SIC) associated with the product." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#RD_00001
-:RD_00001 rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-          <http://www.w3.org/2004/02/skos/core#notation> "RD_00001" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "RESTRICTED DATA: This document contains Restricted Data as defined in the Atomic Energy Act of 1954, as amended. Unauthorized disclosure is subject to Administrative and Criminal Sanctions." .
-
-
-###  urn:us:gov:ic:cvenum:ism:noticeprose#SSI_00001
-:SSI_00001 rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMNoticeProse ;
-           <http://www.w3.org/2004/02/skos/core#notation> "SSI_00001" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "Warning: This record contains Sensitive Security Information that is controlled under 49 CFR parts 15 and 1520. No part of this record may be disclosed to persons without a \"need-to-know,\" as defined in 49 CFR parts 15 and 1520, except with the written permission of the Administrator of the Transportation Security Administration or the Secretary of Transportation. Unauthorized release may result in civil penalty or other action. For U.S. government agencies, public disclosure is governed by 5 USC 552 and 49 CFR parts 15 and 1520." .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

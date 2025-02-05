@@ -1,233 +1,122 @@
-@prefix : <urn:us:gov:ic:cvenum:ism:dissem#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ismdissem: <urn:us:gov:ic:cvenum:ism:dissem#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:ism:dissem> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+skos:inScheme a owl:ObjectProperty .
+
+ismdissem:AC a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "AC" ;
+    skos:prefLabel "Attorney-Client" .
+
+ismdissem:AWP a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "AWP" ;
+    skos:prefLabel "Attorney-WP" .
+
+ismdissem:DISPLAYONLY a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "DISPLAYONLY" ;
+    skos:prefLabel "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO" .
+
+ismdissem:DL_ONLY a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "DL_ONLY" ;
+    skos:prefLabel "DL ONLY" .
+
+ismdissem:DSEN a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "DSEN" ;
+    skos:prefLabel "DEA SENSITIVE" .
+
+ismdissem:EXEMPT_FROM_ICD501_DISCOVERY a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "EXEMPT_FROM_ICD501_DISCOVERY" ;
+    skos:prefLabel "EXEMPT FROM ICD501 DISCOVERY" .
+
+ismdissem:EYES a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "EYES" ;
+    skos:prefLabel "EYES ONLY" .
+
+ismdissem:FEDCON a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "FEDCON" ;
+    skos:prefLabel "FEDCON" .
+
+ismdissem:FED_ONLY a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "FED_ONLY" ;
+    skos:prefLabel "FED ONLY" .
+
+ismdissem:FISA a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "FISA" ;
+    skos:prefLabel "FOREIGN INTELLIGENCE SURVEILLANCE ACT" .
+
+ismdissem:FOUO a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "FOUO" ;
+    skos:prefLabel "FOR OFFICIAL USE ONLY" .
+
+ismdissem:IMC a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "IMC" ;
+    skos:prefLabel "CONTROLLED IMAGERY" .
+
+ismdissem:NF a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "NF" ;
+    skos:prefLabel "NOT RELEASABLE TO FOREIGN NATIONALS" .
+
+ismdissem:NOCON a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "NOCON" ;
+    skos:prefLabel "NOCON" .
+
+ismdissem:OC a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "OC" ;
+    skos:prefLabel "ORIGINATOR CONTROLLED" .
+
+ismdissem:OC-USGOV a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "OC-USGOV" ;
+    skos:prefLabel "ORIGINATOR CONTROLLED US GOVERNMENT" .
+
+ismdissem:PR a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "PR" ;
+    skos:prefLabel "CAUTION-PROPRIETARY INFORMATION INVOLVED" .
+
+ismdissem:RAWFISA a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "RAWFISA" ;
+    skos:prefLabel "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT" .
+
+ismdissem:REL a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "REL" ;
+    skos:prefLabel "AUTHORIZED FOR RELEASE TO" .
+
+ismdissem:RELIDO a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "RELIDO" ;
+    skos:prefLabel "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL" .
 
-<urn:us:gov:ic:cvenum:ism:dissem> rdf:type owl:Ontology .
+ismdissem:RS a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "RS" ;
+    skos:prefLabel "RISK SENSITIVE" .
 
-#################################################################
-#    Annotation properties
-#################################################################
+ismdissem:WAIVED a skos:Concept ;
+    skos:inScheme ismdissem:CVEnumISMDissem ;
+    skos:notation "WAIVED" ;
+    skos:prefLabel "WAIVED" .
 
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+<urn:us:gov:ic:s:ISM:CVEGenerated:CVEnumISMDissem> a owl:Ontology .
 
+ismdissem:CVEnumISMDissem a skos:ConceptScheme ;
+    dc:title "(U) ismdissem:CVEnumISMDissem definition" .
 
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  urn:us:gov:ic:cvenum:ism:dissem#AC
-:AC rdf:type owl:NamedIndividual ,
-             <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-    <http://www.w3.org/2004/02/skos/core#notation> "AC" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Attorney-Client" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#AWP
-:AWP rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-     <http://www.w3.org/2004/02/skos/core#notation> "AWP" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "Attorney-WP" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#CVEnumISMDissem
-:CVEnumISMDissem rdf:type owl:NamedIndividual ,
-                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                 <http://purl.org/dc/elements/1.1/title> "(U) ismdissem:CVEnumISMDissem definition" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#DISPLAYONLY
-:DISPLAYONLY rdf:type owl:NamedIndividual ,
-                      <http://www.w3.org/2004/02/skos/core#Concept> ;
-             <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-             <http://www.w3.org/2004/02/skos/core#notation> "DISPLAYONLY" ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#DL_ONLY
-:DL_ONLY rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-         <http://www.w3.org/2004/02/skos/core#notation> "DL_ONLY" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "DL ONLY" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#DSEN
-:DSEN rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-      <http://www.w3.org/2004/02/skos/core#notation> "DSEN" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "DEA SENSITIVE" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#EXEMPT_FROM_ICD501_DISCOVERY
-:EXEMPT_FROM_ICD501_DISCOVERY rdf:type owl:NamedIndividual ,
-                                       <http://www.w3.org/2004/02/skos/core#Concept> ;
-                              <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-                              <http://www.w3.org/2004/02/skos/core#notation> "EXEMPT_FROM_ICD501_DISCOVERY" ;
-                              <http://www.w3.org/2004/02/skos/core#prefLabel> "EXEMPT FROM ICD501 DISCOVERY" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#EYES
-:EYES rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-      <http://www.w3.org/2004/02/skos/core#notation> "EYES" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "EYES ONLY" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#FEDCON
-:FEDCON rdf:type owl:NamedIndividual ,
-                 <http://www.w3.org/2004/02/skos/core#Concept> ;
-        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-        <http://www.w3.org/2004/02/skos/core#notation> "FEDCON" ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "FEDCON" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#FED_ONLY
-:FED_ONLY rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-          <http://www.w3.org/2004/02/skos/core#notation> "FED_ONLY" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "FED ONLY" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#FISA
-:FISA rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-      <http://www.w3.org/2004/02/skos/core#notation> "FISA" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "FOREIGN INTELLIGENCE SURVEILLANCE ACT" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#FOUO
-:FOUO rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-      <http://www.w3.org/2004/02/skos/core#notation> "FOUO" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "FOR OFFICIAL USE ONLY" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#IMC
-:IMC rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-     <http://www.w3.org/2004/02/skos/core#notation> "IMC" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "CONTROLLED IMAGERY" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#NF
-:NF rdf:type owl:NamedIndividual ,
-             <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-    <http://www.w3.org/2004/02/skos/core#notation> "NF" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "NOT RELEASABLE TO FOREIGN NATIONALS" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#NOCON
-:NOCON rdf:type owl:NamedIndividual ,
-                <http://www.w3.org/2004/02/skos/core#Concept> ;
-       <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-       <http://www.w3.org/2004/02/skos/core#notation> "NOCON" ;
-       <http://www.w3.org/2004/02/skos/core#prefLabel> "NOCON" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#OC
-:OC rdf:type owl:NamedIndividual ,
-             <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-    <http://www.w3.org/2004/02/skos/core#notation> "OC" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "ORIGINATOR CONTROLLED" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#OC-USGOV
-:OC-USGOV rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-          <http://www.w3.org/2004/02/skos/core#notation> "OC-USGOV" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "ORIGINATOR CONTROLLED US GOVERNMENT" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#PR
-:PR rdf:type owl:NamedIndividual ,
-             <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-    <http://www.w3.org/2004/02/skos/core#notation> "PR" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "CAUTION-PROPRIETARY INFORMATION INVOLVED" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#RAWFISA
-:RAWFISA rdf:type owl:NamedIndividual ,
-                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-         <http://www.w3.org/2004/02/skos/core#notation> "RAWFISA" ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#REL
-:REL rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-     <http://www.w3.org/2004/02/skos/core#notation> "REL" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "AUTHORIZED FOR RELEASE TO" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#RELIDO
-:RELIDO rdf:type owl:NamedIndividual ,
-                 <http://www.w3.org/2004/02/skos/core#Concept> ;
-        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-        <http://www.w3.org/2004/02/skos/core#notation> "RELIDO" ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#RS
-:RS rdf:type owl:NamedIndividual ,
-             <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-    <http://www.w3.org/2004/02/skos/core#notation> "RS" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "RISK SENSITIVE" .
-
-
-###  urn:us:gov:ic:cvenum:ism:dissem#WAIVED
-:WAIVED rdf:type owl:NamedIndividual ,
-                 <http://www.w3.org/2004/02/skos/core#Concept> ;
-        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMDissem ;
-        <http://www.w3.org/2004/02/skos/core#notation> "WAIVED" ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "WAIVED" .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

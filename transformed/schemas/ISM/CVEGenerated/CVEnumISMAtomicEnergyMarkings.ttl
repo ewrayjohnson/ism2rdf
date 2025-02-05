@@ -1,169 +1,82 @@
-@prefix : <urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ismatomic: <urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings> rdf:type owl:Ontology .
+skos:inScheme a owl:ObjectProperty .
 
-#################################################################
-#    Annotation properties
-#################################################################
+ismatomic:DCNI a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "DCNI" ;
+    skos:prefLabel "DoD CONTROLLED NUCLEAR INFORMATION" .
 
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+ismatomic:FRD a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "FRD" ;
+    skos:prefLabel "FORMERLY RESTRICTED DATA" .
 
+ismatomic:FRD-SG-14 a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "FRD-SG-14" ;
+    skos:prefLabel "RD-SIGMA-14" .
 
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+ismatomic:FRD-SG-15 a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "FRD-SG-15" ;
+    skos:prefLabel "RD-SIGMA-15" .
 
+ismatomic:FRD-SG-18 a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "FRD-SG-18" ;
+    skos:prefLabel "RD-SIGMA-18" .
 
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+ismatomic:FRD-SG-20 a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "FRD-SG-20" ;
+    skos:prefLabel "RD-SIGMA-20" .
 
+ismatomic:RD a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "RD" ;
+    skos:prefLabel "RESTRICTED DATA" .
 
-#################################################################
-#    Object Properties
-#################################################################
+ismatomic:RD-CNWDI a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "RD-CNWDI" ;
+    skos:prefLabel "RD-CRITICAL NUCLEAR WEAPON DESIGN INFORMATION" .
 
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+ismatomic:RD-SG-14 a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "RD-SG-14" ;
+    skos:prefLabel "RD-SIGMA-14" .
 
+ismatomic:RD-SG-15 a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "RD-SG-15" ;
+    skos:prefLabel "RD-SIGMA-15" .
 
-#################################################################
-#    Classes
-#################################################################
+ismatomic:RD-SG-18 a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "RD-SG-18" ;
+    skos:prefLabel "RD-SIGMA-18" .
 
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+ismatomic:RD-SG-20 a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "RD-SG-20" ;
+    skos:prefLabel "RD-SIGMA-20" .
 
+ismatomic:TFNI a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "TFNI" ;
+    skos:prefLabel "TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION" .
 
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+ismatomic:UCNI a skos:Concept ;
+    skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+    skos:notation "UCNI" ;
+    skos:prefLabel "DoE CONTROLLED NUCLEAR INFORMATION" .
 
+<urn:us:gov:ic:s:ISM:CVEGenerated:CVEnumISMAtomicEnergyMarkings> a owl:Ontology .
 
-#################################################################
-#    Individuals
-#################################################################
+ismatomic:CVEnumISMatomicEnergyMarkings a skos:ConceptScheme ;
+    dc:title "(U) ismatomic:CVEnumISMatomicEnergyMarkings definition" .
 
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings
-:CVEnumISMatomicEnergyMarkings rdf:type owl:NamedIndividual ,
-                                        <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                               <http://purl.org/dc/elements/1.1/title> "(U) ismatomic:CVEnumISMatomicEnergyMarkings definition" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#DCNI
-:DCNI rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-      <http://www.w3.org/2004/02/skos/core#notation> "DCNI" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD CONTROLLED NUCLEAR INFORMATION" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD
-:FRD rdf:type owl:NamedIndividual ,
-              <http://www.w3.org/2004/02/skos/core#Concept> ;
-     <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-     <http://www.w3.org/2004/02/skos/core#notation> "FRD" ;
-     <http://www.w3.org/2004/02/skos/core#prefLabel> "FORMERLY RESTRICTED DATA" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-14
-:FRD-SG-14 rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-           <http://www.w3.org/2004/02/skos/core#notation> "FRD-SG-14" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "RD-SIGMA-14" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-15
-:FRD-SG-15 rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-           <http://www.w3.org/2004/02/skos/core#notation> "FRD-SG-15" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "RD-SIGMA-15" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-18
-:FRD-SG-18 rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-           <http://www.w3.org/2004/02/skos/core#notation> "FRD-SG-18" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "RD-SIGMA-18" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-20
-:FRD-SG-20 rdf:type owl:NamedIndividual ,
-                    <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-           <http://www.w3.org/2004/02/skos/core#notation> "FRD-SG-20" ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "RD-SIGMA-20" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD
-:RD rdf:type owl:NamedIndividual ,
-             <http://www.w3.org/2004/02/skos/core#Concept> ;
-    <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-    <http://www.w3.org/2004/02/skos/core#notation> "RD" ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "RESTRICTED DATA" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-CNWDI
-:RD-CNWDI rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-          <http://www.w3.org/2004/02/skos/core#notation> "RD-CNWDI" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "RD-CRITICAL NUCLEAR WEAPON DESIGN INFORMATION" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-14
-:RD-SG-14 rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-          <http://www.w3.org/2004/02/skos/core#notation> "RD-SG-14" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "RD-SIGMA-14" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-15
-:RD-SG-15 rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-          <http://www.w3.org/2004/02/skos/core#notation> "RD-SG-15" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "RD-SIGMA-15" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-18
-:RD-SG-18 rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-          <http://www.w3.org/2004/02/skos/core#notation> "RD-SG-18" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "RD-SIGMA-18" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-20
-:RD-SG-20 rdf:type owl:NamedIndividual ,
-                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-          <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-          <http://www.w3.org/2004/02/skos/core#notation> "RD-SG-20" ;
-          <http://www.w3.org/2004/02/skos/core#prefLabel> "RD-SIGMA-20" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#TFNI
-:TFNI rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-      <http://www.w3.org/2004/02/skos/core#notation> "TFNI" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION" .
-
-
-###  urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#UCNI
-:UCNI rdf:type owl:NamedIndividual ,
-               <http://www.w3.org/2004/02/skos/core#Concept> ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumISMatomicEnergyMarkings ;
-      <http://www.w3.org/2004/02/skos/core#notation> "UCNI" ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "DoE CONTROLLED NUCLEAR INFORMATION" .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

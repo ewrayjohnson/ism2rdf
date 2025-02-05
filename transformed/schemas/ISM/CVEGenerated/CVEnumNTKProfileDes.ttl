@@ -1,89 +1,31 @@
-@prefix : <urn:us:gov:ic:cvenum:ntk:profiledes#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:us:gov:ic:cvenum:ntk:profiledes> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<urn:us:gov:ic:cvenum:ntk:profiledes> rdf:type owl:Ontology .
+skos:inScheme a owl:ObjectProperty .
 
-#################################################################
-#    Annotation properties
-#################################################################
+<urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem> a skos:Concept ;
+    skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> ;
+    skos:notation "urn:us:gov:ic:ntk:profile:agencydissem" ;
+    skos:prefLabel "Agency Dissem" .
 
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+<urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere> a skos:Concept ;
+    skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> ;
+    skos:notation "urn:us:gov:ic:ntk:profile:datasphere" ;
+    skos:prefLabel "Data Sphere" .
 
+<urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind> a skos:Concept ;
+    skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> ;
+    skos:notation "urn:us:gov:ic:ntk:profile:grp-ind" ;
+    skos:prefLabel "Group and Individual" .
 
-###  http://www.w3.org/2004/02/skos/core#notation
-<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+<urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role> a skos:Concept ;
+    skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> ;
+    skos:notation "urn:us:gov:ic:ntk:profile:role" ;
+    skos:prefLabel "ROLE" .
 
+<urn:us:gov:ic:s:ISM:CVEGenerated:CVEnumNTKProfileDes> a owl:Ontology .
 
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> a skos:ConceptScheme ;
+    dc:title "(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml" .
 
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#inScheme
-<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes
-:CVEnumNTKProfileDes rdf:type owl:NamedIndividual ,
-                              <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                     <http://purl.org/dc/elements/1.1/title> "(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml" .
-
-
-###  urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem
-:urn:us:gov:ic:ntk:profile:agencydissem rdf:type owl:NamedIndividual ,
-                                                 <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                        <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumNTKProfileDes ;
-                                        <http://www.w3.org/2004/02/skos/core#notation> "urn:us:gov:ic:ntk:profile:agencydissem" ;
-                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Agency Dissem" .
-
-
-###  urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere
-:urn:us:gov:ic:ntk:profile:datasphere rdf:type owl:NamedIndividual ,
-                                               <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                      <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumNTKProfileDes ;
-                                      <http://www.w3.org/2004/02/skos/core#notation> "urn:us:gov:ic:ntk:profile:datasphere" ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Sphere" .
-
-
-###  urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind
-:urn:us:gov:ic:ntk:profile:grp-ind rdf:type owl:NamedIndividual ,
-                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                   <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumNTKProfileDes ;
-                                   <http://www.w3.org/2004/02/skos/core#notation> "urn:us:gov:ic:ntk:profile:grp-ind" ;
-                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Group and Individual" .
-
-
-###  urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role
-:urn:us:gov:ic:ntk:profile:role rdf:type owl:NamedIndividual ,
-                                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                <http://www.w3.org/2004/02/skos/core#inScheme> :CVEnumNTKProfileDes ;
-                                <http://www.w3.org/2004/02/skos/core#notation> "urn:us:gov:ic:ntk:profile:role" ;
-                                <http://www.w3.org/2004/02/skos/core#prefLabel> "ROLE" .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

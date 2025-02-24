@@ -234,7 +234,7 @@ type Import = {
             }
             const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
             fs.writeFileSync(jsonldOutputFilepath, JSON.stringify(json2, null, 2));
-            const rdfxmlOutputFilepath = path.join(outputDir, `${basename}.xml`);
+            const rdfxmlOutputFilepath = path.join(outputDir, `${basename}.rdf`);
             fs.writeFileSync(rdfxmlOutputFilepath, rdf);
           }
         }

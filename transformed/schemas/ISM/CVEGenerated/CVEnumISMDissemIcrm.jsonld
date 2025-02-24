@@ -1,14 +1,90 @@
 {
   "@context": {
     "ismdissemicrm": "urn:us:gov:ic:cvenum:ism:dissem:icrm#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismdissemicrm:CVEnumISMDissemIcrm",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismdissemicrm:CVEnumISMDissemIcrm definition"
+      "dc:title": "(U) ismdissemicrm:CVEnumISMDissemIcrm definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismdissemicrm:RS"
+        },
+        {
+          "@id": "ismdissemicrm:FOUO"
+        },
+        {
+          "@id": "ismdissemicrm:OC"
+        },
+        {
+          "@id": "ismdissemicrm:OC-USGOV"
+        },
+        {
+          "@id": "ismdissemicrm:IMC"
+        },
+        {
+          "@id": "ismdissemicrm:NF"
+        },
+        {
+          "@id": "ismdissemicrm:PR"
+        },
+        {
+          "@id": "ismdissemicrm:REL"
+        },
+        {
+          "@id": "ismdissemicrm:RELIDO"
+        },
+        {
+          "@id": "ismdissemicrm:EYES"
+        },
+        {
+          "@id": "ismdissemicrm:DSEN"
+        },
+        {
+          "@id": "ismdissemicrm:RAWFISA"
+        },
+        {
+          "@id": "ismdissemicrm:FISA"
+        },
+        {
+          "@id": "ismdissemicrm:DISPLAYONLY"
+        },
+        {
+          "@id": "ismdissemicrm:EXEMPT_FROM_ICD501_DISCOVERY"
+        },
+        {
+          "@id": "ismdissemicrm:WAIVED"
+        }
+      ]
+    },
+    {
+      "@id": "ismdissemicrm:CVEnumISMDissemIcrmValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "RS",
+        "FOUO",
+        "OC",
+        "OC-USGOV",
+        "IMC",
+        "NF",
+        "PR",
+        "REL",
+        "RELIDO",
+        "EYES",
+        "DSEN",
+        "RAWFISA",
+        "FISA",
+        "DISPLAYONLY",
+        "EXEMPT_FROM_ICD501_DISCOVERY",
+        "WAIVED"
+      ]
     },
     {
       "@id": "ismdissemicrm:RS",

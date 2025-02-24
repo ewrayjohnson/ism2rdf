@@ -1,13 +1,41 @@
 {
   "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml"
+      "dc:title": "(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml",
+      "skos:hasTopConcept": [
+        {
+          "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem"
+        },
+        {
+          "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere"
+        },
+        {
+          "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind"
+        },
+        {
+          "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role"
+        }
+      ]
+    },
+    {
+      "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "urn:us:gov:ic:ntk:profile:agencydissem",
+        "urn:us:gov:ic:ntk:profile:datasphere",
+        "urn:us:gov:ic:ntk:profile:grp-ind",
+        "urn:us:gov:ic:ntk:profile:role"
+      ]
     },
     {
       "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem",

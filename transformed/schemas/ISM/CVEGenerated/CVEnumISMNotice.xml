@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:title>(U) ismnotice:CVEnumISMNotice definition</dc:title>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#FISA"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#RAWFISA"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#IMC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CNWDI"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#RD"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#FRD"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#DS"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#LES"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#LES-NF"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#DSEN"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-A"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-B"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-C"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-D"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-E"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-F"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#US-Person"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#pre13526ORCON"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#POC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#COMSEC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#SSI"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#RSEN"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#IMCON_RSEN"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#GEOCAP"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#NATO"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#RC_Dissemination_Control_Required"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:notice#ITAR-EAR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNoticeValues">
+    <owl:oneOf>FISA</owl:oneOf>
+    <owl:oneOf>RAWFISA</owl:oneOf>
+    <owl:oneOf>IMC</owl:oneOf>
+    <owl:oneOf>CNWDI</owl:oneOf>
+    <owl:oneOf>RD</owl:oneOf>
+    <owl:oneOf>FRD</owl:oneOf>
+    <owl:oneOf>DS</owl:oneOf>
+    <owl:oneOf>LES</owl:oneOf>
+    <owl:oneOf>LES-NF</owl:oneOf>
+    <owl:oneOf>DSEN</owl:oneOf>
+    <owl:oneOf>DoD-Dist-A</owl:oneOf>
+    <owl:oneOf>DoD-Dist-B</owl:oneOf>
+    <owl:oneOf>DoD-Dist-C</owl:oneOf>
+    <owl:oneOf>DoD-Dist-D</owl:oneOf>
+    <owl:oneOf>DoD-Dist-E</owl:oneOf>
+    <owl:oneOf>DoD-Dist-F</owl:oneOf>
+    <owl:oneOf>US-Person</owl:oneOf>
+    <owl:oneOf>pre13526ORCON</owl:oneOf>
+    <owl:oneOf>POC</owl:oneOf>
+    <owl:oneOf>COMSEC</owl:oneOf>
+    <owl:oneOf>SSI</owl:oneOf>
+    <owl:oneOf>RSEN</owl:oneOf>
+    <owl:oneOf>IMCON_RSEN</owl:oneOf>
+    <owl:oneOf>GEOCAP</owl:oneOf>
+    <owl:oneOf>NATO</owl:oneOf>
+    <owl:oneOf>RC_Dissemination_Control_Required</owl:oneOf>
+    <owl:oneOf>ITAR-EAR</owl:oneOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#FISA">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>FISA</skos:notation>
+    <skos:prefLabel>FISA Warning statement</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#RAWFISA">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>RAWFISA</skos:notation>
+    <skos:prefLabel>RAWFISA Warning statement</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#IMC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>IMC</skos:notation>
+    <skos:prefLabel>IMCON Warning statement</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#CNWDI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>CNWDI</skos:notation>
+    <skos:prefLabel>Controled Nuclear Weapon Design Information Warning statement</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#RD">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>RD</skos:notation>
+    <skos:prefLabel>RD Warning statement</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#FRD">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>FRD</skos:notation>
+    <skos:prefLabel>FRD Warning statement</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#DS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>DS</skos:notation>
+    <skos:prefLabel>LIMDIS caveat</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#LES">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>LES</skos:notation>
+    <skos:prefLabel>LES Notice</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#LES-NF">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>LES-NF</skos:notation>
+    <skos:prefLabel>LES-NF Notice</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#DSEN">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>DSEN</skos:notation>
+    <skos:prefLabel>DSEN Notice</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-A">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>DoD-Dist-A</skos:notation>
+    <skos:prefLabel>DoD Distribution statement A from DoD Directive 5230.24</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-B">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>DoD-Dist-B</skos:notation>
+    <skos:prefLabel>DoD Distribution statement B from DoD Directive 5230.24</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-C">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>DoD-Dist-C</skos:notation>
+    <skos:prefLabel>DoD Distribution statement C from DoD Directive 5230.24</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-D">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>DoD-Dist-D</skos:notation>
+    <skos:prefLabel>DoD Distribution statement D from DoD Directive 5230.24</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-E">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>DoD-Dist-E</skos:notation>
+    <skos:prefLabel>DoD Distribution statement E from DoD Directive 5230.24</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-F">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>DoD-Dist-F</skos:notation>
+    <skos:prefLabel>DoD Distribution statement F from DoD Directive 5230.24</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#US-Person">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>US-Person</skos:notation>
+    <skos:prefLabel>US Person info Notice</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#pre13526ORCON">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>pre13526ORCON</skos:notation>
+    <skos:prefLabel>Indicates that an instance document must abide by rules pertaining to ORIGINATOR CONTROLLED data issued prior to Executive Order 13526.</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#POC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>POC</skos:notation>
+    <skos:prefLabel>Indicates that the contents of this notice specify the contact information for a required point-of-contact.</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#COMSEC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>COMSEC</skos:notation>
+    <skos:prefLabel>COMSEC Notice</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#SSI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>SSI</skos:notation>
+    <skos:prefLabel>Indicates that this is the notice for Sensitive Security Information</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#RSEN">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>RSEN</skos:notation>
+    <skos:prefLabel>Risk Sensitive Notice</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#IMCON_RSEN">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>IMCON_RSEN</skos:notation>
+    <skos:prefLabel>Indicates SAT warning statements include IMCON and RSEN markings</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#GEOCAP">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>GEOCAP</skos:notation>
+    <skos:prefLabel>GEOCAP Warning statement</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#NATO">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>NATO</skos:notation>
+    <skos:prefLabel>NATO Warning statement</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#RC_Dissemination_Control_Required">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>RC_Dissemination_Control_Required</skos:notation>
+    <skos:prefLabel>This product was collected in a restricted collection mode. Redaction, chipping and release determination shall not result in more permissive release than NOFORN regardless of the Security Indicator Codes (SIC) associated with the product</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:notice#ITAR-EAR">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice"/>
+    <skos:notation>ITAR-EAR</skos:notation>
+    <skos:prefLabel>Warning statement for International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR) in accordance with DoD 5230.24, Distribution Statements on Technical Documents.</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

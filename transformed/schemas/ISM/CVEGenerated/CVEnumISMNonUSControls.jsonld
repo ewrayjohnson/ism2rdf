@@ -1,14 +1,38 @@
 {
   "@context": {
     "ismnonus": "urn:us:gov:ic:cvenum:ism:nonuscontrols#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismnonus:CVEnumISMNonUSControls",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismnonus:CVEnumISMNonUSControls definition"
+      "dc:title": "(U) ismnonus:CVEnumISMNonUSControls definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismnonus:NATO-ATOMAL"
+        },
+        {
+          "@id": "ismnonus:NATO-BOHEMIA"
+        },
+        {
+          "@id": "ismnonus:NATO-BALK"
+        }
+      ]
+    },
+    {
+      "@id": "ismnonus:CVEnumISMNonUSControlsValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "NATO-ATOMAL",
+        "NATO-BOHEMIA",
+        "NATO-BALK"
+      ]
     },
     {
       "@id": "ismnonus:NATO-ATOMAL",

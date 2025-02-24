@@ -7,10 +7,21 @@
     "tax": "urn:us:gov:ic:taxonomy:common#",
     "ismcatrelto": "urn:us:gov:ic:cvenum:ismcat:relto#",
     "ismcatre": "urn:us:gov:ic:cvenum:ismcat:responsibleentity#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xs": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
-  "@id": "tetra:DecomposableType",
-  "@type": "skos:ConceptScheme",
-  "dc:title": "Decomposition is the breaking down of a tetragraph into its component countries for the purposes of rollup. An example is decomposing FVEY into the five member countries. This decomposition allows a portion marked RELEASABLE TO USA, GBR and another portion marked RELEASEABLE TO USA, FVEY to rollup to RELEASABLE TO USA, GBR. If FVEY was not decomposable the rollup would have to have been NF. NA is \"Not Applicable\" and is applied to deprecated tetragraphs."
+  "@graph": [
+    {
+      "@id": "tetra:DecomposableType",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "Decomposition is the breaking down of a tetragraph into its component countries for the purposes of rollup. An example is decomposing FVEY into the five member countries. This decomposition allows a portion marked RELEASABLE TO USA, GBR and another portion marked RELEASEABLE TO USA, FVEY to rollup to RELEASABLE TO USA, GBR. If FVEY was not decomposable the rollup would have to have been NF. NA is \"Not Applicable\" and is applied to deprecated tetragraphs."
+    },
+    {
+      "@id": "tetra:DecomposableTypeValues",
+      "@type": "rdfs:Datatype"
+    }
+  ]
 }

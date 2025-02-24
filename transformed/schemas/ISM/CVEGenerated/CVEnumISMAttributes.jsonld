@@ -1,14 +1,214 @@
 {
   "@context": {
     "ismattrib": "urn:us:gov:ic:cvenum:ism:attributes#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismattrib:CVEnumISMAttributes",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismattrib:CVEnumISMAttributes definition"
+      "dc:title": "(U) ismattrib:CVEnumISMAttributes definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismattrib:compliesWith"
+        },
+        {
+          "@id": "ismattrib:classification"
+        },
+        {
+          "@id": "ismattrib:ownerProducer"
+        },
+        {
+          "@id": "ismattrib:SCIcontrols"
+        },
+        {
+          "@id": "ismattrib:SARIdentifier"
+        },
+        {
+          "@id": "ismattrib:atomicEnergyMarkings"
+        },
+        {
+          "@id": "ismattrib:disseminationControls"
+        },
+        {
+          "@id": "ismattrib:FGIsourceOpen"
+        },
+        {
+          "@id": "ismattrib:FGIsourceProtected"
+        },
+        {
+          "@id": "ismattrib:hasApproximateMarkings"
+        },
+        {
+          "@id": "ismattrib:releasableTo"
+        },
+        {
+          "@id": "ismattrib:displayOnlyTo"
+        },
+        {
+          "@id": "ismattrib:nonICmarkings"
+        },
+        {
+          "@id": "ismattrib:classifiedBy"
+        },
+        {
+          "@id": "ismattrib:derivativelyClassifiedBy"
+        },
+        {
+          "@id": "ismattrib:classificationReason"
+        },
+        {
+          "@id": "ismattrib:nonUSControls"
+        },
+        {
+          "@id": "ismattrib:derivedFrom"
+        },
+        {
+          "@id": "ismattrib:declassDate"
+        },
+        {
+          "@id": "ismattrib:declassEvent"
+        },
+        {
+          "@id": "ismattrib:declassException"
+        },
+        {
+          "@id": "ismattrib:resourceElement"
+        },
+        {
+          "@id": "ismattrib:highWaterNATO"
+        },
+        {
+          "@id": "ismattrib:excludeFromRollup"
+        },
+        {
+          "@id": "ismattrib:createDate"
+        },
+        {
+          "@id": "ismattrib:compilationReason"
+        },
+        {
+          "@id": "ismattrib:noAggregation"
+        },
+        {
+          "@id": "ismattrib:noticeType"
+        },
+        {
+          "@id": "ismattrib:noticeProseID"
+        },
+        {
+          "@id": "ismattrib:externalNotice"
+        },
+        {
+          "@id": "ismattrib:DESVersion"
+        },
+        {
+          "@id": "ismattrib:ISMCATCESVersion"
+        },
+        {
+          "@id": "ismattrib:noticeDate"
+        },
+        {
+          "@id": "ismattrib:noticeReason"
+        },
+        {
+          "@id": "ismattrib:exemptFrom"
+        },
+        {
+          "@id": "ismattrib:unregisteredNoticeType"
+        },
+        {
+          "@id": "ismattrib:pocType"
+        },
+        {
+          "@id": "ismattrib:joint"
+        },
+        {
+          "@id": "ismattrib:cuiBasic"
+        },
+        {
+          "@id": "ismattrib:cuiSpecified"
+        },
+        {
+          "@id": "ismattrib:cuiDecontrolDate"
+        },
+        {
+          "@id": "ismattrib:cuiDecontrolEvent"
+        },
+        {
+          "@id": "ismattrib:cuiControlledBy"
+        },
+        {
+          "@id": "ismattrib:cuiControlledByOffice"
+        },
+        {
+          "@id": "ismattrib:cuiPOC"
+        },
+        {
+          "@id": "ismattrib:secondBannerLine"
+        },
+        {
+          "@id": "ismattrib:handleViaChannels"
+        }
+      ]
+    },
+    {
+      "@id": "ismattrib:CVEnumISMAttributesValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "compliesWith",
+        "classification",
+        "ownerProducer",
+        "SCIcontrols",
+        "SARIdentifier",
+        "atomicEnergyMarkings",
+        "disseminationControls",
+        "FGIsourceOpen",
+        "FGIsourceProtected",
+        "hasApproximateMarkings",
+        "releasableTo",
+        "displayOnlyTo",
+        "nonICmarkings",
+        "classifiedBy",
+        "derivativelyClassifiedBy",
+        "classificationReason",
+        "nonUSControls",
+        "derivedFrom",
+        "declassDate",
+        "declassEvent",
+        "declassException",
+        "resourceElement",
+        "highWaterNATO",
+        "excludeFromRollup",
+        "createDate",
+        "compilationReason",
+        "noAggregation",
+        "noticeType",
+        "noticeProseID",
+        "externalNotice",
+        "DESVersion",
+        "ISMCATCESVersion",
+        "noticeDate",
+        "noticeReason",
+        "exemptFrom",
+        "unregisteredNoticeType",
+        "pocType",
+        "joint",
+        "cuiBasic",
+        "cuiSpecified",
+        "cuiDecontrolDate",
+        "cuiDecontrolEvent",
+        "cuiControlledBy",
+        "cuiControlledByOffice",
+        "cuiPOC",
+        "secondBannerLine",
+        "handleViaChannels"
+      ]
     },
     {
       "@id": "ismattrib:compliesWith",

@@ -1,14 +1,722 @@
 {
   "@context": {
     "usgaa": "urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "usgaa:CVEnumUSGOVAgencyAcronym",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) All valid acronyms for use with US Government Offices. This list is only the agencies within the Executive Branches of the US Government. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSGOVAgencyAcronym.xml"
+      "dc:title": "(U) All valid acronyms for use with US Government Offices. This list is only the agencies within the Executive Branches of the US Government. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSGOVAgencyAcronym.xml",
+      "skos:hasTopConcept": [
+        {
+          "@id": "usgaa:USA.ABMC"
+        },
+        {
+          "@id": "usgaa:USA.ACCESS"
+        },
+        {
+          "@id": "usgaa:USA.ACFR"
+        },
+        {
+          "@id": "usgaa:USA.ACHP"
+        },
+        {
+          "@id": "usgaa:USA.ACUS"
+        },
+        {
+          "@id": "usgaa:USA.ADF"
+        },
+        {
+          "@id": "usgaa:USA.AMICC"
+        },
+        {
+          "@id": "usgaa:USA.AMTRAK"
+        },
+        {
+          "@id": "usgaa:USA.ARC"
+        },
+        {
+          "@id": "usgaa:USA.ARCTIC"
+        },
+        {
+          "@id": "usgaa:USA.BBG"
+        },
+        {
+          "@id": "usgaa:USA.BMGS"
+        },
+        {
+          "@id": "usgaa:USA.CAOC"
+        },
+        {
+          "@id": "usgaa:USA.CCJJ"
+        },
+        {
+          "@id": "usgaa:USA.CCR"
+        },
+        {
+          "@id": "usgaa:USA.CEA"
+        },
+        {
+          "@id": "usgaa:USA.CFA"
+        },
+        {
+          "@id": "usgaa:USA.CFI"
+        },
+        {
+          "@id": "usgaa:USA.CFOC"
+        },
+        {
+          "@id": "usgaa:USA.CFTC"
+        },
+        {
+          "@id": "usgaa:USA.CHCOC"
+        },
+        {
+          "@id": "usgaa:USA.CIA"
+        },
+        {
+          "@id": "usgaa:USA.CIOC"
+        },
+        {
+          "@id": "usgaa:USA.CIRF"
+        },
+        {
+          "@id": "usgaa:USA.CITA"
+        },
+        {
+          "@id": "usgaa:USA.CNCS"
+        },
+        {
+          "@id": "usgaa:USA.COMP"
+        },
+        {
+          "@id": "usgaa:USA.CPSC"
+        },
+        {
+          "@id": "usgaa:USA.CSAC"
+        },
+        {
+          "@id": "usgaa:USA.CSHIB"
+        },
+        {
+          "@id": "usgaa:USA.CSOSA"
+        },
+        {
+          "@id": "usgaa:USA.DEA"
+        },
+        {
+          "@id": "usgaa:USA.DENALI"
+        },
+        {
+          "@id": "usgaa:USA.DFC"
+        },
+        {
+          "@id": "usgaa:USA.DHS"
+        },
+        {
+          "@id": "usgaa:USA.DIA"
+        },
+        {
+          "@id": "usgaa:USA.DNFSB"
+        },
+        {
+          "@id": "usgaa:USA.DNI"
+        },
+        {
+          "@id": "usgaa:USA.DOC"
+        },
+        {
+          "@id": "usgaa:USA.DOD"
+        },
+        {
+          "@id": "usgaa:USA.DOE"
+        },
+        {
+          "@id": "usgaa:USA.DOI"
+        },
+        {
+          "@id": "usgaa:USA.DOJ"
+        },
+        {
+          "@id": "usgaa:USA.DOL"
+        },
+        {
+          "@id": "usgaa:USA.DOT"
+        },
+        {
+          "@id": "usgaa:USA.DRBC"
+        },
+        {
+          "@id": "usgaa:USA.EAC"
+        },
+        {
+          "@id": "usgaa:USA.ED"
+        },
+        {
+          "@id": "usgaa:USA.EEOC"
+        },
+        {
+          "@id": "usgaa:USA.EIBUS"
+        },
+        {
+          "@id": "usgaa:USA.EOP"
+        },
+        {
+          "@id": "usgaa:USA.EPA"
+        },
+        {
+          "@id": "usgaa:USA.ESC"
+        },
+        {
+          "@id": "usgaa:USA.FAC"
+        },
+        {
+          "@id": "usgaa:USA.FASAB"
+        },
+        {
+          "@id": "usgaa:USA.FBI"
+        },
+        {
+          "@id": "usgaa:USA.FCA"
+        },
+        {
+          "@id": "usgaa:USA.FCC"
+        },
+        {
+          "@id": "usgaa:USA.FCIC"
+        },
+        {
+          "@id": "usgaa:USA.FCSIC"
+        },
+        {
+          "@id": "usgaa:USA.FDIC"
+        },
+        {
+          "@id": "usgaa:USA.FEB"
+        },
+        {
+          "@id": "usgaa:USA.FEC"
+        },
+        {
+          "@id": "usgaa:USA.FERC"
+        },
+        {
+          "@id": "usgaa:USA.FFB"
+        },
+        {
+          "@id": "usgaa:USA.FFIEC"
+        },
+        {
+          "@id": "usgaa:USA.FGDC"
+        },
+        {
+          "@id": "usgaa:USA.FHRA"
+        },
+        {
+          "@id": "usgaa:USA.FICE"
+        },
+        {
+          "@id": "usgaa:USA.FICMNEW"
+        },
+        {
+          "@id": "usgaa:USA.FICSP"
+        },
+        {
+          "@id": "usgaa:USA.FLCTT"
+        },
+        {
+          "@id": "usgaa:USA.FLICC"
+        },
+        {
+          "@id": "usgaa:USA.FLRA"
+        },
+        {
+          "@id": "usgaa:USA.FMC"
+        },
+        {
+          "@id": "usgaa:USA.FMCS"
+        },
+        {
+          "@id": "usgaa:USA.FMSHRC"
+        },
+        {
+          "@id": "usgaa:USA.FRS"
+        },
+        {
+          "@id": "usgaa:USA.FRTIB"
+        },
+        {
+          "@id": "usgaa:USA.FTC"
+        },
+        {
+          "@id": "usgaa:USA.GSA"
+        },
+        {
+          "@id": "usgaa:USA.HELSINKI"
+        },
+        {
+          "@id": "usgaa:USA.HHS"
+        },
+        {
+          "@id": "usgaa:USA.HMM"
+        },
+        {
+          "@id": "usgaa:USA.HSTSF"
+        },
+        {
+          "@id": "usgaa:USA.HUD"
+        },
+        {
+          "@id": "usgaa:USA.IACB"
+        },
+        {
+          "@id": "usgaa:USA.IADRWG"
+        },
+        {
+          "@id": "usgaa:USA.IAF"
+        },
+        {
+          "@id": "usgaa:USA.IBB"
+        },
+        {
+          "@id": "usgaa:USA.ICH"
+        },
+        {
+          "@id": "usgaa:USA.ICPRB"
+        },
+        {
+          "@id": "usgaa:USA.IMCNHCC"
+        },
+        {
+          "@id": "usgaa:USA.IMLS"
+        },
+        {
+          "@id": "usgaa:USA.ITC"
+        },
+        {
+          "@id": "usgaa:USA.JBEA"
+        },
+        {
+          "@id": "usgaa:USA.JFSP"
+        },
+        {
+          "@id": "usgaa:USA.JMMFF"
+        },
+        {
+          "@id": "usgaa:USA.JUSFC"
+        },
+        {
+          "@id": "usgaa:USA.JWFFSB"
+        },
+        {
+          "@id": "usgaa:USA.LSC"
+        },
+        {
+          "@id": "usgaa:USA.MBCC"
+        },
+        {
+          "@id": "usgaa:USA.MCC"
+        },
+        {
+          "@id": "usgaa:USA.MKUF"
+        },
+        {
+          "@id": "usgaa:USA.MMC"
+        },
+        {
+          "@id": "usgaa:USA.MRC"
+        },
+        {
+          "@id": "usgaa:USA.MSPB"
+        },
+        {
+          "@id": "usgaa:USA.NARA"
+        },
+        {
+          "@id": "usgaa:USA.NASA"
+        },
+        {
+          "@id": "usgaa:USA.NBCFM"
+        },
+        {
+          "@id": "usgaa:USA.NCD"
+        },
+        {
+          "@id": "usgaa:USA.NCFRR"
+        },
+        {
+          "@id": "usgaa:USA.NCPC"
+        },
+        {
+          "@id": "usgaa:USA.NCUA"
+        },
+        {
+          "@id": "usgaa:USA.NEA"
+        },
+        {
+          "@id": "usgaa:USA.NEH"
+        },
+        {
+          "@id": "usgaa:USA.NGA"
+        },
+        {
+          "@id": "usgaa:USA.NIGC"
+        },
+        {
+          "@id": "usgaa:USA.NLRB"
+        },
+        {
+          "@id": "usgaa:USA.NMB"
+        },
+        {
+          "@id": "usgaa:USA.NPF"
+        },
+        {
+          "@id": "usgaa:USA.NPPC"
+        },
+        {
+          "@id": "usgaa:USA.NRC"
+        },
+        {
+          "@id": "usgaa:USA.NRO"
+        },
+        {
+          "@id": "usgaa:USA.NSA"
+        },
+        {
+          "@id": "usgaa:USA.NSF"
+        },
+        {
+          "@id": "usgaa:USA.NTSB"
+        },
+        {
+          "@id": "usgaa:USA.NWTRB"
+        },
+        {
+          "@id": "usgaa:USA.OGE"
+        },
+        {
+          "@id": "usgaa:USA.OMB"
+        },
+        {
+          "@id": "usgaa:USA.ONCIX"
+        },
+        {
+          "@id": "usgaa:USA.OPIC"
+        },
+        {
+          "@id": "usgaa:USA.OPM"
+        },
+        {
+          "@id": "usgaa:USA.OSC"
+        },
+        {
+          "@id": "usgaa:USA.OSHRC"
+        },
+        {
+          "@id": "usgaa:USA.OVP"
+        },
+        {
+          "@id": "usgaa:USA.PBGC"
+        },
+        {
+          "@id": "usgaa:USA.PCC"
+        },
+        {
+          "@id": "usgaa:USA.PEACE"
+        },
+        {
+          "@id": "usgaa:USA.PRC"
+        },
+        {
+          "@id": "usgaa:USA.PRESIDIO"
+        },
+        {
+          "@id": "usgaa:USA.RISC"
+        },
+        {
+          "@id": "usgaa:USA.RRB"
+        },
+        {
+          "@id": "usgaa:USA.SBA"
+        },
+        {
+          "@id": "usgaa:USA.SEC"
+        },
+        {
+          "@id": "usgaa:USA.SJI"
+        },
+        {
+          "@id": "usgaa:USA.SMITH"
+        },
+        {
+          "@id": "usgaa:USA.SRBC"
+        },
+        {
+          "@id": "usgaa:USA.SSA"
+        },
+        {
+          "@id": "usgaa:USA.SSAB"
+        },
+        {
+          "@id": "usgaa:USA.SSS"
+        },
+        {
+          "@id": "usgaa:USA.STATE"
+        },
+        {
+          "@id": "usgaa:USA.TAP"
+        },
+        {
+          "@id": "usgaa:USA.TDA"
+        },
+        {
+          "@id": "usgaa:USA.TREAS"
+        },
+        {
+          "@id": "usgaa:USA.TVA"
+        },
+        {
+          "@id": "usgaa:USA.USA"
+        },
+        {
+          "@id": "usgaa:USA.USAF"
+        },
+        {
+          "@id": "usgaa:USA.USAID"
+        },
+        {
+          "@id": "usgaa:USA.USAOC"
+        },
+        {
+          "@id": "usgaa:USA.USCG"
+        },
+        {
+          "@id": "usgaa:USA.USDA"
+        },
+        {
+          "@id": "usgaa:USA.USIP"
+        },
+        {
+          "@id": "usgaa:USA.USMC"
+        },
+        {
+          "@id": "usgaa:USA.USN"
+        },
+        {
+          "@id": "usgaa:USA.USPS"
+        },
+        {
+          "@id": "usgaa:USA.USSF"
+        },
+        {
+          "@id": "usgaa:USA.USTR"
+        },
+        {
+          "@id": "usgaa:USA.USUN"
+        },
+        {
+          "@id": "usgaa:USA.VA"
+        },
+        {
+          "@id": "usgaa:USA.VDNC"
+        },
+        {
+          "@id": "usgaa:USA.VEF"
+        },
+        {
+          "@id": "usgaa:USA.WHCPS"
+        },
+        {
+          "@id": "usgaa:USA.WHMO"
+        }
+      ]
+    },
+    {
+      "@id": "usgaa:CVEnumUSGOVAgencyAcronymValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "USA.ABMC",
+        "USA.ACCESS",
+        "USA.ACFR",
+        "USA.ACHP",
+        "USA.ACUS",
+        "USA.ADF",
+        "USA.AMICC",
+        "USA.AMTRAK",
+        "USA.ARC",
+        "USA.ARCTIC",
+        "USA.BBG",
+        "USA.BMGS",
+        "USA.CAOC",
+        "USA.CCJJ",
+        "USA.CCR",
+        "USA.CEA",
+        "USA.CFA",
+        "USA.CFI",
+        "USA.CFOC",
+        "USA.CFTC",
+        "USA.CHCOC",
+        "USA.CIA",
+        "USA.CIOC",
+        "USA.CIRF",
+        "USA.CITA",
+        "USA.CNCS",
+        "USA.COMP",
+        "USA.CPSC",
+        "USA.CSAC",
+        "USA.CSHIB",
+        "USA.CSOSA",
+        "USA.DEA",
+        "USA.DENALI",
+        "USA.DFC",
+        "USA.DHS",
+        "USA.DIA",
+        "USA.DNFSB",
+        "USA.DNI",
+        "USA.DOC",
+        "USA.DOD",
+        "USA.DOE",
+        "USA.DOI",
+        "USA.DOJ",
+        "USA.DOL",
+        "USA.DOT",
+        "USA.DRBC",
+        "USA.EAC",
+        "USA.ED",
+        "USA.EEOC",
+        "USA.EIBUS",
+        "USA.EOP",
+        "USA.EPA",
+        "USA.ESC",
+        "USA.FAC",
+        "USA.FASAB",
+        "USA.FBI",
+        "USA.FCA",
+        "USA.FCC",
+        "USA.FCIC",
+        "USA.FCSIC",
+        "USA.FDIC",
+        "USA.FEB",
+        "USA.FEC",
+        "USA.FERC",
+        "USA.FFB",
+        "USA.FFIEC",
+        "USA.FGDC",
+        "USA.FHRA",
+        "USA.FICE",
+        "USA.FICMNEW",
+        "USA.FICSP",
+        "USA.FLCTT",
+        "USA.FLICC",
+        "USA.FLRA",
+        "USA.FMC",
+        "USA.FMCS",
+        "USA.FMSHRC",
+        "USA.FRS",
+        "USA.FRTIB",
+        "USA.FTC",
+        "USA.GSA",
+        "USA.HELSINKI",
+        "USA.HHS",
+        "USA.HMM",
+        "USA.HSTSF",
+        "USA.HUD",
+        "USA.IACB",
+        "USA.IADRWG",
+        "USA.IAF",
+        "USA.IBB",
+        "USA.ICH",
+        "USA.ICPRB",
+        "USA.IMCNHCC",
+        "USA.IMLS",
+        "USA.ITC",
+        "USA.JBEA",
+        "USA.JFSP",
+        "USA.JMMFF",
+        "USA.JUSFC",
+        "USA.JWFFSB",
+        "USA.LSC",
+        "USA.MBCC",
+        "USA.MCC",
+        "USA.MKUF",
+        "USA.MMC",
+        "USA.MRC",
+        "USA.MSPB",
+        "USA.NARA",
+        "USA.NASA",
+        "USA.NBCFM",
+        "USA.NCD",
+        "USA.NCFRR",
+        "USA.NCPC",
+        "USA.NCUA",
+        "USA.NEA",
+        "USA.NEH",
+        "USA.NGA",
+        "USA.NIGC",
+        "USA.NLRB",
+        "USA.NMB",
+        "USA.NPF",
+        "USA.NPPC",
+        "USA.NRC",
+        "USA.NRO",
+        "USA.NSA",
+        "USA.NSF",
+        "USA.NTSB",
+        "USA.NWTRB",
+        "USA.OGE",
+        "USA.OMB",
+        "USA.ONCIX",
+        "USA.OPIC",
+        "USA.OPM",
+        "USA.OSC",
+        "USA.OSHRC",
+        "USA.OVP",
+        "USA.PBGC",
+        "USA.PCC",
+        "USA.PEACE",
+        "USA.PRC",
+        "USA.PRESIDIO",
+        "USA.RISC",
+        "USA.RRB",
+        "USA.SBA",
+        "USA.SEC",
+        "USA.SJI",
+        "USA.SMITH",
+        "USA.SRBC",
+        "USA.SSA",
+        "USA.SSAB",
+        "USA.SSS",
+        "USA.STATE",
+        "USA.TAP",
+        "USA.TDA",
+        "USA.TREAS",
+        "USA.TVA",
+        "USA.USA",
+        "USA.USAF",
+        "USA.USAID",
+        "USA.USAOC",
+        "USA.USCG",
+        "USA.USDA",
+        "USA.USIP",
+        "USA.USMC",
+        "USA.USN",
+        "USA.USPS",
+        "USA.USSF",
+        "USA.USTR",
+        "USA.USUN",
+        "USA.VA",
+        "USA.VDNC",
+        "USA.VEF",
+        "USA.WHCPS",
+        "USA.WHMO"
+      ]
     },
     {
       "@id": "usgaa:USA.ABMC",

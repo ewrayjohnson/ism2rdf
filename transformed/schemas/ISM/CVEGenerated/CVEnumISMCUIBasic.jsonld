@@ -1,14 +1,398 @@
 {
   "@context": {
     "ismcuibasic": "urn:us:gov:ic:cvenum:ism:cuibasic#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismcuibasic:CVEnumISMCUIBasic",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismcuibasic:CVEnumISMCUIBasic definition"
+      "dc:title": "(U) ismcuibasic:CVEnumISMCUIBasic definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismcuibasic:ADPO"
+        },
+        {
+          "@id": "ismcuibasic:AG"
+        },
+        {
+          "@id": "ismcuibasic:ASYL"
+        },
+        {
+          "@id": "ismcuibasic:FSEC"
+        },
+        {
+          "@id": "ismcuibasic:BATT"
+        },
+        {
+          "@id": "ismcuibasic:CVI"
+        },
+        {
+          "@id": "ismcuibasic:CVIC"
+        },
+        {
+          "@id": "ismcuibasic:BARG"
+        },
+        {
+          "@id": "ismcuibasic:CMPRS"
+        },
+        {
+          "@id": "ismcuibasic:LCOMM"
+        },
+        {
+          "@id": "ismcuibasic:COMPT"
+        },
+        {
+          "@id": "ismcuibasic:DREC"
+        },
+        {
+          "@id": "ismcuibasic:DCRIT"
+        },
+        {
+          "@id": "ismcuibasic:XFER"
+        },
+        {
+          "@id": "ismcuibasic:EMGT"
+        },
+        {
+          "@id": "ismcuibasic:EXPT"
+        },
+        {
+          "@id": "ismcuibasic:EXPTR"
+        },
+        {
+          "@id": "ismcuibasic:JURY"
+        },
+        {
+          "@id": "ismcuibasic:FHFANPI"
+        },
+        {
+          "@id": "ismcuibasic:FSI"
+        },
+        {
+          "@id": "ismcuibasic:CRIT"
+        },
+        {
+          "@id": "ismcuibasic:FNC"
+        },
+        {
+          "@id": "ismcuibasic:INTEL"
+        },
+        {
+          "@id": "ismcuibasic:LEI"
+        },
+        {
+          "@id": "ismcuibasic:NUC"
+        },
+        {
+          "@id": "ismcuibasic:PRVCY"
+        },
+        {
+          "@id": "ismcuibasic:PROPIN"
+        },
+        {
+          "@id": "ismcuibasic:GENETIC"
+        },
+        {
+          "@id": "ismcuibasic:HLTH"
+        },
+        {
+          "@id": "ismcuibasic:CUI-PROVISIONAL-HSAI"
+        },
+        {
+          "@id": "ismcuibasic:CUI-PROVISIONAL-HSEI"
+        },
+        {
+          "@id": "ismcuibasic:INF"
+        },
+        {
+          "@id": "ismcuibasic:ISVI"
+        },
+        {
+          "@id": "ismcuibasic:CUI-PROVISIONAL-ISVIH"
+        },
+        {
+          "@id": "ismcuibasic:PRIIG"
+        },
+        {
+          "@id": "ismcuibasic:ID"
+        },
+        {
+          "@id": "ismcuibasic:CUI-PROVISIONAL-IAIH"
+        },
+        {
+          "@id": "ismcuibasic:FINT"
+        },
+        {
+          "@id": "ismcuibasic:INVENT"
+        },
+        {
+          "@id": "ismcuibasic:INV"
+        },
+        {
+          "@id": "ismcuibasic:SURV"
+        },
+        {
+          "@id": "ismcuibasic:JUV"
+        },
+        {
+          "@id": "ismcuibasic:PRIVILEGE"
+        },
+        {
+          "@id": "ismcuibasic:LMI"
+        },
+        {
+          "@id": "ismcuibasic:MERG"
+        },
+        {
+          "@id": "ismcuibasic:MIL"
+        },
+        {
+          "@id": "ismcuibasic:LNSL"
+        },
+        {
+          "@id": "ismcuibasic:NETW"
+        },
+        {
+          "@id": "ismcuibasic:NNPI"
+        },
+        {
+          "@id": "ismcuibasic:OPSEC"
+        },
+        {
+          "@id": "ismcuibasic:RECCOM"
+        },
+        {
+          "@id": "ismcuibasic:SRI"
+        },
+        {
+          "@id": "ismcuibasic:OCCMTO"
+        },
+        {
+          "@id": "ismcuibasic:SERV"
+        },
+        {
+          "@id": "ismcuibasic:CUI-PROVISIONAL-OSI"
+        },
+        {
+          "@id": "ismcuibasic:APP"
+        },
+        {
+          "@id": "ismcuibasic:TRACE"
+        },
+        {
+          "@id": "ismcuibasic:RESD"
+        },
+        {
+          "@id": "ismcuibasic:PERS"
+        },
+        {
+          "@id": "ismcuibasic:CUI-PROVISIONAL-PSI"
+        },
+        {
+          "@id": "ismcuibasic:PEST"
+        },
+        {
+          "@id": "ismcuibasic:PHYS"
+        },
+        {
+          "@id": "ismcuibasic:CUI-PROVISIONAL-PHYSH"
+        },
+        {
+          "@id": "ismcuibasic:PRE"
+        },
+        {
+          "@id": "ismcuibasic:PRIOR"
+        },
+        {
+          "@id": "ismcuibasic:CUI-PROVISIONAL-PRIVACY"
+        },
+        {
+          "@id": "ismcuibasic:POST"
+        },
+        {
+          "@id": "ismcuibasic:LPROT"
+        },
+        {
+          "@id": "ismcuibasic:RAIL"
+        },
+        {
+          "@id": "ismcuibasic:RTR"
+        },
+        {
+          "@id": "ismcuibasic:RWRD"
+        },
+        {
+          "@id": "ismcuibasic:SAFE"
+        },
+        {
+          "@id": "ismcuibasic:PSEC"
+        },
+        {
+          "@id": "ismcuibasic:CUI-PROVISIONAL-PII"
+        },
+        {
+          "@id": "ismcuibasic:SCV"
+        },
+        {
+          "@id": "ismcuibasic:SBIZ"
+        },
+        {
+          "@id": "ismcuibasic:SSEL"
+        },
+        {
+          "@id": "ismcuibasic:STAT"
+        },
+        {
+          "@id": "ismcuibasic:ADJ"
+        },
+        {
+          "@id": "ismcuibasic:STUD"
+        },
+        {
+          "@id": "ismcuibasic:CONREG"
+        },
+        {
+          "@id": "ismcuibasic:CONV"
+        },
+        {
+          "@id": "ismcuibasic:TAI"
+        },
+        {
+          "@id": "ismcuibasic:PROT"
+        },
+        {
+          "@id": "ismcuibasic:LSCRN"
+        },
+        {
+          "@id": "ismcuibasic:DCNI"
+        },
+        {
+          "@id": "ismcuibasic:UCNI"
+        },
+        {
+          "@id": "ismcuibasic:LVIC"
+        },
+        {
+          "@id": "ismcuibasic:IVIC"
+        },
+        {
+          "@id": "ismcuibasic:VISA"
+        },
+        {
+          "@id": "ismcuibasic:WATER"
+        },
+        {
+          "@id": "ismcuibasic:WHSTL"
+        },
+        {
+          "@id": "ismcuibasic:WIT"
+        }
+      ]
+    },
+    {
+      "@id": "ismcuibasic:CVEnumISMCUIBasicValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "ADPO",
+        "AG",
+        "ASYL",
+        "FSEC",
+        "BATT",
+        "CVI",
+        "CVIC",
+        "BARG",
+        "CMPRS",
+        "LCOMM",
+        "COMPT",
+        "DREC",
+        "DCRIT",
+        "XFER",
+        "EMGT",
+        "EXPT",
+        "EXPTR",
+        "JURY",
+        "FHFANPI",
+        "FSI",
+        "CRIT",
+        "FNC",
+        "INTEL",
+        "LEI",
+        "NUC",
+        "PRVCY",
+        "PROPIN",
+        "GENETIC",
+        "HLTH",
+        "CUI-PROVISIONAL-HSAI",
+        "CUI-PROVISIONAL-HSEI",
+        "INF",
+        "ISVI",
+        "CUI-PROVISIONAL-ISVIH",
+        "PRIIG",
+        "ID",
+        "CUI-PROVISIONAL-IAIH",
+        "FINT",
+        "INVENT",
+        "INV",
+        "SURV",
+        "JUV",
+        "PRIVILEGE",
+        "LMI",
+        "MERG",
+        "MIL",
+        "LNSL",
+        "NETW",
+        "NNPI",
+        "OPSEC",
+        "RECCOM",
+        "SRI",
+        "OCCMTO",
+        "SERV",
+        "CUI-PROVISIONAL-OSI",
+        "APP",
+        "TRACE",
+        "RESD",
+        "PERS",
+        "CUI-PROVISIONAL-PSI",
+        "PEST",
+        "PHYS",
+        "CUI-PROVISIONAL-PHYSH",
+        "PRE",
+        "PRIOR",
+        "CUI-PROVISIONAL-PRIVACY",
+        "POST",
+        "LPROT",
+        "RAIL",
+        "RTR",
+        "RWRD",
+        "SAFE",
+        "PSEC",
+        "CUI-PROVISIONAL-PII",
+        "SCV",
+        "SBIZ",
+        "SSEL",
+        "STAT",
+        "ADJ",
+        "STUD",
+        "CONREG",
+        "CONV",
+        "TAI",
+        "PROT",
+        "LSCRN",
+        "DCNI",
+        "UCNI",
+        "LVIC",
+        "IVIC",
+        "VISA",
+        "WATER",
+        "WHSTL",
+        "WIT"
+      ]
     },
     {
       "@id": "ismcuibasic:ADPO",

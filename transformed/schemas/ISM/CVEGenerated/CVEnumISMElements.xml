@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:title>(U) All currently authorized ISM element names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMElements.xml</dc:title>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:elements#Notice"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:elements#NoticeText"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:elements#NoticeList"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:elements#NoticeExternal"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:elements#NoticeExternalList"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElementsValues">
+    <owl:oneOf>Notice</owl:oneOf>
+    <owl:oneOf>NoticeText</owl:oneOf>
+    <owl:oneOf>NoticeList</owl:oneOf>
+    <owl:oneOf>NoticeExternal</owl:oneOf>
+    <owl:oneOf>NoticeExternalList</owl:oneOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:elements#Notice">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements"/>
+    <skos:notation>Notice</skos:notation>
+    <skos:prefLabel>Notice element</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:elements#NoticeText">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements"/>
+    <skos:notation>NoticeText</skos:notation>
+    <skos:prefLabel>NoticeText element</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:elements#NoticeList">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements"/>
+    <skos:notation>NoticeList</skos:notation>
+    <skos:prefLabel>NoticeList element</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:elements#NoticeExternal">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements"/>
+    <skos:notation>NoticeExternal</skos:notation>
+    <skos:prefLabel>NoticeExternal element</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:elements#NoticeExternalList">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements"/>
+    <skos:notation>NoticeExternalList</skos:notation>
+    <skos:prefLabel>NoticeExternalList element</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

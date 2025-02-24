@@ -1,14 +1,1390 @@
 {
   "@context": {
     "ismcatownpro": "urn:us:gov:ic:cvenum:ismcat:ownerproducer#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismcatownpro:CVEnumISMCATOwnerProducer",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismcatownpro:CVEnumISMCATOwnerProducer definition"
+      "dc:title": "(U) ismcatownpro:CVEnumISMCATOwnerProducer definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismcatownpro:FGI"
+        },
+        {
+          "@id": "ismcatownpro:ABW"
+        },
+        {
+          "@id": "ismcatownpro:AFG"
+        },
+        {
+          "@id": "ismcatownpro:AGO"
+        },
+        {
+          "@id": "ismcatownpro:AIA"
+        },
+        {
+          "@id": "ismcatownpro:ALB"
+        },
+        {
+          "@id": "ismcatownpro:AND"
+        },
+        {
+          "@id": "ismcatownpro:ARE"
+        },
+        {
+          "@id": "ismcatownpro:ARG"
+        },
+        {
+          "@id": "ismcatownpro:ARM"
+        },
+        {
+          "@id": "ismcatownpro:ASM"
+        },
+        {
+          "@id": "ismcatownpro:ATA"
+        },
+        {
+          "@id": "ismcatownpro:ATF"
+        },
+        {
+          "@id": "ismcatownpro:ATG"
+        },
+        {
+          "@id": "ismcatownpro:AUS"
+        },
+        {
+          "@id": "ismcatownpro:AUT"
+        },
+        {
+          "@id": "ismcatownpro:AX2"
+        },
+        {
+          "@id": "ismcatownpro:AX3"
+        },
+        {
+          "@id": "ismcatownpro:AZE"
+        },
+        {
+          "@id": "ismcatownpro:BDI"
+        },
+        {
+          "@id": "ismcatownpro:BEL"
+        },
+        {
+          "@id": "ismcatownpro:BEN"
+        },
+        {
+          "@id": "ismcatownpro:BES"
+        },
+        {
+          "@id": "ismcatownpro:BFA"
+        },
+        {
+          "@id": "ismcatownpro:BGD"
+        },
+        {
+          "@id": "ismcatownpro:BGR"
+        },
+        {
+          "@id": "ismcatownpro:BHR"
+        },
+        {
+          "@id": "ismcatownpro:BHS"
+        },
+        {
+          "@id": "ismcatownpro:BIH"
+        },
+        {
+          "@id": "ismcatownpro:BLM"
+        },
+        {
+          "@id": "ismcatownpro:BLR"
+        },
+        {
+          "@id": "ismcatownpro:BLZ"
+        },
+        {
+          "@id": "ismcatownpro:BMU"
+        },
+        {
+          "@id": "ismcatownpro:BOL"
+        },
+        {
+          "@id": "ismcatownpro:BRA"
+        },
+        {
+          "@id": "ismcatownpro:BRB"
+        },
+        {
+          "@id": "ismcatownpro:BRN"
+        },
+        {
+          "@id": "ismcatownpro:BTN"
+        },
+        {
+          "@id": "ismcatownpro:BVT"
+        },
+        {
+          "@id": "ismcatownpro:BWA"
+        },
+        {
+          "@id": "ismcatownpro:CAF"
+        },
+        {
+          "@id": "ismcatownpro:CAN"
+        },
+        {
+          "@id": "ismcatownpro:CCK"
+        },
+        {
+          "@id": "ismcatownpro:CHE"
+        },
+        {
+          "@id": "ismcatownpro:CHL"
+        },
+        {
+          "@id": "ismcatownpro:CHN"
+        },
+        {
+          "@id": "ismcatownpro:CIV"
+        },
+        {
+          "@id": "ismcatownpro:CMR"
+        },
+        {
+          "@id": "ismcatownpro:COD"
+        },
+        {
+          "@id": "ismcatownpro:COG"
+        },
+        {
+          "@id": "ismcatownpro:COK"
+        },
+        {
+          "@id": "ismcatownpro:COL"
+        },
+        {
+          "@id": "ismcatownpro:COM"
+        },
+        {
+          "@id": "ismcatownpro:CPT"
+        },
+        {
+          "@id": "ismcatownpro:CPV"
+        },
+        {
+          "@id": "ismcatownpro:CRI"
+        },
+        {
+          "@id": "ismcatownpro:CUB"
+        },
+        {
+          "@id": "ismcatownpro:CUW"
+        },
+        {
+          "@id": "ismcatownpro:CXR"
+        },
+        {
+          "@id": "ismcatownpro:CYM"
+        },
+        {
+          "@id": "ismcatownpro:CYP"
+        },
+        {
+          "@id": "ismcatownpro:CZE"
+        },
+        {
+          "@id": "ismcatownpro:DEU"
+        },
+        {
+          "@id": "ismcatownpro:DGA"
+        },
+        {
+          "@id": "ismcatownpro:DJI"
+        },
+        {
+          "@id": "ismcatownpro:DMA"
+        },
+        {
+          "@id": "ismcatownpro:DNK"
+        },
+        {
+          "@id": "ismcatownpro:DOM"
+        },
+        {
+          "@id": "ismcatownpro:DZA"
+        },
+        {
+          "@id": "ismcatownpro:ECU"
+        },
+        {
+          "@id": "ismcatownpro:EGY"
+        },
+        {
+          "@id": "ismcatownpro:ERI"
+        },
+        {
+          "@id": "ismcatownpro:ESH"
+        },
+        {
+          "@id": "ismcatownpro:ESP"
+        },
+        {
+          "@id": "ismcatownpro:EST"
+        },
+        {
+          "@id": "ismcatownpro:ETH"
+        },
+        {
+          "@id": "ismcatownpro:FIN"
+        },
+        {
+          "@id": "ismcatownpro:FJI"
+        },
+        {
+          "@id": "ismcatownpro:FLK"
+        },
+        {
+          "@id": "ismcatownpro:FRA"
+        },
+        {
+          "@id": "ismcatownpro:FRO"
+        },
+        {
+          "@id": "ismcatownpro:FSM"
+        },
+        {
+          "@id": "ismcatownpro:GAB"
+        },
+        {
+          "@id": "ismcatownpro:GBR"
+        },
+        {
+          "@id": "ismcatownpro:GEO"
+        },
+        {
+          "@id": "ismcatownpro:GGY"
+        },
+        {
+          "@id": "ismcatownpro:GHA"
+        },
+        {
+          "@id": "ismcatownpro:GIB"
+        },
+        {
+          "@id": "ismcatownpro:GIN"
+        },
+        {
+          "@id": "ismcatownpro:GLP"
+        },
+        {
+          "@id": "ismcatownpro:GMB"
+        },
+        {
+          "@id": "ismcatownpro:GNB"
+        },
+        {
+          "@id": "ismcatownpro:GNQ"
+        },
+        {
+          "@id": "ismcatownpro:GRC"
+        },
+        {
+          "@id": "ismcatownpro:GRD"
+        },
+        {
+          "@id": "ismcatownpro:GRL"
+        },
+        {
+          "@id": "ismcatownpro:GTM"
+        },
+        {
+          "@id": "ismcatownpro:GUF"
+        },
+        {
+          "@id": "ismcatownpro:GUM"
+        },
+        {
+          "@id": "ismcatownpro:GUY"
+        },
+        {
+          "@id": "ismcatownpro:HKG"
+        },
+        {
+          "@id": "ismcatownpro:HMD"
+        },
+        {
+          "@id": "ismcatownpro:HND"
+        },
+        {
+          "@id": "ismcatownpro:HRV"
+        },
+        {
+          "@id": "ismcatownpro:HTI"
+        },
+        {
+          "@id": "ismcatownpro:HUN"
+        },
+        {
+          "@id": "ismcatownpro:IDN"
+        },
+        {
+          "@id": "ismcatownpro:IMN"
+        },
+        {
+          "@id": "ismcatownpro:IND"
+        },
+        {
+          "@id": "ismcatownpro:IOT"
+        },
+        {
+          "@id": "ismcatownpro:IRL"
+        },
+        {
+          "@id": "ismcatownpro:IRN"
+        },
+        {
+          "@id": "ismcatownpro:IRQ"
+        },
+        {
+          "@id": "ismcatownpro:ISL"
+        },
+        {
+          "@id": "ismcatownpro:ISR"
+        },
+        {
+          "@id": "ismcatownpro:ITA"
+        },
+        {
+          "@id": "ismcatownpro:JAM"
+        },
+        {
+          "@id": "ismcatownpro:JEY"
+        },
+        {
+          "@id": "ismcatownpro:JOR"
+        },
+        {
+          "@id": "ismcatownpro:JPN"
+        },
+        {
+          "@id": "ismcatownpro:KAZ"
+        },
+        {
+          "@id": "ismcatownpro:KEN"
+        },
+        {
+          "@id": "ismcatownpro:KGZ"
+        },
+        {
+          "@id": "ismcatownpro:KHM"
+        },
+        {
+          "@id": "ismcatownpro:KIR"
+        },
+        {
+          "@id": "ismcatownpro:KNA"
+        },
+        {
+          "@id": "ismcatownpro:KOR"
+        },
+        {
+          "@id": "ismcatownpro:KWT"
+        },
+        {
+          "@id": "ismcatownpro:LAO"
+        },
+        {
+          "@id": "ismcatownpro:LBN"
+        },
+        {
+          "@id": "ismcatownpro:LBR"
+        },
+        {
+          "@id": "ismcatownpro:LBY"
+        },
+        {
+          "@id": "ismcatownpro:LCA"
+        },
+        {
+          "@id": "ismcatownpro:LIE"
+        },
+        {
+          "@id": "ismcatownpro:LKA"
+        },
+        {
+          "@id": "ismcatownpro:LSO"
+        },
+        {
+          "@id": "ismcatownpro:LTU"
+        },
+        {
+          "@id": "ismcatownpro:LUX"
+        },
+        {
+          "@id": "ismcatownpro:LVA"
+        },
+        {
+          "@id": "ismcatownpro:MAC"
+        },
+        {
+          "@id": "ismcatownpro:MAF"
+        },
+        {
+          "@id": "ismcatownpro:MAR"
+        },
+        {
+          "@id": "ismcatownpro:MCO"
+        },
+        {
+          "@id": "ismcatownpro:MDA"
+        },
+        {
+          "@id": "ismcatownpro:MDG"
+        },
+        {
+          "@id": "ismcatownpro:MDV"
+        },
+        {
+          "@id": "ismcatownpro:MEX"
+        },
+        {
+          "@id": "ismcatownpro:MHL"
+        },
+        {
+          "@id": "ismcatownpro:MKD"
+        },
+        {
+          "@id": "ismcatownpro:MLI"
+        },
+        {
+          "@id": "ismcatownpro:MLT"
+        },
+        {
+          "@id": "ismcatownpro:MMR"
+        },
+        {
+          "@id": "ismcatownpro:MNE"
+        },
+        {
+          "@id": "ismcatownpro:MNG"
+        },
+        {
+          "@id": "ismcatownpro:MNP"
+        },
+        {
+          "@id": "ismcatownpro:MOZ"
+        },
+        {
+          "@id": "ismcatownpro:MRT"
+        },
+        {
+          "@id": "ismcatownpro:MSR"
+        },
+        {
+          "@id": "ismcatownpro:MTQ"
+        },
+        {
+          "@id": "ismcatownpro:MUS"
+        },
+        {
+          "@id": "ismcatownpro:MWI"
+        },
+        {
+          "@id": "ismcatownpro:MYS"
+        },
+        {
+          "@id": "ismcatownpro:MYT"
+        },
+        {
+          "@id": "ismcatownpro:NAM"
+        },
+        {
+          "@id": "ismcatownpro:NCL"
+        },
+        {
+          "@id": "ismcatownpro:NER"
+        },
+        {
+          "@id": "ismcatownpro:NFK"
+        },
+        {
+          "@id": "ismcatownpro:NGA"
+        },
+        {
+          "@id": "ismcatownpro:NIC"
+        },
+        {
+          "@id": "ismcatownpro:NIU"
+        },
+        {
+          "@id": "ismcatownpro:NLD"
+        },
+        {
+          "@id": "ismcatownpro:NOR"
+        },
+        {
+          "@id": "ismcatownpro:NPL"
+        },
+        {
+          "@id": "ismcatownpro:NRU"
+        },
+        {
+          "@id": "ismcatownpro:NZL"
+        },
+        {
+          "@id": "ismcatownpro:OMN"
+        },
+        {
+          "@id": "ismcatownpro:PAK"
+        },
+        {
+          "@id": "ismcatownpro:PAN"
+        },
+        {
+          "@id": "ismcatownpro:PCN"
+        },
+        {
+          "@id": "ismcatownpro:PER"
+        },
+        {
+          "@id": "ismcatownpro:PHL"
+        },
+        {
+          "@id": "ismcatownpro:PLW"
+        },
+        {
+          "@id": "ismcatownpro:PNG"
+        },
+        {
+          "@id": "ismcatownpro:POL"
+        },
+        {
+          "@id": "ismcatownpro:PRI"
+        },
+        {
+          "@id": "ismcatownpro:PRK"
+        },
+        {
+          "@id": "ismcatownpro:PRT"
+        },
+        {
+          "@id": "ismcatownpro:PRY"
+        },
+        {
+          "@id": "ismcatownpro:PYF"
+        },
+        {
+          "@id": "ismcatownpro:QAT"
+        },
+        {
+          "@id": "ismcatownpro:REU"
+        },
+        {
+          "@id": "ismcatownpro:ROU"
+        },
+        {
+          "@id": "ismcatownpro:RUS"
+        },
+        {
+          "@id": "ismcatownpro:RWA"
+        },
+        {
+          "@id": "ismcatownpro:SAU"
+        },
+        {
+          "@id": "ismcatownpro:SDN"
+        },
+        {
+          "@id": "ismcatownpro:SEN"
+        },
+        {
+          "@id": "ismcatownpro:SGP"
+        },
+        {
+          "@id": "ismcatownpro:SGS"
+        },
+        {
+          "@id": "ismcatownpro:SHN"
+        },
+        {
+          "@id": "ismcatownpro:SLB"
+        },
+        {
+          "@id": "ismcatownpro:SLE"
+        },
+        {
+          "@id": "ismcatownpro:SLV"
+        },
+        {
+          "@id": "ismcatownpro:SMR"
+        },
+        {
+          "@id": "ismcatownpro:SOM"
+        },
+        {
+          "@id": "ismcatownpro:SPM"
+        },
+        {
+          "@id": "ismcatownpro:SRB"
+        },
+        {
+          "@id": "ismcatownpro:SSD"
+        },
+        {
+          "@id": "ismcatownpro:STP"
+        },
+        {
+          "@id": "ismcatownpro:SUR"
+        },
+        {
+          "@id": "ismcatownpro:SVK"
+        },
+        {
+          "@id": "ismcatownpro:SVN"
+        },
+        {
+          "@id": "ismcatownpro:SWE"
+        },
+        {
+          "@id": "ismcatownpro:SWZ"
+        },
+        {
+          "@id": "ismcatownpro:SXM"
+        },
+        {
+          "@id": "ismcatownpro:SYC"
+        },
+        {
+          "@id": "ismcatownpro:SYR"
+        },
+        {
+          "@id": "ismcatownpro:TCA"
+        },
+        {
+          "@id": "ismcatownpro:TCD"
+        },
+        {
+          "@id": "ismcatownpro:TGO"
+        },
+        {
+          "@id": "ismcatownpro:THA"
+        },
+        {
+          "@id": "ismcatownpro:TJK"
+        },
+        {
+          "@id": "ismcatownpro:TKL"
+        },
+        {
+          "@id": "ismcatownpro:TKM"
+        },
+        {
+          "@id": "ismcatownpro:TLS"
+        },
+        {
+          "@id": "ismcatownpro:TON"
+        },
+        {
+          "@id": "ismcatownpro:TTO"
+        },
+        {
+          "@id": "ismcatownpro:TUN"
+        },
+        {
+          "@id": "ismcatownpro:TUR"
+        },
+        {
+          "@id": "ismcatownpro:TUV"
+        },
+        {
+          "@id": "ismcatownpro:TWN"
+        },
+        {
+          "@id": "ismcatownpro:TZA"
+        },
+        {
+          "@id": "ismcatownpro:UGA"
+        },
+        {
+          "@id": "ismcatownpro:UKR"
+        },
+        {
+          "@id": "ismcatownpro:URY"
+        },
+        {
+          "@id": "ismcatownpro:USA"
+        },
+        {
+          "@id": "ismcatownpro:UZB"
+        },
+        {
+          "@id": "ismcatownpro:VAT"
+        },
+        {
+          "@id": "ismcatownpro:VCT"
+        },
+        {
+          "@id": "ismcatownpro:VEN"
+        },
+        {
+          "@id": "ismcatownpro:VGB"
+        },
+        {
+          "@id": "ismcatownpro:VIR"
+        },
+        {
+          "@id": "ismcatownpro:VNM"
+        },
+        {
+          "@id": "ismcatownpro:VUT"
+        },
+        {
+          "@id": "ismcatownpro:WLF"
+        },
+        {
+          "@id": "ismcatownpro:WSM"
+        },
+        {
+          "@id": "ismcatownpro:XAC"
+        },
+        {
+          "@id": "ismcatownpro:XAZ"
+        },
+        {
+          "@id": "ismcatownpro:XBI"
+        },
+        {
+          "@id": "ismcatownpro:XBK"
+        },
+        {
+          "@id": "ismcatownpro:XCR"
+        },
+        {
+          "@id": "ismcatownpro:XCS"
+        },
+        {
+          "@id": "ismcatownpro:XCY"
+        },
+        {
+          "@id": "ismcatownpro:XEU"
+        },
+        {
+          "@id": "ismcatownpro:XGL"
+        },
+        {
+          "@id": "ismcatownpro:XGZ"
+        },
+        {
+          "@id": "ismcatownpro:XHO"
+        },
+        {
+          "@id": "ismcatownpro:XJA"
+        },
+        {
+          "@id": "ismcatownpro:XJM"
+        },
+        {
+          "@id": "ismcatownpro:XJN"
+        },
+        {
+          "@id": "ismcatownpro:XJV"
+        },
+        {
+          "@id": "ismcatownpro:XKM"
+        },
+        {
+          "@id": "ismcatownpro:XKN"
+        },
+        {
+          "@id": "ismcatownpro:XKR"
+        },
+        {
+          "@id": "ismcatownpro:XKS"
+        },
+        {
+          "@id": "ismcatownpro:XMW"
+        },
+        {
+          "@id": "ismcatownpro:XNV"
+        },
+        {
+          "@id": "ismcatownpro:XPL"
+        },
+        {
+          "@id": "ismcatownpro:XPR"
+        },
+        {
+          "@id": "ismcatownpro:XQZ"
+        },
+        {
+          "@id": "ismcatownpro:XSP"
+        },
+        {
+          "@id": "ismcatownpro:XSV"
+        },
+        {
+          "@id": "ismcatownpro:XTR"
+        },
+        {
+          "@id": "ismcatownpro:XWB"
+        },
+        {
+          "@id": "ismcatownpro:XWK"
+        },
+        {
+          "@id": "ismcatownpro:XXD"
+        },
+        {
+          "@id": "ismcatownpro:YEM"
+        },
+        {
+          "@id": "ismcatownpro:ZAF"
+        },
+        {
+          "@id": "ismcatownpro:ZMB"
+        },
+        {
+          "@id": "ismcatownpro:ZWE"
+        },
+        {
+          "@id": "ismcatownpro:ACGU"
+        },
+        {
+          "@id": "ismcatownpro:AMSP"
+        },
+        {
+          "@id": "ismcatownpro:AOSC"
+        },
+        {
+          "@id": "ismcatownpro:APFS"
+        },
+        {
+          "@id": "ismcatownpro:ASEA"
+        },
+        {
+          "@id": "ismcatownpro:AUSTRALIA_GROUP"
+        },
+        {
+          "@id": "ismcatownpro:BHTF"
+        },
+        {
+          "@id": "ismcatownpro:BWCS"
+        },
+        {
+          "@id": "ismcatownpro:CFCK"
+        },
+        {
+          "@id": "ismcatownpro:CFOD"
+        },
+        {
+          "@id": "ismcatownpro:CFUP"
+        },
+        {
+          "@id": "ismcatownpro:CLFC"
+        },
+        {
+          "@id": "ismcatownpro:CMFC"
+        },
+        {
+          "@id": "ismcatownpro:CMFP"
+        },
+        {
+          "@id": "ismcatownpro:CPMT"
+        },
+        {
+          "@id": "ismcatownpro:CTOC"
+        },
+        {
+          "@id": "ismcatownpro:CWCS"
+        },
+        {
+          "@id": "ismcatownpro:ECTF"
+        },
+        {
+          "@id": "ismcatownpro:EFOR"
+        },
+        {
+          "@id": "ismcatownpro:EU"
+        },
+        {
+          "@id": "ismcatownpro:EUDA"
+        },
+        {
+          "@id": "ismcatownpro:FRME"
+        },
+        {
+          "@id": "ismcatownpro:FVEY"
+        },
+        {
+          "@id": "ismcatownpro:GCCH"
+        },
+        {
+          "@id": "ismcatownpro:GCTF"
+        },
+        {
+          "@id": "ismcatownpro:GFNX"
+        },
+        {
+          "@id": "ismcatownpro:GMIF"
+        },
+        {
+          "@id": "ismcatownpro:IESC"
+        },
+        {
+          "@id": "ismcatownpro:IMSC"
+        },
+        {
+          "@id": "ismcatownpro:IMSP"
+        },
+        {
+          "@id": "ismcatownpro:IPMC"
+        },
+        {
+          "@id": "ismcatownpro:IRKS"
+        },
+        {
+          "@id": "ismcatownpro:ISAF"
+        },
+        {
+          "@id": "ismcatownpro:ISSG"
+        },
+        {
+          "@id": "ismcatownpro:KFOR"
+        },
+        {
+          "@id": "ismcatownpro:MCFI"
+        },
+        {
+          "@id": "ismcatownpro:MESF"
+        },
+        {
+          "@id": "ismcatownpro:MGEU"
+        },
+        {
+          "@id": "ismcatownpro:MIFH"
+        },
+        {
+          "@id": "ismcatownpro:MLEC"
+        },
+        {
+          "@id": "ismcatownpro:MNTF"
+        },
+        {
+          "@id": "ismcatownpro:MPFL"
+        },
+        {
+          "@id": "ismcatownpro:NACT"
+        },
+        {
+          "@id": "ismcatownpro:NATO"
+        },
+        {
+          "@id": "ismcatownpro:NCFE"
+        },
+        {
+          "@id": "ismcatownpro:NKIC"
+        },
+        {
+          "@id": "ismcatownpro:NRDC"
+        },
+        {
+          "@id": "ismcatownpro:NSG"
+        },
+        {
+          "@id": "ismcatownpro:OSAG"
+        },
+        {
+          "@id": "ismcatownpro:OSTY"
+        },
+        {
+          "@id": "ismcatownpro:PAWA"
+        },
+        {
+          "@id": "ismcatownpro:PGMF"
+        },
+        {
+          "@id": "ismcatownpro:PSMX"
+        },
+        {
+          "@id": "ismcatownpro:RISC"
+        },
+        {
+          "@id": "ismcatownpro:RSMA"
+        },
+        {
+          "@id": "ismcatownpro:SFOR"
+        },
+        {
+          "@id": "ismcatownpro:SOFP"
+        },
+        {
+          "@id": "ismcatownpro:SPAA"
+        },
+        {
+          "@id": "ismcatownpro:TEYE"
+        },
+        {
+          "@id": "ismcatownpro:TFTC"
+        },
+        {
+          "@id": "ismcatownpro:UNCK"
+        }
+      ]
+    },
+    {
+      "@id": "ismcatownpro:CVEnumISMCATOwnerProducerValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "FGI",
+        "ABW",
+        "AFG",
+        "AGO",
+        "AIA",
+        "ALB",
+        "AND",
+        "ARE",
+        "ARG",
+        "ARM",
+        "ASM",
+        "ATA",
+        "ATF",
+        "ATG",
+        "AUS",
+        "AUT",
+        "AX2",
+        "AX3",
+        "AZE",
+        "BDI",
+        "BEL",
+        "BEN",
+        "BES",
+        "BFA",
+        "BGD",
+        "BGR",
+        "BHR",
+        "BHS",
+        "BIH",
+        "BLM",
+        "BLR",
+        "BLZ",
+        "BMU",
+        "BOL",
+        "BRA",
+        "BRB",
+        "BRN",
+        "BTN",
+        "BVT",
+        "BWA",
+        "CAF",
+        "CAN",
+        "CCK",
+        "CHE",
+        "CHL",
+        "CHN",
+        "CIV",
+        "CMR",
+        "COD",
+        "COG",
+        "COK",
+        "COL",
+        "COM",
+        "CPT",
+        "CPV",
+        "CRI",
+        "CUB",
+        "CUW",
+        "CXR",
+        "CYM",
+        "CYP",
+        "CZE",
+        "DEU",
+        "DGA",
+        "DJI",
+        "DMA",
+        "DNK",
+        "DOM",
+        "DZA",
+        "ECU",
+        "EGY",
+        "ERI",
+        "ESH",
+        "ESP",
+        "EST",
+        "ETH",
+        "FIN",
+        "FJI",
+        "FLK",
+        "FRA",
+        "FRO",
+        "FSM",
+        "GAB",
+        "GBR",
+        "GEO",
+        "GGY",
+        "GHA",
+        "GIB",
+        "GIN",
+        "GLP",
+        "GMB",
+        "GNB",
+        "GNQ",
+        "GRC",
+        "GRD",
+        "GRL",
+        "GTM",
+        "GUF",
+        "GUM",
+        "GUY",
+        "HKG",
+        "HMD",
+        "HND",
+        "HRV",
+        "HTI",
+        "HUN",
+        "IDN",
+        "IMN",
+        "IND",
+        "IOT",
+        "IRL",
+        "IRN",
+        "IRQ",
+        "ISL",
+        "ISR",
+        "ITA",
+        "JAM",
+        "JEY",
+        "JOR",
+        "JPN",
+        "KAZ",
+        "KEN",
+        "KGZ",
+        "KHM",
+        "KIR",
+        "KNA",
+        "KOR",
+        "KWT",
+        "LAO",
+        "LBN",
+        "LBR",
+        "LBY",
+        "LCA",
+        "LIE",
+        "LKA",
+        "LSO",
+        "LTU",
+        "LUX",
+        "LVA",
+        "MAC",
+        "MAF",
+        "MAR",
+        "MCO",
+        "MDA",
+        "MDG",
+        "MDV",
+        "MEX",
+        "MHL",
+        "MKD",
+        "MLI",
+        "MLT",
+        "MMR",
+        "MNE",
+        "MNG",
+        "MNP",
+        "MOZ",
+        "MRT",
+        "MSR",
+        "MTQ",
+        "MUS",
+        "MWI",
+        "MYS",
+        "MYT",
+        "NAM",
+        "NCL",
+        "NER",
+        "NFK",
+        "NGA",
+        "NIC",
+        "NIU",
+        "NLD",
+        "NOR",
+        "NPL",
+        "NRU",
+        "NZL",
+        "OMN",
+        "PAK",
+        "PAN",
+        "PCN",
+        "PER",
+        "PHL",
+        "PLW",
+        "PNG",
+        "POL",
+        "PRI",
+        "PRK",
+        "PRT",
+        "PRY",
+        "PYF",
+        "QAT",
+        "REU",
+        "ROU",
+        "RUS",
+        "RWA",
+        "SAU",
+        "SDN",
+        "SEN",
+        "SGP",
+        "SGS",
+        "SHN",
+        "SLB",
+        "SLE",
+        "SLV",
+        "SMR",
+        "SOM",
+        "SPM",
+        "SRB",
+        "SSD",
+        "STP",
+        "SUR",
+        "SVK",
+        "SVN",
+        "SWE",
+        "SWZ",
+        "SXM",
+        "SYC",
+        "SYR",
+        "TCA",
+        "TCD",
+        "TGO",
+        "THA",
+        "TJK",
+        "TKL",
+        "TKM",
+        "TLS",
+        "TON",
+        "TTO",
+        "TUN",
+        "TUR",
+        "TUV",
+        "TWN",
+        "TZA",
+        "UGA",
+        "UKR",
+        "URY",
+        "USA",
+        "UZB",
+        "VAT",
+        "VCT",
+        "VEN",
+        "VGB",
+        "VIR",
+        "VNM",
+        "VUT",
+        "WLF",
+        "WSM",
+        "XAC",
+        "XAZ",
+        "XBI",
+        "XBK",
+        "XCR",
+        "XCS",
+        "XCY",
+        "XEU",
+        "XGL",
+        "XGZ",
+        "XHO",
+        "XJA",
+        "XJM",
+        "XJN",
+        "XJV",
+        "XKM",
+        "XKN",
+        "XKR",
+        "XKS",
+        "XMW",
+        "XNV",
+        "XPL",
+        "XPR",
+        "XQZ",
+        "XSP",
+        "XSV",
+        "XTR",
+        "XWB",
+        "XWK",
+        "XXD",
+        "YEM",
+        "ZAF",
+        "ZMB",
+        "ZWE",
+        "ACGU",
+        "AMSP",
+        "AOSC",
+        "APFS",
+        "ASEA",
+        "AUSTRALIA_GROUP",
+        "BHTF",
+        "BWCS",
+        "CFCK",
+        "CFOD",
+        "CFUP",
+        "CLFC",
+        "CMFC",
+        "CMFP",
+        "CPMT",
+        "CTOC",
+        "CWCS",
+        "ECTF",
+        "EFOR",
+        "EU",
+        "EUDA",
+        "FRME",
+        "FVEY",
+        "GCCH",
+        "GCTF",
+        "GFNX",
+        "GMIF",
+        "IESC",
+        "IMSC",
+        "IMSP",
+        "IPMC",
+        "IRKS",
+        "ISAF",
+        "ISSG",
+        "KFOR",
+        "MCFI",
+        "MESF",
+        "MGEU",
+        "MIFH",
+        "MLEC",
+        "MNTF",
+        "MPFL",
+        "NACT",
+        "NATO",
+        "NCFE",
+        "NKIC",
+        "NRDC",
+        "NSG",
+        "OSAG",
+        "OSTY",
+        "PAWA",
+        "PGMF",
+        "PSMX",
+        "RISC",
+        "RSMA",
+        "SFOR",
+        "SOFP",
+        "SPAA",
+        "TEYE",
+        "TFTC",
+        "UNCK"
+      ]
     },
     {
       "@id": "ismcatownpro:FGI",

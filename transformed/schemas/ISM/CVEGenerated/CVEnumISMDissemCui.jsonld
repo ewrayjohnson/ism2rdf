@@ -1,14 +1,70 @@
 {
   "@context": {
     "ismdissemcui": "urn:us:gov:ic:cvenum:ism:dissem:cui#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismdissemcui:CVEnumISMDissemCui",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismdissemcui:CVEnumISMDissemCui definition"
+      "dc:title": "(U) ismdissemcui:CVEnumISMDissemCui definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismdissemcui:AC"
+        },
+        {
+          "@id": "ismdissemcui:AWP"
+        },
+        {
+          "@id": "ismdissemcui:DISPLAYONLY"
+        },
+        {
+          "@id": "ismdissemcui:DL_ONLY"
+        },
+        {
+          "@id": "ismdissemcui:EXEMPT_FROM_ICD501_DISCOVERY"
+        },
+        {
+          "@id": "ismdissemcui:FED_ONLY"
+        },
+        {
+          "@id": "ismdissemcui:FEDCON"
+        },
+        {
+          "@id": "ismdissemcui:NF"
+        },
+        {
+          "@id": "ismdissemcui:NOCON"
+        },
+        {
+          "@id": "ismdissemcui:REL"
+        },
+        {
+          "@id": "ismdissemcui:RELIDO"
+        }
+      ]
+    },
+    {
+      "@id": "ismdissemcui:CVEnumISMDissemCuiValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "AC",
+        "AWP",
+        "DISPLAYONLY",
+        "DL_ONLY",
+        "EXEMPT_FROM_ICD501_DISCOVERY",
+        "FED_ONLY",
+        "FEDCON",
+        "NF",
+        "NOCON",
+        "REL",
+        "RELIDO"
+      ]
     },
     {
       "@id": "ismdissemcui:AC",

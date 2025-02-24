@@ -8,10 +8,21 @@
     "xhtml": "http://www.w3.org/1999/xhtml-StopBrowserRendering",
     "usagency": "urn:us:gov:ic:usagency#",
     "cct": "urn:us:gov:ic:cvenum:ismcat:responsibleentity#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xs": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
-  "@id": "edh:ResponsibleEntityRoleType",
-  "@type": "skos:ConceptScheme",
-  "dc:title": "Role identifies the relationships of the ResponsibleEntity to the data item referenced by the EDH. The role of Originator represents that the ResponsibleEntity is the creator/originator/author of the data item referenced by the EDH. The role of Custodian represents that the ResponsibleEntity is responsible for the data item referenced by the EDH being on the network but is not necessarily the creator/originator/author of it. You must have one and only one Custodian, and you may have zero or one Originator."
+  "@graph": [
+    {
+      "@id": "edh:ResponsibleEntityRoleType",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "Role identifies the relationships of the ResponsibleEntity to the data item referenced by the EDH. The role of Originator represents that the ResponsibleEntity is the creator/originator/author of the data item referenced by the EDH. The role of Custodian represents that the ResponsibleEntity is responsible for the data item referenced by the EDH being on the network but is not necessarily the creator/originator/author of it. You must have one and only one Custodian, and you may have zero or one Originator."
+    },
+    {
+      "@id": "edh:ResponsibleEntityRoleTypeValues",
+      "@type": "rdfs:Datatype"
+    }
+  ]
 }

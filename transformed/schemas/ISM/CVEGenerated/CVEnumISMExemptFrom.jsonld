@@ -1,14 +1,34 @@
 {
   "@context": {
     "ismexempt": "urn:us:gov:ic:cvenum:ism:exemptfrom#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismexempt:CVEnumISMExemptFrom",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismexempt:CVEnumISMExemptFrom definition"
+      "dc:title": "(U) ismexempt:CVEnumISMExemptFrom definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismexempt:IC_710_MANDATORY_FDR"
+        },
+        {
+          "@id": "ismexempt:DOD_DISTRO_STATEMENT"
+        }
+      ]
+    },
+    {
+      "@id": "ismexempt:CVEnumISMExemptFromValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "IC_710_MANDATORY_FDR",
+        "DOD_DISTRO_STATEMENT"
+      ]
     },
     {
       "@id": "ismexempt:IC_710_MANDATORY_FDR",

@@ -1,14 +1,134 @@
 {
   "@context": {
     "ismnotice": "urn:us:gov:ic:cvenum:ism:notice#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismnotice:CVEnumISMNotice",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismnotice:CVEnumISMNotice definition"
+      "dc:title": "(U) ismnotice:CVEnumISMNotice definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismnotice:FISA"
+        },
+        {
+          "@id": "ismnotice:RAWFISA"
+        },
+        {
+          "@id": "ismnotice:IMC"
+        },
+        {
+          "@id": "ismnotice:CNWDI"
+        },
+        {
+          "@id": "ismnotice:RD"
+        },
+        {
+          "@id": "ismnotice:FRD"
+        },
+        {
+          "@id": "ismnotice:DS"
+        },
+        {
+          "@id": "ismnotice:LES"
+        },
+        {
+          "@id": "ismnotice:LES-NF"
+        },
+        {
+          "@id": "ismnotice:DSEN"
+        },
+        {
+          "@id": "ismnotice:DoD-Dist-A"
+        },
+        {
+          "@id": "ismnotice:DoD-Dist-B"
+        },
+        {
+          "@id": "ismnotice:DoD-Dist-C"
+        },
+        {
+          "@id": "ismnotice:DoD-Dist-D"
+        },
+        {
+          "@id": "ismnotice:DoD-Dist-E"
+        },
+        {
+          "@id": "ismnotice:DoD-Dist-F"
+        },
+        {
+          "@id": "ismnotice:US-Person"
+        },
+        {
+          "@id": "ismnotice:pre13526ORCON"
+        },
+        {
+          "@id": "ismnotice:POC"
+        },
+        {
+          "@id": "ismnotice:COMSEC"
+        },
+        {
+          "@id": "ismnotice:SSI"
+        },
+        {
+          "@id": "ismnotice:RSEN"
+        },
+        {
+          "@id": "ismnotice:IMCON_RSEN"
+        },
+        {
+          "@id": "ismnotice:GEOCAP"
+        },
+        {
+          "@id": "ismnotice:NATO"
+        },
+        {
+          "@id": "ismnotice:RC_Dissemination_Control_Required"
+        },
+        {
+          "@id": "ismnotice:ITAR-EAR"
+        }
+      ]
+    },
+    {
+      "@id": "ismnotice:CVEnumISMNoticeValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "FISA",
+        "RAWFISA",
+        "IMC",
+        "CNWDI",
+        "RD",
+        "FRD",
+        "DS",
+        "LES",
+        "LES-NF",
+        "DSEN",
+        "DoD-Dist-A",
+        "DoD-Dist-B",
+        "DoD-Dist-C",
+        "DoD-Dist-D",
+        "DoD-Dist-E",
+        "DoD-Dist-F",
+        "US-Person",
+        "pre13526ORCON",
+        "POC",
+        "COMSEC",
+        "SSI",
+        "RSEN",
+        "IMCON_RSEN",
+        "GEOCAP",
+        "NATO",
+        "RC_Dissemination_Control_Required",
+        "ITAR-EAR"
+      ]
     },
     {
       "@id": "ismnotice:FISA",

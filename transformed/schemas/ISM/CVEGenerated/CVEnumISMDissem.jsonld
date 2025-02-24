@@ -1,14 +1,114 @@
 {
   "@context": {
     "ismdissem": "urn:us:gov:ic:cvenum:ism:dissem#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismdissem:CVEnumISMDissem",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismdissem:CVEnumISMDissem definition"
+      "dc:title": "(U) ismdissem:CVEnumISMDissem definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismdissem:RS"
+        },
+        {
+          "@id": "ismdissem:FOUO"
+        },
+        {
+          "@id": "ismdissem:OC"
+        },
+        {
+          "@id": "ismdissem:OC-USGOV"
+        },
+        {
+          "@id": "ismdissem:IMC"
+        },
+        {
+          "@id": "ismdissem:NF"
+        },
+        {
+          "@id": "ismdissem:PR"
+        },
+        {
+          "@id": "ismdissem:REL"
+        },
+        {
+          "@id": "ismdissem:RELIDO"
+        },
+        {
+          "@id": "ismdissem:EYES"
+        },
+        {
+          "@id": "ismdissem:DSEN"
+        },
+        {
+          "@id": "ismdissem:RAWFISA"
+        },
+        {
+          "@id": "ismdissem:FISA"
+        },
+        {
+          "@id": "ismdissem:DISPLAYONLY"
+        },
+        {
+          "@id": "ismdissem:EXEMPT_FROM_ICD501_DISCOVERY"
+        },
+        {
+          "@id": "ismdissem:WAIVED"
+        },
+        {
+          "@id": "ismdissem:AC"
+        },
+        {
+          "@id": "ismdissem:AWP"
+        },
+        {
+          "@id": "ismdissem:DL_ONLY"
+        },
+        {
+          "@id": "ismdissem:FED_ONLY"
+        },
+        {
+          "@id": "ismdissem:FEDCON"
+        },
+        {
+          "@id": "ismdissem:NOCON"
+        }
+      ]
+    },
+    {
+      "@id": "ismdissem:CVEnumISMDissemValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "RS",
+        "FOUO",
+        "OC",
+        "OC-USGOV",
+        "IMC",
+        "NF",
+        "PR",
+        "REL",
+        "RELIDO",
+        "EYES",
+        "DSEN",
+        "RAWFISA",
+        "FISA",
+        "DISPLAYONLY",
+        "EXEMPT_FROM_ICD501_DISCOVERY",
+        "WAIVED",
+        "AC",
+        "AWP",
+        "DL_ONLY",
+        "FED_ONLY",
+        "FEDCON",
+        "NOCON"
+      ]
     },
     {
       "@id": "ismdissem:RS",

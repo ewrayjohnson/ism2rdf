@@ -1,14 +1,270 @@
 {
   "@context": {
     "ismcattetra": "urn:us:gov:ic:cvenum:ismcat:tetragraph#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismcattetra:CVEnumISMCATTetragraph",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismcattetra:CVEnumISMCATTetragraph definition"
+      "dc:title": "(U) ismcattetra:CVEnumISMCATTetragraph definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismcattetra:ACGU"
+        },
+        {
+          "@id": "ismcattetra:AMSP"
+        },
+        {
+          "@id": "ismcattetra:AOSC"
+        },
+        {
+          "@id": "ismcattetra:APFS"
+        },
+        {
+          "@id": "ismcattetra:ASEA"
+        },
+        {
+          "@id": "ismcattetra:AUSTRALIA_GROUP"
+        },
+        {
+          "@id": "ismcattetra:BHTF"
+        },
+        {
+          "@id": "ismcattetra:BWCS"
+        },
+        {
+          "@id": "ismcattetra:CFCK"
+        },
+        {
+          "@id": "ismcattetra:CFOD"
+        },
+        {
+          "@id": "ismcattetra:CFUP"
+        },
+        {
+          "@id": "ismcattetra:CLFC"
+        },
+        {
+          "@id": "ismcattetra:CMFC"
+        },
+        {
+          "@id": "ismcattetra:CMFP"
+        },
+        {
+          "@id": "ismcattetra:CPMT"
+        },
+        {
+          "@id": "ismcattetra:CTOC"
+        },
+        {
+          "@id": "ismcattetra:CWCS"
+        },
+        {
+          "@id": "ismcattetra:ECTF"
+        },
+        {
+          "@id": "ismcattetra:EFOR"
+        },
+        {
+          "@id": "ismcattetra:EU"
+        },
+        {
+          "@id": "ismcattetra:EUDA"
+        },
+        {
+          "@id": "ismcattetra:FRME"
+        },
+        {
+          "@id": "ismcattetra:FVEY"
+        },
+        {
+          "@id": "ismcattetra:GCCH"
+        },
+        {
+          "@id": "ismcattetra:GCTF"
+        },
+        {
+          "@id": "ismcattetra:GFNX"
+        },
+        {
+          "@id": "ismcattetra:GMIF"
+        },
+        {
+          "@id": "ismcattetra:IESC"
+        },
+        {
+          "@id": "ismcattetra:IMSC"
+        },
+        {
+          "@id": "ismcattetra:IMSP"
+        },
+        {
+          "@id": "ismcattetra:IPMC"
+        },
+        {
+          "@id": "ismcattetra:IRKS"
+        },
+        {
+          "@id": "ismcattetra:ISAF"
+        },
+        {
+          "@id": "ismcattetra:ISSG"
+        },
+        {
+          "@id": "ismcattetra:KFOR"
+        },
+        {
+          "@id": "ismcattetra:MCFI"
+        },
+        {
+          "@id": "ismcattetra:MESF"
+        },
+        {
+          "@id": "ismcattetra:MGEU"
+        },
+        {
+          "@id": "ismcattetra:MIFH"
+        },
+        {
+          "@id": "ismcattetra:MLEC"
+        },
+        {
+          "@id": "ismcattetra:MNTF"
+        },
+        {
+          "@id": "ismcattetra:MPFL"
+        },
+        {
+          "@id": "ismcattetra:NACT"
+        },
+        {
+          "@id": "ismcattetra:NATO"
+        },
+        {
+          "@id": "ismcattetra:NCFE"
+        },
+        {
+          "@id": "ismcattetra:NKIC"
+        },
+        {
+          "@id": "ismcattetra:NRDC"
+        },
+        {
+          "@id": "ismcattetra:NSG"
+        },
+        {
+          "@id": "ismcattetra:OSAG"
+        },
+        {
+          "@id": "ismcattetra:OSTY"
+        },
+        {
+          "@id": "ismcattetra:PAWA"
+        },
+        {
+          "@id": "ismcattetra:PGMF"
+        },
+        {
+          "@id": "ismcattetra:PSMX"
+        },
+        {
+          "@id": "ismcattetra:RISC"
+        },
+        {
+          "@id": "ismcattetra:RSMA"
+        },
+        {
+          "@id": "ismcattetra:SFOR"
+        },
+        {
+          "@id": "ismcattetra:SOFP"
+        },
+        {
+          "@id": "ismcattetra:SPAA"
+        },
+        {
+          "@id": "ismcattetra:TEYE"
+        },
+        {
+          "@id": "ismcattetra:TFTC"
+        },
+        {
+          "@id": "ismcattetra:UNCK"
+        }
+      ]
+    },
+    {
+      "@id": "ismcattetra:CVEnumISMCATTetragraphValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "ACGU",
+        "AMSP",
+        "AOSC",
+        "APFS",
+        "ASEA",
+        "AUSTRALIA_GROUP",
+        "BHTF",
+        "BWCS",
+        "CFCK",
+        "CFOD",
+        "CFUP",
+        "CLFC",
+        "CMFC",
+        "CMFP",
+        "CPMT",
+        "CTOC",
+        "CWCS",
+        "ECTF",
+        "EFOR",
+        "EU",
+        "EUDA",
+        "FRME",
+        "FVEY",
+        "GCCH",
+        "GCTF",
+        "GFNX",
+        "GMIF",
+        "IESC",
+        "IMSC",
+        "IMSP",
+        "IPMC",
+        "IRKS",
+        "ISAF",
+        "ISSG",
+        "KFOR",
+        "MCFI",
+        "MESF",
+        "MGEU",
+        "MIFH",
+        "MLEC",
+        "MNTF",
+        "MPFL",
+        "NACT",
+        "NATO",
+        "NCFE",
+        "NKIC",
+        "NRDC",
+        "NSG",
+        "OSAG",
+        "OSTY",
+        "PAWA",
+        "PGMF",
+        "PSMX",
+        "RISC",
+        "RSMA",
+        "SFOR",
+        "SOFP",
+        "SPAA",
+        "TEYE",
+        "TFTC",
+        "UNCK"
+      ]
     },
     {
       "@id": "ismcattetra:ACGU",

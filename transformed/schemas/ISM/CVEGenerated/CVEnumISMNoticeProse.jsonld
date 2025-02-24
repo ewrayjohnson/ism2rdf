@@ -1,14 +1,110 @@
 {
   "@context": {
     "ismnoticeprose": "urn:us:gov:ic:cvenum:ism:noticeprose#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismnoticeprose:CVEnumISMNoticeProse",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismnoticeprose:CVEnumISMNoticeProse definition"
+      "dc:title": "(U) ismnoticeprose:CVEnumISMNoticeProse definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismnoticeprose:FISA_00001"
+        },
+        {
+          "@id": "ismnoticeprose:FISA_00002"
+        },
+        {
+          "@id": "ismnoticeprose:FISA_00003"
+        },
+        {
+          "@id": "ismnoticeprose:RAWFISA_00001"
+        },
+        {
+          "@id": "ismnoticeprose:CNWDI_00001"
+        },
+        {
+          "@id": "ismnoticeprose:RD_00001"
+        },
+        {
+          "@id": "ismnoticeprose:FRD_00001"
+        },
+        {
+          "@id": "ismnoticeprose:DS_00001"
+        },
+        {
+          "@id": "ismnoticeprose:DSEN_00001"
+        },
+        {
+          "@id": "ismnoticeprose:DoD-Dist-A_00001"
+        },
+        {
+          "@id": "ismnoticeprose:COMSEC_00001"
+        },
+        {
+          "@id": "ismnoticeprose:SSI_00001"
+        },
+        {
+          "@id": "ismnoticeprose:GEOCAP_00001"
+        },
+        {
+          "@id": "ismnoticeprose:NATO_00001"
+        },
+        {
+          "@id": "ismnoticeprose:NATO_00002"
+        },
+        {
+          "@id": "ismnoticeprose:NATO_00003"
+        },
+        {
+          "@id": "ismnoticeprose:NATO_00004"
+        },
+        {
+          "@id": "ismnoticeprose:NATO_00005"
+        },
+        {
+          "@id": "ismnoticeprose:RC_Dissemination_Control_Required_00001"
+        },
+        {
+          "@id": "ismnoticeprose:ITAR-EAR_00001"
+        },
+        {
+          "@id": "ismnoticeprose:DISPLAYONLY_00001"
+        }
+      ]
+    },
+    {
+      "@id": "ismnoticeprose:CVEnumISMNoticeProseValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "FISA_00001",
+        "FISA_00002",
+        "FISA_00003",
+        "RAWFISA_00001",
+        "CNWDI_00001",
+        "RD_00001",
+        "FRD_00001",
+        "DS_00001",
+        "DSEN_00001",
+        "DoD-Dist-A_00001",
+        "COMSEC_00001",
+        "SSI_00001",
+        "GEOCAP_00001",
+        "NATO_00001",
+        "NATO_00002",
+        "NATO_00003",
+        "NATO_00004",
+        "NATO_00005",
+        "RC_Dissemination_Control_Required_00001",
+        "ITAR-EAR_00001",
+        "DISPLAYONLY_00001"
+      ]
     },
     {
       "@id": "ismnoticeprose:FISA_00001",

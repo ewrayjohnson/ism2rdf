@@ -1,14 +1,106 @@
 {
   "@context": {
     "ismscicon": "urn:us:gov:ic:cvenum:ism:scicontrols#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismscicon:CVEnumISMSCIControls",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismscicon:CVEnumISMSCIControls definition"
+      "dc:title": "(U) ismscicon:CVEnumISMSCIControls definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismscicon:BUR"
+        },
+        {
+          "@id": "ismscicon:BUR-BLG"
+        },
+        {
+          "@id": "ismscicon:BUR-DTP"
+        },
+        {
+          "@id": "ismscicon:BUR-WRG"
+        },
+        {
+          "@id": "ismscicon:HCS"
+        },
+        {
+          "@id": "ismscicon:HCS-O"
+        },
+        {
+          "@id": "ismscicon:HCS-P"
+        },
+        {
+          "@id": "ismscicon:HCS-X"
+        },
+        {
+          "@id": "ismscicon:KLM"
+        },
+        {
+          "@id": "ismscicon:KLM-R"
+        },
+        {
+          "@id": "ismscicon:MVL"
+        },
+        {
+          "@id": "ismscicon:RSV"
+        },
+        {
+          "@id": "ismscicon:SI"
+        },
+        {
+          "@id": "ismscicon:SI-EU"
+        },
+        {
+          "@id": "ismscicon:SI-G"
+        },
+        {
+          "@id": "ismscicon:SI-NK"
+        },
+        {
+          "@id": "ismscicon:TK"
+        },
+        {
+          "@id": "ismscicon:TK-BLFH"
+        },
+        {
+          "@id": "ismscicon:TK-IDIT"
+        },
+        {
+          "@id": "ismscicon:TK-KAND"
+        }
+      ]
+    },
+    {
+      "@id": "ismscicon:CVEnumISMSCIControlsValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "BUR",
+        "BUR-BLG",
+        "BUR-DTP",
+        "BUR-WRG",
+        "HCS",
+        "HCS-O",
+        "HCS-P",
+        "HCS-X",
+        "KLM",
+        "KLM-R",
+        "MVL",
+        "RSV",
+        "SI",
+        "SI-EU",
+        "SI-G",
+        "SI-NK",
+        "TK",
+        "TK-BLFH",
+        "TK-IDIT",
+        "TK-KAND"
+      ]
     },
     {
       "@id": "ismscicon:BUR",

@@ -1,14 +1,82 @@
 {
   "@context": {
     "ismatomic": "urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismatomic:CVEnumISMatomicEnergyMarkings",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismatomic:CVEnumISMatomicEnergyMarkings definition"
+      "dc:title": "(U) ismatomic:CVEnumISMatomicEnergyMarkings definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismatomic:RD"
+        },
+        {
+          "@id": "ismatomic:RD-CNWDI"
+        },
+        {
+          "@id": "ismatomic:RD-SG-14"
+        },
+        {
+          "@id": "ismatomic:RD-SG-15"
+        },
+        {
+          "@id": "ismatomic:RD-SG-18"
+        },
+        {
+          "@id": "ismatomic:RD-SG-20"
+        },
+        {
+          "@id": "ismatomic:FRD"
+        },
+        {
+          "@id": "ismatomic:FRD-SG-14"
+        },
+        {
+          "@id": "ismatomic:FRD-SG-15"
+        },
+        {
+          "@id": "ismatomic:FRD-SG-18"
+        },
+        {
+          "@id": "ismatomic:FRD-SG-20"
+        },
+        {
+          "@id": "ismatomic:DCNI"
+        },
+        {
+          "@id": "ismatomic:UCNI"
+        },
+        {
+          "@id": "ismatomic:TFNI"
+        }
+      ]
+    },
+    {
+      "@id": "ismatomic:CVEnumISMatomicEnergyMarkingsValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "RD",
+        "RD-CNWDI",
+        "RD-SG-14",
+        "RD-SG-15",
+        "RD-SG-18",
+        "RD-SG-20",
+        "FRD",
+        "FRD-SG-14",
+        "FRD-SG-15",
+        "FRD-SG-18",
+        "FRD-SG-20",
+        "DCNI",
+        "UCNI",
+        "TFNI"
+      ]
     },
     {
       "@id": "ismatomic:RD",

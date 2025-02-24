@@ -1,14 +1,62 @@
 {
   "@context": {
     "ismnonic": "urn:us:gov:ic:cvenum:ism:nonic#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismnonic:CVEnumISMNonIC",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismnonic:CVEnumISMNonIC definition"
+      "dc:title": "(U) ismnonic:CVEnumISMNonIC definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismnonic:DS"
+        },
+        {
+          "@id": "ismnonic:XD"
+        },
+        {
+          "@id": "ismnonic:ND"
+        },
+        {
+          "@id": "ismnonic:SBU"
+        },
+        {
+          "@id": "ismnonic:SBU-NF"
+        },
+        {
+          "@id": "ismnonic:LES"
+        },
+        {
+          "@id": "ismnonic:LES-NF"
+        },
+        {
+          "@id": "ismnonic:SSI"
+        },
+        {
+          "@id": "ismnonic:NNPI"
+        }
+      ]
+    },
+    {
+      "@id": "ismnonic:CVEnumISMNonICValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "DS",
+        "XD",
+        "ND",
+        "SBU",
+        "SBU-NF",
+        "LES",
+        "LES-NF",
+        "SSI",
+        "NNPI"
+      ]
     },
     {
       "@id": "ismnonic:DS",

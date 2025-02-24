@@ -1,14 +1,1030 @@
 {
   "@context": {
     "usaa": "urn:us:gov:ic:cvenum:usagency:agencyacronym#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "usaa:CVEnumUSAgencyAcronym",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) All valid acronyms for use with USA publishing organizations/agencies/Cabinet Offices. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSAgencyAcronym.xml"
+      "dc:title": "(U) All valid acronyms for use with USA publishing organizations/agencies/Cabinet Offices. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSAgencyAcronym.xml",
+      "skos:hasTopConcept": [
+        {
+          "@id": "usaa:USA.ABMC"
+        },
+        {
+          "@id": "usaa:USA.ACCESS"
+        },
+        {
+          "@id": "usaa:USA.ACFR"
+        },
+        {
+          "@id": "usaa:USA.ACHP"
+        },
+        {
+          "@id": "usaa:USA.ACUS"
+        },
+        {
+          "@id": "usaa:USA.ADF"
+        },
+        {
+          "@id": "usaa:USA.AMICC"
+        },
+        {
+          "@id": "usaa:USA.AMTRAK"
+        },
+        {
+          "@id": "usaa:USA.ARC"
+        },
+        {
+          "@id": "usaa:USA.ARCTIC"
+        },
+        {
+          "@id": "usaa:USA.BBG"
+        },
+        {
+          "@id": "usaa:USA.BMGS"
+        },
+        {
+          "@id": "usaa:USA.CAOC"
+        },
+        {
+          "@id": "usaa:USA.CCJJ"
+        },
+        {
+          "@id": "usaa:USA.CCR"
+        },
+        {
+          "@id": "usaa:USA.CEA"
+        },
+        {
+          "@id": "usaa:USA.CFA"
+        },
+        {
+          "@id": "usaa:USA.CFI"
+        },
+        {
+          "@id": "usaa:USA.CFOC"
+        },
+        {
+          "@id": "usaa:USA.CFTC"
+        },
+        {
+          "@id": "usaa:USA.CHCOC"
+        },
+        {
+          "@id": "usaa:USA.CIA"
+        },
+        {
+          "@id": "usaa:USA.CIOC"
+        },
+        {
+          "@id": "usaa:USA.CIRF"
+        },
+        {
+          "@id": "usaa:USA.CITA"
+        },
+        {
+          "@id": "usaa:USA.CNCS"
+        },
+        {
+          "@id": "usaa:USA.COMP"
+        },
+        {
+          "@id": "usaa:USA.CPSC"
+        },
+        {
+          "@id": "usaa:USA.CSAC"
+        },
+        {
+          "@id": "usaa:USA.CSHIB"
+        },
+        {
+          "@id": "usaa:USA.CSOSA"
+        },
+        {
+          "@id": "usaa:USA.DEA"
+        },
+        {
+          "@id": "usaa:USA.DENALI"
+        },
+        {
+          "@id": "usaa:USA.DFC"
+        },
+        {
+          "@id": "usaa:USA.DHS"
+        },
+        {
+          "@id": "usaa:USA.DIA"
+        },
+        {
+          "@id": "usaa:USA.DNFSB"
+        },
+        {
+          "@id": "usaa:USA.DNI"
+        },
+        {
+          "@id": "usaa:USA.DOC"
+        },
+        {
+          "@id": "usaa:USA.DOD"
+        },
+        {
+          "@id": "usaa:USA.DOE"
+        },
+        {
+          "@id": "usaa:USA.DOI"
+        },
+        {
+          "@id": "usaa:USA.DOJ"
+        },
+        {
+          "@id": "usaa:USA.DOL"
+        },
+        {
+          "@id": "usaa:USA.DOT"
+        },
+        {
+          "@id": "usaa:USA.DRBC"
+        },
+        {
+          "@id": "usaa:USA.EAC"
+        },
+        {
+          "@id": "usaa:USA.ED"
+        },
+        {
+          "@id": "usaa:USA.EEOC"
+        },
+        {
+          "@id": "usaa:USA.EIBUS"
+        },
+        {
+          "@id": "usaa:USA.EOP"
+        },
+        {
+          "@id": "usaa:USA.EPA"
+        },
+        {
+          "@id": "usaa:USA.ESC"
+        },
+        {
+          "@id": "usaa:USA.FAC"
+        },
+        {
+          "@id": "usaa:USA.FASAB"
+        },
+        {
+          "@id": "usaa:USA.FBI"
+        },
+        {
+          "@id": "usaa:USA.FCA"
+        },
+        {
+          "@id": "usaa:USA.FCC"
+        },
+        {
+          "@id": "usaa:USA.FCIC"
+        },
+        {
+          "@id": "usaa:USA.FCSIC"
+        },
+        {
+          "@id": "usaa:USA.FDIC"
+        },
+        {
+          "@id": "usaa:USA.FEB"
+        },
+        {
+          "@id": "usaa:USA.FEC"
+        },
+        {
+          "@id": "usaa:USA.FERC"
+        },
+        {
+          "@id": "usaa:USA.FFB"
+        },
+        {
+          "@id": "usaa:USA.FFIEC"
+        },
+        {
+          "@id": "usaa:USA.FGDC"
+        },
+        {
+          "@id": "usaa:USA.FHRA"
+        },
+        {
+          "@id": "usaa:USA.FICE"
+        },
+        {
+          "@id": "usaa:USA.FICMNEW"
+        },
+        {
+          "@id": "usaa:USA.FICSP"
+        },
+        {
+          "@id": "usaa:USA.FLCTT"
+        },
+        {
+          "@id": "usaa:USA.FLICC"
+        },
+        {
+          "@id": "usaa:USA.FLRA"
+        },
+        {
+          "@id": "usaa:USA.FMC"
+        },
+        {
+          "@id": "usaa:USA.FMCS"
+        },
+        {
+          "@id": "usaa:USA.FMSHRC"
+        },
+        {
+          "@id": "usaa:USA.FRS"
+        },
+        {
+          "@id": "usaa:USA.FRTIB"
+        },
+        {
+          "@id": "usaa:USA.FTC"
+        },
+        {
+          "@id": "usaa:USA.GSA"
+        },
+        {
+          "@id": "usaa:USA.HELSINKI"
+        },
+        {
+          "@id": "usaa:USA.HHS"
+        },
+        {
+          "@id": "usaa:USA.HMM"
+        },
+        {
+          "@id": "usaa:USA.HSTSF"
+        },
+        {
+          "@id": "usaa:USA.HUD"
+        },
+        {
+          "@id": "usaa:USA.IACB"
+        },
+        {
+          "@id": "usaa:USA.IADRWG"
+        },
+        {
+          "@id": "usaa:USA.IAF"
+        },
+        {
+          "@id": "usaa:USA.IBB"
+        },
+        {
+          "@id": "usaa:USA.ICH"
+        },
+        {
+          "@id": "usaa:USA.ICPRB"
+        },
+        {
+          "@id": "usaa:USA.IMCNHCC"
+        },
+        {
+          "@id": "usaa:USA.IMLS"
+        },
+        {
+          "@id": "usaa:USA.ITC"
+        },
+        {
+          "@id": "usaa:USA.JBEA"
+        },
+        {
+          "@id": "usaa:USA.JFSP"
+        },
+        {
+          "@id": "usaa:USA.JMMFF"
+        },
+        {
+          "@id": "usaa:USA.JUSFC"
+        },
+        {
+          "@id": "usaa:USA.JWFFSB"
+        },
+        {
+          "@id": "usaa:USA.LSC"
+        },
+        {
+          "@id": "usaa:USA.MBCC"
+        },
+        {
+          "@id": "usaa:USA.MCC"
+        },
+        {
+          "@id": "usaa:USA.MKUF"
+        },
+        {
+          "@id": "usaa:USA.MMC"
+        },
+        {
+          "@id": "usaa:USA.MRC"
+        },
+        {
+          "@id": "usaa:USA.MSPB"
+        },
+        {
+          "@id": "usaa:USA.NARA"
+        },
+        {
+          "@id": "usaa:USA.NASA"
+        },
+        {
+          "@id": "usaa:USA.NBCFM"
+        },
+        {
+          "@id": "usaa:USA.NCD"
+        },
+        {
+          "@id": "usaa:USA.NCFRR"
+        },
+        {
+          "@id": "usaa:USA.NCPC"
+        },
+        {
+          "@id": "usaa:USA.NCUA"
+        },
+        {
+          "@id": "usaa:USA.NEA"
+        },
+        {
+          "@id": "usaa:USA.NEH"
+        },
+        {
+          "@id": "usaa:USA.NGA"
+        },
+        {
+          "@id": "usaa:USA.NIGC"
+        },
+        {
+          "@id": "usaa:USA.NLRB"
+        },
+        {
+          "@id": "usaa:USA.NMB"
+        },
+        {
+          "@id": "usaa:USA.NPF"
+        },
+        {
+          "@id": "usaa:USA.NPPC"
+        },
+        {
+          "@id": "usaa:USA.NRC"
+        },
+        {
+          "@id": "usaa:USA.NRO"
+        },
+        {
+          "@id": "usaa:USA.NSA"
+        },
+        {
+          "@id": "usaa:USA.NSF"
+        },
+        {
+          "@id": "usaa:USA.NTSB"
+        },
+        {
+          "@id": "usaa:USA.NWTRB"
+        },
+        {
+          "@id": "usaa:USA.OGE"
+        },
+        {
+          "@id": "usaa:USA.OMB"
+        },
+        {
+          "@id": "usaa:USA.ONCIX"
+        },
+        {
+          "@id": "usaa:USA.OPIC"
+        },
+        {
+          "@id": "usaa:USA.OPM"
+        },
+        {
+          "@id": "usaa:USA.OSC"
+        },
+        {
+          "@id": "usaa:USA.OSHRC"
+        },
+        {
+          "@id": "usaa:USA.OVP"
+        },
+        {
+          "@id": "usaa:USA.PBGC"
+        },
+        {
+          "@id": "usaa:USA.PCC"
+        },
+        {
+          "@id": "usaa:USA.PEACE"
+        },
+        {
+          "@id": "usaa:USA.PRC"
+        },
+        {
+          "@id": "usaa:USA.PRESIDIO"
+        },
+        {
+          "@id": "usaa:USA.RISC"
+        },
+        {
+          "@id": "usaa:USA.RRB"
+        },
+        {
+          "@id": "usaa:USA.SBA"
+        },
+        {
+          "@id": "usaa:USA.SEC"
+        },
+        {
+          "@id": "usaa:USA.SJI"
+        },
+        {
+          "@id": "usaa:USA.SMITH"
+        },
+        {
+          "@id": "usaa:USA.SRBC"
+        },
+        {
+          "@id": "usaa:USA.SSA"
+        },
+        {
+          "@id": "usaa:USA.SSAB"
+        },
+        {
+          "@id": "usaa:USA.SSS"
+        },
+        {
+          "@id": "usaa:USA.STATE"
+        },
+        {
+          "@id": "usaa:USA.TAP"
+        },
+        {
+          "@id": "usaa:USA.TDA"
+        },
+        {
+          "@id": "usaa:USA.TREAS"
+        },
+        {
+          "@id": "usaa:USA.TVA"
+        },
+        {
+          "@id": "usaa:USA.USA"
+        },
+        {
+          "@id": "usaa:USA.USAF"
+        },
+        {
+          "@id": "usaa:USA.USAID"
+        },
+        {
+          "@id": "usaa:USA.USAOC"
+        },
+        {
+          "@id": "usaa:USA.USCG"
+        },
+        {
+          "@id": "usaa:USA.USDA"
+        },
+        {
+          "@id": "usaa:USA.USIP"
+        },
+        {
+          "@id": "usaa:USA.USMC"
+        },
+        {
+          "@id": "usaa:USA.USN"
+        },
+        {
+          "@id": "usaa:USA.USPS"
+        },
+        {
+          "@id": "usaa:USA.USSF"
+        },
+        {
+          "@id": "usaa:USA.USTR"
+        },
+        {
+          "@id": "usaa:USA.USUN"
+        },
+        {
+          "@id": "usaa:USA.VA"
+        },
+        {
+          "@id": "usaa:USA.VDNC"
+        },
+        {
+          "@id": "usaa:USA.VEF"
+        },
+        {
+          "@id": "usaa:USA.WHCPS"
+        },
+        {
+          "@id": "usaa:USA.WHMO"
+        },
+        {
+          "@id": "usaa:USA.AOC"
+        },
+        {
+          "@id": "usaa:USA.CBO"
+        },
+        {
+          "@id": "usaa:USA.CRS"
+        },
+        {
+          "@id": "usaa:USA.GAO"
+        },
+        {
+          "@id": "usaa:USA.GPO"
+        },
+        {
+          "@id": "usaa:USA.H-ADM"
+        },
+        {
+          "@id": "usaa:USA.H-AGR"
+        },
+        {
+          "@id": "usaa:USA.H-APP"
+        },
+        {
+          "@id": "usaa:USA.H-ARM"
+        },
+        {
+          "@id": "usaa:USA.H-BUD"
+        },
+        {
+          "@id": "usaa:USA.H-CAO"
+        },
+        {
+          "@id": "usaa:USA.H-CHAP"
+        },
+        {
+          "@id": "usaa:USA.H-CLRK"
+        },
+        {
+          "@id": "usaa:USA.H-EC"
+        },
+        {
+          "@id": "usaa:USA.H-EDW"
+        },
+        {
+          "@id": "usaa:USA.H-E_C"
+        },
+        {
+          "@id": "usaa:USA.H-FIN"
+        },
+        {
+          "@id": "usaa:USA.H-FOR"
+        },
+        {
+          "@id": "usaa:USA.H-HIST"
+        },
+        {
+          "@id": "usaa:USA.H-HLS"
+        },
+        {
+          "@id": "usaa:USA.H-JUD"
+        },
+        {
+          "@id": "usaa:USA.H-LDRS"
+        },
+        {
+          "@id": "usaa:USA.H-LRC"
+        },
+        {
+          "@id": "usaa:USA.H-NAT"
+        },
+        {
+          "@id": "usaa:USA.H-OGR"
+        },
+        {
+          "@id": "usaa:USA.H-OIG"
+        },
+        {
+          "@id": "usaa:USA.H-OLC"
+        },
+        {
+          "@id": "usaa:USA.H-PAR"
+        },
+        {
+          "@id": "usaa:USA.H-RUL"
+        },
+        {
+          "@id": "usaa:USA.H-SAA"
+        },
+        {
+          "@id": "usaa:USA.H-SCI"
+        },
+        {
+          "@id": "usaa:USA.H-SMB"
+        },
+        {
+          "@id": "usaa:USA.H-T_I"
+        },
+        {
+          "@id": "usaa:USA.H-VET"
+        },
+        {
+          "@id": "usaa:USA.H-W_M"
+        },
+        {
+          "@id": "usaa:USA.HPSCI"
+        },
+        {
+          "@id": "usaa:USA.J-JCP"
+        },
+        {
+          "@id": "usaa:USA.J-JCT"
+        },
+        {
+          "@id": "usaa:USA.J-JEC"
+        },
+        {
+          "@id": "usaa:USA.JCLDS"
+        },
+        {
+          "@id": "usaa:USA.LOC"
+        },
+        {
+          "@id": "usaa:USA.MACPAC"
+        },
+        {
+          "@id": "usaa:USA.MedPAC"
+        },
+        {
+          "@id": "usaa:USA.OWLC"
+        },
+        {
+          "@id": "usaa:USA.S-AGE"
+        },
+        {
+          "@id": "usaa:USA.S-AGR"
+        },
+        {
+          "@id": "usaa:USA.S-APP"
+        },
+        {
+          "@id": "usaa:USA.S-ARM"
+        },
+        {
+          "@id": "usaa:USA.S-BNK"
+        },
+        {
+          "@id": "usaa:USA.S-BUD"
+        },
+        {
+          "@id": "usaa:USA.S-CHAP"
+        },
+        {
+          "@id": "usaa:USA.S-COE"
+        },
+        {
+          "@id": "usaa:USA.S-CST"
+        },
+        {
+          "@id": "usaa:USA.S-ENR"
+        },
+        {
+          "@id": "usaa:USA.S-EPW"
+        },
+        {
+          "@id": "usaa:USA.S-FIN"
+        },
+        {
+          "@id": "usaa:USA.S-FOR"
+        },
+        {
+          "@id": "usaa:USA.S-HELP"
+        },
+        {
+          "@id": "usaa:USA.S-HSG"
+        },
+        {
+          "@id": "usaa:USA.S-IND"
+        },
+        {
+          "@id": "usaa:USA.S-JUD"
+        },
+        {
+          "@id": "usaa:USA.S-LDRS"
+        },
+        {
+          "@id": "usaa:USA.S-MAJSEC"
+        },
+        {
+          "@id": "usaa:USA.S-MINSEC"
+        },
+        {
+          "@id": "usaa:USA.S-PAR"
+        },
+        {
+          "@id": "usaa:USA.S-R_A"
+        },
+        {
+          "@id": "usaa:USA.S-SAA"
+        },
+        {
+          "@id": "usaa:USA.S-SEC"
+        },
+        {
+          "@id": "usaa:USA.S-SMB"
+        },
+        {
+          "@id": "usaa:USA.S-VET"
+        },
+        {
+          "@id": "usaa:USA.SCPS"
+        },
+        {
+          "@id": "usaa:USA.SSCI"
+        },
+        {
+          "@id": "usaa:USA.USBG"
+        },
+        {
+          "@id": "usaa:USA.USCO"
+        },
+        {
+          "@id": "usaa:USA.USCP"
+        },
+        {
+          "@id": "usaa:USA.OtherUSG"
+        },
+        {
+          "@id": "usaa:USA.SLT"
+        }
+      ]
+    },
+    {
+      "@id": "usaa:CVEnumUSAgencyAcronymValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "USA.ABMC",
+        "USA.ACCESS",
+        "USA.ACFR",
+        "USA.ACHP",
+        "USA.ACUS",
+        "USA.ADF",
+        "USA.AMICC",
+        "USA.AMTRAK",
+        "USA.ARC",
+        "USA.ARCTIC",
+        "USA.BBG",
+        "USA.BMGS",
+        "USA.CAOC",
+        "USA.CCJJ",
+        "USA.CCR",
+        "USA.CEA",
+        "USA.CFA",
+        "USA.CFI",
+        "USA.CFOC",
+        "USA.CFTC",
+        "USA.CHCOC",
+        "USA.CIA",
+        "USA.CIOC",
+        "USA.CIRF",
+        "USA.CITA",
+        "USA.CNCS",
+        "USA.COMP",
+        "USA.CPSC",
+        "USA.CSAC",
+        "USA.CSHIB",
+        "USA.CSOSA",
+        "USA.DEA",
+        "USA.DENALI",
+        "USA.DFC",
+        "USA.DHS",
+        "USA.DIA",
+        "USA.DNFSB",
+        "USA.DNI",
+        "USA.DOC",
+        "USA.DOD",
+        "USA.DOE",
+        "USA.DOI",
+        "USA.DOJ",
+        "USA.DOL",
+        "USA.DOT",
+        "USA.DRBC",
+        "USA.EAC",
+        "USA.ED",
+        "USA.EEOC",
+        "USA.EIBUS",
+        "USA.EOP",
+        "USA.EPA",
+        "USA.ESC",
+        "USA.FAC",
+        "USA.FASAB",
+        "USA.FBI",
+        "USA.FCA",
+        "USA.FCC",
+        "USA.FCIC",
+        "USA.FCSIC",
+        "USA.FDIC",
+        "USA.FEB",
+        "USA.FEC",
+        "USA.FERC",
+        "USA.FFB",
+        "USA.FFIEC",
+        "USA.FGDC",
+        "USA.FHRA",
+        "USA.FICE",
+        "USA.FICMNEW",
+        "USA.FICSP",
+        "USA.FLCTT",
+        "USA.FLICC",
+        "USA.FLRA",
+        "USA.FMC",
+        "USA.FMCS",
+        "USA.FMSHRC",
+        "USA.FRS",
+        "USA.FRTIB",
+        "USA.FTC",
+        "USA.GSA",
+        "USA.HELSINKI",
+        "USA.HHS",
+        "USA.HMM",
+        "USA.HSTSF",
+        "USA.HUD",
+        "USA.IACB",
+        "USA.IADRWG",
+        "USA.IAF",
+        "USA.IBB",
+        "USA.ICH",
+        "USA.ICPRB",
+        "USA.IMCNHCC",
+        "USA.IMLS",
+        "USA.ITC",
+        "USA.JBEA",
+        "USA.JFSP",
+        "USA.JMMFF",
+        "USA.JUSFC",
+        "USA.JWFFSB",
+        "USA.LSC",
+        "USA.MBCC",
+        "USA.MCC",
+        "USA.MKUF",
+        "USA.MMC",
+        "USA.MRC",
+        "USA.MSPB",
+        "USA.NARA",
+        "USA.NASA",
+        "USA.NBCFM",
+        "USA.NCD",
+        "USA.NCFRR",
+        "USA.NCPC",
+        "USA.NCUA",
+        "USA.NEA",
+        "USA.NEH",
+        "USA.NGA",
+        "USA.NIGC",
+        "USA.NLRB",
+        "USA.NMB",
+        "USA.NPF",
+        "USA.NPPC",
+        "USA.NRC",
+        "USA.NRO",
+        "USA.NSA",
+        "USA.NSF",
+        "USA.NTSB",
+        "USA.NWTRB",
+        "USA.OGE",
+        "USA.OMB",
+        "USA.ONCIX",
+        "USA.OPIC",
+        "USA.OPM",
+        "USA.OSC",
+        "USA.OSHRC",
+        "USA.OVP",
+        "USA.PBGC",
+        "USA.PCC",
+        "USA.PEACE",
+        "USA.PRC",
+        "USA.PRESIDIO",
+        "USA.RISC",
+        "USA.RRB",
+        "USA.SBA",
+        "USA.SEC",
+        "USA.SJI",
+        "USA.SMITH",
+        "USA.SRBC",
+        "USA.SSA",
+        "USA.SSAB",
+        "USA.SSS",
+        "USA.STATE",
+        "USA.TAP",
+        "USA.TDA",
+        "USA.TREAS",
+        "USA.TVA",
+        "USA.USA",
+        "USA.USAF",
+        "USA.USAID",
+        "USA.USAOC",
+        "USA.USCG",
+        "USA.USDA",
+        "USA.USIP",
+        "USA.USMC",
+        "USA.USN",
+        "USA.USPS",
+        "USA.USSF",
+        "USA.USTR",
+        "USA.USUN",
+        "USA.VA",
+        "USA.VDNC",
+        "USA.VEF",
+        "USA.WHCPS",
+        "USA.WHMO",
+        "USA.AOC",
+        "USA.CBO",
+        "USA.CRS",
+        "USA.GAO",
+        "USA.GPO",
+        "USA.H-ADM",
+        "USA.H-AGR",
+        "USA.H-APP",
+        "USA.H-ARM",
+        "USA.H-BUD",
+        "USA.H-CAO",
+        "USA.H-CHAP",
+        "USA.H-CLRK",
+        "USA.H-EC",
+        "USA.H-EDW",
+        "USA.H-E_C",
+        "USA.H-FIN",
+        "USA.H-FOR",
+        "USA.H-HIST",
+        "USA.H-HLS",
+        "USA.H-JUD",
+        "USA.H-LDRS",
+        "USA.H-LRC",
+        "USA.H-NAT",
+        "USA.H-OGR",
+        "USA.H-OIG",
+        "USA.H-OLC",
+        "USA.H-PAR",
+        "USA.H-RUL",
+        "USA.H-SAA",
+        "USA.H-SCI",
+        "USA.H-SMB",
+        "USA.H-T_I",
+        "USA.H-VET",
+        "USA.H-W_M",
+        "USA.HPSCI",
+        "USA.J-JCP",
+        "USA.J-JCT",
+        "USA.J-JEC",
+        "USA.JCLDS",
+        "USA.LOC",
+        "USA.MACPAC",
+        "USA.MedPAC",
+        "USA.OWLC",
+        "USA.S-AGE",
+        "USA.S-AGR",
+        "USA.S-APP",
+        "USA.S-ARM",
+        "USA.S-BNK",
+        "USA.S-BUD",
+        "USA.S-CHAP",
+        "USA.S-COE",
+        "USA.S-CST",
+        "USA.S-ENR",
+        "USA.S-EPW",
+        "USA.S-FIN",
+        "USA.S-FOR",
+        "USA.S-HELP",
+        "USA.S-HSG",
+        "USA.S-IND",
+        "USA.S-JUD",
+        "USA.S-LDRS",
+        "USA.S-MAJSEC",
+        "USA.S-MINSEC",
+        "USA.S-PAR",
+        "USA.S-R_A",
+        "USA.S-SAA",
+        "USA.S-SEC",
+        "USA.S-SMB",
+        "USA.S-VET",
+        "USA.SCPS",
+        "USA.SSCI",
+        "USA.USBG",
+        "USA.USCO",
+        "USA.USCP",
+        "USA.OtherUSG",
+        "USA.SLT"
+      ]
     },
     {
       "@id": "usaa:USA.ABMC",

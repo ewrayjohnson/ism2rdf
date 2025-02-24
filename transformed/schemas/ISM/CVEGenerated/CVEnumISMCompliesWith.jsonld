@@ -1,14 +1,50 @@
 {
   "@context": {
     "ismcomplies": "urn:us:gov:ic:cvenum:ism:complieswith#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismcomplies:CVEnumISMCompliesWith",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismcomplies:CVEnumISMCompliesWith definition"
+      "dc:title": "(U) ismcomplies:CVEnumISMCompliesWith definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismcomplies:USGov"
+        },
+        {
+          "@id": "ismcomplies:USIC"
+        },
+        {
+          "@id": "ismcomplies:USDOD"
+        },
+        {
+          "@id": "ismcomplies:OtherAuthority"
+        },
+        {
+          "@id": "ismcomplies:USA-CUI-ONLY"
+        },
+        {
+          "@id": "ismcomplies:USA-CUI"
+        }
+      ]
+    },
+    {
+      "@id": "ismcomplies:CVEnumISMCompliesWithValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "USGov",
+        "USIC",
+        "USDOD",
+        "OtherAuthority",
+        "USA-CUI-ONLY",
+        "USA-CUI"
+      ]
     },
     {
       "@id": "ismcomplies:USGov",

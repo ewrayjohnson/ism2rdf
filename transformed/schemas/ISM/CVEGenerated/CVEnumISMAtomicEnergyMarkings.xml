@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:title>(U) ismatomic:CVEnumISMatomicEnergyMarkings definition</dc:title>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-CNWDI"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-14"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-15"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-18"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-20"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-14"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-15"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-18"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-20"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#DCNI"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#UCNI"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#TFNI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkingsValues">
+    <owl:oneOf>RD</owl:oneOf>
+    <owl:oneOf>RD-CNWDI</owl:oneOf>
+    <owl:oneOf>RD-SG-14</owl:oneOf>
+    <owl:oneOf>RD-SG-15</owl:oneOf>
+    <owl:oneOf>RD-SG-18</owl:oneOf>
+    <owl:oneOf>RD-SG-20</owl:oneOf>
+    <owl:oneOf>FRD</owl:oneOf>
+    <owl:oneOf>FRD-SG-14</owl:oneOf>
+    <owl:oneOf>FRD-SG-15</owl:oneOf>
+    <owl:oneOf>FRD-SG-18</owl:oneOf>
+    <owl:oneOf>FRD-SG-20</owl:oneOf>
+    <owl:oneOf>DCNI</owl:oneOf>
+    <owl:oneOf>UCNI</owl:oneOf>
+    <owl:oneOf>TFNI</owl:oneOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>RD</skos:notation>
+    <skos:prefLabel>RESTRICTED DATA</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-CNWDI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>RD-CNWDI</skos:notation>
+    <skos:prefLabel>RD-CRITICAL NUCLEAR WEAPON DESIGN INFORMATION</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-14">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>RD-SG-14</skos:notation>
+    <skos:prefLabel>RD-SIGMA-14</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-15">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>RD-SG-15</skos:notation>
+    <skos:prefLabel>RD-SIGMA-15</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-18">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>RD-SG-18</skos:notation>
+    <skos:prefLabel>RD-SIGMA-18</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#RD-SG-20">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>RD-SG-20</skos:notation>
+    <skos:prefLabel>RD-SIGMA-20</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>FRD</skos:notation>
+    <skos:prefLabel>FORMERLY RESTRICTED DATA</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-14">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>FRD-SG-14</skos:notation>
+    <skos:prefLabel>RD-SIGMA-14</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-15">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>FRD-SG-15</skos:notation>
+    <skos:prefLabel>RD-SIGMA-15</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-18">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>FRD-SG-18</skos:notation>
+    <skos:prefLabel>RD-SIGMA-18</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#FRD-SG-20">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>FRD-SG-20</skos:notation>
+    <skos:prefLabel>RD-SIGMA-20</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#DCNI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>DCNI</skos:notation>
+    <skos:prefLabel>DoD CONTROLLED NUCLEAR INFORMATION</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#UCNI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>UCNI</skos:notation>
+    <skos:prefLabel>DoE CONTROLLED NUCLEAR INFORMATION</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#TFNI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings"/>
+    <skos:notation>TFNI</skos:notation>
+    <skos:prefLabel>TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

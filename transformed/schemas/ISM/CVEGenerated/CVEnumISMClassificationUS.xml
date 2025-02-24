@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:classification:us#CVEnumISMClassificationUS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:title>(U) All currently valid US classification marks. This file is not imported by the schema. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMClassificationUS.xml</dc:title>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:classification:us#TS"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:classification:us#S"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:classification:us#C"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:classification:us#U"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:classification:us#CVEnumISMClassificationUSValues">
+    <owl:oneOf>TS</owl:oneOf>
+    <owl:oneOf>S</owl:oneOf>
+    <owl:oneOf>C</owl:oneOf>
+    <owl:oneOf>U</owl:oneOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:classification:us#TS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:classification:us#CVEnumISMClassificationUS"/>
+    <skos:notation>TS</skos:notation>
+    <skos:prefLabel>TOP SECRET</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:classification:us#S">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:classification:us#CVEnumISMClassificationUS"/>
+    <skos:notation>S</skos:notation>
+    <skos:prefLabel>SECRET</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:classification:us#C">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:classification:us#CVEnumISMClassificationUS"/>
+    <skos:notation>C</skos:notation>
+    <skos:prefLabel>CONFIDENTIAL</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:classification:us#U">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:classification:us#CVEnumISMClassificationUS"/>
+    <skos:notation>U</skos:notation>
+    <skos:prefLabel>UNCLASSIFIED</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

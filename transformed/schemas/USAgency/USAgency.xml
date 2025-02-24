@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="urn:us:gov:ic:usagency#usagency">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="urn:us:gov:ic:cvenum:usagency:agencyacronym#CVEnumUSAgencyAcronymValues"/>
+    <rdfs:comment>An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:usagency#usgovagency">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronymValues"/>
+    <rdfs:comment>An attribute limited to allowable agency acronyms for USA. Contains the Executive branch agencies.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

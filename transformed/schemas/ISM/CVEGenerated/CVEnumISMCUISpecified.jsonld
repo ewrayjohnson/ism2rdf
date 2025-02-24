@@ -1,14 +1,254 @@
 {
   "@context": {
     "ismcuispecified": "urn:us:gov:ic:cvenum:ism:cuispecified#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismcuispecified:CVEnumISMCUISpecified",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismcuispecified:CVEnumISMCUISpecified definition"
+      "dc:title": "(U) ismcuispecified:CVEnumISMCUISpecified definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismcuispecified:AIV"
+        },
+        {
+          "@id": "ismcuispecified:ADPO"
+        },
+        {
+          "@id": "ismcuispecified:CRITAN"
+        },
+        {
+          "@id": "ismcuispecified:ARCHR"
+        },
+        {
+          "@id": "ismcuispecified:FSEC"
+        },
+        {
+          "@id": "ismcuispecified:BUDG"
+        },
+        {
+          "@id": "ismcuispecified:FUND"
+        },
+        {
+          "@id": "ismcuispecified:CVI"
+        },
+        {
+          "@id": "ismcuispecified:CHLD"
+        },
+        {
+          "@id": "ismcuispecified:CCI"
+        },
+        {
+          "@id": "ismcuispecified:CONTRACT"
+        },
+        {
+          "@id": "ismcuispecified:SUB"
+        },
+        {
+          "@id": "ismcuispecified:CTI"
+        },
+        {
+          "@id": "ismcuispecified:CHRI"
+        },
+        {
+          "@id": "ismcuispecified:CEII"
+        },
+        {
+          "@id": "ismcuispecified:LDNA"
+        },
+        {
+          "@id": "ismcuispecified:EXPT"
+        },
+        {
+          "@id": "ismcuispecified:JURY"
+        },
+        {
+          "@id": "ismcuispecified:TAX"
+        },
+        {
+          "@id": "ismcuispecified:FISA"
+        },
+        {
+          "@id": "ismcuispecified:FISAB"
+        },
+        {
+          "@id": "ismcuispecified:FNC"
+        },
+        {
+          "@id": "ismcuispecified:INTEL"
+        },
+        {
+          "@id": "ismcuispecified:NUC"
+        },
+        {
+          "@id": "ismcuispecified:PRVCY"
+        },
+        {
+          "@id": "ismcuispecified:PROCURE"
+        },
+        {
+          "@id": "ismcuispecified:PROPIN"
+        },
+        {
+          "@id": "ismcuispecified:GENETIC"
+        },
+        {
+          "@id": "ismcuispecified:GEO"
+        },
+        {
+          "@id": "ismcuispecified:HLTH"
+        },
+        {
+          "@id": "ismcuispecified:HISTP"
+        },
+        {
+          "@id": "ismcuispecified:INF"
+        },
+        {
+          "@id": "ismcuispecified:PRIIG"
+        },
+        {
+          "@id": "ismcuispecified:IFNC"
+        },
+        {
+          "@id": "ismcuispecified:ID"
+        },
+        {
+          "@id": "ismcuispecified:INTL"
+        },
+        {
+          "@id": "ismcuispecified:INV"
+        },
+        {
+          "@id": "ismcuispecified:LFNC"
+        },
+        {
+          "@id": "ismcuispecified:NPSR"
+        },
+        {
+          "@id": "ismcuispecified:NNPI"
+        },
+        {
+          "@id": "ismcuispecified:SRI"
+        },
+        {
+          "@id": "ismcuispecified:PERS"
+        },
+        {
+          "@id": "ismcuispecified:MFC"
+        },
+        {
+          "@id": "ismcuispecified:PCII"
+        },
+        {
+          "@id": "ismcuispecified:LPROT"
+        },
+        {
+          "@id": "ismcuispecified:SGI"
+        },
+        {
+          "@id": "ismcuispecified:SSI"
+        },
+        {
+          "@id": "ismcuispecified:SSEL"
+        },
+        {
+          "@id": "ismcuispecified:STAT"
+        },
+        {
+          "@id": "ismcuispecified:STUD"
+        },
+        {
+          "@id": "ismcuispecified:TSCA"
+        },
+        {
+          "@id": "ismcuispecified:DCNI"
+        },
+        {
+          "@id": "ismcuispecified:UCNI"
+        },
+        {
+          "@id": "ismcuispecified:CENS"
+        },
+        {
+          "@id": "ismcuispecified:WHSTL"
+        },
+        {
+          "@id": "ismcuispecified:WIT"
+        },
+        {
+          "@id": "ismcuispecified:WDT"
+        }
+      ]
+    },
+    {
+      "@id": "ismcuispecified:CVEnumISMCUISpecifiedValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "AIV",
+        "ADPO",
+        "CRITAN",
+        "ARCHR",
+        "FSEC",
+        "BUDG",
+        "FUND",
+        "CVI",
+        "CHLD",
+        "CCI",
+        "CONTRACT",
+        "SUB",
+        "CTI",
+        "CHRI",
+        "CEII",
+        "LDNA",
+        "EXPT",
+        "JURY",
+        "TAX",
+        "FISA",
+        "FISAB",
+        "FNC",
+        "INTEL",
+        "NUC",
+        "PRVCY",
+        "PROCURE",
+        "PROPIN",
+        "GENETIC",
+        "GEO",
+        "HLTH",
+        "HISTP",
+        "INF",
+        "PRIIG",
+        "IFNC",
+        "ID",
+        "INTL",
+        "INV",
+        "LFNC",
+        "NPSR",
+        "NNPI",
+        "SRI",
+        "PERS",
+        "MFC",
+        "PCII",
+        "LPROT",
+        "SGI",
+        "SSI",
+        "SSEL",
+        "STAT",
+        "STUD",
+        "TSCA",
+        "DCNI",
+        "UCNI",
+        "CENS",
+        "WHSTL",
+        "WIT",
+        "WDT"
+      ]
     },
     {
       "@id": "ismcuispecified:AIV",

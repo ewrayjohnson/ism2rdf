@@ -1,14 +1,50 @@
 {
   "@context": {
     "ismsar": "urn:us:gov:ic:cvenum:ism:sar#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismsar:CVEnumISMSARAuthorities",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) E.O. 13526 Sec. 4.3. Special Access Programs states that only the Secretaries of State, Defense, Energy, and Homeland Security, the Attorney General, and the Director of National Intelligence, or the principal deputy of each, may create a special access program. This CVE lists the agencies that are authorized to establish SAPs, which we are calling the Special Access Required (SAR) Authorities. The ISM encoding of SAP values uses the SAR Authorities values as part of a SAP value in @ism:SARIdentifier, because there is no central registry or requirement to deconflict names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMSARAuthorities.xml"
+      "dc:title": "(U) E.O. 13526 Sec. 4.3. Special Access Programs states that only the Secretaries of State, Defense, Energy, and Homeland Security, the Attorney General, and the Director of National Intelligence, or the principal deputy of each, may create a special access program. This CVE lists the agencies that are authorized to establish SAPs, which we are calling the Special Access Required (SAR) Authorities. The ISM encoding of SAP values uses the SAR Authorities values as part of a SAP value in @ism:SARIdentifier, because there is no central registry or requirement to deconflict names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMSARAuthorities.xml",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismsar:STATE"
+        },
+        {
+          "@id": "ismsar:DOD"
+        },
+        {
+          "@id": "ismsar:DOE"
+        },
+        {
+          "@id": "ismsar:DHS"
+        },
+        {
+          "@id": "ismsar:AG"
+        },
+        {
+          "@id": "ismsar:DNI"
+        }
+      ]
+    },
+    {
+      "@id": "ismsar:CVEnumISMSARAuthoritiesValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "STATE",
+        "DOD",
+        "DOE",
+        "DHS",
+        "AG",
+        "DNI"
+      ]
     },
     {
       "@id": "ismsar:STATE",

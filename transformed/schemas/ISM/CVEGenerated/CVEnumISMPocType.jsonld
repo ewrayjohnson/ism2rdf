@@ -1,14 +1,50 @@
 {
   "@context": {
     "ismpoctype": "urn:us:gov:ic:cvenum:ism:pocType#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismpoctype:CVEnumISMPocType",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismpoctype:CVEnumISMPocType definition"
+      "dc:title": "(U) ismpoctype:CVEnumISMPocType definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismpoctype:ICD-710"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-B"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-C"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-D"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-E"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-F"
+        }
+      ]
+    },
+    {
+      "@id": "ismpoctype:CVEnumISMPocTypeValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "ICD-710",
+        "DoD-Dist-B",
+        "DoD-Dist-C",
+        "DoD-Dist-D",
+        "DoD-Dist-E",
+        "DoD-Dist-F"
+      ]
     },
     {
       "@id": "ismpoctype:ICD-710",

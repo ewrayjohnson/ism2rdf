@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:title>(U) The highest classification of any portion that has either @ism:ownerProducer contains NATO or @FGIsourceOpen contains NATO. The @ism:highWaterNATO attribute will be compared against an entity's fineAccessControls NATO value. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMHighWaterNATO.xml</dc:title>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-U"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-R"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-C"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-S"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-TS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATOValues">
+    <owl:oneOf>NATO-U</owl:oneOf>
+    <owl:oneOf>NATO-R</owl:oneOf>
+    <owl:oneOf>NATO-C</owl:oneOf>
+    <owl:oneOf>NATO-S</owl:oneOf>
+    <owl:oneOf>NATO-TS</owl:oneOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-U">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO"/>
+    <skos:notation>NATO-U</skos:notation>
+    <skos:prefLabel>NATO UNCLASSIFIED</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-R">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO"/>
+    <skos:notation>NATO-R</skos:notation>
+    <skos:prefLabel>NATO RESTRICTED</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-C">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO"/>
+    <skos:notation>NATO-C</skos:notation>
+    <skos:prefLabel>NATO CONFIDENTIAL</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-S">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO"/>
+    <skos:notation>NATO-S</skos:notation>
+    <skos:prefLabel>NATO SECRET</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-TS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO"/>
+    <skos:notation>NATO-TS</skos:notation>
+    <skos:prefLabel>NATO TOP SECRET</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

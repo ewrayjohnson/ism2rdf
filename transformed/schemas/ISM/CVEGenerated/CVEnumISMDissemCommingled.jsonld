@@ -1,14 +1,110 @@
 {
   "@context": {
     "ismdissemcommingled": "urn:us:gov:ic:cvenum:ism:dissem:commingled#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismdissemcommingled:CVEnumISMDissemCommingled",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismdissemcommingled:CVEnumISMDissemCommingled definition"
+      "dc:title": "(U) ismdissemcommingled:CVEnumISMDissemCommingled definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismdissemcommingled:RS"
+        },
+        {
+          "@id": "ismdissemcommingled:OC"
+        },
+        {
+          "@id": "ismdissemcommingled:OC-USGOV"
+        },
+        {
+          "@id": "ismdissemcommingled:IMC"
+        },
+        {
+          "@id": "ismdissemcommingled:NF"
+        },
+        {
+          "@id": "ismdissemcommingled:PR"
+        },
+        {
+          "@id": "ismdissemcommingled:REL"
+        },
+        {
+          "@id": "ismdissemcommingled:RELIDO"
+        },
+        {
+          "@id": "ismdissemcommingled:EYES"
+        },
+        {
+          "@id": "ismdissemcommingled:DSEN"
+        },
+        {
+          "@id": "ismdissemcommingled:RAWFISA"
+        },
+        {
+          "@id": "ismdissemcommingled:FISA"
+        },
+        {
+          "@id": "ismdissemcommingled:DISPLAYONLY"
+        },
+        {
+          "@id": "ismdissemcommingled:EXEMPT_FROM_ICD501_DISCOVERY"
+        },
+        {
+          "@id": "ismdissemcommingled:WAIVED"
+        },
+        {
+          "@id": "ismdissemcommingled:AC"
+        },
+        {
+          "@id": "ismdissemcommingled:AWP"
+        },
+        {
+          "@id": "ismdissemcommingled:DL_ONLY"
+        },
+        {
+          "@id": "ismdissemcommingled:FED_ONLY"
+        },
+        {
+          "@id": "ismdissemcommingled:FEDCON"
+        },
+        {
+          "@id": "ismdissemcommingled:NOCON"
+        }
+      ]
+    },
+    {
+      "@id": "ismdissemcommingled:CVEnumISMDissemCommingledValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "RS",
+        "OC",
+        "OC-USGOV",
+        "IMC",
+        "NF",
+        "PR",
+        "REL",
+        "RELIDO",
+        "EYES",
+        "DSEN",
+        "RAWFISA",
+        "FISA",
+        "DISPLAYONLY",
+        "EXEMPT_FROM_ICD501_DISCOVERY",
+        "WAIVED",
+        "AC",
+        "AWP",
+        "DL_ONLY",
+        "FED_ONLY",
+        "FEDCON",
+        "NOCON"
+      ]
     },
     {
       "@id": "ismdissemcommingled:RS",

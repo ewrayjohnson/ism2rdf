@@ -81,6 +81,7 @@ type Import = {
         const idPrefix = /*defaultPrefix ? `${defaultPrefix}:` : */`${defaultNs}`;
         const xsdPrefix = inNamespaces[XML_SCHEMA_URI];
         const g = new Graph({});
+        inNamespaces['http://www.w3.org/2001/XMLSchema#'] = xsdPrefix;
         if (xsdPrefix) {
           const elements = schema[`${xsdPrefix}:element`];
           if (elements) {
@@ -93,7 +94,7 @@ type Import = {
                 const $ = anAttribute.$;
                 if ($) {
                   const attributeName = $.name;
-                  const attributeType = $.type;
+                  let attributeType = $.type;
                   if (attributeType) {
                     if (attributeName) {
                       const attributeId = `${idPrefix}${attributeName}`;
@@ -103,13 +104,14 @@ type Import = {
                       inNamespaces[RDFS_URI] = 'rdfs';
                       inNamespaces[RDF_URI] = 'rdf';
                       if (attributeType.startsWith(`${xsdPrefix}:`)) {
-                        inNamespaces['http://www.w3.org/2001/XMLSchema#'] = xsdPrefix;
                         namespaces.add(xsdPrefix, 'http://www.w3.org/2001/XMLSchema#');
                         g.add(attributeId, 'rdf:type', 'owl:DatatypeProperty');
-                      } else {
-                        g.add(attributeId, 'rdf:type', 'owl:ObjectProperty');
                       }
-                      g.add(attributeId, 'rdfs:range', attributeType);
+                      else {
+                        attributeType += 'Values';
+                        g.add(attributeId, 'rdf:type', 'rdf:Property');
+                      }
+                      g.add(attributeId, 'rdfs:range', `${attributeType}`);
                       const documentation = anAttribute[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
                       if (documentation) {
                         for (const aComment of (Array.isArray(documentation) ? documentation : [documentation])) {
@@ -198,21 +200,27 @@ type Import = {
                 }
               }
 
+              const allowedNotationsId = `${schemeId}Values`;
               for (const aConcept of concepts) {
+                g.add(schemeId, 'skos:hasTopConcept', aConcept.conceptId);
+                inNamespaces[OWL_URI] = 'owl';
+                g.addL(allowedNotationsId, 'owl:oneOf', aConcept.notation);
                 g.add(aConcept.conceptId, 'rdf:type', 'skos:Concept');
                 const stmt = g.add(aConcept.conceptId, 'skos:inScheme', schemeId);
                 // g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.notation, IC-EDH);
-                g.addD(aConcept.conceptId, 'skos:notation', aConcept.notation);
+                g.addD(aConcept.conceptId, 'skos:notation', aConcept.notation/*, `${xsdPrefix}:string`*/);
                 if (aConcept.prefLabel) {
                   g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.prefLabel/*, 'en-latn'*/);
                 }
               }
+              inNamespaces[RDFS_URI] = 'rdfs';
+              g.add(allowedNotationsId, 'rdf:type', 'rdfs:Datatype');
             }
             const rdf = converters.rdfjson2rdfxml(g);
             const json1 = await ldtr.read({ data: rdf, type: 'application/rdf+xml' });
             if (!inNamespaces[OWL_URI]) {
               delete inNamespaces[XML_SCHEMA_URI];
-              delete inNamespaces[RDF_URI];
+              // delete inNamespaces[RDF_URI];
             }
             const context = _.invert(inNamespaces);
             const json2 = await jsonld.compact(json1, context);
@@ -224,8 +232,10 @@ type Import = {
             if (!fs.existsSync(outputDir)) {
               fs.mkdirSync(outputDir, { recursive: true });
             }
-            const outputFilepath = path.join(outputDir, `${basename}.jsonld`);
-            fs.writeFileSync(outputFilepath, JSON.stringify(json2, null, 2));
+            const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
+            fs.writeFileSync(jsonldOutputFilepath, JSON.stringify(json2, null, 2));
+            const rdfxmlOutputFilepath = path.join(outputDir, `${basename}.xml`);
+            fs.writeFileSync(rdfxmlOutputFilepath, rdf);
           }
         }
       }

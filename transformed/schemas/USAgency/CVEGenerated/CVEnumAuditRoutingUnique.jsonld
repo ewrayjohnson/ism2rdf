@@ -1,14 +1,126 @@
 {
   "@context": {
     "usaru": "urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "usaru:CVEnumAuditRoutingUnique",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) usaru:CVEnumAuditRoutingUnique definition"
+      "dc:title": "(U) usaru:CVEnumAuditRoutingUnique definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "usaru:USA.USAFRICOM"
+        },
+        {
+          "@id": "usaru:USA.USCENTCOM"
+        },
+        {
+          "@id": "usaru:USA.USCYBERCOM"
+        },
+        {
+          "@id": "usaru:USA.USEUCOM"
+        },
+        {
+          "@id": "usaru:USA.USFK"
+        },
+        {
+          "@id": "usaru:USA.USNORTHCOM"
+        },
+        {
+          "@id": "usaru:USA.USPACOM"
+        },
+        {
+          "@id": "usaru:USA.USSOCOM"
+        },
+        {
+          "@id": "usaru:USA.USSOUTHCOM"
+        },
+        {
+          "@id": "usaru:USA.USSTRATCOM"
+        },
+        {
+          "@id": "usaru:USA.USTRANSCOM"
+        },
+        {
+          "@id": "usaru:USA.DARPA"
+        },
+        {
+          "@id": "usaru:USA.DISA"
+        },
+        {
+          "@id": "usaru:USA.DODCIO"
+        },
+        {
+          "@id": "usaru:USA.DODIG"
+        },
+        {
+          "@id": "usaru:USA.DODIO"
+        },
+        {
+          "@id": "usaru:USA.DSS"
+        },
+        {
+          "@id": "usaru:USA.DTRA"
+        },
+        {
+          "@id": "usaru:USA.JCS"
+        },
+        {
+          "@id": "usaru:USA.JIDA"
+        },
+        {
+          "@id": "usaru:USA.MDA"
+        },
+        {
+          "@id": "usaru:USA.OUSDATL"
+        },
+        {
+          "@id": "usaru:USA.OUSDI"
+        },
+        {
+          "@id": "usaru:USA.INA"
+        },
+        {
+          "@id": "usaru:USA.TSA"
+        }
+      ]
+    },
+    {
+      "@id": "usaru:CVEnumAuditRoutingUniqueValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "USA.USAFRICOM",
+        "USA.USCENTCOM",
+        "USA.USCYBERCOM",
+        "USA.USEUCOM",
+        "USA.USFK",
+        "USA.USNORTHCOM",
+        "USA.USPACOM",
+        "USA.USSOCOM",
+        "USA.USSOUTHCOM",
+        "USA.USSTRATCOM",
+        "USA.USTRANSCOM",
+        "USA.DARPA",
+        "USA.DISA",
+        "USA.DODCIO",
+        "USA.DODIG",
+        "USA.DODIO",
+        "USA.DSS",
+        "USA.DTRA",
+        "USA.JCS",
+        "USA.JIDA",
+        "USA.MDA",
+        "USA.OUSDATL",
+        "USA.OUSDI",
+        "USA.INA",
+        "USA.TSA"
+      ]
     },
     {
       "@id": "usaru:USA.USAFRICOM",

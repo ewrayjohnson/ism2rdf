@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="urn:us:gov:ic:id#identifier">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="urn:us:gov:ic:id#IcIdTypeValues"/>
+    <rdfs:comment>Attribute to hold the IC-ID of the data object.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

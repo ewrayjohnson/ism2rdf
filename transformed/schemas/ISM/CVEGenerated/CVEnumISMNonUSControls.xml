@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:title>(U) ismnonus:CVEnumISMNonUSControls definition</dc:title>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-ATOMAL"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BOHEMIA"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BALK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControlsValues">
+    <owl:oneOf>NATO-ATOMAL</owl:oneOf>
+    <owl:oneOf>NATO-BOHEMIA</owl:oneOf>
+    <owl:oneOf>NATO-BALK</owl:oneOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-ATOMAL">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls"/>
+    <skos:notation>NATO-ATOMAL</skos:notation>
+    <skos:prefLabel>NATO Atomal mark</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BOHEMIA">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls"/>
+    <skos:notation>NATO-BOHEMIA</skos:notation>
+    <skos:prefLabel>NATO Bohemia mark</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BALK">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls"/>
+    <skos:notation>NATO-BALK</skos:notation>
+    <skos:prefLabel>NATO Balk mark</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

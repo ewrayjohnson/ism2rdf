@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:title>(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml</dc:title>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues">
+    <owl:oneOf>urn:us:gov:ic:ntk:profile:agencydissem</owl:oneOf>
+    <owl:oneOf>urn:us:gov:ic:ntk:profile:datasphere</owl:oneOf>
+    <owl:oneOf>urn:us:gov:ic:ntk:profile:grp-ind</owl:oneOf>
+    <owl:oneOf>urn:us:gov:ic:ntk:profile:role</owl:oneOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"/>
+    <skos:notation>urn:us:gov:ic:ntk:profile:agencydissem</skos:notation>
+    <skos:prefLabel>Agency Dissem</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"/>
+    <skos:notation>urn:us:gov:ic:ntk:profile:datasphere</skos:notation>
+    <skos:prefLabel>Data Sphere</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"/>
+    <skos:notation>urn:us:gov:ic:ntk:profile:grp-ind</skos:notation>
+    <skos:prefLabel>Group and Individual</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"/>
+    <skos:notation>urn:us:gov:ic:ntk:profile:role</skos:notation>
+    <skos:prefLabel>ROLE</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

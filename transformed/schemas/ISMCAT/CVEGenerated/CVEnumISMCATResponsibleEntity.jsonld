@@ -1,14 +1,1146 @@
 {
   "@context": {
     "ismcatre": "urn:us:gov:ic:cvenum:ismcat:responsibleentity#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "skos": "http://www.w3.org/2004/02/skos/core#"
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
       "@id": "ismcatre:CVEnumISMCATResponsibleEntity",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) GENC trigraphs (except AX1) in alphabetical order by trigraph, plus the NATO tetragraph. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMCATResponsibleEntity.xml"
+      "dc:title": "(U) GENC trigraphs (except AX1) in alphabetical order by trigraph, plus the NATO tetragraph. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMCATResponsibleEntity.xml",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismcatre:ABW"
+        },
+        {
+          "@id": "ismcatre:AFG"
+        },
+        {
+          "@id": "ismcatre:AGO"
+        },
+        {
+          "@id": "ismcatre:AIA"
+        },
+        {
+          "@id": "ismcatre:ALB"
+        },
+        {
+          "@id": "ismcatre:AND"
+        },
+        {
+          "@id": "ismcatre:ARE"
+        },
+        {
+          "@id": "ismcatre:ARG"
+        },
+        {
+          "@id": "ismcatre:ARM"
+        },
+        {
+          "@id": "ismcatre:ASM"
+        },
+        {
+          "@id": "ismcatre:ATA"
+        },
+        {
+          "@id": "ismcatre:ATF"
+        },
+        {
+          "@id": "ismcatre:ATG"
+        },
+        {
+          "@id": "ismcatre:AUS"
+        },
+        {
+          "@id": "ismcatre:AUT"
+        },
+        {
+          "@id": "ismcatre:AX2"
+        },
+        {
+          "@id": "ismcatre:AX3"
+        },
+        {
+          "@id": "ismcatre:AZE"
+        },
+        {
+          "@id": "ismcatre:BDI"
+        },
+        {
+          "@id": "ismcatre:BEL"
+        },
+        {
+          "@id": "ismcatre:BEN"
+        },
+        {
+          "@id": "ismcatre:BES"
+        },
+        {
+          "@id": "ismcatre:BFA"
+        },
+        {
+          "@id": "ismcatre:BGD"
+        },
+        {
+          "@id": "ismcatre:BGR"
+        },
+        {
+          "@id": "ismcatre:BHR"
+        },
+        {
+          "@id": "ismcatre:BHS"
+        },
+        {
+          "@id": "ismcatre:BIH"
+        },
+        {
+          "@id": "ismcatre:BLM"
+        },
+        {
+          "@id": "ismcatre:BLR"
+        },
+        {
+          "@id": "ismcatre:BLZ"
+        },
+        {
+          "@id": "ismcatre:BMU"
+        },
+        {
+          "@id": "ismcatre:BOL"
+        },
+        {
+          "@id": "ismcatre:BRA"
+        },
+        {
+          "@id": "ismcatre:BRB"
+        },
+        {
+          "@id": "ismcatre:BRN"
+        },
+        {
+          "@id": "ismcatre:BTN"
+        },
+        {
+          "@id": "ismcatre:BVT"
+        },
+        {
+          "@id": "ismcatre:BWA"
+        },
+        {
+          "@id": "ismcatre:CAF"
+        },
+        {
+          "@id": "ismcatre:CAN"
+        },
+        {
+          "@id": "ismcatre:CCK"
+        },
+        {
+          "@id": "ismcatre:CHE"
+        },
+        {
+          "@id": "ismcatre:CHL"
+        },
+        {
+          "@id": "ismcatre:CHN"
+        },
+        {
+          "@id": "ismcatre:CIV"
+        },
+        {
+          "@id": "ismcatre:CMR"
+        },
+        {
+          "@id": "ismcatre:COD"
+        },
+        {
+          "@id": "ismcatre:COG"
+        },
+        {
+          "@id": "ismcatre:COK"
+        },
+        {
+          "@id": "ismcatre:COL"
+        },
+        {
+          "@id": "ismcatre:COM"
+        },
+        {
+          "@id": "ismcatre:CPT"
+        },
+        {
+          "@id": "ismcatre:CPV"
+        },
+        {
+          "@id": "ismcatre:CRI"
+        },
+        {
+          "@id": "ismcatre:CUB"
+        },
+        {
+          "@id": "ismcatre:CUW"
+        },
+        {
+          "@id": "ismcatre:CXR"
+        },
+        {
+          "@id": "ismcatre:CYM"
+        },
+        {
+          "@id": "ismcatre:CYP"
+        },
+        {
+          "@id": "ismcatre:CZE"
+        },
+        {
+          "@id": "ismcatre:DEU"
+        },
+        {
+          "@id": "ismcatre:DGA"
+        },
+        {
+          "@id": "ismcatre:DJI"
+        },
+        {
+          "@id": "ismcatre:DMA"
+        },
+        {
+          "@id": "ismcatre:DNK"
+        },
+        {
+          "@id": "ismcatre:DOM"
+        },
+        {
+          "@id": "ismcatre:DZA"
+        },
+        {
+          "@id": "ismcatre:ECU"
+        },
+        {
+          "@id": "ismcatre:EGY"
+        },
+        {
+          "@id": "ismcatre:ERI"
+        },
+        {
+          "@id": "ismcatre:ESH"
+        },
+        {
+          "@id": "ismcatre:ESP"
+        },
+        {
+          "@id": "ismcatre:EST"
+        },
+        {
+          "@id": "ismcatre:ETH"
+        },
+        {
+          "@id": "ismcatre:FIN"
+        },
+        {
+          "@id": "ismcatre:FJI"
+        },
+        {
+          "@id": "ismcatre:FLK"
+        },
+        {
+          "@id": "ismcatre:FRA"
+        },
+        {
+          "@id": "ismcatre:FRO"
+        },
+        {
+          "@id": "ismcatre:FSM"
+        },
+        {
+          "@id": "ismcatre:GAB"
+        },
+        {
+          "@id": "ismcatre:GBR"
+        },
+        {
+          "@id": "ismcatre:GEO"
+        },
+        {
+          "@id": "ismcatre:GGY"
+        },
+        {
+          "@id": "ismcatre:GHA"
+        },
+        {
+          "@id": "ismcatre:GIB"
+        },
+        {
+          "@id": "ismcatre:GIN"
+        },
+        {
+          "@id": "ismcatre:GLP"
+        },
+        {
+          "@id": "ismcatre:GMB"
+        },
+        {
+          "@id": "ismcatre:GNB"
+        },
+        {
+          "@id": "ismcatre:GNQ"
+        },
+        {
+          "@id": "ismcatre:GRC"
+        },
+        {
+          "@id": "ismcatre:GRD"
+        },
+        {
+          "@id": "ismcatre:GRL"
+        },
+        {
+          "@id": "ismcatre:GTM"
+        },
+        {
+          "@id": "ismcatre:GUF"
+        },
+        {
+          "@id": "ismcatre:GUM"
+        },
+        {
+          "@id": "ismcatre:GUY"
+        },
+        {
+          "@id": "ismcatre:HKG"
+        },
+        {
+          "@id": "ismcatre:HMD"
+        },
+        {
+          "@id": "ismcatre:HND"
+        },
+        {
+          "@id": "ismcatre:HRV"
+        },
+        {
+          "@id": "ismcatre:HTI"
+        },
+        {
+          "@id": "ismcatre:HUN"
+        },
+        {
+          "@id": "ismcatre:IDN"
+        },
+        {
+          "@id": "ismcatre:IMN"
+        },
+        {
+          "@id": "ismcatre:IND"
+        },
+        {
+          "@id": "ismcatre:IOT"
+        },
+        {
+          "@id": "ismcatre:IRL"
+        },
+        {
+          "@id": "ismcatre:IRN"
+        },
+        {
+          "@id": "ismcatre:IRQ"
+        },
+        {
+          "@id": "ismcatre:ISL"
+        },
+        {
+          "@id": "ismcatre:ISR"
+        },
+        {
+          "@id": "ismcatre:ITA"
+        },
+        {
+          "@id": "ismcatre:JAM"
+        },
+        {
+          "@id": "ismcatre:JEY"
+        },
+        {
+          "@id": "ismcatre:JOR"
+        },
+        {
+          "@id": "ismcatre:JPN"
+        },
+        {
+          "@id": "ismcatre:KAZ"
+        },
+        {
+          "@id": "ismcatre:KEN"
+        },
+        {
+          "@id": "ismcatre:KGZ"
+        },
+        {
+          "@id": "ismcatre:KHM"
+        },
+        {
+          "@id": "ismcatre:KIR"
+        },
+        {
+          "@id": "ismcatre:KNA"
+        },
+        {
+          "@id": "ismcatre:KOR"
+        },
+        {
+          "@id": "ismcatre:KWT"
+        },
+        {
+          "@id": "ismcatre:LAO"
+        },
+        {
+          "@id": "ismcatre:LBN"
+        },
+        {
+          "@id": "ismcatre:LBR"
+        },
+        {
+          "@id": "ismcatre:LBY"
+        },
+        {
+          "@id": "ismcatre:LCA"
+        },
+        {
+          "@id": "ismcatre:LIE"
+        },
+        {
+          "@id": "ismcatre:LKA"
+        },
+        {
+          "@id": "ismcatre:LSO"
+        },
+        {
+          "@id": "ismcatre:LTU"
+        },
+        {
+          "@id": "ismcatre:LUX"
+        },
+        {
+          "@id": "ismcatre:LVA"
+        },
+        {
+          "@id": "ismcatre:MAC"
+        },
+        {
+          "@id": "ismcatre:MAF"
+        },
+        {
+          "@id": "ismcatre:MAR"
+        },
+        {
+          "@id": "ismcatre:MCO"
+        },
+        {
+          "@id": "ismcatre:MDA"
+        },
+        {
+          "@id": "ismcatre:MDG"
+        },
+        {
+          "@id": "ismcatre:MDV"
+        },
+        {
+          "@id": "ismcatre:MEX"
+        },
+        {
+          "@id": "ismcatre:MHL"
+        },
+        {
+          "@id": "ismcatre:MKD"
+        },
+        {
+          "@id": "ismcatre:MLI"
+        },
+        {
+          "@id": "ismcatre:MLT"
+        },
+        {
+          "@id": "ismcatre:MMR"
+        },
+        {
+          "@id": "ismcatre:MNE"
+        },
+        {
+          "@id": "ismcatre:MNG"
+        },
+        {
+          "@id": "ismcatre:MNP"
+        },
+        {
+          "@id": "ismcatre:MOZ"
+        },
+        {
+          "@id": "ismcatre:MRT"
+        },
+        {
+          "@id": "ismcatre:MSR"
+        },
+        {
+          "@id": "ismcatre:MTQ"
+        },
+        {
+          "@id": "ismcatre:MUS"
+        },
+        {
+          "@id": "ismcatre:MWI"
+        },
+        {
+          "@id": "ismcatre:MYS"
+        },
+        {
+          "@id": "ismcatre:MYT"
+        },
+        {
+          "@id": "ismcatre:NAM"
+        },
+        {
+          "@id": "ismcatre:NCL"
+        },
+        {
+          "@id": "ismcatre:NER"
+        },
+        {
+          "@id": "ismcatre:NFK"
+        },
+        {
+          "@id": "ismcatre:NGA"
+        },
+        {
+          "@id": "ismcatre:NIC"
+        },
+        {
+          "@id": "ismcatre:NIU"
+        },
+        {
+          "@id": "ismcatre:NLD"
+        },
+        {
+          "@id": "ismcatre:NOR"
+        },
+        {
+          "@id": "ismcatre:NPL"
+        },
+        {
+          "@id": "ismcatre:NRU"
+        },
+        {
+          "@id": "ismcatre:NZL"
+        },
+        {
+          "@id": "ismcatre:OMN"
+        },
+        {
+          "@id": "ismcatre:PAK"
+        },
+        {
+          "@id": "ismcatre:PAN"
+        },
+        {
+          "@id": "ismcatre:PCN"
+        },
+        {
+          "@id": "ismcatre:PER"
+        },
+        {
+          "@id": "ismcatre:PHL"
+        },
+        {
+          "@id": "ismcatre:PLW"
+        },
+        {
+          "@id": "ismcatre:PNG"
+        },
+        {
+          "@id": "ismcatre:POL"
+        },
+        {
+          "@id": "ismcatre:PRI"
+        },
+        {
+          "@id": "ismcatre:PRK"
+        },
+        {
+          "@id": "ismcatre:PRT"
+        },
+        {
+          "@id": "ismcatre:PRY"
+        },
+        {
+          "@id": "ismcatre:PYF"
+        },
+        {
+          "@id": "ismcatre:QAT"
+        },
+        {
+          "@id": "ismcatre:REU"
+        },
+        {
+          "@id": "ismcatre:ROU"
+        },
+        {
+          "@id": "ismcatre:RUS"
+        },
+        {
+          "@id": "ismcatre:RWA"
+        },
+        {
+          "@id": "ismcatre:SAU"
+        },
+        {
+          "@id": "ismcatre:SDN"
+        },
+        {
+          "@id": "ismcatre:SEN"
+        },
+        {
+          "@id": "ismcatre:SGP"
+        },
+        {
+          "@id": "ismcatre:SGS"
+        },
+        {
+          "@id": "ismcatre:SHN"
+        },
+        {
+          "@id": "ismcatre:SLB"
+        },
+        {
+          "@id": "ismcatre:SLE"
+        },
+        {
+          "@id": "ismcatre:SLV"
+        },
+        {
+          "@id": "ismcatre:SMR"
+        },
+        {
+          "@id": "ismcatre:SOM"
+        },
+        {
+          "@id": "ismcatre:SPM"
+        },
+        {
+          "@id": "ismcatre:SRB"
+        },
+        {
+          "@id": "ismcatre:SSD"
+        },
+        {
+          "@id": "ismcatre:STP"
+        },
+        {
+          "@id": "ismcatre:SUR"
+        },
+        {
+          "@id": "ismcatre:SVK"
+        },
+        {
+          "@id": "ismcatre:SVN"
+        },
+        {
+          "@id": "ismcatre:SWE"
+        },
+        {
+          "@id": "ismcatre:SWZ"
+        },
+        {
+          "@id": "ismcatre:SXM"
+        },
+        {
+          "@id": "ismcatre:SYC"
+        },
+        {
+          "@id": "ismcatre:SYR"
+        },
+        {
+          "@id": "ismcatre:TCA"
+        },
+        {
+          "@id": "ismcatre:TCD"
+        },
+        {
+          "@id": "ismcatre:TGO"
+        },
+        {
+          "@id": "ismcatre:THA"
+        },
+        {
+          "@id": "ismcatre:TJK"
+        },
+        {
+          "@id": "ismcatre:TKL"
+        },
+        {
+          "@id": "ismcatre:TKM"
+        },
+        {
+          "@id": "ismcatre:TLS"
+        },
+        {
+          "@id": "ismcatre:TON"
+        },
+        {
+          "@id": "ismcatre:TTO"
+        },
+        {
+          "@id": "ismcatre:TUN"
+        },
+        {
+          "@id": "ismcatre:TUR"
+        },
+        {
+          "@id": "ismcatre:TUV"
+        },
+        {
+          "@id": "ismcatre:TWN"
+        },
+        {
+          "@id": "ismcatre:TZA"
+        },
+        {
+          "@id": "ismcatre:UGA"
+        },
+        {
+          "@id": "ismcatre:UKR"
+        },
+        {
+          "@id": "ismcatre:URY"
+        },
+        {
+          "@id": "ismcatre:USA"
+        },
+        {
+          "@id": "ismcatre:UZB"
+        },
+        {
+          "@id": "ismcatre:VAT"
+        },
+        {
+          "@id": "ismcatre:VCT"
+        },
+        {
+          "@id": "ismcatre:VEN"
+        },
+        {
+          "@id": "ismcatre:VGB"
+        },
+        {
+          "@id": "ismcatre:VIR"
+        },
+        {
+          "@id": "ismcatre:VNM"
+        },
+        {
+          "@id": "ismcatre:VUT"
+        },
+        {
+          "@id": "ismcatre:WLF"
+        },
+        {
+          "@id": "ismcatre:WSM"
+        },
+        {
+          "@id": "ismcatre:XAC"
+        },
+        {
+          "@id": "ismcatre:XAZ"
+        },
+        {
+          "@id": "ismcatre:XBI"
+        },
+        {
+          "@id": "ismcatre:XBK"
+        },
+        {
+          "@id": "ismcatre:XCR"
+        },
+        {
+          "@id": "ismcatre:XCS"
+        },
+        {
+          "@id": "ismcatre:XCY"
+        },
+        {
+          "@id": "ismcatre:XEU"
+        },
+        {
+          "@id": "ismcatre:XGL"
+        },
+        {
+          "@id": "ismcatre:XGZ"
+        },
+        {
+          "@id": "ismcatre:XHO"
+        },
+        {
+          "@id": "ismcatre:XJA"
+        },
+        {
+          "@id": "ismcatre:XJM"
+        },
+        {
+          "@id": "ismcatre:XJN"
+        },
+        {
+          "@id": "ismcatre:XJV"
+        },
+        {
+          "@id": "ismcatre:XKM"
+        },
+        {
+          "@id": "ismcatre:XKN"
+        },
+        {
+          "@id": "ismcatre:XKR"
+        },
+        {
+          "@id": "ismcatre:XKS"
+        },
+        {
+          "@id": "ismcatre:XMW"
+        },
+        {
+          "@id": "ismcatre:XNV"
+        },
+        {
+          "@id": "ismcatre:XPL"
+        },
+        {
+          "@id": "ismcatre:XPR"
+        },
+        {
+          "@id": "ismcatre:XQZ"
+        },
+        {
+          "@id": "ismcatre:XSP"
+        },
+        {
+          "@id": "ismcatre:XSV"
+        },
+        {
+          "@id": "ismcatre:XTR"
+        },
+        {
+          "@id": "ismcatre:XWB"
+        },
+        {
+          "@id": "ismcatre:XWK"
+        },
+        {
+          "@id": "ismcatre:XXD"
+        },
+        {
+          "@id": "ismcatre:YEM"
+        },
+        {
+          "@id": "ismcatre:ZAF"
+        },
+        {
+          "@id": "ismcatre:ZMB"
+        },
+        {
+          "@id": "ismcatre:ZWE"
+        },
+        {
+          "@id": "ismcatre:NATO"
+        }
+      ]
+    },
+    {
+      "@id": "ismcatre:CVEnumISMCATResponsibleEntityValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "ABW",
+        "AFG",
+        "AGO",
+        "AIA",
+        "ALB",
+        "AND",
+        "ARE",
+        "ARG",
+        "ARM",
+        "ASM",
+        "ATA",
+        "ATF",
+        "ATG",
+        "AUS",
+        "AUT",
+        "AX2",
+        "AX3",
+        "AZE",
+        "BDI",
+        "BEL",
+        "BEN",
+        "BES",
+        "BFA",
+        "BGD",
+        "BGR",
+        "BHR",
+        "BHS",
+        "BIH",
+        "BLM",
+        "BLR",
+        "BLZ",
+        "BMU",
+        "BOL",
+        "BRA",
+        "BRB",
+        "BRN",
+        "BTN",
+        "BVT",
+        "BWA",
+        "CAF",
+        "CAN",
+        "CCK",
+        "CHE",
+        "CHL",
+        "CHN",
+        "CIV",
+        "CMR",
+        "COD",
+        "COG",
+        "COK",
+        "COL",
+        "COM",
+        "CPT",
+        "CPV",
+        "CRI",
+        "CUB",
+        "CUW",
+        "CXR",
+        "CYM",
+        "CYP",
+        "CZE",
+        "DEU",
+        "DGA",
+        "DJI",
+        "DMA",
+        "DNK",
+        "DOM",
+        "DZA",
+        "ECU",
+        "EGY",
+        "ERI",
+        "ESH",
+        "ESP",
+        "EST",
+        "ETH",
+        "FIN",
+        "FJI",
+        "FLK",
+        "FRA",
+        "FRO",
+        "FSM",
+        "GAB",
+        "GBR",
+        "GEO",
+        "GGY",
+        "GHA",
+        "GIB",
+        "GIN",
+        "GLP",
+        "GMB",
+        "GNB",
+        "GNQ",
+        "GRC",
+        "GRD",
+        "GRL",
+        "GTM",
+        "GUF",
+        "GUM",
+        "GUY",
+        "HKG",
+        "HMD",
+        "HND",
+        "HRV",
+        "HTI",
+        "HUN",
+        "IDN",
+        "IMN",
+        "IND",
+        "IOT",
+        "IRL",
+        "IRN",
+        "IRQ",
+        "ISL",
+        "ISR",
+        "ITA",
+        "JAM",
+        "JEY",
+        "JOR",
+        "JPN",
+        "KAZ",
+        "KEN",
+        "KGZ",
+        "KHM",
+        "KIR",
+        "KNA",
+        "KOR",
+        "KWT",
+        "LAO",
+        "LBN",
+        "LBR",
+        "LBY",
+        "LCA",
+        "LIE",
+        "LKA",
+        "LSO",
+        "LTU",
+        "LUX",
+        "LVA",
+        "MAC",
+        "MAF",
+        "MAR",
+        "MCO",
+        "MDA",
+        "MDG",
+        "MDV",
+        "MEX",
+        "MHL",
+        "MKD",
+        "MLI",
+        "MLT",
+        "MMR",
+        "MNE",
+        "MNG",
+        "MNP",
+        "MOZ",
+        "MRT",
+        "MSR",
+        "MTQ",
+        "MUS",
+        "MWI",
+        "MYS",
+        "MYT",
+        "NAM",
+        "NCL",
+        "NER",
+        "NFK",
+        "NGA",
+        "NIC",
+        "NIU",
+        "NLD",
+        "NOR",
+        "NPL",
+        "NRU",
+        "NZL",
+        "OMN",
+        "PAK",
+        "PAN",
+        "PCN",
+        "PER",
+        "PHL",
+        "PLW",
+        "PNG",
+        "POL",
+        "PRI",
+        "PRK",
+        "PRT",
+        "PRY",
+        "PYF",
+        "QAT",
+        "REU",
+        "ROU",
+        "RUS",
+        "RWA",
+        "SAU",
+        "SDN",
+        "SEN",
+        "SGP",
+        "SGS",
+        "SHN",
+        "SLB",
+        "SLE",
+        "SLV",
+        "SMR",
+        "SOM",
+        "SPM",
+        "SRB",
+        "SSD",
+        "STP",
+        "SUR",
+        "SVK",
+        "SVN",
+        "SWE",
+        "SWZ",
+        "SXM",
+        "SYC",
+        "SYR",
+        "TCA",
+        "TCD",
+        "TGO",
+        "THA",
+        "TJK",
+        "TKL",
+        "TKM",
+        "TLS",
+        "TON",
+        "TTO",
+        "TUN",
+        "TUR",
+        "TUV",
+        "TWN",
+        "TZA",
+        "UGA",
+        "UKR",
+        "URY",
+        "USA",
+        "UZB",
+        "VAT",
+        "VCT",
+        "VEN",
+        "VGB",
+        "VIR",
+        "VNM",
+        "VUT",
+        "WLF",
+        "WSM",
+        "XAC",
+        "XAZ",
+        "XBI",
+        "XBK",
+        "XCR",
+        "XCS",
+        "XCY",
+        "XEU",
+        "XGL",
+        "XGZ",
+        "XHO",
+        "XJA",
+        "XJM",
+        "XJN",
+        "XJV",
+        "XKM",
+        "XKN",
+        "XKR",
+        "XKS",
+        "XMW",
+        "XNV",
+        "XPL",
+        "XPR",
+        "XQZ",
+        "XSP",
+        "XSV",
+        "XTR",
+        "XWB",
+        "XWK",
+        "XXD",
+        "YEM",
+        "ZAF",
+        "ZMB",
+        "ZWE",
+        "NATO"
+      ]
     },
     {
       "@id": "ismcatre:ABW",

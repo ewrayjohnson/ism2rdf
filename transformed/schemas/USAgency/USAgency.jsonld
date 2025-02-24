@@ -1,6 +1,6 @@
 {
   "@context": {
-    "xs": "http://www.w3.org/2001/XMLSchema",
+    "xs": "http://www.w3.org/2001/XMLSchema#",
     "ism": "urn:us:gov:ic:ism#",
     "usagency": "urn:us:gov:ic:usagency#",
     "usaa": "urn:us:gov:ic:cvenum:usagency:agencyacronym#",
@@ -15,24 +15,18 @@
   "@graph": [
     {
       "@id": "usagency:usagency",
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
+      "@type": "rdf:Property",
       "rdfs:comment": "An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies.",
       "rdfs:range": {
-        "@id": "usaa:CVEnumUSAgencyAcronym"
+        "@id": "usaa:CVEnumUSAgencyAcronymValues"
       }
     },
     {
       "@id": "usagency:usgovagency",
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
+      "@type": "rdf:Property",
       "rdfs:comment": "An attribute limited to allowable agency acronyms for USA. Contains the Executive branch agencies.",
       "rdfs:range": {
-        "@id": "usgaa:CVEnumUSGOVAgencyAcronym"
+        "@id": "usgaa:CVEnumUSGOVAgencyAcronymValues"
       }
     }
   ]

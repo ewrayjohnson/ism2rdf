@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:title>(U) ismcattetra:CVEnumISMCATTetragraph definition</dc:title>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#ACGU"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#AMSP"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#AOSC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#APFS"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#ASEA"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#AUSTRALIA_GROUP"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#BHTF"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#BWCS"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CFCK"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CFOD"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CFUP"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CLFC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CMFC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CMFP"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CPMT"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CTOC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CWCS"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#ECTF"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#EFOR"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#EU"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#EUDA"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#FRME"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#FVEY"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#GCCH"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#GCTF"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#GFNX"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#GMIF"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#IESC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#IMSC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#IMSP"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#IPMC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#IRKS"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#ISAF"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#ISSG"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#KFOR"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#MCFI"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#MESF"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#MGEU"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#MIFH"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#MLEC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#MNTF"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#MPFL"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#NACT"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#NATO"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#NCFE"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#NKIC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#NRDC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#NSG"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#OSAG"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#OSTY"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#PAWA"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#PGMF"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#PSMX"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#RISC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#RSMA"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#SFOR"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#SOFP"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#SPAA"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#TEYE"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#TFTC"/>
+    <skos:hasTopConcept rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#UNCK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraphValues">
+    <owl:oneOf>ACGU</owl:oneOf>
+    <owl:oneOf>AMSP</owl:oneOf>
+    <owl:oneOf>AOSC</owl:oneOf>
+    <owl:oneOf>APFS</owl:oneOf>
+    <owl:oneOf>ASEA</owl:oneOf>
+    <owl:oneOf>AUSTRALIA_GROUP</owl:oneOf>
+    <owl:oneOf>BHTF</owl:oneOf>
+    <owl:oneOf>BWCS</owl:oneOf>
+    <owl:oneOf>CFCK</owl:oneOf>
+    <owl:oneOf>CFOD</owl:oneOf>
+    <owl:oneOf>CFUP</owl:oneOf>
+    <owl:oneOf>CLFC</owl:oneOf>
+    <owl:oneOf>CMFC</owl:oneOf>
+    <owl:oneOf>CMFP</owl:oneOf>
+    <owl:oneOf>CPMT</owl:oneOf>
+    <owl:oneOf>CTOC</owl:oneOf>
+    <owl:oneOf>CWCS</owl:oneOf>
+    <owl:oneOf>ECTF</owl:oneOf>
+    <owl:oneOf>EFOR</owl:oneOf>
+    <owl:oneOf>EU</owl:oneOf>
+    <owl:oneOf>EUDA</owl:oneOf>
+    <owl:oneOf>FRME</owl:oneOf>
+    <owl:oneOf>FVEY</owl:oneOf>
+    <owl:oneOf>GCCH</owl:oneOf>
+    <owl:oneOf>GCTF</owl:oneOf>
+    <owl:oneOf>GFNX</owl:oneOf>
+    <owl:oneOf>GMIF</owl:oneOf>
+    <owl:oneOf>IESC</owl:oneOf>
+    <owl:oneOf>IMSC</owl:oneOf>
+    <owl:oneOf>IMSP</owl:oneOf>
+    <owl:oneOf>IPMC</owl:oneOf>
+    <owl:oneOf>IRKS</owl:oneOf>
+    <owl:oneOf>ISAF</owl:oneOf>
+    <owl:oneOf>ISSG</owl:oneOf>
+    <owl:oneOf>KFOR</owl:oneOf>
+    <owl:oneOf>MCFI</owl:oneOf>
+    <owl:oneOf>MESF</owl:oneOf>
+    <owl:oneOf>MGEU</owl:oneOf>
+    <owl:oneOf>MIFH</owl:oneOf>
+    <owl:oneOf>MLEC</owl:oneOf>
+    <owl:oneOf>MNTF</owl:oneOf>
+    <owl:oneOf>MPFL</owl:oneOf>
+    <owl:oneOf>NACT</owl:oneOf>
+    <owl:oneOf>NATO</owl:oneOf>
+    <owl:oneOf>NCFE</owl:oneOf>
+    <owl:oneOf>NKIC</owl:oneOf>
+    <owl:oneOf>NRDC</owl:oneOf>
+    <owl:oneOf>NSG</owl:oneOf>
+    <owl:oneOf>OSAG</owl:oneOf>
+    <owl:oneOf>OSTY</owl:oneOf>
+    <owl:oneOf>PAWA</owl:oneOf>
+    <owl:oneOf>PGMF</owl:oneOf>
+    <owl:oneOf>PSMX</owl:oneOf>
+    <owl:oneOf>RISC</owl:oneOf>
+    <owl:oneOf>RSMA</owl:oneOf>
+    <owl:oneOf>SFOR</owl:oneOf>
+    <owl:oneOf>SOFP</owl:oneOf>
+    <owl:oneOf>SPAA</owl:oneOf>
+    <owl:oneOf>TEYE</owl:oneOf>
+    <owl:oneOf>TFTC</owl:oneOf>
+    <owl:oneOf>UNCK</owl:oneOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#ACGU">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>ACGU</skos:notation>
+    <skos:prefLabel>FOUR EYES</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#AMSP">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>AMSP</skos:notation>
+    <skos:prefLabel>AFRICOM Multinational Strategic Partners</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#AOSC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>AOSC</skos:notation>
+    <skos:prefLabel>Athens Olympics Security Coalition</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#APFS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>APFS</skos:notation>
+    <skos:prefLabel>African Peacekeeping Force Somalia</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#ASEA">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>ASEA</skos:notation>
+    <skos:prefLabel>Association of Southeast Asian Nations (ASEAN)</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#AUSTRALIA_GROUP">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>AUSTRALIA_GROUP</skos:notation>
+    <skos:prefLabel>Australia Group</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#BHTF">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>BHTF</skos:notation>
+    <skos:prefLabel>Boko Haram Task Force</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#BWCS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>BWCS</skos:notation>
+    <skos:prefLabel>Biological Weapons Convention States</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CFCK">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>CFCK</skos:notation>
+    <skos:prefLabel>Combined Forces Command Korea</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CFOD">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>CFOD</skos:notation>
+    <skos:prefLabel>Coalition Forces Odyssey Dawn</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CFUP">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>CFUP</skos:notation>
+    <skos:prefLabel>Coalition Forces Unified Protector</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CLFC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>CLFC</skos:notation>
+    <skos:prefLabel>Combined Libya Fusion Cell</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CMFC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>CMFC</skos:notation>
+    <skos:prefLabel>Combined Maritime Forces Central</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CMFP">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>CMFP</skos:notation>
+    <skos:prefLabel>Cooperative Maritime Forces Pacific</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CPMT">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>CPMT</skos:notation>
+    <skos:prefLabel>Civilian Protection Monitoring Team for Sudan</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CTOC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>CTOC</skos:notation>
+    <skos:prefLabel>Countering Transnational Organized Crime</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#CWCS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>CWCS</skos:notation>
+    <skos:prefLabel>Chemical Weapons Convention States</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#ECTF">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>ECTF</skos:notation>
+    <skos:prefLabel>European Counter-Terrorism Forces</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#EFOR">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>EFOR</skos:notation>
+    <skos:prefLabel>European Union Stabilization Forces in Bosnia</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#EU">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>EU</skos:notation>
+    <skos:prefLabel>European Union</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#EUDA">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>EUDA</skos:notation>
+    <skos:prefLabel>European Union DARFUR</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#FRME">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>FRME</skos:notation>
+    <skos:prefLabel>Counter Violent Extremist Organizations Framework Partners</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#FVEY">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>FVEY</skos:notation>
+    <skos:prefLabel>FIVE EYES</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#GCCH">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>GCCH</skos:notation>
+    <skos:prefLabel>Gulf Cooperation Council</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#GCTF">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>GCTF</skos:notation>
+    <skos:prefLabel>Global Counter-Terrorism Forces</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#GFNX">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>GFNX</skos:notation>
+    <skos:prefLabel>Global Foreign Terrorist Fighter Network Exchange</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#GMIF">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>GMIF</skos:notation>
+    <skos:prefLabel>Global Maritime Interception Forces</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#IESC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>IESC</skos:notation>
+    <skos:prefLabel>International Events Security Coalition</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#IMSC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>IMSC</skos:notation>
+    <skos:prefLabel>International Maritime Security Construct</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#IMSP">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>IMSP</skos:notation>
+    <skos:prefLabel>INDOPACOM Multinational Strategic Partners</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#IPMC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>IPMC</skos:notation>
+    <skos:prefLabel>INDO PACIFIC Maritime Call</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#IRKS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>IRKS</skos:notation>
+    <skos:prefLabel>Inherent Resolve Kinetic Support</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#ISAF">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>ISAF</skos:notation>
+    <skos:prefLabel>International Security Assistance Force for Afghanistan</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#ISSG">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>ISSG</skos:notation>
+    <skos:prefLabel>International Syria Support Group</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#KFOR">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>KFOR</skos:notation>
+    <skos:prefLabel>Stabilization Forces in Kosovo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#MCFI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>MCFI</skos:notation>
+    <skos:prefLabel>Multinational Coalition Forces-Iraq</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#MESF">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>MESF</skos:notation>
+    <skos:prefLabel>Middle East Stability Force</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#MGEU">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>MGEU</skos:notation>
+    <skos:prefLabel>Multinational GEOINT Europe</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#MIFH">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>MIFH</skos:notation>
+    <skos:prefLabel>Multinational Interim Force Haiti</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#MLEC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>MLEC</skos:notation>
+    <skos:prefLabel>Multi-Lateral Enduring Contingency</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#MNTF">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>MNTF</skos:notation>
+    <skos:prefLabel>Multinational Task Force</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#MPFL">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>MPFL</skos:notation>
+    <skos:prefLabel>Multinational Peacekeeping Forces</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#NACT">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>NACT</skos:notation>
+    <skos:prefLabel>North African Counter-Terrorism Forces</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#NATO">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>NATO</skos:notation>
+    <skos:prefLabel>North Atlantic Treaty Organization</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#NCFE">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>NCFE</skos:notation>
+    <skos:prefLabel>NATO CFE Treaty on Conventional Armed Forces in Europe</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#NKIC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>NKIC</skos:notation>
+    <skos:prefLabel>North Korea Intelligence Coalition</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#NRDC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>NRDC</skos:notation>
+    <skos:prefLabel>NORDIC</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#NSG">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>NSG</skos:notation>
+    <skos:prefLabel>Nuclear Suppliers' Group</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#OSAG">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>OSAG</skos:notation>
+    <skos:prefLabel>Olympic Security Advisory Group</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#OSTY">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>OSTY</skos:notation>
+    <skos:prefLabel>Open Skies Treaty</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#PAWA">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>PAWA</skos:notation>
+    <skos:prefLabel>Partnership for Actions in West Africa</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#PGMF">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>PGMF</skos:notation>
+    <skos:prefLabel>Persian Gulf Multinational Forces</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#PSMX">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>PSMX</skos:notation>
+    <skos:prefLabel>Pacific Security Monitoring Exchange</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#RISC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>RISC</skos:notation>
+    <skos:prefLabel>Russia Intelligence Sharing Coalition</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#RSMA">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>RSMA</skos:notation>
+    <skos:prefLabel>Resolute Support Mission Afghanistan</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#SFOR">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>SFOR</skos:notation>
+    <skos:prefLabel>Stabilization Force</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#SOFP">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>SOFP</skos:notation>
+    <skos:prefLabel>Special Operations Forces Partners</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#SPAA">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>SPAA</skos:notation>
+    <skos:prefLabel>SOF Planning Activities in Afghanistan (also called "11-Eyes")</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#TEYE">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>TEYE</skos:notation>
+    <skos:prefLabel>THREE EYES</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#TFTC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>TFTC</skos:notation>
+    <skos:prefLabel>Terrorist Financing Targeting Center</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:us:gov:ic:cvenum:ismcat:tetragraph#UNCK">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph"/>
+    <skos:notation>UNCK</skos:notation>
+    <skos:prefLabel>United Nations Command, Korea</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

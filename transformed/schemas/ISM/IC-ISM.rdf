@@ -1,6 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <owl:Ontology>
+    <owl:imports>
+      <owl:Ontology rdf:about="file:/C:/projects/ism2rdf/transformed/schemas/ISM/CVEGenerated/CVEnumISMClassificationAll.rdf"/>
+    </owl:imports>
+    <owl:imports>
+      <owl:Ontology rdf:about="file:/C:/projects/ism2rdf/transformed/schemas/ISM/CVEGenerated/CVEnumISM25X.rdf"/>
+    </owl:imports>
+    <owl:imports>
+      <owl:Ontology rdf:about="file:/C:/projects/ism2rdf/transformed/schemas/ISM/CVEGenerated/CVEnumISMatomicEnergyMarkings.rdf"/>
+    </owl:imports>
+    <owl:imports>
+      <owl:Ontology rdf:about="file:/C:/projects/ism2rdf/transformed/schemas/ISM/CVEGenerated/CVEnumISMCompliesWith.rdf"/>
+    </owl:imports>
+  </owl:Ontology>
   <rdf:Description rdf:about="urn:us:gov:ic:ism#atomicEnergyMarkings">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:range rdf:resource="urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkingsValues"/>

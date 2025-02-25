@@ -26,3 +26,6 @@ Information Security Markings XML (.xsd) to RDF (.jsonld)
     </owl:imports>
   </owl:Ontology>
 </rdf:RDF>
+
+dirname = ".ciartifacts\\schemas\\ISMCAT"
+importPath = ".ciartifacts\\schemas\\ISM\\IC-ARH.xsd"

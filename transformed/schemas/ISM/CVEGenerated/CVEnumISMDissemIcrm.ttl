@@ -1,0 +1,78 @@
+@prefix ismdissemicrm: <urn:us:gov:ic:cvenum:ism:dissem:icrm#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissemIcrm> a owl:Ontology.
+ismdissemicrm:CVEnumISMDissemIcrm dc:title "(U) ismdissemicrm:CVEnumISMDissemIcrm definition";
+    a skos:ConceptScheme;
+    skos:hasTopConcept ismdissemicrm:DISPLAYONLY, ismdissemicrm:DSEN, ismdissemicrm:EXEMPT_FROM_ICD501_DISCOVERY, ismdissemicrm:EYES, ismdissemicrm:FISA, ismdissemicrm:FOUO, ismdissemicrm:IMC, ismdissemicrm:NF, ismdissemicrm:OC-USGOV, ismdissemicrm:OC, ismdissemicrm:PR, ismdissemicrm:RAWFISA, ismdissemicrm:REL, ismdissemicrm:RELIDO, ismdissemicrm:RS, ismdissemicrm:WAIVED.
+ismdissemicrm:CVEnumISMDissemIcrmValues a rdfs:Datatype;
+    owl:oneOf "DISPLAYONLY", "DSEN", "EXEMPT_FROM_ICD501_DISCOVERY", "EYES", "FISA", "FOUO", "IMC", "NF", "OC", "OC-USGOV", "PR", "RAWFISA", "REL", "RELIDO", "RS", "WAIVED".
+ismdissemicrm:DISPLAYONLY a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "DISPLAYONLY";
+    skos:prefLabel "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO".
+ismdissemicrm:DSEN a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "DSEN";
+    skos:prefLabel "DEA SENSITIVE".
+ismdissemicrm:EXEMPT_FROM_ICD501_DISCOVERY a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "EXEMPT_FROM_ICD501_DISCOVERY";
+    skos:prefLabel "EXEMPT FROM ICD501 DISCOVERY".
+ismdissemicrm:EYES a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "EYES";
+    skos:prefLabel "EYES ONLY".
+ismdissemicrm:FISA a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "FISA";
+    skos:prefLabel "FOREIGN INTELLIGENCE SURVEILLANCE ACT".
+ismdissemicrm:FOUO a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "FOUO";
+    skos:prefLabel "FOR OFFICIAL USE ONLY".
+ismdissemicrm:IMC a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "IMC";
+    skos:prefLabel "CONTROLLED IMAGERY".
+ismdissemicrm:NF a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "NF";
+    skos:prefLabel "NOT RELEASABLE TO FOREIGN NATIONALS".
+ismdissemicrm:OC-USGOV a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "OC-USGOV";
+    skos:prefLabel "ORIGINATOR CONTROLLED US GOVERNMENT".
+ismdissemicrm:OC a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "OC";
+    skos:prefLabel "ORIGINATOR CONTROLLED".
+ismdissemicrm:PR a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "PR";
+    skos:prefLabel "CAUTION-PROPRIETARY INFORMATION INVOLVED".
+ismdissemicrm:RAWFISA a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "RAWFISA";
+    skos:prefLabel "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT".
+ismdissemicrm:REL a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "REL";
+    skos:prefLabel "AUTHORIZED FOR RELEASE TO".
+ismdissemicrm:RELIDO a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "RELIDO";
+    skos:prefLabel "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL".
+ismdissemicrm:RS a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "RS";
+    skos:prefLabel "RISK SENSITIVE".
+ismdissemicrm:WAIVED a skos:Concept;
+    skos:inScheme ismdissemicrm:CVEnumISMDissemIcrm;
+    skos:notation "WAIVED";
+    skos:prefLabel "WAIVED".

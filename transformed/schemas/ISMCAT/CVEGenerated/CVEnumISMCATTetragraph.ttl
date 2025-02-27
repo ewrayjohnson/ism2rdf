@@ -1,0 +1,258 @@
+@prefix ismcattetra: <urn:us:gov:ic:cvenum:ismcat:tetragraph#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATTetragraph> a owl:Ontology.
+ismcattetra:ACGU a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "ACGU";
+    skos:prefLabel "FOUR EYES".
+ismcattetra:AMSP a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "AMSP";
+    skos:prefLabel "AFRICOM Multinational Strategic Partners".
+ismcattetra:AOSC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "AOSC";
+    skos:prefLabel "Athens Olympics Security Coalition".
+ismcattetra:APFS a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "APFS";
+    skos:prefLabel "African Peacekeeping Force Somalia".
+ismcattetra:ASEA a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "ASEA";
+    skos:prefLabel "Association of Southeast Asian Nations (ASEAN)".
+ismcattetra:AUSTRALIA_GROUP a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "AUSTRALIA_GROUP";
+    skos:prefLabel "Australia Group".
+ismcattetra:BHTF a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "BHTF";
+    skos:prefLabel "Boko Haram Task Force".
+ismcattetra:BWCS a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "BWCS";
+    skos:prefLabel "Biological Weapons Convention States".
+ismcattetra:CFCK a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "CFCK";
+    skos:prefLabel "Combined Forces Command Korea".
+ismcattetra:CFOD a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "CFOD";
+    skos:prefLabel "Coalition Forces Odyssey Dawn".
+ismcattetra:CFUP a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "CFUP";
+    skos:prefLabel "Coalition Forces Unified Protector".
+ismcattetra:CLFC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "CLFC";
+    skos:prefLabel "Combined Libya Fusion Cell".
+ismcattetra:CMFC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "CMFC";
+    skos:prefLabel "Combined Maritime Forces Central".
+ismcattetra:CMFP a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "CMFP";
+    skos:prefLabel "Cooperative Maritime Forces Pacific".
+ismcattetra:CPMT a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "CPMT";
+    skos:prefLabel "Civilian Protection Monitoring Team for Sudan".
+ismcattetra:CTOC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "CTOC";
+    skos:prefLabel "Countering Transnational Organized Crime".
+ismcattetra:CVEnumISMCATTetragraph dc:title "(U) ismcattetra:CVEnumISMCATTetragraph definition";
+    a skos:ConceptScheme;
+    skos:hasTopConcept ismcattetra:ACGU, ismcattetra:AMSP, ismcattetra:AOSC, ismcattetra:APFS, ismcattetra:ASEA, ismcattetra:AUSTRALIA_GROUP, ismcattetra:BHTF, ismcattetra:BWCS, ismcattetra:CFCK, ismcattetra:CFOD, ismcattetra:CFUP, ismcattetra:CLFC, ismcattetra:CMFC, ismcattetra:CMFP, ismcattetra:CPMT, ismcattetra:CTOC, ismcattetra:CWCS, ismcattetra:ECTF, ismcattetra:EFOR, ismcattetra:EU, ismcattetra:EUDA, ismcattetra:FRME, ismcattetra:FVEY, ismcattetra:GCCH, ismcattetra:GCTF, ismcattetra:GFNX, ismcattetra:GMIF, ismcattetra:IESC, ismcattetra:IMSC, ismcattetra:IMSP, ismcattetra:IPMC, ismcattetra:IRKS, ismcattetra:ISAF, ismcattetra:ISSG, ismcattetra:KFOR, ismcattetra:MCFI, ismcattetra:MESF, ismcattetra:MGEU, ismcattetra:MIFH, ismcattetra:MLEC, ismcattetra:MNTF, ismcattetra:MPFL, ismcattetra:NACT, ismcattetra:NATO, ismcattetra:NCFE, ismcattetra:NKIC, ismcattetra:NRDC, ismcattetra:NSG, ismcattetra:OSAG, ismcattetra:OSTY, ismcattetra:PAWA, ismcattetra:PGMF, ismcattetra:PSMX, ismcattetra:RISC, ismcattetra:RSMA, ismcattetra:SFOR, ismcattetra:SOFP, ismcattetra:SPAA, ismcattetra:TEYE, ismcattetra:TFTC, ismcattetra:UNCK.
+ismcattetra:CVEnumISMCATTetragraphValues a rdfs:Datatype;
+    owl:oneOf "ACGU", "AMSP", "AOSC", "APFS", "ASEA", "AUSTRALIA_GROUP", "BHTF", "BWCS", "CFCK", "CFOD", "CFUP", "CLFC", "CMFC", "CMFP", "CPMT", "CTOC", "CWCS", "ECTF", "EFOR", "EU", "EUDA", "FRME", "FVEY", "GCCH", "GCTF", "GFNX", "GMIF", "IESC", "IMSC", "IMSP", "IPMC", "IRKS", "ISAF", "ISSG", "KFOR", "MCFI", "MESF", "MGEU", "MIFH", "MLEC", "MNTF", "MPFL", "NACT", "NATO", "NCFE", "NKIC", "NRDC", "NSG", "OSAG", "OSTY", "PAWA", "PGMF", "PSMX", "RISC", "RSMA", "SFOR", "SOFP", "SPAA", "TEYE", "TFTC", "UNCK".
+ismcattetra:CWCS a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "CWCS";
+    skos:prefLabel "Chemical Weapons Convention States".
+ismcattetra:ECTF a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "ECTF";
+    skos:prefLabel "European Counter-Terrorism Forces".
+ismcattetra:EFOR a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "EFOR";
+    skos:prefLabel "European Union Stabilization Forces in Bosnia".
+ismcattetra:EU a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "EU";
+    skos:prefLabel "European Union".
+ismcattetra:EUDA a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "EUDA";
+    skos:prefLabel "European Union DARFUR".
+ismcattetra:FRME a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "FRME";
+    skos:prefLabel "Counter Violent Extremist Organizations Framework Partners".
+ismcattetra:FVEY a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "FVEY";
+    skos:prefLabel "FIVE EYES".
+ismcattetra:GCCH a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "GCCH";
+    skos:prefLabel "Gulf Cooperation Council".
+ismcattetra:GCTF a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "GCTF";
+    skos:prefLabel "Global Counter-Terrorism Forces".
+ismcattetra:GFNX a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "GFNX";
+    skos:prefLabel "Global Foreign Terrorist Fighter Network Exchange".
+ismcattetra:GMIF a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "GMIF";
+    skos:prefLabel "Global Maritime Interception Forces".
+ismcattetra:IESC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "IESC";
+    skos:prefLabel "International Events Security Coalition".
+ismcattetra:IMSC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "IMSC";
+    skos:prefLabel "International Maritime Security Construct".
+ismcattetra:IMSP a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "IMSP";
+    skos:prefLabel "INDOPACOM Multinational Strategic Partners".
+ismcattetra:IPMC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "IPMC";
+    skos:prefLabel "INDO PACIFIC Maritime Call".
+ismcattetra:IRKS a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "IRKS";
+    skos:prefLabel "Inherent Resolve Kinetic Support".
+ismcattetra:ISAF a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "ISAF";
+    skos:prefLabel "International Security Assistance Force for Afghanistan".
+ismcattetra:ISSG a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "ISSG";
+    skos:prefLabel "International Syria Support Group".
+ismcattetra:KFOR a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "KFOR";
+    skos:prefLabel "Stabilization Forces in Kosovo".
+ismcattetra:MCFI a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "MCFI";
+    skos:prefLabel "Multinational Coalition Forces-Iraq".
+ismcattetra:MESF a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "MESF";
+    skos:prefLabel "Middle East Stability Force".
+ismcattetra:MGEU a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "MGEU";
+    skos:prefLabel "Multinational GEOINT Europe".
+ismcattetra:MIFH a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "MIFH";
+    skos:prefLabel "Multinational Interim Force Haiti".
+ismcattetra:MLEC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "MLEC";
+    skos:prefLabel "Multi-Lateral Enduring Contingency".
+ismcattetra:MNTF a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "MNTF";
+    skos:prefLabel "Multinational Task Force".
+ismcattetra:MPFL a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "MPFL";
+    skos:prefLabel "Multinational Peacekeeping Forces".
+ismcattetra:NACT a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "NACT";
+    skos:prefLabel "North African Counter-Terrorism Forces".
+ismcattetra:NATO a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "NATO";
+    skos:prefLabel "North Atlantic Treaty Organization".
+ismcattetra:NCFE a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "NCFE";
+    skos:prefLabel "NATO CFE Treaty on Conventional Armed Forces in Europe".
+ismcattetra:NKIC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "NKIC";
+    skos:prefLabel "North Korea Intelligence Coalition".
+ismcattetra:NRDC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "NRDC";
+    skos:prefLabel "NORDIC".
+ismcattetra:NSG a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "NSG";
+    skos:prefLabel "Nuclear Suppliers' Group".
+ismcattetra:OSAG a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "OSAG";
+    skos:prefLabel "Olympic Security Advisory Group".
+ismcattetra:OSTY a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "OSTY";
+    skos:prefLabel "Open Skies Treaty".
+ismcattetra:PAWA a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "PAWA";
+    skos:prefLabel "Partnership for Actions in West Africa".
+ismcattetra:PGMF a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "PGMF";
+    skos:prefLabel "Persian Gulf Multinational Forces".
+ismcattetra:PSMX a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "PSMX";
+    skos:prefLabel "Pacific Security Monitoring Exchange".
+ismcattetra:RISC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "RISC";
+    skos:prefLabel "Russia Intelligence Sharing Coalition".
+ismcattetra:RSMA a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "RSMA";
+    skos:prefLabel "Resolute Support Mission Afghanistan".
+ismcattetra:SFOR a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "SFOR";
+    skos:prefLabel "Stabilization Force".
+ismcattetra:SOFP a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "SOFP";
+    skos:prefLabel "Special Operations Forces Partners".
+ismcattetra:SPAA a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "SPAA";
+    skos:prefLabel "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")".
+ismcattetra:TEYE a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "TEYE";
+    skos:prefLabel "THREE EYES".
+ismcattetra:TFTC a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "TFTC";
+    skos:prefLabel "Terrorist Financing Targeting Center".
+ismcattetra:UNCK a skos:Concept;
+    skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+    skos:notation "UNCK";
+    skos:prefLabel "United Nations Command, Korea".

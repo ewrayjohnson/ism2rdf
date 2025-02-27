@@ -10,5 +10,15 @@
     "dc": "http://purl.org/dc/elements/1.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xs": "http://www.w3.org/2001/XMLSchema#"
-  }
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:Taxonomy:Taxonomy",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:ISM:IC-ISM",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    }
+  ]
 }

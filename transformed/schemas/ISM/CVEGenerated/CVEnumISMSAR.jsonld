@@ -9,6 +9,10 @@
   },
   "@graph": [
     {
+      "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSAR",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
       "@id": "ismsar:CVEnumISMSAR",
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismsar:CVEnumISMSAR definition"

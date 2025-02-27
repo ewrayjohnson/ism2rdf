@@ -1,0 +1,202 @@
+@prefix ismattrib: <urn:us:gov:ic:cvenum:ism:attributes#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMAttributes> a owl:Ontology.
+ismattrib:CVEnumISMAttributes dc:title "(U) ismattrib:CVEnumISMAttributes definition";
+    a skos:ConceptScheme;
+    skos:hasTopConcept ismattrib:DESVersion, ismattrib:FGIsourceOpen, ismattrib:FGIsourceProtected, ismattrib:ISMCATCESVersion, ismattrib:SARIdentifier, ismattrib:SCIcontrols, ismattrib:atomicEnergyMarkings, ismattrib:classification, ismattrib:classificationReason, ismattrib:classifiedBy, ismattrib:compilationReason, ismattrib:compliesWith, ismattrib:createDate, ismattrib:cuiBasic, ismattrib:cuiControlledBy, ismattrib:cuiControlledByOffice, ismattrib:cuiDecontrolDate, ismattrib:cuiDecontrolEvent, ismattrib:cuiPOC, ismattrib:cuiSpecified, ismattrib:declassDate, ismattrib:declassEvent, ismattrib:declassException, ismattrib:derivativelyClassifiedBy, ismattrib:derivedFrom, ismattrib:displayOnlyTo, ismattrib:disseminationControls, ismattrib:excludeFromRollup, ismattrib:exemptFrom, ismattrib:externalNotice, ismattrib:handleViaChannels, ismattrib:hasApproximateMarkings, ismattrib:highWaterNATO, ismattrib:joint, ismattrib:noAggregation, ismattrib:nonICmarkings, ismattrib:nonUSControls, ismattrib:noticeDate, ismattrib:noticeProseID, ismattrib:noticeReason, ismattrib:noticeType, ismattrib:ownerProducer, ismattrib:pocType, ismattrib:releasableTo, ismattrib:resourceElement, ismattrib:secondBannerLine, ismattrib:unregisteredNoticeType.
+ismattrib:CVEnumISMAttributesValues a rdfs:Datatype;
+    owl:oneOf "DESVersion", "FGIsourceOpen", "FGIsourceProtected", "ISMCATCESVersion", "SARIdentifier", "SCIcontrols", "atomicEnergyMarkings", "classification", "classificationReason", "classifiedBy", "compilationReason", "compliesWith", "createDate", "cuiBasic", "cuiControlledBy", "cuiControlledByOffice", "cuiDecontrolDate", "cuiDecontrolEvent", "cuiPOC", "cuiSpecified", "declassDate", "declassEvent", "declassException", "derivativelyClassifiedBy", "derivedFrom", "displayOnlyTo", "disseminationControls", "excludeFromRollup", "exemptFrom", "externalNotice", "handleViaChannels", "hasApproximateMarkings", "highWaterNATO", "joint", "noAggregation", "nonICmarkings", "nonUSControls", "noticeDate", "noticeProseID", "noticeReason", "noticeType", "ownerProducer", "pocType", "releasableTo", "resourceElement", "secondBannerLine", "unregisteredNoticeType".
+ismattrib:DESVersion a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "DESVersion";
+    skos:prefLabel "DESVersion attribute".
+ismattrib:FGIsourceOpen a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "FGIsourceOpen";
+    skos:prefLabel "FGIsourceOpen attribute".
+ismattrib:FGIsourceProtected a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "FGIsourceProtected";
+    skos:prefLabel "FGIsourceProtected attribute".
+ismattrib:ISMCATCESVersion a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "ISMCATCESVersion";
+    skos:prefLabel "ISMCATCESVersion attribute".
+ismattrib:SARIdentifier a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "SARIdentifier";
+    skos:prefLabel "SARIdentifier attribute".
+ismattrib:SCIcontrols a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "SCIcontrols";
+    skos:prefLabel "SCIcontrols attribute".
+ismattrib:atomicEnergyMarkings a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "atomicEnergyMarkings";
+    skos:prefLabel "atomicEnergyMarkings attribute".
+ismattrib:classification a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "classification";
+    skos:prefLabel "classification attribute".
+ismattrib:classificationReason a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "classificationReason";
+    skos:prefLabel "classificationReason attribute".
+ismattrib:classifiedBy a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "classifiedBy";
+    skos:prefLabel "classifiedBy attribute".
+ismattrib:compilationReason a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "compilationReason";
+    skos:prefLabel "compilationReason attribute".
+ismattrib:compliesWith a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "compliesWith";
+    skos:prefLabel "compliesWith attribute".
+ismattrib:createDate a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "createDate";
+    skos:prefLabel "createDate attribute".
+ismattrib:cuiBasic a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "cuiBasic";
+    skos:prefLabel "CUI Basic markings.".
+ismattrib:cuiControlledBy a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "cuiControlledBy";
+    skos:prefLabel "Person or authority for labeling and controlling information as CUI.".
+ismattrib:cuiControlledByOffice a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "cuiControlledByOffice";
+    skos:prefLabel "Office in an agency or department that is responsible for labeling and controlling information as CUI. Ref DOD INSTRUCTION 5200.48.".
+ismattrib:cuiDecontrolDate a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "cuiDecontrolDate";
+    skos:prefLabel "Decontrol date for CUI.".
+ismattrib:cuiDecontrolEvent a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "cuiDecontrolEvent";
+    skos:prefLabel "Decontrol event for CUI.".
+ismattrib:cuiPOC a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "cuiPOC";
+    skos:prefLabel "Point of Contact for labeling and controlling information as CUI. Ref DOD INSTRUCTION 5200.48.".
+ismattrib:cuiSpecified a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "cuiSpecified";
+    skos:prefLabel "CUI Specified markings.".
+ismattrib:declassDate a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "declassDate";
+    skos:prefLabel "declassDate attribute".
+ismattrib:declassEvent a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "declassEvent";
+    skos:prefLabel "declassEvent attribute".
+ismattrib:declassException a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "declassException";
+    skos:prefLabel "declassException attribute".
+ismattrib:derivativelyClassifiedBy a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "derivativelyClassifiedBy";
+    skos:prefLabel "derivativelyClassifiedBy attribute".
+ismattrib:derivedFrom a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "derivedFrom";
+    skos:prefLabel "derivedFrom attribute".
+ismattrib:displayOnlyTo a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "displayOnlyTo";
+    skos:prefLabel "displayOnlyTo attribute".
+ismattrib:disseminationControls a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "disseminationControls";
+    skos:prefLabel "disseminationControls attribute".
+ismattrib:excludeFromRollup a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "excludeFromRollup";
+    skos:prefLabel "excludeFromRollup attribute".
+ismattrib:exemptFrom a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "exemptFrom";
+    skos:prefLabel "exemptFrom attribute".
+ismattrib:externalNotice a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "externalNotice";
+    skos:prefLabel "externalNotice attribute".
+ismattrib:handleViaChannels a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "handleViaChannels";
+    skos:prefLabel "Handle VIA Channels that may appear in the second banner line.".
+ismattrib:hasApproximateMarkings a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "hasApproximateMarkings";
+    skos:prefLabel "hasApproximateMarkings attribute".
+ismattrib:highWaterNATO a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "highWaterNATO";
+    skos:prefLabel "highWaterNATO attribute".
+ismattrib:joint a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "joint";
+    skos:prefLabel "Indicator that multiple ownerProducers should be interpreted as JOINT.".
+ismattrib:noAggregation a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "noAggregation";
+    skos:prefLabel "noAggregation attribute".
+ismattrib:nonICmarkings a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "nonICmarkings";
+    skos:prefLabel "nonICmarkings attribute".
+ismattrib:nonUSControls a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "nonUSControls";
+    skos:prefLabel "nonUSControls attribute".
+ismattrib:noticeDate a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "noticeDate";
+    skos:prefLabel "notice date attribute".
+ismattrib:noticeProseID a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "noticeProseID";
+    skos:prefLabel "noticeProseID attribute".
+ismattrib:noticeReason a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "noticeReason";
+    skos:prefLabel "notice Reason attribute".
+ismattrib:noticeType a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "noticeType";
+    skos:prefLabel "noticeType attribute".
+ismattrib:ownerProducer a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "ownerProducer";
+    skos:prefLabel "ownerProducer attribute".
+ismattrib:pocType a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "pocType";
+    skos:prefLabel "Specifies a point-of contact for a security-related requirement.".
+ismattrib:releasableTo a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "releasableTo";
+    skos:prefLabel "releasableTo attribute".
+ismattrib:resourceElement a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "resourceElement";
+    skos:prefLabel "resourceElement attribute".
+ismattrib:secondBannerLine a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "secondBannerLine";
+    skos:prefLabel "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner.".
+ismattrib:unregisteredNoticeType a skos:Concept;
+    skos:inScheme ismattrib:CVEnumISMAttributes;
+    skos:notation "unregisteredNoticeType";
+    skos:prefLabel "unregisteredNoticeType attribute".

@@ -1,0 +1,34 @@
+@prefix ismelements: <urn:us:gov:ic:cvenum:ism:elements#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMElements> a owl:Ontology.
+ismelements:CVEnumISMElements dc:title "(U) All currently authorized ISM element names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMElements.xml";
+    a skos:ConceptScheme;
+    skos:hasTopConcept ismelements:Notice, ismelements:NoticeExternal, ismelements:NoticeExternalList, ismelements:NoticeList, ismelements:NoticeText.
+ismelements:CVEnumISMElementsValues a rdfs:Datatype;
+    owl:oneOf "Notice", "NoticeExternal", "NoticeExternalList", "NoticeList", "NoticeText".
+ismelements:Notice a skos:Concept;
+    skos:inScheme ismelements:CVEnumISMElements;
+    skos:notation "Notice";
+    skos:prefLabel "Notice element".
+ismelements:NoticeExternal a skos:Concept;
+    skos:inScheme ismelements:CVEnumISMElements;
+    skos:notation "NoticeExternal";
+    skos:prefLabel "NoticeExternal element".
+ismelements:NoticeExternalList a skos:Concept;
+    skos:inScheme ismelements:CVEnumISMElements;
+    skos:notation "NoticeExternalList";
+    skos:prefLabel "NoticeExternalList element".
+ismelements:NoticeList a skos:Concept;
+    skos:inScheme ismelements:CVEnumISMElements;
+    skos:notation "NoticeList";
+    skos:prefLabel "NoticeList element".
+ismelements:NoticeText a skos:Concept;
+    skos:inScheme ismelements:CVEnumISMElements;
+    skos:notation "NoticeText";
+    skos:prefLabel "NoticeText element".

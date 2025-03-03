@@ -1,0 +1,38 @@
+@prefix ismsecondbannerline: <urn:us:gov:ic:cvenum:ism:secondbannerline#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSecondBannerLine> a owl:Ontology.
+ismsecondbannerline:ACPI a skos:Concept;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine;
+    skos:notation "ACPI";
+    skos:prefLabel "ATTORNEY-CLIENT PRIVILEGED INFO".
+ismsecondbannerline:AWP a skos:Concept;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine;
+    skos:notation "AWP";
+    skos:prefLabel "ATTORNEY WORK PRODUCT".
+ismsecondbannerline:CUSPI a skos:Concept;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine;
+    skos:notation "CUSPI";
+    skos:prefLabel "CONTENTS INCLUDE US PERSON INFORMATION".
+ismsecondbannerline:CVEnumISMSecondBannerLine dc:title "(U) ismsecondbannerline:CVEnumISMSecondBannerLine definition";
+    a skos:ConceptScheme;
+    skos:hasTopConcept ismsecondbannerline:ACPI, ismsecondbannerline:AWP, ismsecondbannerline:CUSPI, ismsecondbannerline:DPPD, ismsecondbannerline:HVCO, ismsecondbannerline:SSS.
+ismsecondbannerline:CVEnumISMSecondBannerLineValues a rdfs:Datatype;
+    owl:oneOf "ACPI", "AWP", "CUSPI", "DPPD", "HVCO", "SSS".
+ismsecondbannerline:DPPD a skos:Concept;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine;
+    skos:notation "DPPD";
+    skos:prefLabel "DELIBERATIVE PROCESS PRIVILEGED DOCUMENT".
+ismsecondbannerline:HVCO a skos:Concept;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine;
+    skos:notation "HVCO";
+    skos:prefLabel "HANDLE VIA CHANNELS ONLY".
+ismsecondbannerline:SSS a skos:Concept;
+    skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine;
+    skos:notation "SSS";
+    skos:prefLabel "SOURCE SELECTION SENSITIVE".

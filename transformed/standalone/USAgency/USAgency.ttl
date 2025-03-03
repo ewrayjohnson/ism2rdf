@@ -1,0 +1,20 @@
+@prefix ism: <urn:us:gov:ic:ism#>.
+@prefix usagency: <urn:us:gov:ic:usagency#>.
+@prefix usaa: <urn:us:gov:ic:cvenum:usagency:agencyacronym#>.
+@prefix usgaa: <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml-StopBrowserRendering>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xs: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:USAgency:USAgency> a owl:Ontology;
+    owl:imports <file://./CVEGenerated/CVEnumUSAgencyAcronym.ttl>, <file://./CVEGenerated/CVEnumUSGOVAgencyAcronym.ttl>.
+usagency:usagency a rdf:Property;
+    rdfs:comment "An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies.";
+    rdfs:range usaa:CVEnumUSAgencyAcronymValues.
+usagency:usgovagency a rdf:Property;
+    rdfs:comment "An attribute limited to allowable agency acronyms for USA. Contains the Executive branch agencies.";
+    rdfs:range usgaa:CVEnumUSGOVAgencyAcronymValues.

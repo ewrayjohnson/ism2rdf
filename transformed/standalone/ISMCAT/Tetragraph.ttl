@@ -1,0 +1,18 @@
+@prefix arh: <urn:us:gov:ic:arh#>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml-StopBrowserRendering>.
+@prefix ism: <urn:us:gov:ic:ism#>.
+@prefix tetra: <urn:us:gov:ic:taxonomy:catt:tetragraph#>.
+@prefix tax: <urn:us:gov:ic:taxonomy:common#>.
+@prefix ismcatrelto: <urn:us:gov:ic:cvenum:ismcat:relto#>.
+@prefix ismcatre: <urn:us:gov:ic:cvenum:ismcat:responsibleentity#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xs: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:ISMCAT:Tetragraph> a <http://www.w3.org/2002/07/owl#Ontology>;
+    <http://www.w3.org/2002/07/owl#imports> <file://../ISM/IC-ARH.jsonld>, <file://../ISM/IC-ISM.jsonld>, <file://../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.jsonld>, <file://../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld>, <file://../Taxonomy/Taxonomy.jsonld>.
+tetra:DecomposableType dc:title "Decomposition is the breaking down of a tetragraph into its component countries for the purposes of rollup. An example is decomposing FVEY into the five member countries. This decomposition allows a portion marked RELEASABLE TO USA, GBR and another portion marked RELEASEABLE TO USA, FVEY to rollup to RELEASABLE TO USA, GBR. If FVEY was not decomposable the rollup would have to have been NF. NA is \"Not Applicable\" and is applied to deprecated tetragraphs.";
+    a skos:ConceptScheme.
+tetra:DecomposableTypeValues a rdfs:Datatype.

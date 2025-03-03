@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "ism": "urn:us:gov:ic:ism#",
+    "icid": "urn:us:gov:ic:id#",
+    "xhtml": "http://www.w3.org/1999/xhtml-StopBrowserRendering",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xs": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:IC-ID:IC-ID",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "icid:identifier",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Attribute to hold the IC-ID of the data object.",
+      "rdfs:range": {
+        "@id": "icid:IcIdTypeValues"
+      }
+    }
+  ]
+}

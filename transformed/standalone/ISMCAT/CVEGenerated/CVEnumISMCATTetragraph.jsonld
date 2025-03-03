@@ -1,0 +1,823 @@
+{
+  "@context": {
+    "ismcattetra": "urn:us:gov:ic:cvenum:ismcat:tetragraph#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATTetragraph",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismcattetra:CVEnumISMCATTetragraph",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismcattetra:CVEnumISMCATTetragraph definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismcattetra:ACGU"
+        },
+        {
+          "@id": "ismcattetra:AMSP"
+        },
+        {
+          "@id": "ismcattetra:AOSC"
+        },
+        {
+          "@id": "ismcattetra:APFS"
+        },
+        {
+          "@id": "ismcattetra:ASEA"
+        },
+        {
+          "@id": "ismcattetra:AUSTRALIA_GROUP"
+        },
+        {
+          "@id": "ismcattetra:BHTF"
+        },
+        {
+          "@id": "ismcattetra:BWCS"
+        },
+        {
+          "@id": "ismcattetra:CFCK"
+        },
+        {
+          "@id": "ismcattetra:CFOD"
+        },
+        {
+          "@id": "ismcattetra:CFUP"
+        },
+        {
+          "@id": "ismcattetra:CLFC"
+        },
+        {
+          "@id": "ismcattetra:CMFC"
+        },
+        {
+          "@id": "ismcattetra:CMFP"
+        },
+        {
+          "@id": "ismcattetra:CPMT"
+        },
+        {
+          "@id": "ismcattetra:CTOC"
+        },
+        {
+          "@id": "ismcattetra:CWCS"
+        },
+        {
+          "@id": "ismcattetra:ECTF"
+        },
+        {
+          "@id": "ismcattetra:EFOR"
+        },
+        {
+          "@id": "ismcattetra:EU"
+        },
+        {
+          "@id": "ismcattetra:EUDA"
+        },
+        {
+          "@id": "ismcattetra:FRME"
+        },
+        {
+          "@id": "ismcattetra:FVEY"
+        },
+        {
+          "@id": "ismcattetra:GCCH"
+        },
+        {
+          "@id": "ismcattetra:GCTF"
+        },
+        {
+          "@id": "ismcattetra:GFNX"
+        },
+        {
+          "@id": "ismcattetra:GMIF"
+        },
+        {
+          "@id": "ismcattetra:IESC"
+        },
+        {
+          "@id": "ismcattetra:IMSC"
+        },
+        {
+          "@id": "ismcattetra:IMSP"
+        },
+        {
+          "@id": "ismcattetra:IPMC"
+        },
+        {
+          "@id": "ismcattetra:IRKS"
+        },
+        {
+          "@id": "ismcattetra:ISAF"
+        },
+        {
+          "@id": "ismcattetra:ISSG"
+        },
+        {
+          "@id": "ismcattetra:KFOR"
+        },
+        {
+          "@id": "ismcattetra:MCFI"
+        },
+        {
+          "@id": "ismcattetra:MESF"
+        },
+        {
+          "@id": "ismcattetra:MGEU"
+        },
+        {
+          "@id": "ismcattetra:MIFH"
+        },
+        {
+          "@id": "ismcattetra:MLEC"
+        },
+        {
+          "@id": "ismcattetra:MNTF"
+        },
+        {
+          "@id": "ismcattetra:MPFL"
+        },
+        {
+          "@id": "ismcattetra:NACT"
+        },
+        {
+          "@id": "ismcattetra:NATO"
+        },
+        {
+          "@id": "ismcattetra:NCFE"
+        },
+        {
+          "@id": "ismcattetra:NKIC"
+        },
+        {
+          "@id": "ismcattetra:NRDC"
+        },
+        {
+          "@id": "ismcattetra:NSG"
+        },
+        {
+          "@id": "ismcattetra:OSAG"
+        },
+        {
+          "@id": "ismcattetra:OSTY"
+        },
+        {
+          "@id": "ismcattetra:PAWA"
+        },
+        {
+          "@id": "ismcattetra:PGMF"
+        },
+        {
+          "@id": "ismcattetra:PSMX"
+        },
+        {
+          "@id": "ismcattetra:RISC"
+        },
+        {
+          "@id": "ismcattetra:RSMA"
+        },
+        {
+          "@id": "ismcattetra:SFOR"
+        },
+        {
+          "@id": "ismcattetra:SOFP"
+        },
+        {
+          "@id": "ismcattetra:SPAA"
+        },
+        {
+          "@id": "ismcattetra:TEYE"
+        },
+        {
+          "@id": "ismcattetra:TFTC"
+        },
+        {
+          "@id": "ismcattetra:UNCK"
+        }
+      ]
+    },
+    {
+      "@id": "ismcattetra:CVEnumISMCATTetragraphValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "ACGU",
+        "AMSP",
+        "AOSC",
+        "APFS",
+        "ASEA",
+        "AUSTRALIA_GROUP",
+        "BHTF",
+        "BWCS",
+        "CFCK",
+        "CFOD",
+        "CFUP",
+        "CLFC",
+        "CMFC",
+        "CMFP",
+        "CPMT",
+        "CTOC",
+        "CWCS",
+        "ECTF",
+        "EFOR",
+        "EU",
+        "EUDA",
+        "FRME",
+        "FVEY",
+        "GCCH",
+        "GCTF",
+        "GFNX",
+        "GMIF",
+        "IESC",
+        "IMSC",
+        "IMSP",
+        "IPMC",
+        "IRKS",
+        "ISAF",
+        "ISSG",
+        "KFOR",
+        "MCFI",
+        "MESF",
+        "MGEU",
+        "MIFH",
+        "MLEC",
+        "MNTF",
+        "MPFL",
+        "NACT",
+        "NATO",
+        "NCFE",
+        "NKIC",
+        "NRDC",
+        "NSG",
+        "OSAG",
+        "OSTY",
+        "PAWA",
+        "PGMF",
+        "PSMX",
+        "RISC",
+        "RSMA",
+        "SFOR",
+        "SOFP",
+        "SPAA",
+        "TEYE",
+        "TFTC",
+        "UNCK"
+      ]
+    },
+    {
+      "@id": "ismcattetra:ACGU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "ACGU",
+      "skos:prefLabel": "FOUR EYES"
+    },
+    {
+      "@id": "ismcattetra:AMSP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "AMSP",
+      "skos:prefLabel": "AFRICOM Multinational Strategic Partners"
+    },
+    {
+      "@id": "ismcattetra:AOSC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "AOSC",
+      "skos:prefLabel": "Athens Olympics Security Coalition"
+    },
+    {
+      "@id": "ismcattetra:APFS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "APFS",
+      "skos:prefLabel": "African Peacekeeping Force Somalia"
+    },
+    {
+      "@id": "ismcattetra:ASEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "ASEA",
+      "skos:prefLabel": "Association of Southeast Asian Nations (ASEAN)"
+    },
+    {
+      "@id": "ismcattetra:AUSTRALIA_GROUP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "AUSTRALIA_GROUP",
+      "skos:prefLabel": "Australia Group"
+    },
+    {
+      "@id": "ismcattetra:BHTF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "BHTF",
+      "skos:prefLabel": "Boko Haram Task Force"
+    },
+    {
+      "@id": "ismcattetra:BWCS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "BWCS",
+      "skos:prefLabel": "Biological Weapons Convention States"
+    },
+    {
+      "@id": "ismcattetra:CFCK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CFCK",
+      "skos:prefLabel": "Combined Forces Command Korea"
+    },
+    {
+      "@id": "ismcattetra:CFOD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CFOD",
+      "skos:prefLabel": "Coalition Forces Odyssey Dawn"
+    },
+    {
+      "@id": "ismcattetra:CFUP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CFUP",
+      "skos:prefLabel": "Coalition Forces Unified Protector"
+    },
+    {
+      "@id": "ismcattetra:CLFC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CLFC",
+      "skos:prefLabel": "Combined Libya Fusion Cell"
+    },
+    {
+      "@id": "ismcattetra:CMFC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CMFC",
+      "skos:prefLabel": "Combined Maritime Forces Central"
+    },
+    {
+      "@id": "ismcattetra:CMFP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CMFP",
+      "skos:prefLabel": "Cooperative Maritime Forces Pacific"
+    },
+    {
+      "@id": "ismcattetra:CPMT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CPMT",
+      "skos:prefLabel": "Civilian Protection Monitoring Team for Sudan"
+    },
+    {
+      "@id": "ismcattetra:CTOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CTOC",
+      "skos:prefLabel": "Countering Transnational Organized Crime"
+    },
+    {
+      "@id": "ismcattetra:CWCS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CWCS",
+      "skos:prefLabel": "Chemical Weapons Convention States"
+    },
+    {
+      "@id": "ismcattetra:ECTF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "ECTF",
+      "skos:prefLabel": "European Counter-Terrorism Forces"
+    },
+    {
+      "@id": "ismcattetra:EFOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "EFOR",
+      "skos:prefLabel": "European Union Stabilization Forces in Bosnia"
+    },
+    {
+      "@id": "ismcattetra:EU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "EU",
+      "skos:prefLabel": "European Union"
+    },
+    {
+      "@id": "ismcattetra:EUDA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "EUDA",
+      "skos:prefLabel": "European Union DARFUR"
+    },
+    {
+      "@id": "ismcattetra:FRME",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "FRME",
+      "skos:prefLabel": "Counter Violent Extremist Organizations Framework Partners"
+    },
+    {
+      "@id": "ismcattetra:FVEY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "FVEY",
+      "skos:prefLabel": "FIVE EYES"
+    },
+    {
+      "@id": "ismcattetra:GCCH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "GCCH",
+      "skos:prefLabel": "Gulf Cooperation Council"
+    },
+    {
+      "@id": "ismcattetra:GCTF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "GCTF",
+      "skos:prefLabel": "Global Counter-Terrorism Forces"
+    },
+    {
+      "@id": "ismcattetra:GFNX",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "GFNX",
+      "skos:prefLabel": "Global Foreign Terrorist Fighter Network Exchange"
+    },
+    {
+      "@id": "ismcattetra:GMIF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "GMIF",
+      "skos:prefLabel": "Global Maritime Interception Forces"
+    },
+    {
+      "@id": "ismcattetra:IESC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "IESC",
+      "skos:prefLabel": "International Events Security Coalition"
+    },
+    {
+      "@id": "ismcattetra:IMSC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "IMSC",
+      "skos:prefLabel": "International Maritime Security Construct"
+    },
+    {
+      "@id": "ismcattetra:IMSP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "IMSP",
+      "skos:prefLabel": "INDOPACOM Multinational Strategic Partners"
+    },
+    {
+      "@id": "ismcattetra:IPMC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "IPMC",
+      "skos:prefLabel": "INDO PACIFIC Maritime Call"
+    },
+    {
+      "@id": "ismcattetra:IRKS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "IRKS",
+      "skos:prefLabel": "Inherent Resolve Kinetic Support"
+    },
+    {
+      "@id": "ismcattetra:ISAF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "ISAF",
+      "skos:prefLabel": "International Security Assistance Force for Afghanistan"
+    },
+    {
+      "@id": "ismcattetra:ISSG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "ISSG",
+      "skos:prefLabel": "International Syria Support Group"
+    },
+    {
+      "@id": "ismcattetra:KFOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "KFOR",
+      "skos:prefLabel": "Stabilization Forces in Kosovo"
+    },
+    {
+      "@id": "ismcattetra:MCFI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "MCFI",
+      "skos:prefLabel": "Multinational Coalition Forces-Iraq"
+    },
+    {
+      "@id": "ismcattetra:MESF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "MESF",
+      "skos:prefLabel": "Middle East Stability Force"
+    },
+    {
+      "@id": "ismcattetra:MGEU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "MGEU",
+      "skos:prefLabel": "Multinational GEOINT Europe"
+    },
+    {
+      "@id": "ismcattetra:MIFH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "MIFH",
+      "skos:prefLabel": "Multinational Interim Force Haiti"
+    },
+    {
+      "@id": "ismcattetra:MLEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "MLEC",
+      "skos:prefLabel": "Multi-Lateral Enduring Contingency"
+    },
+    {
+      "@id": "ismcattetra:MNTF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "MNTF",
+      "skos:prefLabel": "Multinational Task Force"
+    },
+    {
+      "@id": "ismcattetra:MPFL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "MPFL",
+      "skos:prefLabel": "Multinational Peacekeeping Forces"
+    },
+    {
+      "@id": "ismcattetra:NACT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "NACT",
+      "skos:prefLabel": "North African Counter-Terrorism Forces"
+    },
+    {
+      "@id": "ismcattetra:NATO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "NATO",
+      "skos:prefLabel": "North Atlantic Treaty Organization"
+    },
+    {
+      "@id": "ismcattetra:NCFE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "NCFE",
+      "skos:prefLabel": "NATO CFE Treaty on Conventional Armed Forces in Europe"
+    },
+    {
+      "@id": "ismcattetra:NKIC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "NKIC",
+      "skos:prefLabel": "North Korea Intelligence Coalition"
+    },
+    {
+      "@id": "ismcattetra:NRDC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "NRDC",
+      "skos:prefLabel": "NORDIC"
+    },
+    {
+      "@id": "ismcattetra:NSG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "NSG",
+      "skos:prefLabel": "Nuclear Suppliers' Group"
+    },
+    {
+      "@id": "ismcattetra:OSAG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "OSAG",
+      "skos:prefLabel": "Olympic Security Advisory Group"
+    },
+    {
+      "@id": "ismcattetra:OSTY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "OSTY",
+      "skos:prefLabel": "Open Skies Treaty"
+    },
+    {
+      "@id": "ismcattetra:PAWA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "PAWA",
+      "skos:prefLabel": "Partnership for Actions in West Africa"
+    },
+    {
+      "@id": "ismcattetra:PGMF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "PGMF",
+      "skos:prefLabel": "Persian Gulf Multinational Forces"
+    },
+    {
+      "@id": "ismcattetra:PSMX",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "PSMX",
+      "skos:prefLabel": "Pacific Security Monitoring Exchange"
+    },
+    {
+      "@id": "ismcattetra:RISC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "RISC",
+      "skos:prefLabel": "Russia Intelligence Sharing Coalition"
+    },
+    {
+      "@id": "ismcattetra:RSMA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "RSMA",
+      "skos:prefLabel": "Resolute Support Mission Afghanistan"
+    },
+    {
+      "@id": "ismcattetra:SFOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "SFOR",
+      "skos:prefLabel": "Stabilization Force"
+    },
+    {
+      "@id": "ismcattetra:SOFP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "SOFP",
+      "skos:prefLabel": "Special Operations Forces Partners"
+    },
+    {
+      "@id": "ismcattetra:SPAA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "SPAA",
+      "skos:prefLabel": "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")"
+    },
+    {
+      "@id": "ismcattetra:TEYE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "TEYE",
+      "skos:prefLabel": "THREE EYES"
+    },
+    {
+      "@id": "ismcattetra:TFTC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "TFTC",
+      "skos:prefLabel": "Terrorist Financing Targeting Center"
+    },
+    {
+      "@id": "ismcattetra:UNCK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "UNCK",
+      "skos:prefLabel": "United Nations Command, Korea"
+    }
+  ]
+}

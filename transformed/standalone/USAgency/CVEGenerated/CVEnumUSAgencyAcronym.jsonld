@@ -1,0 +1,3293 @@
+{
+  "@context": {
+    "usaa": "urn:us:gov:ic:cvenum:usagency:agencyacronym#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:USAgency:CVEGenerated:CVEnumUSAgencyAcronym",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "usaa:CVEnumUSAgencyAcronym",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) All valid acronyms for use with USA publishing organizations/agencies/Cabinet Offices. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSAgencyAcronym.xml",
+      "skos:hasTopConcept": [
+        {
+          "@id": "usaa:USA.ABMC"
+        },
+        {
+          "@id": "usaa:USA.ACCESS"
+        },
+        {
+          "@id": "usaa:USA.ACFR"
+        },
+        {
+          "@id": "usaa:USA.ACHP"
+        },
+        {
+          "@id": "usaa:USA.ACUS"
+        },
+        {
+          "@id": "usaa:USA.ADF"
+        },
+        {
+          "@id": "usaa:USA.AMICC"
+        },
+        {
+          "@id": "usaa:USA.AMTRAK"
+        },
+        {
+          "@id": "usaa:USA.ARC"
+        },
+        {
+          "@id": "usaa:USA.ARCTIC"
+        },
+        {
+          "@id": "usaa:USA.BBG"
+        },
+        {
+          "@id": "usaa:USA.BMGS"
+        },
+        {
+          "@id": "usaa:USA.CAOC"
+        },
+        {
+          "@id": "usaa:USA.CCJJ"
+        },
+        {
+          "@id": "usaa:USA.CCR"
+        },
+        {
+          "@id": "usaa:USA.CEA"
+        },
+        {
+          "@id": "usaa:USA.CFA"
+        },
+        {
+          "@id": "usaa:USA.CFI"
+        },
+        {
+          "@id": "usaa:USA.CFOC"
+        },
+        {
+          "@id": "usaa:USA.CFTC"
+        },
+        {
+          "@id": "usaa:USA.CHCOC"
+        },
+        {
+          "@id": "usaa:USA.CIA"
+        },
+        {
+          "@id": "usaa:USA.CIOC"
+        },
+        {
+          "@id": "usaa:USA.CIRF"
+        },
+        {
+          "@id": "usaa:USA.CITA"
+        },
+        {
+          "@id": "usaa:USA.CNCS"
+        },
+        {
+          "@id": "usaa:USA.COMP"
+        },
+        {
+          "@id": "usaa:USA.CPSC"
+        },
+        {
+          "@id": "usaa:USA.CSAC"
+        },
+        {
+          "@id": "usaa:USA.CSHIB"
+        },
+        {
+          "@id": "usaa:USA.CSOSA"
+        },
+        {
+          "@id": "usaa:USA.DEA"
+        },
+        {
+          "@id": "usaa:USA.DENALI"
+        },
+        {
+          "@id": "usaa:USA.DFC"
+        },
+        {
+          "@id": "usaa:USA.DHS"
+        },
+        {
+          "@id": "usaa:USA.DIA"
+        },
+        {
+          "@id": "usaa:USA.DNFSB"
+        },
+        {
+          "@id": "usaa:USA.DNI"
+        },
+        {
+          "@id": "usaa:USA.DOC"
+        },
+        {
+          "@id": "usaa:USA.DOD"
+        },
+        {
+          "@id": "usaa:USA.DOE"
+        },
+        {
+          "@id": "usaa:USA.DOI"
+        },
+        {
+          "@id": "usaa:USA.DOJ"
+        },
+        {
+          "@id": "usaa:USA.DOL"
+        },
+        {
+          "@id": "usaa:USA.DOT"
+        },
+        {
+          "@id": "usaa:USA.DRBC"
+        },
+        {
+          "@id": "usaa:USA.EAC"
+        },
+        {
+          "@id": "usaa:USA.ED"
+        },
+        {
+          "@id": "usaa:USA.EEOC"
+        },
+        {
+          "@id": "usaa:USA.EIBUS"
+        },
+        {
+          "@id": "usaa:USA.EOP"
+        },
+        {
+          "@id": "usaa:USA.EPA"
+        },
+        {
+          "@id": "usaa:USA.ESC"
+        },
+        {
+          "@id": "usaa:USA.FAC"
+        },
+        {
+          "@id": "usaa:USA.FASAB"
+        },
+        {
+          "@id": "usaa:USA.FBI"
+        },
+        {
+          "@id": "usaa:USA.FCA"
+        },
+        {
+          "@id": "usaa:USA.FCC"
+        },
+        {
+          "@id": "usaa:USA.FCIC"
+        },
+        {
+          "@id": "usaa:USA.FCSIC"
+        },
+        {
+          "@id": "usaa:USA.FDIC"
+        },
+        {
+          "@id": "usaa:USA.FEB"
+        },
+        {
+          "@id": "usaa:USA.FEC"
+        },
+        {
+          "@id": "usaa:USA.FERC"
+        },
+        {
+          "@id": "usaa:USA.FFB"
+        },
+        {
+          "@id": "usaa:USA.FFIEC"
+        },
+        {
+          "@id": "usaa:USA.FGDC"
+        },
+        {
+          "@id": "usaa:USA.FHRA"
+        },
+        {
+          "@id": "usaa:USA.FICE"
+        },
+        {
+          "@id": "usaa:USA.FICMNEW"
+        },
+        {
+          "@id": "usaa:USA.FICSP"
+        },
+        {
+          "@id": "usaa:USA.FLCTT"
+        },
+        {
+          "@id": "usaa:USA.FLICC"
+        },
+        {
+          "@id": "usaa:USA.FLRA"
+        },
+        {
+          "@id": "usaa:USA.FMC"
+        },
+        {
+          "@id": "usaa:USA.FMCS"
+        },
+        {
+          "@id": "usaa:USA.FMSHRC"
+        },
+        {
+          "@id": "usaa:USA.FRS"
+        },
+        {
+          "@id": "usaa:USA.FRTIB"
+        },
+        {
+          "@id": "usaa:USA.FTC"
+        },
+        {
+          "@id": "usaa:USA.GSA"
+        },
+        {
+          "@id": "usaa:USA.HELSINKI"
+        },
+        {
+          "@id": "usaa:USA.HHS"
+        },
+        {
+          "@id": "usaa:USA.HMM"
+        },
+        {
+          "@id": "usaa:USA.HSTSF"
+        },
+        {
+          "@id": "usaa:USA.HUD"
+        },
+        {
+          "@id": "usaa:USA.IACB"
+        },
+        {
+          "@id": "usaa:USA.IADRWG"
+        },
+        {
+          "@id": "usaa:USA.IAF"
+        },
+        {
+          "@id": "usaa:USA.IBB"
+        },
+        {
+          "@id": "usaa:USA.ICH"
+        },
+        {
+          "@id": "usaa:USA.ICPRB"
+        },
+        {
+          "@id": "usaa:USA.IMCNHCC"
+        },
+        {
+          "@id": "usaa:USA.IMLS"
+        },
+        {
+          "@id": "usaa:USA.ITC"
+        },
+        {
+          "@id": "usaa:USA.JBEA"
+        },
+        {
+          "@id": "usaa:USA.JFSP"
+        },
+        {
+          "@id": "usaa:USA.JMMFF"
+        },
+        {
+          "@id": "usaa:USA.JUSFC"
+        },
+        {
+          "@id": "usaa:USA.JWFFSB"
+        },
+        {
+          "@id": "usaa:USA.LSC"
+        },
+        {
+          "@id": "usaa:USA.MBCC"
+        },
+        {
+          "@id": "usaa:USA.MCC"
+        },
+        {
+          "@id": "usaa:USA.MKUF"
+        },
+        {
+          "@id": "usaa:USA.MMC"
+        },
+        {
+          "@id": "usaa:USA.MRC"
+        },
+        {
+          "@id": "usaa:USA.MSPB"
+        },
+        {
+          "@id": "usaa:USA.NARA"
+        },
+        {
+          "@id": "usaa:USA.NASA"
+        },
+        {
+          "@id": "usaa:USA.NBCFM"
+        },
+        {
+          "@id": "usaa:USA.NCD"
+        },
+        {
+          "@id": "usaa:USA.NCFRR"
+        },
+        {
+          "@id": "usaa:USA.NCPC"
+        },
+        {
+          "@id": "usaa:USA.NCUA"
+        },
+        {
+          "@id": "usaa:USA.NEA"
+        },
+        {
+          "@id": "usaa:USA.NEH"
+        },
+        {
+          "@id": "usaa:USA.NGA"
+        },
+        {
+          "@id": "usaa:USA.NIGC"
+        },
+        {
+          "@id": "usaa:USA.NLRB"
+        },
+        {
+          "@id": "usaa:USA.NMB"
+        },
+        {
+          "@id": "usaa:USA.NPF"
+        },
+        {
+          "@id": "usaa:USA.NPPC"
+        },
+        {
+          "@id": "usaa:USA.NRC"
+        },
+        {
+          "@id": "usaa:USA.NRO"
+        },
+        {
+          "@id": "usaa:USA.NSA"
+        },
+        {
+          "@id": "usaa:USA.NSF"
+        },
+        {
+          "@id": "usaa:USA.NTSB"
+        },
+        {
+          "@id": "usaa:USA.NWTRB"
+        },
+        {
+          "@id": "usaa:USA.OGE"
+        },
+        {
+          "@id": "usaa:USA.OMB"
+        },
+        {
+          "@id": "usaa:USA.ONCIX"
+        },
+        {
+          "@id": "usaa:USA.OPIC"
+        },
+        {
+          "@id": "usaa:USA.OPM"
+        },
+        {
+          "@id": "usaa:USA.OSC"
+        },
+        {
+          "@id": "usaa:USA.OSHRC"
+        },
+        {
+          "@id": "usaa:USA.OVP"
+        },
+        {
+          "@id": "usaa:USA.PBGC"
+        },
+        {
+          "@id": "usaa:USA.PCC"
+        },
+        {
+          "@id": "usaa:USA.PEACE"
+        },
+        {
+          "@id": "usaa:USA.PRC"
+        },
+        {
+          "@id": "usaa:USA.PRESIDIO"
+        },
+        {
+          "@id": "usaa:USA.RISC"
+        },
+        {
+          "@id": "usaa:USA.RRB"
+        },
+        {
+          "@id": "usaa:USA.SBA"
+        },
+        {
+          "@id": "usaa:USA.SEC"
+        },
+        {
+          "@id": "usaa:USA.SJI"
+        },
+        {
+          "@id": "usaa:USA.SMITH"
+        },
+        {
+          "@id": "usaa:USA.SRBC"
+        },
+        {
+          "@id": "usaa:USA.SSA"
+        },
+        {
+          "@id": "usaa:USA.SSAB"
+        },
+        {
+          "@id": "usaa:USA.SSS"
+        },
+        {
+          "@id": "usaa:USA.STATE"
+        },
+        {
+          "@id": "usaa:USA.TAP"
+        },
+        {
+          "@id": "usaa:USA.TDA"
+        },
+        {
+          "@id": "usaa:USA.TREAS"
+        },
+        {
+          "@id": "usaa:USA.TVA"
+        },
+        {
+          "@id": "usaa:USA.USA"
+        },
+        {
+          "@id": "usaa:USA.USAF"
+        },
+        {
+          "@id": "usaa:USA.USAID"
+        },
+        {
+          "@id": "usaa:USA.USAOC"
+        },
+        {
+          "@id": "usaa:USA.USCG"
+        },
+        {
+          "@id": "usaa:USA.USDA"
+        },
+        {
+          "@id": "usaa:USA.USIP"
+        },
+        {
+          "@id": "usaa:USA.USMC"
+        },
+        {
+          "@id": "usaa:USA.USN"
+        },
+        {
+          "@id": "usaa:USA.USPS"
+        },
+        {
+          "@id": "usaa:USA.USSF"
+        },
+        {
+          "@id": "usaa:USA.USTR"
+        },
+        {
+          "@id": "usaa:USA.USUN"
+        },
+        {
+          "@id": "usaa:USA.VA"
+        },
+        {
+          "@id": "usaa:USA.VDNC"
+        },
+        {
+          "@id": "usaa:USA.VEF"
+        },
+        {
+          "@id": "usaa:USA.WHCPS"
+        },
+        {
+          "@id": "usaa:USA.WHMO"
+        },
+        {
+          "@id": "usaa:USA.AOC"
+        },
+        {
+          "@id": "usaa:USA.CBO"
+        },
+        {
+          "@id": "usaa:USA.CRS"
+        },
+        {
+          "@id": "usaa:USA.GAO"
+        },
+        {
+          "@id": "usaa:USA.GPO"
+        },
+        {
+          "@id": "usaa:USA.H-ADM"
+        },
+        {
+          "@id": "usaa:USA.H-AGR"
+        },
+        {
+          "@id": "usaa:USA.H-APP"
+        },
+        {
+          "@id": "usaa:USA.H-ARM"
+        },
+        {
+          "@id": "usaa:USA.H-BUD"
+        },
+        {
+          "@id": "usaa:USA.H-CAO"
+        },
+        {
+          "@id": "usaa:USA.H-CHAP"
+        },
+        {
+          "@id": "usaa:USA.H-CLRK"
+        },
+        {
+          "@id": "usaa:USA.H-EC"
+        },
+        {
+          "@id": "usaa:USA.H-EDW"
+        },
+        {
+          "@id": "usaa:USA.H-E_C"
+        },
+        {
+          "@id": "usaa:USA.H-FIN"
+        },
+        {
+          "@id": "usaa:USA.H-FOR"
+        },
+        {
+          "@id": "usaa:USA.H-HIST"
+        },
+        {
+          "@id": "usaa:USA.H-HLS"
+        },
+        {
+          "@id": "usaa:USA.H-JUD"
+        },
+        {
+          "@id": "usaa:USA.H-LDRS"
+        },
+        {
+          "@id": "usaa:USA.H-LRC"
+        },
+        {
+          "@id": "usaa:USA.H-NAT"
+        },
+        {
+          "@id": "usaa:USA.H-OGR"
+        },
+        {
+          "@id": "usaa:USA.H-OIG"
+        },
+        {
+          "@id": "usaa:USA.H-OLC"
+        },
+        {
+          "@id": "usaa:USA.H-PAR"
+        },
+        {
+          "@id": "usaa:USA.H-RUL"
+        },
+        {
+          "@id": "usaa:USA.H-SAA"
+        },
+        {
+          "@id": "usaa:USA.H-SCI"
+        },
+        {
+          "@id": "usaa:USA.H-SMB"
+        },
+        {
+          "@id": "usaa:USA.H-T_I"
+        },
+        {
+          "@id": "usaa:USA.H-VET"
+        },
+        {
+          "@id": "usaa:USA.H-W_M"
+        },
+        {
+          "@id": "usaa:USA.HPSCI"
+        },
+        {
+          "@id": "usaa:USA.J-JCP"
+        },
+        {
+          "@id": "usaa:USA.J-JCT"
+        },
+        {
+          "@id": "usaa:USA.J-JEC"
+        },
+        {
+          "@id": "usaa:USA.JCLDS"
+        },
+        {
+          "@id": "usaa:USA.LOC"
+        },
+        {
+          "@id": "usaa:USA.MACPAC"
+        },
+        {
+          "@id": "usaa:USA.MedPAC"
+        },
+        {
+          "@id": "usaa:USA.OWLC"
+        },
+        {
+          "@id": "usaa:USA.S-AGE"
+        },
+        {
+          "@id": "usaa:USA.S-AGR"
+        },
+        {
+          "@id": "usaa:USA.S-APP"
+        },
+        {
+          "@id": "usaa:USA.S-ARM"
+        },
+        {
+          "@id": "usaa:USA.S-BNK"
+        },
+        {
+          "@id": "usaa:USA.S-BUD"
+        },
+        {
+          "@id": "usaa:USA.S-CHAP"
+        },
+        {
+          "@id": "usaa:USA.S-COE"
+        },
+        {
+          "@id": "usaa:USA.S-CST"
+        },
+        {
+          "@id": "usaa:USA.S-ENR"
+        },
+        {
+          "@id": "usaa:USA.S-EPW"
+        },
+        {
+          "@id": "usaa:USA.S-FIN"
+        },
+        {
+          "@id": "usaa:USA.S-FOR"
+        },
+        {
+          "@id": "usaa:USA.S-HELP"
+        },
+        {
+          "@id": "usaa:USA.S-HSG"
+        },
+        {
+          "@id": "usaa:USA.S-IND"
+        },
+        {
+          "@id": "usaa:USA.S-JUD"
+        },
+        {
+          "@id": "usaa:USA.S-LDRS"
+        },
+        {
+          "@id": "usaa:USA.S-MAJSEC"
+        },
+        {
+          "@id": "usaa:USA.S-MINSEC"
+        },
+        {
+          "@id": "usaa:USA.S-PAR"
+        },
+        {
+          "@id": "usaa:USA.S-R_A"
+        },
+        {
+          "@id": "usaa:USA.S-SAA"
+        },
+        {
+          "@id": "usaa:USA.S-SEC"
+        },
+        {
+          "@id": "usaa:USA.S-SMB"
+        },
+        {
+          "@id": "usaa:USA.S-VET"
+        },
+        {
+          "@id": "usaa:USA.SCPS"
+        },
+        {
+          "@id": "usaa:USA.SSCI"
+        },
+        {
+          "@id": "usaa:USA.USBG"
+        },
+        {
+          "@id": "usaa:USA.USCO"
+        },
+        {
+          "@id": "usaa:USA.USCP"
+        },
+        {
+          "@id": "usaa:USA.OtherUSG"
+        },
+        {
+          "@id": "usaa:USA.SLT"
+        }
+      ]
+    },
+    {
+      "@id": "usaa:CVEnumUSAgencyAcronymValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "USA.ABMC",
+        "USA.ACCESS",
+        "USA.ACFR",
+        "USA.ACHP",
+        "USA.ACUS",
+        "USA.ADF",
+        "USA.AMICC",
+        "USA.AMTRAK",
+        "USA.ARC",
+        "USA.ARCTIC",
+        "USA.BBG",
+        "USA.BMGS",
+        "USA.CAOC",
+        "USA.CCJJ",
+        "USA.CCR",
+        "USA.CEA",
+        "USA.CFA",
+        "USA.CFI",
+        "USA.CFOC",
+        "USA.CFTC",
+        "USA.CHCOC",
+        "USA.CIA",
+        "USA.CIOC",
+        "USA.CIRF",
+        "USA.CITA",
+        "USA.CNCS",
+        "USA.COMP",
+        "USA.CPSC",
+        "USA.CSAC",
+        "USA.CSHIB",
+        "USA.CSOSA",
+        "USA.DEA",
+        "USA.DENALI",
+        "USA.DFC",
+        "USA.DHS",
+        "USA.DIA",
+        "USA.DNFSB",
+        "USA.DNI",
+        "USA.DOC",
+        "USA.DOD",
+        "USA.DOE",
+        "USA.DOI",
+        "USA.DOJ",
+        "USA.DOL",
+        "USA.DOT",
+        "USA.DRBC",
+        "USA.EAC",
+        "USA.ED",
+        "USA.EEOC",
+        "USA.EIBUS",
+        "USA.EOP",
+        "USA.EPA",
+        "USA.ESC",
+        "USA.FAC",
+        "USA.FASAB",
+        "USA.FBI",
+        "USA.FCA",
+        "USA.FCC",
+        "USA.FCIC",
+        "USA.FCSIC",
+        "USA.FDIC",
+        "USA.FEB",
+        "USA.FEC",
+        "USA.FERC",
+        "USA.FFB",
+        "USA.FFIEC",
+        "USA.FGDC",
+        "USA.FHRA",
+        "USA.FICE",
+        "USA.FICMNEW",
+        "USA.FICSP",
+        "USA.FLCTT",
+        "USA.FLICC",
+        "USA.FLRA",
+        "USA.FMC",
+        "USA.FMCS",
+        "USA.FMSHRC",
+        "USA.FRS",
+        "USA.FRTIB",
+        "USA.FTC",
+        "USA.GSA",
+        "USA.HELSINKI",
+        "USA.HHS",
+        "USA.HMM",
+        "USA.HSTSF",
+        "USA.HUD",
+        "USA.IACB",
+        "USA.IADRWG",
+        "USA.IAF",
+        "USA.IBB",
+        "USA.ICH",
+        "USA.ICPRB",
+        "USA.IMCNHCC",
+        "USA.IMLS",
+        "USA.ITC",
+        "USA.JBEA",
+        "USA.JFSP",
+        "USA.JMMFF",
+        "USA.JUSFC",
+        "USA.JWFFSB",
+        "USA.LSC",
+        "USA.MBCC",
+        "USA.MCC",
+        "USA.MKUF",
+        "USA.MMC",
+        "USA.MRC",
+        "USA.MSPB",
+        "USA.NARA",
+        "USA.NASA",
+        "USA.NBCFM",
+        "USA.NCD",
+        "USA.NCFRR",
+        "USA.NCPC",
+        "USA.NCUA",
+        "USA.NEA",
+        "USA.NEH",
+        "USA.NGA",
+        "USA.NIGC",
+        "USA.NLRB",
+        "USA.NMB",
+        "USA.NPF",
+        "USA.NPPC",
+        "USA.NRC",
+        "USA.NRO",
+        "USA.NSA",
+        "USA.NSF",
+        "USA.NTSB",
+        "USA.NWTRB",
+        "USA.OGE",
+        "USA.OMB",
+        "USA.ONCIX",
+        "USA.OPIC",
+        "USA.OPM",
+        "USA.OSC",
+        "USA.OSHRC",
+        "USA.OVP",
+        "USA.PBGC",
+        "USA.PCC",
+        "USA.PEACE",
+        "USA.PRC",
+        "USA.PRESIDIO",
+        "USA.RISC",
+        "USA.RRB",
+        "USA.SBA",
+        "USA.SEC",
+        "USA.SJI",
+        "USA.SMITH",
+        "USA.SRBC",
+        "USA.SSA",
+        "USA.SSAB",
+        "USA.SSS",
+        "USA.STATE",
+        "USA.TAP",
+        "USA.TDA",
+        "USA.TREAS",
+        "USA.TVA",
+        "USA.USA",
+        "USA.USAF",
+        "USA.USAID",
+        "USA.USAOC",
+        "USA.USCG",
+        "USA.USDA",
+        "USA.USIP",
+        "USA.USMC",
+        "USA.USN",
+        "USA.USPS",
+        "USA.USSF",
+        "USA.USTR",
+        "USA.USUN",
+        "USA.VA",
+        "USA.VDNC",
+        "USA.VEF",
+        "USA.WHCPS",
+        "USA.WHMO",
+        "USA.AOC",
+        "USA.CBO",
+        "USA.CRS",
+        "USA.GAO",
+        "USA.GPO",
+        "USA.H-ADM",
+        "USA.H-AGR",
+        "USA.H-APP",
+        "USA.H-ARM",
+        "USA.H-BUD",
+        "USA.H-CAO",
+        "USA.H-CHAP",
+        "USA.H-CLRK",
+        "USA.H-EC",
+        "USA.H-EDW",
+        "USA.H-E_C",
+        "USA.H-FIN",
+        "USA.H-FOR",
+        "USA.H-HIST",
+        "USA.H-HLS",
+        "USA.H-JUD",
+        "USA.H-LDRS",
+        "USA.H-LRC",
+        "USA.H-NAT",
+        "USA.H-OGR",
+        "USA.H-OIG",
+        "USA.H-OLC",
+        "USA.H-PAR",
+        "USA.H-RUL",
+        "USA.H-SAA",
+        "USA.H-SCI",
+        "USA.H-SMB",
+        "USA.H-T_I",
+        "USA.H-VET",
+        "USA.H-W_M",
+        "USA.HPSCI",
+        "USA.J-JCP",
+        "USA.J-JCT",
+        "USA.J-JEC",
+        "USA.JCLDS",
+        "USA.LOC",
+        "USA.MACPAC",
+        "USA.MedPAC",
+        "USA.OWLC",
+        "USA.S-AGE",
+        "USA.S-AGR",
+        "USA.S-APP",
+        "USA.S-ARM",
+        "USA.S-BNK",
+        "USA.S-BUD",
+        "USA.S-CHAP",
+        "USA.S-COE",
+        "USA.S-CST",
+        "USA.S-ENR",
+        "USA.S-EPW",
+        "USA.S-FIN",
+        "USA.S-FOR",
+        "USA.S-HELP",
+        "USA.S-HSG",
+        "USA.S-IND",
+        "USA.S-JUD",
+        "USA.S-LDRS",
+        "USA.S-MAJSEC",
+        "USA.S-MINSEC",
+        "USA.S-PAR",
+        "USA.S-R_A",
+        "USA.S-SAA",
+        "USA.S-SEC",
+        "USA.S-SMB",
+        "USA.S-VET",
+        "USA.SCPS",
+        "USA.SSCI",
+        "USA.USBG",
+        "USA.USCO",
+        "USA.USCP",
+        "USA.OtherUSG",
+        "USA.SLT"
+      ]
+    },
+    {
+      "@id": "usaa:USA.ABMC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ABMC",
+      "skos:prefLabel": "American Battle Monuments Commission"
+    },
+    {
+      "@id": "usaa:USA.ACCESS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ACCESS",
+      "skos:prefLabel": "Architectural and Transportation Barriers Compliance Board"
+    },
+    {
+      "@id": "usaa:USA.ACFR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ACFR",
+      "skos:prefLabel": "Administrative Committee of the Federal Register"
+    },
+    {
+      "@id": "usaa:USA.ACHP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ACHP",
+      "skos:prefLabel": "Advisory Council on Historic Preservation"
+    },
+    {
+      "@id": "usaa:USA.ACUS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ACUS",
+      "skos:prefLabel": "Administrative Conference of the United States"
+    },
+    {
+      "@id": "usaa:USA.ADF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ADF",
+      "skos:prefLabel": "African Development Foundation"
+    },
+    {
+      "@id": "usaa:USA.AMICC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.AMICC",
+      "skos:prefLabel": "Arthritis and Musculoskeletal Interagency Coordinating Committee"
+    },
+    {
+      "@id": "usaa:USA.AMTRAK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.AMTRAK",
+      "skos:prefLabel": "National Railroad Passenger Corporation"
+    },
+    {
+      "@id": "usaa:USA.ARC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ARC",
+      "skos:prefLabel": "Appalachian Regional Commission"
+    },
+    {
+      "@id": "usaa:USA.ARCTIC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ARCTIC",
+      "skos:prefLabel": "Arctic Research Commission"
+    },
+    {
+      "@id": "usaa:USA.BBG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.BBG",
+      "skos:prefLabel": "Broadcasting Board of Governors"
+    },
+    {
+      "@id": "usaa:USA.BMGS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.BMGS",
+      "skos:prefLabel": "Barry M. Goldwater Scholarship and Excellence in Education Foundation"
+    },
+    {
+      "@id": "usaa:USA.CAOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CAOC",
+      "skos:prefLabel": "Chief Acquisition Officers Council"
+    },
+    {
+      "@id": "usaa:USA.CCJJ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CCJJ",
+      "skos:prefLabel": "Coordinating Council on Juvenile Justice and Delinquency Prevention"
+    },
+    {
+      "@id": "usaa:USA.CCR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CCR",
+      "skos:prefLabel": "Commission on Civil Rights"
+    },
+    {
+      "@id": "usaa:USA.CEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CEA",
+      "skos:prefLabel": "United States Council of Economic Advisers"
+    },
+    {
+      "@id": "usaa:USA.CFA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CFA",
+      "skos:prefLabel": "Commission of Fine Arts"
+    },
+    {
+      "@id": "usaa:USA.CFI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CFI",
+      "skos:prefLabel": "Committee on Foreign Investments in the United States"
+    },
+    {
+      "@id": "usaa:USA.CFOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CFOC",
+      "skos:prefLabel": "Chief Financial Officers Council"
+    },
+    {
+      "@id": "usaa:USA.CFTC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CFTC",
+      "skos:prefLabel": "Commodity Futures Trading Commission"
+    },
+    {
+      "@id": "usaa:USA.CHCOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CHCOC",
+      "skos:prefLabel": "Chief Human Capital Officers Council"
+    },
+    {
+      "@id": "usaa:USA.CIA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CIA",
+      "skos:prefLabel": "Central Intelligence Agency"
+    },
+    {
+      "@id": "usaa:USA.CIOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CIOC",
+      "skos:prefLabel": "Chief Information Officers Council"
+    },
+    {
+      "@id": "usaa:USA.CIRF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CIRF",
+      "skos:prefLabel": "Commission on International Religious Freedom"
+    },
+    {
+      "@id": "usaa:USA.CITA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CITA",
+      "skos:prefLabel": "Committee for the Implementation of Textile Agreements"
+    },
+    {
+      "@id": "usaa:USA.CNCS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CNCS",
+      "skos:prefLabel": "Corporation for National and Community Service"
+    },
+    {
+      "@id": "usaa:USA.COMP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.COMP",
+      "skos:prefLabel": "Office of Compliance"
+    },
+    {
+      "@id": "usaa:USA.CPSC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CPSC",
+      "skos:prefLabel": "Consumer Product Safety Commission"
+    },
+    {
+      "@id": "usaa:USA.CSAC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CSAC",
+      "skos:prefLabel": "Citizens' Stamp Advisory Committee"
+    },
+    {
+      "@id": "usaa:USA.CSHIB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CSHIB",
+      "skos:prefLabel": "Chemical Safety and Hazard Investigation Board"
+    },
+    {
+      "@id": "usaa:USA.CSOSA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CSOSA",
+      "skos:prefLabel": "Court Services and Offender Supervision Agency for the District of Columbia"
+    },
+    {
+      "@id": "usaa:USA.DEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DEA",
+      "skos:prefLabel": "Drug Enforcement Administration"
+    },
+    {
+      "@id": "usaa:USA.DENALI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DENALI",
+      "skos:prefLabel": "Denali Commission"
+    },
+    {
+      "@id": "usaa:USA.DFC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DFC",
+      "skos:prefLabel": "U.S. International Development Finance Corporation"
+    },
+    {
+      "@id": "usaa:USA.DHS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DHS",
+      "skos:prefLabel": "Department of Homeland Security"
+    },
+    {
+      "@id": "usaa:USA.DIA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DIA",
+      "skos:prefLabel": "Defense Intelligence Agency"
+    },
+    {
+      "@id": "usaa:USA.DNFSB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DNFSB",
+      "skos:prefLabel": "Defense Nuclear Facilities Safety Board"
+    },
+    {
+      "@id": "usaa:USA.DNI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DNI",
+      "skos:prefLabel": "Office of the Director of National Intelligence"
+    },
+    {
+      "@id": "usaa:USA.DOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DOC",
+      "skos:prefLabel": "Department of Commerce"
+    },
+    {
+      "@id": "usaa:USA.DOD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DOD",
+      "skos:prefLabel": "Department of Defense"
+    },
+    {
+      "@id": "usaa:USA.DOE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DOE",
+      "skos:prefLabel": "Department of Energy"
+    },
+    {
+      "@id": "usaa:USA.DOI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DOI",
+      "skos:prefLabel": "Department of the Interior"
+    },
+    {
+      "@id": "usaa:USA.DOJ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DOJ",
+      "skos:prefLabel": "Department of Justice"
+    },
+    {
+      "@id": "usaa:USA.DOL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DOL",
+      "skos:prefLabel": "Department of Labor"
+    },
+    {
+      "@id": "usaa:USA.DOT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DOT",
+      "skos:prefLabel": "Department of Transportation"
+    },
+    {
+      "@id": "usaa:USA.DRBC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.DRBC",
+      "skos:prefLabel": "Delaware River Basin Commission"
+    },
+    {
+      "@id": "usaa:USA.EAC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.EAC",
+      "skos:prefLabel": "United States Election Assistance Commission"
+    },
+    {
+      "@id": "usaa:USA.ED",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ED",
+      "skos:prefLabel": "Department of Education"
+    },
+    {
+      "@id": "usaa:USA.EEOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.EEOC",
+      "skos:prefLabel": "Equal Employment Opportunity Commission"
+    },
+    {
+      "@id": "usaa:USA.EIBUS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.EIBUS",
+      "skos:prefLabel": "Export-Import Bank of the United States"
+    },
+    {
+      "@id": "usaa:USA.EOP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.EOP",
+      "skos:prefLabel": "Executive Office of the President"
+    },
+    {
+      "@id": "usaa:USA.EPA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.EPA",
+      "skos:prefLabel": "Environmental Protection Agency"
+    },
+    {
+      "@id": "usaa:USA.ESC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ESC",
+      "skos:prefLabel": "Endangered Species Committee"
+    },
+    {
+      "@id": "usaa:USA.FAC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FAC",
+      "skos:prefLabel": "Federal Advisory Committees"
+    },
+    {
+      "@id": "usaa:USA.FASAB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FASAB",
+      "skos:prefLabel": "Federal Accounting Standards Advisory Board"
+    },
+    {
+      "@id": "usaa:USA.FBI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FBI",
+      "skos:prefLabel": "Federal Bureau of Investigation"
+    },
+    {
+      "@id": "usaa:USA.FCA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FCA",
+      "skos:prefLabel": "Farm Credit Administration"
+    },
+    {
+      "@id": "usaa:USA.FCC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FCC",
+      "skos:prefLabel": "Federal Communications Commission"
+    },
+    {
+      "@id": "usaa:USA.FCIC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FCIC",
+      "skos:prefLabel": "Financial Crisis Inquiry Commission"
+    },
+    {
+      "@id": "usaa:USA.FCSIC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FCSIC",
+      "skos:prefLabel": "Farm Credit System Insurance Corporation"
+    },
+    {
+      "@id": "usaa:USA.FDIC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FDIC",
+      "skos:prefLabel": "Federal Deposit Insurance Corporation"
+    },
+    {
+      "@id": "usaa:USA.FEB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FEB",
+      "skos:prefLabel": "Federal Executive Boards"
+    },
+    {
+      "@id": "usaa:USA.FEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FEC",
+      "skos:prefLabel": "Federal Election Commission"
+    },
+    {
+      "@id": "usaa:USA.FERC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FERC",
+      "skos:prefLabel": "Federal Energy Regulatory Commission"
+    },
+    {
+      "@id": "usaa:USA.FFB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FFB",
+      "skos:prefLabel": "Federal Financing Bank"
+    },
+    {
+      "@id": "usaa:USA.FFIEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FFIEC",
+      "skos:prefLabel": "Federal Financial Institutions Examination Council"
+    },
+    {
+      "@id": "usaa:USA.FGDC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FGDC",
+      "skos:prefLabel": "Federal Geographic Data Committee"
+    },
+    {
+      "@id": "usaa:USA.FHRA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FHRA",
+      "skos:prefLabel": "Federal Housing Finance Agency"
+    },
+    {
+      "@id": "usaa:USA.FICE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FICE",
+      "skos:prefLabel": "Federal Interagency Committee on Education"
+    },
+    {
+      "@id": "usaa:USA.FICMNEW",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FICMNEW",
+      "skos:prefLabel": "Federal Interagency Committee for the Management of Noxious and Exotic Weeds"
+    },
+    {
+      "@id": "usaa:USA.FICSP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FICSP",
+      "skos:prefLabel": "Federal Interagency Council on Statistical Policy"
+    },
+    {
+      "@id": "usaa:USA.FLCTT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FLCTT",
+      "skos:prefLabel": "Federal Laboratory Consortium for Technology Transfer"
+    },
+    {
+      "@id": "usaa:USA.FLICC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FLICC",
+      "skos:prefLabel": "Federal Library and Information Center Committee"
+    },
+    {
+      "@id": "usaa:USA.FLRA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FLRA",
+      "skos:prefLabel": "Federal Labor Relations Authority"
+    },
+    {
+      "@id": "usaa:USA.FMC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FMC",
+      "skos:prefLabel": "Federal Maritime Commission"
+    },
+    {
+      "@id": "usaa:USA.FMCS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FMCS",
+      "skos:prefLabel": "Federal Mediation and Conciliation Service"
+    },
+    {
+      "@id": "usaa:USA.FMSHRC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FMSHRC",
+      "skos:prefLabel": "Federal Mine Safety and Health Review Commission"
+    },
+    {
+      "@id": "usaa:USA.FRS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FRS",
+      "skos:prefLabel": "Federal Reserve System"
+    },
+    {
+      "@id": "usaa:USA.FRTIB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FRTIB",
+      "skos:prefLabel": "Federal Retirement Thrift Investment Board"
+    },
+    {
+      "@id": "usaa:USA.FTC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.FTC",
+      "skos:prefLabel": "Federal Trade Commission"
+    },
+    {
+      "@id": "usaa:USA.GSA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.GSA",
+      "skos:prefLabel": "General Services Administration"
+    },
+    {
+      "@id": "usaa:USA.HELSINKI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.HELSINKI",
+      "skos:prefLabel": "Commission on Security and Cooperation in Europe"
+    },
+    {
+      "@id": "usaa:USA.HHS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.HHS",
+      "skos:prefLabel": "Department of Health and Human Services"
+    },
+    {
+      "@id": "usaa:USA.HMM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.HMM",
+      "skos:prefLabel": "United States Holocaust Memorial Museum"
+    },
+    {
+      "@id": "usaa:USA.HSTSF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.HSTSF",
+      "skos:prefLabel": "Harry S. Truman Scholarship Foundation"
+    },
+    {
+      "@id": "usaa:USA.HUD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.HUD",
+      "skos:prefLabel": "Department of Housing and Urban Development"
+    },
+    {
+      "@id": "usaa:USA.IACB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.IACB",
+      "skos:prefLabel": "Indian Arts and Crafts Board"
+    },
+    {
+      "@id": "usaa:USA.IADRWG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.IADRWG",
+      "skos:prefLabel": "Interagency Alternative Dispute Resolution Working Group"
+    },
+    {
+      "@id": "usaa:USA.IAF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.IAF",
+      "skos:prefLabel": "Inter-American Foundation"
+    },
+    {
+      "@id": "usaa:USA.IBB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.IBB",
+      "skos:prefLabel": "International Broadcasting Bureau"
+    },
+    {
+      "@id": "usaa:USA.ICH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ICH",
+      "skos:prefLabel": "Interagency Council on Homelessness"
+    },
+    {
+      "@id": "usaa:USA.ICPRB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ICPRB",
+      "skos:prefLabel": "Interstate Commission on the Potomac River Basin"
+    },
+    {
+      "@id": "usaa:USA.IMCNHCC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.IMCNHCC",
+      "skos:prefLabel": "Illinois and Michigan Canal National Heritage Corridor Commission"
+    },
+    {
+      "@id": "usaa:USA.IMLS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.IMLS",
+      "skos:prefLabel": "Institute of Museum and Library Services"
+    },
+    {
+      "@id": "usaa:USA.ITC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ITC",
+      "skos:prefLabel": "United States International Trade Commission"
+    },
+    {
+      "@id": "usaa:USA.JBEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.JBEA",
+      "skos:prefLabel": "Joint Board for the Enrollment of Actuaries"
+    },
+    {
+      "@id": "usaa:USA.JFSP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.JFSP",
+      "skos:prefLabel": "Joint Fire Science Program"
+    },
+    {
+      "@id": "usaa:USA.JMMFF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.JMMFF",
+      "skos:prefLabel": "James Madison Memorial Fellowship Foundation"
+    },
+    {
+      "@id": "usaa:USA.JUSFC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.JUSFC",
+      "skos:prefLabel": "Japan-United States Friendship Commission"
+    },
+    {
+      "@id": "usaa:USA.JWFFSB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.JWFFSB",
+      "skos:prefLabel": "J. William Fulbright Foreign Scholarship Board"
+    },
+    {
+      "@id": "usaa:USA.LSC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.LSC",
+      "skos:prefLabel": "Legal Services Corporation"
+    },
+    {
+      "@id": "usaa:USA.MBCC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.MBCC",
+      "skos:prefLabel": "Migratory Bird Conservation Commission"
+    },
+    {
+      "@id": "usaa:USA.MCC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.MCC",
+      "skos:prefLabel": "Millennium Challenge Corporation"
+    },
+    {
+      "@id": "usaa:USA.MKUF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.MKUF",
+      "skos:prefLabel": "Morris K. Udall Foundation: Scholarship and Excellence in National Environmental Policy"
+    },
+    {
+      "@id": "usaa:USA.MMC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.MMC",
+      "skos:prefLabel": "Marine Mammal Commission"
+    },
+    {
+      "@id": "usaa:USA.MRC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.MRC",
+      "skos:prefLabel": "Mississippi River Commission"
+    },
+    {
+      "@id": "usaa:USA.MSPB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.MSPB",
+      "skos:prefLabel": "Merit Systems Protection Board"
+    },
+    {
+      "@id": "usaa:USA.NARA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NARA",
+      "skos:prefLabel": "National Archives and Records Administration"
+    },
+    {
+      "@id": "usaa:USA.NASA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NASA",
+      "skos:prefLabel": "National Aeronautics and Space Administration"
+    },
+    {
+      "@id": "usaa:USA.NBCFM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NBCFM",
+      "skos:prefLabel": "National Bipartisan Commission on the Future of Medicare"
+    },
+    {
+      "@id": "usaa:USA.NCD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NCD",
+      "skos:prefLabel": "National Council on Disability"
+    },
+    {
+      "@id": "usaa:USA.NCFRR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NCFRR",
+      "skos:prefLabel": "National Commission on Fiscal Responsibility and Reform"
+    },
+    {
+      "@id": "usaa:USA.NCPC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NCPC",
+      "skos:prefLabel": "National Capital Planning Commission"
+    },
+    {
+      "@id": "usaa:USA.NCUA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NCUA",
+      "skos:prefLabel": "National Credit Union Administration"
+    },
+    {
+      "@id": "usaa:USA.NEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NEA",
+      "skos:prefLabel": "National Endowment for the Arts"
+    },
+    {
+      "@id": "usaa:USA.NEH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NEH",
+      "skos:prefLabel": "National Endowment for the Humanities"
+    },
+    {
+      "@id": "usaa:USA.NGA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NGA",
+      "skos:prefLabel": "National Geospatial-Intelligence Agency"
+    },
+    {
+      "@id": "usaa:USA.NIGC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NIGC",
+      "skos:prefLabel": "National Indian Gaming Commission"
+    },
+    {
+      "@id": "usaa:USA.NLRB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NLRB",
+      "skos:prefLabel": "National Labor Relations Board"
+    },
+    {
+      "@id": "usaa:USA.NMB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NMB",
+      "skos:prefLabel": "National Mediation Board"
+    },
+    {
+      "@id": "usaa:USA.NPF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NPF",
+      "skos:prefLabel": "National Park Foundation"
+    },
+    {
+      "@id": "usaa:USA.NPPC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NPPC",
+      "skos:prefLabel": "Northwest Power Planning Council"
+    },
+    {
+      "@id": "usaa:USA.NRC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NRC",
+      "skos:prefLabel": "Nuclear Regulatory Commission"
+    },
+    {
+      "@id": "usaa:USA.NRO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NRO",
+      "skos:prefLabel": "National Reconnaissance Office"
+    },
+    {
+      "@id": "usaa:USA.NSA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NSA",
+      "skos:prefLabel": "National Security Agency"
+    },
+    {
+      "@id": "usaa:USA.NSF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NSF",
+      "skos:prefLabel": "National Science Foundation"
+    },
+    {
+      "@id": "usaa:USA.NTSB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NTSB",
+      "skos:prefLabel": "National Transportation Safety Board"
+    },
+    {
+      "@id": "usaa:USA.NWTRB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.NWTRB",
+      "skos:prefLabel": "Nuclear Waste Technical Review Board"
+    },
+    {
+      "@id": "usaa:USA.OGE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.OGE",
+      "skos:prefLabel": "Office of Government Ethics"
+    },
+    {
+      "@id": "usaa:USA.OMB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.OMB",
+      "skos:prefLabel": "Office of Management and Budget"
+    },
+    {
+      "@id": "usaa:USA.ONCIX",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.ONCIX",
+      "skos:prefLabel": "Office of the National Counterintelligence Executive"
+    },
+    {
+      "@id": "usaa:USA.OPIC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.OPIC",
+      "skos:prefLabel": "Overseas Private Investment Corporation"
+    },
+    {
+      "@id": "usaa:USA.OPM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.OPM",
+      "skos:prefLabel": "Office of Personnel Management"
+    },
+    {
+      "@id": "usaa:USA.OSC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.OSC",
+      "skos:prefLabel": "Office of Special Counsel"
+    },
+    {
+      "@id": "usaa:USA.OSHRC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.OSHRC",
+      "skos:prefLabel": "Occupational Safety and Health Review Commission"
+    },
+    {
+      "@id": "usaa:USA.OVP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.OVP",
+      "skos:prefLabel": "Office of the Vice President"
+    },
+    {
+      "@id": "usaa:USA.PBGC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.PBGC",
+      "skos:prefLabel": "Pension Benefit Guaranty Corporation"
+    },
+    {
+      "@id": "usaa:USA.PCC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.PCC",
+      "skos:prefLabel": "Panama Canal Commission"
+    },
+    {
+      "@id": "usaa:USA.PEACE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.PEACE",
+      "skos:prefLabel": "Peace Corps"
+    },
+    {
+      "@id": "usaa:USA.PRC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.PRC",
+      "skos:prefLabel": "Postal Regulatory Commission"
+    },
+    {
+      "@id": "usaa:USA.PRESIDIO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.PRESIDIO",
+      "skos:prefLabel": "Presidio Trust"
+    },
+    {
+      "@id": "usaa:USA.RISC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.RISC",
+      "skos:prefLabel": "Regulatory Information Service Center"
+    },
+    {
+      "@id": "usaa:USA.RRB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.RRB",
+      "skos:prefLabel": "Railroad Retirement Board"
+    },
+    {
+      "@id": "usaa:USA.SBA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SBA",
+      "skos:prefLabel": "Small Business Administration"
+    },
+    {
+      "@id": "usaa:USA.SEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SEC",
+      "skos:prefLabel": "Securities and Exchange Commission"
+    },
+    {
+      "@id": "usaa:USA.SJI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SJI",
+      "skos:prefLabel": "State Justice Institute"
+    },
+    {
+      "@id": "usaa:USA.SMITH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SMITH",
+      "skos:prefLabel": "Smithsonian Institution"
+    },
+    {
+      "@id": "usaa:USA.SRBC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SRBC",
+      "skos:prefLabel": "Susquehanna River Basin Commission"
+    },
+    {
+      "@id": "usaa:USA.SSA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SSA",
+      "skos:prefLabel": "Social Security Administration"
+    },
+    {
+      "@id": "usaa:USA.SSAB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SSAB",
+      "skos:prefLabel": "Social Security Advisory Board"
+    },
+    {
+      "@id": "usaa:USA.SSS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SSS",
+      "skos:prefLabel": "Selective Service System"
+    },
+    {
+      "@id": "usaa:USA.STATE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.STATE",
+      "skos:prefLabel": "Department of State"
+    },
+    {
+      "@id": "usaa:USA.TAP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.TAP",
+      "skos:prefLabel": "Taxpayer Advocacy Panel"
+    },
+    {
+      "@id": "usaa:USA.TDA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.TDA",
+      "skos:prefLabel": "U.S. Trade and Development Agency"
+    },
+    {
+      "@id": "usaa:USA.TREAS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.TREAS",
+      "skos:prefLabel": "Department of the Treasury"
+    },
+    {
+      "@id": "usaa:USA.TVA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.TVA",
+      "skos:prefLabel": "Tennessee Valley Authority"
+    },
+    {
+      "@id": "usaa:USA.USA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USA",
+      "skos:prefLabel": "US Army"
+    },
+    {
+      "@id": "usaa:USA.USAF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USAF",
+      "skos:prefLabel": "US Air Force"
+    },
+    {
+      "@id": "usaa:USA.USAID",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USAID",
+      "skos:prefLabel": "United States Agency for International Development"
+    },
+    {
+      "@id": "usaa:USA.USAOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USAOC",
+      "skos:prefLabel": "U.S. AbilityOne Commission"
+    },
+    {
+      "@id": "usaa:USA.USCG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USCG",
+      "skos:prefLabel": "US Coast Guard"
+    },
+    {
+      "@id": "usaa:USA.USDA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USDA",
+      "skos:prefLabel": "Department of Agriculture"
+    },
+    {
+      "@id": "usaa:USA.USIP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USIP",
+      "skos:prefLabel": "United States Institute of Peace"
+    },
+    {
+      "@id": "usaa:USA.USMC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USMC",
+      "skos:prefLabel": "US Marine Corps"
+    },
+    {
+      "@id": "usaa:USA.USN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USN",
+      "skos:prefLabel": "US Navy"
+    },
+    {
+      "@id": "usaa:USA.USPS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USPS",
+      "skos:prefLabel": "United States Postal Service"
+    },
+    {
+      "@id": "usaa:USA.USSF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USSF",
+      "skos:prefLabel": "United States Space Force"
+    },
+    {
+      "@id": "usaa:USA.USTR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USTR",
+      "skos:prefLabel": "United States Office of the Trade Representative"
+    },
+    {
+      "@id": "usaa:USA.USUN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USUN",
+      "skos:prefLabel": "United States Mission to the United Nations"
+    },
+    {
+      "@id": "usaa:USA.VA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.VA",
+      "skos:prefLabel": "Department of Veterans Affairs"
+    },
+    {
+      "@id": "usaa:USA.VDNC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.VDNC",
+      "skos:prefLabel": "Veterans Day National Committee"
+    },
+    {
+      "@id": "usaa:USA.VEF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.VEF",
+      "skos:prefLabel": "Vietnam Educational Foundation"
+    },
+    {
+      "@id": "usaa:USA.WHCPS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.WHCPS",
+      "skos:prefLabel": "White House Commission on Presidential Scholars: Presidential Scholars Program"
+    },
+    {
+      "@id": "usaa:USA.WHMO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.WHMO",
+      "skos:prefLabel": "White House Military Office"
+    },
+    {
+      "@id": "usaa:USA.AOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.AOC",
+      "skos:prefLabel": "Architect of the Capitol"
+    },
+    {
+      "@id": "usaa:USA.CBO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CBO",
+      "skos:prefLabel": "Congressional Budget Office"
+    },
+    {
+      "@id": "usaa:USA.CRS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.CRS",
+      "skos:prefLabel": "Congressional Research Service"
+    },
+    {
+      "@id": "usaa:USA.GAO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.GAO",
+      "skos:prefLabel": "Government Accountability Office"
+    },
+    {
+      "@id": "usaa:USA.GPO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.GPO",
+      "skos:prefLabel": "Government Printing Office"
+    },
+    {
+      "@id": "usaa:USA.H-ADM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-ADM",
+      "skos:prefLabel": "Committee on House Administration"
+    },
+    {
+      "@id": "usaa:USA.H-AGR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-AGR",
+      "skos:prefLabel": "House Committee on Agriculture"
+    },
+    {
+      "@id": "usaa:USA.H-APP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-APP",
+      "skos:prefLabel": "House Committee on Appropriations"
+    },
+    {
+      "@id": "usaa:USA.H-ARM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-ARM",
+      "skos:prefLabel": "House Armed Services Committee"
+    },
+    {
+      "@id": "usaa:USA.H-BUD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-BUD",
+      "skos:prefLabel": "House Committee on the Budget"
+    },
+    {
+      "@id": "usaa:USA.H-CAO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-CAO",
+      "skos:prefLabel": "House Office of the Chief Administrative Officer"
+    },
+    {
+      "@id": "usaa:USA.H-CHAP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-CHAP",
+      "skos:prefLabel": "House Office of the Chaplain"
+    },
+    {
+      "@id": "usaa:USA.H-CLRK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-CLRK",
+      "skos:prefLabel": "House Office of the Clerk"
+    },
+    {
+      "@id": "usaa:USA.H-EC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-EC",
+      "skos:prefLabel": "House Committee on Ethics"
+    },
+    {
+      "@id": "usaa:USA.H-EDW",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-EDW",
+      "skos:prefLabel": "House Education and the Workforce Committee"
+    },
+    {
+      "@id": "usaa:USA.H-E_C",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-E_C",
+      "skos:prefLabel": "House Energy and Commerce Committee"
+    },
+    {
+      "@id": "usaa:USA.H-FIN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-FIN",
+      "skos:prefLabel": "House Committee on Financial Services"
+    },
+    {
+      "@id": "usaa:USA.H-FOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-FOR",
+      "skos:prefLabel": "House Committee on Foreign Affairs"
+    },
+    {
+      "@id": "usaa:USA.H-HIST",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-HIST",
+      "skos:prefLabel": "House Office of the Historian"
+    },
+    {
+      "@id": "usaa:USA.H-HLS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-HLS",
+      "skos:prefLabel": "House Committee on Homeland Security"
+    },
+    {
+      "@id": "usaa:USA.H-JUD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-JUD",
+      "skos:prefLabel": "House Judiciary Committee"
+    },
+    {
+      "@id": "usaa:USA.H-LDRS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-LDRS",
+      "skos:prefLabel": "House Leadership"
+    },
+    {
+      "@id": "usaa:USA.H-LRC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-LRC",
+      "skos:prefLabel": "House Office of the Law Revision Counsel"
+    },
+    {
+      "@id": "usaa:USA.H-NAT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-NAT",
+      "skos:prefLabel": "House Committee on Natural Resources"
+    },
+    {
+      "@id": "usaa:USA.H-OGR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-OGR",
+      "skos:prefLabel": "House Committee on Oversight and Government Reform"
+    },
+    {
+      "@id": "usaa:USA.H-OIG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-OIG",
+      "skos:prefLabel": "House Office of the Inspector General"
+    },
+    {
+      "@id": "usaa:USA.H-OLC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-OLC",
+      "skos:prefLabel": "House Office of the Legislative Counsel"
+    },
+    {
+      "@id": "usaa:USA.H-PAR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-PAR",
+      "skos:prefLabel": "House Office of the Parliamentarian"
+    },
+    {
+      "@id": "usaa:USA.H-RUL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-RUL",
+      "skos:prefLabel": "House Committee on Rules"
+    },
+    {
+      "@id": "usaa:USA.H-SAA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-SAA",
+      "skos:prefLabel": "House Office of the Sergeant at Arms"
+    },
+    {
+      "@id": "usaa:USA.H-SCI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-SCI",
+      "skos:prefLabel": "House Committee on Science, Space, and Technology"
+    },
+    {
+      "@id": "usaa:USA.H-SMB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-SMB",
+      "skos:prefLabel": "House Committee on Small Business"
+    },
+    {
+      "@id": "usaa:USA.H-T_I",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-T_I",
+      "skos:prefLabel": "House Transportation and Infrastructure Committee"
+    },
+    {
+      "@id": "usaa:USA.H-VET",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-VET",
+      "skos:prefLabel": "House Committee on Veterans’ Affairs"
+    },
+    {
+      "@id": "usaa:USA.H-W_M",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.H-W_M",
+      "skos:prefLabel": "House Committee on Ways and Means"
+    },
+    {
+      "@id": "usaa:USA.HPSCI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.HPSCI",
+      "skos:prefLabel": "House Permanent Select Committee on Intelligence"
+    },
+    {
+      "@id": "usaa:USA.J-JCP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.J-JCP",
+      "skos:prefLabel": "Joint Committee on Printing"
+    },
+    {
+      "@id": "usaa:USA.J-JCT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.J-JCT",
+      "skos:prefLabel": "Joint Committee on Taxation"
+    },
+    {
+      "@id": "usaa:USA.J-JEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.J-JEC",
+      "skos:prefLabel": "Joint Economic Committee"
+    },
+    {
+      "@id": "usaa:USA.JCLDS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.JCLDS",
+      "skos:prefLabel": "Joint Committee on the Library"
+    },
+    {
+      "@id": "usaa:USA.LOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.LOC",
+      "skos:prefLabel": "Library of Congress"
+    },
+    {
+      "@id": "usaa:USA.MACPAC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.MACPAC",
+      "skos:prefLabel": "Medicaid and CHIP Payment and Access Commission"
+    },
+    {
+      "@id": "usaa:USA.MedPAC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.MedPAC",
+      "skos:prefLabel": "Medicare Payment Advisory Commission"
+    },
+    {
+      "@id": "usaa:USA.OWLC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.OWLC",
+      "skos:prefLabel": "Open World Leadership Center"
+    },
+    {
+      "@id": "usaa:USA.S-AGE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-AGE",
+      "skos:prefLabel": "Senate Special Committee on Aging"
+    },
+    {
+      "@id": "usaa:USA.S-AGR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-AGR",
+      "skos:prefLabel": "Senate Committee on Agriculture, Nutrition, and Forestry"
+    },
+    {
+      "@id": "usaa:USA.S-APP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-APP",
+      "skos:prefLabel": "Senate Committee on Appropriations"
+    },
+    {
+      "@id": "usaa:USA.S-ARM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-ARM",
+      "skos:prefLabel": "Senate Committee on Armed Services"
+    },
+    {
+      "@id": "usaa:USA.S-BNK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-BNK",
+      "skos:prefLabel": "Senate Committee on Banking, Housing, and Urban Affairs"
+    },
+    {
+      "@id": "usaa:USA.S-BUD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-BUD",
+      "skos:prefLabel": "Senate Budget Committee"
+    },
+    {
+      "@id": "usaa:USA.S-CHAP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-CHAP",
+      "skos:prefLabel": "Senate Office of the Chaplain"
+    },
+    {
+      "@id": "usaa:USA.S-COE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-COE",
+      "skos:prefLabel": "Senate Select Committee on Ethics"
+    },
+    {
+      "@id": "usaa:USA.S-CST",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-CST",
+      "skos:prefLabel": "Senate Committee on Commerce, Science, and Transportation"
+    },
+    {
+      "@id": "usaa:USA.S-ENR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-ENR",
+      "skos:prefLabel": "Senate Committee on Energy and Natural Resources"
+    },
+    {
+      "@id": "usaa:USA.S-EPW",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-EPW",
+      "skos:prefLabel": "Senate Committee on Environment and Public Works"
+    },
+    {
+      "@id": "usaa:USA.S-FIN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-FIN",
+      "skos:prefLabel": "Senate Committee on Finance"
+    },
+    {
+      "@id": "usaa:USA.S-FOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-FOR",
+      "skos:prefLabel": "Senate Committee on Foreign Relations"
+    },
+    {
+      "@id": "usaa:USA.S-HELP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-HELP",
+      "skos:prefLabel": "Senate Committee on Health, Education, Labor, and Pensions"
+    },
+    {
+      "@id": "usaa:USA.S-HSG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-HSG",
+      "skos:prefLabel": "Senate Committee on Homeland Security and Governmental Affairs"
+    },
+    {
+      "@id": "usaa:USA.S-IND",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-IND",
+      "skos:prefLabel": "Senate Committee on Indian Affairs"
+    },
+    {
+      "@id": "usaa:USA.S-JUD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-JUD",
+      "skos:prefLabel": "Senate Committee on the Judiciary"
+    },
+    {
+      "@id": "usaa:USA.S-LDRS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-LDRS",
+      "skos:prefLabel": "Senate Leadership"
+    },
+    {
+      "@id": "usaa:USA.S-MAJSEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-MAJSEC",
+      "skos:prefLabel": "Senate Office of the Secretary for the Majority"
+    },
+    {
+      "@id": "usaa:USA.S-MINSEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-MINSEC",
+      "skos:prefLabel": "Senate Office of the Secretary for the Minority"
+    },
+    {
+      "@id": "usaa:USA.S-PAR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-PAR",
+      "skos:prefLabel": "Senate Office of the Parliamentarian"
+    },
+    {
+      "@id": "usaa:USA.S-R_A",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-R_A",
+      "skos:prefLabel": "Senate Committee on Rules and Administration"
+    },
+    {
+      "@id": "usaa:USA.S-SAA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-SAA",
+      "skos:prefLabel": "Senate Office of the Sergeant at Arms"
+    },
+    {
+      "@id": "usaa:USA.S-SEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-SEC",
+      "skos:prefLabel": "Office of the Secretary of the Senate"
+    },
+    {
+      "@id": "usaa:USA.S-SMB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-SMB",
+      "skos:prefLabel": "Senate Committee on Small Business and Entrepreneurship"
+    },
+    {
+      "@id": "usaa:USA.S-VET",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.S-VET",
+      "skos:prefLabel": "Senate Committee on Veterans’ Affairs"
+    },
+    {
+      "@id": "usaa:USA.SCPS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SCPS",
+      "skos:prefLabel": "Stennis Center for Public Service"
+    },
+    {
+      "@id": "usaa:USA.SSCI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SSCI",
+      "skos:prefLabel": "Senate Select Committee on Intelligence"
+    },
+    {
+      "@id": "usaa:USA.USBG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USBG",
+      "skos:prefLabel": "U.S. Botanic Garden"
+    },
+    {
+      "@id": "usaa:USA.USCO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USCO",
+      "skos:prefLabel": "Copyright Office"
+    },
+    {
+      "@id": "usaa:USA.USCP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.USCP",
+      "skos:prefLabel": "U.S. Capitol Police"
+    },
+    {
+      "@id": "usaa:USA.OtherUSG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.OtherUSG",
+      "skos:prefLabel": "Other United State Federal Government"
+    },
+    {
+      "@id": "usaa:USA.SLT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "skos:notation": "USA.SLT",
+      "skos:prefLabel": "State, Local, Tribal Government"
+    }
+  ]
+}

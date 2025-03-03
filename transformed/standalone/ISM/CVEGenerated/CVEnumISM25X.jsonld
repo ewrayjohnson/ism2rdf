@@ -1,0 +1,355 @@
+{
+  "@context": {
+    "ism25x": "urn:us:gov:ic:cvenum:ism:25x#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISM25X",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ism25x:CVEnumISM25X",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ism25x:CVEnumISM25X definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ism25x:AEA"
+        },
+        {
+          "@id": "ism25x:NATO"
+        },
+        {
+          "@id": "ism25x:NATO-AEA"
+        },
+        {
+          "@id": "ism25x:25X1"
+        },
+        {
+          "@id": "ism25x:25X1-EO-12951"
+        },
+        {
+          "@id": "ism25x:25X2"
+        },
+        {
+          "@id": "ism25x:25X3"
+        },
+        {
+          "@id": "ism25x:25X4"
+        },
+        {
+          "@id": "ism25x:25X5"
+        },
+        {
+          "@id": "ism25x:25X6"
+        },
+        {
+          "@id": "ism25x:25X7"
+        },
+        {
+          "@id": "ism25x:25X8"
+        },
+        {
+          "@id": "ism25x:25X9"
+        },
+        {
+          "@id": "ism25x:50X1"
+        },
+        {
+          "@id": "ism25x:50X1-HUM"
+        },
+        {
+          "@id": "ism25x:50X2"
+        },
+        {
+          "@id": "ism25x:50X2-WMD"
+        },
+        {
+          "@id": "ism25x:50X3"
+        },
+        {
+          "@id": "ism25x:50X4"
+        },
+        {
+          "@id": "ism25x:50X5"
+        },
+        {
+          "@id": "ism25x:50X6"
+        },
+        {
+          "@id": "ism25x:50X7"
+        },
+        {
+          "@id": "ism25x:50X8"
+        },
+        {
+          "@id": "ism25x:50X9"
+        },
+        {
+          "@id": "ism25x:75X"
+        }
+      ]
+    },
+    {
+      "@id": "ism25x:CVEnumISM25XValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "AEA",
+        "NATO",
+        "NATO-AEA",
+        "25X1",
+        "25X1-EO-12951",
+        "25X2",
+        "25X3",
+        "25X4",
+        "25X5",
+        "25X6",
+        "25X7",
+        "25X8",
+        "25X9",
+        "50X1",
+        "50X1-HUM",
+        "50X2",
+        "50X2-WMD",
+        "50X3",
+        "50X4",
+        "50X5",
+        "50X6",
+        "50X7",
+        "50X8",
+        "50X9",
+        "75X"
+      ]
+    },
+    {
+      "@id": "ism25x:AEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "AEA",
+      "skos:prefLabel": "When using a source document that contains portions of Restricted Data (RD) or Formerly Restricted Data (FRD) where the RD/FRD source document(s) do not have declassification instructions, the derivatively classified document shall not contain a declassification date or event on the Declassify On line. The following shall be annotated on the Declassify On line: \"Not Applicable or (N/A) to RD/FRD portions\" and \"See source list for NSI portions\" separated by a period. The source list must include the declassification instruction for each of the source documents classified under E.O. 13526 and shall not appear in the classification authority block"
+    },
+    {
+      "@id": "ism25x:NATO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "NATO",
+      "skos:prefLabel": "Since NATO information is not to be declassified or downgraded without the prior consent of NATO, the “Declassify on” line of documents that commingle information classified by NATO and U.S. classified NSI, will read “N/A to NATO portions. See source list for NSI portions.” The NSI source list will appear beneath the classification authority block in a manner that clearly identifies it as separate and distinct."
+    },
+    {
+      "@id": "ism25x:NATO-AEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "NATO-AEA",
+      "skos:prefLabel": "Handles special case of BOTH NATO and AEA as a single exemption."
+    },
+    {
+      "@id": "ism25x:25X1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X1",
+      "skos:prefLabel": "Reveal the identity of a confidential human source, a human intelligence source, a relationship with an intelligence or security service of a foreign government or international organization, or a non-human intelligence source; or impair the effectiveness of an intelligence method currently in use, available for use, or under development."
+    },
+    {
+      "@id": "ism25x:25X1-EO-12951",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X1-EO-12951",
+      "skos:prefLabel": "\"25X1, EO 12951\" (prescribed by the DNI for use on information described in E.O. 12951, Release of Imagery Acquired by Space-Based National Intelligence Reconnaissance Systems)"
+    },
+    {
+      "@id": "ism25x:25X2",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X2",
+      "skos:prefLabel": "Reveal information that would assist in the development, production, or use of weapons of mass destruction."
+    },
+    {
+      "@id": "ism25x:25X3",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X3",
+      "skos:prefLabel": "Reveal information that would impair U.S. cryptologic systems or activities."
+    },
+    {
+      "@id": "ism25x:25X4",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X4",
+      "skos:prefLabel": "Reveal information that would impair the application of state-of-the-art technology within a U.S. weapon system."
+    },
+    {
+      "@id": "ism25x:25X5",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X5",
+      "skos:prefLabel": "Reveal formally named or numbered U.S. military war plans that remain in effect, or reveal operational or tactical elements of prior plans that are contained in such active plans;"
+    },
+    {
+      "@id": "ism25x:25X6",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X6",
+      "skos:prefLabel": "Reveal information, including foreign government information, that would cause serious harm to relations between the United States and a foreign government, or to ongoing diplomatic activities of the United States"
+    },
+    {
+      "@id": "ism25x:25X7",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X7",
+      "skos:prefLabel": "Reveal information that would impair the current ability of United States Government officials to protect the President, Vice President, and other protectees for whom protection services, in the interest of the national security, are authorized."
+    },
+    {
+      "@id": "ism25x:25X8",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X8",
+      "skos:prefLabel": "Reveal information that would seriously impair current national security emergency preparedness plans or reveal current vulnerabilities of systems, installations, or infrastructures relating to the national security."
+    },
+    {
+      "@id": "ism25x:25X9",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "25X9",
+      "skos:prefLabel": "Violate a statute, treaty, or international agreement that does not permit the automatic or unilateral declassification of information at 25 years."
+    },
+    {
+      "@id": "ism25x:50X1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X1",
+      "skos:prefLabel": "The ISCAP has authorized use of this code in the FBI’s classification guidance (which results in a 75-year classification period) for any agency sourcing/reusing the information."
+    },
+    {
+      "@id": "ism25x:50X1-HUM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X1-HUM",
+      "skos:prefLabel": "When the information clearly and demonstrably could be expected to reveal the identity of a confidential human source or a human intelligence source."
+    },
+    {
+      "@id": "ism25x:50X2",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X2",
+      "skos:prefLabel": "Reveal information that would assist in the development, production, or use of weapons of mass destruction."
+    },
+    {
+      "@id": "ism25x:50X2-WMD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X2-WMD",
+      "skos:prefLabel": "When the information clearly and demonstrably could reveal key design concepts of weapons of mass destruction."
+    },
+    {
+      "@id": "ism25x:50X3",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X3",
+      "skos:prefLabel": "Reveal information that would impair U.S. cryptologic systems or activities."
+    },
+    {
+      "@id": "ism25x:50X4",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X4",
+      "skos:prefLabel": "Reveal information that would impair the application of state-of-the-art technology within a U.S. weapon system."
+    },
+    {
+      "@id": "ism25x:50X5",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X5",
+      "skos:prefLabel": "Reveal formally named or numbered U.S. military war plans that remain in effect, or reveal operational or tactical elements of prior plans that are contained in such active plans;"
+    },
+    {
+      "@id": "ism25x:50X6",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X6",
+      "skos:prefLabel": "Reveal information, including foreign government information, that would cause serious harm to relations between the United States and a foreign government, or to ongoing diplomatic activities of the United States"
+    },
+    {
+      "@id": "ism25x:50X7",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X7",
+      "skos:prefLabel": "Reveal information that would impair the current ability of United States Government officials to protect the President, Vice President, and other protectees for whom protection services, in the interest of the national security, are authorized."
+    },
+    {
+      "@id": "ism25x:50X8",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X8",
+      "skos:prefLabel": "Reveal information that would seriously impair current national security emergency preparedness plans or reveal current vulnerabilities of systems, installations, or infrastructures relating to the national security."
+    },
+    {
+      "@id": "ism25x:50X9",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "50X9",
+      "skos:prefLabel": "Violate a statute, treaty, or international agreement that does not permit the automatic or unilateral declassification of information at 25 years."
+    },
+    {
+      "@id": "ism25x:75X",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "75X",
+      "skos:prefLabel": "Specific information that has been formally approved by the ISCAP as information that does not permit the automatic or unilateral declassification of information at 75 years."
+    }
+  ]
+}

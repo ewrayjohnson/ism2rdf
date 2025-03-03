@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "arh": "urn:us:gov:ic:arh#",
+    "xhtml": "http://www.w3.org/1999/xhtml-StopBrowserRendering",
+    "ism": "urn:us:gov:ic:ism#",
+    "tax": "urn:us:gov:ic:taxonomy:common#",
+    "ismcatrelto": "urn:us:gov:ic:cvenum:ismcat:relto#",
+    "ismcatre": "urn:us:gov:ic:cvenum:ismcat:responsibleentity#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "urn:us:gov:ic:Taxonomy:Taxonomy",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "http://www.w3.org/2002/07/owl#imports": {
+    "@id": "file://../ISM/IC-ISM.jsonld"
+  }
+}

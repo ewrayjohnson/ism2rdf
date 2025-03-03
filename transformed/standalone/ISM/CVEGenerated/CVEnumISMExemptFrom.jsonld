@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "ismexempt": "urn:us:gov:ic:cvenum:ism:exemptfrom#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMExemptFrom",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismexempt:CVEnumISMExemptFrom",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismexempt:CVEnumISMExemptFrom definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismexempt:IC_710_MANDATORY_FDR"
+        },
+        {
+          "@id": "ismexempt:DOD_DISTRO_STATEMENT"
+        }
+      ]
+    },
+    {
+      "@id": "ismexempt:CVEnumISMExemptFromValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "IC_710_MANDATORY_FDR",
+        "DOD_DISTRO_STATEMENT"
+      ]
+    },
+    {
+      "@id": "ismexempt:IC_710_MANDATORY_FDR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismexempt:CVEnumISMExemptFrom"
+      },
+      "skos:notation": "IC_710_MANDATORY_FDR",
+      "skos:prefLabel": "Document claims exemption from ICD-710 rules mandating the use of Foreign Disclosure and Release markings that have been encoded in ISM. Currently, the requirement for FD&R is only mandatory for Disseminated Analytic Product; however, it is strongly encouraged otherwise."
+    },
+    {
+      "@id": "ismexempt:DOD_DISTRO_STATEMENT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismexempt:CVEnumISMExemptFrom"
+      },
+      "skos:notation": "DOD_DISTRO_STATEMENT",
+      "skos:prefLabel": "Document claims exemption from the rules in DoD5230.24 requiring DoD Distribution Statements that have been encoded into ISM."
+    }
+  ]
+}

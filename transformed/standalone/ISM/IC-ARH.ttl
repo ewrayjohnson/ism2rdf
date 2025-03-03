@@ -1,0 +1,17 @@
+@prefix arh: <urn:us:gov:ic:arh#>.
+@prefix ism: <urn:us:gov:ic:ism#>.
+@prefix ntk: <urn:us:gov:ic:ntk#>.
+@prefix xlink: <http://www.w3.org/1999/xlink>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml-StopBrowserRendering>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xs: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:ISM:IC-ARH> a owl:Ontology;
+    owl:imports <file://./IC-ISM.ttl>, <file://./IC-NTK.ttl>.
+arh:DESVersion a rdf:Property, owl:DatatypeProperty;
+    rdfs:comment "The version number of the DES";
+    rdfs:range xs:string.

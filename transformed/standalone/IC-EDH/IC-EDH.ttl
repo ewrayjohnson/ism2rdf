@@ -1,0 +1,19 @@
+@prefix ntk: <urn:us:gov:ic:ntk#>.
+@prefix edh: <urn:us:gov:ic:edh#>.
+@prefix arh: <urn:us:gov:ic:arh#>.
+@prefix ism: <urn:us:gov:ic:ism#>.
+@prefix icid: <urn:us:gov:ic:id#>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml-StopBrowserRendering>.
+@prefix usagency: <urn:us:gov:ic:usagency#>.
+@prefix cct: <urn:us:gov:ic:cvenum:ismcat:responsibleentity#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xs: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:IC-EDH:IC-EDH> a <http://www.w3.org/2002/07/owl#Ontology>;
+    <http://www.w3.org/2002/07/owl#imports> <file://../IC-ID/IC-ID.jsonld>, <file://../ISM/IC-ARH.jsonld>, <file://../ISM/IC-ISM.jsonld>, <file://../ISM/IC-NTK.jsonld>, <file://../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld>, <file://../USAgency/USAgency.jsonld>.
+edh:ResponsibleEntityRoleType dc:title "Role identifies the relationships of the ResponsibleEntity to the data item referenced by the EDH. The role of Originator represents that the ResponsibleEntity is the creator/originator/author of the data item referenced by the EDH. The role of Custodian represents that the ResponsibleEntity is responsible for the data item referenced by the EDH being on the network but is not necessarily the creator/originator/author of it. You must have one and only one Custodian, and you may have zero or one Originator.";
+    a skos:ConceptScheme.
+edh:ResponsibleEntityRoleTypeValues a rdfs:Datatype.

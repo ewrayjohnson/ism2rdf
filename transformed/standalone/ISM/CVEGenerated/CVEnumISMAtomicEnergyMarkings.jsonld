@@ -1,0 +1,212 @@
+{
+  "@context": {
+    "ismatomic": "urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMAtomicEnergyMarkings",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismatomic:CVEnumISMatomicEnergyMarkings",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismatomic:CVEnumISMatomicEnergyMarkings definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismatomic:RD"
+        },
+        {
+          "@id": "ismatomic:RD-CNWDI"
+        },
+        {
+          "@id": "ismatomic:RD-SG-14"
+        },
+        {
+          "@id": "ismatomic:RD-SG-15"
+        },
+        {
+          "@id": "ismatomic:RD-SG-18"
+        },
+        {
+          "@id": "ismatomic:RD-SG-20"
+        },
+        {
+          "@id": "ismatomic:FRD"
+        },
+        {
+          "@id": "ismatomic:FRD-SG-14"
+        },
+        {
+          "@id": "ismatomic:FRD-SG-15"
+        },
+        {
+          "@id": "ismatomic:FRD-SG-18"
+        },
+        {
+          "@id": "ismatomic:FRD-SG-20"
+        },
+        {
+          "@id": "ismatomic:DCNI"
+        },
+        {
+          "@id": "ismatomic:UCNI"
+        },
+        {
+          "@id": "ismatomic:TFNI"
+        }
+      ]
+    },
+    {
+      "@id": "ismatomic:CVEnumISMatomicEnergyMarkingsValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "RD",
+        "RD-CNWDI",
+        "RD-SG-14",
+        "RD-SG-15",
+        "RD-SG-18",
+        "RD-SG-20",
+        "FRD",
+        "FRD-SG-14",
+        "FRD-SG-15",
+        "FRD-SG-18",
+        "FRD-SG-20",
+        "DCNI",
+        "UCNI",
+        "TFNI"
+      ]
+    },
+    {
+      "@id": "ismatomic:RD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "RD",
+      "skos:prefLabel": "RESTRICTED DATA"
+    },
+    {
+      "@id": "ismatomic:RD-CNWDI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "RD-CNWDI",
+      "skos:prefLabel": "RD-CRITICAL NUCLEAR WEAPON DESIGN INFORMATION"
+    },
+    {
+      "@id": "ismatomic:RD-SG-14",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "RD-SG-14",
+      "skos:prefLabel": "RD-SIGMA-14"
+    },
+    {
+      "@id": "ismatomic:RD-SG-15",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "RD-SG-15",
+      "skos:prefLabel": "RD-SIGMA-15"
+    },
+    {
+      "@id": "ismatomic:RD-SG-18",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "RD-SG-18",
+      "skos:prefLabel": "RD-SIGMA-18"
+    },
+    {
+      "@id": "ismatomic:RD-SG-20",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "RD-SG-20",
+      "skos:prefLabel": "RD-SIGMA-20"
+    },
+    {
+      "@id": "ismatomic:FRD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD",
+      "skos:prefLabel": "FORMERLY RESTRICTED DATA"
+    },
+    {
+      "@id": "ismatomic:FRD-SG-14",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD-SG-14",
+      "skos:prefLabel": "RD-SIGMA-14"
+    },
+    {
+      "@id": "ismatomic:FRD-SG-15",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD-SG-15",
+      "skos:prefLabel": "RD-SIGMA-15"
+    },
+    {
+      "@id": "ismatomic:FRD-SG-18",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD-SG-18",
+      "skos:prefLabel": "RD-SIGMA-18"
+    },
+    {
+      "@id": "ismatomic:FRD-SG-20",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD-SG-20",
+      "skos:prefLabel": "RD-SIGMA-20"
+    },
+    {
+      "@id": "ismatomic:DCNI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "DCNI",
+      "skos:prefLabel": "DoD CONTROLLED NUCLEAR INFORMATION"
+    },
+    {
+      "@id": "ismatomic:UCNI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "UCNI",
+      "skos:prefLabel": "DoE CONTROLLED NUCLEAR INFORMATION"
+    },
+    {
+      "@id": "ismatomic:TFNI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "TFNI",
+      "skos:prefLabel": "TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION"
+    }
+  ]
+}

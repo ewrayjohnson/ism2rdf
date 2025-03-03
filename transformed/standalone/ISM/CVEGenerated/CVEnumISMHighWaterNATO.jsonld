@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "ismhighwaternato": "urn:us:gov:ic:cvenum:ism:HighWaterNATO#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMHighWaterNATO",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismhighwaternato:CVEnumISMHighWaterNATO",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) The highest classification of any portion that has either @ism:ownerProducer contains NATO or @FGIsourceOpen contains NATO. The @ism:highWaterNATO attribute will be compared against an entity's fineAccessControls NATO value. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMHighWaterNATO.xml",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismhighwaternato:NATO-U"
+        },
+        {
+          "@id": "ismhighwaternato:NATO-R"
+        },
+        {
+          "@id": "ismhighwaternato:NATO-C"
+        },
+        {
+          "@id": "ismhighwaternato:NATO-S"
+        },
+        {
+          "@id": "ismhighwaternato:NATO-TS"
+        }
+      ]
+    },
+    {
+      "@id": "ismhighwaternato:CVEnumISMHighWaterNATOValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "NATO-U",
+        "NATO-R",
+        "NATO-C",
+        "NATO-S",
+        "NATO-TS"
+      ]
+    },
+    {
+      "@id": "ismhighwaternato:NATO-U",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
+      },
+      "skos:notation": "NATO-U",
+      "skos:prefLabel": "NATO UNCLASSIFIED"
+    },
+    {
+      "@id": "ismhighwaternato:NATO-R",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
+      },
+      "skos:notation": "NATO-R",
+      "skos:prefLabel": "NATO RESTRICTED"
+    },
+    {
+      "@id": "ismhighwaternato:NATO-C",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
+      },
+      "skos:notation": "NATO-C",
+      "skos:prefLabel": "NATO CONFIDENTIAL"
+    },
+    {
+      "@id": "ismhighwaternato:NATO-S",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
+      },
+      "skos:notation": "NATO-S",
+      "skos:prefLabel": "NATO SECRET"
+    },
+    {
+      "@id": "ismhighwaternato:NATO-TS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
+      },
+      "skos:notation": "NATO-TS",
+      "skos:prefLabel": "NATO TOP SECRET"
+    }
+  ]
+}

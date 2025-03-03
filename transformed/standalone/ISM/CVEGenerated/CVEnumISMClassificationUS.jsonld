@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "ismclassus": "urn:us:gov:ic:cvenum:ism:classification:us#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMClassificationUS",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismclassus:CVEnumISMClassificationUS",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) All currently valid US classification marks. This file is not imported by the schema. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMClassificationUS.xml",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismclassus:TS"
+        },
+        {
+          "@id": "ismclassus:S"
+        },
+        {
+          "@id": "ismclassus:C"
+        },
+        {
+          "@id": "ismclassus:U"
+        }
+      ]
+    },
+    {
+      "@id": "ismclassus:CVEnumISMClassificationUSValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "TS",
+        "S",
+        "C",
+        "U"
+      ]
+    },
+    {
+      "@id": "ismclassus:TS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismclassus:CVEnumISMClassificationUS"
+      },
+      "skos:notation": "TS",
+      "skos:prefLabel": "TOP SECRET"
+    },
+    {
+      "@id": "ismclassus:S",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismclassus:CVEnumISMClassificationUS"
+      },
+      "skos:notation": "S",
+      "skos:prefLabel": "SECRET"
+    },
+    {
+      "@id": "ismclassus:C",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismclassus:CVEnumISMClassificationUS"
+      },
+      "skos:notation": "C",
+      "skos:prefLabel": "CONFIDENTIAL"
+    },
+    {
+      "@id": "ismclassus:U",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismclassus:CVEnumISMClassificationUS"
+      },
+      "skos:notation": "U",
+      "skos:prefLabel": "UNCLASSIFIED"
+    }
+  ]
+}

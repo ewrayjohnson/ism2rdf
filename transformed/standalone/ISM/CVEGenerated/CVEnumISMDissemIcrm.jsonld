@@ -1,0 +1,238 @@
+{
+  "@context": {
+    "ismdissemicrm": "urn:us:gov:ic:cvenum:ism:dissem:icrm#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissemIcrm",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismdissemicrm:CVEnumISMDissemIcrm",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismdissemicrm:CVEnumISMDissemIcrm definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismdissemicrm:RS"
+        },
+        {
+          "@id": "ismdissemicrm:FOUO"
+        },
+        {
+          "@id": "ismdissemicrm:OC"
+        },
+        {
+          "@id": "ismdissemicrm:OC-USGOV"
+        },
+        {
+          "@id": "ismdissemicrm:IMC"
+        },
+        {
+          "@id": "ismdissemicrm:NF"
+        },
+        {
+          "@id": "ismdissemicrm:PR"
+        },
+        {
+          "@id": "ismdissemicrm:REL"
+        },
+        {
+          "@id": "ismdissemicrm:RELIDO"
+        },
+        {
+          "@id": "ismdissemicrm:EYES"
+        },
+        {
+          "@id": "ismdissemicrm:DSEN"
+        },
+        {
+          "@id": "ismdissemicrm:RAWFISA"
+        },
+        {
+          "@id": "ismdissemicrm:FISA"
+        },
+        {
+          "@id": "ismdissemicrm:DISPLAYONLY"
+        },
+        {
+          "@id": "ismdissemicrm:EXEMPT_FROM_ICD501_DISCOVERY"
+        },
+        {
+          "@id": "ismdissemicrm:WAIVED"
+        }
+      ]
+    },
+    {
+      "@id": "ismdissemicrm:CVEnumISMDissemIcrmValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "RS",
+        "FOUO",
+        "OC",
+        "OC-USGOV",
+        "IMC",
+        "NF",
+        "PR",
+        "REL",
+        "RELIDO",
+        "EYES",
+        "DSEN",
+        "RAWFISA",
+        "FISA",
+        "DISPLAYONLY",
+        "EXEMPT_FROM_ICD501_DISCOVERY",
+        "WAIVED"
+      ]
+    },
+    {
+      "@id": "ismdissemicrm:RS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "RS",
+      "skos:prefLabel": "RISK SENSITIVE"
+    },
+    {
+      "@id": "ismdissemicrm:FOUO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "FOUO",
+      "skos:prefLabel": "FOR OFFICIAL USE ONLY"
+    },
+    {
+      "@id": "ismdissemicrm:OC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "OC",
+      "skos:prefLabel": "ORIGINATOR CONTROLLED"
+    },
+    {
+      "@id": "ismdissemicrm:OC-USGOV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "OC-USGOV",
+      "skos:prefLabel": "ORIGINATOR CONTROLLED US GOVERNMENT"
+    },
+    {
+      "@id": "ismdissemicrm:IMC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "IMC",
+      "skos:prefLabel": "CONTROLLED IMAGERY"
+    },
+    {
+      "@id": "ismdissemicrm:NF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "NF",
+      "skos:prefLabel": "NOT RELEASABLE TO FOREIGN NATIONALS"
+    },
+    {
+      "@id": "ismdissemicrm:PR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "PR",
+      "skos:prefLabel": "CAUTION-PROPRIETARY INFORMATION INVOLVED"
+    },
+    {
+      "@id": "ismdissemicrm:REL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "REL",
+      "skos:prefLabel": "AUTHORIZED FOR RELEASE TO"
+    },
+    {
+      "@id": "ismdissemicrm:RELIDO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "RELIDO",
+      "skos:prefLabel": "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL"
+    },
+    {
+      "@id": "ismdissemicrm:EYES",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "EYES",
+      "skos:prefLabel": "EYES ONLY"
+    },
+    {
+      "@id": "ismdissemicrm:DSEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "DSEN",
+      "skos:prefLabel": "DEA SENSITIVE"
+    },
+    {
+      "@id": "ismdissemicrm:RAWFISA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "RAWFISA",
+      "skos:prefLabel": "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT"
+    },
+    {
+      "@id": "ismdissemicrm:FISA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "FISA",
+      "skos:prefLabel": "FOREIGN INTELLIGENCE SURVEILLANCE ACT"
+    },
+    {
+      "@id": "ismdissemicrm:DISPLAYONLY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "DISPLAYONLY",
+      "skos:prefLabel": "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO"
+    },
+    {
+      "@id": "ismdissemicrm:EXEMPT_FROM_ICD501_DISCOVERY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "EXEMPT_FROM_ICD501_DISCOVERY",
+      "skos:prefLabel": "EXEMPT FROM ICD501 DISCOVERY"
+    },
+    {
+      "@id": "ismdissemicrm:WAIVED",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "WAIVED",
+      "skos:prefLabel": "WAIVED"
+    }
+  ]
+}

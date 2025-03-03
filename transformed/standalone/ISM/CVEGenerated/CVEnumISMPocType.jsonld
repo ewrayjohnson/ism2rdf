@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "ismpoctype": "urn:us:gov:ic:cvenum:ism:pocType#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMPocType",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismpoctype:CVEnumISMPocType",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ismpoctype:CVEnumISMPocType definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismpoctype:ICD-710"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-B"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-C"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-D"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-E"
+        },
+        {
+          "@id": "ismpoctype:DoD-Dist-F"
+        }
+      ]
+    },
+    {
+      "@id": "ismpoctype:CVEnumISMPocTypeValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "ICD-710",
+        "DoD-Dist-B",
+        "DoD-Dist-C",
+        "DoD-Dist-D",
+        "DoD-Dist-E",
+        "DoD-Dist-F"
+      ]
+    },
+    {
+      "@id": "ismpoctype:ICD-710",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "ICD-710",
+      "skos:prefLabel": "Point-of-contact for an ICD-710 notice."
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-B",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-B",
+      "skos:prefLabel": "DoD Distribution statement B from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-C",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-C",
+      "skos:prefLabel": "DoD Distribution statement C from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-D",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-D",
+      "skos:prefLabel": "DoD Distribution statement D from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-E",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-E",
+      "skos:prefLabel": "DoD Distribution statement E from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismpoctype:DoD-Dist-F",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "DoD-Dist-F",
+      "skos:prefLabel": "DoD Distribution statement F from DoD Directive 5230.24"
+    }
+  ]
+}

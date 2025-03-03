@@ -1,0 +1,50 @@
+@prefix ismnonic: <urn:us:gov:ic:cvenum:ism:nonic#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNonIC> a owl:Ontology.
+ismnonic:CVEnumISMNonIC dc:title "(U) ismnonic:CVEnumISMNonIC definition";
+    a skos:ConceptScheme;
+    skos:hasTopConcept ismnonic:DS, ismnonic:LES-NF, ismnonic:LES, ismnonic:ND, ismnonic:NNPI, ismnonic:SBU-NF, ismnonic:SBU, ismnonic:SSI, ismnonic:XD.
+ismnonic:CVEnumISMNonICValues a rdfs:Datatype;
+    owl:oneOf "DS", "LES", "LES-NF", "ND", "NNPI", "SBU", "SBU-NF", "SSI", "XD".
+ismnonic:DS a skos:Concept;
+    skos:inScheme ismnonic:CVEnumISMNonIC;
+    skos:notation "DS";
+    skos:prefLabel "LIMITED DISTRIBUTION".
+ismnonic:LES-NF a skos:Concept;
+    skos:inScheme ismnonic:CVEnumISMNonIC;
+    skos:notation "LES-NF";
+    skos:prefLabel "LAW ENFORCEMENT SENSITIVE NOFORN".
+ismnonic:LES a skos:Concept;
+    skos:inScheme ismnonic:CVEnumISMNonIC;
+    skos:notation "LES";
+    skos:prefLabel "LAW ENFORCEMENT SENSITIVE".
+ismnonic:ND a skos:Concept;
+    skos:inScheme ismnonic:CVEnumISMNonIC;
+    skos:notation "ND";
+    skos:prefLabel "NO DISTRIBUTION".
+ismnonic:NNPI a skos:Concept;
+    skos:inScheme ismnonic:CVEnumISMNonIC;
+    skos:notation "NNPI";
+    skos:prefLabel "NAVAL NUCLEAR PROPULSION INFORMATION".
+ismnonic:SBU-NF a skos:Concept;
+    skos:inScheme ismnonic:CVEnumISMNonIC;
+    skos:notation "SBU-NF";
+    skos:prefLabel "SENSITIVE BUT UNCLASSIFIED NOFORN".
+ismnonic:SBU a skos:Concept;
+    skos:inScheme ismnonic:CVEnumISMNonIC;
+    skos:notation "SBU";
+    skos:prefLabel "SENSITIVE BUT UNCLASSIFIED".
+ismnonic:SSI a skos:Concept;
+    skos:inScheme ismnonic:CVEnumISMNonIC;
+    skos:notation "SSI";
+    skos:prefLabel "SENSITIVE SECURITY INFORMATION".
+ismnonic:XD a skos:Concept;
+    skos:inScheme ismnonic:CVEnumISMNonIC;
+    skos:notation "XD";
+    skos:prefLabel "EXCLUSIVE DISTRIBUTION".

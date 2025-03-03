@@ -17,12 +17,22 @@ const XSD_EXTENSION = '.xsd';
 const INPUT_DIR = '.ciartifacts';
 const SCHEMAS_DIR = 'schemas';
 const RDF_TYPE = 'rdf:type';
+const ONTOLOGY_TYPE = 'owl:Ontology';
+const IMPORTS_PROPERTY = 'owl:imports';
 
 type Import = {
   namespace: string;
   schemaLocation: string;
 }
-
+type Package = {
+  g: typeof Graph;
+  namespaces: { [key: string]: string };
+  importUris: string[];
+}
+type Packages = {
+  standalone: Package;
+  convienence: Package;
+}
 
 (async () => {
   // const filename = require('path').resolve(__dirname, '../.ciartifacts/config/defaultPrefixes.json');
@@ -31,31 +41,42 @@ type Import = {
     namespaces.add(prefix, iri);
   }
 
-  const processed = new Set<string>;
+  const processed: Map<string, Packages> = new Map();
 
   const schemasDir = path.join(INPUT_DIR, SCHEMAS_DIR);
   await input(path.join(schemasDir, 'ISMCAT', 'Tetragraph' + XSD_EXTENSION), processed);
   await input(path.join(schemasDir, 'IC-EDH', 'IC-EDH' + XSD_EXTENSION), processed);
 
-  for (const aProcessed of processed) {
+  for (const aProcessed of processed.keys()) {
     const dir = path.dirname(aProcessed);
     for (const f of fs.readdirSync(dir).filter(f => f.toLowerCase().endsWith(XSD_EXTENSION))) {
       await input(path.join(dir, f), processed);
     }
   }
 
-  console.log(processed);
+  console.log(processed.keys());
 
-  async function input(inputFilepath: string, processed: Set<string>) {
-    const g = new Graph({});
+  async function input(inputFilepath: string, processed: Map<string, Packages>): Promise<Packages> {
     const ontologyUri = 'urn:us:gov:ic' + inputFilepath.substring(0, inputFilepath.lastIndexOf('.xsd')).
       substring(schemasDir.length).replaceAll(path.sep, ':');
-    console.log(schemasDir);
-    g.add(ontologyUri, RDF_TYPE, 'owl:Ontology');
-    const inNamespaces: { [key: string]: string } = {};
     inputFilepath = path.normalize(inputFilepath);
-    if (!processed.has(inputFilepath)) {
-      processed.add(inputFilepath);
+    let p: Packages | undefined = processed.get(inputFilepath);
+    if (!p) {
+      p = {
+        standalone: {
+          g: new Graph({}),
+          namespaces: {},
+          importUris: [],
+        }, convienence: {
+          g: new Graph({}),
+          namespaces: {},
+          importUris: [],
+        }
+      };
+      processed.set(inputFilepath, p);
+      const standalone = p.standalone;
+      const convienence = p.convienence;
+      const o = standalone.g.add(ontologyUri, RDF_TYPE, ONTOLOGY_TYPE);
       const text = fs.readFileSync(inputFilepath, 'utf8');
       const json = await xml2js.parseStringPromise(text);
       for (const entry of Object.entries(json)) {
@@ -64,7 +85,7 @@ type Import = {
           const $ = schema.$;
           Object.entries($);
           let defaultNs = $.targetNamespace + '#';
-          Object.assign(inNamespaces, (Object.entries($) as [string, string][]).reduce((acc: { [key: string]: string }, e) => {
+          Object.assign(standalone.namespaces, (Object.entries($) as [string, string][]).reduce((acc: { [key: string]: string }, e) => {
             if (e[0].startsWith('xmlns:')) {
               let ns: string = e[1];
               if (ns.startsWith('urn:')) {
@@ -80,16 +101,16 @@ type Import = {
 
           const defaultPrefixes: { [key: string]: string } = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, 'config', 'defaultPrefixes.json'), 'utf8'));
           for (const [prefix, iri] of Object.entries(defaultPrefixes)) {
-            inNamespaces[iri] = prefix;
+            standalone.namespaces[iri] = prefix;
           }
 
-          for (const [iri, prefix] of Object.entries(inNamespaces)) {
+          for (const [iri, prefix] of Object.entries(standalone.namespaces)) {
             namespaces.add(prefix, iri);
           }
-          // const defaultPrefix = defaultNs && inNamespaces[defaultNs];
+          // const defaultPrefix = defaultNs && standalone.namespaces[defaultNs];
           const idPrefix = /*defaultPrefix ? `${defaultPrefix}:` : */`${defaultNs}`;
-          const xsdPrefix = inNamespaces[XML_SCHEMA_URI];
-          inNamespaces['http://www.w3.org/2001/XMLSchema#'] = xsdPrefix;
+          const xsdPrefix = standalone.namespaces[XML_SCHEMA_URI];
+          standalone.namespaces['http://www.w3.org/2001/XMLSchema#'] = xsdPrefix;
           if (xsdPrefix) {
             const elements = schema[`${xsdPrefix}:element`];
             if (elements) {
@@ -106,25 +127,25 @@ type Import = {
                     if (attributeType) {
                       if (attributeName) {
                         const attributeId = `${idPrefix}${attributeName}`;
-                        // g.add(attributeId, 'rdf:Property', 'rdf:Property');
-                        g.add(attributeId, RDF_TYPE, 'rdf:Property')
-                        inNamespaces[OWL_URI] = 'owl';
-                        inNamespaces[RDFS_URI] = 'rdfs';
-                        inNamespaces[RDF_URI] = 'rdf';
+                        // standalone.g.add(attributeId, 'rdf:Property', 'rdf:Property');
+                        standalone.g.add(attributeId, RDF_TYPE, 'rdf:Property')
+                        standalone.namespaces[OWL_URI] = 'owl';
+                        standalone.namespaces[RDFS_URI] = 'rdfs';
+                        standalone.namespaces[RDF_URI] = 'rdf';
                         if (attributeType.startsWith(`${xsdPrefix}:`)) {
                           namespaces.add(xsdPrefix, 'http://www.w3.org/2001/XMLSchema#');
-                          g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
+                          standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
                         }
                         else {
                           attributeType += 'Values';
-                          g.add(attributeId, RDF_TYPE, 'rdf:Property');
+                          standalone.g.add(attributeId, RDF_TYPE, 'rdf:Property');
                         }
-                        g.add(attributeId, 'rdfs:range', `${attributeType}`);
+                        standalone.g.add(attributeId, 'rdfs:range', `${attributeType}`);
                         const documentation = anAttribute[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
                         if (documentation) {
                           for (const aComment of (Array.isArray(documentation) ? documentation : [documentation])) {
                             const comment = removeWhitespace(aComment);
-                            g.addL(attributeId, 'rdfs:comment', comment);
+                            standalone.g.addL(attributeId, 'rdfs:comment', comment);
                           }
                         }
                       }
@@ -142,10 +163,14 @@ type Import = {
               const all = imports.map((e: any) => e.$ as Import);
               const dirname = path.dirname(inputFilepath);
               for (const importSpec of all) {
-                const importPath: string = path.join(dirname, importSpec.schemaLocation);
-                const [importedGraph, importedNamespaces] = await input(importPath, processed);
-                Object.assign(inNamespaces, importedNamespaces);
-                g.addAll(importedGraph);
+                const schemaLocation = importSpec.schemaLocation;
+                const importPath: string = path.join(dirname, schemaLocation);
+                standalone.importUris.push(schemaLocation);
+                const imported = await input(importPath, processed);
+                Object.assign(convienence.namespaces, imported.convienence.namespaces);
+                // remove all imported ontology imports from the imported graph
+                imported.standalone.g.findAndRemove(null, IMPORTS_PROPERTY, null);
+                convienence.g.addAll(imported.convienence.g);
               }
             }
 
@@ -204,70 +229,126 @@ type Import = {
                   const annotation = typeSource[`${xsdPrefix}:annotation`];
                   const documentation = annotation[0][`${xsdPrefix}:documentation`];
                   const description = documentation && documentation[0];
-                  g.add(schemeId, RDF_TYPE, 'skos:ConceptScheme');
+                  standalone.g.add(schemeId, RDF_TYPE, 'skos:ConceptScheme');
                   if (description) {
-                    g.addL(schemeId, 'dc:title', removeWhitespace(description)/*, 'en-latn'*/);
+                    standalone.g.addL(schemeId, 'dc:title', removeWhitespace(description)/*, 'en-latn'*/);
                   }
                 }
 
                 const allowedNotationsId = `${schemeId}Values`;
                 for (const aConcept of concepts) {
-                  g.add(schemeId, 'skos:hasTopConcept', aConcept.conceptId);
-                  inNamespaces[OWL_URI] = 'owl';
-                  g.addL(allowedNotationsId, 'owl:oneOf', aConcept.notation);
-                  g.add(aConcept.conceptId, RDF_TYPE, 'skos:Concept');
-                  const stmt = g.add(aConcept.conceptId, 'skos:inScheme', schemeId);
-                  // g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.notation, IC-EDH);
-                  g.addD(aConcept.conceptId, 'skos:notation', aConcept.notation/*, `${xsdPrefix}:string`*/);
+                  standalone.g.add(schemeId, 'skos:hasTopConcept', aConcept.conceptId);
+                  standalone.namespaces[OWL_URI] = 'owl';
+                  standalone.g.addL(allowedNotationsId, 'owl:oneOf', aConcept.notation);
+                  standalone.g.add(aConcept.conceptId, RDF_TYPE, 'skos:Concept');
+                  const stmt = standalone.g.add(aConcept.conceptId, 'skos:inScheme', schemeId);
+                  // standalone.g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.notation, IC-EDH);
+                  standalone.g.addD(aConcept.conceptId, 'skos:notation', aConcept.notation/*, `${xsdPrefix}:string`*/);
                   if (aConcept.prefLabel) {
-                    g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.prefLabel/*, 'en-latn'*/);
+                    standalone.g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.prefLabel/*, 'en-latn'*/);
                   }
                 }
-                inNamespaces[RDFS_URI] = 'rdfs';
-                g.add(allowedNotationsId, RDF_TYPE, 'rdfs:Datatype');
+                standalone.namespaces[RDFS_URI] = 'rdfs';
+                standalone.g.add(allowedNotationsId, RDF_TYPE, 'rdfs:Datatype');
               }
-              const rdf = converters.rdfjson2rdfxml(g);
-              const json1 = await ldtr.read({ data: rdf, type: 'application/rdf+xml' });
-              // if (!inNamespaces[OWL_URI]) {
-              delete inNamespaces[XML_SCHEMA_URI];
-              // delete inNamespaces[RDF_URI];
+              // if (!standalone.namespaces[OWL_URI]) {
+              delete standalone.namespaces[XML_SCHEMA_URI];
+              // delete standalone.namespaces[RDF_URI];
               // }
-              const context = _.invert(inNamespaces);
-              const json2 = await jsonld.compact(json1, context);
               const extname = path.extname(inputFilepath);
               const dirname = path.dirname(inputFilepath);
               const basename = path.basename(inputFilepath, extname);
-              const relative = path.relative(INPUT_DIR, dirname);
-              const outputDir = path.join(__dirname, '..', 'transformed', relative);
-              if (!fs.existsSync(outputDir)) {
-                fs.mkdirSync(outputDir, { recursive: true });
+              const relative = path.relative(schemasDir, dirname);
+              const outputBase = path.join(__dirname, '..', 'transformed');
+
+              convienence.g.addAll(standalone.g);
+              Object.assign(convienence.namespaces, standalone.namespaces);
+              await writeGraph(convienence, path.join(outputBase, 'convenience'));
+
+              standalone.importUris.forEach((uri) => {
+                standalone.g.add(ontologyUri, IMPORTS_PROPERTY, 'file://' + uri.replace(/\.\w+$/, '.jsonld'));
+              });
+              await writeGraph(standalone, path.join(outputBase, 'standalone'));
+
+              async function writeGraph(p: Package, outputDir: string) {
+                outputDir = path.join(outputDir, relative);
+                const rdf = converters.rdfjson2rdfxml(p.g);
+                const json1 = await ldtr.read({ data: rdf, type: 'application/rdf+xml' });
+                const context = _.invert(p.namespaces);
+                const json2 = await jsonld.compact(json1, context);
+                const jsonText = JSON.stringify(json2, null, 2);
+                if (!fs.existsSync(outputDir)) {
+                  fs.mkdirSync(outputDir, { recursive: true });
+                }
+
+                const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
+                fs.writeFileSync(jsonldOutputFilepath, jsonText);
+
+                const graph = json2['@graph'];
+                if (graph) {
+                  graph.forEach((e: any) => {
+                    if (e['@id'] === ontologyUri && e['@type'] === ONTOLOGY_TYPE) {
+                      const imports = e['owl:imports'];
+                      if (imports) {
+                        (Array.isArray(imports) ? imports : [imports]).forEach((anImport: any) => {
+                          anImport['@id'] = anImport['@id'].replace(/\.\w+$/, '.ttl');
+                        });
+                      }
+                    }
+                  });
+                }
+                const flattened = await jsonld.flatten(json2);
+                const nquads = await jsonld.toRDF(flattened, { format: NQUADS_FORMAT });
+                const parser = new Parser({ format: NQUADS_FORMAT });
+                const writer = new Writer({ format: TURTLE_FORMAT, prefixes: context });
+                await parser.parse(nquads, (error: any, quad: any, prefixes: any) => {
+                  if (error) console.log(`PARSE ERROR: ${error}`);
+                  if (quad) {
+                    writer.addQuad(quad);
+                  }
+                });
+                let turtle = '';
+                await writer.end((error: any, result: any) => {
+                  if (error) console.log(`WRITE ERROR: ${error}`);
+                  turtle = result;
+                });
+
+                // const flattened = await jsonld.flatten(json2);
+                // const rdfQuads = await jsonld.toRDF(flattened, { format: "application/n-quads" });
+
+                // // Create an N3 writer
+                // const writer = new Writer({ format: "text/turtle" });
+
+                // // Parse and add RDF quads to the writer
+                // flattened.forEach((quad: { subject: { value: any; }; predicate: { value: any; }; object: { datatype: { value: any; }; value: any; }; }) => {
+                //   writer.addQuad(
+                //     quad.subject.value,
+                //     quad.predicate.value,
+                //     quad.object.datatype ? `"${quad.object.value}"^^${quad.object.datatype.value}` : quad.object.value
+                //   );
+                // });
+
+                // // Convert to Turtle format
+                // const turtle: string = await new Promise((resolve, reject) => {
+                //   writer.end((error: any, result: unknown) => {
+                //     if (error) reject(error);
+                //     else resolve(result as string);
+                //   });
+                // });
+
+
+                const turtleOutputFilepath = path.join(outputDir, `${basename}.ttl`);
+                fs.writeFileSync(turtleOutputFilepath, turtle);
               }
-              const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
-              const jsonText = JSON.stringify(json2, null, 2);
-              fs.writeFileSync(jsonldOutputFilepath, jsonText);
-              const flattened = await jsonld.flatten(json2);
-              const nquads = await jsonld.toRDF(flattened, { format: NQUADS_FORMAT });
-              const parser = new Parser({ format: NQUADS_FORMAT });
-              const writer = new Writer({ format: TURTLE_FORMAT, prefixes: context });
-              await parser.parse(nquads, (error: any, quad: any, prefixes: any) => {
-                if (error) console.log(`PARSE ERROR: ${error}`);
-                if (quad) writer.addQuad(quad);
-              });
-              let turtle = '';
-              await writer.end((error: any, result: any) => {
-                if (error) console.log(`WRITE ERROR: ${error}`);
-                turtle = result;
-              });
-              const n3OutputFilepath = path.join(outputDir, `${basename}.ttl`);
-              fs.writeFileSync(n3OutputFilepath, turtle);
             }
           }
         }
       }
     }
-    return [g, inNamespaces];
+    return p;
   }
 })();
+
 
 function removeWhitespace(documentation: any) {
   return (documentation['xhtml:p']?.[0]?._ || documentation).replace(/\s+/g, ' ').trim();

@@ -11,9 +11,17 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xs": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "urn:us:gov:ic:Taxonomy:Taxonomy",
-  "@type": "http://www.w3.org/2002/07/owl#Ontology",
-  "http://www.w3.org/2002/07/owl#imports": {
-    "@id": "file://../ISM/IC-ISM.jsonld"
-  }
+  "@graph": [
+    {
+      "@id": "urn:us:gov:ic:Taxonomy:Taxonomy",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology",
+      "http://www.w3.org/2002/07/owl#imports": {
+        "@id": "urn:us:gov:ic:../ISM/IC-ISM.jsonld"
+      }
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISM/IC-ISM.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    }
+  ]
 }

@@ -10,8 +10,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
+<urn:us:gov:ic:./CVEGenerated/CVEnumUSAgencyAcronym.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumUSGOVAgencyAcronym.ttl> a owl:Ontology.
 <urn:us:gov:ic:USAgency:USAgency> a owl:Ontology;
-    owl:imports <file://./CVEGenerated/CVEnumUSAgencyAcronym.ttl>, <file://./CVEGenerated/CVEnumUSGOVAgencyAcronym.ttl>.
+    owl:imports <urn:us:gov:ic:./CVEGenerated/CVEnumUSAgencyAcronym.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumUSGOVAgencyAcronym.ttl>.
 usagency:usagency a rdf:Property;
     rdfs:comment "An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies.";
     rdfs:range usaa:CVEnumUSAgencyAcronymValues.

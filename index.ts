@@ -76,7 +76,7 @@ type Packages = {
       processed.set(inputFilepath, p);
       const standalone = p.standalone;
       const convienence = p.convienence;
-      const o = standalone.g.add(ontologyUri, RDF_TYPE, ONTOLOGY_TYPE);
+      standalone.g.add(ontologyUri, RDF_TYPE, ONTOLOGY_TYPE);
       const text = fs.readFileSync(inputFilepath, 'utf8');
       const json = await xml2js.parseStringPromise(text);
       for (const entry of Object.entries(json)) {
@@ -266,7 +266,9 @@ type Packages = {
               await writeGraph(convienence, path.join(outputBase, 'convenience'));
 
               standalone.importUris.forEach((uri) => {
-                standalone.g.add(ontologyUri, IMPORTS_PROPERTY, 'file://' + uri.replace(/\.\w+$/, '.jsonld'));
+                const importUri = 'urn:us:gov:ic:' + uri.replace(/\.\w+$/, '.jsonld');
+                standalone.g.add(importUri, RDF_TYPE, ONTOLOGY_TYPE);
+                standalone.g.add(ontologyUri, IMPORTS_PROPERTY, importUri);
               });
               await writeGraph(standalone, path.join(outputBase, 'standalone'));
 
@@ -284,21 +286,26 @@ type Packages = {
                 const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
                 fs.writeFileSync(jsonldOutputFilepath, jsonText);
 
-                const graph = json2['@graph'];
-                if (graph) {
-                  graph.forEach((e: any) => {
-                    if (e['@id'] === ontologyUri && e['@type'] === ONTOLOGY_TYPE) {
-                      const imports = e['owl:imports'];
-                      if (imports) {
-                        (Array.isArray(imports) ? imports : [imports]).forEach((anImport: any) => {
-                          anImport['@id'] = anImport['@id'].replace(/\.\w+$/, '.ttl');
-                        });
-                      }
-                    }
-                  });
-                }
+                // const graph = json2['@graph'];
+                // if (graph) {
+                //   // replace all .jsonld with .ttl
+                //   graph.forEach((e: any) => {
+                //     if (e['@type'] === ONTOLOGY_TYPE) {
+                //       if (e['@id'] === ontologyUri) {
+                //         const imports = e['owl:imports'];
+                //         if (imports) {
+                //           (Array.isArray(imports) ? imports : [imports]).forEach((anImport: any) => {
+                //             anImport['@id'] = anImport['@id'].replace(/\.\w+$/, '.ttl');
+                //           });
+                //         }
+                //       } else if (e['@id'].endsWith('.jsonld')) {
+                //         e['@id'] = e['@id'].replace(/\.\w+$/, '.ttl');
+                //       }
+                //     }
+                //   });
+                // }
                 const flattened = await jsonld.flatten(json2);
-                const nquads = await jsonld.toRDF(flattened, { format: NQUADS_FORMAT });
+                const nquads = (await jsonld.toRDF(flattened, { format: NQUADS_FORMAT })).replaceAll('.jsonld', '.ttl');
                 const parser = new Parser({ format: NQUADS_FORMAT });
                 const writer = new Writer({ format: TURTLE_FORMAT, prefixes: context });
                 await parser.parse(nquads, (error: any, quad: any, prefixes: any) => {

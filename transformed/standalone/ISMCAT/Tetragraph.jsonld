@@ -19,19 +19,19 @@
       "@type": "http://www.w3.org/2002/07/owl#Ontology",
       "http://www.w3.org/2002/07/owl#imports": [
         {
-          "@id": "file://../ISM/IC-ARH.jsonld"
+          "@id": "urn:us:gov:ic:../ISM/IC-ARH.jsonld"
         },
         {
-          "@id": "file://../ISM/IC-ISM.jsonld"
+          "@id": "urn:us:gov:ic:../ISM/IC-ISM.jsonld"
         },
         {
-          "@id": "file://../Taxonomy/Taxonomy.jsonld"
+          "@id": "urn:us:gov:ic:../Taxonomy/Taxonomy.jsonld"
         },
         {
-          "@id": "file://../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.jsonld"
+          "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.jsonld"
         },
         {
-          "@id": "file://../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld"
+          "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld"
         }
       ]
     },
@@ -43,6 +43,26 @@
     {
       "@id": "tetra:DecomposableTypeValues",
       "@type": "rdfs:Datatype"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISM/IC-ARH.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISM/IC-ISM.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../Taxonomy/Taxonomy.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
     }
   ]
 }

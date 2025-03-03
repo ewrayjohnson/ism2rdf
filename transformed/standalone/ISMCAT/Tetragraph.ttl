@@ -11,8 +11,13 @@
 @prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
+<urn:us:gov:ic:../ISM/IC-ARH.ttl> a <http://www.w3.org/2002/07/owl#Ontology>.
+<urn:us:gov:ic:../ISM/IC-ISM.ttl> a <http://www.w3.org/2002/07/owl#Ontology>.
+<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.ttl> a <http://www.w3.org/2002/07/owl#Ontology>.
+<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.ttl> a <http://www.w3.org/2002/07/owl#Ontology>.
+<urn:us:gov:ic:../Taxonomy/Taxonomy.ttl> a <http://www.w3.org/2002/07/owl#Ontology>.
 <urn:us:gov:ic:ISMCAT:Tetragraph> a <http://www.w3.org/2002/07/owl#Ontology>;
-    <http://www.w3.org/2002/07/owl#imports> <file://../ISM/IC-ARH.jsonld>, <file://../ISM/IC-ISM.jsonld>, <file://../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.jsonld>, <file://../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld>, <file://../Taxonomy/Taxonomy.jsonld>.
+    <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:../ISM/IC-ARH.ttl>, <urn:us:gov:ic:../ISM/IC-ISM.ttl>, <urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.ttl>, <urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.ttl>, <urn:us:gov:ic:../Taxonomy/Taxonomy.ttl>.
 tetra:DecomposableType dc:title "Decomposition is the breaking down of a tetragraph into its component countries for the purposes of rollup. An example is decomposing FVEY into the five member countries. This decomposition allows a portion marked RELEASABLE TO USA, GBR and another portion marked RELEASEABLE TO USA, FVEY to rollup to RELEASABLE TO USA, GBR. If FVEY was not decomposable the rollup would have to have been NF. NA is \"Not Applicable\" and is applied to deprecated tetragraphs.";
     a skos:ConceptScheme.
 tetra:DecomposableTypeValues a rdfs:Datatype.

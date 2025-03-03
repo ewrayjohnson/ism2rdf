@@ -20,22 +20,22 @@
       "@type": "http://www.w3.org/2002/07/owl#Ontology",
       "http://www.w3.org/2002/07/owl#imports": [
         {
-          "@id": "file://../ISM/IC-ARH.jsonld"
+          "@id": "urn:us:gov:ic:../ISM/IC-ARH.jsonld"
         },
         {
-          "@id": "file://../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld"
+          "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld"
         },
         {
-          "@id": "file://../IC-ID/IC-ID.jsonld"
+          "@id": "urn:us:gov:ic:../IC-ID/IC-ID.jsonld"
         },
         {
-          "@id": "file://../ISM/IC-ISM.jsonld"
+          "@id": "urn:us:gov:ic:../ISM/IC-ISM.jsonld"
         },
         {
-          "@id": "file://../ISM/IC-NTK.jsonld"
+          "@id": "urn:us:gov:ic:../ISM/IC-NTK.jsonld"
         },
         {
-          "@id": "file://../USAgency/USAgency.jsonld"
+          "@id": "urn:us:gov:ic:../USAgency/USAgency.jsonld"
         }
       ]
     },
@@ -47,6 +47,30 @@
     {
       "@id": "edh:ResponsibleEntityRoleTypeValues",
       "@type": "rdfs:Datatype"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISM/IC-ARH.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../IC-ID/IC-ID.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISM/IC-ISM.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISM/IC-NTK.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../USAgency/USAgency.jsonld",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
     }
   ]
 }

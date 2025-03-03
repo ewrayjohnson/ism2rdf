@@ -9,8 +9,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
+<urn:us:gov:ic:./IC-ISM.ttl> a owl:Ontology.
 <urn:us:gov:ic:ISM:IC-NTK> a owl:Ontology;
-    owl:imports <file://./IC-ISM.ttl>.
+    owl:imports <urn:us:gov:ic:./IC-ISM.ttl>.
 ntk:IDReference a rdf:Property, owl:DatatypeProperty;
     rdfs:comment "A cross-reference to a unique identifier used to point from one element to one or more other elements. The value of the attribute must be one or more XML unique identifiers that are the value(s) of id attribute(s) elsewhere in the document.";
     rdfs:range xsd:IDREFS.

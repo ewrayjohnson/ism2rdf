@@ -16,7 +16,7 @@
       "@id": "urn:us:gov:ic:ISM:IC-NTK",
       "@type": "owl:Ontology",
       "owl:imports": {
-        "@id": "file://./IC-ISM.jsonld"
+        "@id": "urn:us:gov:ic:./IC-ISM.jsonld"
       }
     },
     {
@@ -51,6 +51,10 @@
       "rdfs:range": {
         "@id": "xsd:string"
       }
+    },
+    {
+      "@id": "urn:us:gov:ic:./IC-ISM.jsonld",
+      "@type": "owl:Ontology"
     }
   ]
 }

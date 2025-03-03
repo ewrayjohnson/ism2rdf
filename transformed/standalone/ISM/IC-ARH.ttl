@@ -10,8 +10,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
+<urn:us:gov:ic:./IC-ISM.ttl> a owl:Ontology.
+<urn:us:gov:ic:./IC-NTK.ttl> a owl:Ontology.
 <urn:us:gov:ic:ISM:IC-ARH> a owl:Ontology;
-    owl:imports <file://./IC-ISM.ttl>, <file://./IC-NTK.ttl>.
+    owl:imports <urn:us:gov:ic:./IC-ISM.ttl>, <urn:us:gov:ic:./IC-NTK.ttl>.
 arh:DESVersion a rdf:Property, owl:DatatypeProperty;
     rdfs:comment "The version number of the DES";
     rdfs:range xs:string.

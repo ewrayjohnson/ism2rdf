@@ -9,5 +9,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 
+<urn:us:gov:ic:../ISM/IC-ISM.ttl> a <http://www.w3.org/2002/07/owl#Ontology>.
 <urn:us:gov:ic:Taxonomy:Taxonomy> a <http://www.w3.org/2002/07/owl#Ontology>;
-    <http://www.w3.org/2002/07/owl#imports> <file://../ISM/IC-ISM.jsonld>.
+    <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:../ISM/IC-ISM.ttl>.

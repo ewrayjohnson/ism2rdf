@@ -18,10 +18,10 @@
       "@type": "owl:Ontology",
       "owl:imports": [
         {
-          "@id": "file://./CVEGenerated/CVEnumUSAgencyAcronym.jsonld"
+          "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumUSAgencyAcronym.jsonld"
         },
         {
-          "@id": "file://./CVEGenerated/CVEnumUSGOVAgencyAcronym.jsonld"
+          "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumUSGOVAgencyAcronym.jsonld"
         }
       ]
     },
@@ -40,6 +40,14 @@
       "rdfs:range": {
         "@id": "usgaa:CVEnumUSGOVAgencyAcronymValues"
       }
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumUSAgencyAcronym.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumUSGOVAgencyAcronym.jsonld",
+      "@type": "owl:Ontology"
     }
   ]
 }

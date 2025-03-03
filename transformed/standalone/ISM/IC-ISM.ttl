@@ -29,8 +29,29 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
+<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIOpen.ttl> a owl:Ontology.
+<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIProtected.ttl> a owl:Ontology.
+<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATOwnerProducer.ttl> a owl:Ontology.
+<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISM25X.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMAtomicEnergyMarkings.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMCUIBasic.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMCUISpecified.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMClassificationAll.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMCompliesWith.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMDissem.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMExemptFrom.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMHighWaterNATO.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMNonIC.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMNonUSControls.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMNotice.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMNoticeProse.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMPocType.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMSAR.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMSCIControls.ttl> a owl:Ontology.
+<urn:us:gov:ic:./CVEGenerated/CVEnumISMSecondBannerLine.ttl> a owl:Ontology.
 <urn:us:gov:ic:ISM:IC-ISM> a owl:Ontology;
-    owl:imports <file://../ISMCAT/CVEGenerated/CVEnumISMCATFGIOpen.ttl>, <file://../ISMCAT/CVEGenerated/CVEnumISMCATFGIProtected.ttl>, <file://../ISMCAT/CVEGenerated/CVEnumISMCATOwnerProducer.ttl>, <file://../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.ttl>, <file://./CVEGenerated/CVEnumISM25X.ttl>, <file://./CVEGenerated/CVEnumISMAtomicEnergyMarkings.ttl>, <file://./CVEGenerated/CVEnumISMCUIBasic.ttl>, <file://./CVEGenerated/CVEnumISMCUISpecified.ttl>, <file://./CVEGenerated/CVEnumISMClassificationAll.ttl>, <file://./CVEGenerated/CVEnumISMCompliesWith.ttl>, <file://./CVEGenerated/CVEnumISMDissem.ttl>, <file://./CVEGenerated/CVEnumISMExemptFrom.ttl>, <file://./CVEGenerated/CVEnumISMHighWaterNATO.ttl>, <file://./CVEGenerated/CVEnumISMNonIC.ttl>, <file://./CVEGenerated/CVEnumISMNonUSControls.ttl>, <file://./CVEGenerated/CVEnumISMNotice.ttl>, <file://./CVEGenerated/CVEnumISMNoticeProse.ttl>, <file://./CVEGenerated/CVEnumISMPocType.ttl>, <file://./CVEGenerated/CVEnumISMSAR.ttl>, <file://./CVEGenerated/CVEnumISMSCIControls.ttl>, <file://./CVEGenerated/CVEnumISMSecondBannerLine.ttl>.
+    owl:imports <urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIOpen.ttl>, <urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIProtected.ttl>, <urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATOwnerProducer.ttl>, <urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISM25X.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMAtomicEnergyMarkings.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMCUIBasic.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMCUISpecified.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMClassificationAll.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMCompliesWith.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMDissem.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMExemptFrom.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMHighWaterNATO.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMNonIC.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMNonUSControls.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMNotice.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMNoticeProse.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMPocType.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMSAR.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMSCIControls.ttl>, <urn:us:gov:ic:./CVEGenerated/CVEnumISMSecondBannerLine.ttl>.
 ism:FGIsourceOpen a rdf:Property;
     rdfs:comment "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information is not concealed (also used for cases when the source is unknown)";
     rdfs:range ismcatfgio:CVEnumISMCATFGIOpenValues.

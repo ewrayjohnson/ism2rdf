@@ -48,15 +48,6 @@
       "skos:prefLabel": "NATO Atomal mark"
     },
     {
-      "@id": "ismnonus:NATO-BOHEMIA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismnonus:CVEnumISMNonUSControls"
-      },
-      "skos:notation": "NATO-BOHEMIA",
-      "skos:prefLabel": "NATO Bohemia mark"
-    },
-    {
       "@id": "ismnonus:NATO-BALK",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -64,6 +55,15 @@
       },
       "skos:notation": "NATO-BALK",
       "skos:prefLabel": "NATO Balk mark"
+    },
+    {
+      "@id": "ismnonus:NATO-BOHEMIA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonus:CVEnumISMNonUSControls"
+      },
+      "skos:notation": "NATO-BOHEMIA",
+      "skos:prefLabel": "NATO Bohemia mark"
     }
   ]
 }

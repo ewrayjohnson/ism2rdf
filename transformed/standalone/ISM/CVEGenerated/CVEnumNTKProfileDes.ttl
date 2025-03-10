@@ -1,29 +1,43 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumNTKProfileDes> a owl:Ontology.
-<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> dc:title "(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml";
-    a skos:ConceptScheme;
-    skos:hasTopConcept <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem>, <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere>, <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind>, <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role>.
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> a skos:ConceptScheme;
+  dc:title "(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml";
+  skos:hasTopConcept
+    <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem>,
+    <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere>,
+    <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind>,
+    <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role>.
+
 <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues> a rdfs:Datatype;
-    owl:oneOf "urn:us:gov:ic:ntk:profile:agencydissem", "urn:us:gov:ic:ntk:profile:datasphere", "urn:us:gov:ic:ntk:profile:grp-ind", "urn:us:gov:ic:ntk:profile:role".
+  owl:oneOf
+    "urn:us:gov:ic:ntk:profile:agencydissem",
+    "urn:us:gov:ic:ntk:profile:datasphere",
+    "urn:us:gov:ic:ntk:profile:grp-ind",
+    "urn:us:gov:ic:ntk:profile:role".
+
 <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem> a skos:Concept;
-    skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes>;
-    skos:notation "urn:us:gov:ic:ntk:profile:agencydissem";
-    skos:prefLabel "Agency Dissem".
+  skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes>;
+  skos:notation "urn:us:gov:ic:ntk:profile:agencydissem";
+  skos:prefLabel "Agency Dissem".
+
 <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere> a skos:Concept;
-    skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes>;
-    skos:notation "urn:us:gov:ic:ntk:profile:datasphere";
-    skos:prefLabel "Data Sphere".
+  skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes>;
+  skos:notation "urn:us:gov:ic:ntk:profile:datasphere";
+  skos:prefLabel "Data Sphere".
+
 <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind> a skos:Concept;
-    skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes>;
-    skos:notation "urn:us:gov:ic:ntk:profile:grp-ind";
-    skos:prefLabel "Group and Individual".
+  skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes>;
+  skos:notation "urn:us:gov:ic:ntk:profile:grp-ind";
+  skos:prefLabel "Group and Individual".
+
 <urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role> a skos:Concept;
-    skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes>;
-    skos:notation "urn:us:gov:ic:ntk:profile:role";
-    skos:prefLabel "ROLE".
+  skos:inScheme <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes>;
+  skos:notation "urn:us:gov:ic:ntk:profile:role";
+  skos:prefLabel "ROLE".
+
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumNTKProfileDes> a owl:Ontology;
+.

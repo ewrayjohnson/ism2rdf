@@ -1,1018 +1,1773 @@
-@prefix usaa: <urn:us:gov:ic:cvenum:usagency:agencyacronym#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix usaa: <urn:us:gov:ic:cvenum:usagency:agencyacronym#>.
 
-<urn:us:gov:ic:USAgency:CVEGenerated:CVEnumUSAgencyAcronym> a owl:Ontology.
-usaa:CVEnumUSAgencyAcronym dc:title "(U) All valid acronyms for use with USA publishing organizations/agencies/Cabinet Offices. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSAgencyAcronym.xml";
-    a skos:ConceptScheme;
-    skos:hasTopConcept <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ABMC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACCESS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACFR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACHP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACUS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ADF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.AMICC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.AMTRAK>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.AOC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ARC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ARCTIC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.BBG>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.BMGS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CAOC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CBO>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CCJJ>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CCR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CEA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFOC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFTC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CHCOC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CIA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CIOC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CIRF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CITA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CNCS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.COMP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CPSC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CRS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CSAC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CSHIB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CSOSA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DEA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DENALI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DFC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DHS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DIA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DNFSB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DNI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOD>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOE>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOJ>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOL>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOT>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DRBC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EAC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ED>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EEOC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EIBUS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EOP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EPA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ESC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FAC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FASAB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FBI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCIC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCSIC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FDIC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FEB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FEC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FERC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FFB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FFIEC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FGDC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FHRA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FICE>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FICMNEW>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FICSP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FLCTT>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FLICC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FLRA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FMC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FMCS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FMSHRC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FRS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FRTIB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FTC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.GAO>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.GPO>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.GSA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-ADM>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-AGR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-APP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-ARM>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-BUD>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-CAO>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-CHAP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-CLRK>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-EC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-EDW>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-E_C>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-FIN>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-FOR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-HIST>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-HLS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-JUD>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-LDRS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-LRC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-NAT>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-OGR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-OIG>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-OLC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-PAR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-RUL>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-SAA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-SCI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-SMB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-T_I>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-VET>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-W_M>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HELSINKI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HHS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HMM>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HPSCI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HSTSF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HUD>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IACB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IADRWG>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IAF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IBB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ICH>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ICPRB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IMCNHCC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IMLS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ITC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.J-JCP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.J-JCT>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.J-JEC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JBEA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JCLDS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JFSP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JMMFF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JUSFC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JWFFSB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.LOC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.LSC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MACPAC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MBCC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MCC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MKUF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MMC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MRC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MSPB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MedPAC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NARA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NASA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NBCFM>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCD>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCFRR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCPC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCUA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NEA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NEH>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NGA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NIGC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NLRB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NMB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NPF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NPPC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NRC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NRO>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NSA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NSF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NTSB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NWTRB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OGE>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OMB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ONCIX>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OPIC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OPM>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OSC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OSHRC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OVP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OWLC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OtherUSG>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PBGC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PCC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PEACE>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PRC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PRESIDIO>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.RISC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.RRB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-AGE>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-AGR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-APP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-ARM>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-BNK>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-BUD>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-CHAP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-COE>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-CST>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-ENR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-EPW>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-FIN>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-FOR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-HELP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-HSG>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-IND>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-JUD>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-LDRS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-MAJSEC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-MINSEC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-PAR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-R_A>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-SAA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-SEC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-SMB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-VET>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SBA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SCPS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SEC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SJI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SLT>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SMITH>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SRBC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSAB>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSCI>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.STATE>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TAP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TDA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TREAS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TVA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USAF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USAID>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USAOC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USBG>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USCG>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USCO>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USCP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USDA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USIP>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USMC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USN>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USPS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USSF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USTR>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USUN>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.VA>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.VDNC>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.VEF>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.WHCPS>, <urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.WHMO>.
+usaa:CVEnumUSAgencyAcronym a skos:ConceptScheme;
+  dc:title "(U) All valid acronyms for use with USA publishing organizations/agencies/Cabinet Offices. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSAgencyAcronym.xml";
+  skos:hasTopConcept
+    usaa:USA.ABMC,
+    usaa:USA.ACCESS,
+    usaa:USA.ACFR,
+    usaa:USA.ACHP,
+    usaa:USA.ACUS,
+    usaa:USA.ADF,
+    usaa:USA.AMICC,
+    usaa:USA.AMTRAK,
+    usaa:USA.AOC,
+    usaa:USA.ARC,
+    usaa:USA.ARCTIC,
+    usaa:USA.BBG,
+    usaa:USA.BMGS,
+    usaa:USA.CAOC,
+    usaa:USA.CBO,
+    usaa:USA.CCJJ,
+    usaa:USA.CCR,
+    usaa:USA.CEA,
+    usaa:USA.CFA,
+    usaa:USA.CFI,
+    usaa:USA.CFOC,
+    usaa:USA.CFTC,
+    usaa:USA.CHCOC,
+    usaa:USA.CIA,
+    usaa:USA.CIOC,
+    usaa:USA.CIRF,
+    usaa:USA.CITA,
+    usaa:USA.CNCS,
+    usaa:USA.COMP,
+    usaa:USA.CPSC,
+    usaa:USA.CRS,
+    usaa:USA.CSAC,
+    usaa:USA.CSHIB,
+    usaa:USA.CSOSA,
+    usaa:USA.DEA,
+    usaa:USA.DENALI,
+    usaa:USA.DFC,
+    usaa:USA.DHS,
+    usaa:USA.DIA,
+    usaa:USA.DNFSB,
+    usaa:USA.DNI,
+    usaa:USA.DOC,
+    usaa:USA.DOD,
+    usaa:USA.DOE,
+    usaa:USA.DOI,
+    usaa:USA.DOJ,
+    usaa:USA.DOL,
+    usaa:USA.DOT,
+    usaa:USA.DRBC,
+    usaa:USA.EAC,
+    usaa:USA.ED,
+    usaa:USA.EEOC,
+    usaa:USA.EIBUS,
+    usaa:USA.EOP,
+    usaa:USA.EPA,
+    usaa:USA.ESC,
+    usaa:USA.FAC,
+    usaa:USA.FASAB,
+    usaa:USA.FBI,
+    usaa:USA.FCA,
+    usaa:USA.FCC,
+    usaa:USA.FCIC,
+    usaa:USA.FCSIC,
+    usaa:USA.FDIC,
+    usaa:USA.FEB,
+    usaa:USA.FEC,
+    usaa:USA.FERC,
+    usaa:USA.FFB,
+    usaa:USA.FFIEC,
+    usaa:USA.FGDC,
+    usaa:USA.FHRA,
+    usaa:USA.FICE,
+    usaa:USA.FICMNEW,
+    usaa:USA.FICSP,
+    usaa:USA.FLCTT,
+    usaa:USA.FLICC,
+    usaa:USA.FLRA,
+    usaa:USA.FMC,
+    usaa:USA.FMCS,
+    usaa:USA.FMSHRC,
+    usaa:USA.FRS,
+    usaa:USA.FRTIB,
+    usaa:USA.FTC,
+    usaa:USA.GAO,
+    usaa:USA.GPO,
+    usaa:USA.GSA,
+    usaa:USA.H-ADM,
+    usaa:USA.H-AGR,
+    usaa:USA.H-APP,
+    usaa:USA.H-ARM,
+    usaa:USA.H-BUD,
+    usaa:USA.H-CAO,
+    usaa:USA.H-CHAP,
+    usaa:USA.H-CLRK,
+    usaa:USA.H-E_C,
+    usaa:USA.H-EC,
+    usaa:USA.H-EDW,
+    usaa:USA.H-FIN,
+    usaa:USA.H-FOR,
+    usaa:USA.H-HIST,
+    usaa:USA.H-HLS,
+    usaa:USA.H-JUD,
+    usaa:USA.H-LDRS,
+    usaa:USA.H-LRC,
+    usaa:USA.H-NAT,
+    usaa:USA.H-OGR,
+    usaa:USA.H-OIG,
+    usaa:USA.H-OLC,
+    usaa:USA.H-PAR,
+    usaa:USA.H-RUL,
+    usaa:USA.H-SAA,
+    usaa:USA.H-SCI,
+    usaa:USA.H-SMB,
+    usaa:USA.H-T_I,
+    usaa:USA.H-VET,
+    usaa:USA.H-W_M,
+    usaa:USA.HELSINKI,
+    usaa:USA.HHS,
+    usaa:USA.HMM,
+    usaa:USA.HPSCI,
+    usaa:USA.HSTSF,
+    usaa:USA.HUD,
+    usaa:USA.IACB,
+    usaa:USA.IADRWG,
+    usaa:USA.IAF,
+    usaa:USA.IBB,
+    usaa:USA.ICH,
+    usaa:USA.ICPRB,
+    usaa:USA.IMCNHCC,
+    usaa:USA.IMLS,
+    usaa:USA.ITC,
+    usaa:USA.J-JCP,
+    usaa:USA.J-JCT,
+    usaa:USA.J-JEC,
+    usaa:USA.JBEA,
+    usaa:USA.JCLDS,
+    usaa:USA.JFSP,
+    usaa:USA.JMMFF,
+    usaa:USA.JUSFC,
+    usaa:USA.JWFFSB,
+    usaa:USA.LOC,
+    usaa:USA.LSC,
+    usaa:USA.MACPAC,
+    usaa:USA.MBCC,
+    usaa:USA.MCC,
+    usaa:USA.MedPAC,
+    usaa:USA.MKUF,
+    usaa:USA.MMC,
+    usaa:USA.MRC,
+    usaa:USA.MSPB,
+    usaa:USA.NARA,
+    usaa:USA.NASA,
+    usaa:USA.NBCFM,
+    usaa:USA.NCD,
+    usaa:USA.NCFRR,
+    usaa:USA.NCPC,
+    usaa:USA.NCUA,
+    usaa:USA.NEA,
+    usaa:USA.NEH,
+    usaa:USA.NGA,
+    usaa:USA.NIGC,
+    usaa:USA.NLRB,
+    usaa:USA.NMB,
+    usaa:USA.NPF,
+    usaa:USA.NPPC,
+    usaa:USA.NRC,
+    usaa:USA.NRO,
+    usaa:USA.NSA,
+    usaa:USA.NSF,
+    usaa:USA.NTSB,
+    usaa:USA.NWTRB,
+    usaa:USA.OGE,
+    usaa:USA.OMB,
+    usaa:USA.ONCIX,
+    usaa:USA.OPIC,
+    usaa:USA.OPM,
+    usaa:USA.OSC,
+    usaa:USA.OSHRC,
+    usaa:USA.OtherUSG,
+    usaa:USA.OVP,
+    usaa:USA.OWLC,
+    usaa:USA.PBGC,
+    usaa:USA.PCC,
+    usaa:USA.PEACE,
+    usaa:USA.PRC,
+    usaa:USA.PRESIDIO,
+    usaa:USA.RISC,
+    usaa:USA.RRB,
+    usaa:USA.S-AGE,
+    usaa:USA.S-AGR,
+    usaa:USA.S-APP,
+    usaa:USA.S-ARM,
+    usaa:USA.S-BNK,
+    usaa:USA.S-BUD,
+    usaa:USA.S-CHAP,
+    usaa:USA.S-COE,
+    usaa:USA.S-CST,
+    usaa:USA.S-ENR,
+    usaa:USA.S-EPW,
+    usaa:USA.S-FIN,
+    usaa:USA.S-FOR,
+    usaa:USA.S-HELP,
+    usaa:USA.S-HSG,
+    usaa:USA.S-IND,
+    usaa:USA.S-JUD,
+    usaa:USA.S-LDRS,
+    usaa:USA.S-MAJSEC,
+    usaa:USA.S-MINSEC,
+    usaa:USA.S-PAR,
+    usaa:USA.S-R_A,
+    usaa:USA.S-SAA,
+    usaa:USA.S-SEC,
+    usaa:USA.S-SMB,
+    usaa:USA.S-VET,
+    usaa:USA.SBA,
+    usaa:USA.SCPS,
+    usaa:USA.SEC,
+    usaa:USA.SJI,
+    usaa:USA.SLT,
+    usaa:USA.SMITH,
+    usaa:USA.SRBC,
+    usaa:USA.SSA,
+    usaa:USA.SSAB,
+    usaa:USA.SSCI,
+    usaa:USA.SSS,
+    usaa:USA.STATE,
+    usaa:USA.TAP,
+    usaa:USA.TDA,
+    usaa:USA.TREAS,
+    usaa:USA.TVA,
+    usaa:USA.USA,
+    usaa:USA.USAF,
+    usaa:USA.USAID,
+    usaa:USA.USAOC,
+    usaa:USA.USBG,
+    usaa:USA.USCG,
+    usaa:USA.USCO,
+    usaa:USA.USCP,
+    usaa:USA.USDA,
+    usaa:USA.USIP,
+    usaa:USA.USMC,
+    usaa:USA.USN,
+    usaa:USA.USPS,
+    usaa:USA.USSF,
+    usaa:USA.USTR,
+    usaa:USA.USUN,
+    usaa:USA.VA,
+    usaa:USA.VDNC,
+    usaa:USA.VEF,
+    usaa:USA.WHCPS,
+    usaa:USA.WHMO.
+
 usaa:CVEnumUSAgencyAcronymValues a rdfs:Datatype;
-    owl:oneOf "USA.ABMC", "USA.ACCESS", "USA.ACFR", "USA.ACHP", "USA.ACUS", "USA.ADF", "USA.AMICC", "USA.AMTRAK", "USA.AOC", "USA.ARC", "USA.ARCTIC", "USA.BBG", "USA.BMGS", "USA.CAOC", "USA.CBO", "USA.CCJJ", "USA.CCR", "USA.CEA", "USA.CFA", "USA.CFI", "USA.CFOC", "USA.CFTC", "USA.CHCOC", "USA.CIA", "USA.CIOC", "USA.CIRF", "USA.CITA", "USA.CNCS", "USA.COMP", "USA.CPSC", "USA.CRS", "USA.CSAC", "USA.CSHIB", "USA.CSOSA", "USA.DEA", "USA.DENALI", "USA.DFC", "USA.DHS", "USA.DIA", "USA.DNFSB", "USA.DNI", "USA.DOC", "USA.DOD", "USA.DOE", "USA.DOI", "USA.DOJ", "USA.DOL", "USA.DOT", "USA.DRBC", "USA.EAC", "USA.ED", "USA.EEOC", "USA.EIBUS", "USA.EOP", "USA.EPA", "USA.ESC", "USA.FAC", "USA.FASAB", "USA.FBI", "USA.FCA", "USA.FCC", "USA.FCIC", "USA.FCSIC", "USA.FDIC", "USA.FEB", "USA.FEC", "USA.FERC", "USA.FFB", "USA.FFIEC", "USA.FGDC", "USA.FHRA", "USA.FICE", "USA.FICMNEW", "USA.FICSP", "USA.FLCTT", "USA.FLICC", "USA.FLRA", "USA.FMC", "USA.FMCS", "USA.FMSHRC", "USA.FRS", "USA.FRTIB", "USA.FTC", "USA.GAO", "USA.GPO", "USA.GSA", "USA.H-ADM", "USA.H-AGR", "USA.H-APP", "USA.H-ARM", "USA.H-BUD", "USA.H-CAO", "USA.H-CHAP", "USA.H-CLRK", "USA.H-EC", "USA.H-EDW", "USA.H-E_C", "USA.H-FIN", "USA.H-FOR", "USA.H-HIST", "USA.H-HLS", "USA.H-JUD", "USA.H-LDRS", "USA.H-LRC", "USA.H-NAT", "USA.H-OGR", "USA.H-OIG", "USA.H-OLC", "USA.H-PAR", "USA.H-RUL", "USA.H-SAA", "USA.H-SCI", "USA.H-SMB", "USA.H-T_I", "USA.H-VET", "USA.H-W_M", "USA.HELSINKI", "USA.HHS", "USA.HMM", "USA.HPSCI", "USA.HSTSF", "USA.HUD", "USA.IACB", "USA.IADRWG", "USA.IAF", "USA.IBB", "USA.ICH", "USA.ICPRB", "USA.IMCNHCC", "USA.IMLS", "USA.ITC", "USA.J-JCP", "USA.J-JCT", "USA.J-JEC", "USA.JBEA", "USA.JCLDS", "USA.JFSP", "USA.JMMFF", "USA.JUSFC", "USA.JWFFSB", "USA.LOC", "USA.LSC", "USA.MACPAC", "USA.MBCC", "USA.MCC", "USA.MKUF", "USA.MMC", "USA.MRC", "USA.MSPB", "USA.MedPAC", "USA.NARA", "USA.NASA", "USA.NBCFM", "USA.NCD", "USA.NCFRR", "USA.NCPC", "USA.NCUA", "USA.NEA", "USA.NEH", "USA.NGA", "USA.NIGC", "USA.NLRB", "USA.NMB", "USA.NPF", "USA.NPPC", "USA.NRC", "USA.NRO", "USA.NSA", "USA.NSF", "USA.NTSB", "USA.NWTRB", "USA.OGE", "USA.OMB", "USA.ONCIX", "USA.OPIC", "USA.OPM", "USA.OSC", "USA.OSHRC", "USA.OVP", "USA.OWLC", "USA.OtherUSG", "USA.PBGC", "USA.PCC", "USA.PEACE", "USA.PRC", "USA.PRESIDIO", "USA.RISC", "USA.RRB", "USA.S-AGE", "USA.S-AGR", "USA.S-APP", "USA.S-ARM", "USA.S-BNK", "USA.S-BUD", "USA.S-CHAP", "USA.S-COE", "USA.S-CST", "USA.S-ENR", "USA.S-EPW", "USA.S-FIN", "USA.S-FOR", "USA.S-HELP", "USA.S-HSG", "USA.S-IND", "USA.S-JUD", "USA.S-LDRS", "USA.S-MAJSEC", "USA.S-MINSEC", "USA.S-PAR", "USA.S-R_A", "USA.S-SAA", "USA.S-SEC", "USA.S-SMB", "USA.S-VET", "USA.SBA", "USA.SCPS", "USA.SEC", "USA.SJI", "USA.SLT", "USA.SMITH", "USA.SRBC", "USA.SSA", "USA.SSAB", "USA.SSCI", "USA.SSS", "USA.STATE", "USA.TAP", "USA.TDA", "USA.TREAS", "USA.TVA", "USA.USA", "USA.USAF", "USA.USAID", "USA.USAOC", "USA.USBG", "USA.USCG", "USA.USCO", "USA.USCP", "USA.USDA", "USA.USIP", "USA.USMC", "USA.USN", "USA.USPS", "USA.USSF", "USA.USTR", "USA.USUN", "USA.VA", "USA.VDNC", "USA.VEF", "USA.WHCPS", "USA.WHMO".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ABMC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ABMC";
-    skos:prefLabel "American Battle Monuments Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACCESS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ACCESS";
-    skos:prefLabel "Architectural and Transportation Barriers Compliance Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACFR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ACFR";
-    skos:prefLabel "Administrative Committee of the Federal Register".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACHP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ACHP";
-    skos:prefLabel "Advisory Council on Historic Preservation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ACUS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ACUS";
-    skos:prefLabel "Administrative Conference of the United States".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ADF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ADF";
-    skos:prefLabel "African Development Foundation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.AMICC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.AMICC";
-    skos:prefLabel "Arthritis and Musculoskeletal Interagency Coordinating Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.AMTRAK> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.AMTRAK";
-    skos:prefLabel "National Railroad Passenger Corporation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.AOC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.AOC";
-    skos:prefLabel "Architect of the Capitol".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ARC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ARC";
-    skos:prefLabel "Appalachian Regional Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ARCTIC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ARCTIC";
-    skos:prefLabel "Arctic Research Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.BBG> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.BBG";
-    skos:prefLabel "Broadcasting Board of Governors".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.BMGS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.BMGS";
-    skos:prefLabel "Barry M. Goldwater Scholarship and Excellence in Education Foundation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CAOC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CAOC";
-    skos:prefLabel "Chief Acquisition Officers Council".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CBO> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CBO";
-    skos:prefLabel "Congressional Budget Office".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CCJJ> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CCJJ";
-    skos:prefLabel "Coordinating Council on Juvenile Justice and Delinquency Prevention".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CCR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CCR";
-    skos:prefLabel "Commission on Civil Rights".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CEA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CEA";
-    skos:prefLabel "United States Council of Economic Advisers".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CFA";
-    skos:prefLabel "Commission of Fine Arts".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CFI";
-    skos:prefLabel "Committee on Foreign Investments in the United States".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFOC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CFOC";
-    skos:prefLabel "Chief Financial Officers Council".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CFTC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CFTC";
-    skos:prefLabel "Commodity Futures Trading Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CHCOC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CHCOC";
-    skos:prefLabel "Chief Human Capital Officers Council".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CIA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CIA";
-    skos:prefLabel "Central Intelligence Agency".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CIOC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CIOC";
-    skos:prefLabel "Chief Information Officers Council".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CIRF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CIRF";
-    skos:prefLabel "Commission on International Religious Freedom".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CITA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CITA";
-    skos:prefLabel "Committee for the Implementation of Textile Agreements".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CNCS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CNCS";
-    skos:prefLabel "Corporation for National and Community Service".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.COMP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.COMP";
-    skos:prefLabel "Office of Compliance".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CPSC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CPSC";
-    skos:prefLabel "Consumer Product Safety Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CRS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CRS";
-    skos:prefLabel "Congressional Research Service".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CSAC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CSAC";
-    skos:prefLabel "Citizens' Stamp Advisory Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CSHIB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CSHIB";
-    skos:prefLabel "Chemical Safety and Hazard Investigation Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.CSOSA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.CSOSA";
-    skos:prefLabel "Court Services and Offender Supervision Agency for the District of Columbia".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DEA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DEA";
-    skos:prefLabel "Drug Enforcement Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DENALI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DENALI";
-    skos:prefLabel "Denali Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DFC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DFC";
-    skos:prefLabel "U.S. International Development Finance Corporation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DHS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DHS";
-    skos:prefLabel "Department of Homeland Security".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DIA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DIA";
-    skos:prefLabel "Defense Intelligence Agency".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DNFSB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DNFSB";
-    skos:prefLabel "Defense Nuclear Facilities Safety Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DNI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DNI";
-    skos:prefLabel "Office of the Director of National Intelligence".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DOC";
-    skos:prefLabel "Department of Commerce".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOD> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DOD";
-    skos:prefLabel "Department of Defense".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOE> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DOE";
-    skos:prefLabel "Department of Energy".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DOI";
-    skos:prefLabel "Department of the Interior".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOJ> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DOJ";
-    skos:prefLabel "Department of Justice".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOL> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DOL";
-    skos:prefLabel "Department of Labor".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DOT> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DOT";
-    skos:prefLabel "Department of Transportation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.DRBC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.DRBC";
-    skos:prefLabel "Delaware River Basin Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EAC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.EAC";
-    skos:prefLabel "United States Election Assistance Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ED> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ED";
-    skos:prefLabel "Department of Education".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EEOC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.EEOC";
-    skos:prefLabel "Equal Employment Opportunity Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EIBUS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.EIBUS";
-    skos:prefLabel "Export-Import Bank of the United States".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EOP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.EOP";
-    skos:prefLabel "Executive Office of the President".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.EPA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.EPA";
-    skos:prefLabel "Environmental Protection Agency".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ESC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ESC";
-    skos:prefLabel "Endangered Species Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FAC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FAC";
-    skos:prefLabel "Federal Advisory Committees".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FASAB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FASAB";
-    skos:prefLabel "Federal Accounting Standards Advisory Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FBI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FBI";
-    skos:prefLabel "Federal Bureau of Investigation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FCA";
-    skos:prefLabel "Farm Credit Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FCC";
-    skos:prefLabel "Federal Communications Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCIC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FCIC";
-    skos:prefLabel "Financial Crisis Inquiry Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FCSIC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FCSIC";
-    skos:prefLabel "Farm Credit System Insurance Corporation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FDIC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FDIC";
-    skos:prefLabel "Federal Deposit Insurance Corporation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FEB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FEB";
-    skos:prefLabel "Federal Executive Boards".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FEC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FEC";
-    skos:prefLabel "Federal Election Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FERC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FERC";
-    skos:prefLabel "Federal Energy Regulatory Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FFB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FFB";
-    skos:prefLabel "Federal Financing Bank".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FFIEC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FFIEC";
-    skos:prefLabel "Federal Financial Institutions Examination Council".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FGDC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FGDC";
-    skos:prefLabel "Federal Geographic Data Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FHRA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FHRA";
-    skos:prefLabel "Federal Housing Finance Agency".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FICE> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FICE";
-    skos:prefLabel "Federal Interagency Committee on Education".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FICMNEW> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FICMNEW";
-    skos:prefLabel "Federal Interagency Committee for the Management of Noxious and Exotic Weeds".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FICSP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FICSP";
-    skos:prefLabel "Federal Interagency Council on Statistical Policy".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FLCTT> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FLCTT";
-    skos:prefLabel "Federal Laboratory Consortium for Technology Transfer".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FLICC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FLICC";
-    skos:prefLabel "Federal Library and Information Center Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FLRA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FLRA";
-    skos:prefLabel "Federal Labor Relations Authority".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FMC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FMC";
-    skos:prefLabel "Federal Maritime Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FMCS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FMCS";
-    skos:prefLabel "Federal Mediation and Conciliation Service".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FMSHRC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FMSHRC";
-    skos:prefLabel "Federal Mine Safety and Health Review Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FRS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FRS";
-    skos:prefLabel "Federal Reserve System".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FRTIB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FRTIB";
-    skos:prefLabel "Federal Retirement Thrift Investment Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.FTC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.FTC";
-    skos:prefLabel "Federal Trade Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.GAO> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.GAO";
-    skos:prefLabel "Government Accountability Office".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.GPO> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.GPO";
-    skos:prefLabel "Government Printing Office".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.GSA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.GSA";
-    skos:prefLabel "General Services Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-ADM> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-ADM";
-    skos:prefLabel "Committee on House Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-AGR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-AGR";
-    skos:prefLabel "House Committee on Agriculture".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-APP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-APP";
-    skos:prefLabel "House Committee on Appropriations".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-ARM> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-ARM";
-    skos:prefLabel "House Armed Services Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-BUD> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-BUD";
-    skos:prefLabel "House Committee on the Budget".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-CAO> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-CAO";
-    skos:prefLabel "House Office of the Chief Administrative Officer".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-CHAP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-CHAP";
-    skos:prefLabel "House Office of the Chaplain".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-CLRK> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-CLRK";
-    skos:prefLabel "House Office of the Clerk".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-EC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-EC";
-    skos:prefLabel "House Committee on Ethics".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-EDW> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-EDW";
-    skos:prefLabel "House Education and the Workforce Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-E_C> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-E_C";
-    skos:prefLabel "House Energy and Commerce Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-FIN> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-FIN";
-    skos:prefLabel "House Committee on Financial Services".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-FOR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-FOR";
-    skos:prefLabel "House Committee on Foreign Affairs".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-HIST> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-HIST";
-    skos:prefLabel "House Office of the Historian".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-HLS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-HLS";
-    skos:prefLabel "House Committee on Homeland Security".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-JUD> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-JUD";
-    skos:prefLabel "House Judiciary Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-LDRS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-LDRS";
-    skos:prefLabel "House Leadership".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-LRC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-LRC";
-    skos:prefLabel "House Office of the Law Revision Counsel".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-NAT> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-NAT";
-    skos:prefLabel "House Committee on Natural Resources".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-OGR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-OGR";
-    skos:prefLabel "House Committee on Oversight and Government Reform".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-OIG> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-OIG";
-    skos:prefLabel "House Office of the Inspector General".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-OLC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-OLC";
-    skos:prefLabel "House Office of the Legislative Counsel".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-PAR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-PAR";
-    skos:prefLabel "House Office of the Parliamentarian".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-RUL> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-RUL";
-    skos:prefLabel "House Committee on Rules".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-SAA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-SAA";
-    skos:prefLabel "House Office of the Sergeant at Arms".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-SCI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-SCI";
-    skos:prefLabel "House Committee on Science, Space, and Technology".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-SMB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-SMB";
-    skos:prefLabel "House Committee on Small Business".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-T_I> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-T_I";
-    skos:prefLabel "House Transportation and Infrastructure Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-VET> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-VET";
-    skos:prefLabel "House Committee on Veterans’ Affairs".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.H-W_M> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.H-W_M";
-    skos:prefLabel "House Committee on Ways and Means".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HELSINKI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.HELSINKI";
-    skos:prefLabel "Commission on Security and Cooperation in Europe".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HHS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.HHS";
-    skos:prefLabel "Department of Health and Human Services".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HMM> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.HMM";
-    skos:prefLabel "United States Holocaust Memorial Museum".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HPSCI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.HPSCI";
-    skos:prefLabel "House Permanent Select Committee on Intelligence".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HSTSF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.HSTSF";
-    skos:prefLabel "Harry S. Truman Scholarship Foundation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.HUD> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.HUD";
-    skos:prefLabel "Department of Housing and Urban Development".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IACB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.IACB";
-    skos:prefLabel "Indian Arts and Crafts Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IADRWG> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.IADRWG";
-    skos:prefLabel "Interagency Alternative Dispute Resolution Working Group".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IAF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.IAF";
-    skos:prefLabel "Inter-American Foundation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IBB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.IBB";
-    skos:prefLabel "International Broadcasting Bureau".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ICH> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ICH";
-    skos:prefLabel "Interagency Council on Homelessness".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ICPRB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ICPRB";
-    skos:prefLabel "Interstate Commission on the Potomac River Basin".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IMCNHCC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.IMCNHCC";
-    skos:prefLabel "Illinois and Michigan Canal National Heritage Corridor Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.IMLS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.IMLS";
-    skos:prefLabel "Institute of Museum and Library Services".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ITC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ITC";
-    skos:prefLabel "United States International Trade Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.J-JCP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.J-JCP";
-    skos:prefLabel "Joint Committee on Printing".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.J-JCT> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.J-JCT";
-    skos:prefLabel "Joint Committee on Taxation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.J-JEC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.J-JEC";
-    skos:prefLabel "Joint Economic Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JBEA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.JBEA";
-    skos:prefLabel "Joint Board for the Enrollment of Actuaries".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JCLDS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.JCLDS";
-    skos:prefLabel "Joint Committee on the Library".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JFSP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.JFSP";
-    skos:prefLabel "Joint Fire Science Program".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JMMFF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.JMMFF";
-    skos:prefLabel "James Madison Memorial Fellowship Foundation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JUSFC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.JUSFC";
-    skos:prefLabel "Japan-United States Friendship Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.JWFFSB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.JWFFSB";
-    skos:prefLabel "J. William Fulbright Foreign Scholarship Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.LOC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.LOC";
-    skos:prefLabel "Library of Congress".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.LSC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.LSC";
-    skos:prefLabel "Legal Services Corporation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MACPAC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.MACPAC";
-    skos:prefLabel "Medicaid and CHIP Payment and Access Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MBCC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.MBCC";
-    skos:prefLabel "Migratory Bird Conservation Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MCC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.MCC";
-    skos:prefLabel "Millennium Challenge Corporation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MKUF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.MKUF";
-    skos:prefLabel "Morris K. Udall Foundation: Scholarship and Excellence in National Environmental Policy".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MMC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.MMC";
-    skos:prefLabel "Marine Mammal Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MRC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.MRC";
-    skos:prefLabel "Mississippi River Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MSPB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.MSPB";
-    skos:prefLabel "Merit Systems Protection Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.MedPAC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.MedPAC";
-    skos:prefLabel "Medicare Payment Advisory Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NARA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NARA";
-    skos:prefLabel "National Archives and Records Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NASA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NASA";
-    skos:prefLabel "National Aeronautics and Space Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NBCFM> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NBCFM";
-    skos:prefLabel "National Bipartisan Commission on the Future of Medicare".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCD> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NCD";
-    skos:prefLabel "National Council on Disability".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCFRR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NCFRR";
-    skos:prefLabel "National Commission on Fiscal Responsibility and Reform".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCPC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NCPC";
-    skos:prefLabel "National Capital Planning Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NCUA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NCUA";
-    skos:prefLabel "National Credit Union Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NEA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NEA";
-    skos:prefLabel "National Endowment for the Arts".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NEH> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NEH";
-    skos:prefLabel "National Endowment for the Humanities".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NGA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NGA";
-    skos:prefLabel "National Geospatial-Intelligence Agency".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NIGC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NIGC";
-    skos:prefLabel "National Indian Gaming Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NLRB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NLRB";
-    skos:prefLabel "National Labor Relations Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NMB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NMB";
-    skos:prefLabel "National Mediation Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NPF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NPF";
-    skos:prefLabel "National Park Foundation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NPPC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NPPC";
-    skos:prefLabel "Northwest Power Planning Council".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NRC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NRC";
-    skos:prefLabel "Nuclear Regulatory Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NRO> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NRO";
-    skos:prefLabel "National Reconnaissance Office".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NSA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NSA";
-    skos:prefLabel "National Security Agency".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NSF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NSF";
-    skos:prefLabel "National Science Foundation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NTSB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NTSB";
-    skos:prefLabel "National Transportation Safety Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.NWTRB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.NWTRB";
-    skos:prefLabel "Nuclear Waste Technical Review Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OGE> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.OGE";
-    skos:prefLabel "Office of Government Ethics".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OMB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.OMB";
-    skos:prefLabel "Office of Management and Budget".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.ONCIX> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.ONCIX";
-    skos:prefLabel "Office of the National Counterintelligence Executive".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OPIC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.OPIC";
-    skos:prefLabel "Overseas Private Investment Corporation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OPM> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.OPM";
-    skos:prefLabel "Office of Personnel Management".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OSC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.OSC";
-    skos:prefLabel "Office of Special Counsel".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OSHRC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.OSHRC";
-    skos:prefLabel "Occupational Safety and Health Review Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OVP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.OVP";
-    skos:prefLabel "Office of the Vice President".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OWLC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.OWLC";
-    skos:prefLabel "Open World Leadership Center".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.OtherUSG> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.OtherUSG";
-    skos:prefLabel "Other United State Federal Government".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PBGC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.PBGC";
-    skos:prefLabel "Pension Benefit Guaranty Corporation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PCC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.PCC";
-    skos:prefLabel "Panama Canal Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PEACE> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.PEACE";
-    skos:prefLabel "Peace Corps".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PRC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.PRC";
-    skos:prefLabel "Postal Regulatory Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.PRESIDIO> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.PRESIDIO";
-    skos:prefLabel "Presidio Trust".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.RISC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.RISC";
-    skos:prefLabel "Regulatory Information Service Center".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.RRB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.RRB";
-    skos:prefLabel "Railroad Retirement Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-AGE> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-AGE";
-    skos:prefLabel "Senate Special Committee on Aging".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-AGR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-AGR";
-    skos:prefLabel "Senate Committee on Agriculture, Nutrition, and Forestry".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-APP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-APP";
-    skos:prefLabel "Senate Committee on Appropriations".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-ARM> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-ARM";
-    skos:prefLabel "Senate Committee on Armed Services".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-BNK> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-BNK";
-    skos:prefLabel "Senate Committee on Banking, Housing, and Urban Affairs".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-BUD> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-BUD";
-    skos:prefLabel "Senate Budget Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-CHAP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-CHAP";
-    skos:prefLabel "Senate Office of the Chaplain".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-COE> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-COE";
-    skos:prefLabel "Senate Select Committee on Ethics".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-CST> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-CST";
-    skos:prefLabel "Senate Committee on Commerce, Science, and Transportation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-ENR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-ENR";
-    skos:prefLabel "Senate Committee on Energy and Natural Resources".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-EPW> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-EPW";
-    skos:prefLabel "Senate Committee on Environment and Public Works".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-FIN> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-FIN";
-    skos:prefLabel "Senate Committee on Finance".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-FOR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-FOR";
-    skos:prefLabel "Senate Committee on Foreign Relations".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-HELP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-HELP";
-    skos:prefLabel "Senate Committee on Health, Education, Labor, and Pensions".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-HSG> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-HSG";
-    skos:prefLabel "Senate Committee on Homeland Security and Governmental Affairs".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-IND> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-IND";
-    skos:prefLabel "Senate Committee on Indian Affairs".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-JUD> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-JUD";
-    skos:prefLabel "Senate Committee on the Judiciary".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-LDRS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-LDRS";
-    skos:prefLabel "Senate Leadership".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-MAJSEC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-MAJSEC";
-    skos:prefLabel "Senate Office of the Secretary for the Majority".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-MINSEC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-MINSEC";
-    skos:prefLabel "Senate Office of the Secretary for the Minority".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-PAR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-PAR";
-    skos:prefLabel "Senate Office of the Parliamentarian".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-R_A> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-R_A";
-    skos:prefLabel "Senate Committee on Rules and Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-SAA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-SAA";
-    skos:prefLabel "Senate Office of the Sergeant at Arms".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-SEC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-SEC";
-    skos:prefLabel "Office of the Secretary of the Senate".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-SMB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-SMB";
-    skos:prefLabel "Senate Committee on Small Business and Entrepreneurship".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.S-VET> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.S-VET";
-    skos:prefLabel "Senate Committee on Veterans’ Affairs".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SBA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SBA";
-    skos:prefLabel "Small Business Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SCPS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SCPS";
-    skos:prefLabel "Stennis Center for Public Service".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SEC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SEC";
-    skos:prefLabel "Securities and Exchange Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SJI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SJI";
-    skos:prefLabel "State Justice Institute".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SLT> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SLT";
-    skos:prefLabel "State, Local, Tribal Government".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SMITH> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SMITH";
-    skos:prefLabel "Smithsonian Institution".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SRBC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SRBC";
-    skos:prefLabel "Susquehanna River Basin Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SSA";
-    skos:prefLabel "Social Security Administration".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSAB> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SSAB";
-    skos:prefLabel "Social Security Advisory Board".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSCI> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SSCI";
-    skos:prefLabel "Senate Select Committee on Intelligence".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.SSS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.SSS";
-    skos:prefLabel "Selective Service System".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.STATE> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.STATE";
-    skos:prefLabel "Department of State".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TAP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.TAP";
-    skos:prefLabel "Taxpayer Advocacy Panel".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TDA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.TDA";
-    skos:prefLabel "U.S. Trade and Development Agency".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TREAS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.TREAS";
-    skos:prefLabel "Department of the Treasury".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.TVA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.TVA";
-    skos:prefLabel "Tennessee Valley Authority".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USA";
-    skos:prefLabel "US Army".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USAF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USAF";
-    skos:prefLabel "US Air Force".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USAID> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USAID";
-    skos:prefLabel "United States Agency for International Development".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USAOC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USAOC";
-    skos:prefLabel "U.S. AbilityOne Commission".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USBG> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USBG";
-    skos:prefLabel "U.S. Botanic Garden".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USCG> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USCG";
-    skos:prefLabel "US Coast Guard".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USCO> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USCO";
-    skos:prefLabel "Copyright Office".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USCP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USCP";
-    skos:prefLabel "U.S. Capitol Police".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USDA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USDA";
-    skos:prefLabel "Department of Agriculture".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USIP> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USIP";
-    skos:prefLabel "United States Institute of Peace".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USMC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USMC";
-    skos:prefLabel "US Marine Corps".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USN> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USN";
-    skos:prefLabel "US Navy".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USPS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USPS";
-    skos:prefLabel "United States Postal Service".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USSF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USSF";
-    skos:prefLabel "United States Space Force".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USTR> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USTR";
-    skos:prefLabel "United States Office of the Trade Representative".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.USUN> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.USUN";
-    skos:prefLabel "United States Mission to the United Nations".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.VA> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.VA";
-    skos:prefLabel "Department of Veterans Affairs".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.VDNC> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.VDNC";
-    skos:prefLabel "Veterans Day National Committee".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.VEF> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.VEF";
-    skos:prefLabel "Vietnam Educational Foundation".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.WHCPS> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.WHCPS";
-    skos:prefLabel "White House Commission on Presidential Scholars: Presidential Scholars Program".
-<urn:us:gov:ic:cvenum:usagency:agencyacronym#USA.WHMO> a skos:Concept;
-    skos:inScheme usaa:CVEnumUSAgencyAcronym;
-    skos:notation "USA.WHMO";
-    skos:prefLabel "White House Military Office".
+  owl:oneOf
+    "USA.ABMC",
+    "USA.ACCESS",
+    "USA.ACFR",
+    "USA.ACHP",
+    "USA.ACUS",
+    "USA.ADF",
+    "USA.AMICC",
+    "USA.AMTRAK",
+    "USA.AOC",
+    "USA.ARC",
+    "USA.ARCTIC",
+    "USA.BBG",
+    "USA.BMGS",
+    "USA.CAOC",
+    "USA.CBO",
+    "USA.CCJJ",
+    "USA.CCR",
+    "USA.CEA",
+    "USA.CFA",
+    "USA.CFI",
+    "USA.CFOC",
+    "USA.CFTC",
+    "USA.CHCOC",
+    "USA.CIA",
+    "USA.CIOC",
+    "USA.CIRF",
+    "USA.CITA",
+    "USA.CNCS",
+    "USA.COMP",
+    "USA.CPSC",
+    "USA.CRS",
+    "USA.CSAC",
+    "USA.CSHIB",
+    "USA.CSOSA",
+    "USA.DEA",
+    "USA.DENALI",
+    "USA.DFC",
+    "USA.DHS",
+    "USA.DIA",
+    "USA.DNFSB",
+    "USA.DNI",
+    "USA.DOC",
+    "USA.DOD",
+    "USA.DOE",
+    "USA.DOI",
+    "USA.DOJ",
+    "USA.DOL",
+    "USA.DOT",
+    "USA.DRBC",
+    "USA.EAC",
+    "USA.ED",
+    "USA.EEOC",
+    "USA.EIBUS",
+    "USA.EOP",
+    "USA.EPA",
+    "USA.ESC",
+    "USA.FAC",
+    "USA.FASAB",
+    "USA.FBI",
+    "USA.FCA",
+    "USA.FCC",
+    "USA.FCIC",
+    "USA.FCSIC",
+    "USA.FDIC",
+    "USA.FEB",
+    "USA.FEC",
+    "USA.FERC",
+    "USA.FFB",
+    "USA.FFIEC",
+    "USA.FGDC",
+    "USA.FHRA",
+    "USA.FICE",
+    "USA.FICMNEW",
+    "USA.FICSP",
+    "USA.FLCTT",
+    "USA.FLICC",
+    "USA.FLRA",
+    "USA.FMC",
+    "USA.FMCS",
+    "USA.FMSHRC",
+    "USA.FRS",
+    "USA.FRTIB",
+    "USA.FTC",
+    "USA.GAO",
+    "USA.GPO",
+    "USA.GSA",
+    "USA.H-ADM",
+    "USA.H-AGR",
+    "USA.H-APP",
+    "USA.H-ARM",
+    "USA.H-BUD",
+    "USA.H-CAO",
+    "USA.H-CHAP",
+    "USA.H-CLRK",
+    "USA.H-E_C",
+    "USA.H-EC",
+    "USA.H-EDW",
+    "USA.H-FIN",
+    "USA.H-FOR",
+    "USA.H-HIST",
+    "USA.H-HLS",
+    "USA.H-JUD",
+    "USA.H-LDRS",
+    "USA.H-LRC",
+    "USA.H-NAT",
+    "USA.H-OGR",
+    "USA.H-OIG",
+    "USA.H-OLC",
+    "USA.H-PAR",
+    "USA.H-RUL",
+    "USA.H-SAA",
+    "USA.H-SCI",
+    "USA.H-SMB",
+    "USA.H-T_I",
+    "USA.H-VET",
+    "USA.H-W_M",
+    "USA.HELSINKI",
+    "USA.HHS",
+    "USA.HMM",
+    "USA.HPSCI",
+    "USA.HSTSF",
+    "USA.HUD",
+    "USA.IACB",
+    "USA.IADRWG",
+    "USA.IAF",
+    "USA.IBB",
+    "USA.ICH",
+    "USA.ICPRB",
+    "USA.IMCNHCC",
+    "USA.IMLS",
+    "USA.ITC",
+    "USA.J-JCP",
+    "USA.J-JCT",
+    "USA.J-JEC",
+    "USA.JBEA",
+    "USA.JCLDS",
+    "USA.JFSP",
+    "USA.JMMFF",
+    "USA.JUSFC",
+    "USA.JWFFSB",
+    "USA.LOC",
+    "USA.LSC",
+    "USA.MACPAC",
+    "USA.MBCC",
+    "USA.MCC",
+    "USA.MedPAC",
+    "USA.MKUF",
+    "USA.MMC",
+    "USA.MRC",
+    "USA.MSPB",
+    "USA.NARA",
+    "USA.NASA",
+    "USA.NBCFM",
+    "USA.NCD",
+    "USA.NCFRR",
+    "USA.NCPC",
+    "USA.NCUA",
+    "USA.NEA",
+    "USA.NEH",
+    "USA.NGA",
+    "USA.NIGC",
+    "USA.NLRB",
+    "USA.NMB",
+    "USA.NPF",
+    "USA.NPPC",
+    "USA.NRC",
+    "USA.NRO",
+    "USA.NSA",
+    "USA.NSF",
+    "USA.NTSB",
+    "USA.NWTRB",
+    "USA.OGE",
+    "USA.OMB",
+    "USA.ONCIX",
+    "USA.OPIC",
+    "USA.OPM",
+    "USA.OSC",
+    "USA.OSHRC",
+    "USA.OtherUSG",
+    "USA.OVP",
+    "USA.OWLC",
+    "USA.PBGC",
+    "USA.PCC",
+    "USA.PEACE",
+    "USA.PRC",
+    "USA.PRESIDIO",
+    "USA.RISC",
+    "USA.RRB",
+    "USA.S-AGE",
+    "USA.S-AGR",
+    "USA.S-APP",
+    "USA.S-ARM",
+    "USA.S-BNK",
+    "USA.S-BUD",
+    "USA.S-CHAP",
+    "USA.S-COE",
+    "USA.S-CST",
+    "USA.S-ENR",
+    "USA.S-EPW",
+    "USA.S-FIN",
+    "USA.S-FOR",
+    "USA.S-HELP",
+    "USA.S-HSG",
+    "USA.S-IND",
+    "USA.S-JUD",
+    "USA.S-LDRS",
+    "USA.S-MAJSEC",
+    "USA.S-MINSEC",
+    "USA.S-PAR",
+    "USA.S-R_A",
+    "USA.S-SAA",
+    "USA.S-SEC",
+    "USA.S-SMB",
+    "USA.S-VET",
+    "USA.SBA",
+    "USA.SCPS",
+    "USA.SEC",
+    "USA.SJI",
+    "USA.SLT",
+    "USA.SMITH",
+    "USA.SRBC",
+    "USA.SSA",
+    "USA.SSAB",
+    "USA.SSCI",
+    "USA.SSS",
+    "USA.STATE",
+    "USA.TAP",
+    "USA.TDA",
+    "USA.TREAS",
+    "USA.TVA",
+    "USA.USA",
+    "USA.USAF",
+    "USA.USAID",
+    "USA.USAOC",
+    "USA.USBG",
+    "USA.USCG",
+    "USA.USCO",
+    "USA.USCP",
+    "USA.USDA",
+    "USA.USIP",
+    "USA.USMC",
+    "USA.USN",
+    "USA.USPS",
+    "USA.USSF",
+    "USA.USTR",
+    "USA.USUN",
+    "USA.VA",
+    "USA.VDNC",
+    "USA.VEF",
+    "USA.WHCPS",
+    "USA.WHMO".
+
+usaa:USA.ABMC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ABMC";
+  skos:prefLabel "American Battle Monuments Commission".
+
+usaa:USA.ACCESS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ACCESS";
+  skos:prefLabel "Architectural and Transportation Barriers Compliance Board".
+
+usaa:USA.ACFR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ACFR";
+  skos:prefLabel "Administrative Committee of the Federal Register".
+
+usaa:USA.ACHP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ACHP";
+  skos:prefLabel "Advisory Council on Historic Preservation".
+
+usaa:USA.ACUS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ACUS";
+  skos:prefLabel "Administrative Conference of the United States".
+
+usaa:USA.ADF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ADF";
+  skos:prefLabel "African Development Foundation".
+
+usaa:USA.AMICC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.AMICC";
+  skos:prefLabel "Arthritis and Musculoskeletal Interagency Coordinating Committee".
+
+usaa:USA.AMTRAK a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.AMTRAK";
+  skos:prefLabel "National Railroad Passenger Corporation".
+
+usaa:USA.AOC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.AOC";
+  skos:prefLabel "Architect of the Capitol".
+
+usaa:USA.ARC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ARC";
+  skos:prefLabel "Appalachian Regional Commission".
+
+usaa:USA.ARCTIC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ARCTIC";
+  skos:prefLabel "Arctic Research Commission".
+
+usaa:USA.BBG a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.BBG";
+  skos:prefLabel "Broadcasting Board of Governors".
+
+usaa:USA.BMGS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.BMGS";
+  skos:prefLabel "Barry M. Goldwater Scholarship and Excellence in Education Foundation".
+
+usaa:USA.CAOC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CAOC";
+  skos:prefLabel "Chief Acquisition Officers Council".
+
+usaa:USA.CBO a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CBO";
+  skos:prefLabel "Congressional Budget Office".
+
+usaa:USA.CCJJ a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CCJJ";
+  skos:prefLabel "Coordinating Council on Juvenile Justice and Delinquency Prevention".
+
+usaa:USA.CCR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CCR";
+  skos:prefLabel "Commission on Civil Rights".
+
+usaa:USA.CEA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CEA";
+  skos:prefLabel "United States Council of Economic Advisers".
+
+usaa:USA.CFA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CFA";
+  skos:prefLabel "Commission of Fine Arts".
+
+usaa:USA.CFI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CFI";
+  skos:prefLabel "Committee on Foreign Investments in the United States".
+
+usaa:USA.CFOC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CFOC";
+  skos:prefLabel "Chief Financial Officers Council".
+
+usaa:USA.CFTC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CFTC";
+  skos:prefLabel "Commodity Futures Trading Commission".
+
+usaa:USA.CHCOC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CHCOC";
+  skos:prefLabel "Chief Human Capital Officers Council".
+
+usaa:USA.CIA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CIA";
+  skos:prefLabel "Central Intelligence Agency".
+
+usaa:USA.CIOC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CIOC";
+  skos:prefLabel "Chief Information Officers Council".
+
+usaa:USA.CIRF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CIRF";
+  skos:prefLabel "Commission on International Religious Freedom".
+
+usaa:USA.CITA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CITA";
+  skos:prefLabel "Committee for the Implementation of Textile Agreements".
+
+usaa:USA.CNCS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CNCS";
+  skos:prefLabel "Corporation for National and Community Service".
+
+usaa:USA.COMP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.COMP";
+  skos:prefLabel "Office of Compliance".
+
+usaa:USA.CPSC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CPSC";
+  skos:prefLabel "Consumer Product Safety Commission".
+
+usaa:USA.CRS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CRS";
+  skos:prefLabel "Congressional Research Service".
+
+usaa:USA.CSAC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CSAC";
+  skos:prefLabel "Citizens' Stamp Advisory Committee".
+
+usaa:USA.CSHIB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CSHIB";
+  skos:prefLabel "Chemical Safety and Hazard Investigation Board".
+
+usaa:USA.CSOSA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.CSOSA";
+  skos:prefLabel "Court Services and Offender Supervision Agency for the District of Columbia".
+
+usaa:USA.DEA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DEA";
+  skos:prefLabel "Drug Enforcement Administration".
+
+usaa:USA.DENALI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DENALI";
+  skos:prefLabel "Denali Commission".
+
+usaa:USA.DFC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DFC";
+  skos:prefLabel "U.S. International Development Finance Corporation".
+
+usaa:USA.DHS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DHS";
+  skos:prefLabel "Department of Homeland Security".
+
+usaa:USA.DIA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DIA";
+  skos:prefLabel "Defense Intelligence Agency".
+
+usaa:USA.DNFSB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DNFSB";
+  skos:prefLabel "Defense Nuclear Facilities Safety Board".
+
+usaa:USA.DNI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DNI";
+  skos:prefLabel "Office of the Director of National Intelligence".
+
+usaa:USA.DOC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DOC";
+  skos:prefLabel "Department of Commerce".
+
+usaa:USA.DOD a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DOD";
+  skos:prefLabel "Department of Defense".
+
+usaa:USA.DOE a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DOE";
+  skos:prefLabel "Department of Energy".
+
+usaa:USA.DOI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DOI";
+  skos:prefLabel "Department of the Interior".
+
+usaa:USA.DOJ a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DOJ";
+  skos:prefLabel "Department of Justice".
+
+usaa:USA.DOL a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DOL";
+  skos:prefLabel "Department of Labor".
+
+usaa:USA.DOT a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DOT";
+  skos:prefLabel "Department of Transportation".
+
+usaa:USA.DRBC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.DRBC";
+  skos:prefLabel "Delaware River Basin Commission".
+
+usaa:USA.EAC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.EAC";
+  skos:prefLabel "United States Election Assistance Commission".
+
+usaa:USA.ED a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ED";
+  skos:prefLabel "Department of Education".
+
+usaa:USA.EEOC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.EEOC";
+  skos:prefLabel "Equal Employment Opportunity Commission".
+
+usaa:USA.EIBUS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.EIBUS";
+  skos:prefLabel "Export-Import Bank of the United States".
+
+usaa:USA.EOP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.EOP";
+  skos:prefLabel "Executive Office of the President".
+
+usaa:USA.EPA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.EPA";
+  skos:prefLabel "Environmental Protection Agency".
+
+usaa:USA.ESC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ESC";
+  skos:prefLabel "Endangered Species Committee".
+
+usaa:USA.FAC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FAC";
+  skos:prefLabel "Federal Advisory Committees".
+
+usaa:USA.FASAB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FASAB";
+  skos:prefLabel "Federal Accounting Standards Advisory Board".
+
+usaa:USA.FBI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FBI";
+  skos:prefLabel "Federal Bureau of Investigation".
+
+usaa:USA.FCA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FCA";
+  skos:prefLabel "Farm Credit Administration".
+
+usaa:USA.FCC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FCC";
+  skos:prefLabel "Federal Communications Commission".
+
+usaa:USA.FCIC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FCIC";
+  skos:prefLabel "Financial Crisis Inquiry Commission".
+
+usaa:USA.FCSIC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FCSIC";
+  skos:prefLabel "Farm Credit System Insurance Corporation".
+
+usaa:USA.FDIC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FDIC";
+  skos:prefLabel "Federal Deposit Insurance Corporation".
+
+usaa:USA.FEB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FEB";
+  skos:prefLabel "Federal Executive Boards".
+
+usaa:USA.FEC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FEC";
+  skos:prefLabel "Federal Election Commission".
+
+usaa:USA.FERC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FERC";
+  skos:prefLabel "Federal Energy Regulatory Commission".
+
+usaa:USA.FFB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FFB";
+  skos:prefLabel "Federal Financing Bank".
+
+usaa:USA.FFIEC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FFIEC";
+  skos:prefLabel "Federal Financial Institutions Examination Council".
+
+usaa:USA.FGDC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FGDC";
+  skos:prefLabel "Federal Geographic Data Committee".
+
+usaa:USA.FHRA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FHRA";
+  skos:prefLabel "Federal Housing Finance Agency".
+
+usaa:USA.FICE a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FICE";
+  skos:prefLabel "Federal Interagency Committee on Education".
+
+usaa:USA.FICMNEW a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FICMNEW";
+  skos:prefLabel "Federal Interagency Committee for the Management of Noxious and Exotic Weeds".
+
+usaa:USA.FICSP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FICSP";
+  skos:prefLabel "Federal Interagency Council on Statistical Policy".
+
+usaa:USA.FLCTT a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FLCTT";
+  skos:prefLabel "Federal Laboratory Consortium for Technology Transfer".
+
+usaa:USA.FLICC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FLICC";
+  skos:prefLabel "Federal Library and Information Center Committee".
+
+usaa:USA.FLRA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FLRA";
+  skos:prefLabel "Federal Labor Relations Authority".
+
+usaa:USA.FMC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FMC";
+  skos:prefLabel "Federal Maritime Commission".
+
+usaa:USA.FMCS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FMCS";
+  skos:prefLabel "Federal Mediation and Conciliation Service".
+
+usaa:USA.FMSHRC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FMSHRC";
+  skos:prefLabel "Federal Mine Safety and Health Review Commission".
+
+usaa:USA.FRS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FRS";
+  skos:prefLabel "Federal Reserve System".
+
+usaa:USA.FRTIB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FRTIB";
+  skos:prefLabel "Federal Retirement Thrift Investment Board".
+
+usaa:USA.FTC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.FTC";
+  skos:prefLabel "Federal Trade Commission".
+
+usaa:USA.GAO a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.GAO";
+  skos:prefLabel "Government Accountability Office".
+
+usaa:USA.GPO a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.GPO";
+  skos:prefLabel "Government Printing Office".
+
+usaa:USA.GSA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.GSA";
+  skos:prefLabel "General Services Administration".
+
+usaa:USA.H-ADM a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-ADM";
+  skos:prefLabel "Committee on House Administration".
+
+usaa:USA.H-AGR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-AGR";
+  skos:prefLabel "House Committee on Agriculture".
+
+usaa:USA.H-APP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-APP";
+  skos:prefLabel "House Committee on Appropriations".
+
+usaa:USA.H-ARM a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-ARM";
+  skos:prefLabel "House Armed Services Committee".
+
+usaa:USA.H-BUD a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-BUD";
+  skos:prefLabel "House Committee on the Budget".
+
+usaa:USA.H-CAO a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-CAO";
+  skos:prefLabel "House Office of the Chief Administrative Officer".
+
+usaa:USA.H-CHAP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-CHAP";
+  skos:prefLabel "House Office of the Chaplain".
+
+usaa:USA.H-CLRK a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-CLRK";
+  skos:prefLabel "House Office of the Clerk".
+
+usaa:USA.H-E_C a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-E_C";
+  skos:prefLabel "House Energy and Commerce Committee".
+
+usaa:USA.H-EC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-EC";
+  skos:prefLabel "House Committee on Ethics".
+
+usaa:USA.H-EDW a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-EDW";
+  skos:prefLabel "House Education and the Workforce Committee".
+
+usaa:USA.H-FIN a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-FIN";
+  skos:prefLabel "House Committee on Financial Services".
+
+usaa:USA.H-FOR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-FOR";
+  skos:prefLabel "House Committee on Foreign Affairs".
+
+usaa:USA.H-HIST a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-HIST";
+  skos:prefLabel "House Office of the Historian".
+
+usaa:USA.H-HLS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-HLS";
+  skos:prefLabel "House Committee on Homeland Security".
+
+usaa:USA.H-JUD a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-JUD";
+  skos:prefLabel "House Judiciary Committee".
+
+usaa:USA.H-LDRS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-LDRS";
+  skos:prefLabel "House Leadership".
+
+usaa:USA.H-LRC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-LRC";
+  skos:prefLabel "House Office of the Law Revision Counsel".
+
+usaa:USA.H-NAT a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-NAT";
+  skos:prefLabel "House Committee on Natural Resources".
+
+usaa:USA.H-OGR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-OGR";
+  skos:prefLabel "House Committee on Oversight and Government Reform".
+
+usaa:USA.H-OIG a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-OIG";
+  skos:prefLabel "House Office of the Inspector General".
+
+usaa:USA.H-OLC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-OLC";
+  skos:prefLabel "House Office of the Legislative Counsel".
+
+usaa:USA.H-PAR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-PAR";
+  skos:prefLabel "House Office of the Parliamentarian".
+
+usaa:USA.H-RUL a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-RUL";
+  skos:prefLabel "House Committee on Rules".
+
+usaa:USA.H-SAA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-SAA";
+  skos:prefLabel "House Office of the Sergeant at Arms".
+
+usaa:USA.H-SCI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-SCI";
+  skos:prefLabel "House Committee on Science, Space, and Technology".
+
+usaa:USA.H-SMB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-SMB";
+  skos:prefLabel "House Committee on Small Business".
+
+usaa:USA.H-T_I a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-T_I";
+  skos:prefLabel "House Transportation and Infrastructure Committee".
+
+usaa:USA.H-VET a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-VET";
+  skos:prefLabel "House Committee on Veterans’ Affairs".
+
+usaa:USA.H-W_M a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.H-W_M";
+  skos:prefLabel "House Committee on Ways and Means".
+
+usaa:USA.HELSINKI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.HELSINKI";
+  skos:prefLabel "Commission on Security and Cooperation in Europe".
+
+usaa:USA.HHS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.HHS";
+  skos:prefLabel "Department of Health and Human Services".
+
+usaa:USA.HMM a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.HMM";
+  skos:prefLabel "United States Holocaust Memorial Museum".
+
+usaa:USA.HPSCI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.HPSCI";
+  skos:prefLabel "House Permanent Select Committee on Intelligence".
+
+usaa:USA.HSTSF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.HSTSF";
+  skos:prefLabel "Harry S. Truman Scholarship Foundation".
+
+usaa:USA.HUD a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.HUD";
+  skos:prefLabel "Department of Housing and Urban Development".
+
+usaa:USA.IACB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.IACB";
+  skos:prefLabel "Indian Arts and Crafts Board".
+
+usaa:USA.IADRWG a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.IADRWG";
+  skos:prefLabel "Interagency Alternative Dispute Resolution Working Group".
+
+usaa:USA.IAF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.IAF";
+  skos:prefLabel "Inter-American Foundation".
+
+usaa:USA.IBB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.IBB";
+  skos:prefLabel "International Broadcasting Bureau".
+
+usaa:USA.ICH a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ICH";
+  skos:prefLabel "Interagency Council on Homelessness".
+
+usaa:USA.ICPRB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ICPRB";
+  skos:prefLabel "Interstate Commission on the Potomac River Basin".
+
+usaa:USA.IMCNHCC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.IMCNHCC";
+  skos:prefLabel "Illinois and Michigan Canal National Heritage Corridor Commission".
+
+usaa:USA.IMLS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.IMLS";
+  skos:prefLabel "Institute of Museum and Library Services".
+
+usaa:USA.ITC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ITC";
+  skos:prefLabel "United States International Trade Commission".
+
+usaa:USA.J-JCP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.J-JCP";
+  skos:prefLabel "Joint Committee on Printing".
+
+usaa:USA.J-JCT a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.J-JCT";
+  skos:prefLabel "Joint Committee on Taxation".
+
+usaa:USA.J-JEC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.J-JEC";
+  skos:prefLabel "Joint Economic Committee".
+
+usaa:USA.JBEA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.JBEA";
+  skos:prefLabel "Joint Board for the Enrollment of Actuaries".
+
+usaa:USA.JCLDS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.JCLDS";
+  skos:prefLabel "Joint Committee on the Library".
+
+usaa:USA.JFSP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.JFSP";
+  skos:prefLabel "Joint Fire Science Program".
+
+usaa:USA.JMMFF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.JMMFF";
+  skos:prefLabel "James Madison Memorial Fellowship Foundation".
+
+usaa:USA.JUSFC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.JUSFC";
+  skos:prefLabel "Japan-United States Friendship Commission".
+
+usaa:USA.JWFFSB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.JWFFSB";
+  skos:prefLabel "J. William Fulbright Foreign Scholarship Board".
+
+usaa:USA.LOC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.LOC";
+  skos:prefLabel "Library of Congress".
+
+usaa:USA.LSC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.LSC";
+  skos:prefLabel "Legal Services Corporation".
+
+usaa:USA.MACPAC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.MACPAC";
+  skos:prefLabel "Medicaid and CHIP Payment and Access Commission".
+
+usaa:USA.MBCC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.MBCC";
+  skos:prefLabel "Migratory Bird Conservation Commission".
+
+usaa:USA.MCC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.MCC";
+  skos:prefLabel "Millennium Challenge Corporation".
+
+usaa:USA.MedPAC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.MedPAC";
+  skos:prefLabel "Medicare Payment Advisory Commission".
+
+usaa:USA.MKUF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.MKUF";
+  skos:prefLabel "Morris K. Udall Foundation: Scholarship and Excellence in National Environmental Policy".
+
+usaa:USA.MMC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.MMC";
+  skos:prefLabel "Marine Mammal Commission".
+
+usaa:USA.MRC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.MRC";
+  skos:prefLabel "Mississippi River Commission".
+
+usaa:USA.MSPB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.MSPB";
+  skos:prefLabel "Merit Systems Protection Board".
+
+usaa:USA.NARA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NARA";
+  skos:prefLabel "National Archives and Records Administration".
+
+usaa:USA.NASA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NASA";
+  skos:prefLabel "National Aeronautics and Space Administration".
+
+usaa:USA.NBCFM a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NBCFM";
+  skos:prefLabel "National Bipartisan Commission on the Future of Medicare".
+
+usaa:USA.NCD a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NCD";
+  skos:prefLabel "National Council on Disability".
+
+usaa:USA.NCFRR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NCFRR";
+  skos:prefLabel "National Commission on Fiscal Responsibility and Reform".
+
+usaa:USA.NCPC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NCPC";
+  skos:prefLabel "National Capital Planning Commission".
+
+usaa:USA.NCUA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NCUA";
+  skos:prefLabel "National Credit Union Administration".
+
+usaa:USA.NEA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NEA";
+  skos:prefLabel "National Endowment for the Arts".
+
+usaa:USA.NEH a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NEH";
+  skos:prefLabel "National Endowment for the Humanities".
+
+usaa:USA.NGA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NGA";
+  skos:prefLabel "National Geospatial-Intelligence Agency".
+
+usaa:USA.NIGC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NIGC";
+  skos:prefLabel "National Indian Gaming Commission".
+
+usaa:USA.NLRB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NLRB";
+  skos:prefLabel "National Labor Relations Board".
+
+usaa:USA.NMB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NMB";
+  skos:prefLabel "National Mediation Board".
+
+usaa:USA.NPF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NPF";
+  skos:prefLabel "National Park Foundation".
+
+usaa:USA.NPPC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NPPC";
+  skos:prefLabel "Northwest Power Planning Council".
+
+usaa:USA.NRC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NRC";
+  skos:prefLabel "Nuclear Regulatory Commission".
+
+usaa:USA.NRO a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NRO";
+  skos:prefLabel "National Reconnaissance Office".
+
+usaa:USA.NSA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NSA";
+  skos:prefLabel "National Security Agency".
+
+usaa:USA.NSF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NSF";
+  skos:prefLabel "National Science Foundation".
+
+usaa:USA.NTSB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NTSB";
+  skos:prefLabel "National Transportation Safety Board".
+
+usaa:USA.NWTRB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.NWTRB";
+  skos:prefLabel "Nuclear Waste Technical Review Board".
+
+usaa:USA.OGE a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.OGE";
+  skos:prefLabel "Office of Government Ethics".
+
+usaa:USA.OMB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.OMB";
+  skos:prefLabel "Office of Management and Budget".
+
+usaa:USA.ONCIX a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.ONCIX";
+  skos:prefLabel "Office of the National Counterintelligence Executive".
+
+usaa:USA.OPIC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.OPIC";
+  skos:prefLabel "Overseas Private Investment Corporation".
+
+usaa:USA.OPM a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.OPM";
+  skos:prefLabel "Office of Personnel Management".
+
+usaa:USA.OSC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.OSC";
+  skos:prefLabel "Office of Special Counsel".
+
+usaa:USA.OSHRC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.OSHRC";
+  skos:prefLabel "Occupational Safety and Health Review Commission".
+
+usaa:USA.OtherUSG a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.OtherUSG";
+  skos:prefLabel "Other United State Federal Government".
+
+usaa:USA.OVP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.OVP";
+  skos:prefLabel "Office of the Vice President".
+
+usaa:USA.OWLC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.OWLC";
+  skos:prefLabel "Open World Leadership Center".
+
+usaa:USA.PBGC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.PBGC";
+  skos:prefLabel "Pension Benefit Guaranty Corporation".
+
+usaa:USA.PCC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.PCC";
+  skos:prefLabel "Panama Canal Commission".
+
+usaa:USA.PEACE a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.PEACE";
+  skos:prefLabel "Peace Corps".
+
+usaa:USA.PRC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.PRC";
+  skos:prefLabel "Postal Regulatory Commission".
+
+usaa:USA.PRESIDIO a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.PRESIDIO";
+  skos:prefLabel "Presidio Trust".
+
+usaa:USA.RISC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.RISC";
+  skos:prefLabel "Regulatory Information Service Center".
+
+usaa:USA.RRB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.RRB";
+  skos:prefLabel "Railroad Retirement Board".
+
+usaa:USA.S-AGE a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-AGE";
+  skos:prefLabel "Senate Special Committee on Aging".
+
+usaa:USA.S-AGR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-AGR";
+  skos:prefLabel "Senate Committee on Agriculture, Nutrition, and Forestry".
+
+usaa:USA.S-APP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-APP";
+  skos:prefLabel "Senate Committee on Appropriations".
+
+usaa:USA.S-ARM a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-ARM";
+  skos:prefLabel "Senate Committee on Armed Services".
+
+usaa:USA.S-BNK a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-BNK";
+  skos:prefLabel "Senate Committee on Banking, Housing, and Urban Affairs".
+
+usaa:USA.S-BUD a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-BUD";
+  skos:prefLabel "Senate Budget Committee".
+
+usaa:USA.S-CHAP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-CHAP";
+  skos:prefLabel "Senate Office of the Chaplain".
+
+usaa:USA.S-COE a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-COE";
+  skos:prefLabel "Senate Select Committee on Ethics".
+
+usaa:USA.S-CST a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-CST";
+  skos:prefLabel "Senate Committee on Commerce, Science, and Transportation".
+
+usaa:USA.S-ENR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-ENR";
+  skos:prefLabel "Senate Committee on Energy and Natural Resources".
+
+usaa:USA.S-EPW a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-EPW";
+  skos:prefLabel "Senate Committee on Environment and Public Works".
+
+usaa:USA.S-FIN a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-FIN";
+  skos:prefLabel "Senate Committee on Finance".
+
+usaa:USA.S-FOR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-FOR";
+  skos:prefLabel "Senate Committee on Foreign Relations".
+
+usaa:USA.S-HELP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-HELP";
+  skos:prefLabel "Senate Committee on Health, Education, Labor, and Pensions".
+
+usaa:USA.S-HSG a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-HSG";
+  skos:prefLabel "Senate Committee on Homeland Security and Governmental Affairs".
+
+usaa:USA.S-IND a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-IND";
+  skos:prefLabel "Senate Committee on Indian Affairs".
+
+usaa:USA.S-JUD a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-JUD";
+  skos:prefLabel "Senate Committee on the Judiciary".
+
+usaa:USA.S-LDRS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-LDRS";
+  skos:prefLabel "Senate Leadership".
+
+usaa:USA.S-MAJSEC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-MAJSEC";
+  skos:prefLabel "Senate Office of the Secretary for the Majority".
+
+usaa:USA.S-MINSEC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-MINSEC";
+  skos:prefLabel "Senate Office of the Secretary for the Minority".
+
+usaa:USA.S-PAR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-PAR";
+  skos:prefLabel "Senate Office of the Parliamentarian".
+
+usaa:USA.S-R_A a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-R_A";
+  skos:prefLabel "Senate Committee on Rules and Administration".
+
+usaa:USA.S-SAA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-SAA";
+  skos:prefLabel "Senate Office of the Sergeant at Arms".
+
+usaa:USA.S-SEC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-SEC";
+  skos:prefLabel "Office of the Secretary of the Senate".
+
+usaa:USA.S-SMB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-SMB";
+  skos:prefLabel "Senate Committee on Small Business and Entrepreneurship".
+
+usaa:USA.S-VET a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.S-VET";
+  skos:prefLabel "Senate Committee on Veterans’ Affairs".
+
+usaa:USA.SBA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SBA";
+  skos:prefLabel "Small Business Administration".
+
+usaa:USA.SCPS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SCPS";
+  skos:prefLabel "Stennis Center for Public Service".
+
+usaa:USA.SEC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SEC";
+  skos:prefLabel "Securities and Exchange Commission".
+
+usaa:USA.SJI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SJI";
+  skos:prefLabel "State Justice Institute".
+
+usaa:USA.SLT a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SLT";
+  skos:prefLabel "State, Local, Tribal Government".
+
+usaa:USA.SMITH a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SMITH";
+  skos:prefLabel "Smithsonian Institution".
+
+usaa:USA.SRBC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SRBC";
+  skos:prefLabel "Susquehanna River Basin Commission".
+
+usaa:USA.SSA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SSA";
+  skos:prefLabel "Social Security Administration".
+
+usaa:USA.SSAB a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SSAB";
+  skos:prefLabel "Social Security Advisory Board".
+
+usaa:USA.SSCI a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SSCI";
+  skos:prefLabel "Senate Select Committee on Intelligence".
+
+usaa:USA.SSS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.SSS";
+  skos:prefLabel "Selective Service System".
+
+usaa:USA.STATE a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.STATE";
+  skos:prefLabel "Department of State".
+
+usaa:USA.TAP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.TAP";
+  skos:prefLabel "Taxpayer Advocacy Panel".
+
+usaa:USA.TDA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.TDA";
+  skos:prefLabel "U.S. Trade and Development Agency".
+
+usaa:USA.TREAS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.TREAS";
+  skos:prefLabel "Department of the Treasury".
+
+usaa:USA.TVA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.TVA";
+  skos:prefLabel "Tennessee Valley Authority".
+
+usaa:USA.USA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USA";
+  skos:prefLabel "US Army".
+
+usaa:USA.USAF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USAF";
+  skos:prefLabel "US Air Force".
+
+usaa:USA.USAID a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USAID";
+  skos:prefLabel "United States Agency for International Development".
+
+usaa:USA.USAOC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USAOC";
+  skos:prefLabel "U.S. AbilityOne Commission".
+
+usaa:USA.USBG a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USBG";
+  skos:prefLabel "U.S. Botanic Garden".
+
+usaa:USA.USCG a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USCG";
+  skos:prefLabel "US Coast Guard".
+
+usaa:USA.USCO a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USCO";
+  skos:prefLabel "Copyright Office".
+
+usaa:USA.USCP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USCP";
+  skos:prefLabel "U.S. Capitol Police".
+
+usaa:USA.USDA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USDA";
+  skos:prefLabel "Department of Agriculture".
+
+usaa:USA.USIP a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USIP";
+  skos:prefLabel "United States Institute of Peace".
+
+usaa:USA.USMC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USMC";
+  skos:prefLabel "US Marine Corps".
+
+usaa:USA.USN a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USN";
+  skos:prefLabel "US Navy".
+
+usaa:USA.USPS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USPS";
+  skos:prefLabel "United States Postal Service".
+
+usaa:USA.USSF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USSF";
+  skos:prefLabel "United States Space Force".
+
+usaa:USA.USTR a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USTR";
+  skos:prefLabel "United States Office of the Trade Representative".
+
+usaa:USA.USUN a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.USUN";
+  skos:prefLabel "United States Mission to the United Nations".
+
+usaa:USA.VA a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.VA";
+  skos:prefLabel "Department of Veterans Affairs".
+
+usaa:USA.VDNC a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.VDNC";
+  skos:prefLabel "Veterans Day National Committee".
+
+usaa:USA.VEF a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.VEF";
+  skos:prefLabel "Vietnam Educational Foundation".
+
+usaa:USA.WHCPS a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.WHCPS";
+  skos:prefLabel "White House Commission on Presidential Scholars: Presidential Scholars Program".
+
+usaa:USA.WHMO a skos:Concept;
+  skos:inScheme usaa:CVEnumUSAgencyAcronym;
+  skos:notation "USA.WHMO";
+  skos:prefLabel "White House Military Office".
+
+<urn:us:gov:ic:USAgency:CVEGenerated:CVEnumUSAgencyAcronym> a owl:Ontology;
+.

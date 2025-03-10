@@ -1,14 +1,16 @@
-@prefix arh: <urn:us:gov:ic:arh#>.
-@prefix xhtml: <http://www.w3.org/1999/xhtml-StopBrowserRendering>.
-@prefix ism: <urn:us:gov:ic:ism#>.
-@prefix tax: <urn:us:gov:ic:taxonomy:common#>.
-@prefix ismcatrelto: <urn:us:gov:ic:cvenum:ismcat:relto#>.
-@prefix ismcatre: <urn:us:gov:ic:cvenum:ismcat:responsibleentity#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix tax: <urn:us:gov:ic:taxonomy:common#>.
 @prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 
-<urn:us:gov:ic:../ISM/IC-ISM.ttl> a <http://www.w3.org/2002/07/owl#Ontology>.
+<_:5>
+  xs:pattern "[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(Z|[\\-\\+][0-9]{2}:[0-9]{2})?".
+
+<urn:us:gov:ic:../ISM/IC-ISM.jsonld> a <http://www.w3.org/2002/07/owl#Ontology>;
+.
+
+tax:%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D-%5B0-9%5D%7B2%7DT%5B0-9%5D%7B2%7D%3A%5B0-9%5D%7B2%7D(Z%7C%5B%5C-%5C%2B%5D%5B0-9%5D%7B2%7D%3A%5B0-9%5D%7B2%7D)%3F a <http://www.w3.org/2000/01/rdf-schema#Datatype>;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> xs:string;
+  <http://www.w3.org/2002/07/owl#withRestrictions> <_:5>.
+
 <urn:us:gov:ic:Taxonomy:Taxonomy> a <http://www.w3.org/2002/07/owl#Ontology>;
-    <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:../ISM/IC-ISM.ttl>.
+  <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:../ISM/IC-ISM.jsonld>.

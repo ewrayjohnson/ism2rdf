@@ -72,13 +72,22 @@
       "skos:prefLabel": "LIMITED DISTRIBUTION"
     },
     {
-      "@id": "ismnonic:XD",
+      "@id": "ismnonic:LES",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismnonic:CVEnumISMNonIC"
       },
-      "skos:notation": "XD",
-      "skos:prefLabel": "EXCLUSIVE DISTRIBUTION"
+      "skos:notation": "LES",
+      "skos:prefLabel": "LAW ENFORCEMENT SENSITIVE"
+    },
+    {
+      "@id": "ismnonic:LES-NF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "LES-NF",
+      "skos:prefLabel": "LAW ENFORCEMENT SENSITIVE NOFORN"
     },
     {
       "@id": "ismnonic:ND",
@@ -88,6 +97,15 @@
       },
       "skos:notation": "ND",
       "skos:prefLabel": "NO DISTRIBUTION"
+    },
+    {
+      "@id": "ismnonic:NNPI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "skos:notation": "NNPI",
+      "skos:prefLabel": "NAVAL NUCLEAR PROPULSION INFORMATION"
     },
     {
       "@id": "ismnonic:SBU",
@@ -108,24 +126,6 @@
       "skos:prefLabel": "SENSITIVE BUT UNCLASSIFIED NOFORN"
     },
     {
-      "@id": "ismnonic:LES",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismnonic:CVEnumISMNonIC"
-      },
-      "skos:notation": "LES",
-      "skos:prefLabel": "LAW ENFORCEMENT SENSITIVE"
-    },
-    {
-      "@id": "ismnonic:LES-NF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismnonic:CVEnumISMNonIC"
-      },
-      "skos:notation": "LES-NF",
-      "skos:prefLabel": "LAW ENFORCEMENT SENSITIVE NOFORN"
-    },
-    {
       "@id": "ismnonic:SSI",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -135,13 +135,13 @@
       "skos:prefLabel": "SENSITIVE SECURITY INFORMATION"
     },
     {
-      "@id": "ismnonic:NNPI",
+      "@id": "ismnonic:XD",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismnonic:CVEnumISMNonIC"
       },
-      "skos:notation": "NNPI",
-      "skos:prefLabel": "NAVAL NUCLEAR PROPULSION INFORMATION"
+      "skos:notation": "XD",
+      "skos:prefLabel": "EXCLUSIVE DISTRIBUTION"
     }
   ]
 }

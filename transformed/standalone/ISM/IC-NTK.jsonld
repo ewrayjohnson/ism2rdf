@@ -13,21 +13,14 @@
   },
   "@graph": [
     {
+      "@id": "urn:us:gov:ic:./IC-ISM.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
       "@id": "urn:us:gov:ic:ISM:IC-NTK",
       "@type": "owl:Ontology",
       "owl:imports": {
         "@id": "urn:us:gov:ic:./IC-ISM.jsonld"
-      }
-    },
-    {
-      "@id": "ntk:id",
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "rdfs:comment": "A unique XML identifier used to assign an XML unique identifier to an element, such as a paragraph, note or table.",
-      "rdfs:range": {
-        "@id": "xsd:ID"
       }
     },
     {
@@ -42,6 +35,17 @@
       }
     },
     {
+      "@id": "ntk:id",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": "A unique XML identifier used to assign an XML unique identifier to an element, such as a paragraph, note or table.",
+      "rdfs:range": {
+        "@id": "xsd:ID"
+      }
+    },
+    {
       "@id": "ntk:qualifier",
       "@type": [
         "rdf:Property",
@@ -51,10 +55,6 @@
       "rdfs:range": {
         "@id": "xsd:string"
       }
-    },
-    {
-      "@id": "urn:us:gov:ic:./IC-ISM.jsonld",
-      "@type": "owl:Ontology"
     }
   ]
 }

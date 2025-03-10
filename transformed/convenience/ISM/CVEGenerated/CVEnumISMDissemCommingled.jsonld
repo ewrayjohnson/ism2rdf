@@ -14,6 +14,24 @@
       "@type": "owl:Ontology"
     },
     {
+      "@id": "ismdissemcommingled:AC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "AC",
+      "skos:prefLabel": "Attorney-Client"
+    },
+    {
+      "@id": "ismdissemcommingled:AWP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "AWP",
+      "skos:prefLabel": "Attorney-WP"
+    },
+    {
       "@id": "ismdissemcommingled:CVEnumISMDissemCommingled",
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismdissemcommingled:CVEnumISMDissemCommingled definition",
@@ -111,31 +129,76 @@
       ]
     },
     {
-      "@id": "ismdissemcommingled:RS",
+      "@id": "ismdissemcommingled:DISPLAYONLY",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
       },
-      "skos:notation": "RS",
-      "skos:prefLabel": "RISK SENSITIVE"
+      "skos:notation": "DISPLAYONLY",
+      "skos:prefLabel": "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO"
     },
     {
-      "@id": "ismdissemcommingled:OC",
+      "@id": "ismdissemcommingled:DL_ONLY",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
       },
-      "skos:notation": "OC",
-      "skos:prefLabel": "ORIGINATOR CONTROLLED"
+      "skos:notation": "DL_ONLY",
+      "skos:prefLabel": "DL ONLY"
     },
     {
-      "@id": "ismdissemcommingled:OC-USGOV",
+      "@id": "ismdissemcommingled:DSEN",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
       },
-      "skos:notation": "OC-USGOV",
-      "skos:prefLabel": "ORIGINATOR CONTROLLED US GOVERNMENT"
+      "skos:notation": "DSEN",
+      "skos:prefLabel": "DEA SENSITIVE"
+    },
+    {
+      "@id": "ismdissemcommingled:EXEMPT_FROM_ICD501_DISCOVERY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "EXEMPT_FROM_ICD501_DISCOVERY",
+      "skos:prefLabel": "EXEMPT FROM ICD501 DISCOVERY"
+    },
+    {
+      "@id": "ismdissemcommingled:EYES",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "EYES",
+      "skos:prefLabel": "EYES ONLY"
+    },
+    {
+      "@id": "ismdissemcommingled:FEDCON",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "FEDCON",
+      "skos:prefLabel": "FEDCON"
+    },
+    {
+      "@id": "ismdissemcommingled:FED_ONLY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "FED_ONLY",
+      "skos:prefLabel": "FED ONLY"
+    },
+    {
+      "@id": "ismdissemcommingled:FISA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "FISA",
+      "skos:prefLabel": "FOREIGN INTELLIGENCE SURVEILLANCE ACT"
     },
     {
       "@id": "ismdissemcommingled:IMC",
@@ -156,6 +219,33 @@
       "skos:prefLabel": "NOT RELEASABLE TO FOREIGN NATIONALS"
     },
     {
+      "@id": "ismdissemcommingled:NOCON",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "NOCON",
+      "skos:prefLabel": "NOCON"
+    },
+    {
+      "@id": "ismdissemcommingled:OC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "OC",
+      "skos:prefLabel": "ORIGINATOR CONTROLLED"
+    },
+    {
+      "@id": "ismdissemcommingled:OC-USGOV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "OC-USGOV",
+      "skos:prefLabel": "ORIGINATOR CONTROLLED US GOVERNMENT"
+    },
+    {
       "@id": "ismdissemcommingled:PR",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -163,6 +253,15 @@
       },
       "skos:notation": "PR",
       "skos:prefLabel": "CAUTION-PROPRIETARY INFORMATION INVOLVED"
+    },
+    {
+      "@id": "ismdissemcommingled:RAWFISA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "skos:notation": "RAWFISA",
+      "skos:prefLabel": "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT"
     },
     {
       "@id": "ismdissemcommingled:REL",
@@ -183,58 +282,13 @@
       "skos:prefLabel": "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL"
     },
     {
-      "@id": "ismdissemcommingled:EYES",
+      "@id": "ismdissemcommingled:RS",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
       },
-      "skos:notation": "EYES",
-      "skos:prefLabel": "EYES ONLY"
-    },
-    {
-      "@id": "ismdissemcommingled:DSEN",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "DSEN",
-      "skos:prefLabel": "DEA SENSITIVE"
-    },
-    {
-      "@id": "ismdissemcommingled:RAWFISA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "RAWFISA",
-      "skos:prefLabel": "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT"
-    },
-    {
-      "@id": "ismdissemcommingled:FISA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "FISA",
-      "skos:prefLabel": "FOREIGN INTELLIGENCE SURVEILLANCE ACT"
-    },
-    {
-      "@id": "ismdissemcommingled:DISPLAYONLY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "DISPLAYONLY",
-      "skos:prefLabel": "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO"
-    },
-    {
-      "@id": "ismdissemcommingled:EXEMPT_FROM_ICD501_DISCOVERY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "EXEMPT_FROM_ICD501_DISCOVERY",
-      "skos:prefLabel": "EXEMPT FROM ICD501 DISCOVERY"
+      "skos:notation": "RS",
+      "skos:prefLabel": "RISK SENSITIVE"
     },
     {
       "@id": "ismdissemcommingled:WAIVED",
@@ -244,60 +298,6 @@
       },
       "skos:notation": "WAIVED",
       "skos:prefLabel": "WAIVED"
-    },
-    {
-      "@id": "ismdissemcommingled:AC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "AC",
-      "skos:prefLabel": "Attorney-Client"
-    },
-    {
-      "@id": "ismdissemcommingled:AWP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "AWP",
-      "skos:prefLabel": "Attorney-WP"
-    },
-    {
-      "@id": "ismdissemcommingled:DL_ONLY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "DL_ONLY",
-      "skos:prefLabel": "DL ONLY"
-    },
-    {
-      "@id": "ismdissemcommingled:FED_ONLY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "FED_ONLY",
-      "skos:prefLabel": "FED ONLY"
-    },
-    {
-      "@id": "ismdissemcommingled:FEDCON",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "FEDCON",
-      "skos:prefLabel": "FEDCON"
-    },
-    {
-      "@id": "ismdissemcommingled:NOCON",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
-      },
-      "skos:notation": "NOCON",
-      "skos:prefLabel": "NOCON"
     }
   ]
 }

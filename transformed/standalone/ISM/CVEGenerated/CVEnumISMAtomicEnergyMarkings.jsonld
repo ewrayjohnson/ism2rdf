@@ -83,6 +83,60 @@
       ]
     },
     {
+      "@id": "ismatomic:DCNI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "DCNI",
+      "skos:prefLabel": "DoD CONTROLLED NUCLEAR INFORMATION"
+    },
+    {
+      "@id": "ismatomic:FRD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD",
+      "skos:prefLabel": "FORMERLY RESTRICTED DATA"
+    },
+    {
+      "@id": "ismatomic:FRD-SG-14",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD-SG-14",
+      "skos:prefLabel": "RD-SIGMA-14"
+    },
+    {
+      "@id": "ismatomic:FRD-SG-15",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD-SG-15",
+      "skos:prefLabel": "RD-SIGMA-15"
+    },
+    {
+      "@id": "ismatomic:FRD-SG-18",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD-SG-18",
+      "skos:prefLabel": "RD-SIGMA-18"
+    },
+    {
+      "@id": "ismatomic:FRD-SG-20",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
+      },
+      "skos:notation": "FRD-SG-20",
+      "skos:prefLabel": "RD-SIGMA-20"
+    },
+    {
       "@id": "ismatomic:RD",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -137,58 +191,13 @@
       "skos:prefLabel": "RD-SIGMA-20"
     },
     {
-      "@id": "ismatomic:FRD",
+      "@id": "ismatomic:TFNI",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
       },
-      "skos:notation": "FRD",
-      "skos:prefLabel": "FORMERLY RESTRICTED DATA"
-    },
-    {
-      "@id": "ismatomic:FRD-SG-14",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
-      },
-      "skos:notation": "FRD-SG-14",
-      "skos:prefLabel": "RD-SIGMA-14"
-    },
-    {
-      "@id": "ismatomic:FRD-SG-15",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
-      },
-      "skos:notation": "FRD-SG-15",
-      "skos:prefLabel": "RD-SIGMA-15"
-    },
-    {
-      "@id": "ismatomic:FRD-SG-18",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
-      },
-      "skos:notation": "FRD-SG-18",
-      "skos:prefLabel": "RD-SIGMA-18"
-    },
-    {
-      "@id": "ismatomic:FRD-SG-20",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
-      },
-      "skos:notation": "FRD-SG-20",
-      "skos:prefLabel": "RD-SIGMA-20"
-    },
-    {
-      "@id": "ismatomic:DCNI",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
-      },
-      "skos:notation": "DCNI",
-      "skos:prefLabel": "DoD CONTROLLED NUCLEAR INFORMATION"
+      "skos:notation": "TFNI",
+      "skos:prefLabel": "TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION"
     },
     {
       "@id": "ismatomic:UCNI",
@@ -198,15 +207,6 @@
       },
       "skos:notation": "UCNI",
       "skos:prefLabel": "DoE CONTROLLED NUCLEAR INFORMATION"
-    },
-    {
-      "@id": "ismatomic:TFNI",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismatomic:CVEnumISMatomicEnergyMarkings"
-      },
-      "skos:notation": "TFNI",
-      "skos:prefLabel": "TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION"
     }
   ]
 }

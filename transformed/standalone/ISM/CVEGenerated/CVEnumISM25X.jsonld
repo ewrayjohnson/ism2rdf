@@ -14,146 +14,6 @@
       "@type": "owl:Ontology"
     },
     {
-      "@id": "ism25x:CVEnumISM25X",
-      "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ism25x:CVEnumISM25X definition",
-      "skos:hasTopConcept": [
-        {
-          "@id": "ism25x:AEA"
-        },
-        {
-          "@id": "ism25x:NATO"
-        },
-        {
-          "@id": "ism25x:NATO-AEA"
-        },
-        {
-          "@id": "ism25x:25X1"
-        },
-        {
-          "@id": "ism25x:25X1-EO-12951"
-        },
-        {
-          "@id": "ism25x:25X2"
-        },
-        {
-          "@id": "ism25x:25X3"
-        },
-        {
-          "@id": "ism25x:25X4"
-        },
-        {
-          "@id": "ism25x:25X5"
-        },
-        {
-          "@id": "ism25x:25X6"
-        },
-        {
-          "@id": "ism25x:25X7"
-        },
-        {
-          "@id": "ism25x:25X8"
-        },
-        {
-          "@id": "ism25x:25X9"
-        },
-        {
-          "@id": "ism25x:50X1"
-        },
-        {
-          "@id": "ism25x:50X1-HUM"
-        },
-        {
-          "@id": "ism25x:50X2"
-        },
-        {
-          "@id": "ism25x:50X2-WMD"
-        },
-        {
-          "@id": "ism25x:50X3"
-        },
-        {
-          "@id": "ism25x:50X4"
-        },
-        {
-          "@id": "ism25x:50X5"
-        },
-        {
-          "@id": "ism25x:50X6"
-        },
-        {
-          "@id": "ism25x:50X7"
-        },
-        {
-          "@id": "ism25x:50X8"
-        },
-        {
-          "@id": "ism25x:50X9"
-        },
-        {
-          "@id": "ism25x:75X"
-        }
-      ]
-    },
-    {
-      "@id": "ism25x:CVEnumISM25XValues",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": [
-        "AEA",
-        "NATO",
-        "NATO-AEA",
-        "25X1",
-        "25X1-EO-12951",
-        "25X2",
-        "25X3",
-        "25X4",
-        "25X5",
-        "25X6",
-        "25X7",
-        "25X8",
-        "25X9",
-        "50X1",
-        "50X1-HUM",
-        "50X2",
-        "50X2-WMD",
-        "50X3",
-        "50X4",
-        "50X5",
-        "50X6",
-        "50X7",
-        "50X8",
-        "50X9",
-        "75X"
-      ]
-    },
-    {
-      "@id": "ism25x:AEA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ism25x:CVEnumISM25X"
-      },
-      "skos:notation": "AEA",
-      "skos:prefLabel": "When using a source document that contains portions of Restricted Data (RD) or Formerly Restricted Data (FRD) where the RD/FRD source document(s) do not have declassification instructions, the derivatively classified document shall not contain a declassification date or event on the Declassify On line. The following shall be annotated on the Declassify On line: \"Not Applicable or (N/A) to RD/FRD portions\" and \"See source list for NSI portions\" separated by a period. The source list must include the declassification instruction for each of the source documents classified under E.O. 13526 and shall not appear in the classification authority block"
-    },
-    {
-      "@id": "ism25x:NATO",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ism25x:CVEnumISM25X"
-      },
-      "skos:notation": "NATO",
-      "skos:prefLabel": "Since NATO information is not to be declassified or downgraded without the prior consent of NATO, the “Declassify on” line of documents that commingle information classified by NATO and U.S. classified NSI, will read “N/A to NATO portions. See source list for NSI portions.” The NSI source list will appear beneath the classification authority block in a manner that clearly identifies it as separate and distinct."
-    },
-    {
-      "@id": "ism25x:NATO-AEA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ism25x:CVEnumISM25X"
-      },
-      "skos:notation": "NATO-AEA",
-      "skos:prefLabel": "Handles special case of BOTH NATO and AEA as a single exemption."
-    },
-    {
       "@id": "ism25x:25X1",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -350,6 +210,146 @@
       },
       "skos:notation": "75X",
       "skos:prefLabel": "Specific information that has been formally approved by the ISCAP as information that does not permit the automatic or unilateral declassification of information at 75 years."
+    },
+    {
+      "@id": "ism25x:AEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "AEA",
+      "skos:prefLabel": "When using a source document that contains portions of Restricted Data (RD) or Formerly Restricted Data (FRD) where the RD/FRD source document(s) do not have declassification instructions, the derivatively classified document shall not contain a declassification date or event on the Declassify On line. The following shall be annotated on the Declassify On line: \"Not Applicable or (N/A) to RD/FRD portions\" and \"See source list for NSI portions\" separated by a period. The source list must include the declassification instruction for each of the source documents classified under E.O. 13526 and shall not appear in the classification authority block"
+    },
+    {
+      "@id": "ism25x:CVEnumISM25X",
+      "@type": "skos:ConceptScheme",
+      "dc:title": "(U) ism25x:CVEnumISM25X definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ism25x:AEA"
+        },
+        {
+          "@id": "ism25x:NATO"
+        },
+        {
+          "@id": "ism25x:NATO-AEA"
+        },
+        {
+          "@id": "ism25x:25X1"
+        },
+        {
+          "@id": "ism25x:25X1-EO-12951"
+        },
+        {
+          "@id": "ism25x:25X2"
+        },
+        {
+          "@id": "ism25x:25X3"
+        },
+        {
+          "@id": "ism25x:25X4"
+        },
+        {
+          "@id": "ism25x:25X5"
+        },
+        {
+          "@id": "ism25x:25X6"
+        },
+        {
+          "@id": "ism25x:25X7"
+        },
+        {
+          "@id": "ism25x:25X8"
+        },
+        {
+          "@id": "ism25x:25X9"
+        },
+        {
+          "@id": "ism25x:50X1"
+        },
+        {
+          "@id": "ism25x:50X1-HUM"
+        },
+        {
+          "@id": "ism25x:50X2"
+        },
+        {
+          "@id": "ism25x:50X2-WMD"
+        },
+        {
+          "@id": "ism25x:50X3"
+        },
+        {
+          "@id": "ism25x:50X4"
+        },
+        {
+          "@id": "ism25x:50X5"
+        },
+        {
+          "@id": "ism25x:50X6"
+        },
+        {
+          "@id": "ism25x:50X7"
+        },
+        {
+          "@id": "ism25x:50X8"
+        },
+        {
+          "@id": "ism25x:50X9"
+        },
+        {
+          "@id": "ism25x:75X"
+        }
+      ]
+    },
+    {
+      "@id": "ism25x:CVEnumISM25XValues",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": [
+        "AEA",
+        "NATO",
+        "NATO-AEA",
+        "25X1",
+        "25X1-EO-12951",
+        "25X2",
+        "25X3",
+        "25X4",
+        "25X5",
+        "25X6",
+        "25X7",
+        "25X8",
+        "25X9",
+        "50X1",
+        "50X1-HUM",
+        "50X2",
+        "50X2-WMD",
+        "50X3",
+        "50X4",
+        "50X5",
+        "50X6",
+        "50X7",
+        "50X8",
+        "50X9",
+        "75X"
+      ]
+    },
+    {
+      "@id": "ism25x:NATO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "NATO",
+      "skos:prefLabel": "Since NATO information is not to be declassified or downgraded without the prior consent of NATO, the “Declassify on” line of documents that commingle information classified by NATO and U.S. classified NSI, will read “N/A to NATO portions. See source list for NSI portions.” The NSI source list will appear beneath the classification authority block in a manner that clearly identifies it as separate and distinct."
+    },
+    {
+      "@id": "ism25x:NATO-AEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ism25x:CVEnumISM25X"
+      },
+      "skos:notation": "NATO-AEA",
+      "skos:prefLabel": "Handles special case of BOTH NATO and AEA as a single exemption."
     }
   ]
 }

@@ -14,6 +14,42 @@
       "@type": "owl:Ontology"
     },
     {
+      "@id": "ismscicon:BUR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "BUR",
+      "skos:prefLabel": "BUR"
+    },
+    {
+      "@id": "ismscicon:BUR-BLG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "BUR-BLG",
+      "skos:prefLabel": "BUR-BLG"
+    },
+    {
+      "@id": "ismscicon:BUR-DTP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "BUR-DTP",
+      "skos:prefLabel": "BUR-DTP"
+    },
+    {
+      "@id": "ismscicon:BUR-WRG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismscicon:CVEnumISMSCIControls"
+      },
+      "skos:notation": "BUR-WRG",
+      "skos:prefLabel": "BUR-WRG"
+    },
+    {
       "@id": "ismscicon:CVEnumISMSCIControls",
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismscicon:CVEnumISMSCIControls definition",
@@ -105,42 +141,6 @@
         "TK-IDIT",
         "TK-KAND"
       ]
-    },
-    {
-      "@id": "ismscicon:BUR",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismscicon:CVEnumISMSCIControls"
-      },
-      "skos:notation": "BUR",
-      "skos:prefLabel": "BUR"
-    },
-    {
-      "@id": "ismscicon:BUR-BLG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismscicon:CVEnumISMSCIControls"
-      },
-      "skos:notation": "BUR-BLG",
-      "skos:prefLabel": "BUR-BLG"
-    },
-    {
-      "@id": "ismscicon:BUR-DTP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismscicon:CVEnumISMSCIControls"
-      },
-      "skos:notation": "BUR-DTP",
-      "skos:prefLabel": "BUR-DTP"
-    },
-    {
-      "@id": "ismscicon:BUR-WRG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismscicon:CVEnumISMSCIControls"
-      },
-      "skos:notation": "BUR-WRG",
-      "skos:prefLabel": "BUR-WRG"
     },
     {
       "@id": "ismscicon:HCS",

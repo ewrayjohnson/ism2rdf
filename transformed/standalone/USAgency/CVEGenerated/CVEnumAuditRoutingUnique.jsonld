@@ -127,6 +127,132 @@
       ]
     },
     {
+      "@id": "usaru:USA.DARPA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.DARPA",
+      "skos:prefLabel": "Defense Advanced Research Projects Agency (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.DISA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.DISA",
+      "skos:prefLabel": "Defense Information Systems Agency (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.DODCIO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.DODCIO",
+      "skos:prefLabel": "Assistant Secretary of Defense for Networks and Information Integration and DoD Chief Information Officer (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.DODIG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.DODIG",
+      "skos:prefLabel": "Department of Defense Inspector General (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.DODIO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.DODIO",
+      "skos:prefLabel": "Assistant to the Secretary of Defense for Intelligence Oversight (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.DSS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.DSS",
+      "skos:prefLabel": "Defense Security Service (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.DTRA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.DTRA",
+      "skos:prefLabel": "Defense Threat-Reduction Agency (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.INA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.INA",
+      "skos:prefLabel": "United States Department of Homeland Security, Office of Intelligence and Analysis (Type: IC)"
+    },
+    {
+      "@id": "usaru:USA.JCS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.JCS",
+      "skos:prefLabel": "Office of the Joint Chiefs of Staff (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.JIDA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.JIDA",
+      "skos:prefLabel": "Joint Improvised-Threat Defeat Agency (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.MDA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.MDA",
+      "skos:prefLabel": "Missile Defense Agency (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.OUSDATL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.OUSDATL",
+      "skos:prefLabel": "Office of the Undersecretary of Defense (Acquisition, Technology and Logistics) (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.OUSDI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.OUSDI",
+      "skos:prefLabel": "Office of the Undersecretary of Defense (Intelligence) (Type: DOD)"
+    },
+    {
+      "@id": "usaru:USA.TSA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "skos:notation": "USA.TSA",
+      "skos:prefLabel": "United States Department of Homeland Security, Transportation Security Administration (Type: IC)"
+    },
+    {
       "@id": "usaru:USA.USAFRICOM",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -224,132 +350,6 @@
       },
       "skos:notation": "USA.USTRANSCOM",
       "skos:prefLabel": "United States Transportation Command (Type: COCOM)"
-    },
-    {
-      "@id": "usaru:USA.DARPA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.DARPA",
-      "skos:prefLabel": "Defense Advanced Research Projects Agency (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.DISA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.DISA",
-      "skos:prefLabel": "Defense Information Systems Agency (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.DODCIO",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.DODCIO",
-      "skos:prefLabel": "Assistant Secretary of Defense for Networks and Information Integration and DoD Chief Information Officer (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.DODIG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.DODIG",
-      "skos:prefLabel": "Department of Defense Inspector General (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.DODIO",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.DODIO",
-      "skos:prefLabel": "Assistant to the Secretary of Defense for Intelligence Oversight (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.DSS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.DSS",
-      "skos:prefLabel": "Defense Security Service (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.DTRA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.DTRA",
-      "skos:prefLabel": "Defense Threat-Reduction Agency (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.JCS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.JCS",
-      "skos:prefLabel": "Office of the Joint Chiefs of Staff (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.JIDA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.JIDA",
-      "skos:prefLabel": "Joint Improvised-Threat Defeat Agency (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.MDA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.MDA",
-      "skos:prefLabel": "Missile Defense Agency (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.OUSDATL",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.OUSDATL",
-      "skos:prefLabel": "Office of the Undersecretary of Defense (Acquisition, Technology and Logistics) (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.OUSDI",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.OUSDI",
-      "skos:prefLabel": "Office of the Undersecretary of Defense (Intelligence) (Type: DOD)"
-    },
-    {
-      "@id": "usaru:USA.INA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.INA",
-      "skos:prefLabel": "United States Department of Homeland Security, Office of Intelligence and Analysis (Type: IC)"
-    },
-    {
-      "@id": "usaru:USA.TSA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "usaru:CVEnumAuditRoutingUnique"
-      },
-      "skos:notation": "USA.TSA",
-      "skos:prefLabel": "United States Department of Homeland Security, Transportation Security Administration (Type: IC)"
     }
   ]
 }

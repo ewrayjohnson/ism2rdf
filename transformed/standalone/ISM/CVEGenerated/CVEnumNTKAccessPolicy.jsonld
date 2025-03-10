@@ -5,6 +5,25 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumNTKAccessPolicy",
-  "@type": "http://www.w3.org/2002/07/owl#Ontology"
+  "@graph": [
+    {
+      "@id": "_:0",
+      "xsd:pattern": "urn:us:gov:ic:aces:ntk:propin:([A-Za-z][A-Za-z0-9\\-_.;,():+]{1,64})"
+    },
+    {
+      "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumNTKAccessPolicy",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:cvenum:ntk:accesspolicy#urn%3Aus%3Agov%3Aic%3Aaces%3Antk%3Apropin%3A(%5BA-Za-z%5D%5BA-Za-z0-9%5C-_.%3B%2C()%3A%2B%5D%7B1%2C64%7D)",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Regex for extension of PROPIN with non-IC CIO access policy URN.",
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "xsd:string"
+      },
+      "http://www.w3.org/2002/07/owl#withRestrictions": {
+        "@id": "_:0"
+      }
+    }
+  ]
 }

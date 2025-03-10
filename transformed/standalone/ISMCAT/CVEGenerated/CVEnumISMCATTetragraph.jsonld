@@ -10,8 +10,156 @@
   },
   "@graph": [
     {
+      "@id": "_:5",
+      "xsd:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
       "@id": "urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATTetragraph",
       "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismcattetra:ACGU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "ACGU",
+      "skos:prefLabel": "FOUR EYES"
+    },
+    {
+      "@id": "ismcattetra:AMSP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "AMSP",
+      "skos:prefLabel": "AFRICOM Multinational Strategic Partners"
+    },
+    {
+      "@id": "ismcattetra:AOSC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "AOSC",
+      "skos:prefLabel": "Athens Olympics Security Coalition"
+    },
+    {
+      "@id": "ismcattetra:APFS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "APFS",
+      "skos:prefLabel": "African Peacekeeping Force Somalia"
+    },
+    {
+      "@id": "ismcattetra:ASEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "ASEA",
+      "skos:prefLabel": "Association of Southeast Asian Nations (ASEAN)"
+    },
+    {
+      "@id": "ismcattetra:AUSTRALIA_GROUP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "AUSTRALIA_GROUP",
+      "skos:prefLabel": "Australia Group"
+    },
+    {
+      "@id": "ismcattetra:BHTF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "BHTF",
+      "skos:prefLabel": "Boko Haram Task Force"
+    },
+    {
+      "@id": "ismcattetra:BWCS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "BWCS",
+      "skos:prefLabel": "Biological Weapons Convention States"
+    },
+    {
+      "@id": "ismcattetra:CFCK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CFCK",
+      "skos:prefLabel": "Combined Forces Command Korea"
+    },
+    {
+      "@id": "ismcattetra:CFOD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CFOD",
+      "skos:prefLabel": "Coalition Forces Odyssey Dawn"
+    },
+    {
+      "@id": "ismcattetra:CFUP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CFUP",
+      "skos:prefLabel": "Coalition Forces Unified Protector"
+    },
+    {
+      "@id": "ismcattetra:CLFC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CLFC",
+      "skos:prefLabel": "Combined Libya Fusion Cell"
+    },
+    {
+      "@id": "ismcattetra:CMFC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CMFC",
+      "skos:prefLabel": "Combined Maritime Forces Central"
+    },
+    {
+      "@id": "ismcattetra:CMFP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CMFP",
+      "skos:prefLabel": "Cooperative Maritime Forces Pacific"
+    },
+    {
+      "@id": "ismcattetra:CPMT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CPMT",
+      "skos:prefLabel": "Civilian Protection Monitoring Team for Sudan"
+    },
+    {
+      "@id": "ismcattetra:CTOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "skos:notation": "CTOC",
+      "skos:prefLabel": "Countering Transnational Organized Crime"
     },
     {
       "@id": "ismcattetra:CVEnumISMCATTetragraph",
@@ -271,150 +419,6 @@
       ]
     },
     {
-      "@id": "ismcattetra:ACGU",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "ACGU",
-      "skos:prefLabel": "FOUR EYES"
-    },
-    {
-      "@id": "ismcattetra:AMSP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "AMSP",
-      "skos:prefLabel": "AFRICOM Multinational Strategic Partners"
-    },
-    {
-      "@id": "ismcattetra:AOSC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "AOSC",
-      "skos:prefLabel": "Athens Olympics Security Coalition"
-    },
-    {
-      "@id": "ismcattetra:APFS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "APFS",
-      "skos:prefLabel": "African Peacekeeping Force Somalia"
-    },
-    {
-      "@id": "ismcattetra:ASEA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "ASEA",
-      "skos:prefLabel": "Association of Southeast Asian Nations (ASEAN)"
-    },
-    {
-      "@id": "ismcattetra:AUSTRALIA_GROUP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "AUSTRALIA_GROUP",
-      "skos:prefLabel": "Australia Group"
-    },
-    {
-      "@id": "ismcattetra:BHTF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "BHTF",
-      "skos:prefLabel": "Boko Haram Task Force"
-    },
-    {
-      "@id": "ismcattetra:BWCS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "BWCS",
-      "skos:prefLabel": "Biological Weapons Convention States"
-    },
-    {
-      "@id": "ismcattetra:CFCK",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "CFCK",
-      "skos:prefLabel": "Combined Forces Command Korea"
-    },
-    {
-      "@id": "ismcattetra:CFOD",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "CFOD",
-      "skos:prefLabel": "Coalition Forces Odyssey Dawn"
-    },
-    {
-      "@id": "ismcattetra:CFUP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "CFUP",
-      "skos:prefLabel": "Coalition Forces Unified Protector"
-    },
-    {
-      "@id": "ismcattetra:CLFC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "CLFC",
-      "skos:prefLabel": "Combined Libya Fusion Cell"
-    },
-    {
-      "@id": "ismcattetra:CMFC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "CMFC",
-      "skos:prefLabel": "Combined Maritime Forces Central"
-    },
-    {
-      "@id": "ismcattetra:CMFP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "CMFP",
-      "skos:prefLabel": "Cooperative Maritime Forces Pacific"
-    },
-    {
-      "@id": "ismcattetra:CPMT",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "CPMT",
-      "skos:prefLabel": "Civilian Protection Monitoring Team for Sudan"
-    },
-    {
-      "@id": "ismcattetra:CTOC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcattetra:CVEnumISMCATTetragraph"
-      },
-      "skos:notation": "CTOC",
-      "skos:prefLabel": "Countering Transnational Organized Crime"
-    },
-    {
       "@id": "ismcattetra:CWCS",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -665,6 +669,17 @@
       },
       "skos:notation": "NATO",
       "skos:prefLabel": "North Atlantic Treaty Organization"
+    },
+    {
+      "@id": "ismcattetra:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
+      "@type": "rdfs:Datatype",
+      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
+      "rdfs:subClassOf": {
+        "@id": "xsd:string"
+      },
+      "owl:withRestrictions": {
+        "@id": "_:5"
+      }
     },
     {
       "@id": "ismcattetra:NCFE",

@@ -14,6 +14,15 @@
       "@type": "owl:Ontology"
     },
     {
+      "@id": "ismclassall:C",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismclassall:CVEnumISMClassificationAll"
+      },
+      "skos:notation": "C",
+      "skos:prefLabel": "CONFIDENTIAL"
+    },
+    {
       "@id": "ismclassall:CVEnumISMClassificationAll",
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) All currently valid classification marks. This CVE is used by @ism:classification. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMClassificationAll.xml",
@@ -54,15 +63,6 @@
       },
       "skos:notation": "R",
       "skos:prefLabel": "RESTRICTED"
-    },
-    {
-      "@id": "ismclassall:C",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismclassall:CVEnumISMClassificationAll"
-      },
-      "skos:notation": "C",
-      "skos:prefLabel": "CONFIDENTIAL"
     },
     {
       "@id": "ismclassall:S",

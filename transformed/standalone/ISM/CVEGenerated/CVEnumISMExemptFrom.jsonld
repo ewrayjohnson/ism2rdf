@@ -35,15 +35,6 @@
       ]
     },
     {
-      "@id": "ismexempt:IC_710_MANDATORY_FDR",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismexempt:CVEnumISMExemptFrom"
-      },
-      "skos:notation": "IC_710_MANDATORY_FDR",
-      "skos:prefLabel": "Document claims exemption from ICD-710 rules mandating the use of Foreign Disclosure and Release markings that have been encoded in ISM. Currently, the requirement for FD&R is only mandatory for Disseminated Analytic Product; however, it is strongly encouraged otherwise."
-    },
-    {
       "@id": "ismexempt:DOD_DISTRO_STATEMENT",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -51,6 +42,15 @@
       },
       "skos:notation": "DOD_DISTRO_STATEMENT",
       "skos:prefLabel": "Document claims exemption from the rules in DoD5230.24 requiring DoD Distribution Statements that have been encoded into ISM."
+    },
+    {
+      "@id": "ismexempt:IC_710_MANDATORY_FDR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismexempt:CVEnumISMExemptFrom"
+      },
+      "skos:notation": "IC_710_MANDATORY_FDR",
+      "skos:prefLabel": "Document claims exemption from ICD-710 rules mandating the use of Foreign Disclosure and Release markings that have been encoded in ISM. Currently, the requirement for FD&R is only mandatory for Disseminated Analytic Product; however, it is strongly encouraged otherwise."
     }
   ]
 }

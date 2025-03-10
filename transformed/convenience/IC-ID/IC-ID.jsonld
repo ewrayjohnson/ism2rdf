@@ -12,8 +12,22 @@
   },
   "@graph": [
     {
+      "@id": "_:9",
+      "xs:pattern": "guide://([1-9][0-9]{0,15}|0)/[A-Za-z0-9_\\-\\.]{1,36}"
+    },
+    {
       "@id": "urn:us:gov:ic:IC-ID:IC-ID",
       "@type": "owl:Ontology"
+    },
+    {
+      "@id": "icid:guide%3A%2F%2F(%5B1-9%5D%5B0-9%5D%7B0%2C15%7D%7C0)%2F%5BA-Za-z0-9_%5C-%5C.%5D%7B1%2C36%7D",
+      "@type": "rdfs:Datatype",
+      "rdfs:subClassOf": {
+        "@id": "xs:string"
+      },
+      "owl:withRestrictions": {
+        "@id": "_:0"
+      }
     },
     {
       "@id": "icid:identifier",

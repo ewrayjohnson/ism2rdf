@@ -51,6 +51,42 @@
       ]
     },
     {
+      "@id": "ismcomplies:OtherAuthority",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcomplies:CVEnumISMCompliesWith"
+      },
+      "skos:notation": "OtherAuthority",
+      "skos:prefLabel": "Document claims compliance with an authority other than the USGov, USIC, or USDOD. This token is not allowed if the ism:ownerProducer contains USA."
+    },
+    {
+      "@id": "ismcomplies:USA-CUI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcomplies:CVEnumISMCompliesWith"
+      },
+      "skos:notation": "USA-CUI",
+      "skos:prefLabel": "Document contains both NSI (National Security Information) and CUI according to DoD rules for CUI. Document claims compliance with 1. CUI rules according to DoD, and 2. USGOV and/or USDOD rules for classified environments."
+    },
+    {
+      "@id": "ismcomplies:USA-CUI-ONLY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcomplies:CVEnumISMCompliesWith"
+      },
+      "skos:notation": "USA-CUI-ONLY",
+      "skos:prefLabel": "Document is UNCLASSIFIED and was created in an UNCLASSIFIED environment. Document claims compliance with CUI rules but with no USGOV rules for classified environments. Special transforms are required to move the document into a classified environment or to commingle content from this document with any content created in a classified environment."
+    },
+    {
+      "@id": "ismcomplies:USDOD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcomplies:CVEnumISMCompliesWith"
+      },
+      "skos:notation": "USDOD",
+      "skos:prefLabel": "Document claims compliance with all rules encoded in ISM for documents produced by the US Department of Defense. Documents that claim compliance with USDOD MUST also claim compliance with USGov."
+    },
+    {
       "@id": "ismcomplies:USGov",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -67,42 +103,6 @@
       },
       "skos:notation": "USIC",
       "skos:prefLabel": "Document claims compliance with all rules encoded in ISM for documents produced by the US Intelligence Community. Documents that claim compliance with USIC MUST also claim compliance with USGov."
-    },
-    {
-      "@id": "ismcomplies:USDOD",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcomplies:CVEnumISMCompliesWith"
-      },
-      "skos:notation": "USDOD",
-      "skos:prefLabel": "Document claims compliance with all rules encoded in ISM for documents produced by the US Department of Defense. Documents that claim compliance with USDOD MUST also claim compliance with USGov."
-    },
-    {
-      "@id": "ismcomplies:OtherAuthority",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcomplies:CVEnumISMCompliesWith"
-      },
-      "skos:notation": "OtherAuthority",
-      "skos:prefLabel": "Document claims compliance with an authority other than the USGov, USIC, or USDOD. This token is not allowed if the ism:ownerProducer contains USA."
-    },
-    {
-      "@id": "ismcomplies:USA-CUI-ONLY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcomplies:CVEnumISMCompliesWith"
-      },
-      "skos:notation": "USA-CUI-ONLY",
-      "skos:prefLabel": "Document is UNCLASSIFIED and was created in an UNCLASSIFIED environment. Document claims compliance with CUI rules but with no USGOV rules for classified environments. Special transforms are required to move the document into a classified environment or to commingle content from this document with any content created in a classified environment."
-    },
-    {
-      "@id": "ismcomplies:USA-CUI",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcomplies:CVEnumISMCompliesWith"
-      },
-      "skos:notation": "USA-CUI",
-      "skos:prefLabel": "Document contains both NSI (National Security Information) and CUI according to DoD rules for CUI. Document claims compliance with 1. CUI rules according to DoD, and 2. USGOV and/or USDOD rules for classified environments."
     }
   ]
 }

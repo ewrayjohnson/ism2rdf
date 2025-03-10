@@ -1,38 +1,58 @@
-@prefix ismsar: <urn:us:gov:ic:cvenum:ism:sar#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ismsar: <urn:us:gov:ic:cvenum:ism:sar#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSARAuthorities> a owl:Ontology.
 ismsar:AG a skos:Concept;
-    skos:inScheme ismsar:CVEnumISMSARAuthorities;
-    skos:notation "AG";
-    skos:prefLabel "AG".
-ismsar:CVEnumISMSARAuthorities dc:title "(U) E.O. 13526 Sec. 4.3. Special Access Programs states that only the Secretaries of State, Defense, Energy, and Homeland Security, the Attorney General, and the Director of National Intelligence, or the principal deputy of each, may create a special access program. This CVE lists the agencies that are authorized to establish SAPs, which we are calling the Special Access Required (SAR) Authorities. The ISM encoding of SAP values uses the SAR Authorities values as part of a SAP value in @ism:SARIdentifier, because there is no central registry or requirement to deconflict names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMSARAuthorities.xml";
-    a skos:ConceptScheme;
-    skos:hasTopConcept ismsar:AG, ismsar:DHS, ismsar:DNI, ismsar:DOD, ismsar:DOE, ismsar:STATE.
+  skos:inScheme ismsar:CVEnumISMSARAuthorities;
+  skos:notation "AG";
+  skos:prefLabel "AG".
+
+ismsar:CVEnumISMSARAuthorities a skos:ConceptScheme;
+  dc:title "(U) E.O. 13526 Sec. 4.3. Special Access Programs states that only the Secretaries of State, Defense, Energy, and Homeland Security, the Attorney General, and the Director of National Intelligence, or the principal deputy of each, may create a special access program. This CVE lists the agencies that are authorized to establish SAPs, which we are calling the Special Access Required (SAR) Authorities. The ISM encoding of SAP values uses the SAR Authorities values as part of a SAP value in @ism:SARIdentifier, because there is no central registry or requirement to deconflict names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMSARAuthorities.xml";
+  skos:hasTopConcept
+    ismsar:AG,
+    ismsar:DHS,
+    ismsar:DNI,
+    ismsar:DOD,
+    ismsar:DOE,
+    ismsar:STATE.
+
 ismsar:CVEnumISMSARAuthoritiesValues a rdfs:Datatype;
-    owl:oneOf "AG", "DHS", "DNI", "DOD", "DOE", "STATE".
+  owl:oneOf
+    "AG",
+    "DHS",
+    "DNI",
+    "DOD",
+    "DOE",
+    "STATE".
+
 ismsar:DHS a skos:Concept;
-    skos:inScheme ismsar:CVEnumISMSARAuthorities;
-    skos:notation "DHS";
-    skos:prefLabel "DHS".
+  skos:inScheme ismsar:CVEnumISMSARAuthorities;
+  skos:notation "DHS";
+  skos:prefLabel "DHS".
+
 ismsar:DNI a skos:Concept;
-    skos:inScheme ismsar:CVEnumISMSARAuthorities;
-    skos:notation "DNI";
-    skos:prefLabel "DNI".
+  skos:inScheme ismsar:CVEnumISMSARAuthorities;
+  skos:notation "DNI";
+  skos:prefLabel "DNI".
+
 ismsar:DOD a skos:Concept;
-    skos:inScheme ismsar:CVEnumISMSARAuthorities;
-    skos:notation "DOD";
-    skos:prefLabel "DOD".
+  skos:inScheme ismsar:CVEnumISMSARAuthorities;
+  skos:notation "DOD";
+  skos:prefLabel "DOD".
+
 ismsar:DOE a skos:Concept;
-    skos:inScheme ismsar:CVEnumISMSARAuthorities;
-    skos:notation "DOE";
-    skos:prefLabel "DOE".
+  skos:inScheme ismsar:CVEnumISMSARAuthorities;
+  skos:notation "DOE";
+  skos:prefLabel "DOE".
+
 ismsar:STATE a skos:Concept;
-    skos:inScheme ismsar:CVEnumISMSARAuthorities;
-    skos:notation "STATE";
-    skos:prefLabel "STATE".
+  skos:inScheme ismsar:CVEnumISMSARAuthorities;
+  skos:notation "STATE";
+  skos:prefLabel "STATE".
+
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSARAuthorities> a owl:Ontology;
+.

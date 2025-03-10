@@ -33,6 +33,90 @@
   },
   "@graph": [
     {
+      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIOpen.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIProtected.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATOwnerProducer.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISM25X.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMAtomicEnergyMarkings.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMCUIBasic.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMCUISpecified.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMClassificationAll.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMCompliesWith.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMDissem.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMExemptFrom.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMHighWaterNATO.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMNonIC.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMNonUSControls.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMNotice.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMNoticeProse.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMPocType.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMSAR.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMSCIControls.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMSecondBannerLine.jsonld",
+      "@type": "owl:Ontology"
+    },
+    {
       "@id": "urn:us:gov:ic:ISM:IC-ISM",
       "@type": "owl:Ontology",
       "owl:imports": [
@@ -100,6 +184,38 @@
           "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMSecondBannerLine.jsonld"
         }
       ]
+    },
+    {
+      "@id": "ism:FGIsourceOpen",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information is not concealed (also used for cases when the source is unknown)",
+      "rdfs:range": {
+        "@id": "ismcatfgio:CVEnumISMCATFGIOpenValues"
+      }
+    },
+    {
+      "@id": "ism:FGIsourceProtected",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information must be concealed",
+      "rdfs:range": {
+        "@id": "ismcatfgip:CVEnumISMCATFGIProtectedValues"
+      }
+    },
+    {
+      "@id": "ism:SARIdentifier",
+      "@type": "rdf:Property",
+      "rdfs:comment": "This attribute is used at both the resource and the portion levels. One or more indicators identifying the defense or intelligence programs for which special access is required. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSAR.xml",
+      "rdfs:range": {
+        "@id": "ismsar:CVEnumISMSARValues"
+      }
+    },
+    {
+      "@id": "ism:SCIcontrols",
+      "@type": "rdf:Property",
+      "rdfs:comment": "This attribute is used at both the resource and the portion levels. One or more indicators identifying sensitive compartmented information control system(s). It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSCIControls.xml",
+      "rdfs:range": {
+        "@id": "ismscicon:CVEnumISMSCIControlsValues"
+      }
     },
     {
       "@id": "ism:atomicEnergyMarkings",
@@ -174,22 +290,6 @@
       }
     },
     {
-      "@id": "ism:FGIsourceOpen",
-      "@type": "rdf:Property",
-      "rdfs:comment": "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information is not concealed (also used for cases when the source is unknown)",
-      "rdfs:range": {
-        "@id": "ismcatfgio:CVEnumISMCATFGIOpenValues"
-      }
-    },
-    {
-      "@id": "ism:FGIsourceProtected",
-      "@type": "rdf:Property",
-      "rdfs:comment": "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information must be concealed",
-      "rdfs:range": {
-        "@id": "ismcatfgip:CVEnumISMCATFGIProtectedValues"
-      }
-    },
-    {
       "@id": "ism:handleViaChannels",
       "@type": [
         "rdf:Property",
@@ -220,6 +320,17 @@
       }
     },
     {
+      "@id": "ism:joint",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": "When true, an indicator that entities in the @ism:ownerProducer attribute are JOINT owners of the data",
+      "rdfs:range": {
+        "@id": "xsd:boolean"
+      }
+    },
+    {
       "@id": "ism:noAggregation",
       "@type": [
         "rdf:Property",
@@ -247,14 +358,6 @@
       }
     },
     {
-      "@id": "ism:noticeType",
-      "@type": "rdf:Property",
-      "rdfs:comment": "An indicator that the containing element contains a security-related notice. This attribute is used to categorize which of the required notices is specified in the element. These categories include those described in the Intelligence Community Markings System Register and Manual, as well as additional well-defined and formally recognized security notice types described in other directives, such as US-Person and DoD Distribution. The element could contain any structure that the implementing schema defines, and rendering details are relegated to the implementing schema. The permissible values for this attribute are defined in the ISM Notice CVE: CVEnumISMNotice.xml",
-      "rdfs:range": {
-        "@id": "ismnotice:CVEnumISMNoticeValues"
-      }
-    },
-    {
       "@id": "ism:noticeProseID",
       "@type": "rdf:Property",
       "rdfs:comment": "An indicator that can be used to identify a security-related notice in an out-of-band fashion without actually having the notice text in the record but rather a notice text prose identifier. This prose identifier maps to the notice text which is stored in a CVE. The permissible values for this attribute are defined in the ISM Notice Prose CVE: CVEnumISMNoticeProse.xml",
@@ -263,22 +366,19 @@
       }
     },
     {
+      "@id": "ism:noticeType",
+      "@type": "rdf:Property",
+      "rdfs:comment": "An indicator that the containing element contains a security-related notice. This attribute is used to categorize which of the required notices is specified in the element. These categories include those described in the Intelligence Community Markings System Register and Manual, as well as additional well-defined and formally recognized security notice types described in other directives, such as US-Person and DoD Distribution. The element could contain any structure that the implementing schema defines, and rendering details are relegated to the implementing schema. The permissible values for this attribute are defined in the ISM Notice CVE: CVEnumISMNotice.xml",
+      "rdfs:range": {
+        "@id": "ismnotice:CVEnumISMNoticeValues"
+      }
+    },
+    {
       "@id": "ism:ownerProducer",
       "@type": "rdf:Property",
       "rdfs:comment": "The set of national governments and/or international organizations that have purview over the containing classification marking",
       "rdfs:range": {
         "@id": "ismcatownpro:CVEnumISMCATOwnerProducerValues"
-      }
-    },
-    {
-      "@id": "ism:joint",
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "rdfs:comment": "When true, an indicator that entities in the @ism:ownerProducer attribute are JOINT owners of the data",
-      "rdfs:range": {
-        "@id": "xsd:boolean"
       }
     },
     {
@@ -298,112 +398,12 @@
       }
     },
     {
-      "@id": "ism:SARIdentifier",
-      "@type": "rdf:Property",
-      "rdfs:comment": "This attribute is used at both the resource and the portion levels. One or more indicators identifying the defense or intelligence programs for which special access is required. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSAR.xml",
-      "rdfs:range": {
-        "@id": "ismsar:CVEnumISMSARValues"
-      }
-    },
-    {
-      "@id": "ism:SCIcontrols",
-      "@type": "rdf:Property",
-      "rdfs:comment": "This attribute is used at both the resource and the portion levels. One or more indicators identifying sensitive compartmented information control system(s). It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSCIControls.xml",
-      "rdfs:range": {
-        "@id": "ismscicon:CVEnumISMSCIControlsValues"
-      }
-    },
-    {
       "@id": "ism:secondBannerLine",
       "@type": "rdf:Property",
       "rdfs:comment": "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner.",
       "rdfs:range": {
         "@id": "ismsecondbannerline:CVEnumISMSecondBannerLineValues"
       }
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISM25X.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMAtomicEnergyMarkings.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMClassificationAll.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMDissem.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIOpen.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIProtected.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMHighWaterNATO.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMNonIC.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMNonUSControls.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMNotice.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMNoticeProse.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATOwnerProducer.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMPocType.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMSAR.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMSCIControls.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMExemptFrom.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMCompliesWith.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMCUIBasic.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMCUISpecified.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumISMSecondBannerLine.jsonld",
-      "@type": "owl:Ontology"
     }
   ]
 }

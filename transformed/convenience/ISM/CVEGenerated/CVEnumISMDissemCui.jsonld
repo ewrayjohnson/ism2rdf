@@ -14,6 +14,24 @@
       "@type": "owl:Ontology"
     },
     {
+      "@id": "ismdissemcui:AC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "AC",
+      "skos:prefLabel": "Attorney-Client"
+    },
+    {
+      "@id": "ismdissemcui:AWP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "AWP",
+      "skos:prefLabel": "Attorney-WP"
+    },
+    {
       "@id": "ismdissemcui:CVEnumISMDissemCui",
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismdissemcui:CVEnumISMDissemCui definition",
@@ -71,24 +89,6 @@
       ]
     },
     {
-      "@id": "ismdissemcui:AC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcui:CVEnumISMDissemCui"
-      },
-      "skos:notation": "AC",
-      "skos:prefLabel": "Attorney-Client"
-    },
-    {
-      "@id": "ismdissemcui:AWP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcui:CVEnumISMDissemCui"
-      },
-      "skos:notation": "AWP",
-      "skos:prefLabel": "Attorney-WP"
-    },
-    {
       "@id": "ismdissemcui:DISPLAYONLY",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -116,15 +116,6 @@
       "skos:prefLabel": "EXEMPT FROM ICD501 DISCOVERY"
     },
     {
-      "@id": "ismdissemcui:FED_ONLY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemcui:CVEnumISMDissemCui"
-      },
-      "skos:notation": "FED_ONLY",
-      "skos:prefLabel": "FED ONLY"
-    },
-    {
       "@id": "ismdissemcui:FEDCON",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -132,6 +123,15 @@
       },
       "skos:notation": "FEDCON",
       "skos:prefLabel": "FEDCON"
+    },
+    {
+      "@id": "ismdissemcui:FED_ONLY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemcui:CVEnumISMDissemCui"
+      },
+      "skos:notation": "FED_ONLY",
+      "skos:prefLabel": "FED ONLY"
     },
     {
       "@id": "ismdissemcui:NF",

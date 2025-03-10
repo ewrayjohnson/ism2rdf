@@ -47,13 +47,13 @@
       ]
     },
     {
-      "@id": "ismhighwaternato:NATO-U",
+      "@id": "ismhighwaternato:NATO-C",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
       },
-      "skos:notation": "NATO-U",
-      "skos:prefLabel": "NATO UNCLASSIFIED"
+      "skos:notation": "NATO-C",
+      "skos:prefLabel": "NATO CONFIDENTIAL"
     },
     {
       "@id": "ismhighwaternato:NATO-R",
@@ -63,15 +63,6 @@
       },
       "skos:notation": "NATO-R",
       "skos:prefLabel": "NATO RESTRICTED"
-    },
-    {
-      "@id": "ismhighwaternato:NATO-C",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
-      },
-      "skos:notation": "NATO-C",
-      "skos:prefLabel": "NATO CONFIDENTIAL"
     },
     {
       "@id": "ismhighwaternato:NATO-S",
@@ -90,6 +81,15 @@
       },
       "skos:notation": "NATO-TS",
       "skos:prefLabel": "NATO TOP SECRET"
+    },
+    {
+      "@id": "ismhighwaternato:NATO-U",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
+      },
+      "skos:notation": "NATO-U",
+      "skos:prefLabel": "NATO UNCLASSIFIED"
     }
   ]
 }

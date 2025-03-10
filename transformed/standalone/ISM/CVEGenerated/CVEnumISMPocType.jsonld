@@ -51,15 +51,6 @@
       ]
     },
     {
-      "@id": "ismpoctype:ICD-710",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismpoctype:CVEnumISMPocType"
-      },
-      "skos:notation": "ICD-710",
-      "skos:prefLabel": "Point-of-contact for an ICD-710 notice."
-    },
-    {
       "@id": "ismpoctype:DoD-Dist-B",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -103,6 +94,15 @@
       },
       "skos:notation": "DoD-Dist-F",
       "skos:prefLabel": "DoD Distribution statement F from DoD Directive 5230.24"
+    },
+    {
+      "@id": "ismpoctype:ICD-710",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismpoctype:CVEnumISMPocType"
+      },
+      "skos:notation": "ICD-710",
+      "skos:prefLabel": "Point-of-contact for an ICD-710 notice."
     }
   ]
 }

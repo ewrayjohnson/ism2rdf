@@ -1,11 +1,18 @@
+import { Graph, namespaces } from '@entryscape/rdfjson';
+import rdf from '@rdfjs/data-model';
+import PrefixMap from '@rdfjs/prefix-map/PrefixMap.js';
+import SerializerJsonld from '@rdfjs/serializer-jsonld-ext';
+import TurtleSerializer from '@rdfjs/serializer-turtle';
+import { NamedNode, Quad } from '@rdfjs/types';
 import fs from 'fs';
+import _ from 'lodash';
 import path from 'path';
-const _ = require('lodash');
-const jsonld = require('jsonld');
-const ldtr = require('ldtr');
-const { Parser, Writer } = require('n3');
-const { Graph, namespaces, converters, utils } = require('@entryscape/rdfjson');
-const xml2js = require('xml2js');
+import { Readable } from 'stream';
+import { fileURLToPath } from 'url';
+import xml2js from 'xml2js';
+
+const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
+const __dirname = path.dirname(__filename); // get the name of the directory
 
 const XML_SCHEMA_URI = 'http://www.w3.org/2001/XMLSchema';
 const RDF_URI = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
@@ -178,12 +185,12 @@ type Packages = {
                     const enums = aRestriction[`${xsdPrefix}:enumeration`];
                     if (enums) {
                       for (const anEnum of enums) {
-                        const notation = anEnum.$.value;
                         const annotation = anEnum[`${xsdPrefix}:annotation`];
                         const documentation = annotation && annotation[0][`${xsdPrefix}:documentation`];
                         if (!documentation) {
                           continue;
                         }
+                        const notation = anEnum.$.value;
                         const prefLabel = removeWhitespace(documentation[0]);
                         const conceptId = `${idPrefix}${notation}`;
                         concepts.push({
@@ -195,6 +202,23 @@ type Packages = {
                       enumSource = inSimpleType;
                     } else if (aRestriction[`${xsdPrefix}:simpleType`] ?? [0].hasOwnProperty(`${xsdPrefix}:list`)) {
                       listSource = inSimpleType;
+                    } else {
+                      const patternSpec = aRestriction[`${xsdPrefix}:pattern`];
+                      if (patternSpec) {
+                        const pattern = patternSpec[0]['$'].value;
+                        const datatypeUri = defaultNs + encodeURIComponent(pattern);
+                        const annotation = patternSpec[0][`${xsdPrefix}:annotation`];
+                        const documentation = annotation && annotation[0][`${xsdPrefix}:documentation`];
+                        standalone.g.add(datatypeUri, RDF_TYPE, 'rdfs:Datatype');
+                        standalone.g.add(datatypeUri, 'rdfs:subClassOf', 'http://www.w3.org/2001/XMLSchema#string');
+                        if (documentation) {
+                          standalone.g.addL(datatypeUri, 'rdfs:comment', removeWhitespace(documentation[0]));
+                        }
+                        const patternNode = standalone.g.addL(null, 'http://www.w3.org/2001/XMLSchema#pattern', pattern);
+                        standalone.g.add(datatypeUri, 'owl:withRestrictions', [
+                          patternNode.getSubject()
+                        ]);
+                      }
                     }
                   }
                 }
@@ -259,34 +283,46 @@ type Packages = {
             await writeGraph(standalone, path.join(outputBase, 'standalone'));
 
             async function writeGraph(p: Package, outputDir: string) {
-              outputDir = path.join(outputDir, relative);
-              const rdf = converters.rdfjson2rdfxml(p.g);
-              const json1 = await ldtr.read({ data: rdf, type: 'application/rdf+xml' });
               const context = _.invert(p.namespaces);
-              const json2 = await jsonld.compact(json1, context);
-              const jsonText = JSON.stringify(json2, null, 2);
-              if (!fs.existsSync(outputDir)) {
-                fs.mkdirSync(outputDir, { recursive: true });
-              }
 
-              const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
-              fs.writeFileSync(jsonldOutputFilepath, jsonText);
+              outputDir = path.join(outputDir, relative);
 
-              const flattened = await jsonld.flatten(json2);
-              const nquads = (await jsonld.toRDF(flattened, { format: NQUADS_FORMAT })).replaceAll('.jsonld', '.ttl');
-              const parser = new Parser({ format: NQUADS_FORMAT });
-              const writer = new Writer({ format: TURTLE_FORMAT, prefixes: context });
-              await parser.parse(nquads, (error: any, quad: any, prefixes: any) => {
-                if (error) console.log(`PARSE ERROR: ${error}`);
-                if (quad) {
-                  writer.addQuad(quad);
+              const prefixesArr: Array<[string, NamedNode]> = [];
+              Object.entries(context).forEach((e: [string, string]) => {
+                prefixesArr.push([e[0], rdf.namedNode(e[1])]);
+              });
+              const prefixes = new PrefixMap(prefixesArr, { factory: rdf });
+              const quads: Quad[] = [];
+              p.g.find().forEach((triple: any) => {
+                const quad: Quad = rdf.quad(rdf.namedNode(triple._s), rdf.namedNode(triple._p),
+                  triple._o.type === 'literal' ? rdf.literal(triple._o.value) : rdf.namedNode(triple._o.value));
+                quads.push(quad);
+              });
+              const turtleSerializer = new TurtleSerializer({ prefixes: prefixes });
+              const turtle: string = turtleSerializer.transform(quads);
+              const jsonldSerializer = new SerializerJsonld({
+                context,
+                compact: true,
+                encoding: 'string',
+                prettyPrint: true
+              });
+
+              const input = new Readable({
+                objectMode: true,
+                read: () => {
+                  quads.forEach(quad => {
+                    input.push(quad);
+                  })
+                  input.push(null);
                 }
-              });
-              let turtle = '';
-              await writer.end((error: any, result: any) => {
-                if (error) console.log(`WRITE ERROR: ${error}`);
-                turtle = result;
-              });
+              })
+
+              const output = jsonldSerializer.import(input);
+
+              output.on('data', jsonld => {
+                const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
+                fs.writeFileSync(jsonldOutputFilepath, jsonld);
+              })
 
               const turtleOutputFilepath = path.join(outputDir, `${basename}.ttl`);
               fs.writeFileSync(turtleOutputFilepath, turtle);

@@ -1,58 +1,93 @@
-@prefix ismdissemcui: <urn:us:gov:ic:cvenum:ism:dissem:cui#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ismdissemcui: <urn:us:gov:ic:cvenum:ism:dissem:cui#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissemCui> a owl:Ontology.
 ismdissemcui:AC a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "AC";
-    skos:prefLabel "Attorney-Client".
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "AC";
+  skos:prefLabel "Attorney-Client".
+
 ismdissemcui:AWP a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "AWP";
-    skos:prefLabel "Attorney-WP".
-ismdissemcui:CVEnumISMDissemCui dc:title "(U) ismdissemcui:CVEnumISMDissemCui definition";
-    a skos:ConceptScheme;
-    skos:hasTopConcept ismdissemcui:AC, ismdissemcui:AWP, ismdissemcui:DISPLAYONLY, ismdissemcui:DL_ONLY, ismdissemcui:EXEMPT_FROM_ICD501_DISCOVERY, ismdissemcui:FEDCON, ismdissemcui:FED_ONLY, ismdissemcui:NF, ismdissemcui:NOCON, ismdissemcui:REL, ismdissemcui:RELIDO.
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "AWP";
+  skos:prefLabel "Attorney-WP".
+
+ismdissemcui:CVEnumISMDissemCui a skos:ConceptScheme;
+  dc:title "(U) ismdissemcui:CVEnumISMDissemCui definition";
+  skos:hasTopConcept
+    ismdissemcui:AC,
+    ismdissemcui:AWP,
+    ismdissemcui:DISPLAYONLY,
+    ismdissemcui:DL_ONLY,
+    ismdissemcui:EXEMPT_FROM_ICD501_DISCOVERY,
+    ismdissemcui:FED_ONLY,
+    ismdissemcui:FEDCON,
+    ismdissemcui:NF,
+    ismdissemcui:NOCON,
+    ismdissemcui:REL,
+    ismdissemcui:RELIDO.
+
 ismdissemcui:CVEnumISMDissemCuiValues a rdfs:Datatype;
-    owl:oneOf "AC", "AWP", "DISPLAYONLY", "DL_ONLY", "EXEMPT_FROM_ICD501_DISCOVERY", "FEDCON", "FED_ONLY", "NF", "NOCON", "REL", "RELIDO".
+  owl:oneOf
+    "AC",
+    "AWP",
+    "DISPLAYONLY",
+    "DL_ONLY",
+    "EXEMPT_FROM_ICD501_DISCOVERY",
+    "FED_ONLY",
+    "FEDCON",
+    "NF",
+    "NOCON",
+    "REL",
+    "RELIDO".
+
 ismdissemcui:DISPLAYONLY a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "DISPLAYONLY";
-    skos:prefLabel "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO".
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "DISPLAYONLY";
+  skos:prefLabel "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO".
+
 ismdissemcui:DL_ONLY a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "DL_ONLY";
-    skos:prefLabel "DL ONLY".
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "DL_ONLY";
+  skos:prefLabel "DL ONLY".
+
 ismdissemcui:EXEMPT_FROM_ICD501_DISCOVERY a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "EXEMPT_FROM_ICD501_DISCOVERY";
-    skos:prefLabel "EXEMPT FROM ICD501 DISCOVERY".
-ismdissemcui:FEDCON a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "FEDCON";
-    skos:prefLabel "FEDCON".
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "EXEMPT_FROM_ICD501_DISCOVERY";
+  skos:prefLabel "EXEMPT FROM ICD501 DISCOVERY".
+
 ismdissemcui:FED_ONLY a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "FED_ONLY";
-    skos:prefLabel "FED ONLY".
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "FED_ONLY";
+  skos:prefLabel "FED ONLY".
+
+ismdissemcui:FEDCON a skos:Concept;
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "FEDCON";
+  skos:prefLabel "FEDCON".
+
 ismdissemcui:NF a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "NF";
-    skos:prefLabel "NOT RELEASABLE TO FOREIGN NATIONALS".
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "NF";
+  skos:prefLabel "NOT RELEASABLE TO FOREIGN NATIONALS".
+
 ismdissemcui:NOCON a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "NOCON";
-    skos:prefLabel "NOCON".
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "NOCON";
+  skos:prefLabel "NOCON".
+
 ismdissemcui:REL a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "REL";
-    skos:prefLabel "AUTHORIZED FOR RELEASE TO".
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "REL";
+  skos:prefLabel "AUTHORIZED FOR RELEASE TO".
+
 ismdissemcui:RELIDO a skos:Concept;
-    skos:inScheme ismdissemcui:CVEnumISMDissemCui;
-    skos:notation "RELIDO";
-    skos:prefLabel "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL".
+  skos:inScheme ismdissemcui:CVEnumISMDissemCui;
+  skos:notation "RELIDO";
+  skos:prefLabel "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL".
+
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissemCui> a owl:Ontology;
+.

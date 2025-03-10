@@ -1,1134 +1,1976 @@
-@prefix ismcatre: <urn:us:gov:ic:cvenum:ismcat:responsibleentity#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ismcatre: <urn:us:gov:ic:cvenum:ismcat:responsibleentity#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATResponsibleEntity> a owl:Ontology.
 ismcatre:ABW a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ABW";
-    skos:prefLabel "Aruba".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ABW";
+  skos:prefLabel "Aruba".
+
 ismcatre:AFG a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "AFG";
-    skos:prefLabel "Islamic Republic of Afghanistan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "AFG";
+  skos:prefLabel "Islamic Republic of Afghanistan".
+
 ismcatre:AGO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "AGO";
-    skos:prefLabel "Republic of Angola".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "AGO";
+  skos:prefLabel "Republic of Angola".
+
 ismcatre:AIA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "AIA";
-    skos:prefLabel "Anguilla".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "AIA";
+  skos:prefLabel "Anguilla".
+
 ismcatre:ALB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ALB";
-    skos:prefLabel "Republic of Albania".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ALB";
+  skos:prefLabel "Republic of Albania".
+
 ismcatre:AND a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "AND";
-    skos:prefLabel "Principality of Andorra".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "AND";
+  skos:prefLabel "Principality of Andorra".
+
 ismcatre:ARE a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ARE";
-    skos:prefLabel "United Arab Emirates".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ARE";
+  skos:prefLabel "United Arab Emirates".
+
 ismcatre:ARG a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ARG";
-    skos:prefLabel "Argentine Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ARG";
+  skos:prefLabel "Argentine Republic".
+
 ismcatre:ARM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ARM";
-    skos:prefLabel "Republic of Armenia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ARM";
+  skos:prefLabel "Republic of Armenia".
+
 ismcatre:ASM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ASM";
-    skos:prefLabel "Territory of American Samoa".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ASM";
+  skos:prefLabel "Territory of American Samoa".
+
 ismcatre:ATA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ATA";
-    skos:prefLabel "Antarctica".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ATA";
+  skos:prefLabel "Antarctica".
+
 ismcatre:ATF a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ATF";
-    skos:prefLabel "French Southern and Antarctic Lands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ATF";
+  skos:prefLabel "French Southern and Antarctic Lands".
+
 ismcatre:ATG a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ATG";
-    skos:prefLabel "Antigua and Barbuda".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ATG";
+  skos:prefLabel "Antigua and Barbuda".
+
 ismcatre:AUS a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "AUS";
-    skos:prefLabel "Commonwealth of Australia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "AUS";
+  skos:prefLabel "Commonwealth of Australia".
+
 ismcatre:AUT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "AUT";
-    skos:prefLabel "Republic of Austria".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "AUT";
+  skos:prefLabel "Republic of Austria".
+
 ismcatre:AX2 a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "AX2";
-    skos:prefLabel "Guantanamo Bay Naval Base".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "AX2";
+  skos:prefLabel "Guantanamo Bay Naval Base".
+
 ismcatre:AX3 a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "AX3";
-    skos:prefLabel "Entity 6".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "AX3";
+  skos:prefLabel "Entity 6".
+
 ismcatre:AZE a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "AZE";
-    skos:prefLabel "Republic of Azerbaijan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "AZE";
+  skos:prefLabel "Republic of Azerbaijan".
+
 ismcatre:BDI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BDI";
-    skos:prefLabel "Republic of Burundi".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BDI";
+  skos:prefLabel "Republic of Burundi".
+
 ismcatre:BEL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BEL";
-    skos:prefLabel "Kingdom of Belgium".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BEL";
+  skos:prefLabel "Kingdom of Belgium".
+
 ismcatre:BEN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BEN";
-    skos:prefLabel "Republic of Benin".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BEN";
+  skos:prefLabel "Republic of Benin".
+
 ismcatre:BES a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BES";
-    skos:prefLabel "Bonaire, Sint Eustatius, and Saba".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BES";
+  skos:prefLabel "Bonaire, Sint Eustatius, and Saba".
+
 ismcatre:BFA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BFA";
-    skos:prefLabel "Burkina Faso".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BFA";
+  skos:prefLabel "Burkina Faso".
+
 ismcatre:BGD a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BGD";
-    skos:prefLabel "People’s Republic of Bangladesh".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BGD";
+  skos:prefLabel "People’s Republic of Bangladesh".
+
 ismcatre:BGR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BGR";
-    skos:prefLabel "Republic of Bulgaria".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BGR";
+  skos:prefLabel "Republic of Bulgaria".
+
 ismcatre:BHR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BHR";
-    skos:prefLabel "Kingdom of Bahrain".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BHR";
+  skos:prefLabel "Kingdom of Bahrain".
+
 ismcatre:BHS a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BHS";
-    skos:prefLabel "Commonwealth of The Bahamas".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BHS";
+  skos:prefLabel "Commonwealth of The Bahamas".
+
 ismcatre:BIH a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BIH";
-    skos:prefLabel "Bosnia and Herzegovina".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BIH";
+  skos:prefLabel "Bosnia and Herzegovina".
+
 ismcatre:BLM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BLM";
-    skos:prefLabel "Saint Barthelemy".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BLM";
+  skos:prefLabel "Saint Barthelemy".
+
 ismcatre:BLR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BLR";
-    skos:prefLabel "Republic of Belarus".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BLR";
+  skos:prefLabel "Republic of Belarus".
+
 ismcatre:BLZ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BLZ";
-    skos:prefLabel "Belize".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BLZ";
+  skos:prefLabel "Belize".
+
 ismcatre:BMU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BMU";
-    skos:prefLabel "Bermuda".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BMU";
+  skos:prefLabel "Bermuda".
+
 ismcatre:BOL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BOL";
-    skos:prefLabel "Plurinational State of Bolivia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BOL";
+  skos:prefLabel "Plurinational State of Bolivia".
+
 ismcatre:BRA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BRA";
-    skos:prefLabel "Federative Republic of Brazil".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BRA";
+  skos:prefLabel "Federative Republic of Brazil".
+
 ismcatre:BRB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BRB";
-    skos:prefLabel "Barbados".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BRB";
+  skos:prefLabel "Barbados".
+
 ismcatre:BRN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BRN";
-    skos:prefLabel "Brunei Darussalam".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BRN";
+  skos:prefLabel "Brunei Darussalam".
+
 ismcatre:BTN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BTN";
-    skos:prefLabel "Kingdom of Bhutan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BTN";
+  skos:prefLabel "Kingdom of Bhutan".
+
 ismcatre:BVT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BVT";
-    skos:prefLabel "Bouvet Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BVT";
+  skos:prefLabel "Bouvet Island".
+
 ismcatre:BWA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "BWA";
-    skos:prefLabel "Republic of Botswana".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "BWA";
+  skos:prefLabel "Republic of Botswana".
+
 ismcatre:CAF a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CAF";
-    skos:prefLabel "Central African Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CAF";
+  skos:prefLabel "Central African Republic".
+
 ismcatre:CAN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CAN";
-    skos:prefLabel "Canada".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CAN";
+  skos:prefLabel "Canada".
+
 ismcatre:CCK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CCK";
-    skos:prefLabel "Territory of Cocos (Keeling) Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CCK";
+  skos:prefLabel "Territory of Cocos (Keeling) Islands".
+
 ismcatre:CHE a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CHE";
-    skos:prefLabel "Swiss Confederation".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CHE";
+  skos:prefLabel "Swiss Confederation".
+
 ismcatre:CHL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CHL";
-    skos:prefLabel "Republic of Chile".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CHL";
+  skos:prefLabel "Republic of Chile".
+
 ismcatre:CHN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CHN";
-    skos:prefLabel "People’s Republic of China".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CHN";
+  skos:prefLabel "People’s Republic of China".
+
 ismcatre:CIV a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CIV";
-    skos:prefLabel "Republic of Côte d’Ivoire".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CIV";
+  skos:prefLabel "Republic of Côte d’Ivoire".
+
 ismcatre:CMR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CMR";
-    skos:prefLabel "Republic of Cameroon".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CMR";
+  skos:prefLabel "Republic of Cameroon".
+
 ismcatre:COD a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "COD";
-    skos:prefLabel "Democratic Republic of the Congo".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "COD";
+  skos:prefLabel "Democratic Republic of the Congo".
+
 ismcatre:COG a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "COG";
-    skos:prefLabel "Republic of the Congo".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "COG";
+  skos:prefLabel "Republic of the Congo".
+
 ismcatre:COK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "COK";
-    skos:prefLabel "Cook Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "COK";
+  skos:prefLabel "Cook Islands".
+
 ismcatre:COL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "COL";
-    skos:prefLabel "Republic of Colombia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "COL";
+  skos:prefLabel "Republic of Colombia".
+
 ismcatre:COM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "COM";
-    skos:prefLabel "Union of the Comoros".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "COM";
+  skos:prefLabel "Union of the Comoros".
+
 ismcatre:CPT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CPT";
-    skos:prefLabel "Clipperton Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CPT";
+  skos:prefLabel "Clipperton Island".
+
 ismcatre:CPV a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CPV";
-    skos:prefLabel "Republic of Cabo Verde".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CPV";
+  skos:prefLabel "Republic of Cabo Verde".
+
 ismcatre:CRI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CRI";
-    skos:prefLabel "Republic of Costa Rica".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CRI";
+  skos:prefLabel "Republic of Costa Rica".
+
 ismcatre:CUB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CUB";
-    skos:prefLabel "Republic of Cuba".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CUB";
+  skos:prefLabel "Republic of Cuba".
+
 ismcatre:CUW a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CUW";
-    skos:prefLabel "Curaçao".
-ismcatre:CVEnumISMCATResponsibleEntity dc:title "(U) GENC trigraphs (except AX1) in alphabetical order by trigraph, plus the NATO tetragraph. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMCATResponsibleEntity.xml";
-    a skos:ConceptScheme;
-    skos:hasTopConcept ismcatre:ABW, ismcatre:AFG, ismcatre:AGO, ismcatre:AIA, ismcatre:ALB, ismcatre:AND, ismcatre:ARE, ismcatre:ARG, ismcatre:ARM, ismcatre:ASM, ismcatre:ATA, ismcatre:ATF, ismcatre:ATG, ismcatre:AUS, ismcatre:AUT, ismcatre:AX2, ismcatre:AX3, ismcatre:AZE, ismcatre:BDI, ismcatre:BEL, ismcatre:BEN, ismcatre:BES, ismcatre:BFA, ismcatre:BGD, ismcatre:BGR, ismcatre:BHR, ismcatre:BHS, ismcatre:BIH, ismcatre:BLM, ismcatre:BLR, ismcatre:BLZ, ismcatre:BMU, ismcatre:BOL, ismcatre:BRA, ismcatre:BRB, ismcatre:BRN, ismcatre:BTN, ismcatre:BVT, ismcatre:BWA, ismcatre:CAF, ismcatre:CAN, ismcatre:CCK, ismcatre:CHE, ismcatre:CHL, ismcatre:CHN, ismcatre:CIV, ismcatre:CMR, ismcatre:COD, ismcatre:COG, ismcatre:COK, ismcatre:COL, ismcatre:COM, ismcatre:CPT, ismcatre:CPV, ismcatre:CRI, ismcatre:CUB, ismcatre:CUW, ismcatre:CXR, ismcatre:CYM, ismcatre:CYP, ismcatre:CZE, ismcatre:DEU, ismcatre:DGA, ismcatre:DJI, ismcatre:DMA, ismcatre:DNK, ismcatre:DOM, ismcatre:DZA, ismcatre:ECU, ismcatre:EGY, ismcatre:ERI, ismcatre:ESH, ismcatre:ESP, ismcatre:EST, ismcatre:ETH, ismcatre:FIN, ismcatre:FJI, ismcatre:FLK, ismcatre:FRA, ismcatre:FRO, ismcatre:FSM, ismcatre:GAB, ismcatre:GBR, ismcatre:GEO, ismcatre:GGY, ismcatre:GHA, ismcatre:GIB, ismcatre:GIN, ismcatre:GLP, ismcatre:GMB, ismcatre:GNB, ismcatre:GNQ, ismcatre:GRC, ismcatre:GRD, ismcatre:GRL, ismcatre:GTM, ismcatre:GUF, ismcatre:GUM, ismcatre:GUY, ismcatre:HKG, ismcatre:HMD, ismcatre:HND, ismcatre:HRV, ismcatre:HTI, ismcatre:HUN, ismcatre:IDN, ismcatre:IMN, ismcatre:IND, ismcatre:IOT, ismcatre:IRL, ismcatre:IRN, ismcatre:IRQ, ismcatre:ISL, ismcatre:ISR, ismcatre:ITA, ismcatre:JAM, ismcatre:JEY, ismcatre:JOR, ismcatre:JPN, ismcatre:KAZ, ismcatre:KEN, ismcatre:KGZ, ismcatre:KHM, ismcatre:KIR, ismcatre:KNA, ismcatre:KOR, ismcatre:KWT, ismcatre:LAO, ismcatre:LBN, ismcatre:LBR, ismcatre:LBY, ismcatre:LCA, ismcatre:LIE, ismcatre:LKA, ismcatre:LSO, ismcatre:LTU, ismcatre:LUX, ismcatre:LVA, ismcatre:MAC, ismcatre:MAF, ismcatre:MAR, ismcatre:MCO, ismcatre:MDA, ismcatre:MDG, ismcatre:MDV, ismcatre:MEX, ismcatre:MHL, ismcatre:MKD, ismcatre:MLI, ismcatre:MLT, ismcatre:MMR, ismcatre:MNE, ismcatre:MNG, ismcatre:MNP, ismcatre:MOZ, ismcatre:MRT, ismcatre:MSR, ismcatre:MTQ, ismcatre:MUS, ismcatre:MWI, ismcatre:MYS, ismcatre:MYT, ismcatre:NAM, ismcatre:NATO, ismcatre:NCL, ismcatre:NER, ismcatre:NFK, ismcatre:NGA, ismcatre:NIC, ismcatre:NIU, ismcatre:NLD, ismcatre:NOR, ismcatre:NPL, ismcatre:NRU, ismcatre:NZL, ismcatre:OMN, ismcatre:PAK, ismcatre:PAN, ismcatre:PCN, ismcatre:PER, ismcatre:PHL, ismcatre:PLW, ismcatre:PNG, ismcatre:POL, ismcatre:PRI, ismcatre:PRK, ismcatre:PRT, ismcatre:PRY, ismcatre:PYF, ismcatre:QAT, ismcatre:REU, ismcatre:ROU, ismcatre:RUS, ismcatre:RWA, ismcatre:SAU, ismcatre:SDN, ismcatre:SEN, ismcatre:SGP, ismcatre:SGS, ismcatre:SHN, ismcatre:SLB, ismcatre:SLE, ismcatre:SLV, ismcatre:SMR, ismcatre:SOM, ismcatre:SPM, ismcatre:SRB, ismcatre:SSD, ismcatre:STP, ismcatre:SUR, ismcatre:SVK, ismcatre:SVN, ismcatre:SWE, ismcatre:SWZ, ismcatre:SXM, ismcatre:SYC, ismcatre:SYR, ismcatre:TCA, ismcatre:TCD, ismcatre:TGO, ismcatre:THA, ismcatre:TJK, ismcatre:TKL, ismcatre:TKM, ismcatre:TLS, ismcatre:TON, ismcatre:TTO, ismcatre:TUN, ismcatre:TUR, ismcatre:TUV, ismcatre:TWN, ismcatre:TZA, ismcatre:UGA, ismcatre:UKR, ismcatre:URY, ismcatre:USA, ismcatre:UZB, ismcatre:VAT, ismcatre:VCT, ismcatre:VEN, ismcatre:VGB, ismcatre:VIR, ismcatre:VNM, ismcatre:VUT, ismcatre:WLF, ismcatre:WSM, ismcatre:XAC, ismcatre:XAZ, ismcatre:XBI, ismcatre:XBK, ismcatre:XCR, ismcatre:XCS, ismcatre:XCY, ismcatre:XEU, ismcatre:XGL, ismcatre:XGZ, ismcatre:XHO, ismcatre:XJA, ismcatre:XJM, ismcatre:XJN, ismcatre:XJV, ismcatre:XKM, ismcatre:XKN, ismcatre:XKR, ismcatre:XKS, ismcatre:XMW, ismcatre:XNV, ismcatre:XPL, ismcatre:XPR, ismcatre:XQZ, ismcatre:XSP, ismcatre:XSV, ismcatre:XTR, ismcatre:XWB, ismcatre:XWK, ismcatre:XXD, ismcatre:YEM, ismcatre:ZAF, ismcatre:ZMB, ismcatre:ZWE.
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CUW";
+  skos:prefLabel "Curaçao".
+
+ismcatre:CVEnumISMCATResponsibleEntity a skos:ConceptScheme;
+  dc:title "(U) GENC trigraphs (except AX1) in alphabetical order by trigraph, plus the NATO tetragraph. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMCATResponsibleEntity.xml";
+  skos:hasTopConcept
+    ismcatre:ABW,
+    ismcatre:AFG,
+    ismcatre:AGO,
+    ismcatre:AIA,
+    ismcatre:ALB,
+    ismcatre:AND,
+    ismcatre:ARE,
+    ismcatre:ARG,
+    ismcatre:ARM,
+    ismcatre:ASM,
+    ismcatre:ATA,
+    ismcatre:ATF,
+    ismcatre:ATG,
+    ismcatre:AUS,
+    ismcatre:AUT,
+    ismcatre:AX2,
+    ismcatre:AX3,
+    ismcatre:AZE,
+    ismcatre:BDI,
+    ismcatre:BEL,
+    ismcatre:BEN,
+    ismcatre:BES,
+    ismcatre:BFA,
+    ismcatre:BGD,
+    ismcatre:BGR,
+    ismcatre:BHR,
+    ismcatre:BHS,
+    ismcatre:BIH,
+    ismcatre:BLM,
+    ismcatre:BLR,
+    ismcatre:BLZ,
+    ismcatre:BMU,
+    ismcatre:BOL,
+    ismcatre:BRA,
+    ismcatre:BRB,
+    ismcatre:BRN,
+    ismcatre:BTN,
+    ismcatre:BVT,
+    ismcatre:BWA,
+    ismcatre:CAF,
+    ismcatre:CAN,
+    ismcatre:CCK,
+    ismcatre:CHE,
+    ismcatre:CHL,
+    ismcatre:CHN,
+    ismcatre:CIV,
+    ismcatre:CMR,
+    ismcatre:COD,
+    ismcatre:COG,
+    ismcatre:COK,
+    ismcatre:COL,
+    ismcatre:COM,
+    ismcatre:CPT,
+    ismcatre:CPV,
+    ismcatre:CRI,
+    ismcatre:CUB,
+    ismcatre:CUW,
+    ismcatre:CXR,
+    ismcatre:CYM,
+    ismcatre:CYP,
+    ismcatre:CZE,
+    ismcatre:DEU,
+    ismcatre:DGA,
+    ismcatre:DJI,
+    ismcatre:DMA,
+    ismcatre:DNK,
+    ismcatre:DOM,
+    ismcatre:DZA,
+    ismcatre:ECU,
+    ismcatre:EGY,
+    ismcatre:ERI,
+    ismcatre:ESH,
+    ismcatre:ESP,
+    ismcatre:EST,
+    ismcatre:ETH,
+    ismcatre:FIN,
+    ismcatre:FJI,
+    ismcatre:FLK,
+    ismcatre:FRA,
+    ismcatre:FRO,
+    ismcatre:FSM,
+    ismcatre:GAB,
+    ismcatre:GBR,
+    ismcatre:GEO,
+    ismcatre:GGY,
+    ismcatre:GHA,
+    ismcatre:GIB,
+    ismcatre:GIN,
+    ismcatre:GLP,
+    ismcatre:GMB,
+    ismcatre:GNB,
+    ismcatre:GNQ,
+    ismcatre:GRC,
+    ismcatre:GRD,
+    ismcatre:GRL,
+    ismcatre:GTM,
+    ismcatre:GUF,
+    ismcatre:GUM,
+    ismcatre:GUY,
+    ismcatre:HKG,
+    ismcatre:HMD,
+    ismcatre:HND,
+    ismcatre:HRV,
+    ismcatre:HTI,
+    ismcatre:HUN,
+    ismcatre:IDN,
+    ismcatre:IMN,
+    ismcatre:IND,
+    ismcatre:IOT,
+    ismcatre:IRL,
+    ismcatre:IRN,
+    ismcatre:IRQ,
+    ismcatre:ISL,
+    ismcatre:ISR,
+    ismcatre:ITA,
+    ismcatre:JAM,
+    ismcatre:JEY,
+    ismcatre:JOR,
+    ismcatre:JPN,
+    ismcatre:KAZ,
+    ismcatre:KEN,
+    ismcatre:KGZ,
+    ismcatre:KHM,
+    ismcatre:KIR,
+    ismcatre:KNA,
+    ismcatre:KOR,
+    ismcatre:KWT,
+    ismcatre:LAO,
+    ismcatre:LBN,
+    ismcatre:LBR,
+    ismcatre:LBY,
+    ismcatre:LCA,
+    ismcatre:LIE,
+    ismcatre:LKA,
+    ismcatre:LSO,
+    ismcatre:LTU,
+    ismcatre:LUX,
+    ismcatre:LVA,
+    ismcatre:MAC,
+    ismcatre:MAF,
+    ismcatre:MAR,
+    ismcatre:MCO,
+    ismcatre:MDA,
+    ismcatre:MDG,
+    ismcatre:MDV,
+    ismcatre:MEX,
+    ismcatre:MHL,
+    ismcatre:MKD,
+    ismcatre:MLI,
+    ismcatre:MLT,
+    ismcatre:MMR,
+    ismcatre:MNE,
+    ismcatre:MNG,
+    ismcatre:MNP,
+    ismcatre:MOZ,
+    ismcatre:MRT,
+    ismcatre:MSR,
+    ismcatre:MTQ,
+    ismcatre:MUS,
+    ismcatre:MWI,
+    ismcatre:MYS,
+    ismcatre:MYT,
+    ismcatre:NAM,
+    ismcatre:NATO,
+    ismcatre:NCL,
+    ismcatre:NER,
+    ismcatre:NFK,
+    ismcatre:NGA,
+    ismcatre:NIC,
+    ismcatre:NIU,
+    ismcatre:NLD,
+    ismcatre:NOR,
+    ismcatre:NPL,
+    ismcatre:NRU,
+    ismcatre:NZL,
+    ismcatre:OMN,
+    ismcatre:PAK,
+    ismcatre:PAN,
+    ismcatre:PCN,
+    ismcatre:PER,
+    ismcatre:PHL,
+    ismcatre:PLW,
+    ismcatre:PNG,
+    ismcatre:POL,
+    ismcatre:PRI,
+    ismcatre:PRK,
+    ismcatre:PRT,
+    ismcatre:PRY,
+    ismcatre:PYF,
+    ismcatre:QAT,
+    ismcatre:REU,
+    ismcatre:ROU,
+    ismcatre:RUS,
+    ismcatre:RWA,
+    ismcatre:SAU,
+    ismcatre:SDN,
+    ismcatre:SEN,
+    ismcatre:SGP,
+    ismcatre:SGS,
+    ismcatre:SHN,
+    ismcatre:SLB,
+    ismcatre:SLE,
+    ismcatre:SLV,
+    ismcatre:SMR,
+    ismcatre:SOM,
+    ismcatre:SPM,
+    ismcatre:SRB,
+    ismcatre:SSD,
+    ismcatre:STP,
+    ismcatre:SUR,
+    ismcatre:SVK,
+    ismcatre:SVN,
+    ismcatre:SWE,
+    ismcatre:SWZ,
+    ismcatre:SXM,
+    ismcatre:SYC,
+    ismcatre:SYR,
+    ismcatre:TCA,
+    ismcatre:TCD,
+    ismcatre:TGO,
+    ismcatre:THA,
+    ismcatre:TJK,
+    ismcatre:TKL,
+    ismcatre:TKM,
+    ismcatre:TLS,
+    ismcatre:TON,
+    ismcatre:TTO,
+    ismcatre:TUN,
+    ismcatre:TUR,
+    ismcatre:TUV,
+    ismcatre:TWN,
+    ismcatre:TZA,
+    ismcatre:UGA,
+    ismcatre:UKR,
+    ismcatre:URY,
+    ismcatre:USA,
+    ismcatre:UZB,
+    ismcatre:VAT,
+    ismcatre:VCT,
+    ismcatre:VEN,
+    ismcatre:VGB,
+    ismcatre:VIR,
+    ismcatre:VNM,
+    ismcatre:VUT,
+    ismcatre:WLF,
+    ismcatre:WSM,
+    ismcatre:XAC,
+    ismcatre:XAZ,
+    ismcatre:XBI,
+    ismcatre:XBK,
+    ismcatre:XCR,
+    ismcatre:XCS,
+    ismcatre:XCY,
+    ismcatre:XEU,
+    ismcatre:XGL,
+    ismcatre:XGZ,
+    ismcatre:XHO,
+    ismcatre:XJA,
+    ismcatre:XJM,
+    ismcatre:XJN,
+    ismcatre:XJV,
+    ismcatre:XKM,
+    ismcatre:XKN,
+    ismcatre:XKR,
+    ismcatre:XKS,
+    ismcatre:XMW,
+    ismcatre:XNV,
+    ismcatre:XPL,
+    ismcatre:XPR,
+    ismcatre:XQZ,
+    ismcatre:XSP,
+    ismcatre:XSV,
+    ismcatre:XTR,
+    ismcatre:XWB,
+    ismcatre:XWK,
+    ismcatre:XXD,
+    ismcatre:YEM,
+    ismcatre:ZAF,
+    ismcatre:ZMB,
+    ismcatre:ZWE.
+
 ismcatre:CVEnumISMCATResponsibleEntityValues a rdfs:Datatype;
-    owl:oneOf "ABW", "AFG", "AGO", "AIA", "ALB", "AND", "ARE", "ARG", "ARM", "ASM", "ATA", "ATF", "ATG", "AUS", "AUT", "AX2", "AX3", "AZE", "BDI", "BEL", "BEN", "BES", "BFA", "BGD", "BGR", "BHR", "BHS", "BIH", "BLM", "BLR", "BLZ", "BMU", "BOL", "BRA", "BRB", "BRN", "BTN", "BVT", "BWA", "CAF", "CAN", "CCK", "CHE", "CHL", "CHN", "CIV", "CMR", "COD", "COG", "COK", "COL", "COM", "CPT", "CPV", "CRI", "CUB", "CUW", "CXR", "CYM", "CYP", "CZE", "DEU", "DGA", "DJI", "DMA", "DNK", "DOM", "DZA", "ECU", "EGY", "ERI", "ESH", "ESP", "EST", "ETH", "FIN", "FJI", "FLK", "FRA", "FRO", "FSM", "GAB", "GBR", "GEO", "GGY", "GHA", "GIB", "GIN", "GLP", "GMB", "GNB", "GNQ", "GRC", "GRD", "GRL", "GTM", "GUF", "GUM", "GUY", "HKG", "HMD", "HND", "HRV", "HTI", "HUN", "IDN", "IMN", "IND", "IOT", "IRL", "IRN", "IRQ", "ISL", "ISR", "ITA", "JAM", "JEY", "JOR", "JPN", "KAZ", "KEN", "KGZ", "KHM", "KIR", "KNA", "KOR", "KWT", "LAO", "LBN", "LBR", "LBY", "LCA", "LIE", "LKA", "LSO", "LTU", "LUX", "LVA", "MAC", "MAF", "MAR", "MCO", "MDA", "MDG", "MDV", "MEX", "MHL", "MKD", "MLI", "MLT", "MMR", "MNE", "MNG", "MNP", "MOZ", "MRT", "MSR", "MTQ", "MUS", "MWI", "MYS", "MYT", "NAM", "NATO", "NCL", "NER", "NFK", "NGA", "NIC", "NIU", "NLD", "NOR", "NPL", "NRU", "NZL", "OMN", "PAK", "PAN", "PCN", "PER", "PHL", "PLW", "PNG", "POL", "PRI", "PRK", "PRT", "PRY", "PYF", "QAT", "REU", "ROU", "RUS", "RWA", "SAU", "SDN", "SEN", "SGP", "SGS", "SHN", "SLB", "SLE", "SLV", "SMR", "SOM", "SPM", "SRB", "SSD", "STP", "SUR", "SVK", "SVN", "SWE", "SWZ", "SXM", "SYC", "SYR", "TCA", "TCD", "TGO", "THA", "TJK", "TKL", "TKM", "TLS", "TON", "TTO", "TUN", "TUR", "TUV", "TWN", "TZA", "UGA", "UKR", "URY", "USA", "UZB", "VAT", "VCT", "VEN", "VGB", "VIR", "VNM", "VUT", "WLF", "WSM", "XAC", "XAZ", "XBI", "XBK", "XCR", "XCS", "XCY", "XEU", "XGL", "XGZ", "XHO", "XJA", "XJM", "XJN", "XJV", "XKM", "XKN", "XKR", "XKS", "XMW", "XNV", "XPL", "XPR", "XQZ", "XSP", "XSV", "XTR", "XWB", "XWK", "XXD", "YEM", "ZAF", "ZMB", "ZWE".
+  owl:oneOf
+    "ABW",
+    "AFG",
+    "AGO",
+    "AIA",
+    "ALB",
+    "AND",
+    "ARE",
+    "ARG",
+    "ARM",
+    "ASM",
+    "ATA",
+    "ATF",
+    "ATG",
+    "AUS",
+    "AUT",
+    "AX2",
+    "AX3",
+    "AZE",
+    "BDI",
+    "BEL",
+    "BEN",
+    "BES",
+    "BFA",
+    "BGD",
+    "BGR",
+    "BHR",
+    "BHS",
+    "BIH",
+    "BLM",
+    "BLR",
+    "BLZ",
+    "BMU",
+    "BOL",
+    "BRA",
+    "BRB",
+    "BRN",
+    "BTN",
+    "BVT",
+    "BWA",
+    "CAF",
+    "CAN",
+    "CCK",
+    "CHE",
+    "CHL",
+    "CHN",
+    "CIV",
+    "CMR",
+    "COD",
+    "COG",
+    "COK",
+    "COL",
+    "COM",
+    "CPT",
+    "CPV",
+    "CRI",
+    "CUB",
+    "CUW",
+    "CXR",
+    "CYM",
+    "CYP",
+    "CZE",
+    "DEU",
+    "DGA",
+    "DJI",
+    "DMA",
+    "DNK",
+    "DOM",
+    "DZA",
+    "ECU",
+    "EGY",
+    "ERI",
+    "ESH",
+    "ESP",
+    "EST",
+    "ETH",
+    "FIN",
+    "FJI",
+    "FLK",
+    "FRA",
+    "FRO",
+    "FSM",
+    "GAB",
+    "GBR",
+    "GEO",
+    "GGY",
+    "GHA",
+    "GIB",
+    "GIN",
+    "GLP",
+    "GMB",
+    "GNB",
+    "GNQ",
+    "GRC",
+    "GRD",
+    "GRL",
+    "GTM",
+    "GUF",
+    "GUM",
+    "GUY",
+    "HKG",
+    "HMD",
+    "HND",
+    "HRV",
+    "HTI",
+    "HUN",
+    "IDN",
+    "IMN",
+    "IND",
+    "IOT",
+    "IRL",
+    "IRN",
+    "IRQ",
+    "ISL",
+    "ISR",
+    "ITA",
+    "JAM",
+    "JEY",
+    "JOR",
+    "JPN",
+    "KAZ",
+    "KEN",
+    "KGZ",
+    "KHM",
+    "KIR",
+    "KNA",
+    "KOR",
+    "KWT",
+    "LAO",
+    "LBN",
+    "LBR",
+    "LBY",
+    "LCA",
+    "LIE",
+    "LKA",
+    "LSO",
+    "LTU",
+    "LUX",
+    "LVA",
+    "MAC",
+    "MAF",
+    "MAR",
+    "MCO",
+    "MDA",
+    "MDG",
+    "MDV",
+    "MEX",
+    "MHL",
+    "MKD",
+    "MLI",
+    "MLT",
+    "MMR",
+    "MNE",
+    "MNG",
+    "MNP",
+    "MOZ",
+    "MRT",
+    "MSR",
+    "MTQ",
+    "MUS",
+    "MWI",
+    "MYS",
+    "MYT",
+    "NAM",
+    "NATO",
+    "NCL",
+    "NER",
+    "NFK",
+    "NGA",
+    "NIC",
+    "NIU",
+    "NLD",
+    "NOR",
+    "NPL",
+    "NRU",
+    "NZL",
+    "OMN",
+    "PAK",
+    "PAN",
+    "PCN",
+    "PER",
+    "PHL",
+    "PLW",
+    "PNG",
+    "POL",
+    "PRI",
+    "PRK",
+    "PRT",
+    "PRY",
+    "PYF",
+    "QAT",
+    "REU",
+    "ROU",
+    "RUS",
+    "RWA",
+    "SAU",
+    "SDN",
+    "SEN",
+    "SGP",
+    "SGS",
+    "SHN",
+    "SLB",
+    "SLE",
+    "SLV",
+    "SMR",
+    "SOM",
+    "SPM",
+    "SRB",
+    "SSD",
+    "STP",
+    "SUR",
+    "SVK",
+    "SVN",
+    "SWE",
+    "SWZ",
+    "SXM",
+    "SYC",
+    "SYR",
+    "TCA",
+    "TCD",
+    "TGO",
+    "THA",
+    "TJK",
+    "TKL",
+    "TKM",
+    "TLS",
+    "TON",
+    "TTO",
+    "TUN",
+    "TUR",
+    "TUV",
+    "TWN",
+    "TZA",
+    "UGA",
+    "UKR",
+    "URY",
+    "USA",
+    "UZB",
+    "VAT",
+    "VCT",
+    "VEN",
+    "VGB",
+    "VIR",
+    "VNM",
+    "VUT",
+    "WLF",
+    "WSM",
+    "XAC",
+    "XAZ",
+    "XBI",
+    "XBK",
+    "XCR",
+    "XCS",
+    "XCY",
+    "XEU",
+    "XGL",
+    "XGZ",
+    "XHO",
+    "XJA",
+    "XJM",
+    "XJN",
+    "XJV",
+    "XKM",
+    "XKN",
+    "XKR",
+    "XKS",
+    "XMW",
+    "XNV",
+    "XPL",
+    "XPR",
+    "XQZ",
+    "XSP",
+    "XSV",
+    "XTR",
+    "XWB",
+    "XWK",
+    "XXD",
+    "YEM",
+    "ZAF",
+    "ZMB",
+    "ZWE".
+
 ismcatre:CXR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CXR";
-    skos:prefLabel "Territory of Christmas Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CXR";
+  skos:prefLabel "Territory of Christmas Island".
+
 ismcatre:CYM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CYM";
-    skos:prefLabel "Cayman Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CYM";
+  skos:prefLabel "Cayman Islands".
+
 ismcatre:CYP a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CYP";
-    skos:prefLabel "Republic of Cyprus".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CYP";
+  skos:prefLabel "Republic of Cyprus".
+
 ismcatre:CZE a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "CZE";
-    skos:prefLabel "Czech Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "CZE";
+  skos:prefLabel "Czech Republic".
+
 ismcatre:DEU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "DEU";
-    skos:prefLabel "Federal Republic of Germany".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "DEU";
+  skos:prefLabel "Federal Republic of Germany".
+
 ismcatre:DGA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "DGA";
-    skos:prefLabel "Diego Garcia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "DGA";
+  skos:prefLabel "Diego Garcia".
+
 ismcatre:DJI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "DJI";
-    skos:prefLabel "Republic of Djibouti".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "DJI";
+  skos:prefLabel "Republic of Djibouti".
+
 ismcatre:DMA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "DMA";
-    skos:prefLabel "Commonwealth of Dominica".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "DMA";
+  skos:prefLabel "Commonwealth of Dominica".
+
 ismcatre:DNK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "DNK";
-    skos:prefLabel "Kingdom of Denmark".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "DNK";
+  skos:prefLabel "Kingdom of Denmark".
+
 ismcatre:DOM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "DOM";
-    skos:prefLabel "Dominican Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "DOM";
+  skos:prefLabel "Dominican Republic".
+
 ismcatre:DZA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "DZA";
-    skos:prefLabel "People’s Democratic Republic of Algeria".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "DZA";
+  skos:prefLabel "People’s Democratic Republic of Algeria".
+
 ismcatre:ECU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ECU";
-    skos:prefLabel "Republic of Ecuador".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ECU";
+  skos:prefLabel "Republic of Ecuador".
+
 ismcatre:EGY a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "EGY";
-    skos:prefLabel "Arab Republic of Egypt".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "EGY";
+  skos:prefLabel "Arab Republic of Egypt".
+
 ismcatre:ERI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ERI";
-    skos:prefLabel "State of Eritrea".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ERI";
+  skos:prefLabel "State of Eritrea".
+
 ismcatre:ESH a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ESH";
-    skos:prefLabel "Western Sahara".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ESH";
+  skos:prefLabel "Western Sahara".
+
 ismcatre:ESP a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ESP";
-    skos:prefLabel "Kingdom of Spain".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ESP";
+  skos:prefLabel "Kingdom of Spain".
+
 ismcatre:EST a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "EST";
-    skos:prefLabel "Republic of Estonia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "EST";
+  skos:prefLabel "Republic of Estonia".
+
 ismcatre:ETH a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ETH";
-    skos:prefLabel "Federal Democratic Republic of Ethiopia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ETH";
+  skos:prefLabel "Federal Democratic Republic of Ethiopia".
+
 ismcatre:FIN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "FIN";
-    skos:prefLabel "Republic of Finland".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "FIN";
+  skos:prefLabel "Republic of Finland".
+
 ismcatre:FJI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "FJI";
-    skos:prefLabel "Republic of Fiji".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "FJI";
+  skos:prefLabel "Republic of Fiji".
+
 ismcatre:FLK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "FLK";
-    skos:prefLabel "Falkland Islands (Islas Malvinas)".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "FLK";
+  skos:prefLabel "Falkland Islands (Islas Malvinas)".
+
 ismcatre:FRA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "FRA";
-    skos:prefLabel "French Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "FRA";
+  skos:prefLabel "French Republic".
+
 ismcatre:FRO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "FRO";
-    skos:prefLabel "Faroe Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "FRO";
+  skos:prefLabel "Faroe Islands".
+
 ismcatre:FSM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "FSM";
-    skos:prefLabel "Federated States of Micronesia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "FSM";
+  skos:prefLabel "Federated States of Micronesia".
+
 ismcatre:GAB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GAB";
-    skos:prefLabel "Gabonese Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GAB";
+  skos:prefLabel "Gabonese Republic".
+
 ismcatre:GBR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GBR";
-    skos:prefLabel "United Kingdom of Great Britain and Northern Ireland".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GBR";
+  skos:prefLabel "United Kingdom of Great Britain and Northern Ireland".
+
 ismcatre:GEO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GEO";
-    skos:prefLabel "Georgia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GEO";
+  skos:prefLabel "Georgia".
+
 ismcatre:GGY a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GGY";
-    skos:prefLabel "Bailiwick of Guernsey".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GGY";
+  skos:prefLabel "Bailiwick of Guernsey".
+
 ismcatre:GHA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GHA";
-    skos:prefLabel "Republic of Ghana".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GHA";
+  skos:prefLabel "Republic of Ghana".
+
 ismcatre:GIB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GIB";
-    skos:prefLabel "Gibraltar".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GIB";
+  skos:prefLabel "Gibraltar".
+
 ismcatre:GIN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GIN";
-    skos:prefLabel "Republic of Guinea".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GIN";
+  skos:prefLabel "Republic of Guinea".
+
 ismcatre:GLP a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GLP";
-    skos:prefLabel "Region of Guadeloupe".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GLP";
+  skos:prefLabel "Region of Guadeloupe".
+
 ismcatre:GMB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GMB";
-    skos:prefLabel "Republic of The Gambia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GMB";
+  skos:prefLabel "Republic of The Gambia".
+
 ismcatre:GNB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GNB";
-    skos:prefLabel "Republic of Guinea-Bissau".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GNB";
+  skos:prefLabel "Republic of Guinea-Bissau".
+
 ismcatre:GNQ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GNQ";
-    skos:prefLabel "Republic of Equatorial Guinea".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GNQ";
+  skos:prefLabel "Republic of Equatorial Guinea".
+
 ismcatre:GRC a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GRC";
-    skos:prefLabel "Hellenic Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GRC";
+  skos:prefLabel "Hellenic Republic".
+
 ismcatre:GRD a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GRD";
-    skos:prefLabel "Grenada".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GRD";
+  skos:prefLabel "Grenada".
+
 ismcatre:GRL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GRL";
-    skos:prefLabel "Greenland".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GRL";
+  skos:prefLabel "Greenland".
+
 ismcatre:GTM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GTM";
-    skos:prefLabel "Republic of Guatemala".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GTM";
+  skos:prefLabel "Republic of Guatemala".
+
 ismcatre:GUF a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GUF";
-    skos:prefLabel "Territorial Collectivity of Guiana".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GUF";
+  skos:prefLabel "Territorial Collectivity of Guiana".
+
 ismcatre:GUM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GUM";
-    skos:prefLabel "Territory of Guam".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GUM";
+  skos:prefLabel "Territory of Guam".
+
 ismcatre:GUY a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "GUY";
-    skos:prefLabel "Co-operative Republic of Guyana".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "GUY";
+  skos:prefLabel "Co-operative Republic of Guyana".
+
 ismcatre:HKG a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "HKG";
-    skos:prefLabel "Hong Kong Special Administrative Region".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "HKG";
+  skos:prefLabel "Hong Kong Special Administrative Region".
+
 ismcatre:HMD a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "HMD";
-    skos:prefLabel "Territory of Heard Island and McDonald Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "HMD";
+  skos:prefLabel "Territory of Heard Island and McDonald Islands".
+
 ismcatre:HND a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "HND";
-    skos:prefLabel "Republic of Honduras".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "HND";
+  skos:prefLabel "Republic of Honduras".
+
 ismcatre:HRV a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "HRV";
-    skos:prefLabel "Republic of Croatia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "HRV";
+  skos:prefLabel "Republic of Croatia".
+
 ismcatre:HTI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "HTI";
-    skos:prefLabel "Republic of Haiti".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "HTI";
+  skos:prefLabel "Republic of Haiti".
+
 ismcatre:HUN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "HUN";
-    skos:prefLabel "Hungary".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "HUN";
+  skos:prefLabel "Hungary".
+
 ismcatre:IDN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "IDN";
-    skos:prefLabel "Republic of Indonesia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "IDN";
+  skos:prefLabel "Republic of Indonesia".
+
 ismcatre:IMN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "IMN";
-    skos:prefLabel "Isle of Man".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "IMN";
+  skos:prefLabel "Isle of Man".
+
 ismcatre:IND a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "IND";
-    skos:prefLabel "Republic of India".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "IND";
+  skos:prefLabel "Republic of India".
+
 ismcatre:IOT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "IOT";
-    skos:prefLabel "British Indian Ocean Territory".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "IOT";
+  skos:prefLabel "British Indian Ocean Territory".
+
 ismcatre:IRL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "IRL";
-    skos:prefLabel "Ireland".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "IRL";
+  skos:prefLabel "Ireland".
+
 ismcatre:IRN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "IRN";
-    skos:prefLabel "Islamic Republic of Iran".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "IRN";
+  skos:prefLabel "Islamic Republic of Iran".
+
 ismcatre:IRQ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "IRQ";
-    skos:prefLabel "Republic of Iraq".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "IRQ";
+  skos:prefLabel "Republic of Iraq".
+
 ismcatre:ISL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ISL";
-    skos:prefLabel "Republic of Iceland".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ISL";
+  skos:prefLabel "Republic of Iceland".
+
 ismcatre:ISR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ISR";
-    skos:prefLabel "State of Israel".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ISR";
+  skos:prefLabel "State of Israel".
+
 ismcatre:ITA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ITA";
-    skos:prefLabel "Italian Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ITA";
+  skos:prefLabel "Italian Republic".
+
 ismcatre:JAM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "JAM";
-    skos:prefLabel "Jamaica".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "JAM";
+  skos:prefLabel "Jamaica".
+
 ismcatre:JEY a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "JEY";
-    skos:prefLabel "Bailiwick of Jersey".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "JEY";
+  skos:prefLabel "Bailiwick of Jersey".
+
 ismcatre:JOR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "JOR";
-    skos:prefLabel "Hashemite Kingdom of Jordan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "JOR";
+  skos:prefLabel "Hashemite Kingdom of Jordan".
+
 ismcatre:JPN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "JPN";
-    skos:prefLabel "Japan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "JPN";
+  skos:prefLabel "Japan".
+
 ismcatre:KAZ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "KAZ";
-    skos:prefLabel "Republic of Kazakhstan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "KAZ";
+  skos:prefLabel "Republic of Kazakhstan".
+
 ismcatre:KEN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "KEN";
-    skos:prefLabel "Republic of Kenya".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "KEN";
+  skos:prefLabel "Republic of Kenya".
+
 ismcatre:KGZ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "KGZ";
-    skos:prefLabel "Kyrgyz Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "KGZ";
+  skos:prefLabel "Kyrgyz Republic".
+
 ismcatre:KHM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "KHM";
-    skos:prefLabel "Kingdom of Cambodia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "KHM";
+  skos:prefLabel "Kingdom of Cambodia".
+
 ismcatre:KIR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "KIR";
-    skos:prefLabel "Republic of Kiribati".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "KIR";
+  skos:prefLabel "Republic of Kiribati".
+
 ismcatre:KNA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "KNA";
-    skos:prefLabel "Federation of Saint Kitts and Nevis".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "KNA";
+  skos:prefLabel "Federation of Saint Kitts and Nevis".
+
 ismcatre:KOR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "KOR";
-    skos:prefLabel "Republic of Korea".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "KOR";
+  skos:prefLabel "Republic of Korea".
+
 ismcatre:KWT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "KWT";
-    skos:prefLabel "State of Kuwait".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "KWT";
+  skos:prefLabel "State of Kuwait".
+
 ismcatre:LAO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LAO";
-    skos:prefLabel "Lao People’s Democratic Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LAO";
+  skos:prefLabel "Lao People’s Democratic Republic".
+
 ismcatre:LBN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LBN";
-    skos:prefLabel "Lebanese Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LBN";
+  skos:prefLabel "Lebanese Republic".
+
 ismcatre:LBR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LBR";
-    skos:prefLabel "Republic of Liberia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LBR";
+  skos:prefLabel "Republic of Liberia".
+
 ismcatre:LBY a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LBY";
-    skos:prefLabel "State of Libya".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LBY";
+  skos:prefLabel "State of Libya".
+
 ismcatre:LCA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LCA";
-    skos:prefLabel "Saint Lucia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LCA";
+  skos:prefLabel "Saint Lucia".
+
 ismcatre:LIE a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LIE";
-    skos:prefLabel "Principality of Liechtenstein".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LIE";
+  skos:prefLabel "Principality of Liechtenstein".
+
 ismcatre:LKA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LKA";
-    skos:prefLabel "Democratic Socialist Republic of Sri Lanka".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LKA";
+  skos:prefLabel "Democratic Socialist Republic of Sri Lanka".
+
 ismcatre:LSO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LSO";
-    skos:prefLabel "Kingdom of Lesotho".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LSO";
+  skos:prefLabel "Kingdom of Lesotho".
+
 ismcatre:LTU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LTU";
-    skos:prefLabel "Republic of Lithuania".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LTU";
+  skos:prefLabel "Republic of Lithuania".
+
 ismcatre:LUX a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LUX";
-    skos:prefLabel "Grand Duchy of Luxembourg".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LUX";
+  skos:prefLabel "Grand Duchy of Luxembourg".
+
 ismcatre:LVA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "LVA";
-    skos:prefLabel "Republic of Latvia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "LVA";
+  skos:prefLabel "Republic of Latvia".
+
 ismcatre:MAC a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MAC";
-    skos:prefLabel "Macau Special Administrative Region".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MAC";
+  skos:prefLabel "Macau Special Administrative Region".
+
 ismcatre:MAF a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MAF";
-    skos:prefLabel "Saint Martin".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MAF";
+  skos:prefLabel "Saint Martin".
+
 ismcatre:MAR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MAR";
-    skos:prefLabel "Kingdom of Morocco".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MAR";
+  skos:prefLabel "Kingdom of Morocco".
+
 ismcatre:MCO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MCO";
-    skos:prefLabel "Principality of Monaco".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MCO";
+  skos:prefLabel "Principality of Monaco".
+
 ismcatre:MDA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MDA";
-    skos:prefLabel "Republic of Moldova".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MDA";
+  skos:prefLabel "Republic of Moldova".
+
 ismcatre:MDG a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MDG";
-    skos:prefLabel "Republic of Madagascar".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MDG";
+  skos:prefLabel "Republic of Madagascar".
+
 ismcatre:MDV a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MDV";
-    skos:prefLabel "Republic of Maldives".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MDV";
+  skos:prefLabel "Republic of Maldives".
+
 ismcatre:MEX a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MEX";
-    skos:prefLabel "United Mexican States".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MEX";
+  skos:prefLabel "United Mexican States".
+
 ismcatre:MHL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MHL";
-    skos:prefLabel "Republic of the Marshall Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MHL";
+  skos:prefLabel "Republic of the Marshall Islands".
+
 ismcatre:MKD a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MKD";
-    skos:prefLabel "Republic of North Macedonia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MKD";
+  skos:prefLabel "Republic of North Macedonia".
+
 ismcatre:MLI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MLI";
-    skos:prefLabel "Republic of Mali".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MLI";
+  skos:prefLabel "Republic of Mali".
+
 ismcatre:MLT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MLT";
-    skos:prefLabel "Republic of Malta".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MLT";
+  skos:prefLabel "Republic of Malta".
+
 ismcatre:MMR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MMR";
-    skos:prefLabel "Union of Burma".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MMR";
+  skos:prefLabel "Union of Burma".
+
 ismcatre:MNE a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MNE";
-    skos:prefLabel "Montenegro".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MNE";
+  skos:prefLabel "Montenegro".
+
 ismcatre:MNG a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MNG";
-    skos:prefLabel "Mongolia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MNG";
+  skos:prefLabel "Mongolia".
+
 ismcatre:MNP a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MNP";
-    skos:prefLabel "Commonwealth of the Northern Mariana Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MNP";
+  skos:prefLabel "Commonwealth of the Northern Mariana Islands".
+
 ismcatre:MOZ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MOZ";
-    skos:prefLabel "Republic of Mozambique".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MOZ";
+  skos:prefLabel "Republic of Mozambique".
+
 ismcatre:MRT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MRT";
-    skos:prefLabel "Islamic Republic of Mauritania".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MRT";
+  skos:prefLabel "Islamic Republic of Mauritania".
+
 ismcatre:MSR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MSR";
-    skos:prefLabel "Montserrat".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MSR";
+  skos:prefLabel "Montserrat".
+
 ismcatre:MTQ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MTQ";
-    skos:prefLabel "Territorial Collectivity of Martinique".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MTQ";
+  skos:prefLabel "Territorial Collectivity of Martinique".
+
 ismcatre:MUS a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MUS";
-    skos:prefLabel "Republic of Mauritius".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MUS";
+  skos:prefLabel "Republic of Mauritius".
+
 ismcatre:MWI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MWI";
-    skos:prefLabel "Republic of Malawi".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MWI";
+  skos:prefLabel "Republic of Malawi".
+
 ismcatre:MYS a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MYS";
-    skos:prefLabel "Malaysia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MYS";
+  skos:prefLabel "Malaysia".
+
 ismcatre:MYT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "MYT";
-    skos:prefLabel "Department of Mayotte".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "MYT";
+  skos:prefLabel "Department of Mayotte".
+
 ismcatre:NAM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NAM";
-    skos:prefLabel "Republic of Namibia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NAM";
+  skos:prefLabel "Republic of Namibia".
+
 ismcatre:NATO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NATO";
-    skos:prefLabel "North Atlantic Treaty Organization".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NATO";
+  skos:prefLabel "North Atlantic Treaty Organization".
+
 ismcatre:NCL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NCL";
-    skos:prefLabel "New Caledonia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NCL";
+  skos:prefLabel "New Caledonia".
+
 ismcatre:NER a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NER";
-    skos:prefLabel "Republic of Niger".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NER";
+  skos:prefLabel "Republic of Niger".
+
 ismcatre:NFK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NFK";
-    skos:prefLabel "Territory of Norfolk Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NFK";
+  skos:prefLabel "Territory of Norfolk Island".
+
 ismcatre:NGA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NGA";
-    skos:prefLabel "Federal Republic of Nigeria".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NGA";
+  skos:prefLabel "Federal Republic of Nigeria".
+
 ismcatre:NIC a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NIC";
-    skos:prefLabel "Republic of Nicaragua".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NIC";
+  skos:prefLabel "Republic of Nicaragua".
+
 ismcatre:NIU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NIU";
-    skos:prefLabel "Niue".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NIU";
+  skos:prefLabel "Niue".
+
 ismcatre:NLD a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NLD";
-    skos:prefLabel "Kingdom of the Netherlands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NLD";
+  skos:prefLabel "Kingdom of the Netherlands".
+
 ismcatre:NOR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NOR";
-    skos:prefLabel "Kingdom of Norway".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NOR";
+  skos:prefLabel "Kingdom of Norway".
+
 ismcatre:NPL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NPL";
-    skos:prefLabel "Federal Democratic Republic of Nepal".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NPL";
+  skos:prefLabel "Federal Democratic Republic of Nepal".
+
 ismcatre:NRU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NRU";
-    skos:prefLabel "Republic of Nauru".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NRU";
+  skos:prefLabel "Republic of Nauru".
+
 ismcatre:NZL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "NZL";
-    skos:prefLabel "New Zealand".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "NZL";
+  skos:prefLabel "New Zealand".
+
 ismcatre:OMN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "OMN";
-    skos:prefLabel "Sultanate of Oman".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "OMN";
+  skos:prefLabel "Sultanate of Oman".
+
 ismcatre:PAK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PAK";
-    skos:prefLabel "Islamic Republic of Pakistan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PAK";
+  skos:prefLabel "Islamic Republic of Pakistan".
+
 ismcatre:PAN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PAN";
-    skos:prefLabel "Republic of Panama".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PAN";
+  skos:prefLabel "Republic of Panama".
+
 ismcatre:PCN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PCN";
-    skos:prefLabel "Pitcairn, Henderson, Ducie, and Oeno Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PCN";
+  skos:prefLabel "Pitcairn, Henderson, Ducie, and Oeno Islands".
+
 ismcatre:PER a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PER";
-    skos:prefLabel "Republic of Peru".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PER";
+  skos:prefLabel "Republic of Peru".
+
 ismcatre:PHL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PHL";
-    skos:prefLabel "Republic of the Philippines".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PHL";
+  skos:prefLabel "Republic of the Philippines".
+
 ismcatre:PLW a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PLW";
-    skos:prefLabel "Republic of Palau".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PLW";
+  skos:prefLabel "Republic of Palau".
+
 ismcatre:PNG a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PNG";
-    skos:prefLabel "Independent State of Papua New Guinea".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PNG";
+  skos:prefLabel "Independent State of Papua New Guinea".
+
 ismcatre:POL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "POL";
-    skos:prefLabel "Republic of Poland".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "POL";
+  skos:prefLabel "Republic of Poland".
+
 ismcatre:PRI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PRI";
-    skos:prefLabel "Commonwealth of Puerto Rico".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PRI";
+  skos:prefLabel "Commonwealth of Puerto Rico".
+
 ismcatre:PRK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PRK";
-    skos:prefLabel "Democratic People’s Republic of Korea".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PRK";
+  skos:prefLabel "Democratic People’s Republic of Korea".
+
 ismcatre:PRT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PRT";
-    skos:prefLabel "Portuguese Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PRT";
+  skos:prefLabel "Portuguese Republic".
+
 ismcatre:PRY a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PRY";
-    skos:prefLabel "Republic of Paraguay".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PRY";
+  skos:prefLabel "Republic of Paraguay".
+
 ismcatre:PYF a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "PYF";
-    skos:prefLabel "French Polynesia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "PYF";
+  skos:prefLabel "French Polynesia".
+
 ismcatre:QAT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "QAT";
-    skos:prefLabel "State of Qatar".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "QAT";
+  skos:prefLabel "State of Qatar".
+
 ismcatre:REU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "REU";
-    skos:prefLabel "Region of Reunion".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "REU";
+  skos:prefLabel "Region of Reunion".
+
 ismcatre:ROU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ROU";
-    skos:prefLabel "Romania".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ROU";
+  skos:prefLabel "Romania".
+
 ismcatre:RUS a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "RUS";
-    skos:prefLabel "Russian Federation".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "RUS";
+  skos:prefLabel "Russian Federation".
+
 ismcatre:RWA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "RWA";
-    skos:prefLabel "Republic of Rwanda".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "RWA";
+  skos:prefLabel "Republic of Rwanda".
+
 ismcatre:SAU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SAU";
-    skos:prefLabel "Kingdom of Saudi Arabia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SAU";
+  skos:prefLabel "Kingdom of Saudi Arabia".
+
 ismcatre:SDN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SDN";
-    skos:prefLabel "Republic of the Sudan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SDN";
+  skos:prefLabel "Republic of the Sudan".
+
 ismcatre:SEN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SEN";
-    skos:prefLabel "Republic of Senegal".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SEN";
+  skos:prefLabel "Republic of Senegal".
+
 ismcatre:SGP a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SGP";
-    skos:prefLabel "Republic of Singapore".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SGP";
+  skos:prefLabel "Republic of Singapore".
+
 ismcatre:SGS a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SGS";
-    skos:prefLabel "South Georgia and the South Sandwich Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SGS";
+  skos:prefLabel "South Georgia and the South Sandwich Islands".
+
 ismcatre:SHN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SHN";
-    skos:prefLabel "Saint Helena, Ascension, and Tristan da Cunha".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SHN";
+  skos:prefLabel "Saint Helena, Ascension, and Tristan da Cunha".
+
 ismcatre:SLB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SLB";
-    skos:prefLabel "Solomon Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SLB";
+  skos:prefLabel "Solomon Islands".
+
 ismcatre:SLE a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SLE";
-    skos:prefLabel "Republic of Sierra Leone".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SLE";
+  skos:prefLabel "Republic of Sierra Leone".
+
 ismcatre:SLV a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SLV";
-    skos:prefLabel "Republic of El Salvador".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SLV";
+  skos:prefLabel "Republic of El Salvador".
+
 ismcatre:SMR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SMR";
-    skos:prefLabel "Republic of San Marino".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SMR";
+  skos:prefLabel "Republic of San Marino".
+
 ismcatre:SOM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SOM";
-    skos:prefLabel "Federal Republic of Somalia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SOM";
+  skos:prefLabel "Federal Republic of Somalia".
+
 ismcatre:SPM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SPM";
-    skos:prefLabel "Territorial Collectivity of Saint Pierre and Miquelon".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SPM";
+  skos:prefLabel "Territorial Collectivity of Saint Pierre and Miquelon".
+
 ismcatre:SRB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SRB";
-    skos:prefLabel "Republic of Serbia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SRB";
+  skos:prefLabel "Republic of Serbia".
+
 ismcatre:SSD a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SSD";
-    skos:prefLabel "Republic of South Sudan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SSD";
+  skos:prefLabel "Republic of South Sudan".
+
 ismcatre:STP a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "STP";
-    skos:prefLabel "Democratic Republic of Sao Tome and Principe".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "STP";
+  skos:prefLabel "Democratic Republic of Sao Tome and Principe".
+
 ismcatre:SUR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SUR";
-    skos:prefLabel "Republic of Suriname".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SUR";
+  skos:prefLabel "Republic of Suriname".
+
 ismcatre:SVK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SVK";
-    skos:prefLabel "Slovak Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SVK";
+  skos:prefLabel "Slovak Republic".
+
 ismcatre:SVN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SVN";
-    skos:prefLabel "Republic of Slovenia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SVN";
+  skos:prefLabel "Republic of Slovenia".
+
 ismcatre:SWE a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SWE";
-    skos:prefLabel "Kingdom of Sweden".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SWE";
+  skos:prefLabel "Kingdom of Sweden".
+
 ismcatre:SWZ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SWZ";
-    skos:prefLabel "Kingdom of Eswatini".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SWZ";
+  skos:prefLabel "Kingdom of Eswatini".
+
 ismcatre:SXM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SXM";
-    skos:prefLabel "Sint Maarten".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SXM";
+  skos:prefLabel "Sint Maarten".
+
 ismcatre:SYC a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SYC";
-    skos:prefLabel "Republic of Seychelles".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SYC";
+  skos:prefLabel "Republic of Seychelles".
+
 ismcatre:SYR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "SYR";
-    skos:prefLabel "Syrian Arab Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "SYR";
+  skos:prefLabel "Syrian Arab Republic".
+
 ismcatre:TCA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TCA";
-    skos:prefLabel "Turks and Caicos Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TCA";
+  skos:prefLabel "Turks and Caicos Islands".
+
 ismcatre:TCD a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TCD";
-    skos:prefLabel "Republic of Chad".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TCD";
+  skos:prefLabel "Republic of Chad".
+
 ismcatre:TGO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TGO";
-    skos:prefLabel "Togolese Republic".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TGO";
+  skos:prefLabel "Togolese Republic".
+
 ismcatre:THA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "THA";
-    skos:prefLabel "Kingdom of Thailand".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "THA";
+  skos:prefLabel "Kingdom of Thailand".
+
 ismcatre:TJK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TJK";
-    skos:prefLabel "Republic of Tajikistan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TJK";
+  skos:prefLabel "Republic of Tajikistan".
+
 ismcatre:TKL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TKL";
-    skos:prefLabel "Tokelau".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TKL";
+  skos:prefLabel "Tokelau".
+
 ismcatre:TKM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TKM";
-    skos:prefLabel "Turkmenistan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TKM";
+  skos:prefLabel "Turkmenistan".
+
 ismcatre:TLS a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TLS";
-    skos:prefLabel "Democratic Republic of Timor-Leste".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TLS";
+  skos:prefLabel "Democratic Republic of Timor-Leste".
+
 ismcatre:TON a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TON";
-    skos:prefLabel "Kingdom of Tonga".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TON";
+  skos:prefLabel "Kingdom of Tonga".
+
 ismcatre:TTO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TTO";
-    skos:prefLabel "Republic of Trinidad and Tobago".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TTO";
+  skos:prefLabel "Republic of Trinidad and Tobago".
+
 ismcatre:TUN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TUN";
-    skos:prefLabel "Republic of Tunisia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TUN";
+  skos:prefLabel "Republic of Tunisia".
+
 ismcatre:TUR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TUR";
-    skos:prefLabel "Republic of Turkey".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TUR";
+  skos:prefLabel "Republic of Turkey".
+
 ismcatre:TUV a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TUV";
-    skos:prefLabel "Tuvalu".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TUV";
+  skos:prefLabel "Tuvalu".
+
 ismcatre:TWN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TWN";
-    skos:prefLabel "Taiwan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TWN";
+  skos:prefLabel "Taiwan".
+
 ismcatre:TZA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "TZA";
-    skos:prefLabel "United Republic of Tanzania".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "TZA";
+  skos:prefLabel "United Republic of Tanzania".
+
 ismcatre:UGA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "UGA";
-    skos:prefLabel "Republic of Uganda".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "UGA";
+  skos:prefLabel "Republic of Uganda".
+
 ismcatre:UKR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "UKR";
-    skos:prefLabel "Ukraine".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "UKR";
+  skos:prefLabel "Ukraine".
+
 ismcatre:URY a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "URY";
-    skos:prefLabel "Oriental Republic of Uruguay".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "URY";
+  skos:prefLabel "Oriental Republic of Uruguay".
+
 ismcatre:USA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "USA";
-    skos:prefLabel "United States of America".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "USA";
+  skos:prefLabel "United States of America".
+
 ismcatre:UZB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "UZB";
-    skos:prefLabel "Republic of Uzbekistan".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "UZB";
+  skos:prefLabel "Republic of Uzbekistan".
+
 ismcatre:VAT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "VAT";
-    skos:prefLabel "State of the Vatican City".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "VAT";
+  skos:prefLabel "State of the Vatican City".
+
 ismcatre:VCT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "VCT";
-    skos:prefLabel "Saint Vincent and the Grenadines".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "VCT";
+  skos:prefLabel "Saint Vincent and the Grenadines".
+
 ismcatre:VEN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "VEN";
-    skos:prefLabel "Bolivarian Republic of Venezuela".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "VEN";
+  skos:prefLabel "Bolivarian Republic of Venezuela".
+
 ismcatre:VGB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "VGB";
-    skos:prefLabel "British Virgin Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "VGB";
+  skos:prefLabel "British Virgin Islands".
+
 ismcatre:VIR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "VIR";
-    skos:prefLabel "United States Virgin Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "VIR";
+  skos:prefLabel "United States Virgin Islands".
+
 ismcatre:VNM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "VNM";
-    skos:prefLabel "Socialist Republic of Vietnam".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "VNM";
+  skos:prefLabel "Socialist Republic of Vietnam".
+
 ismcatre:VUT a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "VUT";
-    skos:prefLabel "Republic of Vanuatu".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "VUT";
+  skos:prefLabel "Republic of Vanuatu".
+
 ismcatre:WLF a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "WLF";
-    skos:prefLabel "Wallis and Futuna".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "WLF";
+  skos:prefLabel "Wallis and Futuna".
+
 ismcatre:WSM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "WSM";
-    skos:prefLabel "Independent State of Samoa".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "WSM";
+  skos:prefLabel "Independent State of Samoa".
+
 ismcatre:XAC a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XAC";
-    skos:prefLabel "Territory of Ashmore and Cartier Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XAC";
+  skos:prefLabel "Territory of Ashmore and Cartier Islands".
+
 ismcatre:XAZ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XAZ";
-    skos:prefLabel "Entity 1".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XAZ";
+  skos:prefLabel "Entity 1".
+
 ismcatre:XBI a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XBI";
-    skos:prefLabel "Bassas da India".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XBI";
+  skos:prefLabel "Bassas da India".
+
 ismcatre:XBK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XBK";
-    skos:prefLabel "Baker Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XBK";
+  skos:prefLabel "Baker Island".
+
 ismcatre:XCR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XCR";
-    skos:prefLabel "Entity 2".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XCR";
+  skos:prefLabel "Entity 2".
+
 ismcatre:XCS a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XCS";
-    skos:prefLabel "Coral Sea Islands Territory".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XCS";
+  skos:prefLabel "Coral Sea Islands Territory".
+
 ismcatre:XCY a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XCY";
-    skos:prefLabel "Entity 3".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XCY";
+  skos:prefLabel "Entity 3".
+
 ismcatre:XEU a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XEU";
-    skos:prefLabel "Europa Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XEU";
+  skos:prefLabel "Europa Island".
+
 ismcatre:XGL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XGL";
-    skos:prefLabel "Glorioso Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XGL";
+  skos:prefLabel "Glorioso Islands".
+
 ismcatre:XGZ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XGZ";
-    skos:prefLabel "Gaza Strip".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XGZ";
+  skos:prefLabel "Gaza Strip".
+
 ismcatre:XHO a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XHO";
-    skos:prefLabel "Howland Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XHO";
+  skos:prefLabel "Howland Island".
+
 ismcatre:XJA a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XJA";
-    skos:prefLabel "Johnston Atoll".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XJA";
+  skos:prefLabel "Johnston Atoll".
+
 ismcatre:XJM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XJM";
-    skos:prefLabel "Jan Mayen".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XJM";
+  skos:prefLabel "Jan Mayen".
+
 ismcatre:XJN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XJN";
-    skos:prefLabel "Juan de Nova Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XJN";
+  skos:prefLabel "Juan de Nova Island".
+
 ismcatre:XJV a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XJV";
-    skos:prefLabel "Jarvis Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XJV";
+  skos:prefLabel "Jarvis Island".
+
 ismcatre:XKM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XKM";
-    skos:prefLabel "Entity 4".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XKM";
+  skos:prefLabel "Entity 4".
+
 ismcatre:XKN a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XKN";
-    skos:prefLabel "Entity 5".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XKN";
+  skos:prefLabel "Entity 5".
+
 ismcatre:XKR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XKR";
-    skos:prefLabel "Kingman Reef".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XKR";
+  skos:prefLabel "Kingman Reef".
+
 ismcatre:XKS a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XKS";
-    skos:prefLabel "Republic of Kosovo".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XKS";
+  skos:prefLabel "Republic of Kosovo".
+
 ismcatre:XMW a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XMW";
-    skos:prefLabel "Midway Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XMW";
+  skos:prefLabel "Midway Islands".
+
 ismcatre:XNV a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XNV";
-    skos:prefLabel "Navassa Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XNV";
+  skos:prefLabel "Navassa Island".
+
 ismcatre:XPL a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XPL";
-    skos:prefLabel "Palmyra Atoll".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XPL";
+  skos:prefLabel "Palmyra Atoll".
+
 ismcatre:XPR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XPR";
-    skos:prefLabel "Paracel Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XPR";
+  skos:prefLabel "Paracel Islands".
+
 ismcatre:XQZ a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XQZ";
-    skos:prefLabel "Akrotiri".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XQZ";
+  skos:prefLabel "Akrotiri".
+
 ismcatre:XSP a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XSP";
-    skos:prefLabel "Spratly Islands".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XSP";
+  skos:prefLabel "Spratly Islands".
+
 ismcatre:XSV a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XSV";
-    skos:prefLabel "Svalbard".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XSV";
+  skos:prefLabel "Svalbard".
+
 ismcatre:XTR a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XTR";
-    skos:prefLabel "Tromelin Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XTR";
+  skos:prefLabel "Tromelin Island".
+
 ismcatre:XWB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XWB";
-    skos:prefLabel "West Bank".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XWB";
+  skos:prefLabel "West Bank".
+
 ismcatre:XWK a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XWK";
-    skos:prefLabel "Wake Island".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XWK";
+  skos:prefLabel "Wake Island".
+
 ismcatre:XXD a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "XXD";
-    skos:prefLabel "Dhekelia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "XXD";
+  skos:prefLabel "Dhekelia".
+
 ismcatre:YEM a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "YEM";
-    skos:prefLabel "Republic of Yemen".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "YEM";
+  skos:prefLabel "Republic of Yemen".
+
 ismcatre:ZAF a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ZAF";
-    skos:prefLabel "Republic of South Africa".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ZAF";
+  skos:prefLabel "Republic of South Africa".
+
 ismcatre:ZMB a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ZMB";
-    skos:prefLabel "Republic of Zambia".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ZMB";
+  skos:prefLabel "Republic of Zambia".
+
 ismcatre:ZWE a skos:Concept;
-    skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
-    skos:notation "ZWE";
-    skos:prefLabel "Republic of Zimbabwe".
+  skos:inScheme ismcatre:CVEnumISMCATResponsibleEntity;
+  skos:notation "ZWE";
+  skos:prefLabel "Republic of Zimbabwe".
+
+<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATResponsibleEntity> a owl:Ontology;
+.

@@ -2,18 +2,35 @@
   "node": {
     "version": ">=18.20.3"
   },
+  "type": "module",
+  "name": "ism2rdf",
   "devDependencies": {
+    "@types/lodash": "^4.17.16",
+    "@types/n3": "^1.24.0",
     "@types/node": "^22.1.0",
+    "@types/rdf-ext": "^2.5.2",
+    "@types/rdfjs__parser-n3": "^2.0.6",
+    "@types/rdfjs__serializer-jsonld": "^2.0.5",
+    "@types/rdfjs__serializer-turtle": "^1.1.0",
+    "@types/xml2js": "^0.4.14",
     "typescript": "^5.5.4"
   },
   "dependencies": {
     "@entryscape/rdfjson": "^2.7.7",
+    "@rdfjs/data-model": "^2.1.0",
+    "@rdfjs/parser-n3": "^2.0.2",
+    "@rdfjs/prefix-map": "^0.1.2",
+    "@rdfjs/serializer-jsonld": "^2.0.1",
+    "@rdfjs/serializer-turtle": "^1.1.5",
+    "@types/rdfjs__serializer-jsonld-ext": "^4.0.1",
     "awaits-until": "^12.0.1",
     "fast-xml-parser": "^4.4.1",
+    "get-stream": "^9.0.1",
     "jsonld": "^8.3.2",
     "ldtr": "^0.6.4",
     "lodash": "^4.17.21",
     "n3": "^1.23.1",
+    "rdf-ext": "^2.5.2",
     "xml2js": "^0.6.2",
     "xmldom": "^0.6.0",
     "xsd": "^0.0.2"

@@ -91,13 +91,49 @@
       ]
     },
     {
-      "@id": "ismdissemicrm:RS",
+      "@id": "ismdissemicrm:DISPLAYONLY",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
       },
-      "skos:notation": "RS",
-      "skos:prefLabel": "RISK SENSITIVE"
+      "skos:notation": "DISPLAYONLY",
+      "skos:prefLabel": "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO"
+    },
+    {
+      "@id": "ismdissemicrm:DSEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "DSEN",
+      "skos:prefLabel": "DEA SENSITIVE"
+    },
+    {
+      "@id": "ismdissemicrm:EXEMPT_FROM_ICD501_DISCOVERY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "EXEMPT_FROM_ICD501_DISCOVERY",
+      "skos:prefLabel": "EXEMPT FROM ICD501 DISCOVERY"
+    },
+    {
+      "@id": "ismdissemicrm:EYES",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "EYES",
+      "skos:prefLabel": "EYES ONLY"
+    },
+    {
+      "@id": "ismdissemicrm:FISA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "FISA",
+      "skos:prefLabel": "FOREIGN INTELLIGENCE SURVEILLANCE ACT"
     },
     {
       "@id": "ismdissemicrm:FOUO",
@@ -107,24 +143,6 @@
       },
       "skos:notation": "FOUO",
       "skos:prefLabel": "FOR OFFICIAL USE ONLY"
-    },
-    {
-      "@id": "ismdissemicrm:OC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
-      },
-      "skos:notation": "OC",
-      "skos:prefLabel": "ORIGINATOR CONTROLLED"
-    },
-    {
-      "@id": "ismdissemicrm:OC-USGOV",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
-      },
-      "skos:notation": "OC-USGOV",
-      "skos:prefLabel": "ORIGINATOR CONTROLLED US GOVERNMENT"
     },
     {
       "@id": "ismdissemicrm:IMC",
@@ -145,6 +163,24 @@
       "skos:prefLabel": "NOT RELEASABLE TO FOREIGN NATIONALS"
     },
     {
+      "@id": "ismdissemicrm:OC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "OC",
+      "skos:prefLabel": "ORIGINATOR CONTROLLED"
+    },
+    {
+      "@id": "ismdissemicrm:OC-USGOV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "OC-USGOV",
+      "skos:prefLabel": "ORIGINATOR CONTROLLED US GOVERNMENT"
+    },
+    {
       "@id": "ismdissemicrm:PR",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -152,6 +188,15 @@
       },
       "skos:notation": "PR",
       "skos:prefLabel": "CAUTION-PROPRIETARY INFORMATION INVOLVED"
+    },
+    {
+      "@id": "ismdissemicrm:RAWFISA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "skos:notation": "RAWFISA",
+      "skos:prefLabel": "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT"
     },
     {
       "@id": "ismdissemicrm:REL",
@@ -172,58 +217,13 @@
       "skos:prefLabel": "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL"
     },
     {
-      "@id": "ismdissemicrm:EYES",
+      "@id": "ismdissemicrm:RS",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
       },
-      "skos:notation": "EYES",
-      "skos:prefLabel": "EYES ONLY"
-    },
-    {
-      "@id": "ismdissemicrm:DSEN",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
-      },
-      "skos:notation": "DSEN",
-      "skos:prefLabel": "DEA SENSITIVE"
-    },
-    {
-      "@id": "ismdissemicrm:RAWFISA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
-      },
-      "skos:notation": "RAWFISA",
-      "skos:prefLabel": "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT"
-    },
-    {
-      "@id": "ismdissemicrm:FISA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
-      },
-      "skos:notation": "FISA",
-      "skos:prefLabel": "FOREIGN INTELLIGENCE SURVEILLANCE ACT"
-    },
-    {
-      "@id": "ismdissemicrm:DISPLAYONLY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
-      },
-      "skos:notation": "DISPLAYONLY",
-      "skos:prefLabel": "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO"
-    },
-    {
-      "@id": "ismdissemicrm:EXEMPT_FROM_ICD501_DISCOVERY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
-      },
-      "skos:notation": "EXEMPT_FROM_ICD501_DISCOVERY",
-      "skos:prefLabel": "EXEMPT FROM ICD501 DISCOVERY"
+      "skos:notation": "RS",
+      "skos:prefLabel": "RISK SENSITIVE"
     },
     {
       "@id": "ismdissemicrm:WAIVED",

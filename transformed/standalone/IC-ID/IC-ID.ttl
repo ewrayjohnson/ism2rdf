@@ -1,14 +1,19 @@
-@prefix ism: <urn:us:gov:ic:ism#>.
 @prefix icid: <urn:us:gov:ic:id#>.
-@prefix xhtml: <http://www.w3.org/1999/xhtml-StopBrowserRendering>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 
-<urn:us:gov:ic:IC-ID:IC-ID> a owl:Ontology.
+<_:0>
+  xs:pattern "guide://([1-9][0-9]{0,15}|0)/[A-Za-z0-9_\\-\\.]{1,36}".
+
+<urn:us:gov:ic:IC-ID:IC-ID> a owl:Ontology;
+.
+
+icid:guide%3A%2F%2F(%5B1-9%5D%5B0-9%5D%7B0%2C15%7D%7C0)%2F%5BA-Za-z0-9_%5C-%5C.%5D%7B1%2C36%7D a rdfs:Datatype;
+  rdfs:subClassOf xs:string;
+  owl:withRestrictions <_:0>.
+
 icid:identifier a rdf:Property;
-    rdfs:comment "Attribute to hold the IC-ID of the data object.";
-    rdfs:range icid:IcIdTypeValues.
+  rdfs:comment "Attribute to hold the IC-ID of the data object.";
+  rdfs:range icid:IcIdTypeValues.

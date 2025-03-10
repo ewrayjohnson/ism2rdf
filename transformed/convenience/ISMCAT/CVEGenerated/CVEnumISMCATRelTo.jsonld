@@ -10,8 +10,669 @@
   },
   "@graph": [
     {
+      "@id": "_:10",
+      "xsd:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
       "@id": "urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATRelTo",
       "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismcatrelto:ABW",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ABW",
+      "skos:prefLabel": "Aruba"
+    },
+    {
+      "@id": "ismcatrelto:ACGU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ACGU",
+      "skos:prefLabel": "FOUR EYES"
+    },
+    {
+      "@id": "ismcatrelto:AFG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AFG",
+      "skos:prefLabel": "Islamic Republic of Afghanistan"
+    },
+    {
+      "@id": "ismcatrelto:AGO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AGO",
+      "skos:prefLabel": "Republic of Angola"
+    },
+    {
+      "@id": "ismcatrelto:AIA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AIA",
+      "skos:prefLabel": "Anguilla"
+    },
+    {
+      "@id": "ismcatrelto:ALB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ALB",
+      "skos:prefLabel": "Republic of Albania"
+    },
+    {
+      "@id": "ismcatrelto:AMSP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AMSP",
+      "skos:prefLabel": "AFRICOM Multinational Strategic Partners"
+    },
+    {
+      "@id": "ismcatrelto:AND",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AND",
+      "skos:prefLabel": "Principality of Andorra"
+    },
+    {
+      "@id": "ismcatrelto:AOSC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AOSC",
+      "skos:prefLabel": "Athens Olympics Security Coalition"
+    },
+    {
+      "@id": "ismcatrelto:APFS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "APFS",
+      "skos:prefLabel": "African Peacekeeping Force Somalia"
+    },
+    {
+      "@id": "ismcatrelto:ARE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ARE",
+      "skos:prefLabel": "United Arab Emirates"
+    },
+    {
+      "@id": "ismcatrelto:ARG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ARG",
+      "skos:prefLabel": "Argentine Republic"
+    },
+    {
+      "@id": "ismcatrelto:ARM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ARM",
+      "skos:prefLabel": "Republic of Armenia"
+    },
+    {
+      "@id": "ismcatrelto:ASEA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ASEA",
+      "skos:prefLabel": "Association of Southeast Asian Nations (ASEAN)"
+    },
+    {
+      "@id": "ismcatrelto:ASM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ASM",
+      "skos:prefLabel": "Territory of American Samoa"
+    },
+    {
+      "@id": "ismcatrelto:ATA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ATA",
+      "skos:prefLabel": "Antarctica"
+    },
+    {
+      "@id": "ismcatrelto:ATF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ATF",
+      "skos:prefLabel": "French Southern and Antarctic Lands"
+    },
+    {
+      "@id": "ismcatrelto:ATG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ATG",
+      "skos:prefLabel": "Antigua and Barbuda"
+    },
+    {
+      "@id": "ismcatrelto:AUS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AUS",
+      "skos:prefLabel": "Commonwealth of Australia"
+    },
+    {
+      "@id": "ismcatrelto:AUSTRALIA_GROUP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AUSTRALIA_GROUP",
+      "skos:prefLabel": "Australia Group"
+    },
+    {
+      "@id": "ismcatrelto:AUT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AUT",
+      "skos:prefLabel": "Republic of Austria"
+    },
+    {
+      "@id": "ismcatrelto:AX2",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AX2",
+      "skos:prefLabel": "Guantanamo Bay Naval Base"
+    },
+    {
+      "@id": "ismcatrelto:AX3",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AX3",
+      "skos:prefLabel": "Entity 6"
+    },
+    {
+      "@id": "ismcatrelto:AZE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "AZE",
+      "skos:prefLabel": "Republic of Azerbaijan"
+    },
+    {
+      "@id": "ismcatrelto:BDI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BDI",
+      "skos:prefLabel": "Republic of Burundi"
+    },
+    {
+      "@id": "ismcatrelto:BEL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BEL",
+      "skos:prefLabel": "Kingdom of Belgium"
+    },
+    {
+      "@id": "ismcatrelto:BEN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BEN",
+      "skos:prefLabel": "Republic of Benin"
+    },
+    {
+      "@id": "ismcatrelto:BES",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BES",
+      "skos:prefLabel": "Bonaire, Sint Eustatius, and Saba"
+    },
+    {
+      "@id": "ismcatrelto:BFA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BFA",
+      "skos:prefLabel": "Burkina Faso"
+    },
+    {
+      "@id": "ismcatrelto:BGD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BGD",
+      "skos:prefLabel": "People’s Republic of Bangladesh"
+    },
+    {
+      "@id": "ismcatrelto:BGR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BGR",
+      "skos:prefLabel": "Republic of Bulgaria"
+    },
+    {
+      "@id": "ismcatrelto:BHR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BHR",
+      "skos:prefLabel": "Kingdom of Bahrain"
+    },
+    {
+      "@id": "ismcatrelto:BHS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BHS",
+      "skos:prefLabel": "Commonwealth of The Bahamas"
+    },
+    {
+      "@id": "ismcatrelto:BHTF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BHTF",
+      "skos:prefLabel": "Boko Haram Task Force"
+    },
+    {
+      "@id": "ismcatrelto:BIH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BIH",
+      "skos:prefLabel": "Bosnia and Herzegovina"
+    },
+    {
+      "@id": "ismcatrelto:BLM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BLM",
+      "skos:prefLabel": "Saint Barthelemy"
+    },
+    {
+      "@id": "ismcatrelto:BLR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BLR",
+      "skos:prefLabel": "Republic of Belarus"
+    },
+    {
+      "@id": "ismcatrelto:BLZ",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BLZ",
+      "skos:prefLabel": "Belize"
+    },
+    {
+      "@id": "ismcatrelto:BMU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BMU",
+      "skos:prefLabel": "Bermuda"
+    },
+    {
+      "@id": "ismcatrelto:BOL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BOL",
+      "skos:prefLabel": "Plurinational State of Bolivia"
+    },
+    {
+      "@id": "ismcatrelto:BRA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BRA",
+      "skos:prefLabel": "Federative Republic of Brazil"
+    },
+    {
+      "@id": "ismcatrelto:BRB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BRB",
+      "skos:prefLabel": "Barbados"
+    },
+    {
+      "@id": "ismcatrelto:BRN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BRN",
+      "skos:prefLabel": "Brunei Darussalam"
+    },
+    {
+      "@id": "ismcatrelto:BTN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BTN",
+      "skos:prefLabel": "Kingdom of Bhutan"
+    },
+    {
+      "@id": "ismcatrelto:BVT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BVT",
+      "skos:prefLabel": "Bouvet Island"
+    },
+    {
+      "@id": "ismcatrelto:BWA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BWA",
+      "skos:prefLabel": "Republic of Botswana"
+    },
+    {
+      "@id": "ismcatrelto:BWCS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "BWCS",
+      "skos:prefLabel": "Biological Weapons Convention States"
+    },
+    {
+      "@id": "ismcatrelto:CAF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CAF",
+      "skos:prefLabel": "Central African Republic"
+    },
+    {
+      "@id": "ismcatrelto:CAN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CAN",
+      "skos:prefLabel": "Canada"
+    },
+    {
+      "@id": "ismcatrelto:CCK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CCK",
+      "skos:prefLabel": "Territory of Cocos (Keeling) Islands"
+    },
+    {
+      "@id": "ismcatrelto:CFCK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CFCK",
+      "skos:prefLabel": "Combined Forces Command Korea"
+    },
+    {
+      "@id": "ismcatrelto:CFOD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CFOD",
+      "skos:prefLabel": "Coalition Forces Odyssey Dawn"
+    },
+    {
+      "@id": "ismcatrelto:CFUP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CFUP",
+      "skos:prefLabel": "Coalition Forces Unified Protector"
+    },
+    {
+      "@id": "ismcatrelto:CHE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CHE",
+      "skos:prefLabel": "Swiss Confederation"
+    },
+    {
+      "@id": "ismcatrelto:CHL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CHL",
+      "skos:prefLabel": "Republic of Chile"
+    },
+    {
+      "@id": "ismcatrelto:CHN",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CHN",
+      "skos:prefLabel": "People’s Republic of China"
+    },
+    {
+      "@id": "ismcatrelto:CIV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CIV",
+      "skos:prefLabel": "Republic of Côte d’Ivoire"
+    },
+    {
+      "@id": "ismcatrelto:CLFC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CLFC",
+      "skos:prefLabel": "Combined Libya Fusion Cell"
+    },
+    {
+      "@id": "ismcatrelto:CMFC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CMFC",
+      "skos:prefLabel": "Combined Maritime Forces Central"
+    },
+    {
+      "@id": "ismcatrelto:CMFP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CMFP",
+      "skos:prefLabel": "Cooperative Maritime Forces Pacific"
+    },
+    {
+      "@id": "ismcatrelto:CMR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CMR",
+      "skos:prefLabel": "Republic of Cameroon"
+    },
+    {
+      "@id": "ismcatrelto:COD",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "COD",
+      "skos:prefLabel": "Democratic Republic of the Congo"
+    },
+    {
+      "@id": "ismcatrelto:COG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "COG",
+      "skos:prefLabel": "Republic of the Congo"
+    },
+    {
+      "@id": "ismcatrelto:COK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "COK",
+      "skos:prefLabel": "Cook Islands"
+    },
+    {
+      "@id": "ismcatrelto:COL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "COL",
+      "skos:prefLabel": "Republic of Colombia"
+    },
+    {
+      "@id": "ismcatrelto:COM",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "COM",
+      "skos:prefLabel": "Union of the Comoros"
+    },
+    {
+      "@id": "ismcatrelto:CPMT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CPMT",
+      "skos:prefLabel": "Civilian Protection Monitoring Team for Sudan"
+    },
+    {
+      "@id": "ismcatrelto:CPT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CPT",
+      "skos:prefLabel": "Clipperton Island"
+    },
+    {
+      "@id": "ismcatrelto:CPV",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CPV",
+      "skos:prefLabel": "Republic of Cabo Verde"
+    },
+    {
+      "@id": "ismcatrelto:CRI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CRI",
+      "skos:prefLabel": "Republic of Costa Rica"
+    },
+    {
+      "@id": "ismcatrelto:CTOC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CTOC",
+      "skos:prefLabel": "Countering Transnational Organized Crime"
+    },
+    {
+      "@id": "ismcatrelto:CUB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CUB",
+      "skos:prefLabel": "Republic of Cuba"
+    },
+    {
+      "@id": "ismcatrelto:CUW",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "CUW",
+      "skos:prefLabel": "Curaçao"
     },
     {
       "@id": "ismcatrelto:CVEnumISMCATRelTo",
@@ -1387,526 +2048,13 @@
       ]
     },
     {
-      "@id": "ismcatrelto:USA",
+      "@id": "ismcatrelto:CWCS",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "ismcatrelto:CVEnumISMCATRelTo"
       },
-      "skos:notation": "USA",
-      "skos:prefLabel": "United States of America"
-    },
-    {
-      "@id": "ismcatrelto:ABW",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ABW",
-      "skos:prefLabel": "Aruba"
-    },
-    {
-      "@id": "ismcatrelto:AFG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AFG",
-      "skos:prefLabel": "Islamic Republic of Afghanistan"
-    },
-    {
-      "@id": "ismcatrelto:AGO",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AGO",
-      "skos:prefLabel": "Republic of Angola"
-    },
-    {
-      "@id": "ismcatrelto:AIA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AIA",
-      "skos:prefLabel": "Anguilla"
-    },
-    {
-      "@id": "ismcatrelto:ALB",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ALB",
-      "skos:prefLabel": "Republic of Albania"
-    },
-    {
-      "@id": "ismcatrelto:AND",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AND",
-      "skos:prefLabel": "Principality of Andorra"
-    },
-    {
-      "@id": "ismcatrelto:ARE",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ARE",
-      "skos:prefLabel": "United Arab Emirates"
-    },
-    {
-      "@id": "ismcatrelto:ARG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ARG",
-      "skos:prefLabel": "Argentine Republic"
-    },
-    {
-      "@id": "ismcatrelto:ARM",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ARM",
-      "skos:prefLabel": "Republic of Armenia"
-    },
-    {
-      "@id": "ismcatrelto:ASM",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ASM",
-      "skos:prefLabel": "Territory of American Samoa"
-    },
-    {
-      "@id": "ismcatrelto:ATA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ATA",
-      "skos:prefLabel": "Antarctica"
-    },
-    {
-      "@id": "ismcatrelto:ATF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ATF",
-      "skos:prefLabel": "French Southern and Antarctic Lands"
-    },
-    {
-      "@id": "ismcatrelto:ATG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ATG",
-      "skos:prefLabel": "Antigua and Barbuda"
-    },
-    {
-      "@id": "ismcatrelto:AUS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AUS",
-      "skos:prefLabel": "Commonwealth of Australia"
-    },
-    {
-      "@id": "ismcatrelto:AUT",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AUT",
-      "skos:prefLabel": "Republic of Austria"
-    },
-    {
-      "@id": "ismcatrelto:AX2",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AX2",
-      "skos:prefLabel": "Guantanamo Bay Naval Base"
-    },
-    {
-      "@id": "ismcatrelto:AX3",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AX3",
-      "skos:prefLabel": "Entity 6"
-    },
-    {
-      "@id": "ismcatrelto:AZE",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AZE",
-      "skos:prefLabel": "Republic of Azerbaijan"
-    },
-    {
-      "@id": "ismcatrelto:BDI",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BDI",
-      "skos:prefLabel": "Republic of Burundi"
-    },
-    {
-      "@id": "ismcatrelto:BEL",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BEL",
-      "skos:prefLabel": "Kingdom of Belgium"
-    },
-    {
-      "@id": "ismcatrelto:BEN",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BEN",
-      "skos:prefLabel": "Republic of Benin"
-    },
-    {
-      "@id": "ismcatrelto:BES",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BES",
-      "skos:prefLabel": "Bonaire, Sint Eustatius, and Saba"
-    },
-    {
-      "@id": "ismcatrelto:BFA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BFA",
-      "skos:prefLabel": "Burkina Faso"
-    },
-    {
-      "@id": "ismcatrelto:BGD",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BGD",
-      "skos:prefLabel": "People’s Republic of Bangladesh"
-    },
-    {
-      "@id": "ismcatrelto:BGR",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BGR",
-      "skos:prefLabel": "Republic of Bulgaria"
-    },
-    {
-      "@id": "ismcatrelto:BHR",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BHR",
-      "skos:prefLabel": "Kingdom of Bahrain"
-    },
-    {
-      "@id": "ismcatrelto:BHS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BHS",
-      "skos:prefLabel": "Commonwealth of The Bahamas"
-    },
-    {
-      "@id": "ismcatrelto:BIH",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BIH",
-      "skos:prefLabel": "Bosnia and Herzegovina"
-    },
-    {
-      "@id": "ismcatrelto:BLM",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BLM",
-      "skos:prefLabel": "Saint Barthelemy"
-    },
-    {
-      "@id": "ismcatrelto:BLR",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BLR",
-      "skos:prefLabel": "Republic of Belarus"
-    },
-    {
-      "@id": "ismcatrelto:BLZ",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BLZ",
-      "skos:prefLabel": "Belize"
-    },
-    {
-      "@id": "ismcatrelto:BMU",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BMU",
-      "skos:prefLabel": "Bermuda"
-    },
-    {
-      "@id": "ismcatrelto:BOL",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BOL",
-      "skos:prefLabel": "Plurinational State of Bolivia"
-    },
-    {
-      "@id": "ismcatrelto:BRA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BRA",
-      "skos:prefLabel": "Federative Republic of Brazil"
-    },
-    {
-      "@id": "ismcatrelto:BRB",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BRB",
-      "skos:prefLabel": "Barbados"
-    },
-    {
-      "@id": "ismcatrelto:BRN",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BRN",
-      "skos:prefLabel": "Brunei Darussalam"
-    },
-    {
-      "@id": "ismcatrelto:BTN",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BTN",
-      "skos:prefLabel": "Kingdom of Bhutan"
-    },
-    {
-      "@id": "ismcatrelto:BVT",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BVT",
-      "skos:prefLabel": "Bouvet Island"
-    },
-    {
-      "@id": "ismcatrelto:BWA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BWA",
-      "skos:prefLabel": "Republic of Botswana"
-    },
-    {
-      "@id": "ismcatrelto:CAF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CAF",
-      "skos:prefLabel": "Central African Republic"
-    },
-    {
-      "@id": "ismcatrelto:CAN",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CAN",
-      "skos:prefLabel": "Canada"
-    },
-    {
-      "@id": "ismcatrelto:CCK",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CCK",
-      "skos:prefLabel": "Territory of Cocos (Keeling) Islands"
-    },
-    {
-      "@id": "ismcatrelto:CHE",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CHE",
-      "skos:prefLabel": "Swiss Confederation"
-    },
-    {
-      "@id": "ismcatrelto:CHL",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CHL",
-      "skos:prefLabel": "Republic of Chile"
-    },
-    {
-      "@id": "ismcatrelto:CHN",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CHN",
-      "skos:prefLabel": "People’s Republic of China"
-    },
-    {
-      "@id": "ismcatrelto:CIV",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CIV",
-      "skos:prefLabel": "Republic of Côte d’Ivoire"
-    },
-    {
-      "@id": "ismcatrelto:CMR",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CMR",
-      "skos:prefLabel": "Republic of Cameroon"
-    },
-    {
-      "@id": "ismcatrelto:COD",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "COD",
-      "skos:prefLabel": "Democratic Republic of the Congo"
-    },
-    {
-      "@id": "ismcatrelto:COG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "COG",
-      "skos:prefLabel": "Republic of the Congo"
-    },
-    {
-      "@id": "ismcatrelto:COK",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "COK",
-      "skos:prefLabel": "Cook Islands"
-    },
-    {
-      "@id": "ismcatrelto:COL",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "COL",
-      "skos:prefLabel": "Republic of Colombia"
-    },
-    {
-      "@id": "ismcatrelto:COM",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "COM",
-      "skos:prefLabel": "Union of the Comoros"
-    },
-    {
-      "@id": "ismcatrelto:CPT",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CPT",
-      "skos:prefLabel": "Clipperton Island"
-    },
-    {
-      "@id": "ismcatrelto:CPV",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CPV",
-      "skos:prefLabel": "Republic of Cabo Verde"
-    },
-    {
-      "@id": "ismcatrelto:CRI",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CRI",
-      "skos:prefLabel": "Republic of Costa Rica"
-    },
-    {
-      "@id": "ismcatrelto:CUB",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CUB",
-      "skos:prefLabel": "Republic of Cuba"
-    },
-    {
-      "@id": "ismcatrelto:CUW",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CUW",
-      "skos:prefLabel": "Curaçao"
+      "skos:notation": "CWCS",
+      "skos:prefLabel": "Chemical Weapons Convention States"
     },
     {
       "@id": "ismcatrelto:CXR",
@@ -2008,6 +2156,15 @@
       "skos:prefLabel": "People’s Democratic Republic of Algeria"
     },
     {
+      "@id": "ismcatrelto:ECTF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ECTF",
+      "skos:prefLabel": "European Counter-Terrorism Forces"
+    },
+    {
       "@id": "ismcatrelto:ECU",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2015,6 +2172,15 @@
       },
       "skos:notation": "ECU",
       "skos:prefLabel": "Republic of Ecuador"
+    },
+    {
+      "@id": "ismcatrelto:EFOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "EFOR",
+      "skos:prefLabel": "European Union Stabilization Forces in Bosnia"
     },
     {
       "@id": "ismcatrelto:EGY",
@@ -2071,6 +2237,24 @@
       "skos:prefLabel": "Federal Democratic Republic of Ethiopia"
     },
     {
+      "@id": "ismcatrelto:EU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "EU",
+      "skos:prefLabel": "European Union"
+    },
+    {
+      "@id": "ismcatrelto:EUDA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "EUDA",
+      "skos:prefLabel": "European Union DARFUR"
+    },
+    {
       "@id": "ismcatrelto:FIN",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2107,6 +2291,15 @@
       "skos:prefLabel": "French Republic"
     },
     {
+      "@id": "ismcatrelto:FRME",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "FRME",
+      "skos:prefLabel": "Counter Violent Extremist Organizations Framework Partners"
+    },
+    {
       "@id": "ismcatrelto:FRO",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2123,6 +2316,15 @@
       },
       "skos:notation": "FSM",
       "skos:prefLabel": "Federated States of Micronesia"
+    },
+    {
+      "@id": "ismcatrelto:FVEY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "FVEY",
+      "skos:prefLabel": "FIVE EYES"
     },
     {
       "@id": "ismcatrelto:GAB",
@@ -2143,6 +2345,24 @@
       "skos:prefLabel": "United Kingdom of Great Britain and Northern Ireland"
     },
     {
+      "@id": "ismcatrelto:GCCH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "GCCH",
+      "skos:prefLabel": "Gulf Cooperation Council"
+    },
+    {
+      "@id": "ismcatrelto:GCTF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "GCTF",
+      "skos:prefLabel": "Global Counter-Terrorism Forces"
+    },
+    {
       "@id": "ismcatrelto:GEO",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2150,6 +2370,15 @@
       },
       "skos:notation": "GEO",
       "skos:prefLabel": "Georgia"
+    },
+    {
+      "@id": "ismcatrelto:GFNX",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "GFNX",
+      "skos:prefLabel": "Global Foreign Terrorist Fighter Network Exchange"
     },
     {
       "@id": "ismcatrelto:GGY",
@@ -2204,6 +2433,15 @@
       },
       "skos:notation": "GMB",
       "skos:prefLabel": "Republic of The Gambia"
+    },
+    {
+      "@id": "ismcatrelto:GMIF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "GMIF",
+      "skos:prefLabel": "Global Maritime Interception Forces"
     },
     {
       "@id": "ismcatrelto:GNB",
@@ -2350,6 +2588,15 @@
       "skos:prefLabel": "Republic of Indonesia"
     },
     {
+      "@id": "ismcatrelto:IESC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "IESC",
+      "skos:prefLabel": "International Events Security Coalition"
+    },
+    {
       "@id": "ismcatrelto:IMN",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2357,6 +2604,24 @@
       },
       "skos:notation": "IMN",
       "skos:prefLabel": "Isle of Man"
+    },
+    {
+      "@id": "ismcatrelto:IMSC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "IMSC",
+      "skos:prefLabel": "International Maritime Security Construct"
+    },
+    {
+      "@id": "ismcatrelto:IMSP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "IMSP",
+      "skos:prefLabel": "INDOPACOM Multinational Strategic Partners"
     },
     {
       "@id": "ismcatrelto:IND",
@@ -2375,6 +2640,24 @@
       },
       "skos:notation": "IOT",
       "skos:prefLabel": "British Indian Ocean Territory"
+    },
+    {
+      "@id": "ismcatrelto:IPMC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "IPMC",
+      "skos:prefLabel": "INDO PACIFIC Maritime Call"
+    },
+    {
+      "@id": "ismcatrelto:IRKS",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "IRKS",
+      "skos:prefLabel": "Inherent Resolve Kinetic Support"
     },
     {
       "@id": "ismcatrelto:IRL",
@@ -2404,6 +2687,15 @@
       "skos:prefLabel": "Republic of Iraq"
     },
     {
+      "@id": "ismcatrelto:ISAF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ISAF",
+      "skos:prefLabel": "International Security Assistance Force for Afghanistan"
+    },
+    {
       "@id": "ismcatrelto:ISL",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2420,6 +2712,15 @@
       },
       "skos:notation": "ISR",
       "skos:prefLabel": "State of Israel"
+    },
+    {
+      "@id": "ismcatrelto:ISSG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "ISSG",
+      "skos:prefLabel": "International Syria Support Group"
     },
     {
       "@id": "ismcatrelto:ITA",
@@ -2483,6 +2784,15 @@
       },
       "skos:notation": "KEN",
       "skos:prefLabel": "Republic of Kenya"
+    },
+    {
+      "@id": "ismcatrelto:KFOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "KFOR",
+      "skos:prefLabel": "Stabilization Forces in Kosovo"
     },
     {
       "@id": "ismcatrelto:KGZ",
@@ -2665,6 +2975,15 @@
       "skos:prefLabel": "Kingdom of Morocco"
     },
     {
+      "@id": "ismcatrelto:MCFI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "MCFI",
+      "skos:prefLabel": "Multinational Coalition Forces-Iraq"
+    },
+    {
       "@id": "ismcatrelto:MCO",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2701,6 +3020,15 @@
       "skos:prefLabel": "Republic of Maldives"
     },
     {
+      "@id": "ismcatrelto:MESF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "MESF",
+      "skos:prefLabel": "Middle East Stability Force"
+    },
+    {
       "@id": "ismcatrelto:MEX",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2708,6 +3036,15 @@
       },
       "skos:notation": "MEX",
       "skos:prefLabel": "United Mexican States"
+    },
+    {
+      "@id": "ismcatrelto:MGEU",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "MGEU",
+      "skos:prefLabel": "Multinational GEOINT Europe"
     },
     {
       "@id": "ismcatrelto:MHL",
@@ -2719,6 +3056,15 @@
       "skos:prefLabel": "Republic of the Marshall Islands"
     },
     {
+      "@id": "ismcatrelto:MIFH",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "MIFH",
+      "skos:prefLabel": "Multinational Interim Force Haiti"
+    },
+    {
       "@id": "ismcatrelto:MKD",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2726,6 +3072,15 @@
       },
       "skos:notation": "MKD",
       "skos:prefLabel": "Republic of North Macedonia"
+    },
+    {
+      "@id": "ismcatrelto:MLEC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "MLEC",
+      "skos:prefLabel": "Multi-Lateral Enduring Contingency"
     },
     {
       "@id": "ismcatrelto:MLI",
@@ -2782,6 +3137,15 @@
       "skos:prefLabel": "Commonwealth of the Northern Mariana Islands"
     },
     {
+      "@id": "ismcatrelto:MNTF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "MNTF",
+      "skos:prefLabel": "Multinational Task Force"
+    },
+    {
       "@id": "ismcatrelto:MOZ",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2789,6 +3153,15 @@
       },
       "skos:notation": "MOZ",
       "skos:prefLabel": "Republic of Mozambique"
+    },
+    {
+      "@id": "ismcatrelto:MPFL",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "MPFL",
+      "skos:prefLabel": "Multinational Peacekeeping Forces"
     },
     {
       "@id": "ismcatrelto:MRT",
@@ -2854,6 +3227,15 @@
       "skos:prefLabel": "Department of Mayotte"
     },
     {
+      "@id": "ismcatrelto:NACT",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "NACT",
+      "skos:prefLabel": "North African Counter-Terrorism Forces"
+    },
+    {
       "@id": "ismcatrelto:NAM",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2861,6 +3243,35 @@
       },
       "skos:notation": "NAM",
       "skos:prefLabel": "Republic of Namibia"
+    },
+    {
+      "@id": "ismcatrelto:NATO",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "NATO",
+      "skos:prefLabel": "North Atlantic Treaty Organization"
+    },
+    {
+      "@id": "ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
+      "@type": "rdfs:Datatype",
+      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
+      "rdfs:subClassOf": {
+        "@id": "xsd:string"
+      },
+      "owl:withRestrictions": {
+        "@id": "_:6"
+      }
+    },
+    {
+      "@id": "ismcatrelto:NCFE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "NCFE",
+      "skos:prefLabel": "NATO CFE Treaty on Conventional Armed Forces in Europe"
     },
     {
       "@id": "ismcatrelto:NCL",
@@ -2917,6 +3328,15 @@
       "skos:prefLabel": "Niue"
     },
     {
+      "@id": "ismcatrelto:NKIC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "NKIC",
+      "skos:prefLabel": "North Korea Intelligence Coalition"
+    },
+    {
       "@id": "ismcatrelto:NLD",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2944,6 +3364,15 @@
       "skos:prefLabel": "Federal Democratic Republic of Nepal"
     },
     {
+      "@id": "ismcatrelto:NRDC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "NRDC",
+      "skos:prefLabel": "NORDIC"
+    },
+    {
       "@id": "ismcatrelto:NRU",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2951,6 +3380,15 @@
       },
       "skos:notation": "NRU",
       "skos:prefLabel": "Republic of Nauru"
+    },
+    {
+      "@id": "ismcatrelto:NSG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "NSG",
+      "skos:prefLabel": "Nuclear Suppliers' Group"
     },
     {
       "@id": "ismcatrelto:NZL",
@@ -2971,6 +3409,24 @@
       "skos:prefLabel": "Sultanate of Oman"
     },
     {
+      "@id": "ismcatrelto:OSAG",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "OSAG",
+      "skos:prefLabel": "Olympic Security Advisory Group"
+    },
+    {
+      "@id": "ismcatrelto:OSTY",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "OSTY",
+      "skos:prefLabel": "Open Skies Treaty"
+    },
+    {
       "@id": "ismcatrelto:PAK",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2989,6 +3445,15 @@
       "skos:prefLabel": "Republic of Panama"
     },
     {
+      "@id": "ismcatrelto:PAWA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "PAWA",
+      "skos:prefLabel": "Partnership for Actions in West Africa"
+    },
+    {
       "@id": "ismcatrelto:PCN",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -3005,6 +3470,15 @@
       },
       "skos:notation": "PER",
       "skos:prefLabel": "Republic of Peru"
+    },
+    {
+      "@id": "ismcatrelto:PGMF",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "PGMF",
+      "skos:prefLabel": "Persian Gulf Multinational Forces"
     },
     {
       "@id": "ismcatrelto:PHL",
@@ -3079,6 +3553,15 @@
       "skos:prefLabel": "Republic of Paraguay"
     },
     {
+      "@id": "ismcatrelto:PSMX",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "PSMX",
+      "skos:prefLabel": "Pacific Security Monitoring Exchange"
+    },
+    {
       "@id": "ismcatrelto:PYF",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -3106,6 +3589,15 @@
       "skos:prefLabel": "Region of Reunion"
     },
     {
+      "@id": "ismcatrelto:RISC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "RISC",
+      "skos:prefLabel": "Russia Intelligence Sharing Coalition"
+    },
+    {
       "@id": "ismcatrelto:ROU",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -3113,6 +3605,15 @@
       },
       "skos:notation": "ROU",
       "skos:prefLabel": "Romania"
+    },
+    {
+      "@id": "ismcatrelto:RSMA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "RSMA",
+      "skos:prefLabel": "Resolute Support Mission Afghanistan"
     },
     {
       "@id": "ismcatrelto:RUS",
@@ -3158,6 +3659,15 @@
       },
       "skos:notation": "SEN",
       "skos:prefLabel": "Republic of Senegal"
+    },
+    {
+      "@id": "ismcatrelto:SFOR",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "SFOR",
+      "skos:prefLabel": "Stabilization Force"
     },
     {
       "@id": "ismcatrelto:SGP",
@@ -3223,6 +3733,15 @@
       "skos:prefLabel": "Republic of San Marino"
     },
     {
+      "@id": "ismcatrelto:SOFP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "SOFP",
+      "skos:prefLabel": "Special Operations Forces Partners"
+    },
+    {
       "@id": "ismcatrelto:SOM",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -3230,6 +3749,15 @@
       },
       "skos:notation": "SOM",
       "skos:prefLabel": "Federal Republic of Somalia"
+    },
+    {
+      "@id": "ismcatrelto:SPAA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "SPAA",
+      "skos:prefLabel": "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")"
     },
     {
       "@id": "ismcatrelto:SPM",
@@ -3356,6 +3884,24 @@
       },
       "skos:notation": "TCD",
       "skos:prefLabel": "Republic of Chad"
+    },
+    {
+      "@id": "ismcatrelto:TEYE",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "TEYE",
+      "skos:prefLabel": "THREE EYES"
+    },
+    {
+      "@id": "ismcatrelto:TFTC",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "TFTC",
+      "skos:prefLabel": "Terrorist Financing Targeting Center"
     },
     {
       "@id": "ismcatrelto:TGO",
@@ -3493,6 +4039,15 @@
       "skos:prefLabel": "Ukraine"
     },
     {
+      "@id": "ismcatrelto:UNCK",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "UNCK",
+      "skos:prefLabel": "United Nations Command, Korea"
+    },
+    {
       "@id": "ismcatrelto:URY",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -3500,6 +4055,15 @@
       },
       "skos:notation": "URY",
       "skos:prefLabel": "Oriental Republic of Uruguay"
+    },
+    {
+      "@id": "ismcatrelto:USA",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
+      },
+      "skos:notation": "USA",
+      "skos:prefLabel": "United States of America"
     },
     {
       "@id": "ismcatrelto:UZB",
@@ -3896,555 +4460,6 @@
       },
       "skos:notation": "ZWE",
       "skos:prefLabel": "Republic of Zimbabwe"
-    },
-    {
-      "@id": "ismcatrelto:ACGU",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ACGU",
-      "skos:prefLabel": "FOUR EYES"
-    },
-    {
-      "@id": "ismcatrelto:AMSP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AMSP",
-      "skos:prefLabel": "AFRICOM Multinational Strategic Partners"
-    },
-    {
-      "@id": "ismcatrelto:AOSC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AOSC",
-      "skos:prefLabel": "Athens Olympics Security Coalition"
-    },
-    {
-      "@id": "ismcatrelto:APFS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "APFS",
-      "skos:prefLabel": "African Peacekeeping Force Somalia"
-    },
-    {
-      "@id": "ismcatrelto:ASEA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ASEA",
-      "skos:prefLabel": "Association of Southeast Asian Nations (ASEAN)"
-    },
-    {
-      "@id": "ismcatrelto:AUSTRALIA_GROUP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "AUSTRALIA_GROUP",
-      "skos:prefLabel": "Australia Group"
-    },
-    {
-      "@id": "ismcatrelto:BHTF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BHTF",
-      "skos:prefLabel": "Boko Haram Task Force"
-    },
-    {
-      "@id": "ismcatrelto:BWCS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "BWCS",
-      "skos:prefLabel": "Biological Weapons Convention States"
-    },
-    {
-      "@id": "ismcatrelto:CFCK",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CFCK",
-      "skos:prefLabel": "Combined Forces Command Korea"
-    },
-    {
-      "@id": "ismcatrelto:CFOD",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CFOD",
-      "skos:prefLabel": "Coalition Forces Odyssey Dawn"
-    },
-    {
-      "@id": "ismcatrelto:CFUP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CFUP",
-      "skos:prefLabel": "Coalition Forces Unified Protector"
-    },
-    {
-      "@id": "ismcatrelto:CLFC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CLFC",
-      "skos:prefLabel": "Combined Libya Fusion Cell"
-    },
-    {
-      "@id": "ismcatrelto:CMFC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CMFC",
-      "skos:prefLabel": "Combined Maritime Forces Central"
-    },
-    {
-      "@id": "ismcatrelto:CMFP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CMFP",
-      "skos:prefLabel": "Cooperative Maritime Forces Pacific"
-    },
-    {
-      "@id": "ismcatrelto:CPMT",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CPMT",
-      "skos:prefLabel": "Civilian Protection Monitoring Team for Sudan"
-    },
-    {
-      "@id": "ismcatrelto:CTOC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CTOC",
-      "skos:prefLabel": "Countering Transnational Organized Crime"
-    },
-    {
-      "@id": "ismcatrelto:CWCS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "CWCS",
-      "skos:prefLabel": "Chemical Weapons Convention States"
-    },
-    {
-      "@id": "ismcatrelto:ECTF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ECTF",
-      "skos:prefLabel": "European Counter-Terrorism Forces"
-    },
-    {
-      "@id": "ismcatrelto:EFOR",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "EFOR",
-      "skos:prefLabel": "European Union Stabilization Forces in Bosnia"
-    },
-    {
-      "@id": "ismcatrelto:EU",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "EU",
-      "skos:prefLabel": "European Union"
-    },
-    {
-      "@id": "ismcatrelto:EUDA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "EUDA",
-      "skos:prefLabel": "European Union DARFUR"
-    },
-    {
-      "@id": "ismcatrelto:FRME",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "FRME",
-      "skos:prefLabel": "Counter Violent Extremist Organizations Framework Partners"
-    },
-    {
-      "@id": "ismcatrelto:FVEY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "FVEY",
-      "skos:prefLabel": "FIVE EYES"
-    },
-    {
-      "@id": "ismcatrelto:GCCH",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "GCCH",
-      "skos:prefLabel": "Gulf Cooperation Council"
-    },
-    {
-      "@id": "ismcatrelto:GCTF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "GCTF",
-      "skos:prefLabel": "Global Counter-Terrorism Forces"
-    },
-    {
-      "@id": "ismcatrelto:GFNX",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "GFNX",
-      "skos:prefLabel": "Global Foreign Terrorist Fighter Network Exchange"
-    },
-    {
-      "@id": "ismcatrelto:GMIF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "GMIF",
-      "skos:prefLabel": "Global Maritime Interception Forces"
-    },
-    {
-      "@id": "ismcatrelto:IESC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "IESC",
-      "skos:prefLabel": "International Events Security Coalition"
-    },
-    {
-      "@id": "ismcatrelto:IMSC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "IMSC",
-      "skos:prefLabel": "International Maritime Security Construct"
-    },
-    {
-      "@id": "ismcatrelto:IMSP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "IMSP",
-      "skos:prefLabel": "INDOPACOM Multinational Strategic Partners"
-    },
-    {
-      "@id": "ismcatrelto:IPMC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "IPMC",
-      "skos:prefLabel": "INDO PACIFIC Maritime Call"
-    },
-    {
-      "@id": "ismcatrelto:IRKS",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "IRKS",
-      "skos:prefLabel": "Inherent Resolve Kinetic Support"
-    },
-    {
-      "@id": "ismcatrelto:ISAF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ISAF",
-      "skos:prefLabel": "International Security Assistance Force for Afghanistan"
-    },
-    {
-      "@id": "ismcatrelto:ISSG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "ISSG",
-      "skos:prefLabel": "International Syria Support Group"
-    },
-    {
-      "@id": "ismcatrelto:KFOR",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "KFOR",
-      "skos:prefLabel": "Stabilization Forces in Kosovo"
-    },
-    {
-      "@id": "ismcatrelto:MCFI",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "MCFI",
-      "skos:prefLabel": "Multinational Coalition Forces-Iraq"
-    },
-    {
-      "@id": "ismcatrelto:MESF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "MESF",
-      "skos:prefLabel": "Middle East Stability Force"
-    },
-    {
-      "@id": "ismcatrelto:MGEU",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "MGEU",
-      "skos:prefLabel": "Multinational GEOINT Europe"
-    },
-    {
-      "@id": "ismcatrelto:MIFH",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "MIFH",
-      "skos:prefLabel": "Multinational Interim Force Haiti"
-    },
-    {
-      "@id": "ismcatrelto:MLEC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "MLEC",
-      "skos:prefLabel": "Multi-Lateral Enduring Contingency"
-    },
-    {
-      "@id": "ismcatrelto:MNTF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "MNTF",
-      "skos:prefLabel": "Multinational Task Force"
-    },
-    {
-      "@id": "ismcatrelto:MPFL",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "MPFL",
-      "skos:prefLabel": "Multinational Peacekeeping Forces"
-    },
-    {
-      "@id": "ismcatrelto:NACT",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "NACT",
-      "skos:prefLabel": "North African Counter-Terrorism Forces"
-    },
-    {
-      "@id": "ismcatrelto:NATO",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "NATO",
-      "skos:prefLabel": "North Atlantic Treaty Organization"
-    },
-    {
-      "@id": "ismcatrelto:NCFE",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "NCFE",
-      "skos:prefLabel": "NATO CFE Treaty on Conventional Armed Forces in Europe"
-    },
-    {
-      "@id": "ismcatrelto:NKIC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "NKIC",
-      "skos:prefLabel": "North Korea Intelligence Coalition"
-    },
-    {
-      "@id": "ismcatrelto:NRDC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "NRDC",
-      "skos:prefLabel": "NORDIC"
-    },
-    {
-      "@id": "ismcatrelto:NSG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "NSG",
-      "skos:prefLabel": "Nuclear Suppliers' Group"
-    },
-    {
-      "@id": "ismcatrelto:OSAG",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "OSAG",
-      "skos:prefLabel": "Olympic Security Advisory Group"
-    },
-    {
-      "@id": "ismcatrelto:OSTY",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "OSTY",
-      "skos:prefLabel": "Open Skies Treaty"
-    },
-    {
-      "@id": "ismcatrelto:PAWA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "PAWA",
-      "skos:prefLabel": "Partnership for Actions in West Africa"
-    },
-    {
-      "@id": "ismcatrelto:PGMF",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "PGMF",
-      "skos:prefLabel": "Persian Gulf Multinational Forces"
-    },
-    {
-      "@id": "ismcatrelto:PSMX",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "PSMX",
-      "skos:prefLabel": "Pacific Security Monitoring Exchange"
-    },
-    {
-      "@id": "ismcatrelto:RISC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "RISC",
-      "skos:prefLabel": "Russia Intelligence Sharing Coalition"
-    },
-    {
-      "@id": "ismcatrelto:RSMA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "RSMA",
-      "skos:prefLabel": "Resolute Support Mission Afghanistan"
-    },
-    {
-      "@id": "ismcatrelto:SFOR",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "SFOR",
-      "skos:prefLabel": "Stabilization Force"
-    },
-    {
-      "@id": "ismcatrelto:SOFP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "SOFP",
-      "skos:prefLabel": "Special Operations Forces Partners"
-    },
-    {
-      "@id": "ismcatrelto:SPAA",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "SPAA",
-      "skos:prefLabel": "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")"
-    },
-    {
-      "@id": "ismcatrelto:TEYE",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "TEYE",
-      "skos:prefLabel": "THREE EYES"
-    },
-    {
-      "@id": "ismcatrelto:TFTC",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "TFTC",
-      "skos:prefLabel": "Terrorist Financing Targeting Center"
-    },
-    {
-      "@id": "ismcatrelto:UNCK",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismcatrelto:CVEnumISMCATRelTo"
-      },
-      "skos:notation": "UNCK",
-      "skos:prefLabel": "United Nations Command, Korea"
     }
   ]
 }

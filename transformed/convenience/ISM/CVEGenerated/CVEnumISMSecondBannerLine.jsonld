@@ -14,6 +14,33 @@
       "@type": "owl:Ontology"
     },
     {
+      "@id": "ismsecondbannerline:ACPI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "skos:notation": "ACPI",
+      "skos:prefLabel": "ATTORNEY-CLIENT PRIVILEGED INFO"
+    },
+    {
+      "@id": "ismsecondbannerline:AWP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "skos:notation": "AWP",
+      "skos:prefLabel": "ATTORNEY WORK PRODUCT"
+    },
+    {
+      "@id": "ismsecondbannerline:CUSPI",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "skos:notation": "CUSPI",
+      "skos:prefLabel": "CONTENTS INCLUDE US PERSON INFORMATION"
+    },
+    {
       "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine",
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismsecondbannerline:CVEnumISMSecondBannerLine definition",
@@ -49,33 +76,6 @@
         "HVCO",
         "SSS"
       ]
-    },
-    {
-      "@id": "ismsecondbannerline:ACPI",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
-      },
-      "skos:notation": "ACPI",
-      "skos:prefLabel": "ATTORNEY-CLIENT PRIVILEGED INFO"
-    },
-    {
-      "@id": "ismsecondbannerline:AWP",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
-      },
-      "skos:notation": "AWP",
-      "skos:prefLabel": "ATTORNEY WORK PRODUCT"
-    },
-    {
-      "@id": "ismsecondbannerline:CUSPI",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
-      },
-      "skos:notation": "CUSPI",
-      "skos:prefLabel": "CONTENTS INCLUDE US PERSON INFORMATION"
     },
     {
       "@id": "ismsecondbannerline:DPPD",

@@ -10,7 +10,7 @@
   },
   "@graph": [
     {
-      "@id": "_:5",
+      "@id": "_:4",
       "xsd:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
@@ -678,7 +678,7 @@
         "@id": "xsd:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:5"
+        "@id": "_:4"
       }
     },
     {

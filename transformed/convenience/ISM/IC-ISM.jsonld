@@ -33,11 +33,11 @@
   },
   "@graph": [
     {
-      "@id": "_:1",
+      "@id": "_:10",
       "xsd:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:4",
+      "@id": "_:3",
       "xsd:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
@@ -45,7 +45,7 @@
       "xsd:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:7",
+      "@id": "_:6",
       "xsd:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
@@ -7779,7 +7779,7 @@
         "@id": "xsd:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:7"
+        "@id": "_:6"
       }
     },
     {
@@ -12223,7 +12223,7 @@
         "@id": "xsd:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:7"
+        "@id": "_:6"
       }
     },
     {
@@ -16671,7 +16671,7 @@
         "@id": "xsd:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:0"
+        "@id": "_:10"
       }
     },
     {
@@ -21115,7 +21115,7 @@
         "@id": "xsd:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:6"
+        "@id": "_:10"
       }
     },
     {

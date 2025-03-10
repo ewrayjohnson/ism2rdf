@@ -55,19 +55,19 @@
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:18",
-      "xs:pattern": "guide://([1-9][0-9]{0,15}|0)/[A-Za-z0-9_\\-\\.]{1,36}"
-    },
-    {
       "@id": "_:2",
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:31",
+      "@id": "_:22",
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:39",
+      "@id": "_:23",
+      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:27",
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
@@ -75,11 +75,11 @@
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:5",
+      "@id": "_:40",
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:55",
+      "@id": "_:42",
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
@@ -87,15 +87,15 @@
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:60",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:7",
+      "@id": "_:68",
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:71",
+      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:75",
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
@@ -104,10 +104,10 @@
     },
     {
       "@id": "_:9",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "xs:pattern": "guide://([1-9][0-9]{0,15}|0)/[A-Za-z0-9_\\-\\.]{1,36}"
     },
     {
-      "@id": "_:90",
+      "@id": "_:94",
       "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
@@ -7884,7 +7884,7 @@
         "@id": "xs:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:7"
+        "@id": "_:6"
       }
     },
     {
@@ -12328,7 +12328,7 @@
         "@id": "xs:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:7"
+        "@id": "_:6"
       }
     },
     {
@@ -16776,7 +16776,7 @@
         "@id": "xs:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:0"
+        "@id": "_:10"
       }
     },
     {
@@ -21220,7 +21220,7 @@
         "@id": "xs:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:6"
+        "@id": "_:10"
       }
     },
     {
@@ -31640,7 +31640,7 @@
         "@id": "xs:string"
       },
       "owl:withRestrictions": {
-        "@id": "_:0"
+        "@id": "_:1"
       }
     },
     {

@@ -27,16 +27,16 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<_:1>
+<_:10>
   xsd:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:4>
+<_:3>
   xsd:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 <_:5>
   xsd:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:7>
+<_:6>
   xsd:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 ism25x:25X1 a skos:Concept;
@@ -4134,7 +4134,7 @@ ismcatfgio:NATO a skos:Concept;
 ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
   rdfs:comment "North Atlantic Treaty Organization Special Words";
   rdfs:subClassOf xsd:string;
-  owl:withRestrictions <_:7>.
+  owl:withRestrictions <_:6>.
 
 ismcatfgio:NCFE a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
@@ -6526,7 +6526,7 @@ ismcatfgip:NATO a skos:Concept;
 ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
   rdfs:comment "North Atlantic Treaty Organization Special Words";
   rdfs:subClassOf xsd:string;
-  owl:withRestrictions <_:7>.
+  owl:withRestrictions <_:6>.
 
 ismcatfgip:NCFE a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
@@ -8920,7 +8920,7 @@ ismcatownpro:NATO a skos:Concept;
 ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
   rdfs:comment "North Atlantic Treaty Organization Special Words";
   rdfs:subClassOf xsd:string;
-  owl:withRestrictions <_:0>.
+  owl:withRestrictions <_:10>.
 
 ismcatownpro:NCFE a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
@@ -11312,7 +11312,7 @@ ismcatrelto:NATO a skos:Concept;
 ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
   rdfs:comment "North Atlantic Treaty Organization Special Words";
   rdfs:subClassOf xsd:string;
-  owl:withRestrictions <_:6>.
+  owl:withRestrictions <_:10>.
 
 ismcatrelto:NCFE a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;

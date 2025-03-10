@@ -6,7 +6,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<_:1>
+<_:9>
   xsd:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 ismcattetra:ACGU a skos:Concept;
@@ -361,7 +361,7 @@ ismcattetra:NATO a skos:Concept;
 ismcattetra:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
   rdfs:comment "North Atlantic Treaty Organization Special Words";
   rdfs:subClassOf xsd:string;
-  owl:withRestrictions <_:5>.
+  owl:withRestrictions <_:4>.
 
 ismcattetra:NCFE a skos:Concept;
   skos:inScheme ismcattetra:CVEnumISMCATTetragraph;

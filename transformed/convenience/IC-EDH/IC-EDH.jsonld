@@ -4,6 +4,7 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sh": "http://www.w3.org/ns/shacl#",
     "xs": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -43,72 +44,116 @@
   },
   "@graph": [
     {
-      "@id": "_:0",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
       "@id": "_:1",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:10",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:19",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:2",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:22",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:23",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:27",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:4",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:40",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:42",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:44",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:46",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:5",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:6",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:68",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:7",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:71",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:73",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:75",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:8",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:77",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:9",
-      "xs:pattern": "guide://([1-9][0-9]{0,15}|0)/[A-Za-z0-9_\\-\\.]{1,36}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:94",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:92",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:95",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "urn:us:gov:ic:IC-EDH:IC-EDH",
@@ -5303,6 +5348,9 @@
       "dc:title": "(U) ismcatfgio:CVEnumISMCATFGIOpen definition",
       "skos:hasTopConcept": [
         {
+          "@id": "ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D"
+        },
+        {
           "@id": "ismcatfgio:ABW"
         },
         {
@@ -7878,13 +7926,13 @@
     },
     {
       "@id": "ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatfgio:CVEnumISMCATFGIOpen"
       },
-      "owl:withRestrictions": {
-        "@id": "_:6"
+      "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
+      "sh:property": {
+        "@id": "_:8"
       }
     },
     {
@@ -9737,6 +9785,9 @@
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismcatfgip:CVEnumISMCATFGIProtected definition",
       "skos:hasTopConcept": [
+        {
+          "@id": "ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D"
+        },
         {
           "@id": "ismcatfgip:FGI"
         },
@@ -12322,13 +12373,13 @@
     },
     {
       "@id": "ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatfgip:CVEnumISMCATFGIProtected"
       },
-      "owl:withRestrictions": {
-        "@id": "_:6"
+      "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
+      "sh:property": {
+        "@id": "_:5"
       }
     },
     {
@@ -14181,6 +14232,9 @@
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismcatownpro:CVEnumISMCATOwnerProducer definition",
       "skos:hasTopConcept": [
+        {
+          "@id": "ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D"
+        },
         {
           "@id": "ismcatownpro:FGI"
         },
@@ -16770,13 +16824,13 @@
     },
     {
       "@id": "ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatownpro:CVEnumISMCATOwnerProducer"
       },
-      "owl:withRestrictions": {
-        "@id": "_:10"
+      "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
+      "sh:property": {
+        "@id": "_:8"
       }
     },
     {
@@ -18638,6 +18692,9 @@
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismcatrelto:CVEnumISMCATRelTo definition",
       "skos:hasTopConcept": [
+        {
+          "@id": "ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D"
+        },
         {
           "@id": "ismcatrelto:USA"
         },
@@ -21214,13 +21271,13 @@
     },
     {
       "@id": "ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
       },
-      "owl:withRestrictions": {
-        "@id": "_:10"
+      "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
+      "sh:property": {
+        "@id": "_:6"
       }
     },
     {
@@ -31632,16 +31689,6 @@
     {
       "@id": "edh:ResponsibleEntityRoleTypeValues",
       "@type": "rdfs:Datatype"
-    },
-    {
-      "@id": "icid:guide%3A%2F%2F(%5B1-9%5D%5B0-9%5D%7B0%2C15%7D%7C0)%2F%5BA-Za-z0-9_%5C-%5C.%5D%7B1%2C36%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
-      },
-      "owl:withRestrictions": {
-        "@id": "_:1"
-      }
     },
     {
       "@id": "icid:identifier",

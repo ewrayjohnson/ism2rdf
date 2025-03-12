@@ -3,11 +3,12 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<_:9>
-  xsd:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+<_:5>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 ismcattetra:ACGU a skos:Concept;
   skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
@@ -136,6 +137,7 @@ ismcattetra:CVEnumISMCATTetragraph a skos:ConceptScheme;
     ismcattetra:MPFL,
     ismcattetra:NACT,
     ismcattetra:NATO,
+    ismcattetra:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D,
     ismcattetra:NCFE,
     ismcattetra:NKIC,
     ismcattetra:NRDC,
@@ -358,10 +360,10 @@ ismcattetra:NATO a skos:Concept;
   skos:notation "NATO";
   skos:prefLabel "North Atlantic Treaty Organization".
 
-ismcattetra:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
-  rdfs:comment "North Atlantic Treaty Organization Special Words";
-  rdfs:subClassOf xsd:string;
-  owl:withRestrictions <_:4>.
+ismcattetra:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
+  skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
+  skos:prefLabel "North Atlantic Treaty Organization Special Words";
+  sh:property <_:8>.
 
 ismcattetra:NCFE a skos:Concept;
   skos:inScheme ismcattetra:CVEnumISMCATTetragraph;

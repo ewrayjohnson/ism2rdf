@@ -4,6 +4,7 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sh": "http://www.w3.org/ns/shacl#",
     "xs": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -40,76 +41,123 @@
   },
   "@graph": [
     {
-      "@id": "_:0",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:1",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
       "@id": "_:10",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:100",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:12",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:19",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:2",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:28",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:3",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:35",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:47",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:4",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:48",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:5",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:50",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:53",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:56",
-      "xs:pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(Z|[\\-\\+][0-9]{2}:[0-9]{2})?"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:6",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:61",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:67",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:7",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:74",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:75",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:77",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:8",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:81",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "_:9",
-      "xs:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:99",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISM25X",
@@ -5292,6 +5340,9 @@
       "dc:title": "(U) ismcatfgio:CVEnumISMCATFGIOpen definition",
       "skos:hasTopConcept": [
         {
+          "@id": "ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D"
+        },
+        {
           "@id": "ismcatfgio:ABW"
         },
         {
@@ -7867,13 +7918,13 @@
     },
     {
       "@id": "ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatfgio:CVEnumISMCATFGIOpen"
       },
-      "owl:withRestrictions": {
-        "@id": "_:6"
+      "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
+      "sh:property": {
+        "@id": "_:8"
       }
     },
     {
@@ -9726,6 +9777,9 @@
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismcatfgip:CVEnumISMCATFGIProtected definition",
       "skos:hasTopConcept": [
+        {
+          "@id": "ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D"
+        },
         {
           "@id": "ismcatfgip:FGI"
         },
@@ -12311,13 +12365,13 @@
     },
     {
       "@id": "ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatfgip:CVEnumISMCATFGIProtected"
       },
-      "owl:withRestrictions": {
-        "@id": "_:6"
+      "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
+      "sh:property": {
+        "@id": "_:5"
       }
     },
     {
@@ -14170,6 +14224,9 @@
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismcatownpro:CVEnumISMCATOwnerProducer definition",
       "skos:hasTopConcept": [
+        {
+          "@id": "ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D"
+        },
         {
           "@id": "ismcatownpro:FGI"
         },
@@ -16759,13 +16816,13 @@
     },
     {
       "@id": "ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatownpro:CVEnumISMCATOwnerProducer"
       },
-      "owl:withRestrictions": {
-        "@id": "_:10"
+      "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
+      "sh:property": {
+        "@id": "_:8"
       }
     },
     {
@@ -18627,6 +18684,9 @@
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismcatrelto:CVEnumISMCATRelTo definition",
       "skos:hasTopConcept": [
+        {
+          "@id": "ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D"
+        },
         {
           "@id": "ismcatrelto:USA"
         },
@@ -21203,13 +21263,13 @@
     },
     {
       "@id": "ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
       },
-      "owl:withRestrictions": {
-        "@id": "_:10"
+      "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
+      "sh:property": {
+        "@id": "_:6"
       }
     },
     {
@@ -26323,16 +26383,6 @@
     {
       "@id": "tetra:DecomposableTypeValues",
       "@type": "rdfs:Datatype"
-    },
-    {
-      "@id": "tax:%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D-%5B0-9%5D%7B2%7DT%5B0-9%5D%7B2%7D%3A%5B0-9%5D%7B2%7D(Z%7C%5B%5C-%5C%2B%5D%5B0-9%5D%7B2%7D%3A%5B0-9%5D%7B2%7D)%3F",
-      "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xs:string"
-      },
-      "owl:withRestrictions": {
-        "@id": "_:5"
-      }
     }
   ]
 }

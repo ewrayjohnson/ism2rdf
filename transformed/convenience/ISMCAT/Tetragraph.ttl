@@ -27,64 +27,78 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix tax: <urn:us:gov:ic:taxonomy:common#>.
 @prefix tetra: <urn:us:gov:ic:taxonomy:catt:tetragraph#>.
 @prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 
-<_:0>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:1>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
 <_:10>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:100>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+<_:12>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:19>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 <_:2>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:28>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+<_:3>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:35>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+<_:47>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:4>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+<_:48>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 <_:5>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:50>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:53>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:56>
-  xs:pattern "[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(Z|[\\-\\+][0-9]{2}:[0-9]{2})?".
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 <_:6>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:61>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+<_:67>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:7>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:74>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 <_:75>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:77>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 <_:8>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:81>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 <_:9>
-  xs:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:99>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 arh:DESVersion a rdf:Property, owl:DatatypeProperty;
   rdfs:comment "The version number of the DES";
@@ -3036,6 +3050,7 @@ ismcatfgio:CVEnumISMCATFGIOpen a skos:ConceptScheme;
     ismcatfgio:NACT,
     ismcatfgio:NAM,
     ismcatfgio:NATO,
+    ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D,
     ismcatfgio:NCFE,
     ismcatfgio:NCL,
     ismcatfgio:NER,
@@ -4182,10 +4197,10 @@ ismcatfgio:NATO a skos:Concept;
   skos:notation "NATO";
   skos:prefLabel "North Atlantic Treaty Organization".
 
-ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
-  rdfs:comment "North Atlantic Treaty Organization Special Words";
-  rdfs:subClassOf xs:string;
-  owl:withRestrictions <_:6>.
+ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
+  skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
+  skos:prefLabel "North Atlantic Treaty Organization Special Words";
+  sh:property <_:8>.
 
 ismcatfgio:NCFE a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
@@ -5423,6 +5438,7 @@ ismcatfgip:CVEnumISMCATFGIProtected a skos:ConceptScheme;
     ismcatfgip:NACT,
     ismcatfgip:NAM,
     ismcatfgip:NATO,
+    ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D,
     ismcatfgip:NCFE,
     ismcatfgip:NCL,
     ismcatfgip:NER,
@@ -6574,10 +6590,10 @@ ismcatfgip:NATO a skos:Concept;
   skos:notation "NATO";
   skos:prefLabel "North Atlantic Treaty Organization".
 
-ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
-  rdfs:comment "North Atlantic Treaty Organization Special Words";
-  rdfs:subClassOf xs:string;
-  owl:withRestrictions <_:6>.
+ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
+  skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
+  skos:prefLabel "North Atlantic Treaty Organization Special Words";
+  sh:property <_:5>.
 
 ismcatfgip:NCFE a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
@@ -7815,6 +7831,7 @@ ismcatownpro:CVEnumISMCATOwnerProducer a skos:ConceptScheme;
     ismcatownpro:NACT,
     ismcatownpro:NAM,
     ismcatownpro:NATO,
+    ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D,
     ismcatownpro:NCFE,
     ismcatownpro:NCL,
     ismcatownpro:NER,
@@ -8968,10 +8985,10 @@ ismcatownpro:NATO a skos:Concept;
   skos:notation "NATO";
   skos:prefLabel "North Atlantic Treaty Organization".
 
-ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
-  rdfs:comment "North Atlantic Treaty Organization Special Words";
-  rdfs:subClassOf xs:string;
-  owl:withRestrictions <_:10>.
+ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
+  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
+  skos:prefLabel "North Atlantic Treaty Organization Special Words";
+  sh:property <_:8>.
 
 ismcatownpro:NCFE a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
@@ -10213,6 +10230,7 @@ ismcatrelto:CVEnumISMCATRelTo a skos:ConceptScheme;
     ismcatrelto:NACT,
     ismcatrelto:NAM,
     ismcatrelto:NATO,
+    ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D,
     ismcatrelto:NCFE,
     ismcatrelto:NCL,
     ismcatrelto:NER,
@@ -11360,10 +11378,10 @@ ismcatrelto:NATO a skos:Concept;
   skos:notation "NATO";
   skos:prefLabel "North Atlantic Treaty Organization".
 
-ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a rdfs:Datatype;
-  rdfs:comment "North Atlantic Treaty Organization Special Words";
-  rdfs:subClassOf xs:string;
-  owl:withRestrictions <_:10>.
+ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
+  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
+  skos:prefLabel "North Atlantic Treaty Organization Special Words";
+  sh:property <_:6>.
 
 ismcatrelto:NCFE a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
@@ -14196,10 +14214,6 @@ tetra:DecomposableType a skos:ConceptScheme;
 
 tetra:DecomposableTypeValues a rdfs:Datatype;
 .
-
-tax:%5B0-9%5D%7B4%7D-%5B0-9%5D%7B2%7D-%5B0-9%5D%7B2%7DT%5B0-9%5D%7B2%7D%3A%5B0-9%5D%7B2%7D(Z%7C%5B%5C-%5C%2B%5D%5B0-9%5D%7B2%7D%3A%5B0-9%5D%7B2%7D)%3F a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:withRestrictions <_:5>.
 
 <urn:us:gov:ic:Taxonomy:Taxonomy> a owl:Ontology;
 .

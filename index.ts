@@ -18,8 +18,7 @@ const XML_SCHEMA_URI = 'http://www.w3.org/2001/XMLSchema';
 const RDF_URI = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
 const OWL_URI = 'http://www.w3.org/2002/07/owl#';
 const RDFS_URI = 'http://www.w3.org/2000/01/rdf-schema#';
-const NQUADS_FORMAT = 'application/n-quads';
-const TURTLE_FORMAT = 'text/turtle';
+const SHACL_URI = 'http://www.w3.org/ns/shacl#';
 const XSD_EXTENSION = '.xsd';
 const INPUT_DIR = '.ciartifacts';
 const SCHEMAS_DIR = 'schemas';
@@ -175,6 +174,7 @@ type Packages = {
 
             let schemeId = undefined, listSource = undefined, enumSource = undefined;
             const concepts: any = [];
+            let patterns = 0;
             const simpleTypes = schema[`${xsdPrefix}:simpleType`];
             if (simpleTypes) {
               for (const aSimpleType of simpleTypes) {
@@ -182,6 +182,9 @@ type Packages = {
                   const restrictions = inSimpleType[`${xsdPrefix}:restriction`];
                   if (restrictions) {
                     const aRestriction = restrictions[0];
+                    // if (aRestriction[`$`]?.base !== 'xsd:token') {
+                    //   return;
+                    // }
                     const enums = aRestriction[`${xsdPrefix}:enumeration`];
                     if (enums) {
                       for (const anEnum of enums) {
@@ -206,18 +209,30 @@ type Packages = {
                       const patternSpec = aRestriction[`${xsdPrefix}:pattern`];
                       if (patternSpec) {
                         const pattern = patternSpec[0]['$'].value;
-                        const datatypeUri = defaultNs + encodeURIComponent(pattern);
+                        const conceptId = defaultNs + encodeURIComponent(pattern);
                         const annotation = patternSpec[0][`${xsdPrefix}:annotation`];
-                        const documentation = annotation && annotation[0][`${xsdPrefix}:documentation`];
-                        standalone.g.add(datatypeUri, RDF_TYPE, 'rdfs:Datatype');
-                        standalone.g.add(datatypeUri, 'rdfs:subClassOf', 'http://www.w3.org/2001/XMLSchema#string');
-                        if (documentation) {
-                          standalone.g.addL(datatypeUri, 'rdfs:comment', removeWhitespace(documentation[0]));
+                        let prefLabel = annotation && annotation[0][`${xsdPrefix}:documentation`];
+                        // if (prefLabel && Array.isArray(prefLabel)) {
+                        //   prefLabel = prefLabel[0];
+                        // }
+                        if (prefLabel) {
+                          prefLabel = removeWhitespace(prefLabel[0]);
                         }
-                        const patternNode = standalone.g.addL(null, 'http://www.w3.org/2001/XMLSchema#pattern', pattern);
-                        standalone.g.add(datatypeUri, 'owl:withRestrictions', [
-                          patternNode.getSubject()
-                        ]);
+                        patterns++;
+                        concepts.push({
+                          pattern,
+                          prefLabel,
+                          conceptId
+                        });
+                        // standalone.g.add(conceptId, RDF_TYPE, 'rdfs:Datatype');
+                        // standalone.g.add(conceptId, 'rdfs:subClassOf', 'http://www.w3.org/2001/XMLSchema#string');
+                        // if (prefLabel) {
+                        //   standalone.g.addL(conceptId, 'rdfs:comment', removeWhitespace(prefLabel[0]));
+                        // }
+                        // const patternNode = standalone.g.addL(null, 'http://www.w3.org/2001/XMLSchema#pattern', pattern);
+                        // standalone.g.add(conceptId, 'owl:withRestrictions', [
+                        //   patternNode.getSubject()
+                        // ]);
                       }
                     }
                   }
@@ -253,10 +268,17 @@ type Packages = {
               for (const aConcept of concepts) {
                 standalone.g.add(schemeId, 'skos:hasTopConcept', aConcept.conceptId);
                 standalone.namespaces[OWL_URI] = 'owl';
-                standalone.g.addL(allowedNotationsId, 'owl:oneOf', aConcept.notation);
                 standalone.g.add(aConcept.conceptId, RDF_TYPE, 'skos:Concept');
-                const stmt = standalone.g.add(aConcept.conceptId, 'skos:inScheme', schemeId);
-                standalone.g.addD(aConcept.conceptId, 'skos:notation', aConcept.notation);
+                standalone.g.add(aConcept.conceptId, 'skos:inScheme', schemeId);
+                if (aConcept.notation) {
+                  standalone.g.addD(aConcept.conceptId, 'skos:notation', aConcept.notation);
+                  standalone.g.addL(allowedNotationsId, 'owl:oneOf', aConcept.notation);
+                } else if (aConcept.pattern) {
+                  standalone.namespaces[SHACL_URI] = 'sh';
+                  const restriction = standalone.g.addL(null, 'sh:pattern', aConcept.pattern);
+                  standalone.g.add(restriction._s, 'sh:path', 'skos:notation');
+                  standalone.g.add(aConcept.conceptId, 'sh:property', restriction._s);
+                }
                 if (aConcept.prefLabel) {
                   standalone.g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.prefLabel);
                 }

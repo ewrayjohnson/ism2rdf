@@ -1,13 +1,4 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-
-<_:3>
-  xsd:pattern "urn:us:gov:ic:aces:ntk:propin:([A-Za-z][A-Za-z0-9\\-_.;,():+]{1,64})".
-
-<urn:us:gov:ic:cvenum:ntk:accesspolicy#urn%3Aus%3Agov%3Aic%3Aaces%3Antk%3Apropin%3A(%5BA-Za-z%5D%5BA-Za-z0-9%5C-_.%3B%2C()%3A%2B%5D%7B1%2C64%7D)> a <http://www.w3.org/2000/01/rdf-schema#Datatype>;
-  <http://www.w3.org/2000/01/rdf-schema#comment> "Regex for extension of PROPIN with non-IC CIO access policy URN.";
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf> xsd:string;
-  <http://www.w3.org/2002/07/owl#withRestrictions> <_:1>.
 
 <urn:us:gov:ic:ISM:CVEGenerated:CVEnumNTKAccessPolicy> a <http://www.w3.org/2002/07/owl#Ontology>;
 .

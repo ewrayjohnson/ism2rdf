@@ -4,14 +4,18 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dc": "http://purl.org/dc/elements/1.1/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@graph": [
     {
-      "@id": "_:2",
-      "xsd:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+      "@id": "_:10",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATRelTo",
@@ -679,6 +683,9 @@
       "@type": "skos:ConceptScheme",
       "dc:title": "(U) ismcatrelto:CVEnumISMCATRelTo definition",
       "skos:hasTopConcept": [
+        {
+          "@id": "ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D"
+        },
         {
           "@id": "ismcatrelto:USA"
         },
@@ -3255,13 +3262,13 @@
     },
     {
       "@id": "ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D",
-      "@type": "rdfs:Datatype",
-      "rdfs:comment": "North Atlantic Treaty Organization Special Words",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismcatrelto:CVEnumISMCATRelTo"
       },
-      "owl:withRestrictions": {
-        "@id": "_:10"
+      "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
+      "sh:property": {
+        "@id": "_:6"
       }
     },
     {

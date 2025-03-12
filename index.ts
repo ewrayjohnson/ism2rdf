@@ -25,6 +25,7 @@ const SCHEMAS_DIR = 'schemas';
 const RDF_TYPE = 'rdf:type';
 const ONTOLOGY_TYPE = 'owl:Ontology';
 const IMPORTS_PROPERTY = 'owl:imports';
+const URI_PREFIX = 'urn:us:gov:ic';
 
 type Import = {
   namespace: string;
@@ -39,6 +40,7 @@ type Packages = {
   standalone: Package;
   convienence: Package;
 }
+
 
 (async () => {
   const defaultPrefixes = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, 'config', 'defaultPrefixes.json'), 'utf8'));
@@ -62,7 +64,7 @@ type Packages = {
   console.log(processed.keys());
 
   async function input(inputFilepath: string, processed: Map<string, Packages>): Promise<Packages> {
-    const ontologyUri = 'urn:us:gov:ic' + inputFilepath.substring(0, inputFilepath.lastIndexOf('.xsd')).
+    const ontologyUri = URI_PREFIX + inputFilepath.substring(0, inputFilepath.lastIndexOf('.xsd')).
       substring(schemasDir.length).replaceAll(path.sep, ':');
     inputFilepath = path.normalize(inputFilepath);
     let p: Packages | undefined = processed.get(inputFilepath);
@@ -166,8 +168,8 @@ type Packages = {
                 standalone.importUris.push(schemaLocation);
                 const imported = await input(importPath, processed);
                 Object.assign(convienence.namespaces, imported.convienence.namespaces);
-                // remove all imported ontology imports from the imported graph
                 imported.standalone.g.findAndRemove(null, IMPORTS_PROPERTY, null);
+                imported.convienence.g.findAndRemove(null, RDF_TYPE, ONTOLOGY_TYPE);
                 convienence.g.addAll(imported.convienence.g);
               }
             }
@@ -182,9 +184,6 @@ type Packages = {
                   const restrictions = inSimpleType[`${xsdPrefix}:restriction`];
                   if (restrictions) {
                     const aRestriction = restrictions[0];
-                    // if (aRestriction[`$`]?.base !== 'xsd:token') {
-                    //   return;
-                    // }
                     const enums = aRestriction[`${xsdPrefix}:enumeration`];
                     if (enums) {
                       for (const anEnum of enums) {
@@ -195,7 +194,7 @@ type Packages = {
                         }
                         const notation = anEnum.$.value;
                         const prefLabel = removeWhitespace(documentation[0]);
-                        const conceptId = `${idPrefix}${notation}`;
+                        const conceptId = notation.startsWith(URI_PREFIX) ? notation : `${idPrefix}${notation}`;
                         concepts.push({
                           notation,
                           prefLabel,
@@ -212,9 +211,6 @@ type Packages = {
                         const conceptId = defaultNs + encodeURIComponent(pattern);
                         const annotation = patternSpec[0][`${xsdPrefix}:annotation`];
                         let prefLabel = annotation && annotation[0][`${xsdPrefix}:documentation`];
-                        // if (prefLabel && Array.isArray(prefLabel)) {
-                        //   prefLabel = prefLabel[0];
-                        // }
                         if (prefLabel) {
                           prefLabel = removeWhitespace(prefLabel[0]);
                         }
@@ -224,15 +220,6 @@ type Packages = {
                           prefLabel,
                           conceptId
                         });
-                        // standalone.g.add(conceptId, RDF_TYPE, 'rdfs:Datatype');
-                        // standalone.g.add(conceptId, 'rdfs:subClassOf', 'http://www.w3.org/2001/XMLSchema#string');
-                        // if (prefLabel) {
-                        //   standalone.g.addL(conceptId, 'rdfs:comment', removeWhitespace(prefLabel[0]));
-                        // }
-                        // const patternNode = standalone.g.addL(null, 'http://www.w3.org/2001/XMLSchema#pattern', pattern);
-                        // standalone.g.add(conceptId, 'owl:withRestrictions', [
-                        //   patternNode.getSubject()
-                        // ]);
                       }
                     }
                   }
@@ -299,7 +286,6 @@ type Packages = {
 
             standalone.importUris.forEach((uri) => {
               const importUri = 'urn:us:gov:ic:' + uri.replace(/\.\w+$/, '.jsonld');
-              standalone.g.add(importUri, RDF_TYPE, ONTOLOGY_TYPE);
               standalone.g.add(ontologyUri, IMPORTS_PROPERTY, importUri);
             });
             await writeGraph(standalone, path.join(outputBase, 'standalone'));

@@ -12,17 +12,9 @@
     "sh": "http://www.w3.org/ns/shacl#",
     "xs": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@graph": [
-    {
-      "@id": "urn:us:gov:ic:../ISM/IC-ISM.jsonld",
-      "@type": "http://www.w3.org/2002/07/owl#Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:Taxonomy:Taxonomy",
-      "@type": "http://www.w3.org/2002/07/owl#Ontology",
-      "http://www.w3.org/2002/07/owl#imports": {
-        "@id": "urn:us:gov:ic:../ISM/IC-ISM.jsonld"
-      }
-    }
-  ]
+  "@id": "urn:us:gov:ic:Taxonomy:Taxonomy",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "http://www.w3.org/2002/07/owl#imports": {
+    "@id": "urn:us:gov:ic:../ISM/IC-ISM.jsonld"
+  }
 }

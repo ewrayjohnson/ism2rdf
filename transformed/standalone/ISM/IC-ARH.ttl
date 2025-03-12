@@ -4,12 +4,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 
-<urn:us:gov:ic:./IC-ISM.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./IC-NTK.jsonld> a owl:Ontology;
-.
-
 arh:DESVersion a rdf:Property, owl:DatatypeProperty;
   rdfs:comment "The version number of the DES";
   rdfs:range xs:string.

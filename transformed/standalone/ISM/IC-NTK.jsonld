@@ -14,10 +14,6 @@
   },
   "@graph": [
     {
-      "@id": "urn:us:gov:ic:./IC-ISM.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
       "@id": "urn:us:gov:ic:ISM:IC-NTK",
       "@type": "owl:Ontology",
       "owl:imports": {

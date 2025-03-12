@@ -4,9 +4,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<urn:us:gov:ic:./IC-ISM.jsonld> a owl:Ontology;
-.
-
 <urn:us:gov:ic:ISM:IC-NTK> a owl:Ontology;
   owl:imports <urn:us:gov:ic:./IC-ISM.jsonld>.
 

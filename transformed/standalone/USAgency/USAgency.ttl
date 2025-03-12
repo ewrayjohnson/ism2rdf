@@ -5,12 +5,6 @@
 @prefix usagency: <urn:us:gov:ic:usagency#>.
 @prefix usgaa: <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#>.
 
-<urn:us:gov:ic:./CVEGenerated/CVEnumUSAgencyAcronym.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumUSGOVAgencyAcronym.jsonld> a owl:Ontology;
-.
-
 <urn:us:gov:ic:USAgency:USAgency> a owl:Ontology;
   owl:imports
     <urn:us:gov:ic:./CVEGenerated/CVEnumUSAgencyAcronym.jsonld>,

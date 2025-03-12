@@ -19,16 +19,16 @@
       "dc:title": "(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml",
       "skos:hasTopConcept": [
         {
-          "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem"
+          "@id": "urn:us:gov:ic:ntk:profile:agencydissem"
         },
         {
-          "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere"
+          "@id": "urn:us:gov:ic:ntk:profile:datasphere"
         },
         {
-          "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind"
+          "@id": "urn:us:gov:ic:ntk:profile:grp-ind"
         },
         {
-          "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role"
+          "@id": "urn:us:gov:ic:ntk:profile:role"
         }
       ]
     },
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:agencydissem",
+      "@id": "urn:us:gov:ic:ntk:profile:agencydissem",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"
@@ -52,7 +52,7 @@
       "skos:prefLabel": "Agency Dissem"
     },
     {
-      "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:datasphere",
+      "@id": "urn:us:gov:ic:ntk:profile:datasphere",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"
@@ -61,7 +61,7 @@
       "skos:prefLabel": "Data Sphere"
     },
     {
-      "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:grp-ind",
+      "@id": "urn:us:gov:ic:ntk:profile:grp-ind",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"
@@ -70,7 +70,7 @@
       "skos:prefLabel": "Group and Individual"
     },
     {
-      "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#urn:us:gov:ic:ntk:profile:role",
+      "@id": "urn:us:gov:ic:ntk:profile:role",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"

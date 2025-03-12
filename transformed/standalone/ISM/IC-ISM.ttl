@@ -25,69 +25,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIOpen.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIProtected.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATOwnerProducer.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISM25X.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMAtomicEnergyMarkings.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMClassificationAll.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMCompliesWith.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMCUIBasic.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMCUISpecified.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMDissem.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMExemptFrom.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMHighWaterNATO.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMNonIC.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMNonUSControls.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMNotice.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMNoticeProse.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMPocType.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMSAR.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMSCIControls.jsonld> a owl:Ontology;
-.
-
-<urn:us:gov:ic:./CVEGenerated/CVEnumISMSecondBannerLine.jsonld> a owl:Ontology;
-.
-
 <urn:us:gov:ic:ISM:IC-ISM> a owl:Ontology;
   owl:imports
     <urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATFGIOpen.jsonld>,

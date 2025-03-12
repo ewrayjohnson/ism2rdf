@@ -15,14 +15,6 @@
   },
   "@graph": [
     {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumUSAgencyAcronym.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "urn:us:gov:ic:./CVEGenerated/CVEnumUSGOVAgencyAcronym.jsonld",
-      "@type": "owl:Ontology"
-    },
-    {
       "@id": "urn:us:gov:ic:USAgency:USAgency",
       "@type": "owl:Ontology",
       "owl:imports": [

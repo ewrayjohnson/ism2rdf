@@ -4,21 +4,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix tetra: <urn:us:gov:ic:taxonomy:catt:tetragraph#>.
 
-<urn:us:gov:ic:../ISM/IC-ARH.jsonld> a <http://www.w3.org/2002/07/owl#Ontology>;
-.
-
-<urn:us:gov:ic:../ISM/IC-ISM.jsonld> a <http://www.w3.org/2002/07/owl#Ontology>;
-.
-
-<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATRelTo.jsonld> a <http://www.w3.org/2002/07/owl#Ontology>;
-.
-
-<urn:us:gov:ic:../ISMCAT/CVEGenerated/CVEnumISMCATResponsibleEntity.jsonld> a <http://www.w3.org/2002/07/owl#Ontology>;
-.
-
-<urn:us:gov:ic:../Taxonomy/Taxonomy.jsonld> a <http://www.w3.org/2002/07/owl#Ontology>;
-.
-
 <urn:us:gov:ic:ISMCAT:Tetragraph> a <http://www.w3.org/2002/07/owl#Ontology>;
   <http://www.w3.org/2002/07/owl#imports>
     <urn:us:gov:ic:../ISM/IC-ARH.jsonld>,

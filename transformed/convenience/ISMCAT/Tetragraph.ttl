@@ -32,15 +32,11 @@
 @prefix tetra: <urn:us:gov:ic:taxonomy:catt:tetragraph#>.
 @prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 
+<_:0>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
 <_:10>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:12>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:19>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -48,15 +44,31 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
+<_:26>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
 <_:3>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:47>
+<_:30>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:48>
+<_:31>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:4>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:41>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:47>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -68,19 +80,11 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:67>
+<_:66>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:7>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:74>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:75>
+<_:69>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -88,15 +92,11 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:81>
+<_:85>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 <_:9>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:99>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -4200,7 +4200,7 @@ ismcatfgio:NATO a skos:Concept;
 ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:8>.
+  sh:property <_:3>.
 
 ismcatfgio:NCFE a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
@@ -6593,7 +6593,7 @@ ismcatfgip:NATO a skos:Concept;
 ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:5>.
+  sh:property <_:8>.
 
 ismcatfgip:NCFE a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
@@ -8988,7 +8988,7 @@ ismcatownpro:NATO a skos:Concept;
 ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:8>.
+  sh:property <_:9>.
 
 ismcatownpro:NCFE a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
@@ -11381,7 +11381,7 @@ ismcatrelto:NATO a skos:Concept;
 ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:6>.
+  sh:property <_:4>.
 
 ismcatrelto:NCFE a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
@@ -14015,66 +14015,6 @@ ismcatre:ZWE a skos:Concept;
   skos:notation "ZWE";
   skos:prefLabel "Republic of Zimbabwe".
 
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISM25X> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMAtomicEnergyMarkings> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMClassificationAll> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMCompliesWith> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMCUIBasic> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMCUISpecified> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissem> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMExemptFrom> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMHighWaterNATO> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNonIC> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNonUSControls> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNotice> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNoticeProse> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMPocType> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSAR> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSCIControls> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSecondBannerLine> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:IC-ARH> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:IC-ISM> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISM:IC-NTK> a owl:Ontology;
-.
-
 ism:atomicEnergyMarkings a rdf:Property;
   rdfs:comment "Applicable atomic energy information markings for a document or portion";
   rdfs:range ismatomic:CVEnumISMatomicEnergyMarkingsValues.
@@ -14179,21 +14119,6 @@ ism:secondBannerLine a rdf:Property;
   rdfs:comment "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner.";
   rdfs:range ismsecondbannerline:CVEnumISMSecondBannerLineValues.
 
-<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATFGIOpen> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATFGIProtected> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATOwnerProducer> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATRelTo> a owl:Ontology;
-.
-
-<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATResponsibleEntity> a owl:Ontology;
-.
-
 <urn:us:gov:ic:ISMCAT:Tetragraph> a owl:Ontology;
 .
 
@@ -14213,7 +14138,4 @@ tetra:DecomposableType a skos:ConceptScheme;
   dc:title "Decomposition is the breaking down of a tetragraph into its component countries for the purposes of rollup. An example is decomposing FVEY into the five member countries. This decomposition allows a portion marked RELEASABLE TO USA, GBR and another portion marked RELEASEABLE TO USA, FVEY to rollup to RELEASABLE TO USA, GBR. If FVEY was not decomposable the rollup would have to have been NF. NA is \"Not Applicable\" and is applied to deprecated tetragraphs.".
 
 tetra:DecomposableTypeValues a rdfs:Datatype;
-.
-
-<urn:us:gov:ic:Taxonomy:Taxonomy> a owl:Ontology;
 .

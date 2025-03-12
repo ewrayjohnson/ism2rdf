@@ -1,7 +1,4 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-<urn:us:gov:ic:../ISM/IC-ISM.jsonld> a <http://www.w3.org/2002/07/owl#Ontology>;
-.
-
 <urn:us:gov:ic:Taxonomy:Taxonomy> a <http://www.w3.org/2002/07/owl#Ontology>;
   <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:../ISM/IC-ISM.jsonld>.

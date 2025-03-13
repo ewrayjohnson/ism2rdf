@@ -62,7 +62,7 @@
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:26",
+      "@id": "_:21",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -76,20 +76,6 @@
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:30",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:31",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
       "@id": "_:4",
       "sh:path": {
         "@id": "skos:notation"
@@ -97,14 +83,7 @@
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:41",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:47",
+      "@id": "_:44",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -125,14 +104,7 @@
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:66",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:69",
+      "@id": "_:7",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -146,7 +118,14 @@
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:85",
+      "@id": "_:84",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:89",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -154,6 +133,27 @@
     },
     {
       "@id": "_:9",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:91",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:92",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:93",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -7819,9 +7819,20 @@
         "@id": "ismcatfgio:CVEnumISMCATFGIOpen"
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
-      "sh:property": {
-        "@id": "_:3"
-      }
+      "sh:property": [
+        {
+          "@id": "_:3"
+        },
+        {
+          "@id": "_:7"
+        },
+        {
+          "@id": "_:2"
+        },
+        {
+          "@id": "_:8"
+        }
+      ]
     },
     {
       "@id": "ismcatfgio:NCFE",
@@ -12266,9 +12277,20 @@
         "@id": "ismcatfgip:CVEnumISMCATFGIProtected"
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
-      "sh:property": {
-        "@id": "_:8"
-      }
+      "sh:property": [
+        {
+          "@id": "_:0"
+        },
+        {
+          "@id": "_:92"
+        },
+        {
+          "@id": "_:84"
+        },
+        {
+          "@id": "_:9"
+        }
+      ]
     },
     {
       "@id": "ismcatfgip:NCFE",
@@ -16717,9 +16739,20 @@
         "@id": "ismcatownpro:CVEnumISMCATOwnerProducer"
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
-      "sh:property": {
-        "@id": "_:9"
-      }
+      "sh:property": [
+        {
+          "@id": "_:44"
+        },
+        {
+          "@id": "_:21"
+        },
+        {
+          "@id": "_:5"
+        },
+        {
+          "@id": "_:91"
+        }
+      ]
     },
     {
       "@id": "ismcatownpro:NCFE",
@@ -21164,9 +21197,23 @@
         "@id": "ismcatrelto:CVEnumISMCATRelTo"
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
-      "sh:property": {
-        "@id": "_:4"
-      }
+      "sh:property": [
+        {
+          "@id": "_:4"
+        },
+        {
+          "@id": "_:10"
+        },
+        {
+          "@id": "_:89"
+        },
+        {
+          "@id": "_:93"
+        },
+        {
+          "@id": "_:6"
+        }
+      ]
     },
     {
       "@id": "ismcatrelto:NCFE",

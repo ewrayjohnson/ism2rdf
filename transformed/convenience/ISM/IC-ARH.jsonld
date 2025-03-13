@@ -38,14 +38,7 @@
   },
   "@graph": [
     {
-      "@id": "_:0",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:1",
+      "@id": "_:10",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -59,28 +52,35 @@
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:4",
+      "@id": "_:3",
       "sh:path": {
         "@id": "skos:notation"
       },
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:49",
+      "@id": "_:32",
       "sh:path": {
         "@id": "skos:notation"
       },
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:66",
+      "@id": "_:46",
       "sh:path": {
         "@id": "skos:notation"
       },
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:7",
+      "@id": "_:6",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:8",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -7753,9 +7753,14 @@
         "@id": "ismcatfgio:CVEnumISMCATFGIOpen"
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
-      "sh:property": {
-        "@id": "_:3"
-      }
+      "sh:property": [
+        {
+          "@id": "_:3"
+        },
+        {
+          "@id": "_:32"
+        }
+      ]
     },
     {
       "@id": "ismcatfgio:NCFE",
@@ -12200,9 +12205,14 @@
         "@id": "ismcatfgip:CVEnumISMCATFGIProtected"
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
-      "sh:property": {
-        "@id": "_:8"
-      }
+      "sh:property": [
+        {
+          "@id": "_:8"
+        },
+        {
+          "@id": "_:10"
+        }
+      ]
     },
     {
       "@id": "ismcatfgip:NCFE",
@@ -16651,9 +16661,14 @@
         "@id": "ismcatownpro:CVEnumISMCATOwnerProducer"
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
-      "sh:property": {
-        "@id": "_:9"
-      }
+      "sh:property": [
+        {
+          "@id": "_:2"
+        },
+        {
+          "@id": "_:9"
+        }
+      ]
     },
     {
       "@id": "ismcatownpro:NCFE",
@@ -21098,9 +21113,14 @@
         "@id": "ismcatrelto:CVEnumISMCATRelTo"
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
-      "sh:property": {
-        "@id": "_:4"
-      }
+      "sh:property": [
+        {
+          "@id": "_:6"
+        },
+        {
+          "@id": "_:46"
+        }
+      ]
     },
     {
       "@id": "ismcatrelto:NCFE",

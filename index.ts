@@ -264,7 +264,7 @@ type Packages = {
                   standalone.namespaces[SHACL_URI] = 'sh';
                   const restriction = standalone.g.addL(null, 'sh:pattern', aConcept.pattern);
                   standalone.g.add(restriction._s, 'sh:path', 'skos:notation');
-                  standalone.g.add(aConcept.conceptId, 'sh:property', restriction._s);
+                  standalone.g.add(aConcept.conceptId, 'sh:property', { type: 'bnode', value: restriction._s });
                 }
                 if (aConcept.prefLabel) {
                   standalone.g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.prefLabel);

@@ -29,7 +29,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<_:27>
+<_:5>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -41,7 +41,7 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:9>
+<_:8>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -4141,7 +4141,7 @@ ismcatfgio:NATO a skos:Concept;
 ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:3>.
+  sh:property <_:8>.
 
 ismcatfgio:NCFE a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
@@ -6534,7 +6534,7 @@ ismcatfgip:NATO a skos:Concept;
 ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:8>.
+  sh:property <_:5>.
 
 ismcatfgip:NCFE a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
@@ -8929,7 +8929,7 @@ ismcatownpro:NATO a skos:Concept;
 ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:9>.
+  sh:property <_:6>.
 
 ismcatownpro:NCFE a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
@@ -11322,7 +11322,7 @@ ismcatrelto:NATO a skos:Concept;
 ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:4>.
+  sh:property <_:7>.
 
 ismcatrelto:NCFE a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;

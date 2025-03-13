@@ -44,13 +44,6 @@
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:1",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
       "@id": "_:3",
       "sh:path": {
         "@id": "skos:notation"
@@ -58,7 +51,14 @@
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:8",
+      "@id": "_:4",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:9",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -7714,7 +7714,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:3"
+        "@id": "_:9"
       }
     },
     {
@@ -12161,7 +12161,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:8"
+        "@id": "_:4"
       }
     },
     {
@@ -16612,7 +16612,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:9"
+        "@id": "_:0"
       }
     },
     {
@@ -21059,7 +21059,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:4"
+        "@id": "_:3"
       }
     },
     {

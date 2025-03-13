@@ -44,7 +44,7 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:26>
+<_:21>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -52,23 +52,11 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:30>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:31>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
 <_:4>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:41>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:47>
+<_:44>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -80,11 +68,7 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:66>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:69>
+<_:7>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -92,11 +76,27 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:85>
+<_:84>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:89>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
 <_:9>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:91>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:92>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:93>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -4200,7 +4200,11 @@ ismcatfgio:NATO a skos:Concept;
 ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:3>.
+  sh:property
+    <_:2>,
+    <_:3>,
+    <_:7>,
+    <_:8>.
 
 ismcatfgio:NCFE a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
@@ -6593,7 +6597,11 @@ ismcatfgip:NATO a skos:Concept;
 ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:8>.
+  sh:property
+    <_:0>,
+    <_:84>,
+    <_:9>,
+    <_:92>.
 
 ismcatfgip:NCFE a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
@@ -8988,7 +8996,11 @@ ismcatownpro:NATO a skos:Concept;
 ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:9>.
+  sh:property
+    <_:21>,
+    <_:44>,
+    <_:5>,
+    <_:91>.
 
 ismcatownpro:NCFE a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
@@ -11381,7 +11393,12 @@ ismcatrelto:NATO a skos:Concept;
 ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:4>.
+  sh:property
+    <_:10>,
+    <_:4>,
+    <_:6>,
+    <_:89>,
+    <_:93>.
 
 ismcatrelto:NCFE a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;

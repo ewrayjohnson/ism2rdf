@@ -37,21 +37,21 @@
   },
   "@graph": [
     {
-      "@id": "_:0",
+      "@id": "_:10",
       "sh:path": {
         "@id": "skos:notation"
       },
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:3",
+      "@id": "_:6",
       "sh:path": {
         "@id": "skos:notation"
       },
       "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
-      "@id": "_:4",
+      "@id": "_:8",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -7714,7 +7714,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:9"
+        "@id": "_:6"
       }
     },
     {
@@ -12161,7 +12161,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:4"
+        "@id": "_:8"
       }
     },
     {
@@ -16612,7 +16612,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:0"
+        "@id": "_:10"
       }
     },
     {
@@ -21059,7 +21059,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:3"
+        "@id": "_:9"
       }
     },
     {
@@ -22261,7 +22261,10 @@
     },
     {
       "@id": "ism:FGIsourceOpen",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information is not concealed (also used for cases when the source is unknown)",
       "rdfs:range": {
         "@id": "ismcatfgio:CVEnumISMCATFGIOpenValues"
@@ -22269,7 +22272,10 @@
     },
     {
       "@id": "ism:FGIsourceProtected",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information must be concealed",
       "rdfs:range": {
         "@id": "ismcatfgip:CVEnumISMCATFGIProtectedValues"
@@ -22277,7 +22283,10 @@
     },
     {
       "@id": "ism:SARIdentifier",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "This attribute is used at both the resource and the portion levels. One or more indicators identifying the defense or intelligence programs for which special access is required. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSAR.xml",
       "rdfs:range": {
         "@id": "ismsar:CVEnumISMSARValues"
@@ -22285,7 +22294,10 @@
     },
     {
       "@id": "ism:SCIcontrols",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "This attribute is used at both the resource and the portion levels. One or more indicators identifying sensitive compartmented information control system(s). It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSCIControls.xml",
       "rdfs:range": {
         "@id": "ismscicon:CVEnumISMSCIControlsValues"
@@ -22293,7 +22305,10 @@
     },
     {
       "@id": "ism:atomicEnergyMarkings",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "Applicable atomic energy information markings for a document or portion",
       "rdfs:range": {
         "@id": "ismatomic:CVEnumISMatomicEnergyMarkingsValues"
@@ -22301,7 +22316,10 @@
     },
     {
       "@id": "ism:classification",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "The highest level of classification applicable to the containing document or portion",
       "rdfs:range": {
         "@id": "ismclassall:CVEnumISMClassificationAllValues"
@@ -22309,7 +22327,10 @@
     },
     {
       "@id": "ism:compliesWith",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "The ISM rule sets a document complies with",
       "rdfs:range": {
         "@id": "ismcomplies:CVEnumISMCompliesWithValues"
@@ -22317,7 +22338,10 @@
     },
     {
       "@id": "ism:cuiBasic",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "Applicable CUI Basic markings for a document or portion",
       "rdfs:range": {
         "@id": "ismcuibasic:CVEnumISMCUIBasicValues"
@@ -22325,7 +22349,10 @@
     },
     {
       "@id": "ism:cuiSpecified",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "Applicable CUI Specified markings for a document or portion",
       "rdfs:range": {
         "@id": "ismcuispecified:CVEnumISMCUISpecifiedValues"
@@ -22333,7 +22360,10 @@
     },
     {
       "@id": "ism:declassException",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "The exemption from automatic declassification that is claimed for a document",
       "rdfs:range": {
         "@id": "ism25x:CVEnumISM25XValues"
@@ -22341,7 +22371,10 @@
     },
     {
       "@id": "ism:displayOnlyTo",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "The set of countries and/or international organizations associated with a \"Display Only To\" marking",
       "rdfs:range": {
         "@id": "ismcatrelto:CVEnumISMCATRelToValues"
@@ -22349,7 +22382,10 @@
     },
     {
       "@id": "ism:disseminationControls",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "Applicable dissemination control markings for a document or portion",
       "rdfs:range": {
         "@id": "ismdissem:CVEnumISMDissemValues"
@@ -22357,7 +22393,10 @@
     },
     {
       "@id": "ism:exemptFrom",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "Specific exemptions within an ISM rule set that are claimed for a document",
       "rdfs:range": {
         "@id": "ismexempt:CVEnumISMExemptFromValues"
@@ -22366,8 +22405,8 @@
     {
       "@id": "ism:handleViaChannels",
       "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:DatatypeProperty",
+        "rdf:Property"
       ],
       "rdfs:comment": "Handle VIA Channels that may appear in the second banner line.",
       "rdfs:range": {
@@ -22377,8 +22416,8 @@
     {
       "@id": "ism:hasApproximateMarkings",
       "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:DatatypeProperty",
+        "rdf:Property"
       ],
       "rdfs:comment": "When true, indicates the ISM markings specified are estimated (e.g. system high).",
       "rdfs:range": {
@@ -22387,7 +22426,10 @@
     },
     {
       "@id": "ism:highWaterNATO",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "Applicable NATO highwater markings for a document or portion",
       "rdfs:range": {
         "@id": "ismhighwaternato:CVEnumISMHighWaterNATOValues"
@@ -22396,8 +22438,8 @@
     {
       "@id": "ism:joint",
       "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:DatatypeProperty",
+        "rdf:Property"
       ],
       "rdfs:comment": "When true, an indicator that entities in the @ism:ownerProducer attribute are JOINT owners of the data",
       "rdfs:range": {
@@ -22407,8 +22449,8 @@
     {
       "@id": "ism:noAggregation",
       "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:DatatypeProperty",
+        "rdf:Property"
       ],
       "rdfs:comment": "When true, an indicator that there is no classification by compilation across any combination of portions extracted from the document.",
       "rdfs:range": {
@@ -22417,7 +22459,10 @@
     },
     {
       "@id": "ism:nonICmarkings",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "One or more indicators of an expansion or limitation on the distribution of a document or portion originating from non-intelligence components",
       "rdfs:range": {
         "@id": "ismnonic:CVEnumISMNonICValues"
@@ -22425,7 +22470,10 @@
     },
     {
       "@id": "ism:nonUSControls",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "One or more indicators of an expansion or limitation on the distribution of a document or portion originating from non-US components (foreign government or international organization).",
       "rdfs:range": {
         "@id": "ismnonus:CVEnumISMNonUSControlsValues"
@@ -22433,7 +22481,10 @@
     },
     {
       "@id": "ism:noticeProseID",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "An indicator that can be used to identify a security-related notice in an out-of-band fashion without actually having the notice text in the record but rather a notice text prose identifier. This prose identifier maps to the notice text which is stored in a CVE. The permissible values for this attribute are defined in the ISM Notice Prose CVE: CVEnumISMNoticeProse.xml",
       "rdfs:range": {
         "@id": "ismnoticeprose:CVEnumISMNoticeProseValues"
@@ -22441,7 +22492,10 @@
     },
     {
       "@id": "ism:noticeType",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "An indicator that the containing element contains a security-related notice. This attribute is used to categorize which of the required notices is specified in the element. These categories include those described in the Intelligence Community Markings System Register and Manual, as well as additional well-defined and formally recognized security notice types described in other directives, such as US-Person and DoD Distribution. The element could contain any structure that the implementing schema defines, and rendering details are relegated to the implementing schema. The permissible values for this attribute are defined in the ISM Notice CVE: CVEnumISMNotice.xml",
       "rdfs:range": {
         "@id": "ismnotice:CVEnumISMNoticeValues"
@@ -22449,7 +22503,10 @@
     },
     {
       "@id": "ism:ownerProducer",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "The set of national governments and/or international organizations that have purview over the containing classification marking",
       "rdfs:range": {
         "@id": "ismcatownpro:CVEnumISMCATOwnerProducerValues"
@@ -22457,7 +22514,10 @@
     },
     {
       "@id": "ism:pocType",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "Indicates that the element specifies a point-of-contact (POC) and the methods with which to contact that individual. As certain POCs are required for different reasons (ICD-710 compliance, DoD Distribution statements, etc), the values for this attribute specify the reason(s) why the POC is provided.",
       "rdfs:range": {
         "@id": "ismpoctyp:CVEnumISMPocTypeValues"
@@ -22465,7 +22525,10 @@
     },
     {
       "@id": "ism:releasableTo",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "This attribute is used at both the resource and the portion levels. One or more indicators identifying the country or countries and/or international organization(s) to which classified information may be released based on the determination of an originator in accordance with established foreign disclosure procedures. This element is used in conjunction with the Dissemination Controls element. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMRelTo.xml",
       "rdfs:range": {
         "@id": "ismcatrelto:CVEnumISMCATRelToValues"
@@ -22473,7 +22536,10 @@
     },
     {
       "@id": "ism:secondBannerLine",
-      "@type": "rdf:Property",
+      "@type": [
+        "owl:DatatypeProperty",
+        "rdf:Property"
+      ],
       "rdfs:comment": "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner.",
       "rdfs:range": {
         "@id": "ismsecondbannerline:CVEnumISMSecondBannerLineValues"

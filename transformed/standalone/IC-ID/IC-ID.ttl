@@ -6,6 +6,6 @@
 <urn:us:gov:ic:IC-ID:IC-ID> a owl:Ontology;
 .
 
-icid:identifier a rdf:Property;
+icid:identifier a rdf:Property, owl:DatatypeProperty;
   rdfs:comment "Attribute to hold the IC-ID of the data object.";
   rdfs:range icid:IcIdTypeValues.

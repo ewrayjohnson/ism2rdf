@@ -5571,10 +5571,7 @@
     },
     {
       "@id": "usagency:usagency",
-      "@type": [
-        "owl:DatatypeProperty",
-        "rdf:Property"
-      ],
+      "@type": "rdf:Property",
       "rdfs:comment": "An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies.",
       "rdfs:range": {
         "@id": "usaa:CVEnumUSAgencyAcronymValues"
@@ -5582,10 +5579,7 @@
     },
     {
       "@id": "usagency:usgovagency",
-      "@type": [
-        "owl:DatatypeProperty",
-        "rdf:Property"
-      ],
+      "@type": "rdf:Property",
       "rdfs:comment": "An attribute limited to allowable agency acronyms for USA. Contains the Executive branch agencies.",
       "rdfs:range": {
         "@id": "usgaa:CVEnumUSGOVAgencyAcronymValues"

@@ -18,10 +18,7 @@
     },
     {
       "@id": "icid:identifier",
-      "@type": [
-        "owl:DatatypeProperty",
-        "rdf:Property"
-      ],
+      "@type": "rdf:Property",
       "rdfs:comment": "Attribute to hold the IC-ID of the data object.",
       "rdfs:range": {
         "@id": "icid:IcIdTypeValues"

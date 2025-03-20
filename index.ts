@@ -5,6 +5,7 @@ import SerializerJsonld from '@rdfjs/serializer-jsonld-ext';
 import TurtleSerializer from '@rdfjs/serializer-turtle';
 import { NamedNode, Quad } from '@rdfjs/types';
 import fs from 'fs';
+import getStream, { AnyStream } from 'get-stream';
 import _ from 'lodash';
 import path from 'path';
 import { Readable } from 'stream';
@@ -41,6 +42,7 @@ type Packages = {
   convienence: Package;
 }
 
+let blankIndex = 0;
 
 (async () => {
   const defaultPrefixes = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, 'config', 'defaultPrefixes.json'), 'utf8'));
@@ -130,16 +132,17 @@ type Packages = {
                     if (attributeType) {
                       if (attributeName) {
                         const attributeId = `${idPrefix}${attributeName}`;
-                        standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
                         standalone.g.add(attributeId, RDF_TYPE, 'rdf:Property')
                         standalone.namespaces[OWL_URI] = 'owl';
                         standalone.namespaces[RDFS_URI] = 'rdfs';
                         standalone.namespaces[RDF_URI] = 'rdf';
                         if (attributeType.startsWith(`${xsdPrefix}:`)) {
                           namespaces.add(xsdPrefix, 'http://www.w3.org/2001/XMLSchema#');
+                          standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
                         }
                         else {
                           attributeType += 'Values';
+                          standalone.g.add(attributeId, RDF_TYPE, 'rdf:Property');
                         }
                         standalone.g.add(attributeId, 'rdfs:range', `${attributeType}`);
                         const documentation = anAttribute[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
@@ -262,8 +265,9 @@ type Packages = {
                 } else if (aConcept.pattern) {
                   standalone.namespaces[SHACL_URI] = 'sh';
                   const restriction = standalone.g.addL(null, 'sh:pattern', aConcept.pattern);
+                  const blank = { type: 'bnode', value: restriction._s };
                   standalone.g.add(restriction._s, 'sh:path', 'skos:notation');
-                  standalone.g.add(aConcept.conceptId, 'sh:property', { type: 'bnode', value: restriction._s });
+                  standalone.g.add(aConcept.conceptId, 'sh:property', blank);
                 }
                 if (aConcept.prefLabel) {
                   standalone.g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.prefLabel);
@@ -305,8 +309,6 @@ type Packages = {
                   triple._o.type === 'literal' ? rdf.literal(triple._o.value) : rdf.namedNode(triple._o.value));
                 quads.push(quad);
               });
-              const turtleSerializer = new TurtleSerializer({ prefixes: prefixes });
-              const turtle: string = turtleSerializer.transform(quads);
               const jsonldSerializer = new SerializerJsonld({
                 context,
                 compact: true,
@@ -323,14 +325,12 @@ type Packages = {
                   input.push(null);
                 }
               })
+              const jsonld: string = await getStream(jsonldSerializer.import(input) as AnyStream);
+              const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
+              fs.writeFileSync(jsonldOutputFilepath, jsonld);
 
-              const output = jsonldSerializer.import(input);
-
-              output.on('data', jsonld => {
-                const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
-                fs.writeFileSync(jsonldOutputFilepath, jsonld);
-              })
-
+              const turtleSerializer = new TurtleSerializer({ prefixes: prefixes });
+              const turtle: string = turtleSerializer.transform(quads);
               const turtleOutputFilepath = path.join(outputDir, `${basename}.ttl`);
               fs.writeFileSync(turtleOutputFilepath, turtle);
             }
@@ -341,7 +341,6 @@ type Packages = {
     return p;
   }
 })();
-
 
 function removeWhitespace(documentation: any) {
   return (documentation['xhtml:p']?.[0]?._ || documentation).replace(/\s+/g, ' ').trim();

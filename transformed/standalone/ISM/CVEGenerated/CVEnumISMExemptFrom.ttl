@@ -12,6 +12,7 @@ ismexempt:CVEnumISMExemptFrom a skos:ConceptScheme;
     ismexempt:IC_710_MANDATORY_FDR.
 
 ismexempt:CVEnumISMExemptFromValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "DOD_DISTRO_STATEMENT",
     "IC_710_MANDATORY_FDR".

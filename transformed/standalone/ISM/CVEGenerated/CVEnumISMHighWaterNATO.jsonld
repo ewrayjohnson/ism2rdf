@@ -39,6 +39,9 @@
     {
       "@id": "ismhighwaternato:CVEnumISMHighWaterNATOValues",
       "@type": "rdfs:Datatype",
+      "rdfs:subClassOf": {
+        "@id": "http://www.w3.org/2001/XMLSchemastring"
+      },
       "owl:oneOf": [
         "NATO-U",
         "NATO-R",

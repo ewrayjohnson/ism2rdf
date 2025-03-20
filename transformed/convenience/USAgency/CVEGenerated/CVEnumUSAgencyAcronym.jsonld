@@ -777,6 +777,9 @@
     {
       "@id": "usaa:CVEnumUSAgencyAcronymValues",
       "@type": "rdfs:Datatype",
+      "rdfs:subClassOf": {
+        "@id": "http://www.w3.org/2001/XMLSchemastring"
+      },
       "owl:oneOf": [
         "USA.ABMC",
         "USA.ACCESS",

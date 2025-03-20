@@ -20,6 +20,7 @@ ismclassall:CVEnumISMClassificationAll a skos:ConceptScheme;
     ismclassall:U.
 
 ismclassall:CVEnumISMClassificationAllValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "C",
     "R",

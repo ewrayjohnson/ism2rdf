@@ -184,6 +184,7 @@ usgaa:CVEnumUSGOVAgencyAcronym a skos:ConceptScheme;
     usgaa:USA.WHMO.
 
 usgaa:CVEnumUSGOVAgencyAcronymValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "USA.ABMC",
     "USA.ACCESS",

@@ -208,6 +208,7 @@ ismcuibasic:CVEnumISMCUIBasic a skos:ConceptScheme;
     ismcuibasic:XFER.
 
 ismcuibasic:CVEnumISMCUIBasicValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "ADJ",
     "ADPO",

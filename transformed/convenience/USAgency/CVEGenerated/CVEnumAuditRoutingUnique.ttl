@@ -35,6 +35,7 @@ usaru:CVEnumAuditRoutingUnique a skos:ConceptScheme;
     usaru:USA.USTRANSCOM.
 
 usaru:CVEnumAuditRoutingUniqueValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "USA.DARPA",
     "USA.DISA",

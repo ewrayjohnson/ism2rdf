@@ -13,6 +13,7 @@
     <urn:us:gov:ic:ntk:profile:role>.
 
 <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues> a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "urn:us:gov:ic:ntk:profile:agencydissem",
     "urn:us:gov:ic:ntk:profile:datasphere",

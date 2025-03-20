@@ -13,6 +13,7 @@ ismnonus:CVEnumISMNonUSControls a skos:ConceptScheme;
     ismnonus:NATO-BOHEMIA.
 
 ismnonus:CVEnumISMNonUSControlsValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "NATO-ATOMAL",
     "NATO-BALK",

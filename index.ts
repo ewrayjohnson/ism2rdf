@@ -261,6 +261,7 @@ let blankIndex = 0;
                 standalone.g.add(aConcept.conceptId, 'skos:inScheme', schemeId);
                 if (aConcept.notation) {
                   standalone.g.addD(aConcept.conceptId, 'skos:notation', aConcept.notation);
+                  standalone.g.add(allowedNotationsId, 'rdfs:subClassOf', `${xsdPrefix}:string`);
                   standalone.g.addL(allowedNotationsId, 'owl:oneOf', aConcept.notation);
                 } else if (aConcept.pattern) {
                   standalone.namespaces[SHACL_URI] = 'sh';

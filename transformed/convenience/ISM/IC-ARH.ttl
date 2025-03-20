@@ -38,10 +38,6 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:26>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
 <_:3>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
@@ -50,7 +46,11 @@
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:5>
+<_:72>
+  sh:path skos:notation;
+  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:73>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -211,6 +211,7 @@ ism25x:CVEnumISM25X a skos:ConceptScheme;
     ism25x:NATO-AEA.
 
 ism25x:CVEnumISM25XValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "25X1",
     "25X1-EO-12951",
@@ -267,6 +268,7 @@ ismatomic:CVEnumISMatomicEnergyMarkings a skos:ConceptScheme;
     ismatomic:UCNI.
 
 ismatomic:CVEnumISMatomicEnergyMarkingsValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "DCNI",
     "FRD",
@@ -368,6 +370,7 @@ ismclassall:CVEnumISMClassificationAll a skos:ConceptScheme;
     ismclassall:U.
 
 ismclassall:CVEnumISMClassificationAllValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "C",
     "R",
@@ -406,6 +409,7 @@ ismcomplies:CVEnumISMCompliesWith a skos:ConceptScheme;
     ismcomplies:USIC.
 
 ismcomplies:CVEnumISMCompliesWithValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "OtherAuthority",
     "USA-CUI",
@@ -647,6 +651,7 @@ ismcuibasic:CVEnumISMCUIBasic a skos:ConceptScheme;
     ismcuibasic:XFER.
 
 ismcuibasic:CVEnumISMCUIBasicValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "ADJ",
     "ADPO",
@@ -1224,6 +1229,7 @@ ismcuispecified:CVEnumISMCUISpecified a skos:ConceptScheme;
     ismcuispecified:WIT.
 
 ismcuispecified:CVEnumISMCUISpecifiedValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "ADPO",
     "AIV",
@@ -1545,6 +1551,7 @@ ismdissem:CVEnumISMDissem a skos:ConceptScheme;
     ismdissem:WAIVED.
 
 ismdissem:CVEnumISMDissemValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "AC",
     "AWP",
@@ -1676,6 +1683,7 @@ ismexempt:CVEnumISMExemptFrom a skos:ConceptScheme;
     ismexempt:IC_710_MANDATORY_FDR.
 
 ismexempt:CVEnumISMExemptFromValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "DOD_DISTRO_STATEMENT",
     "IC_710_MANDATORY_FDR".
@@ -1700,6 +1708,7 @@ ismhighwaternato:CVEnumISMHighWaterNATO a skos:ConceptScheme;
     ismhighwaternato:NATO-U.
 
 ismhighwaternato:CVEnumISMHighWaterNATOValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "NATO-C",
     "NATO-R",
@@ -1746,6 +1755,7 @@ ismnonic:CVEnumISMNonIC a skos:ConceptScheme;
     ismnonic:XD.
 
 ismnonic:CVEnumISMNonICValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "DS",
     "LES",
@@ -1810,6 +1820,7 @@ ismnonus:CVEnumISMNonUSControls a skos:ConceptScheme;
     ismnonus:NATO-BOHEMIA.
 
 ismnonus:CVEnumISMNonUSControlsValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "NATO-ATOMAL",
     "NATO-BALK",
@@ -1872,6 +1883,7 @@ ismnotice:CVEnumISMNotice a skos:ConceptScheme;
     ismnotice:US-Person.
 
 ismnotice:CVEnumISMNoticeValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "CNWDI",
     "COMSEC",
@@ -2062,6 +2074,7 @@ ismnoticeprose:CVEnumISMNoticeProse a skos:ConceptScheme;
     ismnoticeprose:SSI_00001.
 
 ismnoticeprose:CVEnumISMNoticeProseValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "CNWDI_00001",
     "COMSEC_00001",
@@ -2191,6 +2204,7 @@ ismpoctyp:CVEnumISMPocType a skos:ConceptScheme;
     ismpoctyp:ICD-710.
 
 ismpoctyp:CVEnumISMPocTypeValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "DoD-Dist-B",
     "DoD-Dist-C",
@@ -2280,6 +2294,7 @@ ismscicon:CVEnumISMSCIControls a skos:ConceptScheme;
     ismscicon:TK-KAND.
 
 ismscicon:CVEnumISMSCIControlsValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "BUR",
     "BUR-BLG",
@@ -2408,6 +2423,7 @@ ismsecondbannerline:CVEnumISMSecondBannerLine a skos:ConceptScheme;
     ismsecondbannerline:SSS.
 
 ismsecondbannerline:CVEnumISMSecondBannerLineValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "ACPI",
     "AWP",
@@ -3147,6 +3163,7 @@ ismcatfgio:CVEnumISMCATFGIOpen a skos:ConceptScheme;
     ismcatfgio:ZWE.
 
 ismcatfgio:CVEnumISMCATFGIOpenValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "ABW",
     "ACGU",
@@ -4163,7 +4180,7 @@ ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
   sh:property
-    <_:2>,
+    <_:3>,
     <_:4>.
 
 ismcatfgio:NCFE a skos:Concept;
@@ -5537,6 +5554,7 @@ ismcatfgip:CVEnumISMCATFGIProtected a skos:ConceptScheme;
     ismcatfgip:ZWE.
 
 ismcatfgip:CVEnumISMCATFGIProtectedValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "ABW",
     "ACGU",
@@ -6558,8 +6576,8 @@ ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
   sh:property
-    <_:5>,
-    <_:9>.
+    <_:1>,
+    <_:8>.
 
 ismcatfgip:NCFE a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
@@ -7933,6 +7951,7 @@ ismcatownpro:CVEnumISMCATOwnerProducer a skos:ConceptScheme;
     ismcatownpro:ZWE.
 
 ismcatownpro:CVEnumISMCATOwnerProducerValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "ABW",
     "ACGU",
@@ -8955,8 +8974,8 @@ ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
   sh:property
-    <_:3>,
-    <_:8>.
+    <_:73>,
+    <_:9>.
 
 ismcatownpro:NCFE a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
@@ -10334,6 +10353,7 @@ ismcatrelto:CVEnumISMCATRelTo a skos:ConceptScheme;
     ismcatrelto:ZWE.
 
 ismcatrelto:CVEnumISMCATRelToValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "ABW",
     "ACGU",
@@ -11350,8 +11370,8 @@ ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
   sh:property
-    <_:1>,
-    <_:26>.
+    <_:2>,
+    <_:72>.
 
 ismcatrelto:NCFE a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;

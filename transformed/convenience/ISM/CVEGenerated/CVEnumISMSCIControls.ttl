@@ -50,6 +50,7 @@ ismscicon:CVEnumISMSCIControls a skos:ConceptScheme;
     ismscicon:TK-KAND.
 
 ismscicon:CVEnumISMSCIControlsValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "BUR",
     "BUR-BLG",

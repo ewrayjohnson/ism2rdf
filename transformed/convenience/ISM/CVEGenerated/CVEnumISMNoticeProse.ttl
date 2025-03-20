@@ -41,6 +41,7 @@ ismnoticeprose:CVEnumISMNoticeProse a skos:ConceptScheme;
     ismnoticeprose:SSI_00001.
 
 ismnoticeprose:CVEnumISMNoticeProseValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "CNWDI_00001",
     "COMSEC_00001",

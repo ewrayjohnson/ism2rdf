@@ -19,6 +19,7 @@ ismclassus:CVEnumISMClassificationUS a skos:ConceptScheme;
     ismclassus:U.
 
 ismclassus:CVEnumISMClassificationUSValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "C",
     "S",

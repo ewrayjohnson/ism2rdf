@@ -24,6 +24,7 @@ ismatomic:CVEnumISMatomicEnergyMarkings a skos:ConceptScheme;
     ismatomic:UCNI.
 
 ismatomic:CVEnumISMatomicEnergyMarkingsValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "DCNI",
     "FRD",

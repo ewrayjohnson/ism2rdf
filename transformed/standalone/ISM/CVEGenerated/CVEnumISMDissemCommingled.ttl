@@ -41,6 +41,7 @@ ismdissemcommingled:CVEnumISMDissemCommingled a skos:ConceptScheme;
     ismdissemcommingled:WAIVED.
 
 ismdissemcommingled:CVEnumISMDissemCommingledValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "AC",
     "AWP",

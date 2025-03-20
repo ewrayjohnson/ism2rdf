@@ -47,6 +47,7 @@ ismnotice:CVEnumISMNotice a skos:ConceptScheme;
     ismnotice:US-Person.
 
 ismnotice:CVEnumISMNoticeValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "CNWDI",
     "COMSEC",

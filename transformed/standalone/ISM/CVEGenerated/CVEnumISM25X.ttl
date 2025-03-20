@@ -150,6 +150,7 @@ ism25x:CVEnumISM25X a skos:ConceptScheme;
     ism25x:NATO-AEA.
 
 ism25x:CVEnumISM25XValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "25X1",
     "25X1-EO-12951",

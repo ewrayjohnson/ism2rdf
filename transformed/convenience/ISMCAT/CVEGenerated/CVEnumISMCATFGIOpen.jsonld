@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:1",
+      "@id": "_:7",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -1720,6 +1720,9 @@
     {
       "@id": "ismcatfgio:CVEnumISMCATFGIOpenValues",
       "@type": "rdfs:Datatype",
+      "rdfs:subClassOf": {
+        "@id": "http://www.w3.org/2001/XMLSchemastring"
+      },
       "owl:oneOf": [
         "ABW",
         "AFG",
@@ -3277,7 +3280,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:1"
+        "@id": "_:7"
       }
     },
     {

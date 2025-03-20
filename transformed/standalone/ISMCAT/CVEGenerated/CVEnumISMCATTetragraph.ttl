@@ -6,7 +6,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-<_:3>
+<_:4>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -157,6 +157,7 @@ ismcattetra:CVEnumISMCATTetragraph a skos:ConceptScheme;
     ismcattetra:UNCK.
 
 ismcattetra:CVEnumISMCATTetragraphValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "ACGU",
     "AMSP",
@@ -363,7 +364,7 @@ ismcattetra:NATO a skos:Concept;
 ismcattetra:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcattetra:CVEnumISMCATTetragraph;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:3>.
+  sh:property <_:4>.
 
 ismcattetra:NCFE a skos:Concept;
   skos:inScheme ismcattetra:CVEnumISMCATTetragraph;

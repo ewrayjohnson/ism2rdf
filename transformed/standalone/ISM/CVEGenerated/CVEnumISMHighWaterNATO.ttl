@@ -15,6 +15,7 @@ ismhighwaternato:CVEnumISMHighWaterNATO a skos:ConceptScheme;
     ismhighwaternato:NATO-U.
 
 ismhighwaternato:CVEnumISMHighWaterNATOValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "NATO-C",
     "NATO-R",

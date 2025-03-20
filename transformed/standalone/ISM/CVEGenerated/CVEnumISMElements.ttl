@@ -15,6 +15,7 @@ ismelements:CVEnumISMElements a skos:ConceptScheme;
     ismelements:NoticeText.
 
 ismelements:CVEnumISMElementsValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "Notice",
     "NoticeExternal",

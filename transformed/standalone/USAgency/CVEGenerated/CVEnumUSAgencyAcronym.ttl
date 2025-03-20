@@ -261,6 +261,7 @@ usaa:CVEnumUSAgencyAcronym a skos:ConceptScheme;
     usaa:USA.WHMO.
 
 usaa:CVEnumUSAgencyAcronymValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "USA.ABMC",
     "USA.ACCESS",

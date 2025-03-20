@@ -42,6 +42,9 @@
     {
       "@id": "ismpoctype:CVEnumISMPocTypeValues",
       "@type": "rdfs:Datatype",
+      "rdfs:subClassOf": {
+        "@id": "http://www.w3.org/2001/XMLSchemastring"
+      },
       "owl:oneOf": [
         "ICD-710",
         "DoD-Dist-B",

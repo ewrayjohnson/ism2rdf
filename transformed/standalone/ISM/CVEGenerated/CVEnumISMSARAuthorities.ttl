@@ -21,6 +21,7 @@ ismsar:CVEnumISMSARAuthorities a skos:ConceptScheme;
     ismsar:STATE.
 
 ismsar:CVEnumISMSARAuthoritiesValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "AG",
     "DHS",

@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:5",
+      "@id": "_:1",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -361,6 +361,9 @@
     {
       "@id": "ismcattetra:CVEnumISMCATTetragraphValues",
       "@type": "rdfs:Datatype",
+      "rdfs:subClassOf": {
+        "@id": "http://www.w3.org/2001/XMLSchemastring"
+      },
       "owl:oneOf": [
         "ACGU",
         "AMSP",
@@ -685,7 +688,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:5"
+        "@id": "_:1"
       }
     },
     {

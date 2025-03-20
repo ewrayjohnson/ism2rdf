@@ -16,6 +16,7 @@ ismpoctype:CVEnumISMPocType a skos:ConceptScheme;
     ismpoctype:ICD-710.
 
 ismpoctype:CVEnumISMPocTypeValues a rdfs:Datatype;
+  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
   owl:oneOf
     "DoD-Dist-B",
     "DoD-Dist-C",

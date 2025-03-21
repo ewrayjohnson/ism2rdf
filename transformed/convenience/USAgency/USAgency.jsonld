@@ -782,7 +782,7 @@
       "@id": "usaa:CVEnumUSAgencyAcronymValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xs:string"
       },
       "owl:oneOf": [
         "USA.ABMC",
@@ -3830,7 +3830,7 @@
       "@id": "usgaa:CVEnumUSGOVAgencyAcronymValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xs:string"
       },
       "owl:oneOf": [
         "USA.ABMC",

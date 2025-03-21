@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix usgaa: <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 usgaa:CVEnumUSGOVAgencyAcronym a skos:ConceptScheme;
   dc:title "(U) All valid acronyms for use with US Government Offices. This list is only the agencies within the Executive Branches of the US Government. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSGOVAgencyAcronym.xml";
@@ -184,7 +185,7 @@ usgaa:CVEnumUSGOVAgencyAcronym a skos:ConceptScheme;
     usgaa:USA.WHMO.
 
 usgaa:CVEnumUSGOVAgencyAcronymValues a rdfs:Datatype;
-  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
+  rdfs:subClassOf xsd:string;
   owl:oneOf
     "USA.ABMC",
     "USA.ACCESS",

@@ -6,6 +6,7 @@
 @prefix usaa: <urn:us:gov:ic:cvenum:usagency:agencyacronym#>.
 @prefix usagency: <urn:us:gov:ic:usagency#>.
 @prefix usgaa: <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#>.
+@prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 
 usaa:CVEnumUSAgencyAcronym a skos:ConceptScheme;
   dc:title "(U) All valid acronyms for use with USA publishing organizations/agencies/Cabinet Offices. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSAgencyAcronym.xml";
@@ -263,7 +264,7 @@ usaa:CVEnumUSAgencyAcronym a skos:ConceptScheme;
     usaa:USA.WHMO.
 
 usaa:CVEnumUSAgencyAcronymValues a rdfs:Datatype;
-  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
+  rdfs:subClassOf xs:string;
   owl:oneOf
     "USA.ABMC",
     "USA.ACCESS",
@@ -1951,7 +1952,7 @@ usgaa:CVEnumUSGOVAgencyAcronym a skos:ConceptScheme;
     usgaa:USA.WHMO.
 
 usgaa:CVEnumUSGOVAgencyAcronymValues a rdfs:Datatype;
-  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
+  rdfs:subClassOf xs:string;
   owl:oneOf
     "USA.ABMC",
     "USA.ACCESS",

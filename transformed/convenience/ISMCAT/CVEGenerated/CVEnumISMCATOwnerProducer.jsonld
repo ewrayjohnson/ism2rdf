@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:5",
+      "@id": "_:7",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -1715,7 +1715,7 @@
       "@id": "ismcatownpro:CVEnumISMCATOwnerProducerValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "FGI",
@@ -3284,7 +3284,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:5"
+        "@id": "_:7"
       }
     },
     {

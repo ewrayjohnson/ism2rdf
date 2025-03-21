@@ -3,6 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> a skos:ConceptScheme;
   dc:title "(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml";
@@ -13,7 +14,7 @@
     <urn:us:gov:ic:ntk:profile:role>.
 
 <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues> a rdfs:Datatype;
-  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
+  rdfs:subClassOf xsd:string;
   owl:oneOf
     "urn:us:gov:ic:ntk:profile:agencydissem",
     "urn:us:gov:ic:ntk:profile:datasphere",

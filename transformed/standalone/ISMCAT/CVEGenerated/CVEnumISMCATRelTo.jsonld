@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:8",
+      "@id": "_:0",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -1712,7 +1712,7 @@
       "@id": "ismcatrelto:CVEnumISMCATRelToValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "USA",
@@ -3271,7 +3271,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:8"
+        "@id": "_:0"
       }
     },
     {

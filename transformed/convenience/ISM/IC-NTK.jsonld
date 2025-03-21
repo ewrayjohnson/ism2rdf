@@ -36,7 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "_:4",
+      "@id": "_:1",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:10",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:69",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -44,20 +58,6 @@
     },
     {
       "@id": "_:7",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:83",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:9",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -360,7 +360,7 @@
       "@id": "ism25x:CVEnumISM25XValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "AEA",
@@ -434,7 +434,7 @@
       "@id": "ismhighwaternato:CVEnumISMHighWaterNATOValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "NATO-U",
@@ -542,7 +542,7 @@
       "@id": "ismatomic:CVEnumISMatomicEnergyMarkingsValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "RD",
@@ -722,7 +722,7 @@
       "@id": "ismclassall:CVEnumISMClassificationAllValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "R",
@@ -797,7 +797,7 @@
       "@id": "ismcomplies:CVEnumISMCompliesWithValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "USGov",
@@ -1341,7 +1341,7 @@
       "@id": "ismcuibasic:CVEnumISMCUIBasicValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "ADPO",
@@ -2377,7 +2377,7 @@
       "@id": "ismcuispecified:CVEnumISMCUISpecifiedValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "AIV",
@@ -2939,7 +2939,7 @@
       "@id": "ismdissem:CVEnumISMDissemValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "RS",
@@ -3163,7 +3163,7 @@
       "@id": "ismexempt:CVEnumISMExemptFromValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "IC_710_MANDATORY_FDR",
@@ -3226,7 +3226,7 @@
       "@id": "ismnonic:CVEnumISMNonICValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "DS",
@@ -3341,7 +3341,7 @@
       "@id": "ismnonus:CVEnumISMNonUSControlsValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "NATO-ATOMAL",
@@ -3486,7 +3486,7 @@
       "@id": "ismnotice:CVEnumISMNoticeValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "FISA",
@@ -3835,7 +3835,7 @@
       "@id": "ismnoticeprose:CVEnumISMNoticeProseValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "FISA_00001",
@@ -4061,7 +4061,7 @@
       "@id": "ismpoctyp:CVEnumISMPocTypeValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "ICD-710",
@@ -4242,7 +4242,7 @@
       "@id": "ismscicon:CVEnumISMSCIControlsValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "BUR",
@@ -4467,7 +4467,7 @@
       "@id": "ismsecondbannerline:CVEnumISMSecondBannerLineValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "ACPI",
@@ -6205,7 +6205,7 @@
       "@id": "ismcatfgio:CVEnumISMCATFGIOpenValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "ABW",
@@ -7764,7 +7764,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:7"
+        "@id": "_:1"
       }
     },
     {
@@ -10646,7 +10646,7 @@
       "@id": "ismcatfgip:CVEnumISMCATFGIProtectedValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "FGI",
@@ -12214,7 +12214,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:83"
+        "@id": "_:10"
       }
     },
     {
@@ -15099,7 +15099,7 @@
       "@id": "ismcatownpro:CVEnumISMCATOwnerProducerValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "FGI",
@@ -16668,7 +16668,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:4"
+        "@id": "_:7"
       }
     },
     {
@@ -19559,7 +19559,7 @@
       "@id": "ismcatrelto:CVEnumISMCATRelToValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "USA",
@@ -21118,7 +21118,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:9"
+        "@id": "_:69"
       }
     },
     {

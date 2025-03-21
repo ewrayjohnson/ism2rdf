@@ -1712,7 +1712,7 @@
       "@id": "ismcatfgip:CVEnumISMCATFGIProtectedValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "FGI",

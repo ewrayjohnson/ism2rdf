@@ -5,8 +5,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<_:8>
+<_:0>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
@@ -721,7 +722,7 @@ ismcatrelto:CVEnumISMCATRelTo a skos:ConceptScheme;
     ismcatrelto:ZWE.
 
 ismcatrelto:CVEnumISMCATRelToValues a rdfs:Datatype;
-  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
+  rdfs:subClassOf xsd:string;
   owl:oneOf
     "ABW",
     "ACGU",
@@ -1737,7 +1738,7 @@ ismcatrelto:NATO a skos:Concept;
 ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:8>.
+  sh:property <_:0>.
 
 ismcatrelto:NCFE a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;

@@ -36,7 +36,7 @@
       "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues",
       "@type": "rdfs:Datatype",
       "rdfs:subClassOf": {
-        "@id": "http://www.w3.org/2001/XMLSchemastring"
+        "@id": "xsd:string"
       },
       "owl:oneOf": [
         "urn:us:gov:ic:ntk:profile:agencydissem",

@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix usaru: <urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 usaru:CVEnumAuditRoutingUnique a skos:ConceptScheme;
   dc:title "(U) usaru:CVEnumAuditRoutingUnique definition";
@@ -35,7 +36,7 @@ usaru:CVEnumAuditRoutingUnique a skos:ConceptScheme;
     usaru:USA.USTRANSCOM.
 
 usaru:CVEnumAuditRoutingUniqueValues a rdfs:Datatype;
-  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
+  rdfs:subClassOf xsd:string;
   owl:oneOf
     "USA.DARPA",
     "USA.DISA",

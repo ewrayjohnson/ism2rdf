@@ -4,6 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 ismnoticeprose:CNWDI_00001 a skos:Concept;
   skos:inScheme ismnoticeprose:CVEnumISMNoticeProse;
@@ -41,7 +42,7 @@ ismnoticeprose:CVEnumISMNoticeProse a skos:ConceptScheme;
     ismnoticeprose:SSI_00001.
 
 ismnoticeprose:CVEnumISMNoticeProseValues a rdfs:Datatype;
-  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
+  rdfs:subClassOf xsd:string;
   owl:oneOf
     "CNWDI_00001",
     "COMSEC_00001",

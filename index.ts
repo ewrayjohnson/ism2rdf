@@ -118,7 +118,7 @@ let blankIndex = 0;
           }
           const idPrefix = `${defaultNs}`;
           const xsdPrefix = standalone.namespaces[XML_SCHEMA_URI];
-          standalone.namespaces['http://www.w3.org/2001/XMLSchema#'] = xsdPrefix;
+          standalone.namespaces[`${XML_SCHEMA_URI}#`] = xsdPrefix;
           if (xsdPrefix) {
             const elements = schema[`${xsdPrefix}:element`];
             const attributes = schema[`${xsdPrefix}:attribute`];
@@ -137,7 +137,7 @@ let blankIndex = 0;
                         standalone.namespaces[RDF_URI] = 'rdf';
                         standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
                         if (attributeType.startsWith(`${xsdPrefix}:`)) {
-                          namespaces.add(xsdPrefix, 'http://www.w3.org/2001/XMLSchema#');
+                          namespaces.add(xsdPrefix, `${XML_SCHEMA_URI}#`);
                         }
                         else {
                           attributeType += 'Values';
@@ -259,7 +259,7 @@ let blankIndex = 0;
                 standalone.g.add(aConcept.conceptId, 'skos:inScheme', schemeId);
                 if (aConcept.notation) {
                   standalone.g.addD(aConcept.conceptId, 'skos:notation', aConcept.notation);
-                  standalone.g.add(allowedNotationsId, 'rdfs:subClassOf', `${xsdPrefix}:string`);
+                  standalone.g.add(allowedNotationsId, 'rdfs:subClassOf', `${XML_SCHEMA_URI}#string`);
                   standalone.g.addL(allowedNotationsId, 'owl:oneOf', aConcept.notation);
                 } else if (aConcept.pattern) {
                   standalone.namespaces[SHACL_URI] = 'sh';

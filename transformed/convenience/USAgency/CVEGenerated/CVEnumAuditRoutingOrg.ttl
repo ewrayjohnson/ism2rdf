@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix usagencyro: <urn:us:gov:ic:cvenum:usagency:auditRoutingOrganization#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 usagencyro:CVEnumAuditRoutingOrg a skos:ConceptScheme;
   dc:title "(U) usagencyro:CVEnumAuditRoutingOrg definition";
@@ -286,7 +287,7 @@ usagencyro:CVEnumAuditRoutingOrg a skos:ConceptScheme;
     usagencyro:USA.WHMO.
 
 usagencyro:CVEnumAuditRoutingOrgValues a rdfs:Datatype;
-  rdfs:subClassOf <http://www.w3.org/2001/XMLSchemastring>;
+  rdfs:subClassOf xsd:string;
   owl:oneOf
     "USA.ABMC",
     "USA.ACCESS",

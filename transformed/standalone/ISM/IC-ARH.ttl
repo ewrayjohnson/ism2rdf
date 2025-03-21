@@ -4,7 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 
-arh:DESVersion a rdf:Property, owl:DatatypeProperty;
+arh:DESVersion a owl:DatatypeProperty;
   rdfs:comment "The version number of the DES";
   rdfs:range xs:string.
 

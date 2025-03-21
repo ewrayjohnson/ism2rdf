@@ -22,10 +22,7 @@
     },
     {
       "@id": "ntk:IDReference",
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
+      "@type": "owl:DatatypeProperty",
       "rdfs:comment": "A cross-reference to a unique identifier used to point from one element to one or more other elements. The value of the attribute must be one or more XML unique identifiers that are the value(s) of id attribute(s) elsewhere in the document.",
       "rdfs:range": {
         "@id": "xsd:IDREFS"
@@ -33,10 +30,7 @@
     },
     {
       "@id": "ntk:id",
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
+      "@type": "owl:DatatypeProperty",
       "rdfs:comment": "A unique XML identifier used to assign an XML unique identifier to an element, such as a paragraph, note or table.",
       "rdfs:range": {
         "@id": "xsd:ID"
@@ -44,10 +38,7 @@
     },
     {
       "@id": "ntk:qualifier",
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
+      "@type": "owl:DatatypeProperty",
       "rdfs:comment": "A user-defined property used to provide contextual meaning to the",
       "rdfs:range": {
         "@id": "xsd:string"

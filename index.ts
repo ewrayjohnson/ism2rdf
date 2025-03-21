@@ -132,17 +132,15 @@ let blankIndex = 0;
                     if (attributeType) {
                       if (attributeName) {
                         const attributeId = `${idPrefix}${attributeName}`;
-                        standalone.g.add(attributeId, RDF_TYPE, 'rdf:Property')
                         standalone.namespaces[OWL_URI] = 'owl';
                         standalone.namespaces[RDFS_URI] = 'rdfs';
                         standalone.namespaces[RDF_URI] = 'rdf';
+                        standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
                         if (attributeType.startsWith(`${xsdPrefix}:`)) {
                           namespaces.add(xsdPrefix, 'http://www.w3.org/2001/XMLSchema#');
-                          standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
                         }
                         else {
                           attributeType += 'Values';
-                          standalone.g.add(attributeId, RDF_TYPE, 'rdf:Property');
                         }
                         standalone.g.add(attributeId, 'rdfs:range', `${attributeType}`);
                         const documentation = anAttribute[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];

@@ -28,10 +28,7 @@
     },
     {
       "@id": "arh:DESVersion",
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
+      "@type": "owl:DatatypeProperty",
       "rdfs:comment": "The version number of the DES",
       "rdfs:range": {
         "@id": "xs:string"

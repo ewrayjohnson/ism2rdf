@@ -10,10 +10,10 @@
     <urn:us:gov:ic:./CVEGenerated/CVEnumUSAgencyAcronym.jsonld>,
     <urn:us:gov:ic:./CVEGenerated/CVEnumUSGOVAgencyAcronym.jsonld>.
 
-usagency:usagency a rdf:Property;
+usagency:usagency a owl:DatatypeProperty;
   rdfs:comment "An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies.";
   rdfs:range usaa:CVEnumUSAgencyAcronymValues.
 
-usagency:usgovagency a rdf:Property;
+usagency:usgovagency a owl:DatatypeProperty;
   rdfs:comment "An attribute limited to allowable agency acronyms for USA. Contains the Executive branch agencies.";
   rdfs:range usgaa:CVEnumUSGOVAgencyAcronymValues.

@@ -4,7 +4,17 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:1> a rdf:List;
+  rdf:first "DOD_DISTRO_STATEMENT";
+  rdf:rest rdf:nil.
+
+<_:4> a rdf:List;
+  rdf:first "IC_710_MANDATORY_FDR";
+  rdf:rest <_:1>.
+
+<_:7> a rdfs:Datatype;
+  owl:oneOf ("IC_710_MANDATORY_FDR" "DOD_DISTRO_STATEMENT").
 
 ismexempt:CVEnumISMExemptFrom a skos:ConceptScheme;
   dc:title "(U) ismexempt:CVEnumISMExemptFrom definition";
@@ -13,10 +23,7 @@ ismexempt:CVEnumISMExemptFrom a skos:ConceptScheme;
     ismexempt:IC_710_MANDATORY_FDR.
 
 ismexempt:CVEnumISMExemptFromValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "DOD_DISTRO_STATEMENT",
-    "IC_710_MANDATORY_FDR".
+  owl:equivalentClass <_:7>.
 
 ismexempt:DOD_DISTRO_STATEMENT a skos:Concept;
   skos:inScheme ismexempt:CVEnumISMExemptFrom;

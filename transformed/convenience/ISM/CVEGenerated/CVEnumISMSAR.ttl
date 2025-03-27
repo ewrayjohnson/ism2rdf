@@ -4,11 +4,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
+<_:2> a rdfs:Datatype;
+.
+
 ismsar:CVEnumISMSAR a skos:ConceptScheme;
   dc:title "(U) ismsar:CVEnumISMSAR definition".
 
 ismsar:CVEnumISMSARValues a rdfs:Datatype;
-.
+  <http://www.w3.org/2002/07/owl#equivalentClass> <_:2>.
 
 <urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSAR> a <http://www.w3.org/2002/07/owl#Ontology>;
 .

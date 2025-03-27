@@ -4,7 +4,705 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix usgaa: <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdf:List;
+  rdf:first "USA.ADF";
+  rdf:rest <_:42>.
+
+<_:1> a rdf:List;
+  rdf:first "USA.ACCESS";
+  rdf:rest <_:5>.
+
+<_:10> a rdf:List;
+  rdf:first "USA.CEA";
+  rdf:rest <_:9>.
+
+<_:100> a rdf:List;
+  rdf:first "USA.SSA";
+  rdf:rest <_:725>.
+
+<_:11> a rdf:List;
+  rdf:first "USA.DOJ";
+  rdf:rest <_:19>.
+
+<_:12> a rdf:List;
+  rdf:first "USA.CIA";
+  rdf:rest <_:4>.
+
+<_:120> a rdf:List;
+  rdf:first "USA.NRC";
+  rdf:rest <_:95>.
+
+<_:127> a rdf:List;
+  rdf:first "USA.TVA";
+  rdf:rest <_:181>.
+
+<_:128> a rdf:List;
+  rdf:first "USA.WHMO";
+  rdf:rest rdf:nil.
+
+<_:13> a rdf:List;
+  rdf:first "USA.VA";
+  rdf:rest <_:833>.
+
+<_:135> a rdf:List;
+  rdf:first "USA.STATE";
+  rdf:rest <_:49>.
+
+<_:14> a rdf:List;
+  rdf:first "USA.CNCS";
+  rdf:rest <_:78>.
+
+<_:15> a rdf:List;
+  rdf:first "USA.EAC";
+  rdf:rest <_:23>.
+
+<_:16> a rdf:List;
+  rdf:first "USA.DOD";
+  rdf:rest <_:67>.
+
+<_:17> a rdf:List;
+  rdf:first "USA.ACUS";
+  rdf:rest <_:0>.
+
+<_:181> a rdf:List;
+  rdf:first "USA.USA";
+  rdf:rest <_:714>.
+
+<_:185> a rdf:List;
+  rdf:first "USA.OPM";
+  rdf:rest <_:959>.
+
+<_:19> a rdf:List;
+  rdf:first "USA.DOL";
+  rdf:rest <_:452>.
+
+<_:2> a rdf:List;
+  rdf:first "USA.ABMC";
+  rdf:rest <_:1>.
+
+<_:20> a rdf:List;
+  rdf:first "USA.BBG";
+  rdf:rest <_:68>.
+
+<_:202> a rdf:List;
+  rdf:first "USA.JUSFC";
+  rdf:rest <_:80>.
+
+<_:21> a rdf:List;
+  rdf:first "USA.FMCS";
+  rdf:rest <_:695>.
+
+<_:216> a rdf:List;
+  rdf:first "USA.USUN";
+  rdf:rest <_:13>.
+
+<_:22> a rdf:List;
+  rdf:first "USA.HMM";
+  rdf:rest <_:30>.
+
+<_:222> a rdf:List;
+  rdf:first "USA.JMMFF";
+  rdf:rest <_:202>.
+
+<_:226> a rdf:List;
+  rdf:first "USA.NSF";
+  rdf:rest <_:829>.
+
+<_:23> a rdf:List;
+  rdf:first "USA.ED";
+  rdf:rest <_:85>.
+
+<_:230> a rdf:List;
+  rdf:first "USA.NEA";
+  rdf:rest <_:526>.
+
+<_:24> a rdf:List;
+  rdf:first "USA.HHS";
+  rdf:rest <_:22>.
+
+<_:242> a rdf:List;
+  rdf:first "USA.NPPC";
+  rdf:rest <_:120>.
+
+<_:249> a rdf:List;
+  rdf:first "USA.IBB";
+  rdf:rest <_:584>.
+
+<_:25> a rdf:List;
+  rdf:first "USA.FEB";
+  rdf:rest <_:434>.
+
+<_:257> a rdf:List;
+  rdf:first "USA.IAF";
+  rdf:rest <_:249>.
+
+<_:26> a rdf:List;
+  rdf:first "USA.FHRA";
+  rdf:rest <_:82>.
+
+<_:260> a rdf:List;
+  rdf:first "USA.OVP";
+  rdf:rest <_:57>.
+
+<_:269> a rdf:List;
+  rdf:first "USA.IMLS";
+  rdf:rest <_:33>.
+
+<_:28> a rdf:List;
+  rdf:first "USA.FFIEC";
+  rdf:rest <_:32>.
+
+<_:283> a rdf:List;
+  rdf:first "USA.NWTRB";
+  rdf:rest <_:96>.
+
+<_:287> a rdf:List;
+  rdf:first "USA.LSC";
+  rdf:rest <_:364>.
+
+<_:29> a rdf:List;
+  rdf:first "USA.JBEA";
+  rdf:rest <_:906>.
+
+<_:293> a rdf:List;
+  rdf:first "USA.MCC";
+  rdf:rest <_:369>.
+
+<_:3> a rdfs:Datatype;
+  owl:oneOf ("USA.ABMC" "USA.ACCESS" "USA.ACFR" "USA.ACHP" "USA.ACUS" "USA.ADF" "USA.AMICC" "USA.AMTRAK" "USA.ARC" "USA.ARCTIC" "USA.BBG" "USA.BMGS" "USA.CAOC" "USA.CCJJ" "USA.CCR" "USA.CEA" "USA.CFA" "USA.CFI" "USA.CFOC" "USA.CFTC" "USA.CHCOC" "USA.CIA" "USA.CIOC" "USA.CIRF" "USA.CITA" "USA.CNCS" "USA.COMP" "USA.CPSC" "USA.CSAC" "USA.CSHIB" "USA.CSOSA" "USA.DEA" "USA.DENALI" "USA.DFC" "USA.DHS" "USA.DIA" "USA.DNFSB" "USA.DNI" "USA.DOC" "USA.DOD" "USA.DOE" "USA.DOI" "USA.DOJ" "USA.DOL" "USA.DOT" "USA.DRBC" "USA.EAC" "USA.ED" "USA.EEOC" "USA.EIBUS" "USA.EOP" "USA.EPA" "USA.ESC" "USA.FAC" "USA.FASAB" "USA.FBI" "USA.FCA" "USA.FCC" "USA.FCIC" "USA.FCSIC" "USA.FDIC" "USA.FEB" "USA.FEC" "USA.FERC" "USA.FFB" "USA.FFIEC" "USA.FGDC" "USA.FHRA" "USA.FICE" "USA.FICMNEW" "USA.FICSP" "USA.FLCTT" "USA.FLICC" "USA.FLRA" "USA.FMC" "USA.FMCS" "USA.FMSHRC" "USA.FRS" "USA.FRTIB" "USA.FTC" "USA.GSA" "USA.HELSINKI" "USA.HHS" "USA.HMM" "USA.HSTSF" "USA.HUD" "USA.IACB" "USA.IADRWG" "USA.IAF" "USA.IBB" "USA.ICH" "USA.ICPRB" "USA.IMCNHCC" "USA.IMLS" "USA.ITC" "USA.JBEA" "USA.JFSP" "USA.JMMFF" "USA.JUSFC" "USA.JWFFSB" "USA.LSC" "USA.MBCC" "USA.MCC" "USA.MKUF" "USA.MMC" "USA.MRC" "USA.MSPB" "USA.NARA" "USA.NASA" "USA.NBCFM" "USA.NCD" "USA.NCFRR" "USA.NCPC" "USA.NCUA" "USA.NEA" "USA.NEH" "USA.NGA" "USA.NIGC" "USA.NLRB" "USA.NMB" "USA.NPF" "USA.NPPC" "USA.NRC" "USA.NRO" "USA.NSA" "USA.NSF" "USA.NTSB" "USA.NWTRB" "USA.OGE" "USA.OMB" "USA.ONCIX" "USA.OPIC" "USA.OPM" "USA.OSC" "USA.OSHRC" "USA.OVP" "USA.PBGC" "USA.PCC" "USA.PEACE" "USA.PRC" "USA.PRESIDIO" "USA.RISC" "USA.RRB" "USA.SBA" "USA.SEC" "USA.SJI" "USA.SMITH" "USA.SRBC" "USA.SSA" "USA.SSAB" "USA.SSS" "USA.STATE" "USA.TAP" "USA.TDA" "USA.TREAS" "USA.TVA" "USA.USA" "USA.USAF" "USA.USAID" "USA.USAOC" "USA.USCG" "USA.USDA" "USA.USIP" "USA.USMC" "USA.USN" "USA.USPS" "USA.USSF" "USA.USTR" "USA.USUN" "USA.VA" "USA.VDNC" "USA.VEF" "USA.WHCPS" "USA.WHMO").
+
+<_:30> a rdf:List;
+  rdf:first "USA.HSTSF";
+  rdf:rest <_:732>.
+
+<_:300> a rdf:List;
+  rdf:first "USA.VEF";
+  rdf:rest <_:726>.
+
+<_:31> a rdf:List;
+  rdf:first "USA.NASA";
+  rdf:rest <_:990>.
+
+<_:32> a rdf:List;
+  rdf:first "USA.FGDC";
+  rdf:rest <_:26>.
+
+<_:325> a rdf:List;
+  rdf:first "USA.SBA";
+  rdf:rest <_:436>.
+
+<_:328> a rdf:List;
+  rdf:first "USA.CHCOC";
+  rdf:rest <_:12>.
+
+<_:33> a rdf:List;
+  rdf:first "USA.ITC";
+  rdf:rest <_:29>.
+
+<_:334> a rdf:List;
+  rdf:first "USA.FCC";
+  rdf:rest <_:39>.
+
+<_:34> a rdf:List;
+  rdf:first "USA.FASAB";
+  rdf:rest <_:396>.
+
+<_:35> a rdf:List;
+  rdf:first "USA.IMCNHCC";
+  rdf:rest <_:269>.
+
+<_:36> a rdf:List;
+  rdf:first "USA.EOP";
+  rdf:rest <_:94>.
+
+<_:364> a rdf:List;
+  rdf:first "USA.MBCC";
+  rdf:rest <_:293>.
+
+<_:365> a rdf:List;
+  rdf:first "USA.IADRWG";
+  rdf:rest <_:257>.
+
+<_:369> a rdf:List;
+  rdf:first "USA.MKUF";
+  rdf:rest <_:641>.
+
+<_:37> a rdf:List;
+  rdf:first "USA.NMB";
+  rdf:rest <_:546>.
+
+<_:373> a rdf:List;
+  rdf:first "USA.NGA";
+  rdf:rest <_:79>.
+
+<_:38> a rdf:List;
+  rdf:first "USA.DEA";
+  rdf:rest <_:54>.
+
+<_:39> a rdf:List;
+  rdf:first "USA.FCIC";
+  rdf:rest <_:92>.
+
+<_:396> a rdf:List;
+  rdf:first "USA.FBI";
+  rdf:rest <_:683>.
+
+<_:4> a rdf:List;
+  rdf:first "USA.CIOC";
+  rdf:rest <_:8>.
+
+<_:40> a rdf:List;
+  rdf:first "USA.DHS";
+  rdf:rest <_:93>.
+
+<_:403> a rdf:List;
+  rdf:first "USA.FLRA";
+  rdf:rest <_:60>.
+
+<_:42> a rdf:List;
+  rdf:first "USA.AMICC";
+  rdf:rest <_:70>.
+
+<_:43> a rdf:List;
+  rdf:first "USA.CITA";
+  rdf:rest <_:14>.
+
+<_:430> a rdf:List;
+  rdf:first "USA.DOI";
+  rdf:rest <_:11>.
+
+<_:434> a rdf:List;
+  rdf:first "USA.FEC";
+  rdf:rest <_:56>.
+
+<_:436> a rdf:List;
+  rdf:first "USA.SEC";
+  rdf:rest <_:53>.
+
+<_:44> a rdf:List;
+  rdf:first "USA.CCJJ";
+  rdf:rest <_:81>.
+
+<_:45> a rdf:List;
+  rdf:first "USA.FAC";
+  rdf:rest <_:34>.
+
+<_:452> a rdf:List;
+  rdf:first "USA.DOT";
+  rdf:rest <_:59>.
+
+<_:455> a rdf:List;
+  rdf:first "USA.SMITH";
+  rdf:rest <_:843>.
+
+<_:47> a rdf:List;
+  rdf:first "USA.FRTIB";
+  rdf:rest <_:51>.
+
+<_:48> a rdf:List;
+  rdf:first "USA.CFOC";
+  rdf:rest <_:84>.
+
+<_:49> a rdf:List;
+  rdf:first "USA.TAP";
+  rdf:rest <_:622>.
+
+<_:5> a rdf:List;
+  rdf:first "USA.ACFR";
+  rdf:rest <_:6>.
+
+<_:507> a rdf:List;
+  rdf:first "USA.PCC";
+  rdf:rest <_:69>.
+
+<_:51> a rdf:List;
+  rdf:first "USA.FTC";
+  rdf:rest <_:87>.
+
+<_:52> a rdf:List;
+  rdf:first "USA.CAOC";
+  rdf:rest <_:44>.
+
+<_:526> a rdf:List;
+  rdf:first "USA.NEH";
+  rdf:rest <_:373>.
+
+<_:53> a rdf:List;
+  rdf:first "USA.SJI";
+  rdf:rest <_:455>.
+
+<_:537> a rdf:List;
+  rdf:first "USA.ONCIX";
+  rdf:rest <_:763>.
+
+<_:54> a rdf:List;
+  rdf:first "USA.DENALI";
+  rdf:rest <_:58>.
+
+<_:546> a rdf:List;
+  rdf:first "USA.NPF";
+  rdf:rest <_:242>.
+
+<_:55> a rdf:List;
+  rdf:first "USA.MSPB";
+  rdf:rest <_:75>.
+
+<_:552> a rdf:List;
+  rdf:first "USA.USIP";
+  rdf:rest <_:694>.
+
+<_:554> a rdf:List;
+  rdf:first "USA.USCG";
+  rdf:rest <_:821>.
+
+<_:56> a rdf:List;
+  rdf:first "USA.FERC";
+  rdf:rest <_:910>.
+
+<_:565> a rdf:List;
+  rdf:first "USA.IACB";
+  rdf:rest <_:365>.
+
+<_:57> a rdf:List;
+  rdf:first "USA.PBGC";
+  rdf:rest <_:507>.
+
+<_:58> a rdf:List;
+  rdf:first "USA.DFC";
+  rdf:rest <_:40>.
+
+<_:584> a rdf:List;
+  rdf:first "USA.ICH";
+  rdf:rest <_:688>.
+
+<_:588> a rdf:List;
+  rdf:first "USA.OMB";
+  rdf:rest <_:537>.
+
+<_:59> a rdf:List;
+  rdf:first "USA.DRBC";
+  rdf:rest <_:15>.
+
+<_:6> a rdf:List;
+  rdf:first "USA.ACHP";
+  rdf:rest <_:17>.
+
+<_:60> a rdf:List;
+  rdf:first "USA.FMC";
+  rdf:rest <_:21>.
+
+<_:61> a rdf:List;
+  rdf:first "USA.USN";
+  rdf:rest <_:939>.
+
+<_:622> a rdf:List;
+  rdf:first "USA.TDA";
+  rdf:rest <_:675>.
+
+<_:626> a rdf:List;
+  rdf:first "USA.FICMNEW";
+  rdf:rest <_:77>.
+
+<_:63> a rdf:List;
+  rdf:first "USA.FDIC";
+  rdf:rest <_:25>.
+
+<_:64> a rdf:List;
+  rdf:first "USA.CPSC";
+  rdf:rest <_:88>.
+
+<_:641> a rdf:List;
+  rdf:first "USA.MMC";
+  rdf:rest <_:74>.
+
+<_:643> a rdf:List;
+  rdf:first "USA.HELSINKI";
+  rdf:rest <_:24>.
+
+<_:649> a rdf:List;
+  rdf:first "USA.USAOC";
+  rdf:rest <_:554>.
+
+<_:65> a rdf:List;
+  rdf:first "USA.FRS";
+  rdf:rest <_:47>.
+
+<_:66> a rdf:List;
+  rdf:first "USA.DNFSB";
+  rdf:rest <_:91>.
+
+<_:67> a rdf:List;
+  rdf:first "USA.DOE";
+  rdf:rest <_:430>.
+
+<_:675> a rdf:List;
+  rdf:first "USA.TREAS";
+  rdf:rest <_:127>.
+
+<_:68> a rdf:List;
+  rdf:first "USA.BMGS";
+  rdf:rest <_:52>.
+
+<_:683> a rdf:List;
+  rdf:first "USA.FCA";
+  rdf:rest <_:334>.
+
+<_:688> a rdf:List;
+  rdf:first "USA.ICPRB";
+  rdf:rest <_:35>.
+
+<_:69> a rdf:List;
+  rdf:first "USA.PEACE";
+  rdf:rest <_:797>.
+
+<_:694> a rdf:List;
+  rdf:first "USA.USMC";
+  rdf:rest <_:61>.
+
+<_:695> a rdf:List;
+  rdf:first "USA.FMSHRC";
+  rdf:rest <_:65>.
+
+<_:697> a rdf:List;
+  rdf:first "USA.SSS";
+  rdf:rest <_:135>.
+
+<_:7> a rdf:List;
+  rdf:first "USA.ARC";
+  rdf:rest <_:83>.
+
+<_:70> a rdf:List;
+  rdf:first "USA.AMTRAK";
+  rdf:rest <_:7>.
+
+<_:71> a rdf:List;
+  rdf:first "USA.ESC";
+  rdf:rest <_:45>.
+
+<_:714> a rdf:List;
+  rdf:first "USA.USAF";
+  rdf:rest <_:99>.
+
+<_:72> a rdf:List;
+  rdf:first "USA.OSHRC";
+  rdf:rest <_:260>.
+
+<_:725> a rdf:List;
+  rdf:first "USA.SSAB";
+  rdf:rest <_:697>.
+
+<_:726> a rdf:List;
+  rdf:first "USA.WHCPS";
+  rdf:rest <_:128>.
+
+<_:73> a rdf:List;
+  rdf:first "USA.FLCTT";
+  rdf:rest <_:76>.
+
+<_:732> a rdf:List;
+  rdf:first "USA.HUD";
+  rdf:rest <_:565>.
+
+<_:74> a rdf:List;
+  rdf:first "USA.MRC";
+  rdf:rest <_:55>.
+
+<_:75> a rdf:List;
+  rdf:first "USA.NARA";
+  rdf:rest <_:31>.
+
+<_:755> a rdf:List;
+  rdf:first "USA.NSA";
+  rdf:rest <_:226>.
+
+<_:76> a rdf:List;
+  rdf:first "USA.FLICC";
+  rdf:rest <_:403>.
+
+<_:762> a rdf:List;
+  rdf:first "USA.USSF";
+  rdf:rest <_:961>.
+
+<_:763> a rdf:List;
+  rdf:first "USA.OPIC";
+  rdf:rest <_:185>.
+
+<_:77> a rdf:List;
+  rdf:first "USA.FICSP";
+  rdf:rest <_:73>.
+
+<_:78> a rdf:List;
+  rdf:first "USA.COMP";
+  rdf:rest <_:64>.
+
+<_:789> a rdf:List;
+  rdf:first "USA.NCUA";
+  rdf:rest <_:230>.
+
+<_:79> a rdf:List;
+  rdf:first "USA.NIGC";
+  rdf:rest <_:865>.
+
+<_:797> a rdf:List;
+  rdf:first "USA.PRC";
+  rdf:rest <_:924>.
+
+<_:8> a rdf:List;
+  rdf:first "USA.CIRF";
+  rdf:rest <_:43>.
+
+<_:80> a rdf:List;
+  rdf:first "USA.JWFFSB";
+  rdf:rest <_:287>.
+
+<_:81> a rdf:List;
+  rdf:first "USA.CCR";
+  rdf:rest <_:10>.
+
+<_:82> a rdf:List;
+  rdf:first "USA.FICE";
+  rdf:rest <_:626>.
+
+<_:821> a rdf:List;
+  rdf:first "USA.USDA";
+  rdf:rest <_:552>.
+
+<_:825> a rdf:List;
+  rdf:first "USA.NCD";
+  rdf:rest <_:898>.
+
+<_:829> a rdf:List;
+  rdf:first "USA.NTSB";
+  rdf:rest <_:283>.
+
+<_:83> a rdf:List;
+  rdf:first "USA.ARCTIC";
+  rdf:rest <_:20>.
+
+<_:831> a rdf:List;
+  rdf:first "USA.RISC";
+  rdf:rest <_:992>.
+
+<_:833> a rdf:List;
+  rdf:first "USA.VDNC";
+  rdf:rest <_:300>.
+
+<_:84> a rdf:List;
+  rdf:first "USA.CFTC";
+  rdf:rest <_:328>.
+
+<_:843> a rdf:List;
+  rdf:first "USA.SRBC";
+  rdf:rest <_:100>.
+
+<_:85> a rdf:List;
+  rdf:first "USA.EEOC";
+  rdf:rest <_:86>.
+
+<_:86> a rdf:List;
+  rdf:first "USA.EIBUS";
+  rdf:rest <_:36>.
+
+<_:861> a rdf:List;
+  rdf:first "USA.NCPC";
+  rdf:rest <_:789>.
+
+<_:865> a rdf:List;
+  rdf:first "USA.NLRB";
+  rdf:rest <_:37>.
+
+<_:87> a rdf:List;
+  rdf:first "USA.GSA";
+  rdf:rest <_:643>.
+
+<_:88> a rdf:List;
+  rdf:first "USA.CSAC";
+  rdf:rest <_:89>.
+
+<_:89> a rdf:List;
+  rdf:first "USA.CSHIB";
+  rdf:rest <_:97>.
+
+<_:892> a rdf:List;
+  rdf:first "USA.DOC";
+  rdf:rest <_:16>.
+
+<_:898> a rdf:List;
+  rdf:first "USA.NCFRR";
+  rdf:rest <_:861>.
+
+<_:9> a rdf:List;
+  rdf:first "USA.CFA";
+  rdf:rest <_:98>.
+
+<_:906> a rdf:List;
+  rdf:first "USA.JFSP";
+  rdf:rest <_:222>.
+
+<_:91> a rdf:List;
+  rdf:first "USA.DNI";
+  rdf:rest <_:892>.
+
+<_:910> a rdf:List;
+  rdf:first "USA.FFB";
+  rdf:rest <_:28>.
+
+<_:92> a rdf:List;
+  rdf:first "USA.FCSIC";
+  rdf:rest <_:63>.
+
+<_:924> a rdf:List;
+  rdf:first "USA.PRESIDIO";
+  rdf:rest <_:831>.
+
+<_:93> a rdf:List;
+  rdf:first "USA.DIA";
+  rdf:rest <_:66>.
+
+<_:939> a rdf:List;
+  rdf:first "USA.USPS";
+  rdf:rest <_:762>.
+
+<_:94> a rdf:List;
+  rdf:first "USA.EPA";
+  rdf:rest <_:71>.
+
+<_:95> a rdf:List;
+  rdf:first "USA.NRO";
+  rdf:rest <_:755>.
+
+<_:959> a rdf:List;
+  rdf:first "USA.OSC";
+  rdf:rest <_:72>.
+
+<_:96> a rdf:List;
+  rdf:first "USA.OGE";
+  rdf:rest <_:588>.
+
+<_:961> a rdf:List;
+  rdf:first "USA.USTR";
+  rdf:rest <_:216>.
+
+<_:97> a rdf:List;
+  rdf:first "USA.CSOSA";
+  rdf:rest <_:38>.
+
+<_:98> a rdf:List;
+  rdf:first "USA.CFI";
+  rdf:rest <_:48>.
+
+<_:99> a rdf:List;
+  rdf:first "USA.USAID";
+  rdf:rest <_:649>.
+
+<_:990> a rdf:List;
+  rdf:first "USA.NBCFM";
+  rdf:rest <_:825>.
+
+<_:992> a rdf:List;
+  rdf:first "USA.RRB";
+  rdf:rest <_:325>.
 
 usgaa:CVEnumUSGOVAgencyAcronym a skos:ConceptScheme;
   dc:title "(U) All valid acronyms for use with US Government Offices. This list is only the agencies within the Executive Branches of the US Government. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSGOVAgencyAcronym.xml";
@@ -185,182 +883,7 @@ usgaa:CVEnumUSGOVAgencyAcronym a skos:ConceptScheme;
     usgaa:USA.WHMO.
 
 usgaa:CVEnumUSGOVAgencyAcronymValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "USA.ABMC",
-    "USA.ACCESS",
-    "USA.ACFR",
-    "USA.ACHP",
-    "USA.ACUS",
-    "USA.ADF",
-    "USA.AMICC",
-    "USA.AMTRAK",
-    "USA.ARC",
-    "USA.ARCTIC",
-    "USA.BBG",
-    "USA.BMGS",
-    "USA.CAOC",
-    "USA.CCJJ",
-    "USA.CCR",
-    "USA.CEA",
-    "USA.CFA",
-    "USA.CFI",
-    "USA.CFOC",
-    "USA.CFTC",
-    "USA.CHCOC",
-    "USA.CIA",
-    "USA.CIOC",
-    "USA.CIRF",
-    "USA.CITA",
-    "USA.CNCS",
-    "USA.COMP",
-    "USA.CPSC",
-    "USA.CSAC",
-    "USA.CSHIB",
-    "USA.CSOSA",
-    "USA.DEA",
-    "USA.DENALI",
-    "USA.DFC",
-    "USA.DHS",
-    "USA.DIA",
-    "USA.DNFSB",
-    "USA.DNI",
-    "USA.DOC",
-    "USA.DOD",
-    "USA.DOE",
-    "USA.DOI",
-    "USA.DOJ",
-    "USA.DOL",
-    "USA.DOT",
-    "USA.DRBC",
-    "USA.EAC",
-    "USA.ED",
-    "USA.EEOC",
-    "USA.EIBUS",
-    "USA.EOP",
-    "USA.EPA",
-    "USA.ESC",
-    "USA.FAC",
-    "USA.FASAB",
-    "USA.FBI",
-    "USA.FCA",
-    "USA.FCC",
-    "USA.FCIC",
-    "USA.FCSIC",
-    "USA.FDIC",
-    "USA.FEB",
-    "USA.FEC",
-    "USA.FERC",
-    "USA.FFB",
-    "USA.FFIEC",
-    "USA.FGDC",
-    "USA.FHRA",
-    "USA.FICE",
-    "USA.FICMNEW",
-    "USA.FICSP",
-    "USA.FLCTT",
-    "USA.FLICC",
-    "USA.FLRA",
-    "USA.FMC",
-    "USA.FMCS",
-    "USA.FMSHRC",
-    "USA.FRS",
-    "USA.FRTIB",
-    "USA.FTC",
-    "USA.GSA",
-    "USA.HELSINKI",
-    "USA.HHS",
-    "USA.HMM",
-    "USA.HSTSF",
-    "USA.HUD",
-    "USA.IACB",
-    "USA.IADRWG",
-    "USA.IAF",
-    "USA.IBB",
-    "USA.ICH",
-    "USA.ICPRB",
-    "USA.IMCNHCC",
-    "USA.IMLS",
-    "USA.ITC",
-    "USA.JBEA",
-    "USA.JFSP",
-    "USA.JMMFF",
-    "USA.JUSFC",
-    "USA.JWFFSB",
-    "USA.LSC",
-    "USA.MBCC",
-    "USA.MCC",
-    "USA.MKUF",
-    "USA.MMC",
-    "USA.MRC",
-    "USA.MSPB",
-    "USA.NARA",
-    "USA.NASA",
-    "USA.NBCFM",
-    "USA.NCD",
-    "USA.NCFRR",
-    "USA.NCPC",
-    "USA.NCUA",
-    "USA.NEA",
-    "USA.NEH",
-    "USA.NGA",
-    "USA.NIGC",
-    "USA.NLRB",
-    "USA.NMB",
-    "USA.NPF",
-    "USA.NPPC",
-    "USA.NRC",
-    "USA.NRO",
-    "USA.NSA",
-    "USA.NSF",
-    "USA.NTSB",
-    "USA.NWTRB",
-    "USA.OGE",
-    "USA.OMB",
-    "USA.ONCIX",
-    "USA.OPIC",
-    "USA.OPM",
-    "USA.OSC",
-    "USA.OSHRC",
-    "USA.OVP",
-    "USA.PBGC",
-    "USA.PCC",
-    "USA.PEACE",
-    "USA.PRC",
-    "USA.PRESIDIO",
-    "USA.RISC",
-    "USA.RRB",
-    "USA.SBA",
-    "USA.SEC",
-    "USA.SJI",
-    "USA.SMITH",
-    "USA.SRBC",
-    "USA.SSA",
-    "USA.SSAB",
-    "USA.SSS",
-    "USA.STATE",
-    "USA.TAP",
-    "USA.TDA",
-    "USA.TREAS",
-    "USA.TVA",
-    "USA.USA",
-    "USA.USAF",
-    "USA.USAID",
-    "USA.USAOC",
-    "USA.USCG",
-    "USA.USDA",
-    "USA.USIP",
-    "USA.USMC",
-    "USA.USN",
-    "USA.USPS",
-    "USA.USSF",
-    "USA.USTR",
-    "USA.USUN",
-    "USA.VA",
-    "USA.VDNC",
-    "USA.VEF",
-    "USA.WHCPS",
-    "USA.WHMO".
+  owl:equivalentClass <_:3>.
 
 usgaa:USA.ABMC a skos:Concept;
   skos:inScheme usgaa:CVEnumUSGOVAgencyAcronym;

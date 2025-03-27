@@ -6,10 +6,32 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:7",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "RD",
+          "RD-CNWDI",
+          "RD-SG-14",
+          "RD-SG-15",
+          "RD-SG-18",
+          "RD-SG-20",
+          "FRD",
+          "FRD-SG-14",
+          "FRD-SG-15",
+          "FRD-SG-18",
+          "FRD-SG-20",
+          "DCNI",
+          "UCNI",
+          "TFNI"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMAtomicEnergyMarkings",
       "@type": "owl:Ontology"
@@ -66,25 +88,9 @@
     {
       "@id": "ismatomic:CVEnumISMatomicEnergyMarkingsValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "RD",
-        "RD-CNWDI",
-        "RD-SG-14",
-        "RD-SG-15",
-        "RD-SG-18",
-        "RD-SG-20",
-        "FRD",
-        "FRD-SG-14",
-        "FRD-SG-15",
-        "FRD-SG-18",
-        "FRD-SG-20",
-        "DCNI",
-        "UCNI",
-        "TFNI"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:7"
+      }
     },
     {
       "@id": "ismatomic:DCNI",

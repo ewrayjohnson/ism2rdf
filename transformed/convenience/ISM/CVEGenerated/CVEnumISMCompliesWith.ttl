@@ -4,7 +4,33 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:1> a rdf:List;
+  rdf:first "OtherAuthority";
+  rdf:rest <_:6>.
+
+<_:18> a rdf:List;
+  rdf:first "USDOD";
+  rdf:rest <_:1>.
+
+<_:2> a rdf:List;
+  rdf:first "USA-CUI";
+  rdf:rest rdf:nil.
+
+<_:5> a rdf:List;
+  rdf:first "USGov";
+  rdf:rest <_:8>.
+
+<_:6> a rdf:List;
+  rdf:first "USA-CUI-ONLY";
+  rdf:rest <_:2>.
+
+<_:7> a rdfs:Datatype;
+  owl:oneOf ("USGov" "USIC" "USDOD" "OtherAuthority" "USA-CUI-ONLY" "USA-CUI").
+
+<_:8> a rdf:List;
+  rdf:first "USIC";
+  rdf:rest <_:18>.
 
 ismcomplies:CVEnumISMCompliesWith a skos:ConceptScheme;
   dc:title "(U) ismcomplies:CVEnumISMCompliesWith definition";
@@ -17,14 +43,7 @@ ismcomplies:CVEnumISMCompliesWith a skos:ConceptScheme;
     ismcomplies:USIC.
 
 ismcomplies:CVEnumISMCompliesWithValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "OtherAuthority",
-    "USA-CUI",
-    "USA-CUI-ONLY",
-    "USDOD",
-    "USGov",
-    "USIC".
+  owl:equivalentClass <_:7>.
 
 ismcomplies:OtherAuthority a skos:Concept;
   skos:inScheme ismcomplies:CVEnumISMCompliesWith;

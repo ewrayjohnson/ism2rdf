@@ -4,7 +4,45 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:1> a rdf:List;
+  rdf:first "LES";
+  rdf:rest <_:6>.
+
+<_:10> a rdfs:Datatype;
+  owl:oneOf ("DS" "XD" "ND" "SBU" "SBU-NF" "LES" "LES-NF" "SSI" "NNPI").
+
+<_:12> a rdf:List;
+  rdf:first "ND";
+  rdf:rest <_:7>.
+
+<_:2> a rdf:List;
+  rdf:first "DS";
+  rdf:rest <_:4>.
+
+<_:29> a rdf:List;
+  rdf:first "SSI";
+  rdf:rest <_:3>.
+
+<_:3> a rdf:List;
+  rdf:first "NNPI";
+  rdf:rest rdf:nil.
+
+<_:4> a rdf:List;
+  rdf:first "XD";
+  rdf:rest <_:12>.
+
+<_:6> a rdf:List;
+  rdf:first "LES-NF";
+  rdf:rest <_:29>.
+
+<_:7> a rdf:List;
+  rdf:first "SBU";
+  rdf:rest <_:8>.
+
+<_:8> a rdf:List;
+  rdf:first "SBU-NF";
+  rdf:rest <_:1>.
 
 ismnonic:CVEnumISMNonIC a skos:ConceptScheme;
   dc:title "(U) ismnonic:CVEnumISMNonIC definition";
@@ -20,17 +58,7 @@ ismnonic:CVEnumISMNonIC a skos:ConceptScheme;
     ismnonic:XD.
 
 ismnonic:CVEnumISMNonICValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "DS",
-    "LES",
-    "LES-NF",
-    "ND",
-    "NNPI",
-    "SBU",
-    "SBU-NF",
-    "SSI",
-    "XD".
+  owl:equivalentClass <_:10>.
 
 ismnonic:DS a skos:Concept;
   skos:inScheme ismnonic:CVEnumISMNonIC;

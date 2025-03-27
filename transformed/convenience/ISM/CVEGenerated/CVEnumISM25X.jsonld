@@ -6,10 +6,43 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:4",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "AEA",
+          "NATO",
+          "NATO-AEA",
+          "25X1",
+          "25X1-EO-12951",
+          "25X2",
+          "25X3",
+          "25X4",
+          "25X5",
+          "25X6",
+          "25X7",
+          "25X8",
+          "25X9",
+          "50X1",
+          "50X1-HUM",
+          "50X2",
+          "50X2-WMD",
+          "50X3",
+          "50X4",
+          "50X5",
+          "50X6",
+          "50X7",
+          "50X8",
+          "50X9",
+          "75X"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISM25X",
       "@type": "owl:Ontology"
@@ -306,36 +339,9 @@
     {
       "@id": "ism25x:CVEnumISM25XValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "AEA",
-        "NATO",
-        "NATO-AEA",
-        "25X1",
-        "25X1-EO-12951",
-        "25X2",
-        "25X3",
-        "25X4",
-        "25X5",
-        "25X6",
-        "25X7",
-        "25X8",
-        "25X9",
-        "50X1",
-        "50X1-HUM",
-        "50X2",
-        "50X2-WMD",
-        "50X3",
-        "50X4",
-        "50X5",
-        "50X6",
-        "50X7",
-        "50X8",
-        "50X9",
-        "75X"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:4"
+      }
     },
     {
       "@id": "ism25x:NATO",

@@ -6,10 +6,39 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:6",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "FISA_00001",
+          "FISA_00002",
+          "FISA_00003",
+          "RAWFISA_00001",
+          "CNWDI_00001",
+          "RD_00001",
+          "FRD_00001",
+          "DS_00001",
+          "DSEN_00001",
+          "DoD-Dist-A_00001",
+          "COMSEC_00001",
+          "SSI_00001",
+          "GEOCAP_00001",
+          "NATO_00001",
+          "NATO_00002",
+          "NATO_00003",
+          "NATO_00004",
+          "NATO_00005",
+          "RC_Dissemination_Control_Required_00001",
+          "ITAR-EAR_00001",
+          "DISPLAYONLY_00001"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNoticeProse",
       "@type": "owl:Ontology"
@@ -105,32 +134,9 @@
     {
       "@id": "ismnoticeprose:CVEnumISMNoticeProseValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "FISA_00001",
-        "FISA_00002",
-        "FISA_00003",
-        "RAWFISA_00001",
-        "CNWDI_00001",
-        "RD_00001",
-        "FRD_00001",
-        "DS_00001",
-        "DSEN_00001",
-        "DoD-Dist-A_00001",
-        "COMSEC_00001",
-        "SSI_00001",
-        "GEOCAP_00001",
-        "NATO_00001",
-        "NATO_00002",
-        "NATO_00003",
-        "NATO_00004",
-        "NATO_00005",
-        "RC_Dissemination_Control_Required_00001",
-        "ITAR-EAR_00001",
-        "DISPLAYONLY_00001"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:6"
+      }
     },
     {
       "@id": "ismnoticeprose:DISPLAYONLY_00001",

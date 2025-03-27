@@ -4,7 +4,29 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:1> a rdf:List;
+  rdf:first "NoticeExternal";
+  rdf:rest <_:4>.
+
+<_:2> a rdf:List;
+  rdf:first "NoticeText";
+  rdf:rest <_:7>.
+
+<_:4> a rdf:List;
+  rdf:first "NoticeExternalList";
+  rdf:rest rdf:nil.
+
+<_:6> a rdfs:Datatype;
+  owl:oneOf ("Notice" "NoticeText" "NoticeList" "NoticeExternal" "NoticeExternalList").
+
+<_:7> a rdf:List;
+  rdf:first "NoticeList";
+  rdf:rest <_:1>.
+
+<_:8> a rdf:List;
+  rdf:first "Notice";
+  rdf:rest <_:2>.
 
 ismelements:CVEnumISMElements a skos:ConceptScheme;
   dc:title "(U) All currently authorized ISM element names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMElements.xml";
@@ -16,13 +38,7 @@ ismelements:CVEnumISMElements a skos:ConceptScheme;
     ismelements:NoticeText.
 
 ismelements:CVEnumISMElementsValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "Notice",
-    "NoticeExternal",
-    "NoticeExternalList",
-    "NoticeList",
-    "NoticeText".
+  owl:equivalentClass <_:6>.
 
 ismelements:Notice a skos:Concept;
   skos:inScheme ismelements:CVEnumISMElements;

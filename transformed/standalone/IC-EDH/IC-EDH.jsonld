@@ -17,6 +17,10 @@
   },
   "@graph": [
     {
+      "@id": "_:5",
+      "@type": "rdfs:Datatype"
+    },
+    {
       "@id": "urn:us:gov:ic:IC-EDH:IC-EDH",
       "@type": "http://www.w3.org/2002/07/owl#Ontology",
       "http://www.w3.org/2002/07/owl#imports": [
@@ -47,7 +51,10 @@
     },
     {
       "@id": "edh:ResponsibleEntityRoleTypeValues",
-      "@type": "rdfs:Datatype"
+      "@type": "rdfs:Datatype",
+      "http://www.w3.org/2002/07/owl#equivalentClass": {
+        "@id": "_:5"
+      }
     }
   ]
 }

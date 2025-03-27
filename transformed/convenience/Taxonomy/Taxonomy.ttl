@@ -28,21 +28,6812 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix xs: <http://www.w3.org/2001/XMLSchema#>.
 
-<_:2>
+<_:0> a rdfs:Datatype;
+  owl:oneOf ("AEA" "NATO" "NATO-AEA" "25X1" "25X1-EO-12951" "25X2" "25X3" "25X4" "25X5" "25X6" "25X7" "25X8" "25X9" "50X1" "50X1-HUM" "50X2" "50X2-WMD" "50X3" "50X4" "50X5" "50X6" "50X7" "50X8" "50X9" "75X").
+
+<_:1> a rdf:List;
+  rdf:first "NATO-AEA";
+  rdf:rest <_:6>.
+
+<_:10> a rdf:List;
+  rdf:first "FRD-SG-15";
+  rdf:rest <_:19>.
+
+<_:100> a rdf:List;
+  rdf:first "FOUO";
+  rdf:rest <_:33>.
+
+<_:1000> a rdfs:Datatype;
+  owl:oneOf ("ADPO" "AG" "ASYL" "FSEC" "BATT" "CVI" "CVIC" "BARG" "CMPRS" "LCOMM" "COMPT" "DREC" "DCRIT" "XFER" "EMGT" "EXPT" "EXPTR" "JURY" "FHFANPI" "FSI" "CRIT" "FNC" "INTEL" "LEI" "NUC" "PRVCY" "PROPIN" "GENETIC" "HLTH" "CUI-PROVISIONAL-HSAI" "CUI-PROVISIONAL-HSEI" "INF" "ISVI" "CUI-PROVISIONAL-ISVIH" "PRIIG" "ID" "CUI-PROVISIONAL-IAIH" "FINT" "INVENT" "INV" "SURV" "JUV" "PRIVILEGE" "LMI" "MERG" "MIL" "LNSL" "NETW" "NNPI" "OPSEC" "RECCOM" "SRI" "OCCMTO" "SERV" "CUI-PROVISIONAL-OSI" "APP" "TRACE" "RESD" "PERS" "CUI-PROVISIONAL-PSI" "PEST" "PHYS" "CUI-PROVISIONAL-PHYSH" "PRE" "PRIOR" "CUI-PROVISIONAL-PRIVACY" "POST" "LPROT" "RAIL" "RTR" "RWRD" "SAFE" "PSEC" "CUI-PROVISIONAL-PII" "SCV" "SBIZ" "SSEL" "STAT" "ADJ" "STUD" "CONREG" "CONV" "TAI" "PROT" "LSCRN" "DCNI" "UCNI" "LVIC" "IVIC" "VISA" "WATER" "WHSTL" "WIT").
+
+<_:10000> a rdf:List;
+  rdf:first "MLT";
+  rdf:rest <_:4303>.
+
+<_:1003> a rdf:List;
+  rdf:first "FLK";
+  rdf:rest <_:3604>.
+
+<_:101> a rdf:List;
+  rdf:first "SVN";
+  rdf:rest <_:114>.
+
+<_:102> a rdf:List;
+  rdf:first "PAN";
+  rdf:rest <_:310>.
+
+<_:1024> a rdf:List;
+  rdf:first "MVL";
+  rdf:rest <_:6206>.
+
+<_:103> a rdf:List;
+  rdf:first "BATT";
+  rdf:rest <_:1171>.
+
+<_:1033> a rdf:List;
+  rdf:first "ADPO";
+  rdf:rest <_:423>.
+
+<_:1034> a rdf:List;
+  rdf:first "UNCK";
+  rdf:rest rdf:nil.
+
+<_:104> a rdf:List;
+  rdf:first "XKN";
+  rdf:rest <_:7639>.
+
+<_:1049> a rdf:List;
+  rdf:first "SEN";
+  rdf:rest <_:1159>.
+
+<_:105> a rdf:List;
+  rdf:first "OSAG";
+  rdf:rest <_:125>.
+
+<_:106> a rdf:List;
+  rdf:first "DoD-Dist-E";
+  rdf:rest <_:861>.
+
+<_:107> a rdf:List;
+  rdf:first "NLD";
+  rdf:rest <_:901>.
+
+<_:1072> a rdf:List;
+  rdf:first "MNG";
+  rdf:rest <_:8488>.
+
+<_:1073> a rdf:List;
+  rdf:first "ZMB";
+  rdf:rest <_:910>.
+
+<_:1083> a rdf:List;
+  rdf:first "CFCK";
+  rdf:rest <_:345>.
+
+<_:1086> a rdf:List;
+  rdf:first "XBI";
+  rdf:rest <_:5764>.
+
+<_:109> a rdf:List;
+  rdf:first "LES-NF";
+  rdf:rest <_:976>.
+
+<_:11> a rdf:List;
+  rdf:first "CHE";
+  rdf:rest <_:598>.
+
+<_:110> a rdf:List;
+  rdf:first "XWK";
+  rdf:rest <_:363>.
+
+<_:1102> a rdf:List;
+  rdf:first "TUV";
+  rdf:rest <_:6693>.
+
+<_:111> a rdf:List;
+  rdf:first "BGR";
+  rdf:rest <_:234>.
+
+<_:1113> a rdf:List;
+  rdf:first "PAK";
+  rdf:rest <_:1230>.
+
+<_:112> a rdf:List;
+  rdf:first "CXR";
+  rdf:rest <_:572>.
+
+<_:1122> a rdf:List;
+  rdf:first "VAT";
+  rdf:rest <_:1488>.
+
+<_:1125> a rdf:List;
+  rdf:first "HND";
+  rdf:rest <_:1890>.
+
+<_:1126> a rdf:List;
+  rdf:first "TKM";
+  rdf:rest <_:4503>.
+
+<_:113> a rdf:List;
+  rdf:first "CPT";
+  rdf:rest <_:5539>.
+
+<_:114> a rdf:List;
+  rdf:first "SWE";
+  rdf:rest <_:893>.
+
+<_:1147> a rdf:List;
+  rdf:first "OSTY";
+  rdf:rest <_:932>.
+
+<_:1148> a rdf:List;
+  rdf:first "XKR";
+  rdf:rest <_:153>.
+
+<_:1149> a rdf:List;
+  rdf:first "DoD-Dist-E";
+  rdf:rest <_:5704>.
+
+<_:115> a rdf:List;
+  rdf:first "RAIL";
+  rdf:rest <_:8547>.
+
+<_:1159> a rdf:List;
+  rdf:first "SGP";
+  rdf:rest <_:1604>.
+
+<_:116> a rdf:List;
+  rdf:first "FVEY";
+  rdf:rest <_:630>.
+
+<_:117> a rdf:List;
+  rdf:first "BWA";
+  rdf:rest <_:217>.
+
+<_:1171> a rdf:List;
+  rdf:first "CVI";
+  rdf:rest <_:7607>.
+
+<_:1172> a rdf:List;
+  rdf:first "TFTC";
+  rdf:rest <_:3074>.
+
+<_:1179> a rdf:List;
+  rdf:first "CPT";
+  rdf:rest <_:1704>.
+
+<_:118> a rdf:List;
+  rdf:first "THA";
+  rdf:rest <_:6001>.
+
+<_:1182> a rdf:List;
+  rdf:first "XWB";
+  rdf:rest <_:7551>.
+
+<_:1184> a rdf:List;
+  rdf:first "XKN";
+  rdf:rest <_:9219>.
+
+<_:119> a rdf:List;
+  rdf:first "PAK";
+  rdf:rest <_:749>.
+
+<_:1190> a rdf:List;
+  rdf:first "AMSP";
+  rdf:rest <_:8018>.
+
+<_:1197> a rdf:List;
+  rdf:first "CCK";
+  rdf:rest <_:5066>.
+
+<_:12> a rdf:List;
+  rdf:first "DISPLAYONLY";
+  rdf:rest <_:967>.
+
+<_:120> a rdf:List;
+  rdf:first "PLW";
+  rdf:rest <_:884>.
+
+<_:121> a rdf:List;
+  rdf:first "XCS";
+  rdf:rest <_:399>.
+
+<_:122> a rdf:List;
+  rdf:first "ASEA";
+  rdf:rest <_:9899>.
+
+<_:1224> a rdf:List;
+  rdf:first "MAR";
+  rdf:rest <_:5192>.
+
+<_:123> a rdf:List;
+  rdf:first "MLI";
+  rdf:rest <_:652>.
+
+<_:1230> a rdf:List;
+  rdf:first "PAN";
+  rdf:rest <_:259>.
+
+<_:124> a rdf:List;
+  rdf:first "POC";
+  rdf:rest <_:2800>.
+
+<_:1242> a rdf:List;
+  rdf:first "USA";
+  rdf:rest <_:4756>.
+
+<_:125> a rdf:List;
+  rdf:first "OSTY";
+  rdf:rest <_:3704>.
+
+<_:126> a rdf:List;
+  rdf:first "BFA";
+  rdf:rest <_:6040>.
+
+<_:127> a rdf:List;
+  rdf:first "XCY";
+  rdf:rest <_:3417>.
+
+<_:1275> a rdf:List;
+  rdf:first "XGZ";
+  rdf:rest <_:3530>.
+
+<_:1277> a rdf:List;
+  rdf:first "FRD";
+  rdf:rest <_:458>.
+
+<_:128> a rdf:List;
+  rdf:first "FSM";
+  rdf:rest <_:863>.
+
+<_:129> a rdf:List;
+  rdf:first "NIC";
+  rdf:rest <_:689>.
+
+<_:13> a rdf:List;
+  rdf:first "ARM";
+  rdf:rest <_:415>.
+
+<_:130> a rdf:List;
+  rdf:first "ASM";
+  rdf:rest <_:232>.
+
+<_:1302> a rdf:List;
+  rdf:first "PROPIN";
+  rdf:rest <_:2564>.
+
+<_:131> a rdf:List;
+  rdf:first "WLF";
+  rdf:rest <_:629>.
+
+<_:1317> a rdf:List;
+  rdf:first "FSM";
+  rdf:rest <_:6333>.
+
+<_:132> a rdf:List;
+  rdf:first "SDN";
+  rdf:rest <_:268>.
+
+<_:133> a rdf:List;
+  rdf:first "XAZ";
+  rdf:rest <_:575>.
+
+<_:1331> a rdf:List;
+  rdf:first "COG";
+  rdf:rest <_:8000>.
+
+<_:1335> a rdf:List;
+  rdf:first "CMFC";
+  rdf:rest <_:2127>.
+
+<_:134> a rdf:List;
+  rdf:first "RISC";
+  rdf:rest <_:492>.
+
+<_:135> a rdf:List;
+  rdf:first "MDA";
+  rdf:rest <_:880>.
+
+<_:136> a rdf:List;
+  rdf:first "RSMA";
+  rdf:rest <_:9077>.
+
+<_:137> a rdf:List;
+  rdf:first "VEN";
+  rdf:rest <_:676>.
+
+<_:138> a rdf:List;
+  rdf:first "XAC";
+  rdf:rest <_:133>.
+
+<_:139> a rdf:List;
+  rdf:first "MYT";
+  rdf:rest <_:389>.
+
+<_:14> a rdf:List;
+  rdf:first "BMU";
+  rdf:rest <_:542>.
+
+<_:140> a rdf:List;
+  rdf:first "MDV";
+  rdf:rest <_:215>.
+
+<_:141> a rdf:List;
+  rdf:first "NLD";
+  rdf:rest <_:339>.
+
+<_:142> a rdf:List;
+  rdf:first "CPV";
+  rdf:rest <_:338>.
+
+<_:143> a rdf:List;
+  rdf:first "LTU";
+  rdf:rest <_:817>.
+
+<_:144> a rdf:List;
+  rdf:first "MMR";
+  rdf:rest <_:810>.
+
+<_:1456> a rdf:List;
+  rdf:first "HND";
+  rdf:rest <_:563>.
+
+<_:146> a rdf:List;
+  rdf:first "GHA";
+  rdf:rest <_:755>.
+
+<_:147> a rdf:List;
+  rdf:first "SPAA";
+  rdf:rest <_:3705>.
+
+<_:1476> a rdf:List;
+  rdf:first "NER";
+  rdf:rest <_:6219>.
+
+<_:148> a rdf:List;
+  rdf:first "POL";
+  rdf:rest <_:735>.
+
+<_:1486> a rdf:List;
+  rdf:first "FNC";
+  rdf:rest <_:5595>.
+
+<_:1488> a rdf:List;
+  rdf:first "VCT";
+  rdf:rest <_:8855>.
+
+<_:149> a rdf:List;
+  rdf:first "LSO";
+  rdf:rest <_:704>.
+
+<_:1493> a rdf:List;
+  rdf:first "EXPT";
+  rdf:rest <_:8423>.
+
+<_:15> a rdf:List;
+  rdf:first "RD-CNWDI";
+  rdf:rest <_:92>.
+
+<_:151> a rdf:List;
+  rdf:first "COK";
+  rdf:rest <_:350>.
+
+<_:152> a rdf:List;
+  rdf:first "STP";
+  rdf:rest <_:414>.
+
+<_:153> a rdf:List;
+  rdf:first "XKS";
+  rdf:rest <_:636>.
+
+<_:1537> a rdf:List;
+  rdf:first "GUF";
+  rdf:rest <_:9474>.
+
+<_:1538> a rdf:List;
+  rdf:first "USDOD";
+  rdf:rest <_:808>.
+
+<_:154> a rdf:List;
+  rdf:first "MTQ";
+  rdf:rest <_:221>.
+
+<_:155> a rdf:List;
+  rdf:first "XJV";
+  rdf:rest <_:665>.
+
+<_:156> a rdf:List;
+  rdf:first "ALB";
+  rdf:rest <_:173>.
+
+<_:1566> a rdf:List;
+  rdf:first "BWCS";
+  rdf:rest <_:7525>.
+
+<_:157> a rdf:List;
+  rdf:first "XKS";
+  rdf:rest <_:7088>.
+
+<_:1571> a rdf:List;
+  rdf:first "MESF";
+  rdf:rest <_:365>.
+
+<_:1579> a rdf:List;
+  rdf:first "MHL";
+  rdf:rest <_:2532>.
+
+<_:158> a rdf:List;
+  rdf:first "NCL";
+  rdf:rest <_:283>.
+
+<_:1581> a rdf:List;
+  rdf:first "OCCMTO";
+  rdf:rest <_:3491>.
+
+<_:159> a rdf:List;
+  rdf:first "KNA";
+  rdf:rest <_:455>.
+
+<_:16> a rdf:List;
+  rdf:first "CYP";
+  rdf:rest <_:740>.
+
+<_:160> a rdf:List;
+  rdf:first "ICD-710";
+  rdf:rest <_:8918>.
+
+<_:1604> a rdf:List;
+  rdf:first "SGS";
+  rdf:rest <_:1632>.
+
+<_:1608> a rdf:List;
+  rdf:first "TUV";
+  rdf:rest <_:7455>.
+
+<_:161> a rdf:List;
+  rdf:first "MAR";
+  rdf:rest <_:820>.
+
+<_:1619> a rdf:List;
+  rdf:first "TON";
+  rdf:rest <_:814>.
+
+<_:162> a rdf:List;
+  rdf:first "ISR";
+  rdf:rest <_:312>.
+
+<_:163> a rdf:List;
+  rdf:first "AGO";
+  rdf:rest <_:63>.
+
+<_:1632> a rdf:List;
+  rdf:first "SHN";
+  rdf:rest <_:6515>.
+
+<_:1633> a rdf:List;
+  rdf:first "NLD";
+  rdf:rest <_:6134>.
+
+<_:1637> a rdf:List;
+  rdf:first "CUI-PROVISIONAL-IAIH";
+  rdf:rest <_:5329>.
+
+<_:164> a rdf:List;
+  rdf:first "MAF";
+  rdf:rest <_:161>.
+
+<_:1643> a rdf:List;
+  rdf:first "CXR";
+  rdf:rest <_:468>.
+
+<_:165> a rdf:List;
+  rdf:first "NCL";
+  rdf:rest <_:1476>.
+
+<_:166> a rdf:List;
+  rdf:first "PSMX";
+  rdf:rest <_:134>.
+
+<_:1668> a rdf:List;
+  rdf:first "REU";
+  rdf:rest <_:8801>.
+
+<_:167> a rdf:List;
+  rdf:first "BRN";
+  rdf:rest <_:279>.
+
+<_:1679> a rdf:List;
+  rdf:first "EFOR";
+  rdf:rest <_:4138>.
+
+<_:168> a rdf:List;
+  rdf:first "XJM";
+  rdf:rest <_:827>.
+
+<_:169> a rdf:List;
+  rdf:first "BLM";
+  rdf:rest <_:5514>.
+
+<_:17> a rdf:List;
+  rdf:first "50X6";
+  rdf:rest <_:62>.
+
+<_:170> a rdf:List;
+  rdf:first "SYC";
+  rdf:rest <_:5167>.
+
+<_:1700> a rdf:List;
+  rdf:first "HND";
+  rdf:rest <_:2162>.
+
+<_:1704> a rdf:List;
+  rdf:first "CPV";
+  rdf:rest <_:5185>.
+
+<_:171> a rdf:List;
+  rdf:first "TEYE";
+  rdf:rest <_:929>.
+
+<_:1712> a rdf:List;
+  rdf:first "CUI-PROVISIONAL-HSEI";
+  rdf:rest <_:5942>.
+
+<_:1713> a rdf:List;
+  rdf:first "MDG";
+  rdf:rest <_:385>.
+
+<_:1719> a rdf:List;
+  rdf:first "ISAF";
+  rdf:rest <_:719>.
+
+<_:172> a rdf:List;
+  rdf:first "XCR";
+  rdf:rest <_:121>.
+
+<_:173> a rdf:List;
+  rdf:first "AND";
+  rdf:rest <_:480>.
+
+<_:1736> a rdf:List;
+  rdf:first "SXM";
+  rdf:rest <_:463>.
+
+<_:174> a rdf:List;
+  rdf:first "LAO";
+  rdf:rest <_:693>.
+
+<_:175> a rdf:List;
+  rdf:first "KWT";
+  rdf:rest <_:174>.
+
+<_:176> a rdf:List;
+  rdf:first "IMSC";
+  rdf:rest <_:972>.
+
+<_:1766> a rdf:List;
+  rdf:first "COM";
+  rdf:rest <_:208>.
+
+<_:177> a rdf:List;
+  rdf:first "KGZ";
+  rdf:rest <_:9549>.
+
+<_:1773> a rdf:List;
+  rdf:first "AND";
+  rdf:rest <_:9694>.
+
+<_:178> a rdf:List;
+  rdf:first "PAK";
+  rdf:rest <_:269>.
+
+<_:179> a rdf:List;
+  rdf:first "SHN";
+  rdf:rest <_:250>.
+
+<_:18> a rdf:List;
+  rdf:first "25X4";
+  rdf:rest <_:86>.
+
+<_:180> a rdf:List;
+  rdf:first "CFUP";
+  rdf:rest <_:710>.
+
+<_:1807> a rdf:List;
+  rdf:first "PRY";
+  rdf:rest <_:4384>.
+
+<_:181> a rdf:List;
+  rdf:first "XKS";
+  rdf:rest <_:856>.
+
+<_:1811> a rdf:List;
+  rdf:first "NACT";
+  rdf:rest <_:3378>.
+
+<_:182> a rdf:List;
+  rdf:first "IESC";
+  rdf:rest <_:298>.
+
+<_:1828> a rdf:List;
+  rdf:first "ITA";
+  rdf:rest <_:6390>.
+
+<_:183> a rdf:List;
+  rdf:first "XKN";
+  rdf:rest <_:877>.
+
+<_:184> a rdf:List;
+  rdf:first "TUN";
+  rdf:rest <_:5296>.
+
+<_:185> a rdf:List;
+  rdf:first "JAM";
+  rdf:rest <_:374>.
+
+<_:186> a rdf:List;
+  rdf:first "PGMF";
+  rdf:rest <_:255>.
+
+<_:187> a rdf:List;
+  rdf:first "RISC";
+  rdf:rest <_:9360>.
+
+<_:188> a rdf:List;
+  rdf:first "IESC";
+  rdf:rest <_:8498>.
+
+<_:1881> a rdf:List;
+  rdf:first "LEI";
+  rdf:rest <_:9966>.
+
+<_:1885> a rdf:List;
+  rdf:first "XKN";
+  rdf:rest <_:1148>.
+
+<_:189> a rdf:List;
+  rdf:first "SMR";
+  rdf:rest <_:4406>.
+
+<_:1890> a rdf:List;
+  rdf:first "HRV";
+  rdf:rest <_:843>.
+
+<_:19> a rdf:List;
+  rdf:first "FRD-SG-18";
+  rdf:rest <_:49>.
+
+<_:190> a rdf:List;
+  rdf:first "CTOC";
+  rdf:rest <_:909>.
+
+<_:1900> a rdf:List;
+  rdf:first "XGL";
+  rdf:rest <_:699>.
+
+<_:191> a rdf:List;
+  rdf:first "PRK";
+  rdf:rest <_:7278>.
+
+<_:192> a rdf:List;
+  rdf:first "NAM";
+  rdf:rest <_:2867>.
+
+<_:193> a rdf:List;
+  rdf:first "BDI";
+  rdf:rest <_:708>.
+
+<_:194> a rdf:List;
+  rdf:first "JOR";
+  rdf:rest <_:324>.
+
+<_:1940> a rdf:List;
+  rdf:first "XSP";
+  rdf:rest <_:966>.
+
+<_:195> a rdf:List;
+  rdf:first "LVA";
+  rdf:rest <_:795>.
+
+<_:196> a rdf:List;
+  rdf:first "COM";
+  rdf:rest <_:274>.
+
+<_:197> a rdf:List;
+  rdf:first "JOR";
+  rdf:rest <_:266>.
+
+<_:198> a rdf:List;
+  rdf:first "COD";
+  rdf:rest <_:296>.
+
+<_:1982> a rdf:List;
+  rdf:first "AX2";
+  rdf:rest <_:387>.
+
+<_:199> a rdf:List;
+  rdf:first "TZA";
+  rdf:rest <_:200>.
+
+<_:2> a rdf:List;
+  rdf:first "50X1";
+  rdf:rest <_:22>.
+
+<_:20> a rdf:List;
+  rdf:first "GHA";
+  rdf:rest <_:223>.
+
+<_:200> a rdf:List;
+  rdf:first "UGA";
+  rdf:rest <_:245>.
+
+<_:2016> a rdf:List;
+  rdf:first "FUND";
+  rdf:rest <_:7150>.
+
+<_:202> a rdf:List;
+  rdf:first "GCTF";
+  rdf:rest <_:779>.
+
+<_:2023> a rdf:List;
+  rdf:first "RSMA";
+  rdf:rest <_:7346>.
+
+<_:2024> a rdf:List;
+  rdf:first "MNTF";
+  rdf:rest <_:3001>.
+
+<_:203> a rdf:List;
+  rdf:first "UNCK";
+  rdf:rest rdf:nil.
+
+<_:204> a rdf:List;
+  rdf:first "UGA";
+  rdf:rest <_:756>.
+
+<_:205> a rdf:List;
+  rdf:first "SSD";
+  rdf:rest <_:152>.
+
+<_:2054> a rdf:List;
+  rdf:first "BWCS";
+  rdf:rest <_:3576>.
+
+<_:2059> a rdf:List;
+  rdf:first "SDN";
+  rdf:rest <_:4184>.
+
+<_:206> a rdf:List;
+  rdf:first "AZE";
+  rdf:rest <_:193>.
+
+<_:207> a rdf:List;
+  rdf:first "ECU";
+  rdf:rest <_:672>.
+
+<_:2074> a rdf:List;
+  rdf:first "COD";
+  rdf:rest <_:1331>.
+
+<_:208> a rdf:List;
+  rdf:first "CPT";
+  rdf:rest <_:8067>.
+
+<_:2089> a rdf:List;
+  rdf:first "MEX";
+  rdf:rest <_:923>.
+
+<_:209> a rdf:List;
+  rdf:first "MNP";
+  rdf:rest <_:840>.
+
+<_:21> a rdf:List;
+  rdf:first "RD";
+  rdf:rest <_:15>.
+
+<_:210> a rdf:List;
+  rdf:first "AUS";
+  rdf:rest <_:71>.
+
+<_:2101>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:8>
+<_:211> a rdf:List;
+  rdf:first "ISAF";
+  rdf:rest <_:5337>.
+
+<_:212> a rdf:List;
+  rdf:first "PRI";
+  rdf:rest <_:668>.
+
+<_:2127> a rdf:List;
+  rdf:first "CMFP";
+  rdf:rest <_:6491>.
+
+<_:213> a rdf:List;
+  rdf:first "BMU";
+  rdf:rest <_:8103>.
+
+<_:2133> a rdf:List;
+  rdf:first "PYF";
+  rdf:rest <_:619>.
+
+<_:2135> a rdf:List;
+  rdf:first "GMIF";
+  rdf:rest <_:188>.
+
+<_:215> a rdf:List;
+  rdf:first "MEX";
+  rdf:rest <_:994>.
+
+<_:216> a rdf:List;
+  rdf:first "BHS";
+  rdf:rest <_:37>.
+
+<_:2162> a rdf:List;
+  rdf:first "HRV";
+  rdf:rest <_:889>.
+
+<_:2165> a rdf:List;
+  rdf:first "WIT";
+  rdf:rest rdf:nil.
+
+<_:217> a rdf:List;
+  rdf:first "CAF";
+  rdf:rest <_:224>.
+
+<_:2174> a rdf:List;
+  rdf:first "IDN";
+  rdf:rest <_:825>.
+
+<_:218> a rdf:List;
+  rdf:first "IMC";
+  rdf:rest <_:536>.
+
+<_:219> a rdf:List;
+  rdf:first "BES";
+  rdf:rest <_:330>.
+
+<_:2194> a rdf:List;
+  rdf:first "NIC";
+  rdf:rest <_:3959>.
+
+<_:22> a rdf:List;
+  rdf:first "50X1-HUM";
+  rdf:rest <_:95>.
+
+<_:220> a rdf:List;
+  rdf:first "BHR";
+  rdf:rest <_:2630>.
+
+<_:2202> a rdf:List;
+  rdf:first "CUI-PROVISIONAL-PRIVACY";
+  rdf:rest <_:4592>.
+
+<_:221> a rdf:List;
+  rdf:first "MUS";
+  rdf:rest <_:582>.
+
+<_:222> a rdf:List;
+  rdf:first "CAN";
+  rdf:rest <_:865>.
+
+<_:223> a rdf:List;
+  rdf:first "GIB";
+  rdf:rest <_:732>.
+
+<_:224> a rdf:List;
+  rdf:first "CAN";
+  rdf:rest <_:314>.
+
+<_:2240> a rdf:List;
+  rdf:first "ASM";
+  rdf:rest <_:6034>.
+
+<_:225> a rdf:List;
+  rdf:first "USA";
+  rdf:rest <_:8865>.
+
+<_:2252> a rdf:List;
+  rdf:first "GIN";
+  rdf:rest <_:570>.
+
+<_:2254> a rdf:List;
+  rdf:first "CONREG";
+  rdf:rest <_:228>.
+
+<_:2257> a rdf:List;
+  rdf:first "CLFC";
+  rdf:rest <_:1335>.
+
+<_:2259> a rdf:List;
+  rdf:first "SRB";
+  rdf:rest <_:5444>.
+
+<_:226> a rdf:List;
+  rdf:first "FSM";
+  rdf:rest <_:7458>.
+
+<_:2267> a rdf:List;
+  rdf:first "ZWE";
+  rdf:rest <_:5102>.
+
+<_:227> a rdf:List;
+  rdf:first "MCFI";
+  rdf:rest <_:433>.
+
+<_:2270> a rdf:List;
+  rdf:first "MMR";
+  rdf:rest <_:397>.
+
+<_:228> a rdf:List;
+  rdf:first "CONV";
+  rdf:rest <_:9447>.
+
+<_:2280> a rdf:List;
+  rdf:first "RUS";
+  rdf:rest <_:5142>.
+
+<_:229> a rdf:List;
+  rdf:first "SLE";
+  rdf:rest <_:700>.
+
+<_:23> a rdf:List;
+  rdf:first "ABW";
+  rdf:rest <_:97>.
+
+<_:230> a rdf:List;
+  rdf:first "TJK";
+  rdf:rest <_:580>.
+
+<_:231> a rdf:List;
+  rdf:first "DEU";
+  rdf:rest <_:24>.
+
+<_:232> a rdf:List;
+  rdf:first "ATA";
+  rdf:rest <_:995>.
+
+<_:2329> a rdf:List;
+  rdf:first "DGA";
+  rdf:rest <_:554>.
+
+<_:233> a rdf:List;
+  rdf:first "FRME";
+  rdf:rest <_:116>.
+
+<_:2332> a rdf:List;
+  rdf:first "THA";
+  rdf:rest <_:5389>.
+
+<_:2338> a rdf:List;
+  rdf:first "SWZ";
+  rdf:rest <_:1736>.
+
+<_:234> a rdf:List;
+  rdf:first "BHR";
+  rdf:rest <_:618>.
+
+<_:2340> a rdf:List;
+  rdf:first "USA-CUI-ONLY";
+  rdf:rest <_:4481>.
+
+<_:2349> a rdf:List;
+  rdf:first "PRT";
+  rdf:rest <_:4118>.
+
+<_:235> a rdf:List;
+  rdf:first "ARG";
+  rdf:rest <_:555>.
+
+<_:236> a rdf:List;
+  rdf:first "IMN";
+  rdf:rest <_:6774>.
+
+<_:2362> a rdf:List;
+  rdf:first "WSM";
+  rdf:rest <_:9423>.
+
+<_:237> a rdfs:Datatype;
+  owl:oneOf ("FGI" "ABW" "AFG" "AGO" "AIA" "ALB" "AND" "ARE" "ARG" "ARM" "ASM" "ATA" "ATF" "ATG" "AUS" "AUT" "AX2" "AX3" "AZE" "BDI" "BEL" "BEN" "BES" "BFA" "BGD" "BGR" "BHR" "BHS" "BIH" "BLM" "BLR" "BLZ" "BMU" "BOL" "BRA" "BRB" "BRN" "BTN" "BVT" "BWA" "CAF" "CAN" "CCK" "CHE" "CHL" "CHN" "CIV" "CMR" "COD" "COG" "COK" "COL" "COM" "CPT" "CPV" "CRI" "CUB" "CUW" "CXR" "CYM" "CYP" "CZE" "DEU" "DGA" "DJI" "DMA" "DNK" "DOM" "DZA" "ECU" "EGY" "ERI" "ESH" "ESP" "EST" "ETH" "FIN" "FJI" "FLK" "FRA" "FRO" "FSM" "GAB" "GBR" "GEO" "GGY" "GHA" "GIB" "GIN" "GLP" "GMB" "GNB" "GNQ" "GRC" "GRD" "GRL" "GTM" "GUF" "GUM" "GUY" "HKG" "HMD" "HND" "HRV" "HTI" "HUN" "IDN" "IMN" "IND" "IOT" "IRL" "IRN" "IRQ" "ISL" "ISR" "ITA" "JAM" "JEY" "JOR" "JPN" "KAZ" "KEN" "KGZ" "KHM" "KIR" "KNA" "KOR" "KWT" "LAO" "LBN" "LBR" "LBY" "LCA" "LIE" "LKA" "LSO" "LTU" "LUX" "LVA" "MAC" "MAF" "MAR" "MCO" "MDA" "MDG" "MDV" "MEX" "MHL" "MKD" "MLI" "MLT" "MMR" "MNE" "MNG" "MNP" "MOZ" "MRT" "MSR" "MTQ" "MUS" "MWI" "MYS" "MYT" "NAM" "NCL" "NER" "NFK" "NGA" "NIC" "NIU" "NLD" "NOR" "NPL" "NRU" "NZL" "OMN" "PAK" "PAN" "PCN" "PER" "PHL" "PLW" "PNG" "POL" "PRI" "PRK" "PRT" "PRY" "PYF" "QAT" "REU" "ROU" "RUS" "RWA" "SAU" "SDN" "SEN" "SGP" "SGS" "SHN" "SLB" "SLE" "SLV" "SMR" "SOM" "SPM" "SRB" "SSD" "STP" "SUR" "SVK" "SVN" "SWE" "SWZ" "SXM" "SYC" "SYR" "TCA" "TCD" "TGO" "THA" "TJK" "TKL" "TKM" "TLS" "TON" "TTO" "TUN" "TUR" "TUV" "TWN" "TZA" "UGA" "UKR" "URY" "UZB" "VAT" "VCT" "VEN" "VGB" "VIR" "VNM" "VUT" "WLF" "WSM" "XAC" "XAZ" "XBI" "XBK" "XCR" "XCS" "XCY" "XEU" "XGL" "XGZ" "XHO" "XJA" "XJM" "XJN" "XJV" "XKM" "XKN" "XKR" "XKS" "XMW" "XNV" "XPL" "XPR" "XQZ" "XSP" "XSV" "XTR" "XWB" "XWK" "XXD" "YEM" "ZAF" "ZMB" "ZWE" "ACGU" "AMSP" "AOSC" "APFS" "ASEA" "AUSTRALIA_GROUP" "BHTF" "BWCS" "CFCK" "CFOD" "CFUP" "CLFC" "CMFC" "CMFP" "CPMT" "CTOC" "CWCS" "ECTF" "EFOR" "EU" "EUDA" "FRME" "FVEY" "GCCH" "GCTF" "GFNX" "GMIF" "IESC" "IMSC" "IMSP" "IPMC" "IRKS" "ISAF" "ISSG" "KFOR" "MCFI" "MESF" "MGEU" "MIFH" "MLEC" "MNTF" "MPFL" "NACT" "NATO" "NCFE" "NKIC" "NRDC" "NSG" "OSAG" "OSTY" "PAWA" "PGMF" "PSMX" "RISC" "RSMA" "SFOR" "SOFP" "SPAA" "TEYE" "TFTC" "UNCK").
+
+<_:2371> a rdf:List;
+  rdf:first "URY";
+  rdf:rest <_:225>.
+
+<_:2377> a rdf:List;
+  rdf:first "AMSP";
+  rdf:rest <_:587>.
+
+<_:238> a rdf:List;
+  rdf:first "KIR";
+  rdf:rest <_:159>.
+
+<_:239> a rdf:List;
+  rdf:first "BRN";
+  rdf:rest <_:41>.
+
+<_:2397> a rdf:List;
+  rdf:first "CRITAN";
+  rdf:rest <_:8866>.
+
+<_:24> a rdf:List;
+  rdf:first "DGA";
+  rdf:rest <_:88>.
+
+<_:240> a rdf:List;
+  rdf:first "BHR";
+  rdf:rest <_:499>.
+
+<_:2403> a rdf:List;
+  rdf:first "MPFL";
+  rdf:rest <_:5873>.
+
+<_:241> a rdf:List;
+  rdf:first "SAU";
+  rdf:rest <_:297>.
+
+<_:242> a rdf:List;
+  rdf:first "LBR";
+  rdf:rest <_:688>.
+
+<_:243> a rdf:List;
+  rdf:first "XSP";
+  rdf:rest <_:530>.
+
+<_:2433> a rdf:List;
+  rdf:first "MCFI";
+  rdf:rest <_:6566>.
+
+<_:244> a rdf:List;
+  rdf:first "IDN";
+  rdf:rest <_:804>.
+
+<_:2443> a rdf:List;
+  rdf:first "LKA";
+  rdf:rest <_:8606>.
+
+<_:245> a rdf:List;
+  rdf:first "UKR";
+  rdf:rest <_:663>.
+
+<_:246> a rdf:List;
+  rdf:first "CAN";
+  rdf:rest <_:34>.
+
+<_:247> a rdf:List;
+  rdf:first "TCD";
+  rdf:rest <_:3504>.
+
+<_:248> a rdf:List;
+  rdf:first "NATO_00003";
+  rdf:rest <_:507>.
+
+<_:249> a rdf:List;
+  rdf:first "KFOR";
+  rdf:rest <_:227>.
+
+<_:2493> a rdf:List;
+  rdf:first "MAC";
+  rdf:rest <_:7091>.
+
+<_:25> a rdf:List;
+  rdf:first "BEL";
+  rdf:rest <_:32>.
+
+<_:250> a rdf:List;
+  rdf:first "SLB";
+  rdf:rest <_:671>.
+
+<_:251> a rdf:List;
+  rdf:first "ECU";
+  rdf:rest <_:515>.
+
+<_:252> a rdf:List;
+  rdf:first "LES-NF";
+  rdf:rest <_:3119>.
+
+<_:253> a rdf:List;
+  rdf:first "GRC";
+  rdf:rest <_:331>.
+
+<_:2532> a rdf:List;
+  rdf:first "MKD";
+  rdf:rest <_:4235>.
+
+<_:2539> a rdf:List;
+  rdf:first "WDT";
+  rdf:rest rdf:nil.
+
+<_:254> a rdf:List;
+  rdf:first "NSG";
+  rdf:rest <_:5240>.
+
+<_:255> a rdf:List;
+  rdf:first "PSMX";
+  rdf:rest <_:958>.
+
+<_:256> a rdf:List;
+  rdf:first "LKA";
+  rdf:rest <_:912>.
+
+<_:2564> a rdf:List;
+  rdf:first "GENETIC";
+  rdf:rest <_:4606>.
+
+<_:2567> a rdf:List;
+  rdf:first "HMD";
+  rdf:rest <_:1700>.
+
+<_:257> a rdf:List;
+  rdf:first "FLK";
+  rdf:rest <_:885>.
+
+<_:258> a rdf:List;
+  rdf:first "PRT";
+  rdf:rest <_:1807>.
+
+<_:259> a rdf:List;
+  rdf:first "PCN";
+  rdf:rest <_:5962>.
+
+<_:26> a rdf:List;
+  rdf:first "ATA";
+  rdf:rest <_:85>.
+
+<_:260> a rdf:List;
+  rdf:first "NF";
+  rdf:rest <_:68>.
+
+<_:261> a rdf:List;
+  rdf:first "XSV";
+  rdf:rest <_:826>.
+
+<_:262> a rdf:List;
+  rdf:first "ISL";
+  rdf:rest <_:876>.
+
+<_:2620> a rdfs:Datatype;
+  owl:oneOf ("USA" "ABW" "AFG" "AGO" "AIA" "ALB" "AND" "ARE" "ARG" "ARM" "ASM" "ATA" "ATF" "ATG" "AUS" "AUT" "AX2" "AX3" "AZE" "BDI" "BEL" "BEN" "BES" "BFA" "BGD" "BGR" "BHR" "BHS" "BIH" "BLM" "BLR" "BLZ" "BMU" "BOL" "BRA" "BRB" "BRN" "BTN" "BVT" "BWA" "CAF" "CAN" "CCK" "CHE" "CHL" "CHN" "CIV" "CMR" "COD" "COG" "COK" "COL" "COM" "CPT" "CPV" "CRI" "CUB" "CUW" "CXR" "CYM" "CYP" "CZE" "DEU" "DGA" "DJI" "DMA" "DNK" "DOM" "DZA" "ECU" "EGY" "ERI" "ESH" "ESP" "EST" "ETH" "FIN" "FJI" "FLK" "FRA" "FRO" "FSM" "GAB" "GBR" "GEO" "GGY" "GHA" "GIB" "GIN" "GLP" "GMB" "GNB" "GNQ" "GRC" "GRD" "GRL" "GTM" "GUF" "GUM" "GUY" "HKG" "HMD" "HND" "HRV" "HTI" "HUN" "IDN" "IMN" "IND" "IOT" "IRL" "IRN" "IRQ" "ISL" "ISR" "ITA" "JAM" "JEY" "JOR" "JPN" "KAZ" "KEN" "KGZ" "KHM" "KIR" "KNA" "KOR" "KWT" "LAO" "LBN" "LBR" "LBY" "LCA" "LIE" "LKA" "LSO" "LTU" "LUX" "LVA" "MAC" "MAF" "MAR" "MCO" "MDA" "MDG" "MDV" "MEX" "MHL" "MKD" "MLI" "MLT" "MMR" "MNE" "MNG" "MNP" "MOZ" "MRT" "MSR" "MTQ" "MUS" "MWI" "MYS" "MYT" "NAM" "NCL" "NER" "NFK" "NGA" "NIC" "NIU" "NLD" "NOR" "NPL" "NRU" "NZL" "OMN" "PAK" "PAN" "PCN" "PER" "PHL" "PLW" "PNG" "POL" "PRI" "PRK" "PRT" "PRY" "PYF" "QAT" "REU" "ROU" "RUS" "RWA" "SAU" "SDN" "SEN" "SGP" "SGS" "SHN" "SLB" "SLE" "SLV" "SMR" "SOM" "SPM" "SRB" "SSD" "STP" "SUR" "SVK" "SVN" "SWE" "SWZ" "SXM" "SYC" "SYR" "TCA" "TCD" "TGO" "THA" "TJK" "TKL" "TKM" "TLS" "TON" "TTO" "TUN" "TUR" "TUV" "TWN" "TZA" "UGA" "UKR" "URY" "UZB" "VAT" "VCT" "VEN" "VGB" "VIR" "VNM" "VUT" "WLF" "WSM" "XAC" "XAZ" "XBI" "XBK" "XCR" "XCS" "XCY" "XEU" "XGL" "XGZ" "XHO" "XJA" "XJM" "XJN" "XJV" "XKM" "XKN" "XKR" "XKS" "XMW" "XNV" "XPL" "XPR" "XQZ" "XSP" "XSV" "XTR" "XWB" "XWK" "XXD" "YEM" "ZAF" "ZMB" "ZWE" "ACGU" "AMSP" "AOSC" "APFS" "ASEA" "AUSTRALIA_GROUP" "BHTF" "BWCS" "CFCK" "CFOD" "CFUP" "CLFC" "CMFC" "CMFP" "CPMT" "CTOC" "CWCS" "ECTF" "EFOR" "EU" "EUDA" "FRME" "FVEY" "GCCH" "GCTF" "GFNX" "GMIF" "IESC" "IMSC" "IMSP" "IPMC" "IRKS" "ISAF" "ISSG" "KFOR" "MCFI" "MESF" "MGEU" "MIFH" "MLEC" "MNTF" "MPFL" "NACT" "NATO" "NCFE" "NKIC" "NRDC" "NSG" "OSAG" "OSTY" "PAWA" "PGMF" "PSMX" "RISC" "RSMA" "SFOR" "SOFP" "SPAA" "TEYE" "TFTC" "UNCK").
+
+<_:263> a rdf:List;
+  rdf:first "GMB";
+  rdf:rest <_:7127>.
+
+<_:2630> a rdf:List;
+  rdf:first "BHS";
+  rdf:rest <_:6165>.
+
+<_:2634> a rdf:List;
+  rdf:first "IVIC";
+  rdf:rest <_:7076>.
+
+<_:264> a rdf:List;
+  rdf:first "CHL";
+  rdf:rest <_:935>.
+
+<_:2643> a rdfs:Datatype;
+  owl:oneOf ("BUR" "BUR-BLG" "BUR-DTP" "BUR-WRG" "HCS" "HCS-O" "HCS-P" "HCS-X" "KLM" "KLM-R" "MVL" "RSV" "SI" "SI-EU" "SI-G" "SI-NK" "TK" "TK-BLFH" "TK-IDIT" "TK-KAND").
+
+<_:265> a rdf:List;
+  rdf:first "NCFE";
+  rdf:rest <_:7762>.
+
+<_:2654> a rdf:List;
+  rdf:first "SSS";
+  rdf:rest rdf:nil.
+
+<_:266> a rdf:List;
+  rdf:first "JPN";
+  rdf:rest <_:701>.
+
+<_:2667> a rdf:List;
+  rdf:first "NRDC";
+  rdf:rest <_:254>.
+
+<_:267> a rdf:List;
+  rdf:first "UGA";
+  rdf:rest <_:706>.
+
+<_:268> a rdf:List;
+  rdf:first "SEN";
+  rdf:rest <_:3033>.
+
+<_:2689> a rdf:List;
+  rdf:first "SI-G";
+  rdf:rest <_:8355>.
+
+<_:269> a rdf:List;
+  rdf:first "PAN";
+  rdf:rest <_:8458>.
+
+<_:27> a rdf:List;
+  rdf:first "WAIVED";
+  rdf:rest <_:48>.
+
+<_:270> a rdf:List;
+  rdf:first "LTU";
+  rdf:rest <_:3865>.
+
+<_:2701> a rdf:List;
+  rdf:first "GNQ";
+  rdf:rest <_:253>.
+
+<_:271> a rdf:List;
+  rdf:first "BMU";
+  rdf:rest <_:874>.
+
+<_:2715> a rdf:List;
+  rdf:first "NPL";
+  rdf:rest <_:992>.
+
+<_:272> a rdf:List;
+  rdf:first "CMR";
+  rdf:rest <_:198>.
+
+<_:2720> a rdf:List;
+  rdf:first "EFOR";
+  rdf:rest <_:940>.
+
+<_:273> a rdf:List;
+  rdf:first "SVK";
+  rdf:rest <_:101>.
+
+<_:274> a rdf:List;
+  rdf:first "CPT";
+  rdf:rest <_:142>.
+
+<_:2747> a rdf:List;
+  rdf:first "FVEY";
+  rdf:rest <_:3605>.
+
+<_:275> a rdf:List;
+  rdf:first "NPL";
+  rdf:rest <_:5921>.
+
+<_:276> a rdf:List;
+  rdf:first "GRD";
+  rdf:rest <_:519>.
+
+<_:2760> a rdf:List;
+  rdf:first "MOZ";
+  rdf:rest <_:8239>.
+
+<_:277> a rdf:List;
+  rdf:first "DMA";
+  rdf:rest <_:417>.
+
+<_:278> a rdf:List;
+  rdf:first "SOFP";
+  rdf:rest <_:590>.
+
+<_:2780> a rdf:List;
+  rdf:first "GGY";
+  rdf:rest <_:9134>.
+
+<_:279> a rdf:List;
+  rdf:first "BTN";
+  rdf:rest <_:913>.
+
+<_:2793> a rdf:List;
+  rdf:first "LBR";
+  rdf:rest <_:4866>.
+
+<_:28> a rdf:List;
+  rdf:first "XEU";
+  rdf:rest <_:904>.
+
+<_:280> a rdf:List;
+  rdf:first "BEN";
+  rdf:rest <_:4949>.
+
+<_:2800> a rdf:List;
+  rdf:first "COMSEC";
+  rdf:rest <_:384>.
+
+<_:281> a rdf:List;
+  rdf:first "CWCS";
+  rdf:rest <_:332>.
+
+<_:282> a rdf:List;
+  rdf:first "KEN";
+  rdf:rest <_:392>.
+
+<_:2825> a rdf:List;
+  rdf:first "AUS";
+  rdf:rest <_:9614>.
+
+<_:2829> a rdf:List;
+  rdf:first "FSI";
+  rdf:rest <_:4950>.
+
+<_:283> a rdf:List;
+  rdf:first "NER";
+  rdf:rest <_:753>.
+
+<_:284> a rdf:List;
+  rdf:first "MGEU";
+  rdf:rest <_:8919>.
+
+<_:2847> a rdf:List;
+  rdf:first "KLM-R";
+  rdf:rest <_:1024>.
+
+<_:285> a rdf:List;
+  rdf:first "IDN";
+  rdf:rest <_:236>.
+
+<_:2852> a rdf:List;
+  rdf:first "BUDG";
+  rdf:rest <_:2016>.
+
+<_:2858> a rdf:List;
+  rdf:first "XNV";
+  rdf:rest <_:5584>.
+
+<_:286> a rdf:List;
+  rdf:first "HRV";
+  rdf:rest <_:8367>.
+
+<_:2861> a rdf:List;
+  rdf:first "PERS";
+  rdf:rest <_:7115>.
+
+<_:2862> a rdf:List;
+  rdf:first "XCS";
+  rdf:rest <_:8487>.
+
+<_:2867> a rdf:List;
+  rdf:first "NCL";
+  rdf:rest <_:979>.
+
+<_:2869> a rdf:List;
+  rdf:first "CUI-PROVISIONAL-OSI";
+  rdf:rest <_:4779>.
+
+<_:287> a rdf:List;
+  rdf:first "XCR";
+  rdf:rest <_:724>.
+
+<_:288> a rdf:List;
+  rdf:first "BHR";
+  rdf:rest <_:216>.
+
+<_:2882> a rdf:List;
+  rdf:first "MUS";
+  rdf:rest <_:6905>.
+
+<_:289> a rdf:List;
+  rdf:first "MNTF";
+  rdf:rest <_:854>.
+
+<_:29> a rdf:List;
+  rdf:first "BWA";
+  rdf:rest <_:36>.
+
+<_:290> a rdf:List;
+  rdf:first "MOZ";
+  rdf:rest <_:8333>.
+
+<_:291> a rdf:List;
+  rdf:first "GBR";
+  rdf:rest <_:450>.
+
+<_:292> a rdf:List;
+  rdf:first "BGD";
+  rdf:rest <_:111>.
+
+<_:2922> a rdf:List;
+  rdf:first "SOFP";
+  rdf:rest <_:147>.
+
+<_:2927> a rdf:List;
+  rdf:first "LNSL";
+  rdf:rest <_:811>.
+
+<_:293> a rdf:List;
+  rdf:first "LVA";
+  rdf:rest <_:6337>.
+
+<_:294> a rdf:List;
+  rdf:first "XWK";
+  rdf:rest <_:770>.
+
+<_:2943> a rdf:List;
+  rdf:first "MKD";
+  rdf:rest <_:988>.
+
+<_:2947> a rdf:List;
+  rdf:first "CUB";
+  rdf:rest <_:807>.
+
+<_:295> a rdf:List;
+  rdf:first "DEU";
+  rdf:rest <_:6396>.
+
+<_:296> a rdf:List;
+  rdf:first "COG";
+  rdf:rest <_:151>.
+
+<_:2962> a rdf:List;
+  rdf:first "SVN";
+  rdf:rest <_:393>.
+
+<_:2969> a rdf:List;
+  rdf:first "TWN";
+  rdf:rest <_:855>.
+
+<_:297> a rdf:List;
+  rdf:first "SDN";
+  rdf:rest <_:327>.
+
+<_:298> a rdf:List;
+  rdf:first "IMSC";
+  rdf:rest <_:9174>.
+
+<_:2980> a rdf:List;
+  rdf:first "NACT";
+  rdf:rest <_:990>.
+
+<_:2985> a rdf:List;
+  rdf:first "REU";
+  rdf:rest <_:3067>.
+
+<_:299> a rdf:List;
+  rdf:first "LAO";
+  rdf:rest <_:432>.
+
+<_:2992> a rdf:List;
+  rdf:first "MHL";
+  rdf:rest <_:5943>.
+
+<_:2993> a rdf:List;
+  rdf:first "VNM";
+  rdf:rest <_:887>.
+
+<_:3> a rdf:List;
+  rdf:first "50X9";
+  rdf:rest <_:66>.
+
+<_:30> a rdf:List;
+  rdf:first "GMB";
+  rdf:rest <_:682>.
+
+<_:300> a rdf:List;
+  rdf:first "MSR";
+  rdf:rest <_:154>.
+
+<_:3001> a rdf:List;
+  rdf:first "MPFL";
+  rdf:rest <_:1811>.
+
+<_:301> a rdf:List;
+  rdf:first "DGA";
+  rdf:rest <_:8862>.
+
+<_:302> a rdf:List;
+  rdf:first "RUS";
+  rdf:rest <_:815>.
+
+<_:303> a rdf:List;
+  rdf:first "GBR";
+  rdf:rest <_:487>.
+
+<_:3033> a rdf:List;
+  rdf:first "SGP";
+  rdf:rest <_:642>.
+
+<_:304> a rdf:List;
+  rdf:first "UZB";
+  rdf:rest <_:622>.
+
+<_:3045> a rdf:List;
+  rdf:first "XJV";
+  rdf:rest <_:9045>.
+
+<_:3053> a rdf:List;
+  rdf:first "MERG";
+  rdf:rest <_:5629>.
+
+<_:306> a rdf:List;
+  rdf:first "YEM";
+  rdf:rest <_:650>.
+
+<_:3063> a rdf:List;
+  rdf:first "TAX";
+  rdf:rest <_:9338>.
+
+<_:3065> a rdf:List;
+  rdf:first "GCCH";
+  rdf:rest <_:6965>.
+
+<_:3067> a rdf:List;
+  rdf:first "ROU";
+  rdf:rest <_:5178>.
+
+<_:3069> a rdf:List;
+  rdf:first "TK-IDIT";
+  rdf:rest <_:5897>.
+
+<_:307> a rdf:List;
+  rdf:first "MLEC";
+  rdf:rest <_:289>.
+
+<_:3074> a rdf:List;
+  rdf:first "UNCK";
+  rdf:rest rdf:nil.
+
+<_:308> a rdf:List;
+  rdf:first "TLS";
+  rdf:rest <_:493>.
+
+<_:309>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:9>
+<_:3091> a rdf:List;
+  rdf:first "ASEA";
+  rdf:rest <_:5882>.
+
+<_:31> a rdf:List;
+  rdf:first "FRD";
+  rdf:rest <_:684>.
+
+<_:310> a rdf:List;
+  rdf:first "PCN";
+  rdf:rest <_:485>.
+
+<_:311> a rdf:List;
+  rdf:first "MDG";
+  rdf:rest <_:140>.
+
+<_:3119> a rdf:List;
+  rdf:first "SSI";
+  rdf:rest <_:851>.
+
+<_:312> a rdf:List;
+  rdf:first "ITA";
+  rdf:rest <_:185>.
+
+<_:313> a rdf:List;
+  rdf:first "IND";
+  rdf:rest <_:741>.
+
+<_:3134> a rdf:List;
+  rdf:first "HUN";
+  rdf:rest <_:2174>.
+
+<_:3137> a rdf:List;
+  rdf:first "ECU";
+  rdf:rest <_:3972>.
+
+<_:314> a rdf:List;
+  rdf:first "CCK";
+  rdf:rest <_:471>.
+
+<_:315> a rdf:List;
+  rdf:first "SUR";
+  rdf:rest <_:764>.
+
+<_:316> a rdf:List;
+  rdf:first "BRA";
+  rdf:rest <_:839>.
+
+<_:3161> a rdf:List;
+  rdf:first "MEX";
+  rdf:rest <_:2992>.
+
+<_:317> a rdf:List;
+  rdf:first "GRL";
+  rdf:rest <_:9666>.
+
+<_:318> a rdf:List;
+  rdf:first "MDV";
+  rdf:rest <_:2089>.
+
+<_:319> a rdf:List;
+  rdf:first "MAC";
+  rdf:rest <_:950>.
+
+<_:3190> a rdf:List;
+  rdf:first "HCS-P";
+  rdf:rest <_:5419>.
+
+<_:3192> a rdf:List;
+  rdf:first "IRKS";
+  rdf:rest <_:6100>.
+
+<_:3194> a rdf:List;
+  rdf:first "XQZ";
+  rdf:rest <_:4795>.
+
+<_:32> a rdf:List;
+  rdf:first "BEN";
+  rdf:rest <_:53>.
+
+<_:320> a rdf:List;
+  rdf:first "GMB";
+  rdf:rest <_:980>.
+
+<_:3200> a rdf:List;
+  rdf:first "MNG";
+  rdf:rest <_:942>.
+
+<_:3202> a rdfs:Datatype;
+  owl:oneOf ("ACPI" "AWP" "CUSPI" "DPPD" "HVCO" "SSS").
+
+<_:321> a rdf:List;
+  rdf:first "MYT";
+  rdf:rest <_:911>.
+
+<_:3212> a rdf:List;
+  rdf:first "ZAF";
+  rdf:rest <_:511>.
+
+<_:3218> a rdf:List;
+  rdf:first "UZB";
+  rdf:rest <_:8287>.
+
+<_:322> a rdf:List;
+  rdf:first "NATO-R";
+  rdf:rest <_:702>.
+
+<_:323> a rdf:List;
+  rdf:first "TKL";
+  rdf:rest <_:1126>.
+
+<_:3236> a rdf:List;
+  rdf:first "CZE";
+  rdf:rest <_:295>.
+
+<_:324> a rdf:List;
+  rdf:first "JPN";
+  rdf:rest <_:54>.
+
+<_:3245> a rdf:List;
+  rdf:first "XCR";
+  rdf:rest <_:4603>.
+
+<_:325> a rdf:List;
+  rdf:first "NRU";
+  rdf:rest <_:954>.
+
+<_:3251> a rdf:List;
+  rdf:first "ITAR-EAR";
+  rdf:rest rdf:nil.
+
+<_:326> a rdf:List;
+  rdf:first "MDG";
+  rdf:rest <_:3318>.
+
+<_:3262> a rdf:List;
+  rdf:first "BUR-DTP";
+  rdf:rest <_:5465>.
+
+<_:327> a rdf:List;
+  rdf:first "SEN";
+  rdf:rest <_:424>.
+
+<_:3270> a rdf:List;
+  rdf:first "TKM";
+  rdf:rest <_:606>.
+
+<_:328> a rdf:List;
+  rdf:first "GUY";
+  rdf:rest <_:377>.
+
+<_:329> a rdf:List;
+  rdf:first "SWZ";
+  rdf:rest <_:9573>.
+
+<_:33> a rdf:List;
+  rdf:first "OC";
+  rdf:rest <_:588>.
+
+<_:330> a rdf:List;
+  rdf:first "BFA";
+  rdf:rest <_:292>.
+
+<_:331> a rdf:List;
+  rdf:first "GRD";
+  rdf:rest <_:8455>.
+
+<_:3318> a rdf:List;
+  rdf:first "MDV";
+  rdf:rest <_:6598>.
+
+<_:3319> a rdf:List;
+  rdf:first "HMD";
+  rdf:rest <_:8049>.
+
+<_:332> a rdf:List;
+  rdf:first "ECTF";
+  rdf:rest <_:2720>.
+
+<_:3321> a rdf:List;
+  rdf:first "PHL";
+  rdf:rest <_:4621>.
+
+<_:3325> a rdf:List;
+  rdf:first "VEN";
+  rdf:rest <_:640>.
+
+<_:333> a rdf:List;
+  rdf:first "KHM";
+  rdf:rest <_:677>.
+
+<_:3332> a rdf:List;
+  rdf:first "BVT";
+  rdf:rest <_:6755>.
+
+<_:3338> a rdf:List;
+  rdf:first "DZA";
+  rdf:rest <_:846>.
+
+<_:334> a rdf:List;
+  rdf:first "SLV";
+  rdf:rest <_:441>.
+
+<_:335> a rdf:List;
+  rdf:first "KHM";
+  rdf:rest <_:5728>.
+
+<_:3354> a rdf:List;
+  rdf:first "NAM";
+  rdf:rest <_:6214>.
+
+<_:336> a rdf:List;
+  rdf:first "ACGU";
+  rdf:rest <_:2377>.
+
+<_:337> a rdf:List;
+  rdf:first "PRY";
+  rdf:rest <_:685>.
+
+<_:3378> a rdf:List;
+  rdf:first "NATO";
+  rdf:rest <_:265>.
+
+<_:338> a rdf:List;
+  rdf:first "CRI";
+  rdf:rest <_:81>.
+
+<_:3380> a rdf:List;
+  rdf:first "SLE";
+  rdf:rest <_:9912>.
+
+<_:339> a rdf:List;
+  rdf:first "NOR";
+  rdf:rest <_:878>.
+
+<_:3391> a rdf:List;
+  rdf:first "ATF";
+  rdf:rest <_:5009>.
+
+<_:3399> a rdf:List;
+  rdf:first "NNPI";
+  rdf:rest <_:3564>.
+
+<_:34> a rdf:List;
+  rdf:first "CCK";
+  rdf:rest <_:11>.
+
+<_:340> a rdf:List;
+  rdf:first "FJI";
+  rdf:rest <_:257>.
+
+<_:341> a rdf:List;
+  rdf:first "LSO";
+  rdf:rest <_:270>.
+
+<_:3414> a rdf:List;
+  rdf:first "GFNX";
+  rdf:rest <_:2135>.
+
+<_:3417> a rdf:List;
+  rdf:first "XEU";
+  rdf:rest <_:7220>.
+
+<_:342> a rdf:List;
+  rdf:first "PAK";
+  rdf:rest <_:102>.
+
+<_:343> a rdf:List;
+  rdf:first "SOM";
+  rdf:rest <_:983>.
+
+<_:3431> a rdf:List;
+  rdf:first "SPAA";
+  rdf:rest <_:3854>.
+
+<_:344> a rdf:List;
+  rdf:first "GFNX";
+  rdf:rest <_:421>.
+
+<_:3440> a rdf:List;
+  rdf:first "NATO-BOHEMIA";
+  rdf:rest <_:442>.
+
+<_:3445> a rdf:List;
+  rdf:first "KLM";
+  rdf:rest <_:2847>.
+
+<_:3446> a rdf:List;
+  rdf:first "BIH";
+  rdf:rest <_:776>.
+
+<_:345> a rdf:List;
+  rdf:first "CFOD";
+  rdf:rest <_:180>.
+
+<_:346> a rdf:List;
+  rdf:first "EST";
+  rdf:rest <_:801>.
+
+<_:3462> a rdf:List;
+  rdf:first "AIV";
+  rdf:rest <_:5812>.
+
+<_:347> a rdf:List;
+  rdf:first "SSI_00001";
+  rdf:rest <_:857>.
+
+<_:348> a rdf:List;
+  rdf:first "ISR";
+  rdf:rest <_:1828>.
+
+<_:349> a rdf:List;
+  rdf:first "AUT";
+  rdf:rest <_:971>.
+
+<_:3491> a rdf:List;
+  rdf:first "SERV";
+  rdf:rest <_:2869>.
+
+<_:3499> a rdf:List;
+  rdf:first "AWP";
+  rdf:rest <_:8564>.
+
+<_:35> a rdf:List;
+  rdf:first "25X6";
+  rdf:rest <_:9>.
+
+<_:350> a rdf:List;
+  rdf:first "COL";
+  rdf:rest <_:577>.
+
+<_:3504> a rdf:List;
+  rdf:first "TGO";
+  rdf:rest <_:118>.
+
+<_:351> a rdf:List;
+  rdf:first "MUS";
+  rdf:rest <_:789>.
+
+<_:352> a rdf:List;
+  rdf:first "CIV";
+  rdf:rest <_:766>.
+
+<_:3521> a rdfs:Datatype;
+  owl:oneOf ("IC_710_MANDATORY_FDR" "DOD_DISTRO_STATEMENT").
+
+<_:3522> a rdf:List;
+  rdf:first "KWT";
+  rdf:rest <_:3941>.
+
+<_:353> a rdf:List;
+  rdf:first "XJN";
+  rdf:rest <_:961>.
+
+<_:3530> a rdf:List;
+  rdf:first "XHO";
+  rdf:rest <_:634>.
+
+<_:354> a rdf:List;
+  rdf:first "CPMT";
+  rdf:rest <_:924>.
+
+<_:355> a rdf:List;
+  rdf:first "MNTF";
+  rdf:rest <_:715>.
+
+<_:3555> a rdf:List;
+  rdf:first "DMA";
+  rdf:rest <_:5357>.
+
+<_:356> a rdf:List;
+  rdf:first "XTR";
+  rdf:rest <_:898>.
+
+<_:3564> a rdf:List;
+  rdf:first "SRI";
+  rdf:rest <_:5692>.
+
+<_:3568> a rdf:List;
+  rdf:first "DMA";
+  rdf:rest <_:484>.
+
+<_:357> a rdf:List;
+  rdf:first "JEY";
+  rdf:rest <_:194>.
+
+<_:3575> a rdf:List;
+  rdf:first "TFTC";
+  rdf:rest <_:879>.
+
+<_:3576> a rdf:List;
+  rdf:first "CFCK";
+  rdf:rest <_:5824>.
+
+<_:358> a rdf:List;
+  rdf:first "ARG";
+  rdf:rest <_:745>.
+
+<_:359> a rdf:List;
+  rdf:first "IOT";
+  rdf:rest <_:919>.
+
+<_:36> a rdf:List;
+  rdf:first "CAF";
+  rdf:rest <_:246>.
+
+<_:360> a rdf:List;
+  rdf:first "SGP";
+  rdf:rest <_:881>.
+
+<_:3604> a rdf:List;
+  rdf:first "FRA";
+  rdf:rest <_:4857>.
+
+<_:3605> a rdf:List;
+  rdf:first "GCCH";
+  rdf:rest <_:553>.
+
+<_:361> a rdf:List;
+  rdf:first "MNG";
+  rdf:rest <_:209>.
+
+<_:362> a rdf:List;
+  rdf:first "PAWA";
+  rdf:rest <_:186>.
+
+<_:363> a rdf:List;
+  rdf:first "XXD";
+  rdf:rest <_:306>.
+
+<_:3636> a rdf:List;
+  rdf:first "MCFI";
+  rdf:rest <_:1571>.
+
+<_:364> a rdf:List;
+  rdf:first "SOM";
+  rdf:rest <_:402>.
+
+<_:3645> a rdf:List;
+  rdf:first "MWI";
+  rdf:rest <_:5960>.
+
+<_:365> a rdf:List;
+  rdf:first "MGEU";
+  rdf:rest <_:8503>.
+
+<_:366> a rdf:List;
+  rdf:first "COG";
+  rdf:rest <_:87>.
+
+<_:3666> a rdf:List;
+  rdf:first "LMI";
+  rdf:rest <_:3053>.
+
+<_:367> a rdf:List;
+  rdf:first "LBY";
+  rdf:rest <_:644>.
+
+<_:368> a rdf:List;
+  rdf:first "KHM";
+  rdf:rest <_:238>.
+
+<_:3682> a rdf:List;
+  rdf:first "FIN";
+  rdf:rest <_:7719>.
+
+<_:369> a rdf:List;
+  rdf:first "BHTF";
+  rdf:rest <_:9604>.
+
+<_:37> a rdf:List;
+  rdf:first "BIH";
+  rdf:rest <_:413>.
+
+<_:370> a rdf:List;
+  rdf:first "XXD";
+  rdf:rest <_:4944>.
+
+<_:3704> a rdf:List;
+  rdf:first "PAWA";
+  rdf:rest <_:6833>.
+
+<_:3705> a rdf:List;
+  rdf:first "TEYE";
+  rdf:rest <_:3575>.
+
+<_:371> a rdf:List;
+  rdf:first "CYM";
+  rdf:rest <_:521>.
+
+<_:372> a rdf:List;
+  rdf:first "US-Person";
+  rdf:rest <_:7712>.
+
+<_:373> a rdf:List;
+  rdf:first "EGY";
+  rdf:rest <_:996>.
+
+<_:374> a rdf:List;
+  rdf:first "JEY";
+  rdf:rest <_:197>.
+
+<_:3743> a rdf:List;
+  rdf:first "OSAG";
+  rdf:rest <_:5190>.
+
+<_:3749> a rdf:List;
+  rdf:first "SAFE";
+  rdf:rest <_:9826>.
+
+<_:375> a rdf:List;
+  rdf:first "GCTF";
+  rdf:rest <_:3414>.
+
+<_:376> a rdf:List;
+  rdf:first "WLF";
+  rdf:rest <_:643>.
+
+<_:3769> a rdf:List;
+  rdf:first "EMGT";
+  rdf:rest <_:6298>.
+
+<_:377> a rdf:List;
+  rdf:first "HKG";
+  rdf:rest <_:661>.
+
+<_:378> a rdf:List;
+  rdf:first "XCR";
+  rdf:rest <_:2862>.
+
+<_:379> a rdf:List;
+  rdf:first "VUT";
+  rdf:rest <_:131>.
+
+<_:3795> a rdf:List;
+  rdf:first "NGA";
+  rdf:rest <_:2194>.
+
+<_:38> a rdf:List;
+  rdf:first "BGD";
+  rdf:rest <_:47>.
+
+<_:380> a rdf:List;
+  rdf:first "TTO";
+  rdf:rest <_:184>.
+
+<_:3800> a rdf:List;
+  rdf:first "MAF";
+  rdf:rest <_:6138>.
+
+<_:3806> a rdf:List;
+  rdf:first "ISSG";
+  rdf:rest <_:4351>.
+
+<_:381> a rdf:List;
+  rdf:first "XMW";
+  rdf:rest <_:4821>.
+
+<_:382> a rdf:List;
+  rdf:first "XD";
+  rdf:rest <_:391>.
+
+<_:3828> a rdf:List;
+  rdf:first "PRK";
+  rdf:rest <_:2349>.
+
+<_:383> a rdf:List;
+  rdf:first "AOSC";
+  rdf:rest <_:945>.
+
+<_:3833> a rdf:List;
+  rdf:first "SOM";
+  rdf:rest <_:8548>.
+
+<_:3834> a rdf:List;
+  rdf:first "BES";
+  rdf:rest <_:834>.
+
+<_:384> a rdf:List;
+  rdf:first "SSI";
+  rdf:rest <_:757>.
+
+<_:3842> a rdf:List;
+  rdf:first "ITA";
+  rdf:rest <_:4615>.
+
+<_:3843> a rdf:List;
+  rdf:first "CTOC";
+  rdf:rest <_:7765>.
+
+<_:385> a rdf:List;
+  rdf:first "MDV";
+  rdf:rest <_:3161>.
+
+<_:3854> a rdf:List;
+  rdf:first "TEYE";
+  rdf:rest <_:1172>.
+
+<_:386> a rdf:List;
+  rdf:first "ETH";
+  rdf:rest <_:477>.
+
+<_:3865> a rdf:List;
+  rdf:first "LUX";
+  rdf:rest <_:293>.
+
+<_:387> a rdf:List;
+  rdf:first "AX3";
+  rdf:rest <_:9435>.
+
+<_:388> a rdf:List;
+  rdf:first "ROU";
+  rdf:rest <_:302>.
+
+<_:3887> a rdf:List;
+  rdf:first "PRVCY";
+  rdf:rest <_:1302>.
+
+<_:389> a rdf:List;
+  rdf:first "NAM";
+  rdf:rest <_:158>.
+
+<_:3891> a rdf:List;
+  rdf:first "PROCURE";
+  rdf:rest <_:7271>.
+
+<_:3897> a rdf:List;
+  rdf:first "LCA";
+  rdf:rest <_:9572>.
+
+<_:3899> a rdf:List;
+  rdf:first "HVCO";
+  rdf:rest <_:2654>.
+
+<_:39> a rdf:List;
+  rdf:first "TS";
+  rdf:rest <_:82>.
+
+<_:390> a rdf:List;
+  rdf:first "ZMB";
+  rdf:rest <_:821>.
+
+<_:3901> a rdf:List;
+  rdf:first "DOM";
+  rdf:rest <_:4910>.
+
+<_:391> a rdf:List;
+  rdf:first "ND";
+  rdf:rest <_:594>.
+
+<_:3916> a rdf:List;
+  rdf:first "ISL";
+  rdf:rest <_:348>.
+
+<_:392> a rdf:List;
+  rdf:first "KGZ";
+  rdf:rest <_:368>.
+
+<_:393> a rdf:List;
+  rdf:first "SWE";
+  rdf:rest <_:2338>.
+
+<_:394> a rdf:List;
+  rdf:first "DMA";
+  rdf:rest <_:523>.
+
+<_:3941> a rdf:List;
+  rdf:first "LAO";
+  rdf:rest <_:7311>.
+
+<_:395> a rdf:List;
+  rdf:first "CZE";
+  rdf:rest <_:748>.
+
+<_:3959> a rdf:List;
+  rdf:first "NIU";
+  rdf:rest <_:1633>.
+
+<_:396> a rdf:List;
+  rdf:first "PER";
+  rdf:rest <_:931>.
+
+<_:3963> a rdf:List;
+  rdf:first "STAT";
+  rdf:rest <_:9762>.
+
+<_:397> a rdf:List;
+  rdf:first "MNE";
+  rdf:rest <_:3200>.
+
+<_:3972> a rdf:List;
+  rdf:first "EGY";
+  rdf:rest <_:4079>.
+
+<_:398> a rdf:List;
+  rdf:first "PLW";
+  rdf:rest <_:782>.
+
+<_:399> a rdf:List;
+  rdf:first "XCY";
+  rdf:rest <_:28>.
+
+<_:4> a rdf:List;
+  rdf:first "AEA";
+  rdf:rest <_:8>.
+
+<_:40> a rdf:List;
+  rdf:first "RD-SG-20";
+  rdf:rest <_:31>.
+
+<_:400> a rdf:List;
+  rdf:first "DOM";
+  rdf:rest <_:509>.
+
+<_:401> a rdf:List;
+  rdf:first "BVT";
+  rdf:rest <_:8530>.
+
+<_:4010> a rdf:List;
+  rdf:first "SUR";
+  rdf:rest <_:6272>.
+
+<_:402> a rdf:List;
+  rdf:first "SPM";
+  rdf:rest <_:679>.
+
+<_:403> a rdf:List;
+  rdf:first "XGZ";
+  rdf:rest <_:573>.
+
+<_:4039> a rdf:List;
+  rdf:first "GIN";
+  rdf:rest <_:9180>.
+
+<_:404> a rdf:List;
+  rdf:first "VGB";
+  rdf:rest <_:767>.
+
+<_:405> a rdf:List;
+  rdf:first "GTM";
+  rdf:rest <_:705>.
+
+<_:4052> a rdf:List;
+  rdf:first "EUDA";
+  rdf:rest <_:8233>.
+
+<_:4064> a rdf:List;
+  rdf:first "SOFP";
+  rdf:rest <_:3431>.
+
+<_:4065> a rdf:List;
+  rdf:first "CEII";
+  rdf:rest <_:6997>.
+
+<_:407> a rdf:List;
+  rdf:first "SLE";
+  rdf:rest <_:731>.
+
+<_:4079> a rdf:List;
+  rdf:first "ERI";
+  rdf:rest <_:4565>.
+
+<_:408> a rdf:List;
+  rdf:first "SPM";
+  rdf:rest <_:675>.
+
+<_:409> a rdf:List;
+  rdf:first "CIV";
+  rdf:rest <_:681>.
+
+<_:4091> a rdf:List;
+  rdf:first "SBU-NF";
+  rdf:rest <_:7400>.
+
+<_:4098> a rdf:List;
+  rdf:first "USGov";
+  rdf:rest <_:7831>.
+
+<_:41> a rdf:List;
+  rdf:first "BTN";
+  rdf:rest <_:816>.
+
+<_:410> a rdf:List;
+  rdf:first "GHA";
+  rdf:rest <_:828>.
+
+<_:4109> a rdf:List;
+  rdf:first "IRN";
+  rdf:rest <_:9398>.
+
+<_:411> a rdf:List;
+  rdf:first "PRT";
+  rdf:rest <_:548>.
+
+<_:4115> a rdf:List;
+  rdf:first "SYC";
+  rdf:rest <_:7697>.
+
+<_:4118> a rdf:List;
+  rdf:first "PRY";
+  rdf:rest <_:2133>.
+
+<_:412> a rdf:List;
+  rdf:first "MLI";
+  rdf:rest <_:464>.
+
+<_:413> a rdf:List;
+  rdf:first "BLM";
+  rdf:rest <_:80>.
+
+<_:4138> a rdf:List;
+  rdf:first "EU";
+  rdf:rest <_:8996>.
+
+<_:414> a rdf:List;
+  rdf:first "SUR";
+  rdf:rest <_:273>.
+
+<_:415> a rdf:List;
+  rdf:first "ASM";
+  rdf:rest <_:26>.
+
+<_:416> a rdf:List;
+  rdf:first "AX1";
+  rdf:rest <_:927>.
+
+<_:417> a rdf:List;
+  rdf:first "DNK";
+  rdf:rest <_:400>.
+
+<_:418> a rdf:List;
+  rdf:first "DoD-Dist-A";
+  rdf:rest <_:891>.
+
+<_:4184> a rdf:List;
+  rdf:first "SEN";
+  rdf:rest <_:360>.
+
+<_:419> a rdf:List;
+  rdf:first "BGR";
+  rdf:rest <_:240>.
+
+<_:42> a rdf:List;
+  rdf:first "S";
+  rdf:rest <_:39>.
+
+<_:420> a rdf:List;
+  rdf:first "CYM";
+  rdf:rest <_:648>.
+
+<_:4207> a rdf:List;
+  rdf:first "ABW";
+  rdf:rest <_:6567>.
+
+<_:421> a rdf:List;
+  rdf:first "GMIF";
+  rdf:rest <_:687>.
+
+<_:4227> a rdf:List;
+  rdf:first "IRQ";
+  rdf:rest <_:438>.
+
+<_:423> a rdf:List;
+  rdf:first "AG";
+  rdf:rest <_:5079>.
+
+<_:4235> a rdf:List;
+  rdf:first "MLI";
+  rdf:rest <_:10000>.
+
+<_:4237> a rdf:List;
+  rdf:first "LPROT";
+  rdf:rest <_:115>.
+
+<_:424> a rdf:List;
+  rdf:first "SGP";
+  rdf:rest <_:5587>.
+
+<_:425> a rdf:List;
+  rdf:first "MTQ";
+  rdf:rest <_:2882>.
+
+<_:4257> a rdf:List;
+  rdf:first "RWA";
+  rdf:rest <_:8879>.
+
+<_:426> a rdf:List;
+  rdf:first "QAT";
+  rdf:rest <_:969>.
+
+<_:427> a rdf:List;
+  rdf:first "APFS";
+  rdf:rest <_:122>.
+
+<_:428> a rdf:List;
+  rdf:first "SVN";
+  rdf:rest <_:836>.
+
+<_:4282> a rdf:List;
+  rdf:first "PER";
+  rdf:rest <_:3321>.
+
+<_:4284> a rdf:List;
+  rdf:first "MESF";
+  rdf:rest <_:284>.
+
+<_:429> a rdf:List;
+  rdf:first "COL";
+  rdf:rest <_:196>.
+
+<_:43> a rdf:List;
+  rdf:first "C";
+  rdf:rest <_:42>.
+
+<_:430> a rdf:List;
+  rdf:first "FRME";
+  rdf:rest <_:2747>.
+
+<_:4303> a rdf:List;
+  rdf:first "MMR";
+  rdf:rest <_:5303>.
+
+<_:431> a rdf:List;
+  rdf:first "SPAA";
+  rdf:rest <_:771>.
+
+<_:432> a rdf:List;
+  rdf:first "LBN";
+  rdf:rest <_:242>.
+
+<_:4326> a rdf:List;
+  rdf:first "GUF";
+  rdf:rest <_:823>.
+
+<_:433> a rdf:List;
+  rdf:first "MESF";
+  rdf:rest <_:599>.
+
+<_:434> a rdf:List;
+  rdf:first "TGO";
+  rdf:rest <_:777>.
+
+<_:4340> a rdf:List;
+  rdf:first "OMN";
+  rdf:rest <_:342>.
+
+<_:4343> a rdf:List;
+  rdf:first "FRO";
+  rdf:rest <_:1317>.
+
+<_:435> a rdf:List;
+  rdf:first "GGY";
+  rdf:rest <_:410>.
+
+<_:4351> a rdf:List;
+  rdf:first "KFOR";
+  rdf:rest <_:448>.
+
+<_:4355> a rdf:List;
+  rdf:first "PRI";
+  rdf:rest <_:3828>.
+
+<_:436> a rdf:List;
+  rdf:first "LIE";
+  rdf:rest <_:256>.
+
+<_:4361> a rdf:List;
+  rdf:first "ECTF";
+  rdf:rest <_:7435>.
+
+<_:437> a rdf:List;
+  rdf:first "DS_00001";
+  rdf:rest <_:454>.
+
+<_:4373> a rdf:List;
+  rdf:first "JOR";
+  rdf:rest <_:8696>.
+
+<_:438> a rdf:List;
+  rdf:first "ISL";
+  rdf:rest <_:162>.
+
+<_:4384> a rdf:List;
+  rdf:first "PYF";
+  rdf:rest <_:449>.
+
+<_:439> a rdf:List;
+  rdf:first "IRQ";
+  rdf:rest <_:262>.
+
+<_:44> a rdf:List;
+  rdf:first "TFNI";
+  rdf:rest rdf:nil.
+
+<_:440> a rdf:List;
+  rdf:first "BRA";
+  rdf:rest <_:721>.
+
+<_:4405> a rdf:List;
+  rdf:first "ECTF";
+  rdf:rest <_:1679>.
+
+<_:4406> a rdf:List;
+  rdf:first "SOM";
+  rdf:rest <_:408>.
+
+<_:441> a rdf:List;
+  rdf:first "SMR";
+  rdf:rest <_:364>.
+
+<_:4411> a rdf:List;
+  rdf:first "KFOR";
+  rdf:rest <_:2433>.
+
+<_:4412> a rdf:List;
+  rdf:first "NATO";
+  rdf:rest <_:8870>.
+
+<_:442> a rdf:List;
+  rdf:first "NATO-BALK";
+  rdf:rest rdf:nil.
+
+<_:443> a rdf:List;
+  rdf:first "ECTF";
+  rdf:rest <_:949>.
+
+<_:444> a rdf:List;
+  rdf:first "KGZ";
+  rdf:rest <_:333>.
+
+<_:4440> a rdf:List;
+  rdf:first "BLR";
+  rdf:rest <_:616>.
+
+<_:4445> a rdf:List;
+  rdf:first "COM";
+  rdf:rest <_:1179>.
+
+<_:4448> a rdf:List;
+  rdf:first "MLEC";
+  rdf:rest <_:355>.
+
+<_:445> a rdf:List;
+  rdf:first "JEY";
+  rdf:rest <_:4373>.
+
+<_:446> a rdf:List;
+  rdf:first "MGEU";
+  rdf:rest <_:8216>.
+
+<_:447> a rdf:List;
+  rdf:first "SLB";
+  rdf:rest <_:229>.
+
+<_:448> a rdf:List;
+  rdf:first "MCFI";
+  rdf:rest <_:4284>.
+
+<_:4481> a rdf:List;
+  rdf:first "USA-CUI";
+  rdf:rest rdf:nil.
+
+<_:449> a rdf:List;
+  rdf:first "QAT";
+  rdf:rest <_:2985>.
+
+<_:45> a rdfs:Datatype;
+  owl:oneOf ("RD" "RD-CNWDI" "RD-SG-14" "RD-SG-15" "RD-SG-18" "RD-SG-20" "FRD" "FRD-SG-14" "FRD-SG-15" "FRD-SG-18" "FRD-SG-20" "DCNI" "UCNI" "TFNI").
+
+<_:450> a rdf:List;
+  rdf:first "GEO";
+  rdf:rest <_:435>.
+
+<_:4503> a rdf:List;
+  rdf:first "TLS";
+  rdf:rest <_:567>.
+
+<_:452> a rdf:List;
+  rdf:first "BDI";
+  rdf:rest <_:7734>.
+
+<_:4523> a rdf:List;
+  rdf:first "CUI-PROVISIONAL-ISVIH";
+  rdf:rest <_:7224>.
+
+<_:453> a rdf:List;
+  rdf:first "SLB";
+  rdf:rest <_:407>.
+
+<_:454> a rdf:List;
+  rdf:first "DSEN_00001";
+  rdf:rest <_:4588>.
+
+<_:4544> a rdf:List;
+  rdf:first "DCNI";
+  rdf:rest <_:7351>.
+
+<_:455> a rdf:List;
+  rdf:first "KOR";
+  rdf:rest <_:175>.
+
+<_:456> a rdf:List;
+  rdf:first "PAWA";
+  rdf:rest <_:6507>.
+
+<_:4563> a rdf:List;
+  rdf:first "NATO";
+  rdf:rest <_:7897>.
+
+<_:4565> a rdf:List;
+  rdf:first "ESH";
+  rdf:rest <_:8600>.
+
+<_:457> a rdf:List;
+  rdf:first "XQZ";
+  rdf:rest <_:243>.
+
+<_:4570> a rdf:List;
+  rdf:first "GBR";
+  rdf:rest <_:934>.
+
+<_:458> a rdf:List;
+  rdf:first "DS";
+  rdf:rest <_:763>.
+
+<_:4585> a rdf:List;
+  rdf:first "CUB";
+  rdf:rest <_:9501>.
+
+<_:4588> a rdf:List;
+  rdf:first "DoD-Dist-A_00001";
+  rdf:rest <_:790>.
+
+<_:459> a rdf:List;
+  rdf:first "CMFP";
+  rdf:rest <_:354>.
+
+<_:4592> a rdf:List;
+  rdf:first "POST";
+  rdf:rest <_:4237>.
+
+<_:46> a rdf:List;
+  rdf:first "50X8";
+  rdf:rest <_:3>.
+
+<_:460> a rdf:List;
+  rdf:first "GGY";
+  rdf:rest <_:20>.
+
+<_:4603> a rdf:List;
+  rdf:first "XCS";
+  rdf:rest <_:127>.
+
+<_:4606> a rdf:List;
+  rdf:first "HLTH";
+  rdf:rest <_:6230>.
+
+<_:461> a rdf:List;
+  rdf:first "TCA";
+  rdf:rest <_:5709>.
+
+<_:4612> a rdf:List;
+  rdf:first "NRDC";
+  rdf:rest <_:4905>.
+
+<_:4615> a rdf:List;
+  rdf:first "JAM";
+  rdf:rest <_:445>.
+
+<_:462> a rdf:List;
+  rdf:first "CUB";
+  rdf:rest <_:711>.
+
+<_:4621> a rdf:List;
+  rdf:first "PLW";
+  rdf:rest <_:7345>.
+
+<_:4626> a rdf:List;
+  rdf:first "AOSC";
+  rdf:rest <_:9485>.
+
+<_:463> a rdf:List;
+  rdf:first "SYC";
+  rdf:rest <_:8640>.
+
+<_:464> a rdf:List;
+  rdf:first "MLT";
+  rdf:rest <_:2270>.
+
+<_:4644> a rdf:List;
+  rdf:first "COL";
+  rdf:rest <_:4445>.
+
+<_:465> a rdf:List;
+  rdf:first "RC_Dissemination_Control_Required_00001";
+  rdf:rest <_:7386>.
+
+<_:4652> a rdf:List;
+  rdf:first "IFNC";
+  rdf:rest <_:5618>.
+
+<_:466> a rdf:List;
+  rdf:first "XJM";
+  rdf:rest <_:353>.
+
+<_:467> a rdf:List;
+  rdf:first "CMFP";
+  rdf:rest <_:723>.
+
+<_:468> a rdf:List;
+  rdf:first "CYM";
+  rdf:rest <_:518>.
+
+<_:469> a rdf:List;
+  rdf:first "XCY";
+  rdf:rest <_:758>.
+
+<_:4694> a rdf:List;
+  rdf:first "JUV";
+  rdf:rest <_:5361>.
+
+<_:4698> a rdf:List;
+  rdf:first "SSI";
+  rdf:rest <_:5093>.
+
+<_:47> a rdf:List;
+  rdf:first "BGR";
+  rdf:rest <_:288>.
+
+<_:470> a rdf:List;
+  rdf:first "NGA";
+  rdf:rest <_:525>.
+
+<_:471> a rdf:List;
+  rdf:first "CHE";
+  rdf:rest <_:875>.
+
+<_:472> a rdf:List;
+  rdf:first "SVN";
+  rdf:rest <_:984>.
+
+<_:4720> a rdf:List;
+  rdf:first "CENS";
+  rdf:rest <_:5898>.
+
+<_:473> a rdf:List;
+  rdf:first "XBK";
+  rdf:rest <_:287>.
+
+<_:4730> a rdf:List;
+  rdf:first "NPSR";
+  rdf:rest <_:3399>.
+
+<_:4734> a rdf:List;
+  rdf:first "XPL";
+  rdf:rest <_:4992>.
+
+<_:474> a rdf:List;
+  rdf:first "GRC";
+  rdf:rest <_:276>.
+
+<_:475> a rdf:List;
+  rdf:first "CUW";
+  rdf:rest <_:112>.
+
+<_:4756> a rdf:List;
+  rdf:first "ABW";
+  rdf:rest <_:941>.
+
+<_:476> a rdf:List;
+  rdf:first "KWT";
+  rdf:rest <_:4839>.
+
+<_:477> a rdf:List;
+  rdf:first "FIN";
+  rdf:rest <_:340>.
+
+<_:4779> a rdf:List;
+  rdf:first "APP";
+  rdf:rest <_:9440>.
+
+<_:478> a rdf:List;
+  rdf:first "MRT";
+  rdf:rest <_:522>.
+
+<_:479> a rdf:List;
+  rdf:first "AFG";
+  rdf:rest <_:5384>.
+
+<_:4795> a rdf:List;
+  rdf:first "XSP";
+  rdf:rest <_:780>.
+
+<_:48> a rdf:List;
+  rdf:first "AC";
+  rdf:rest <_:93>.
+
+<_:480> a rdf:List;
+  rdf:first "ARE";
+  rdf:rest <_:358>.
+
+<_:4804> a rdf:List;
+  rdf:first "IRN";
+  rdf:rest <_:439>.
+
+<_:481> a rdf:List;
+  rdf:first "NIC";
+  rdf:rest <_:897>.
+
+<_:482> a rdf:List;
+  rdf:first "ALB";
+  rdf:rest <_:8683>.
+
+<_:4821> a rdf:List;
+  rdf:first "XNV";
+  rdf:rest <_:686>.
+
+<_:4824> a rdf:List;
+  rdf:first "AMSP";
+  rdf:rest <_:4626>.
+
+<_:483> a rdf:List;
+  rdf:first "MYT";
+  rdf:rest <_:192>.
+
+<_:4839> a rdf:List;
+  rdf:first "LAO";
+  rdf:rest <_:9428>.
+
+<_:484> a rdf:List;
+  rdf:first "DNK";
+  rdf:rest <_:544>.
+
+<_:4846> a rdf:List;
+  rdf:first "CTOC";
+  rdf:rest <_:7043>.
+
+<_:4848> a rdf:List;
+  rdf:first "CIV";
+  rdf:rest <_:6492>.
+
+<_:485> a rdf:List;
+  rdf:first "PER";
+  rdf:rest <_:837>.
+
+<_:4853> a rdf:List;
+  rdf:first "SFOR";
+  rdf:rest <_:4064>.
+
+<_:4857> a rdf:List;
+  rdf:first "FRO";
+  rdf:rest <_:226>.
+
+<_:486> a rdf:List;
+  rdf:first "ISL";
+  rdf:rest <_:922>.
+
+<_:4866> a rdf:List;
+  rdf:first "LBY";
+  rdf:rest <_:3897>.
+
+<_:487> a rdf:List;
+  rdf:first "GEO";
+  rdf:rest <_:2780>.
+
+<_:4872> a rdf:List;
+  rdf:first "IMSC";
+  rdf:rest <_:9188>.
+
+<_:488> a rdf:List;
+  rdf:first "NZL";
+  rdf:rest <_:4340>.
+
+<_:4885> a rdf:List;
+  rdf:first "AIA";
+  rdf:rest <_:482>.
+
+<_:489> a rdf:List;
+  rdf:first "SFOR";
+  rdf:rest <_:2922>.
+
+<_:49> a rdf:List;
+  rdf:first "FRD-SG-20";
+  rdf:rest <_:61>.
+
+<_:490> a rdf:List;
+  rdf:first "GNB";
+  rdf:rest <_:5669>.
+
+<_:4905> a rdf:List;
+  rdf:first "NSG";
+  rdf:rest <_:3743>.
+
+<_:491> a rdf:List;
+  rdf:first "XJM";
+  rdf:rest <_:7701>.
+
+<_:4910> a rdf:List;
+  rdf:first "DZA";
+  rdf:rest <_:3137>.
+
+<_:492> a rdf:List;
+  rdf:first "RSMA";
+  rdf:rest <_:489>.
+
+<_:4920> a rdf:List;
+  rdf:first "NATO-S";
+  rdf:rest <_:742>.
+
+<_:493> a rdf:List;
+  rdf:first "TON";
+  rdf:rest <_:380>.
+
+<_:4931> a rdf:List;
+  rdf:first "CMPRS";
+  rdf:rest <_:7603>.
+
+<_:4938> a rdf:List;
+  rdf:first "FSEC";
+  rdf:rest <_:103>.
+
+<_:494> a rdf:List;
+  rdf:first "IDN";
+  rdf:rest <_:737>.
+
+<_:4944> a rdf:List;
+  rdf:first "YEM";
+  rdf:rest <_:6369>.
+
+<_:4949> a rdf:List;
+  rdf:first "BES";
+  rdf:rest <_:126>.
+
+<_:495> a rdf:List;
+  rdf:first "NKIC";
+  rdf:rest <_:2667>.
+
+<_:4950> a rdf:List;
+  rdf:first "CRIT";
+  rdf:rest <_:1486>.
+
+<_:4959> a rdf:List;
+  rdf:first "TZA";
+  rdf:rest <_:9894>.
+
+<_:496> a rdf:List;
+  rdf:first "COL";
+  rdf:rest <_:1766>.
+
+<_:4967> a rdf:List;
+  rdf:first "GRC";
+  rdf:rest <_:6890>.
+
+<_:497> a rdf:List;
+  rdf:first "XAC";
+  rdf:rest <_:5756>.
+
+<_:4970> a rdf:List;
+  rdf:first "TK";
+  rdf:rest <_:8161>.
+
+<_:498> a rdf:List;
+  rdf:first "TUV";
+  rdf:rest <_:707>.
+
+<_:499> a rdf:List;
+  rdf:first "BHS";
+  rdf:rest <_:534>.
+
+<_:4992> a rdf:List;
+  rdf:first "XPR";
+  rdf:rest <_:691>.
+
+<_:4993> a rdf:List;
+  rdf:first "JURY";
+  rdf:rest <_:7874>.
+
+<_:4995> a rdf:List;
+  rdf:first "LKA";
+  rdf:rest <_:149>.
+
+<_:4998> a rdf:List;
+  rdf:first "GTM";
+  rdf:rest <_:4326>.
+
+<_:5> a rdf:List;
+  rdf:first "25X2";
+  rdf:rest <_:94>.
+
+<_:50> a rdf:List;
+  rdf:first "RS";
+  rdf:rest <_:100>.
+
+<_:5002> a rdf:List;
+  rdf:first "LTU";
+  rdf:rest <_:5551>.
+
+<_:5008> a rdf:List;
+  rdf:first "XJV";
+  rdf:rest <_:641>.
+
+<_:5009> a rdf:List;
+  rdf:first "ATG";
+  rdf:rest <_:2825>.
+
+<_:501> a rdf:List;
+  rdf:first "BLZ";
+  rdf:rest <_:14>.
+
+<_:502> a rdf:List;
+  rdf:first "ATG";
+  rdf:rest <_:860>.
+
+<_:5027> a rdf:List;
+  rdf:first "XPR";
+  rdf:rest <_:457>.
+
+<_:503> a rdf:List;
+  rdf:first "IRKS";
+  rdf:rest <_:604>.
+
+<_:504> a rdf:List;
+  rdf:first "ARG";
+  rdf:rest <_:13>.
+
+<_:505> a rdf:List;
+  rdf:first "MRT";
+  rdf:rest <_:527>.
+
+<_:506> a rdf:List;
+  rdf:first "BDI";
+  rdf:rest <_:778>.
+
+<_:5066> a rdf:List;
+  rdf:first "CHE";
+  rdf:rest <_:264>.
+
+<_:507> a rdf:List;
+  rdf:first "NATO_00004";
+  rdf:rest <_:930>.
+
+<_:5079> a rdf:List;
+  rdf:first "ASYL";
+  rdf:rest <_:4938>.
+
+<_:508> a rdf:List;
+  rdf:first "VGB";
+  rdf:rest <_:989>.
+
+<_:5081> a rdf:List;
+  rdf:first "GMIF";
+  rdf:rest <_:6544>.
+
+<_:509> a rdf:List;
+  rdf:first "DZA";
+  rdf:rest <_:251>.
+
+<_:5093> a rdf:List;
+  rdf:first "SSEL";
+  rdf:rest <_:3963>.
+
+<_:51> a rdf:List;
+  rdf:first "JAM";
+  rdf:rest <_:357>.
+
+<_:510> a rdf:List;
+  rdf:first "GBR";
+  rdf:rest <_:750>.
+
+<_:5102> a rdf:List;
+  rdf:first "ACGU";
+  rdf:rest <_:4824>.
+
+<_:511> a rdf:List;
+  rdf:first "ZMB";
+  rdf:rest <_:2267>.
+
+<_:512> a rdf:List;
+  rdf:first "EST";
+  rdf:rest <_:9655>.
+
+<_:513> a rdf:List;
+  rdf:first "ESH";
+  rdf:rest <_:761>.
+
+<_:514> a rdf:List;
+  rdf:first "IPMC";
+  rdf:rest <_:822>.
+
+<_:5140> a rdf:List;
+  rdf:first "JEY";
+  rdf:rest <_:8482>.
+
+<_:5142> a rdf:List;
+  rdf:first "RWA";
+  rdf:rest <_:8069>.
+
+<_:515> a rdf:List;
+  rdf:first "EGY";
+  rdf:rest <_:906>.
+
+<_:516> a rdf:List;
+  rdf:first "GNQ";
+  rdf:rest <_:963>.
+
+<_:5167> a rdf:List;
+  rdf:first "SYR";
+  rdf:rest <_:461>.
+
+<_:517> a rdf:List;
+  rdf:first "BHTF";
+  rdf:rest <_:960>.
+
+<_:5174> a rdf:List;
+  rdf:first "AGO";
+  rdf:rest <_:4885>.
+
+<_:5178> a rdf:List;
+  rdf:first "RUS";
+  rdf:rest <_:4257>.
+
+<_:518> a rdf:List;
+  rdf:first "CYP";
+  rdf:rest <_:9938>.
+
+<_:5185> a rdf:List;
+  rdf:first "CRI";
+  rdf:rest <_:4585>.
+
+<_:519> a rdf:List;
+  rdf:first "GRL";
+  rdf:rest <_:781>.
+
+<_:5190> a rdf:List;
+  rdf:first "OSTY";
+  rdf:rest <_:456>.
+
+<_:5192> a rdf:List;
+  rdf:first "MCO";
+  rdf:rest <_:8125>.
+
+<_:5198> a rdf:List;
+  rdf:first "KNA";
+  rdf:rest <_:9561>.
+
+<_:5199> a rdf:List;
+  rdf:first "SSEL";
+  rdf:rest <_:6296>.
+
+<_:52> a rdf:List;
+  rdf:first "25X8";
+  rdf:rest <_:84>.
+
+<_:520> a rdf:List;
+  rdf:first "AND";
+  rdf:rest <_:959>.
+
+<_:521> a rdf:List;
+  rdf:first "CYP";
+  rdf:rest <_:3236>.
+
+<_:522> a rdf:List;
+  rdf:first "MSR";
+  rdf:rest <_:425>.
+
+<_:523> a rdf:List;
+  rdf:first "DNK";
+  rdf:rest <_:986>.
+
+<_:5239> a rdf:List;
+  rdf:first "DZA";
+  rdf:rest <_:207>.
+
+<_:524> a rdf:List;
+  rdf:first "MDA";
+  rdf:rest <_:311>.
+
+<_:5240> a rdf:List;
+  rdf:first "OSAG";
+  rdf:rest <_:1147>.
+
+<_:5241> a rdf:List;
+  rdf:first "XGL";
+  rdf:rest <_:8372>.
+
+<_:525> a rdf:List;
+  rdf:first "NIC";
+  rdf:rest <_:9691>.
+
+<_:5250> a rdf:List;
+  rdf:first "TCD";
+  rdf:rest <_:8424>.
+
+<_:5258> a rdf:List;
+  rdf:first "CAF";
+  rdf:rest <_:5928>.
+
+<_:526> a rdf:List;
+  rdf:first "RISC";
+  rdf:rest <_:2023>.
+
+<_:527> a rdf:List;
+  rdf:first "MSR";
+  rdf:rest <_:981>.
+
+<_:5278> a rdf:List;
+  rdf:first "SMR";
+  rdf:rest <_:3833>.
+
+<_:528> a rdf:List;
+  rdf:first "LBR";
+  rdf:rest <_:948>.
+
+<_:5296> a rdf:List;
+  rdf:first "TUR";
+  rdf:rest <_:6961>.
+
+<_:53> a rdf:List;
+  rdf:first "BES";
+  rdf:rest <_:58>.
+
+<_:530> a rdf:List;
+  rdf:first "XSV";
+  rdf:rest <_:356>.
+
+<_:5303> a rdf:List;
+  rdf:first "MNE";
+  rdf:rest <_:1072>.
+
+<_:531> a rdf:List;
+  rdf:first "HUN";
+  rdf:rest <_:494>.
+
+<_:532> a rdf:List;
+  rdf:first "TKL";
+  rdf:rest <_:8863>.
+
+<_:5329> a rdf:List;
+  rdf:first "FINT";
+  rdf:rest <_:632>.
+
+<_:5337> a rdf:List;
+  rdf:first "ISSG";
+  rdf:rest <_:4411>.
+
+<_:534> a rdf:List;
+  rdf:first "BIH";
+  rdf:rest <_:169>.
+
+<_:5348> a rdf:List;
+  rdf:first "AIA";
+  rdf:rest <_:845>.
+
+<_:535> a rdf:List;
+  rdf:first "MKD";
+  rdf:rest <_:123>.
+
+<_:5357> a rdf:List;
+  rdf:first "DNK";
+  rdf:rest <_:3901>.
+
+<_:536> a rdf:List;
+  rdf:first "CNWDI";
+  rdf:rest <_:611>.
+
+<_:5361> a rdf:List;
+  rdf:first "PRIVILEGE";
+  rdf:rest <_:3666>.
+
+<_:537> a rdf:List;
+  rdf:first "XHO";
+  rdf:rest <_:7663>.
+
+<_:538> a rdf:List;
+  rdf:first "HUN";
+  rdf:rest <_:244>.
+
+<_:5384> a rdf:List;
+  rdf:first "AGO";
+  rdf:rest <_:609>.
+
+<_:5389> a rdf:List;
+  rdf:first "TJK";
+  rdf:rest <_:8700>.
+
+<_:539> a rdf:List;
+  rdf:first "FSM";
+  rdf:rest <_:621>.
+
+<_:5395> a rdf:List;
+  rdf:first "TUN";
+  rdf:rest <_:8431>.
+
+<_:54> a rdf:List;
+  rdf:first "KAZ";
+  rdf:rest <_:282>.
+
+<_:540> a rdf:List;
+  rdf:first "BLZ";
+  rdf:rest <_:213>.
+
+<_:541> a rdf:List;
+  rdf:first "THA";
+  rdf:rest <_:230>.
+
+<_:5419> a rdf:List;
+  rdf:first "HCS-X";
+  rdf:rest <_:3445>.
+
+<_:542> a rdf:List;
+  rdf:first "BOL";
+  rdf:rest <_:316>.
+
+<_:5426> a rdf:List;
+  rdf:first "POL";
+  rdf:rest <_:982>.
+
+<_:543> a rdf:List;
+  rdf:first "AUS";
+  rdf:rest <_:955>.
+
+<_:544> a rdf:List;
+  rdf:first "DOM";
+  rdf:rest <_:3338>.
+
+<_:5444> a rdf:List;
+  rdf:first "SSD";
+  rdf:rest <_:8956>.
+
+<_:545> a rdf:List;
+  rdf:first "ATG";
+  rdf:rest <_:543>.
+
+<_:5451> a rdf:List;
+  rdf:first "GGY";
+  rdf:rest <_:146>.
+
+<_:546> a rdf:List;
+  rdf:first "ALB";
+  rdf:rest <_:520>.
+
+<_:5465> a rdf:List;
+  rdf:first "BUR-WRG";
+  rdf:rest <_:5529>.
+
+<_:5468> a rdf:List;
+  rdf:first "WIT";
+  rdf:rest <_:2539>.
+
+<_:547> a rdf:List;
+  rdf:first "XWB";
+  rdf:rest <_:110>.
+
+<_:548> a rdf:List;
+  rdf:first "PRY";
+  rdf:rest <_:803>.
+
+<_:549> a rdf:List;
+  rdf:first "ZWE";
+  rdf:rest <_:336>.
+
+<_:55>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
 
-<_:93>
+<_:550> a rdf:List;
+  rdf:first "MYS";
+  rdf:rest <_:139>.
+
+<_:5501> a rdf:List;
+  rdf:first "HISTP";
+  rdf:rest <_:5902>.
+
+<_:551> a rdf:List;
+  rdf:first "MNG";
+  rdf:rest <_:664>.
+
+<_:5514> a rdf:List;
+  rdf:first "BLR";
+  rdf:rest <_:736>.
+
+<_:552> a rdf:List;
+  rdf:first "GRD";
+  rdf:rest <_:78>.
+
+<_:5529> a rdf:List;
+  rdf:first "HCS";
+  rdf:rest <_:8852>.
+
+<_:553> a rdf:List;
+  rdf:first "GCTF";
+  rdf:rest <_:344>.
+
+<_:5539> a rdf:List;
+  rdf:first "CPV";
+  rdf:rest <_:639>.
+
+<_:554> a rdf:List;
+  rdf:first "DJI";
+  rdf:rest <_:394>.
+
+<_:555> a rdf:List;
+  rdf:first "ARM";
+  rdf:rest <_:6764>.
+
+<_:5551> a rdf:List;
+  rdf:first "LUX";
+  rdf:rest <_:733>.
+
+<_:556> a rdf:List;
+  rdf:first "HKG";
+  rdf:rest <_:3319>.
+
+<_:557> a rdf:List;
+  rdf:first "TUN";
+  rdf:rest <_:812>.
+
+<_:558> a rdf:List;
+  rdf:first "GNQ";
+  rdf:rest <_:474>.
+
+<_:5584> a rdf:List;
+  rdf:first "XPL";
+  rdf:rest <_:7811>.
+
+<_:5587> a rdf:List;
+  rdf:first "SGS";
+  rdf:rest <_:179>.
+
+<_:559> a rdf:List;
+  rdf:first "HKG";
+  rdf:rest <_:794>.
+
+<_:5590> a rdf:List;
+  rdf:first "PROT";
+  rdf:rest <_:9931>.
+
+<_:5595> a rdf:List;
+  rdf:first "INTEL";
+  rdf:rest <_:1881>.
+
+<_:56> a rdf:List;
+  rdf:first "RELIDO";
+  rdf:rest <_:67>.
+
+<_:560> a rdf:List;
+  rdf:first "SMR";
+  rdf:rest <_:343>.
+
+<_:561> a rdf:List;
+  rdf:first "VNM";
+  rdf:rest <_:379>.
+
+<_:5618> a rdf:List;
+  rdf:first "ID";
+  rdf:rest <_:6475>.
+
+<_:562> a rdf:List;
+  rdf:first "KWT";
+  rdf:rest <_:299>.
+
+<_:5629> a rdf:List;
+  rdf:first "MIL";
+  rdf:rest <_:2927>.
+
+<_:563> a rdf:List;
+  rdf:first "HRV";
+  rdf:rest <_:595>.
+
+<_:564> a rdf:List;
+  rdf:first "TTO";
+  rdf:rest <_:5395>.
+
+<_:5641> a rdf:List;
+  rdf:first "PRIIG";
+  rdf:rest <_:4652>.
+
+<_:565> a rdf:List;
+  rdf:first "XKM";
+  rdf:rest <_:104>.
+
+<_:566> a rdf:List;
+  rdf:first "CHN";
+  rdf:rest <_:717>.
+
+<_:5669> a rdf:List;
+  rdf:first "GNQ";
+  rdf:rest <_:4967>.
+
+<_:567> a rdf:List;
+  rdf:first "TON";
+  rdf:rest <_:564>.
+
+<_:568> a rdf:List;
+  rdf:first "XTR";
+  rdf:rest <_:1182>.
+
+<_:569> a rdf:List;
+  rdf:first "ATF";
+  rdf:rest <_:502>.
+
+<_:5691> a rdf:List;
+  rdf:first "CMFC";
+  rdf:rest <_:459>.
+
+<_:5692> a rdf:List;
+  rdf:first "PERS";
+  rdf:rest <_:7104>.
+
+<_:5695> a rdf:List;
+  rdf:first "FIN";
+  rdf:rest <_:7110>.
+
+<_:57> a rdf:List;
+  rdf:first "50X5";
+  rdf:rest <_:17>.
+
+<_:570> a rdf:List;
+  rdf:first "GLP";
+  rdf:rest <_:263>.
+
+<_:5704> a rdf:List;
+  rdf:first "DoD-Dist-F";
+  rdf:rest rdf:nil.
+
+<_:5709> a rdf:List;
+  rdf:first "TCD";
+  rdf:rest <_:434>.
+
+<_:571> a rdf:List;
+  rdf:first "ESH";
+  rdf:rest <_:637>.
+
+<_:572> a rdf:List;
+  rdf:first "CYM";
+  rdf:rest <_:16>.
+
+<_:5728> a rdf:List;
+  rdf:first "KIR";
+  rdf:rest <_:680>.
+
+<_:573> a rdf:List;
+  rdf:first "XHO";
+  rdf:rest <_:772>.
+
+<_:574> a rdf:List;
+  rdf:first "STP";
+  rdf:rest <_:315>.
+
+<_:5748> a rdf:List;
+  rdf:first "NFK";
+  rdf:rest <_:3795>.
+
+<_:575> a rdf:List;
+  rdf:first "XBI";
+  rdf:rest <_:947>.
+
+<_:5756> a rdf:List;
+  rdf:first "XAZ";
+  rdf:rest <_:6262>.
+
+<_:576> a rdf:List;
+  rdf:first "BLR";
+  rdf:rest <_:540>.
+
+<_:5764> a rdf:List;
+  rdf:first "XBK";
+  rdf:rest <_:378>.
+
+<_:577> a rdf:List;
+  rdf:first "COM";
+  rdf:rest <_:113>.
+
+<_:5779> a rdf:List;
+  rdf:first "BHTF";
+  rdf:rest <_:2054>.
+
+<_:578> a rdf:List;
+  rdf:first "SI-EU";
+  rdf:rest <_:2689>.
+
+<_:579> a rdf:List;
+  rdf:first "TKM";
+  rdf:rest <_:920>.
+
+<_:58> a rdf:List;
+  rdf:first "BFA";
+  rdf:rest <_:38>.
+
+<_:580> a rdf:List;
+  rdf:first "TKL";
+  rdf:rest <_:579>.
+
+<_:581>
   sh:path skos:notation;
   sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
+
+<_:5812> a rdf:List;
+  rdf:first "ADPO";
+  rdf:rest <_:2397>.
+
+<_:5813> a rdf:List;
+  rdf:first "NLD";
+  rdf:rest <_:774>.
+
+<_:582> a rdf:List;
+  rdf:first "MWI";
+  rdf:rest <_:695>.
+
+<_:5824> a rdf:List;
+  rdf:first "CFOD";
+  rdf:rest <_:9980>.
+
+<_:5828> a rdf:List;
+  rdf:first "XNV";
+  rdf:rest <_:4734>.
+
+<_:583> a rdf:List;
+  rdf:first "GLP";
+  rdf:rest <_:30>.
+
+<_:5831> a rdf:List;
+  rdf:first "FRD_00001";
+  rdf:rest <_:437>.
+
+<_:584> a rdf:List;
+  rdf:first "SAU";
+  rdf:rest <_:132>.
+
+<_:585> a rdf:List;
+  rdf:first "BEN";
+  rdf:rest <_:219>.
+
+<_:5853> a rdf:List;
+  rdf:first "VNM";
+  rdf:rest <_:7941>.
+
+<_:586> a rdf:List;
+  rdf:first "NFK";
+  rdf:rest <_:470>.
+
+<_:587> a rdf:List;
+  rdf:first "AOSC";
+  rdf:rest <_:427>.
+
+<_:5870> a rdf:List;
+  rdf:first "XWB";
+  rdf:rest <_:6240>.
+
+<_:5873> a rdf:List;
+  rdf:first "NACT";
+  rdf:rest <_:4563>.
+
+<_:588> a rdf:List;
+  rdf:first "OC-USGOV";
+  rdf:rest <_:99>.
+
+<_:5882> a rdf:List;
+  rdf:first "AUSTRALIA_GROUP";
+  rdf:rest <_:6045>.
+
+<_:589> a rdf:List;
+  rdf:first "CHE";
+  rdf:rest <_:7987>.
+
+<_:5897> a rdf:List;
+  rdf:first "TK-KAND";
+  rdf:rest rdf:nil.
+
+<_:5898> a rdf:List;
+  rdf:first "WHSTL";
+  rdf:rest <_:5468>.
+
+<_:59> a rdfs:Datatype;
+  owl:oneOf ("R" "C" "S" "TS" "U").
+
+<_:590> a rdf:List;
+  rdf:first "SPAA";
+  rdf:rest <_:171>.
+
+<_:5902> a rdf:List;
+  rdf:first "INF";
+  rdf:rest <_:5641>.
+
+<_:591> a rdf:List;
+  rdf:first "IPMC";
+  rdf:rest <_:503>.
+
+<_:5913> a rdf:List;
+  rdf:first "PCII";
+  rdf:rest <_:7840>.
+
+<_:592> a rdf:List;
+  rdf:first "50X4";
+  rdf:rest <_:57>.
+
+<_:5921> a rdf:List;
+  rdf:first "NRU";
+  rdf:rest <_:8732>.
+
+<_:5928> a rdf:List;
+  rdf:first "CAN";
+  rdf:rest <_:1197>.
+
+<_:593> a rdf:List;
+  rdf:first "XKS";
+  rdf:rest <_:381>.
+
+<_:5938> a rdf:List;
+  rdf:first "PRK";
+  rdf:rest <_:258>.
+
+<_:594> a rdf:List;
+  rdf:first "SBU";
+  rdf:rest <_:4091>.
+
+<_:5942> a rdf:List;
+  rdf:first "INF";
+  rdf:rest <_:6320>.
+
+<_:5943> a rdf:List;
+  rdf:first "MKD";
+  rdf:rest <_:412>.
+
+<_:595> a rdf:List;
+  rdf:first "HTI";
+  rdf:rest <_:531>.
+
+<_:596> a rdf:List;
+  rdf:first "FRO";
+  rdf:rest <_:539>.
+
+<_:5960> a rdf:List;
+  rdf:first "MYS";
+  rdf:rest <_:6527>.
+
+<_:5962> a rdf:List;
+  rdf:first "PER";
+  rdf:rest <_:788>.
+
+<_:597> a rdfs:Datatype;
+  owl:oneOf ("FISA" "RAWFISA" "IMC" "CNWDI" "RD" "FRD" "DS" "LES" "LES-NF" "DSEN" "DoD-Dist-A" "DoD-Dist-B" "DoD-Dist-C" "DoD-Dist-D" "DoD-Dist-E" "DoD-Dist-F" "US-Person" "pre13526ORCON" "POC" "COMSEC" "SSI" "RSEN" "IMCON_RSEN" "GEOCAP" "NATO" "RC_Dissemination_Control_Required" "ITAR-EAR").
+
+<_:5972> a rdf:List;
+  rdf:first "DEU";
+  rdf:rest <_:301>.
+
+<_:5974> a rdf:List;
+  rdf:first "KGZ";
+  rdf:rest <_:335>.
+
+<_:598> a rdf:List;
+  rdf:first "CHL";
+  rdf:rest <_:69>.
+
+<_:5980> a rdf:List;
+  rdf:first "KIR";
+  rdf:rest <_:5198>.
+
+<_:599> a rdf:List;
+  rdf:first "MGEU";
+  rdf:rest <_:926>.
+
+<_:6> a rdf:List;
+  rdf:first "25X1";
+  rdf:rest <_:89>.
+
+<_:60> a rdf:List;
+  rdf:first "ITA";
+  rdf:rest <_:51>.
+
+<_:600> a rdf:List;
+  rdf:first "LIE";
+  rdf:rest <_:7523>.
+
+<_:6001> a rdf:List;
+  rdf:first "TJK";
+  rdf:rest <_:323>.
+
+<_:601> a rdf:List;
+  rdf:first "ACGU";
+  rdf:rest <_:624>.
+
+<_:6011> a rdf:List;
+  rdf:first "FRME";
+  rdf:rest <_:7564>.
+
+<_:602> a rdf:List;
+  rdf:first "ESP";
+  rdf:rest <_:655>.
+
+<_:603> a rdf:List;
+  rdf:first "FISA_00002";
+  rdf:rest <_:744>.
+
+<_:6034> a rdf:List;
+  rdf:first "ATA";
+  rdf:rest <_:3391>.
+
+<_:604> a rdf:List;
+  rdf:first "ISAF";
+  rdf:rest <_:760>.
+
+<_:6040> a rdf:List;
+  rdf:first "BGD";
+  rdf:rest <_:7710>.
+
+<_:6045> a rdf:List;
+  rdf:first "BHTF";
+  rdf:rest <_:1566>.
+
+<_:605> a rdf:List;
+  rdf:first "BUR";
+  rdf:rest <_:9298>.
+
+<_:606> a rdf:List;
+  rdf:first "TLS";
+  rdf:rest <_:1619>.
+
+<_:6065> a rdf:List;
+  rdf:first "STUD";
+  rdf:rest <_:2254>.
+
+<_:6073> a rdf:List;
+  rdf:first "CPMT";
+  rdf:rest <_:3843>.
+
+<_:6074> a rdf:List;
+  rdf:first "KAZ";
+  rdf:rest <_:868>.
+
+<_:608> a rdfs:Datatype;
+  owl:oneOf ("NATO-ATOMAL" "NATO-BOHEMIA" "NATO-BALK").
+
+<_:6083> a rdf:List;
+  rdf:first "XEU";
+  rdf:rest <_:5241>.
+
+<_:6084> a rdf:List;
+  rdf:first "DCNI";
+  rdf:rest <_:7618>.
+
+<_:609> a rdf:List;
+  rdf:first "AIA";
+  rdf:rest <_:156>.
+
+<_:61> a rdf:List;
+  rdf:first "DCNI";
+  rdf:rest <_:72>.
+
+<_:610> a rdf:List;
+  rdf:first "FJI";
+  rdf:rest <_:765>.
+
+<_:6100> a rdf:List;
+  rdf:first "ISAF";
+  rdf:rest <_:3806>.
+
+<_:611> a rdf:List;
+  rdf:first "RD";
+  rdf:rest <_:1277>.
+
+<_:612> a rdf:List;
+  rdf:first "DOD_DISTRO_STATEMENT";
+  rdf:rest rdf:nil.
+
+<_:6124> a rdf:List;
+  rdf:first "NZL";
+  rdf:rest <_:6416>.
+
+<_:613> a rdf:List;
+  rdf:first "SHN";
+  rdf:rest <_:447>.
+
+<_:6134> a rdf:List;
+  rdf:first "NOR";
+  rdf:rest <_:2715>.
+
+<_:6138> a rdf:List;
+  rdf:first "MAR";
+  rdf:rest <_:849>.
+
+<_:614> a rdf:List;
+  rdf:first "DJI";
+  rdf:rest <_:3555>.
+
+<_:615> a rdf:List;
+  rdf:first "GLP";
+  rdf:rest <_:320>.
+
+<_:616> a rdf:List;
+  rdf:first "BLZ";
+  rdf:rest <_:8913>.
+
+<_:6165> a rdf:List;
+  rdf:first "BIH";
+  rdf:rest <_:9302>.
+
+<_:617> a rdf:List;
+  rdf:first "PEST";
+  rdf:rest <_:7791>.
+
+<_:618> a rdf:List;
+  rdf:first "BHS";
+  rdf:rest <_:3446>.
+
+<_:619> a rdf:List;
+  rdf:first "QAT";
+  rdf:rest <_:1668>.
+
+<_:62> a rdf:List;
+  rdf:first "50X7";
+  rdf:rest <_:46>.
+
+<_:620> a rdf:List;
+  rdf:first "VUT";
+  rdf:rest <_:376>.
+
+<_:6206> a rdf:List;
+  rdf:first "RSV";
+  rdf:rest <_:6711>.
+
+<_:6207> a rdf:List;
+  rdf:first "CHRI";
+  rdf:rest <_:4065>.
+
+<_:621> a rdf:List;
+  rdf:first "GAB";
+  rdf:rest <_:510>.
+
+<_:6214> a rdf:List;
+  rdf:first "NCL";
+  rdf:rest <_:8078>.
+
+<_:6219> a rdf:List;
+  rdf:first "NFK";
+  rdf:rest <_:9792>.
+
+<_:622> a rdf:List;
+  rdf:first "VAT";
+  rdf:rest <_:683>.
+
+<_:623> a rdf:List;
+  rdf:first "GUM";
+  rdf:rest <_:813>.
+
+<_:6230> a rdf:List;
+  rdf:first "CUI-PROVISIONAL-HSAI";
+  rdf:rest <_:1712>.
+
+<_:624> a rdf:List;
+  rdf:first "AMSP";
+  rdf:rest <_:383>.
+
+<_:6240> a rdf:List;
+  rdf:first "XWK";
+  rdf:rest <_:8868>.
+
+<_:625> a rdf:List;
+  rdf:first "DoD-Dist-D";
+  rdf:rest <_:1149>.
+
+<_:626> a rdf:List;
+  rdf:first "SWZ";
+  rdf:rest <_:973>.
+
+<_:6262> a rdf:List;
+  rdf:first "XBI";
+  rdf:rest <_:473>.
+
+<_:6267> a rdf:List;
+  rdf:first "POL";
+  rdf:rest <_:4355>.
+
+<_:627> a rdf:List;
+  rdf:first "ADJ";
+  rdf:rest <_:6065>.
+
+<_:6272> a rdf:List;
+  rdf:first "SVK";
+  rdf:rest <_:472>.
+
+<_:6277> a rdf:List;
+  rdf:first "AX2";
+  rdf:rest <_:8336>.
+
+<_:628> a rdf:List;
+  rdf:first "CXR";
+  rdf:rest <_:420>.
+
+<_:629> a rdf:List;
+  rdf:first "WSM";
+  rdf:rest <_:138>.
+
+<_:6290> a rdf:List;
+  rdf:first "ACGU";
+  rdf:rest <_:1190>.
+
+<_:6296> a rdf:List;
+  rdf:first "STAT";
+  rdf:rest <_:627>.
+
+<_:6298> a rdf:List;
+  rdf:first "EXPT";
+  rdf:rest <_:7885>.
+
+<_:63> a rdf:List;
+  rdf:first "AIA";
+  rdf:rest <_:546>.
+
+<_:630> a rdf:List;
+  rdf:first "GCCH";
+  rdf:rest <_:202>.
+
+<_:631> a rdf:List;
+  rdf:first "KNA";
+  rdf:rest <_:862>.
+
+<_:632> a rdf:List;
+  rdf:first "INVENT";
+  rdf:rest <_:9275>.
+
+<_:6320> a rdf:List;
+  rdf:first "ISVI";
+  rdf:rest <_:4523>.
+
+<_:6324> a rdf:List;
+  rdf:first "SBIZ";
+  rdf:rest <_:5199>.
+
+<_:633> a rdf:List;
+  rdf:first "SYR";
+  rdf:rest <_:754>.
+
+<_:6333> a rdf:List;
+  rdf:first "GAB";
+  rdf:rest <_:303>.
+
+<_:6337> a rdf:List;
+  rdf:first "MAC";
+  rdf:rest <_:3800>.
+
+<_:634> a rdf:List;
+  rdf:first "XJA";
+  rdf:rest <_:491>.
+
+<_:6344> a rdf:List;
+  rdf:first "BRN";
+  rdf:rest <_:8613>.
+
+<_:635> a rdf:List;
+  rdf:first "VIR";
+  rdf:rest <_:5853>.
+
+<_:636> a rdf:List;
+  rdf:first "XMW";
+  rdf:rest <_:5828>.
+
+<_:6369> a rdf:List;
+  rdf:first "ZAF";
+  rdf:rest <_:1073>.
+
+<_:637> a rdf:List;
+  rdf:first "ESP";
+  rdf:rest <_:346>.
+
+<_:6374> a rdf:List;
+  rdf:first "XFER";
+  rdf:rest <_:3769>.
+
+<_:639> a rdf:List;
+  rdf:first "CRI";
+  rdf:rest <_:462>.
+
+<_:6390> a rdf:List;
+  rdf:first "JAM";
+  rdf:rest <_:5140>.
+
+<_:6396> a rdf:List;
+  rdf:first "DGA";
+  rdf:rest <_:614>.
+
+<_:64> a rdf:List;
+  rdf:first "FISA";
+  rdf:rest <_:12>.
+
+<_:640> a rdf:List;
+  rdf:first "VGB";
+  rdf:rest <_:635>.
+
+<_:641> a rdf:List;
+  rdf:first "XKM";
+  rdf:rest <_:1184>.
+
+<_:6416> a rdf:List;
+  rdf:first "OMN";
+  rdf:rest <_:1113>.
+
+<_:642> a rdf:List;
+  rdf:first "SGS";
+  rdf:rest <_:613>.
+
+<_:643> a rdf:List;
+  rdf:first "WSM";
+  rdf:rest <_:497>.
+
+<_:6438> a rdf:List;
+  rdf:first "XPL";
+  rdf:rest <_:5027>.
+
+<_:644> a rdf:List;
+  rdf:first "LCA";
+  rdf:rest <_:600>.
+
+<_:645> a rdf:List;
+  rdf:first "IND";
+  rdf:rest <_:359>.
+
+<_:646> a rdf:List;
+  rdf:first "FISA";
+  rdf:rest <_:974>.
+
+<_:6475> a rdf:List;
+  rdf:first "INTL";
+  rdf:rest <_:9944>.
+
+<_:648> a rdf:List;
+  rdf:first "CYP";
+  rdf:rest <_:395>.
+
+<_:649> a rdf:List;
+  rdf:first "POL";
+  rdf:rest <_:212>.
+
+<_:6491> a rdf:List;
+  rdf:first "CPMT";
+  rdf:rest <_:4846>.
+
+<_:6492> a rdf:List;
+  rdf:first "CMR";
+  rdf:rest <_:2074>.
+
+<_:65> a rdf:List;
+  rdf:first "RD-SG-15";
+  rdf:rest <_:70>.
+
+<_:650> a rdf:List;
+  rdf:first "ZAF";
+  rdf:rest <_:752>.
+
+<_:6506> a rdf:List;
+  rdf:first "IC_710_MANDATORY_FDR";
+  rdf:rest <_:612>.
+
+<_:6507> a rdf:List;
+  rdf:first "PGMF";
+  rdf:rest <_:9616>.
+
+<_:651> a rdf:List;
+  rdf:first "GIN";
+  rdf:rest <_:615>.
+
+<_:6515> a rdf:List;
+  rdf:first "SLB";
+  rdf:rest <_:3380>.
+
+<_:652> a rdf:List;
+  rdf:first "MLT";
+  rdf:rest <_:953>.
+
+<_:6526> a rdf:List;
+  rdf:first "OPSEC";
+  rdf:rest <_:793>.
+
+<_:6527> a rdf:List;
+  rdf:first "MYT";
+  rdf:rest <_:3354>.
+
+<_:653> a rdf:List;
+  rdf:first "LIE";
+  rdf:rest <_:4995>.
+
+<_:654> a rdf:List;
+  rdf:first "NKIC";
+  rdf:rest <_:915>.
+
+<_:6544> a rdf:List;
+  rdf:first "IESC";
+  rdf:rest <_:4872>.
+
+<_:655> a rdf:List;
+  rdf:first "EST";
+  rdf:rest <_:386>.
+
+<_:656> a rdf:List;
+  rdf:first "50X3";
+  rdf:rest <_:592>.
+
+<_:6562> a rdf:List;
+  rdf:first "VNM";
+  rdf:rest <_:620>.
+
+<_:6566> a rdf:List;
+  rdf:first "MESF";
+  rdf:rest <_:446>.
+
+<_:6567> a rdf:List;
+  rdf:first "AFG";
+  rdf:rest <_:5174>.
+
+<_:657> a rdf:List;
+  rdf:first "GIB";
+  rdf:rest <_:4039>.
+
+<_:658> a rdf:List;
+  rdf:first "TCA";
+  rdf:rest <_:247>.
+
+<_:659> a rdf:List;
+  rdf:first "IRL";
+  rdf:rest <_:968>.
+
+<_:6598> a rdf:List;
+  rdf:first "MEX";
+  rdf:rest <_:1579>.
+
+<_:66> a rdf:List;
+  rdf:first "75X";
+  rdf:rest rdf:nil.
+
+<_:660> a rdf:List;
+  rdf:first "ASEA";
+  rdf:rest <_:8790>.
+
+<_:661> a rdf:List;
+  rdf:first "HMD";
+  rdf:rest <_:1456>.
+
+<_:662> a rdf:List;
+  rdf:first "EU";
+  rdf:rest <_:917>.
+
+<_:663> a rdf:List;
+  rdf:first "URY";
+  rdf:rest <_:698>.
+
+<_:664> a rdf:List;
+  rdf:first "MNP";
+  rdf:rest <_:96>.
+
+<_:665> a rdf:List;
+  rdf:first "XKM";
+  rdf:rest <_:183>.
+
+<_:666> a rdf:List;
+  rdf:first "IMCON_RSEN";
+  rdf:rest <_:867>.
+
+<_:667> a rdf:List;
+  rdf:first "DS";
+  rdf:rest <_:382>.
+
+<_:668> a rdf:List;
+  rdf:first "PRK";
+  rdf:rest <_:411>.
+
+<_:669> a rdf:List;
+  rdf:first "CFOD";
+  rdf:rest <_:734>.
+
+<_:6693> a rdf:List;
+  rdf:first "TWN";
+  rdf:rest <_:6958>.
+
+<_:67> a rdf:List;
+  rdf:first "EYES";
+  rdf:rest <_:77>.
+
+<_:670> a rdf:List;
+  rdf:first "WLF";
+  rdf:rest <_:8719>.
+
+<_:6704> a rdf:List;
+  rdf:first "DoD-Dist-C";
+  rdf:rest <_:8620>.
+
+<_:671> a rdf:List;
+  rdf:first "SLE";
+  rdf:rest <_:334>.
+
+<_:6711> a rdf:List;
+  rdf:first "SI";
+  rdf:rest <_:578>.
+
+<_:6718> a rdf:List;
+  rdf:first "FLK";
+  rdf:rest <_:6817>.
+
+<_:672> a rdf:List;
+  rdf:first "EGY";
+  rdf:rest <_:829>.
+
+<_:673> a rdf:List;
+  rdf:first "OSTY";
+  rdf:rest <_:362>.
+
+<_:674> a rdf:List;
+  rdf:first "COD";
+  rdf:rest <_:366>.
+
+<_:675> a rdf:List;
+  rdf:first "SRB";
+  rdf:rest <_:957>.
+
+<_:6755> a rdf:List;
+  rdf:first "BWA";
+  rdf:rest <_:5258>.
+
+<_:676> a rdf:List;
+  rdf:first "VGB";
+  rdf:rest <_:714>.
+
+<_:6764> a rdf:List;
+  rdf:first "ASM";
+  rdf:rest <_:859>.
+
+<_:677> a rdf:List;
+  rdf:first "KIR";
+  rdf:rest <_:631>.
+
+<_:6774> a rdf:List;
+  rdf:first "IND";
+  rdf:rest <_:956>.
+
+<_:678> a rdf:List;
+  rdf:first "LCA";
+  rdf:rest <_:653>.
+
+<_:679> a rdf:List;
+  rdf:first "SRB";
+  rdf:rest <_:205>.
+
+<_:68> a rdf:List;
+  rdf:first "PR";
+  rdf:rest <_:83>.
+
+<_:680> a rdf:List;
+  rdf:first "KNA";
+  rdf:rest <_:6936>.
+
+<_:681> a rdf:List;
+  rdf:first "CMR";
+  rdf:rest <_:838>.
+
+<_:6817> a rdf:List;
+  rdf:first "FRA";
+  rdf:rest <_:4343>.
+
+<_:682> a rdf:List;
+  rdf:first "GNB";
+  rdf:rest <_:516>.
+
+<_:6827> a rdf:List;
+  rdf:first "SRB";
+  rdf:rest <_:866>.
+
+<_:683> a rdf:List;
+  rdf:first "VCT";
+  rdf:rest <_:137>.
+
+<_:6833> a rdf:List;
+  rdf:first "PGMF";
+  rdf:rest <_:166>.
+
+<_:684> a rdf:List;
+  rdf:first "FRD-SG-14";
+  rdf:rest <_:10>.
+
+<_:685> a rdf:List;
+  rdf:first "PYF";
+  rdf:rest <_:762>.
+
+<_:6857> a rdf:List;
+  rdf:first "LFNC";
+  rdf:rest <_:4730>.
+
+<_:686> a rdf:List;
+  rdf:first "XPL";
+  rdf:rest <_:787>.
+
+<_:687> a rdf:List;
+  rdf:first "IESC";
+  rdf:rest <_:176>.
+
+<_:688> a rdf:List;
+  rdf:first "LBY";
+  rdf:rest <_:937>.
+
+<_:689> a rdf:List;
+  rdf:first "NIU";
+  rdf:rest <_:107>.
+
+<_:6890> a rdf:List;
+  rdf:first "GRD";
+  rdf:rest <_:317>.
+
+<_:6893> a rdf:List;
+  rdf:first "CONTRACT";
+  rdf:rest <_:769>.
+
+<_:69> a rdf:List;
+  rdf:first "CHN";
+  rdf:rest <_:352>.
+
+<_:690> a rdf:List;
+  rdf:first "SYC";
+  rdf:rest <_:633>.
+
+<_:6905> a rdf:List;
+  rdf:first "MWI";
+  rdf:rest <_:716>.
+
+<_:6906> a rdf:List;
+  rdf:first "CLFC";
+  rdf:rest <_:7061>.
+
+<_:691> a rdf:List;
+  rdf:first "XQZ";
+  rdf:rest <_:1940>.
+
+<_:692> a rdf:List;
+  rdf:first "OMN";
+  rdf:rest <_:119>.
+
+<_:6923> a rdf:List;
+  rdf:first "DoD-Dist-C";
+  rdf:rest <_:625>.
+
+<_:693> a rdf:List;
+  rdf:first "LBN";
+  rdf:rest <_:528>.
+
+<_:6936> a rdf:List;
+  rdf:first "KOR";
+  rdf:rest <_:3522>.
+
+<_:694> a rdf:List;
+  rdf:first "SXM";
+  rdf:rest <_:690>.
+
+<_:695> a rdf:List;
+  rdf:first "MYS";
+  rdf:rest <_:321>.
+
+<_:6958> a rdf:List;
+  rdf:first "TZA";
+  rdf:rest <_:204>.
+
+<_:696> a rdf:List;
+  rdf:first "NATO-ATOMAL";
+  rdf:rest <_:3440>.
+
+<_:6961> a rdf:List;
+  rdf:first "TUV";
+  rdf:rest <_:2969>.
+
+<_:6962> a rdf:List;
+  rdf:first "PRVCY";
+  rdf:rest <_:3891>.
+
+<_:6965> a rdf:List;
+  rdf:first "GCTF";
+  rdf:rest <_:987>.
+
+<_:697> a rdf:List;
+  rdf:first "SHN";
+  rdf:rest <_:453>.
+
+<_:698> a rdf:List;
+  rdf:first "UZB";
+  rdf:rest <_:791>.
+
+<_:699> a rdf:List;
+  rdf:first "XGZ";
+  rdf:rest <_:537>.
+
+<_:6997> a rdf:List;
+  rdf:first "LDNA";
+  rdf:rest <_:1493>.
+
+<_:7> a rdf:List;
+  rdf:first "50X2-WMD";
+  rdf:rest <_:656>.
+
+<_:70> a rdf:List;
+  rdf:first "RD-SG-18";
+  rdf:rest <_:40>.
+
+<_:700> a rdf:List;
+  rdf:first "SLV";
+  rdf:rest <_:189>.
+
+<_:7008> a rdf:List;
+  rdf:first "EU";
+  rdf:rest <_:4052>.
+
+<_:701> a rdf:List;
+  rdf:first "KAZ";
+  rdf:rest <_:730>.
+
+<_:7013> a rdf:List;
+  rdf:first "WATER";
+  rdf:rest <_:7419>.
+
+<_:702> a rdf:List;
+  rdf:first "NATO-C";
+  rdf:rest <_:4920>.
+
+<_:703> a rdf:List;
+  rdf:first "OMN";
+  rdf:rest <_:178>.
+
+<_:704> a rdf:List;
+  rdf:first "LTU";
+  rdf:rest <_:894>.
+
+<_:7043> a rdf:List;
+  rdf:first "CWCS";
+  rdf:rest <_:4405>.
+
+<_:705> a rdf:List;
+  rdf:first "GUF";
+  rdf:rest <_:7075>.
+
+<_:706> a rdf:List;
+  rdf:first "UKR";
+  rdf:rest <_:993>.
+
+<_:7061> a rdf:List;
+  rdf:first "CMFC";
+  rdf:rest <_:9613>.
+
+<_:707> a rdf:List;
+  rdf:first "TWN";
+  rdf:rest <_:199>.
+
+<_:7075> a rdf:List;
+  rdf:first "GUM";
+  rdf:rest <_:328>.
+
+<_:7076> a rdf:List;
+  rdf:first "VISA";
+  rdf:rest <_:7013>.
+
+<_:708> a rdf:List;
+  rdf:first "BEL";
+  rdf:rest <_:759>.
+
+<_:7083> a rdf:List;
+  rdf:first "FRO";
+  rdf:rest <_:128>.
+
+<_:7088> a rdf:List;
+  rdf:first "XMW";
+  rdf:rest <_:2858>.
+
+<_:709> a rdf:List;
+  rdf:first "NATO_00001";
+  rdf:rest <_:892>.
+
+<_:7091> a rdf:List;
+  rdf:first "MAF";
+  rdf:rest <_:1224>.
+
+<_:71> a rdf:List;
+  rdf:first "AUT";
+  rdf:rest <_:416>.
+
+<_:710> a rdf:List;
+  rdf:first "CLFC";
+  rdf:rest <_:5691>.
+
+<_:7104> a rdf:List;
+  rdf:first "MFC";
+  rdf:rest <_:5913>.
+
+<_:711> a rdf:List;
+  rdf:first "CUW";
+  rdf:rest <_:628>.
+
+<_:7110> a rdf:List;
+  rdf:first "FJI";
+  rdf:rest <_:1003>.
+
+<_:7115> a rdf:List;
+  rdf:first "CUI-PROVISIONAL-PSI";
+  rdf:rest <_:617>.
+
+<_:712> a rdf:List;
+  rdf:first "XAC";
+  rdf:rest <_:888>.
+
+<_:7121> a rdf:List;
+  rdf:first "IND";
+  rdf:rest <_:970>.
+
+<_:7125> a rdf:List;
+  rdf:first "MSR";
+  rdf:rest <_:8518>.
+
+<_:7127> a rdf:List;
+  rdf:first "GNB";
+  rdf:rest <_:2701>.
+
+<_:713> a rdf:List;
+  rdf:first "NSG";
+  rdf:rest <_:722>.
+
+<_:714> a rdf:List;
+  rdf:first "VIR";
+  rdf:rest <_:6562>.
+
+<_:715> a rdf:List;
+  rdf:first "MPFL";
+  rdf:rest <_:2980>.
+
+<_:7150> a rdf:List;
+  rdf:first "CVI";
+  rdf:rest <_:7555>.
+
+<_:716> a rdf:List;
+  rdf:first "MYS";
+  rdf:rest <_:483>.
+
+<_:717> a rdf:List;
+  rdf:first "CIV";
+  rdf:rest <_:272>.
+
+<_:718> a rdf:List;
+  rdf:first "NNPI";
+  rdf:rest <_:6526>.
+
+<_:719> a rdf:List;
+  rdf:first "ISSG";
+  rdf:rest <_:905>.
+
+<_:72> a rdf:List;
+  rdf:first "UCNI";
+  rdf:rest <_:44>.
+
+<_:720> a rdfs:Datatype;
+  owl:oneOf ("USGov" "USIC" "USDOD" "OtherAuthority" "USA-CUI-ONLY" "USA-CUI").
+
+<_:721> a rdf:List;
+  rdf:first "BRB";
+  rdf:rest <_:900>.
+
+<_:722> a rdf:List;
+  rdf:first "OSAG";
+  rdf:rest <_:673>.
+
+<_:7220> a rdf:List;
+  rdf:first "XGL";
+  rdf:rest <_:1275>.
+
+<_:7224> a rdf:List;
+  rdf:first "PRIIG";
+  rdf:rest <_:8259>.
+
+<_:723> a rdf:List;
+  rdf:first "CPMT";
+  rdf:rest <_:190>.
+
+<_:724> a rdf:List;
+  rdf:first "XCS";
+  rdf:rest <_:469>.
+
+<_:7245> a rdf:List;
+  rdf:first "BTN";
+  rdf:rest <_:401>.
+
+<_:725> a rdf:List;
+  rdf:first "GCCH";
+  rdf:rest <_:375>.
+
+<_:7256> a rdf:List;
+  rdf:first "MLEC";
+  rdf:rest <_:729>.
+
+<_:726> a rdf:List;
+  rdf:first "IRL";
+  rdf:rest <_:4109>.
+
+<_:727> a rdf:List;
+  rdf:first "GMB";
+  rdf:rest <_:490>.
+
+<_:7271> a rdf:List;
+  rdf:first "PROPIN";
+  rdf:rest <_:8392>.
+
+<_:7278> a rdf:List;
+  rdf:first "PRT";
+  rdf:rest <_:337>.
+
+<_:729> a rdf:List;
+  rdf:first "MNTF";
+  rdf:rest <_:2403>.
+
+<_:73> a rdf:List;
+  rdf:first "ATG";
+  rdf:rest <_:210>.
+
+<_:730> a rdf:List;
+  rdf:first "KEN";
+  rdf:rest <_:444>.
+
+<_:7305> a rdf:List;
+  rdf:first "SVK";
+  rdf:rest <_:2962>.
+
+<_:731> a rdf:List;
+  rdf:first "SLV";
+  rdf:rest <_:560>.
+
+<_:7311> a rdf:List;
+  rdf:first "LBN";
+  rdf:rest <_:8117>.
+
+<_:7316> a rdf:List;
+  rdf:first "AX3";
+  rdf:rest <_:7917>.
+
+<_:732> a rdf:List;
+  rdf:first "GIN";
+  rdf:rest <_:583>.
+
+<_:733> a rdf:List;
+  rdf:first "LVA";
+  rdf:rest <_:2493>.
+
+<_:734> a rdf:List;
+  rdf:first "CFUP";
+  rdf:rest <_:908>.
+
+<_:7345> a rdf:List;
+  rdf:first "PNG";
+  rdf:rest <_:6267>.
+
+<_:7346> a rdf:List;
+  rdf:first "SFOR";
+  rdf:rest <_:9754>.
+
+<_:735> a rdf:List;
+  rdf:first "PRI";
+  rdf:rest <_:191>.
+
+<_:7351> a rdf:List;
+  rdf:first "UCNI";
+  rdf:rest <_:9296>.
+
+<_:736> a rdf:List;
+  rdf:first "BLZ";
+  rdf:rest <_:271>.
+
+<_:737> a rdf:List;
+  rdf:first "IMN";
+  rdf:rest <_:313>.
+
+<_:7374> a rdf:List;
+  rdf:first "XJM";
+  rdf:rest <_:9953>.
+
+<_:738> a rdf:List;
+  rdf:first "GUF";
+  rdf:rest <_:623>.
+
+<_:7386> a rdf:List;
+  rdf:first "ITAR-EAR_00001";
+  rdf:rest <_:871>.
+
+<_:739> a rdf:List;
+  rdf:first "COG";
+  rdf:rest <_:8702>.
+
+<_:74> a rdf:List;
+  rdf:first "RAWFISA";
+  rdf:rest <_:64>.
+
+<_:740> a rdf:List;
+  rdf:first "CZE";
+  rdf:rest <_:231>.
+
+<_:7400> a rdf:List;
+  rdf:first "LES";
+  rdf:rest <_:252>.
+
+<_:741> a rdf:List;
+  rdf:first "IOT";
+  rdf:rest <_:659>.
+
+<_:7419> a rdf:List;
+  rdf:first "WHSTL";
+  rdf:rest <_:2165>.
+
+<_:742> a rdf:List;
+  rdf:first "NATO-TS";
+  rdf:rest rdf:nil.
+
+<_:743> a rdf:List;
+  rdf:first "IRL";
+  rdf:rest <_:4804>.
+
+<_:7435> a rdf:List;
+  rdf:first "EFOR";
+  rdf:rest <_:7008>.
+
+<_:744> a rdf:List;
+  rdf:first "FISA_00003";
+  rdf:rest <_:7574>.
+
+<_:7443> a rdf:List;
+  rdf:first "GUY";
+  rdf:rest <_:556>.
+
+<_:7449> a rdf:List;
+  rdf:first "CUI-PROVISIONAL-PII";
+  rdf:rest <_:7767>.
+
+<_:745> a rdf:List;
+  rdf:first "ARM";
+  rdf:rest <_:130>.
+
+<_:7455> a rdf:List;
+  rdf:first "TWN";
+  rdf:rest <_:4959>.
+
+<_:7458> a rdf:List;
+  rdf:first "GAB";
+  rdf:rest <_:4570>.
+
+<_:746> a rdf:List;
+  rdf:first "TON";
+  rdf:rest <_:853>.
+
+<_:747> a rdf:List;
+  rdf:first "FISA_00001";
+  rdf:rest <_:603>.
+
+<_:748> a rdf:List;
+  rdf:first "DEU";
+  rdf:rest <_:2329>.
+
+<_:749> a rdf:List;
+  rdf:first "PAN";
+  rdf:rest <_:751>.
+
+<_:75> a rdf:List;
+  rdf:first "FEDCON";
+  rdf:rest <_:76>.
+
+<_:750> a rdf:List;
+  rdf:first "GEO";
+  rdf:rest <_:460>.
+
+<_:751> a rdf:List;
+  rdf:first "PCN";
+  rdf:rest <_:396>.
+
+<_:7510> a rdfs:Datatype;
+  owl:oneOf ("ICD-710" "DoD-Dist-B" "DoD-Dist-C" "DoD-Dist-D" "DoD-Dist-E" "DoD-Dist-F").
+
+<_:752> a rdf:List;
+  rdf:first "ZMB";
+  rdf:rest <_:549>.
+
+<_:7523> a rdf:List;
+  rdf:first "LKA";
+  rdf:rest <_:341>.
+
+<_:7525> a rdf:List;
+  rdf:first "CFCK";
+  rdf:rest <_:8957>.
+
+<_:753> a rdf:List;
+  rdf:first "NFK";
+  rdf:rest <_:975>.
+
+<_:754> a rdf:List;
+  rdf:first "TCA";
+  rdf:rest <_:896>.
+
+<_:755> a rdf:List;
+  rdf:first "GIB";
+  rdf:rest <_:2252>.
+
+<_:7551> a rdf:List;
+  rdf:first "XWK";
+  rdf:rest <_:370>.
+
+<_:7555> a rdf:List;
+  rdf:first "CHLD";
+  rdf:rest <_:8181>.
+
+<_:756> a rdf:List;
+  rdf:first "UKR";
+  rdf:rest <_:2371>.
+
+<_:7564> a rdf:List;
+  rdf:first "FVEY";
+  rdf:rest <_:725>.
+
+<_:757> a rdf:List;
+  rdf:first "RSEN";
+  rdf:rest <_:666>.
+
+<_:7574> a rdf:List;
+  rdf:first "RAWFISA_00001";
+  rdf:rest <_:818>.
+
+<_:758> a rdf:List;
+  rdf:first "XEU";
+  rdf:rest <_:1900>.
+
+<_:759> a rdf:List;
+  rdf:first "BEN";
+  rdf:rest <_:3834>.
+
+<_:7593> a rdf:List;
+  rdf:first "FGI";
+  rdf:rest <_:4207>.
+
+<_:76> a rdf:List;
+  rdf:first "NOCON";
+  rdf:rest rdf:nil.
+
+<_:760> a rdf:List;
+  rdf:first "ISSG";
+  rdf:rest <_:249>.
+
+<_:7603> a rdf:List;
+  rdf:first "LCOMM";
+  rdf:rest <_:9229>.
+
+<_:7605> a rdf:List;
+  rdf:first "GEO";
+  rdf:rest <_:9800>.
+
+<_:7607> a rdf:List;
+  rdf:first "CVIC";
+  rdf:rest <_:7882>.
+
+<_:761> a rdf:List;
+  rdf:first "ESP";
+  rdf:rest <_:916>.
+
+<_:7618> a rdf:List;
+  rdf:first "UCNI";
+  rdf:rest <_:4720>.
+
+<_:762> a rdf:List;
+  rdf:first "QAT";
+  rdf:rest <_:9911>.
+
+<_:763> a rdf:List;
+  rdf:first "LES";
+  rdf:rest <_:109>.
+
+<_:7630> a rdf:List;
+  rdf:first "ARM";
+  rdf:rest <_:2240>.
+
+<_:7639> a rdf:List;
+  rdf:first "XKR";
+  rdf:rest <_:181>.
+
+<_:764> a rdf:List;
+  rdf:first "SVK";
+  rdf:rest <_:428>.
+
+<_:765> a rdf:List;
+  rdf:first "FLK";
+  rdf:rest <_:914>.
+
+<_:766> a rdf:List;
+  rdf:first "CMR";
+  rdf:rest <_:674>.
+
+<_:7663> a rdf:List;
+  rdf:first "XJA";
+  rdf:rest <_:466>.
+
+<_:767> a rdf:List;
+  rdf:first "VIR";
+  rdf:rest <_:2993>.
+
+<_:768> a rdf:List;
+  rdf:first "R";
+  rdf:rest <_:43>.
+
+<_:7686> a rdf:List;
+  rdf:first "YEM";
+  rdf:rest <_:3212>.
+
+<_:769> a rdf:List;
+  rdf:first "SUB";
+  rdf:rest <_:9202>.
+
+<_:7697> a rdf:List;
+  rdf:first "SYR";
+  rdf:rest <_:658>.
+
+<_:77> a rdf:List;
+  rdf:first "DSEN";
+  rdf:rest <_:74>.
+
+<_:770> a rdf:List;
+  rdf:first "XXD";
+  rdf:rest <_:833>.
+
+<_:7701> a rdf:List;
+  rdf:first "XJN";
+  rdf:rest <_:5008>.
+
+<_:771> a rdf:List;
+  rdf:first "TEYE";
+  rdf:rest <_:938>.
+
+<_:7710> a rdf:List;
+  rdf:first "BGR";
+  rdf:rest <_:220>.
+
+<_:7712> a rdf:List;
+  rdf:first "pre13526ORCON";
+  rdf:rest <_:124>.
+
+<_:7719> a rdf:List;
+  rdf:first "FJI";
+  rdf:rest <_:6718>.
+
+<_:772> a rdf:List;
+  rdf:first "XJA";
+  rdf:rest <_:168>.
+
+<_:773> a rdf:List;
+  rdf:first "IRQ";
+  rdf:rest <_:486>.
+
+<_:7734> a rdf:List;
+  rdf:first "BEL";
+  rdf:rest <_:585>.
+
+<_:7735> a rdf:List;
+  rdf:first "PRE";
+  rdf:rest <_:8672>.
+
+<_:774> a rdf:List;
+  rdf:first "NOR";
+  rdf:rest <_:275>.
+
+<_:775> a rdf:List;
+  rdf:first "BOL";
+  rdf:rest <_:978>.
+
+<_:776> a rdf:List;
+  rdf:first "BLM";
+  rdf:rest <_:576>.
+
+<_:7762> a rdf:List;
+  rdf:first "NKIC";
+  rdf:rest <_:4612>.
+
+<_:7765> a rdf:List;
+  rdf:first "CWCS";
+  rdf:rest <_:4361>.
+
+<_:7767> a rdf:List;
+  rdf:first "SCV";
+  rdf:rest <_:6324>.
+
+<_:777> a rdf:List;
+  rdf:first "THA";
+  rdf:rest <_:819>.
+
+<_:778> a rdf:List;
+  rdf:first "BEL";
+  rdf:rest <_:280>.
+
+<_:779> a rdf:List;
+  rdf:first "GFNX";
+  rdf:rest <_:844>.
+
+<_:7791> a rdf:List;
+  rdf:first "PHYS";
+  rdf:rest <_:8629>.
+
+<_:78> a rdf:List;
+  rdf:first "GRL";
+  rdf:rest <_:405>.
+
+<_:780> a rdf:List;
+  rdf:first "XSV";
+  rdf:rest <_:568>.
+
+<_:781> a rdf:List;
+  rdf:first "GTM";
+  rdf:rest <_:738>.
+
+<_:7811> a rdf:List;
+  rdf:first "XPR";
+  rdf:rest <_:3194>.
+
+<_:782> a rdf:List;
+  rdf:first "PNG";
+  rdf:rest <_:649>.
+
+<_:783> a rdf:List;
+  rdf:first "TGO";
+  rdf:rest <_:541>.
+
+<_:7831> a rdf:List;
+  rdf:first "USIC";
+  rdf:rest <_:1538>.
+
+<_:7836> a rdf:List;
+  rdf:first "RWRD";
+  rdf:rest <_:3749>.
+
+<_:784> a rdf:List;
+  rdf:first "XSP";
+  rdf:rest <_:261>.
+
+<_:7840> a rdf:List;
+  rdf:first "LPROT";
+  rdf:rest <_:8984>.
+
+<_:7841> a rdf:List;
+  rdf:first "SURV";
+  rdf:rest <_:4694>.
+
+<_:785> a rdf:List;
+  rdf:first "CHN";
+  rdf:rest <_:409>.
+
+<_:7857> a rdf:List;
+  rdf:first "DCRIT";
+  rdf:rest <_:6374>.
+
+<_:786> a rdf:List;
+  rdf:first "MNE";
+  rdf:rest <_:551>.
+
+<_:787> a rdf:List;
+  rdf:first "XPR";
+  rdf:rest <_:921>.
+
+<_:7874> a rdf:List;
+  rdf:first "FHFANPI";
+  rdf:rest <_:2829>.
+
+<_:788> a rdf:List;
+  rdf:first "PHL";
+  rdf:rest <_:9773>.
+
+<_:7882> a rdf:List;
+  rdf:first "BARG";
+  rdf:rest <_:4931>.
+
+<_:7885> a rdf:List;
+  rdf:first "EXPTR";
+  rdf:rest <_:4993>.
+
+<_:789> a rdf:List;
+  rdf:first "MWI";
+  rdf:rest <_:550>.
+
+<_:7897> a rdf:List;
+  rdf:first "NCFE";
+  rdf:rest <_:495>.
+
+<_:79> a rdf:List;
+  rdf:first "BDI";
+  rdf:rest <_:25>.
+
+<_:790> a rdf:List;
+  rdf:first "COMSEC_00001";
+  rdf:rest <_:347>.
+
+<_:7904> a rdf:List;
+  rdf:first "ETH";
+  rdf:rest <_:5695>.
+
+<_:791> a rdf:List;
+  rdf:first "VAT";
+  rdf:rest <_:895>.
+
+<_:7917> a rdf:List;
+  rdf:first "AZE";
+  rdf:rest <_:452>.
+
+<_:7918> a rdf:List;
+  rdf:first "WLF";
+  rdf:rest <_:2362>.
+
+<_:792> a rdf:List;
+  rdf:first "FGI";
+  rdf:rest <_:872>.
+
+<_:793> a rdf:List;
+  rdf:first "RECCOM";
+  rdf:rest <_:9362>.
+
+<_:7932> a rdf:List;
+  rdf:first "NUC";
+  rdf:rest <_:6962>.
+
+<_:794> a rdf:List;
+  rdf:first "HMD";
+  rdf:rest <_:1125>.
+
+<_:7941> a rdf:List;
+  rdf:first "VUT";
+  rdf:rest <_:7918>.
+
+<_:795> a rdf:List;
+  rdf:first "MAC";
+  rdf:rest <_:164>.
+
+<_:796> a rdf:List;
+  rdf:first "CFCK";
+  rdf:rest <_:669>.
+
+<_:797> a rdf:List;
+  rdf:first "BRB";
+  rdf:rest <_:167>.
+
+<_:798> a rdf:List;
+  rdf:first "GUY";
+  rdf:rest <_:9496>.
+
+<_:7987> a rdf:List;
+  rdf:first "CHL";
+  rdf:rest <_:785>.
+
+<_:799> a rdf:List;
+  rdf:first "RD_00001";
+  rdf:rest <_:5831>.
+
+<_:8> a rdf:List;
+  rdf:first "NATO";
+  rdf:rest <_:1>.
+
+<_:80> a rdf:List;
+  rdf:first "BLR";
+  rdf:rest <_:501>.
+
+<_:800> a rdf:List;
+  rdf:first "CXR";
+  rdf:rest <_:371>.
+
+<_:8000> a rdf:List;
+  rdf:first "COK";
+  rdf:rest <_:4644>.
+
+<_:801> a rdf:List;
+  rdf:first "ETH";
+  rdf:rest <_:91>.
+
+<_:8018> a rdf:List;
+  rdf:first "AOSC";
+  rdf:rest <_:9723>.
+
+<_:802> a rdf:List;
+  rdf:first "NRU";
+  rdf:rest <_:488>.
+
+<_:803> a rdf:List;
+  rdf:first "PYF";
+  rdf:rest <_:426>.
+
+<_:804> a rdf:List;
+  rdf:first "IMN";
+  rdf:rest <_:645>.
+
+<_:8049> a rdf:List;
+  rdf:first "HND";
+  rdf:rest <_:286>.
+
+<_:8059> a rdf:List;
+  rdf:first "TUR";
+  rdf:rest <_:1608>.
+
+<_:806> a rdfs:Datatype;
+  owl:oneOf ("FGI" "ABW" "AFG" "AGO" "AIA" "ALB" "AND" "ARE" "ARG" "ARM" "ASM" "ATA" "ATF" "ATG" "AUS" "AUT" "AX2" "AX3" "AZE" "BDI" "BEL" "BEN" "BES" "BFA" "BGD" "BGR" "BHR" "BHS" "BIH" "BLM" "BLR" "BLZ" "BMU" "BOL" "BRA" "BRB" "BRN" "BTN" "BVT" "BWA" "CAF" "CAN" "CCK" "CHE" "CHL" "CHN" "CIV" "CMR" "COD" "COG" "COK" "COL" "COM" "CPT" "CPV" "CRI" "CUB" "CUW" "CXR" "CYM" "CYP" "CZE" "DEU" "DGA" "DJI" "DMA" "DNK" "DOM" "DZA" "ECU" "EGY" "ERI" "ESH" "ESP" "EST" "ETH" "FIN" "FJI" "FLK" "FRA" "FRO" "FSM" "GAB" "GBR" "GEO" "GGY" "GHA" "GIB" "GIN" "GLP" "GMB" "GNB" "GNQ" "GRC" "GRD" "GRL" "GTM" "GUF" "GUM" "GUY" "HKG" "HMD" "HND" "HRV" "HTI" "HUN" "IDN" "IMN" "IND" "IOT" "IRL" "IRN" "IRQ" "ISL" "ISR" "ITA" "JAM" "JEY" "JOR" "JPN" "KAZ" "KEN" "KGZ" "KHM" "KIR" "KNA" "KOR" "KWT" "LAO" "LBN" "LBR" "LBY" "LCA" "LIE" "LKA" "LSO" "LTU" "LUX" "LVA" "MAC" "MAF" "MAR" "MCO" "MDA" "MDG" "MDV" "MEX" "MHL" "MKD" "MLI" "MLT" "MMR" "MNE" "MNG" "MNP" "MOZ" "MRT" "MSR" "MTQ" "MUS" "MWI" "MYS" "MYT" "NAM" "NCL" "NER" "NFK" "NGA" "NIC" "NIU" "NLD" "NOR" "NPL" "NRU" "NZL" "OMN" "PAK" "PAN" "PCN" "PER" "PHL" "PLW" "PNG" "POL" "PRI" "PRK" "PRT" "PRY" "PYF" "QAT" "REU" "ROU" "RUS" "RWA" "SAU" "SDN" "SEN" "SGP" "SGS" "SHN" "SLB" "SLE" "SLV" "SMR" "SOM" "SPM" "SRB" "SSD" "STP" "SUR" "SVK" "SVN" "SWE" "SWZ" "SXM" "SYC" "SYR" "TCA" "TCD" "TGO" "THA" "TJK" "TKL" "TKM" "TLS" "TON" "TTO" "TUN" "TUR" "TUV" "TWN" "TZA" "UGA" "UKR" "URY" "USA" "UZB" "VAT" "VCT" "VEN" "VGB" "VIR" "VNM" "VUT" "WLF" "WSM" "XAC" "XAZ" "XBI" "XBK" "XCR" "XCS" "XCY" "XEU" "XGL" "XGZ" "XHO" "XJA" "XJM" "XJN" "XJV" "XKM" "XKN" "XKR" "XKS" "XMW" "XNV" "XPL" "XPR" "XQZ" "XSP" "XSV" "XTR" "XWB" "XWK" "XXD" "YEM" "ZAF" "ZMB" "ZWE" "ACGU" "AMSP" "AOSC" "APFS" "ASEA" "AUSTRALIA_GROUP" "BHTF" "BWCS" "CFCK" "CFOD" "CFUP" "CLFC" "CMFC" "CMFP" "CPMT" "CTOC" "CWCS" "ECTF" "EFOR" "EU" "EUDA" "FRME" "FVEY" "GCCH" "GCTF" "GFNX" "GMIF" "IESC" "IMSC" "IMSP" "IPMC" "IRKS" "ISAF" "ISSG" "KFOR" "MCFI" "MESF" "MGEU" "MIFH" "MLEC" "MNTF" "MPFL" "NACT" "NATO" "NCFE" "NKIC" "NRDC" "NSG" "OSAG" "OSTY" "PAWA" "PGMF" "PSMX" "RISC" "RSMA" "SFOR" "SOFP" "SPAA" "TEYE" "TFTC" "UNCK").
+
+<_:8067> a rdf:List;
+  rdf:first "CPV";
+  rdf:rest <_:9566>.
+
+<_:8069> a rdf:List;
+  rdf:first "SAU";
+  rdf:rest <_:2059>.
+
+<_:807> a rdf:List;
+  rdf:first "CUW";
+  rdf:rest <_:1643>.
+
+<_:8078> a rdf:List;
+  rdf:first "NER";
+  rdf:rest <_:5748>.
+
+<_:808> a rdf:List;
+  rdf:first "OtherAuthority";
+  rdf:rest <_:2340>.
+
+<_:8085> a rdf:List;
+  rdf:first "PSMX";
+  rdf:rest <_:526>.
+
+<_:809> a rdf:List;
+  rdf:first "BRB";
+  rdf:rest <_:6344>.
+
+<_:8093> a rdf:List;
+  rdf:first "TCA";
+  rdf:rest <_:5250>.
+
+<_:81> a rdf:List;
+  rdf:first "CUB";
+  rdf:rest <_:475>.
+
+<_:810> a rdf:List;
+  rdf:first "MNE";
+  rdf:rest <_:361>.
+
+<_:8103> a rdf:List;
+  rdf:first "BOL";
+  rdf:rest <_:440>.
+
+<_:811> a rdf:List;
+  rdf:first "NETW";
+  rdf:rest <_:718>.
+
+<_:8117> a rdf:List;
+  rdf:first "LBR";
+  rdf:rest <_:367>.
+
+<_:812> a rdf:List;
+  rdf:first "TUR";
+  rdf:rest <_:498>.
+
+<_:8125> a rdf:List;
+  rdf:first "MDA";
+  rdf:rest <_:326>.
+
+<_:813> a rdf:List;
+  rdf:first "GUY";
+  rdf:rest <_:559>.
+
+<_:814> a rdf:List;
+  rdf:first "TTO";
+  rdf:rest <_:8969>.
+
+<_:8144> a rdf:List;
+  rdf:first "NATO-U";
+  rdf:rest <_:322>.
+
+<_:815> a rdf:List;
+  rdf:first "RWA";
+  rdf:rest <_:241>.
+
+<_:816> a rdf:List;
+  rdf:first "BVT";
+  rdf:rest <_:29>.
+
+<_:8161> a rdf:List;
+  rdf:first "TK-BLFH";
+  rdf:rest <_:3069>.
+
+<_:817> a rdf:List;
+  rdf:first "LUX";
+  rdf:rest <_:902>.
+
+<_:818> a rdf:List;
+  rdf:first "CNWDI_00001";
+  rdf:rest <_:799>.
+
+<_:8181> a rdf:List;
+  rdf:first "CCI";
+  rdf:rest <_:6893>.
+
+<_:819> a rdf:List;
+  rdf:first "TJK";
+  rdf:rest <_:532>.
+
+<_:82> a rdf:List;
+  rdf:first "U";
+  rdf:rest rdf:nil.
+
+<_:820> a rdf:List;
+  rdf:first "MCO";
+  rdf:rest <_:524>.
+
+<_:821> a rdf:List;
+  rdf:first "ZWE";
+  rdf:rest <_:601>.
+
+<_:8216> a rdf:List;
+  rdf:first "MIFH";
+  rdf:rest <_:8845>.
+
+<_:822> a rdf:List;
+  rdf:first "IRKS";
+  rdf:rest <_:1719>.
+
+<_:823> a rdf:List;
+  rdf:first "GUM";
+  rdf:rest <_:7443>.
+
+<_:8233> a rdf:List;
+  rdf:first "FRME";
+  rdf:rest <_:9197>.
+
+<_:8239> a rdf:List;
+  rdf:first "MRT";
+  rdf:rest <_:300>.
+
+<_:824> a rdf:List;
+  rdf:first "HUN";
+  rdf:rest <_:285>.
+
+<_:825> a rdf:List;
+  rdf:first "IMN";
+  rdf:rest <_:7121>.
+
+<_:8259> a rdf:List;
+  rdf:first "ID";
+  rdf:rest <_:1637>.
+
+<_:826> a rdf:List;
+  rdf:first "XTR";
+  rdf:rest <_:547>.
+
+<_:827> a rdf:List;
+  rdf:first "XJN";
+  rdf:rest <_:155>.
+
+<_:828> a rdf:List;
+  rdf:first "GIB";
+  rdf:rest <_:651>.
+
+<_:8287> a rdf:List;
+  rdf:first "VAT";
+  rdf:rest <_:9326>.
+
+<_:829> a rdf:List;
+  rdf:first "ERI";
+  rdf:rest <_:847>.
+
+<_:83> a rdf:List;
+  rdf:first "REL";
+  rdf:rest <_:56>.
+
+<_:830> a rdfs:Datatype;
+  owl:oneOf ("DS" "XD" "ND" "SBU" "SBU-NF" "LES" "LES-NF" "SSI" "NNPI").
+
+<_:831> a rdf:List;
+  rdf:first "MCO";
+  rdf:rest <_:135>.
+
+<_:8312> a rdf:List;
+  rdf:first "AGO";
+  rdf:rest <_:5348>.
+
+<_:8319> a rdf:List;
+  rdf:first "IPMC";
+  rdf:rest <_:9150>.
+
+<_:832> a rdf:List;
+  rdf:first "AX3";
+  rdf:rest <_:965>.
+
+<_:833> a rdf:List;
+  rdf:first "YEM";
+  rdf:rest <_:991>.
+
+<_:8333> a rdf:List;
+  rdf:first "MRT";
+  rdf:rest <_:7125>.
+
+<_:8336> a rdf:List;
+  rdf:first "AX3";
+  rdf:rest <_:206>.
+
+<_:834> a rdf:List;
+  rdf:first "BFA";
+  rdf:rest <_:873>.
+
+<_:8355> a rdf:List;
+  rdf:first "SI-NK";
+  rdf:rest <_:4970>.
+
+<_:836> a rdf:List;
+  rdf:first "SWE";
+  rdf:rest <_:626>.
+
+<_:8367> a rdf:List;
+  rdf:first "HTI";
+  rdf:rest <_:824>.
+
+<_:837> a rdf:List;
+  rdf:first "PHL";
+  rdf:rest <_:120>.
+
+<_:8372> a rdf:List;
+  rdf:first "XGZ";
+  rdf:rest <_:8492>.
+
+<_:838> a rdf:List;
+  rdf:first "COD";
+  rdf:rest <_:739>.
+
+<_:839> a rdf:List;
+  rdf:first "BRB";
+  rdf:rest <_:239>.
+
+<_:8392> a rdf:List;
+  rdf:first "GENETIC";
+  rdf:rest <_:7605>.
+
+<_:84> a rdf:List;
+  rdf:first "25X9";
+  rdf:rest <_:2>.
+
+<_:840> a rdf:List;
+  rdf:first "MOZ";
+  rdf:rest <_:478>.
+
+<_:841> a rdf:List;
+  rdf:first "NSG";
+  rdf:rest <_:105>.
+
+<_:842> a rdf:List;
+  rdf:first "FSEC";
+  rdf:rest <_:2852>.
+
+<_:8422> a rdf:List;
+  rdf:first "TSCA";
+  rdf:rest <_:6084>.
+
+<_:8423> a rdf:List;
+  rdf:first "JURY";
+  rdf:rest <_:3063>.
+
+<_:8424> a rdf:List;
+  rdf:first "TGO";
+  rdf:rest <_:2332>.
+
+<_:843> a rdf:List;
+  rdf:first "HTI";
+  rdf:rest <_:538>.
+
+<_:8431> a rdf:List;
+  rdf:first "TUR";
+  rdf:rest <_:1102>.
+
+<_:844> a rdf:List;
+  rdf:first "GMIF";
+  rdf:rest <_:182>.
+
+<_:845> a rdf:List;
+  rdf:first "ALB";
+  rdf:rest <_:1773>.
+
+<_:8455> a rdf:List;
+  rdf:first "GRL";
+  rdf:rest <_:4998>.
+
+<_:8458> a rdf:List;
+  rdf:first "PCN";
+  rdf:rest <_:4282>.
+
+<_:846> a rdf:List;
+  rdf:first "ECU";
+  rdf:rest <_:373>.
+
+<_:847> a rdf:List;
+  rdf:first "ESH";
+  rdf:rest <_:602>.
+
+<_:848> a rdf:List;
+  rdf:first "IRN";
+  rdf:rest <_:4227>.
+
+<_:8482> a rdf:List;
+  rdf:first "JOR";
+  rdf:rest <_:9730>.
+
+<_:8487> a rdf:List;
+  rdf:first "XCY";
+  rdf:rest <_:6083>.
+
+<_:8488> a rdf:List;
+  rdf:first "MNP";
+  rdf:rest <_:290>.
+
+<_:849> a rdf:List;
+  rdf:first "MCO";
+  rdf:rest <_:9555>.
+
+<_:8492> a rdf:List;
+  rdf:first "XHO";
+  rdf:rest <_:925>.
+
+<_:8498> a rdf:List;
+  rdf:first "IMSC";
+  rdf:rest <_:9817>.
+
+<_:85> a rdf:List;
+  rdf:first "ATF";
+  rdf:rest <_:73>.
+
+<_:850> a rdf:List;
+  rdf:first "PNG";
+  rdf:rest <_:5426>.
+
+<_:8503> a rdf:List;
+  rdf:first "MIFH";
+  rdf:rest <_:4448>.
+
+<_:851> a rdf:List;
+  rdf:first "NNPI";
+  rdf:rest rdf:nil.
+
+<_:8518> a rdf:List;
+  rdf:first "MTQ";
+  rdf:rest <_:9814>.
+
+<_:852> a rdf:List;
+  rdf:first "XBI";
+  rdf:rest <_:9370>.
+
+<_:853> a rdf:List;
+  rdf:first "TTO";
+  rdf:rest <_:557>.
+
+<_:8530> a rdf:List;
+  rdf:first "BWA";
+  rdf:rest <_:939>.
+
+<_:854> a rdf:List;
+  rdf:first "MPFL";
+  rdf:rest <_:869>.
+
+<_:8547> a rdf:List;
+  rdf:first "RTR";
+  rdf:rest <_:7836>.
+
+<_:8548> a rdf:List;
+  rdf:first "SPM";
+  rdf:rest <_:6827>.
+
+<_:855> a rdf:List;
+  rdf:first "TZA";
+  rdf:rest <_:267>.
+
+<_:856> a rdf:List;
+  rdf:first "XMW";
+  rdf:rest <_:9669>.
+
+<_:8564> a rdf:List;
+  rdf:first "CUSPI";
+  rdf:rest <_:9261>.
+
+<_:857> a rdf:List;
+  rdf:first "GEOCAP_00001";
+  rdf:rest <_:709>.
+
+<_:858> a rdfs:Datatype;
+  owl:oneOf ("ABW" "AFG" "AGO" "AIA" "ALB" "AND" "ARE" "ARG" "ARM" "ASM" "ATA" "ATF" "ATG" "AUS" "AUT" "AX1" "AX2" "AX3" "AZE" "BDI" "BEL" "BEN" "BES" "BFA" "BGD" "BGR" "BHR" "BHS" "BIH" "BLM" "BLR" "BLZ" "BMU" "BOL" "BRA" "BRB" "BRN" "BTN" "BVT" "BWA" "CAF" "CAN" "CCK" "CHE" "CHL" "CHN" "CIV" "CMR" "COD" "COG" "COK" "COL" "COM" "CPT" "CPV" "CRI" "CUB" "CUW" "CXR" "CYM" "CYP" "CZE" "DEU" "DGA" "DJI" "DMA" "DNK" "DOM" "DZA" "ECU" "EGY" "ERI" "ESH" "ESP" "EST" "ETH" "FIN" "FJI" "FLK" "FRA" "FRO" "FSM" "GAB" "GBR" "GEO" "GGY" "GHA" "GIB" "GIN" "GLP" "GMB" "GNB" "GNQ" "GRC" "GRD" "GRL" "GTM" "GUF" "GUM" "GUY" "HKG" "HMD" "HND" "HRV" "HTI" "HUN" "IDN" "IMN" "IND" "IOT" "IRL" "IRN" "IRQ" "ISL" "ISR" "ITA" "JAM" "JEY" "JOR" "JPN" "KAZ" "KEN" "KGZ" "KHM" "KIR" "KNA" "KOR" "KWT" "LAO" "LBN" "LBR" "LBY" "LCA" "LIE" "LKA" "LSO" "LTU" "LUX" "LVA" "MAC" "MAF" "MAR" "MCO" "MDA" "MDG" "MDV" "MEX" "MHL" "MKD" "MLI" "MLT" "MMR" "MNE" "MNG" "MNP" "MOZ" "MRT" "MSR" "MTQ" "MUS" "MWI" "MYS" "MYT" "NAM" "NCL" "NER" "NFK" "NGA" "NIC" "NIU" "NLD" "NOR" "NPL" "NRU" "NZL" "OMN" "PAK" "PAN" "PCN" "PER" "PHL" "PLW" "PNG" "POL" "PRI" "PRK" "PRT" "PRY" "PYF" "QAT" "REU" "ROU" "RUS" "RWA" "SAU" "SDN" "SEN" "SGP" "SGS" "SHN" "SLB" "SLE" "SLV" "SMR" "SOM" "SPM" "SRB" "SSD" "STP" "SUR" "SVK" "SVN" "SWE" "SWZ" "SXM" "SYC" "SYR" "TCA" "TCD" "TGO" "THA" "TJK" "TKL" "TKM" "TLS" "TON" "TTO" "TUN" "TUR" "TUV" "TWN" "TZA" "UGA" "UKR" "URY" "UZB" "VAT" "VCT" "VEN" "VGB" "VIR" "VNM" "VUT" "WLF" "WSM" "XAC" "XAZ" "XBI" "XBK" "XCR" "XCS" "XCY" "XEU" "XGL" "XGZ" "XHO" "XJA" "XJM" "XJN" "XJV" "XKM" "XKN" "XKR" "XKS" "XMW" "XNV" "XPL" "XPR" "XQZ" "XSP" "XSV" "XTR" "XWB" "XWK" "XXD" "YEM" "ZAF" "ZMB" "ZWE" "ACGU" "AMSP" "AOSC" "APFS" "ASEA" "AUSTRALIA_GROUP" "BHTF" "BWCS" "CFCK" "CFOD" "CFUP" "CLFC" "CMFC" "CMFP" "CPMT" "CTOC" "CWCS" "ECTF" "EFOR" "EU" "EUDA" "FRME" "FVEY" "GCCH" "GCTF" "GFNX" "GMIF" "IESC" "IMSC" "IMSP" "IPMC" "IRKS" "ISAF" "ISSG" "KFOR" "MCFI" "MESF" "MGEU" "MIFH" "MLEC" "MNTF" "MPFL" "NACT" "NATO" "NCFE" "NKIC" "NRDC" "NSG" "OSAG" "OSTY" "PAWA" "PGMF" "PSMX" "RISC" "RSMA" "SFOR" "SOFP" "SPAA" "TEYE" "TFTC" "UNCK").
+
+<_:859> a rdf:List;
+  rdf:first "ATA";
+  rdf:rest <_:569>.
+
+<_:86> a rdf:List;
+  rdf:first "25X5";
+  rdf:rest <_:35>.
+
+<_:860> a rdf:List;
+  rdf:first "AUS";
+  rdf:rest <_:349>.
+
+<_:8600> a rdf:List;
+  rdf:first "ESP";
+  rdf:rest <_:512>.
+
+<_:8606> a rdf:List;
+  rdf:first "LSO";
+  rdf:rest <_:5002>.
+
+<_:861> a rdf:List;
+  rdf:first "DoD-Dist-F";
+  rdf:rest <_:372>.
+
+<_:8613> a rdf:List;
+  rdf:first "BTN";
+  rdf:rest <_:3332>.
+
+<_:862> a rdf:List;
+  rdf:first "KOR";
+  rdf:rest <_:562>.
+
+<_:8620> a rdf:List;
+  rdf:first "DoD-Dist-D";
+  rdf:rest <_:106>.
+
+<_:8629> a rdf:List;
+  rdf:first "CUI-PROVISIONAL-PHYSH";
+  rdf:rest <_:7735>.
+
+<_:863> a rdf:List;
+  rdf:first "GAB";
+  rdf:rest <_:291>.
+
+<_:864> a rdf:List;
+  rdf:first "MAR";
+  rdf:rest <_:831>.
+
+<_:8640> a rdf:List;
+  rdf:first "SYR";
+  rdf:rest <_:8093>.
+
+<_:865> a rdf:List;
+  rdf:first "CCK";
+  rdf:rest <_:589>.
+
+<_:866> a rdf:List;
+  rdf:first "SSD";
+  rdf:rest <_:9306>.
+
+<_:8669> a rdfs:Datatype;
+  owl:oneOf ("AIV" "ADPO" "CRITAN" "ARCHR" "FSEC" "BUDG" "FUND" "CVI" "CHLD" "CCI" "CONTRACT" "SUB" "CTI" "CHRI" "CEII" "LDNA" "EXPT" "JURY" "TAX" "FISA" "FISAB" "FNC" "INTEL" "NUC" "PRVCY" "PROCURE" "PROPIN" "GENETIC" "GEO" "HLTH" "HISTP" "INF" "PRIIG" "IFNC" "ID" "INTL" "INV" "LFNC" "NPSR" "NNPI" "SRI" "PERS" "MFC" "PCII" "LPROT" "SGI" "SSI" "SSEL" "STAT" "STUD" "TSCA" "DCNI" "UCNI" "CENS" "WHSTL" "WIT" "WDT").
+
+<_:867> a rdf:List;
+  rdf:first "GEOCAP";
+  rdf:rest <_:4412>.
+
+<_:8672> a rdf:List;
+  rdf:first "PRIOR";
+  rdf:rest <_:2202>.
+
+<_:868> a rdf:List;
+  rdf:first "KEN";
+  rdf:rest <_:177>.
+
+<_:8683> a rdf:List;
+  rdf:first "AND";
+  rdf:rest <_:933>.
+
+<_:869> a rdf:List;
+  rdf:first "NACT";
+  rdf:rest <_:985>.
+
+<_:8696> a rdf:List;
+  rdf:first "JPN";
+  rdf:rest <_:903>.
+
+<_:87> a rdf:List;
+  rdf:first "COK";
+  rdf:rest <_:429>.
+
+<_:870> a rdf:List;
+  rdf:first "KEN";
+  rdf:rest <_:5974>.
+
+<_:8700> a rdf:List;
+  rdf:first "TKL";
+  rdf:rest <_:3270>.
+
+<_:8702> a rdf:List;
+  rdf:first "COK";
+  rdf:rest <_:496>.
+
+<_:871> a rdf:List;
+  rdf:first "DISPLAYONLY_00001";
+  rdf:rest rdf:nil.
+
+<_:8719> a rdf:List;
+  rdf:first "WSM";
+  rdf:rest <_:712>.
+
+<_:872> a rdf:List;
+  rdf:first "ABW";
+  rdf:rest <_:479>.
+
+<_:873> a rdf:List;
+  rdf:first "BGD";
+  rdf:rest <_:419>.
+
+<_:8732> a rdf:List;
+  rdf:first "NZL";
+  rdf:rest <_:703>.
+
+<_:874> a rdf:List;
+  rdf:first "BOL";
+  rdf:rest <_:886>.
+
+<_:875> a rdf:List;
+  rdf:first "CHL";
+  rdf:rest <_:566>.
+
+<_:876> a rdf:List;
+  rdf:first "ISR";
+  rdf:rest <_:3842>.
+
+<_:877> a rdf:List;
+  rdf:first "XKR";
+  rdf:rest <_:593>.
+
+<_:878> a rdf:List;
+  rdf:first "NPL";
+  rdf:rest <_:802>.
+
+<_:879> a rdf:List;
+  rdf:first "UNCK";
+  rdf:rest rdf:nil.
+
+<_:8790> a rdf:List;
+  rdf:first "AUSTRALIA_GROUP";
+  rdf:rest <_:369>.
+
+<_:88> a rdf:List;
+  rdf:first "DJI";
+  rdf:rest <_:277>.
+
+<_:880> a rdf:List;
+  rdf:first "MDG";
+  rdf:rest <_:318>.
+
+<_:8801> a rdf:List;
+  rdf:first "ROU";
+  rdf:rest <_:2280>.
+
+<_:881> a rdf:List;
+  rdf:first "SGS";
+  rdf:rest <_:697>.
+
+<_:882> a rdf:List;
+  rdf:first "MLT";
+  rdf:rest <_:144>.
+
+<_:883> a rdf:List;
+  rdf:first "NRDC";
+  rdf:rest <_:841>.
+
+<_:884> a rdf:List;
+  rdf:first "PNG";
+  rdf:rest <_:148>.
+
+<_:8845> a rdf:List;
+  rdf:first "MLEC";
+  rdf:rest <_:2024>.
+
+<_:885> a rdf:List;
+  rdf:first "FRA";
+  rdf:rest <_:7083>.
+
+<_:8852> a rdf:List;
+  rdf:first "HCS-O";
+  rdf:rest <_:3190>.
+
+<_:8855> a rdf:List;
+  rdf:first "VEN";
+  rdf:rest <_:404>.
+
+<_:886> a rdf:List;
+  rdf:first "BRA";
+  rdf:rest <_:797>.
+
+<_:8862> a rdf:List;
+  rdf:first "DJI";
+  rdf:rest <_:3568>.
+
+<_:8863> a rdf:List;
+  rdf:first "TKM";
+  rdf:rest <_:308>.
+
+<_:8865> a rdf:List;
+  rdf:first "UZB";
+  rdf:rest <_:1122>.
+
+<_:8866> a rdf:List;
+  rdf:first "ARCHR";
+  rdf:rest <_:842>.
+
+<_:8868> a rdf:List;
+  rdf:first "XXD";
+  rdf:rest <_:7686>.
+
+<_:887> a rdf:List;
+  rdf:first "VUT";
+  rdf:rest <_:670>.
+
+<_:8870> a rdf:List;
+  rdf:first "RC_Dissemination_Control_Required";
+  rdf:rest <_:3251>.
+
+<_:8879> a rdf:List;
+  rdf:first "SAU";
+  rdf:rest <_:9689>.
+
+<_:888> a rdf:List;
+  rdf:first "XAZ";
+  rdf:rest <_:852>.
+
+<_:889> a rdf:List;
+  rdf:first "HTI";
+  rdf:rest <_:3134>.
+
+<_:89> a rdf:List;
+  rdf:first "25X1-EO-12951";
+  rdf:rest <_:5>.
+
+<_:890> a rdf:List;
+  rdf:first "NPL";
+  rdf:rest <_:325>.
+
+<_:891> a rdf:List;
+  rdf:first "DoD-Dist-B";
+  rdf:rest <_:6704>.
+
+<_:8913> a rdf:List;
+  rdf:first "BMU";
+  rdf:rest <_:775>.
+
+<_:8918> a rdf:List;
+  rdf:first "DoD-Dist-B";
+  rdf:rest <_:6923>.
+
+<_:8919> a rdf:List;
+  rdf:first "MIFH";
+  rdf:rest <_:7256>.
+
+<_:892> a rdf:List;
+  rdf:first "NATO_00002";
+  rdf:rest <_:248>.
+
+<_:893> a rdf:List;
+  rdf:first "SWZ";
+  rdf:rest <_:694>.
+
+<_:894> a rdf:List;
+  rdf:first "LUX";
+  rdf:rest <_:195>.
+
+<_:895> a rdf:List;
+  rdf:first "VCT";
+  rdf:rest <_:944>.
+
+<_:8956> a rdf:List;
+  rdf:first "STP";
+  rdf:rest <_:4010>.
+
+<_:8957> a rdf:List;
+  rdf:first "CFOD";
+  rdf:rest <_:999>.
+
+<_:896> a rdf:List;
+  rdf:first "TCD";
+  rdf:rest <_:783>.
+
+<_:8969> a rdf:List;
+  rdf:first "TUN";
+  rdf:rest <_:8059>.
+
+<_:897> a rdf:List;
+  rdf:first "NIU";
+  rdf:rest <_:5813>.
+
+<_:898> a rdf:List;
+  rdf:first "XWB";
+  rdf:rest <_:294>.
+
+<_:8984> a rdf:List;
+  rdf:first "SGI";
+  rdf:rest <_:4698>.
+
+<_:899> a rdf:List;
+  rdf:first "XTR";
+  rdf:rest <_:5870>.
+
+<_:8996> a rdf:List;
+  rdf:first "EUDA";
+  rdf:rest <_:6011>.
+
+<_:9> a rdf:List;
+  rdf:first "25X7";
+  rdf:rest <_:52>.
+
+<_:90> a rdf:List;
+  rdf:first "DL_ONLY";
+  rdf:rest <_:98>.
+
+<_:900> a rdf:List;
+  rdf:first "BRN";
+  rdf:rest <_:7245>.
+
+<_:901> a rdf:List;
+  rdf:first "NOR";
+  rdf:rest <_:890>.
+
+<_:902> a rdf:List;
+  rdf:first "LVA";
+  rdf:rest <_:319>.
+
+<_:903> a rdf:List;
+  rdf:first "KAZ";
+  rdf:rest <_:870>.
+
+<_:9035> a rdf:List;
+  rdf:first "UKR";
+  rdf:rest <_:9290>.
+
+<_:904> a rdf:List;
+  rdf:first "XGL";
+  rdf:rest <_:403>.
+
+<_:9045> a rdf:List;
+  rdf:first "XKM";
+  rdf:rest <_:1885>.
+
+<_:9049> a rdf:List;
+  rdf:first "RESD";
+  rdf:rest <_:2861>.
+
+<_:905> a rdf:List;
+  rdf:first "KFOR";
+  rdf:rest <_:3636>.
+
+<_:906> a rdf:List;
+  rdf:first "ERI";
+  rdf:rest <_:571>.
+
+<_:907> a rdf:List;
+  rdf:first "ROU";
+  rdf:rest <_:952>.
+
+<_:9077> a rdf:List;
+  rdf:first "SFOR";
+  rdf:rest <_:278>.
+
+<_:908> a rdf:List;
+  rdf:first "CLFC";
+  rdf:rest <_:977>.
+
+<_:909> a rdf:List;
+  rdf:first "CWCS";
+  rdf:rest <_:443>.
+
+<_:9091> a rdf:List;
+  rdf:first "XAZ";
+  rdf:rest <_:1086>.
+
+<_:91> a rdf:List;
+  rdf:first "FIN";
+  rdf:rest <_:610>.
+
+<_:910> a rdf:List;
+  rdf:first "ZWE";
+  rdf:rest <_:6290>.
+
+<_:911> a rdf:List;
+  rdf:first "NAM";
+  rdf:rest <_:165>.
+
+<_:912> a rdf:List;
+  rdf:first "LSO";
+  rdf:rest <_:143>.
+
+<_:913> a rdf:List;
+  rdf:first "BVT";
+  rdf:rest <_:117>.
+
+<_:9134> a rdf:List;
+  rdf:first "GHA";
+  rdf:rest <_:657>.
+
+<_:914> a rdf:List;
+  rdf:first "FRA";
+  rdf:rest <_:596>.
+
+<_:915> a rdf:List;
+  rdf:first "NRDC";
+  rdf:rest <_:713>.
+
+<_:9150> a rdf:List;
+  rdf:first "IRKS";
+  rdf:rest <_:211>.
+
+<_:916> a rdf:List;
+  rdf:first "EST";
+  rdf:rest <_:7904>.
+
+<_:917> a rdf:List;
+  rdf:first "EUDA";
+  rdf:rest <_:233>.
+
+<_:9174> a rdf:List;
+  rdf:first "IMSP";
+  rdf:rest <_:591>.
+
+<_:918> a rdf:List;
+  rdf:first "IPMC";
+  rdf:rest <_:3192>.
+
+<_:9180> a rdf:List;
+  rdf:first "GLP";
+  rdf:rest <_:727>.
+
+<_:9182> a rdf:List;
+  rdf:first "NCFE";
+  rdf:rest <_:654>.
+
+<_:9188> a rdf:List;
+  rdf:first "IMSP";
+  rdf:rest <_:918>.
+
+<_:919> a rdf:List;
+  rdf:first "IRL";
+  rdf:rest <_:848>.
+
+<_:9197> a rdf:List;
+  rdf:first "FVEY";
+  rdf:rest <_:3065>.
+
+<_:92> a rdf:List;
+  rdf:first "RD-SG-14";
+  rdf:rest <_:65>.
+
+<_:920> a rdf:List;
+  rdf:first "TLS";
+  rdf:rest <_:746>.
+
+<_:9202> a rdf:List;
+  rdf:first "CTI";
+  rdf:rest <_:6207>.
+
+<_:921> a rdf:List;
+  rdf:first "XQZ";
+  rdf:rest <_:784>.
+
+<_:9219> a rdf:List;
+  rdf:first "XKR";
+  rdf:rest <_:157>.
+
+<_:922> a rdf:List;
+  rdf:first "ISR";
+  rdf:rest <_:60>.
+
+<_:9221> a rdf:List;
+  rdf:first "ACPI";
+  rdf:rest <_:3499>.
+
+<_:9229> a rdf:List;
+  rdf:first "COMPT";
+  rdf:rest <_:9592>.
+
+<_:923> a rdf:List;
+  rdf:first "MHL";
+  rdf:rest <_:2943>.
+
+<_:924> a rdf:List;
+  rdf:first "CTOC";
+  rdf:rest <_:281>.
+
+<_:925> a rdf:List;
+  rdf:first "XJA";
+  rdf:rest <_:7374>.
+
+<_:9250> a rdf:List;
+  rdf:first "FNC";
+  rdf:rest <_:9801>.
+
+<_:926> a rdf:List;
+  rdf:first "MIFH";
+  rdf:rest <_:307>.
+
+<_:9261> a rdf:List;
+  rdf:first "DPPD";
+  rdf:rest <_:3899>.
+
+<_:927> a rdf:List;
+  rdf:first "AX2";
+  rdf:rest <_:832>.
+
+<_:9275> a rdf:List;
+  rdf:first "INV";
+  rdf:rest <_:7841>.
+
+<_:929> a rdf:List;
+  rdf:first "TFTC";
+  rdf:rest <_:203>.
+
+<_:9290> a rdf:List;
+  rdf:first "URY";
+  rdf:rest <_:3218>.
+
+<_:9296> a rdf:List;
+  rdf:first "LVIC";
+  rdf:rest <_:2634>.
+
+<_:9298> a rdf:List;
+  rdf:first "BUR-BLG";
+  rdf:rest <_:3262>.
+
+<_:93> a rdf:List;
+  rdf:first "AWP";
+  rdf:rest <_:90>.
+
+<_:930> a rdf:List;
+  rdf:first "NATO_00005";
+  rdf:rest <_:465>.
+
+<_:9302> a rdf:List;
+  rdf:first "BLM";
+  rdf:rest <_:4440>.
+
+<_:9306> a rdf:List;
+  rdf:first "STP";
+  rdf:rest <_:9329>.
+
+<_:931> a rdf:List;
+  rdf:first "PHL";
+  rdf:rest <_:398>.
+
+<_:932> a rdf:List;
+  rdf:first "PAWA";
+  rdf:rest <_:9615>.
+
+<_:9326> a rdf:List;
+  rdf:first "VCT";
+  rdf:rest <_:3325>.
+
+<_:9329> a rdf:List;
+  rdf:first "SUR";
+  rdf:rest <_:7305>.
+
+<_:933> a rdf:List;
+  rdf:first "ARE";
+  rdf:rest <_:235>.
+
+<_:9338> a rdf:List;
+  rdf:first "FISA";
+  rdf:rest <_:9425>.
+
+<_:934> a rdf:List;
+  rdf:first "GEO";
+  rdf:rest <_:5451>.
+
+<_:935> a rdf:List;
+  rdf:first "CHN";
+  rdf:rest <_:4848>.
+
+<_:936> a rdfs:Datatype;
+  owl:oneOf ("NATO-U" "NATO-R" "NATO-C" "NATO-S" "NATO-TS").
+
+<_:9360> a rdf:List;
+  rdf:first "RSMA";
+  rdf:rest <_:4853>.
+
+<_:9362> a rdf:List;
+  rdf:first "SRI";
+  rdf:rest <_:1581>.
+
+<_:937> a rdf:List;
+  rdf:first "LCA";
+  rdf:rest <_:436>.
+
+<_:9370> a rdf:List;
+  rdf:first "XBK";
+  rdf:rest <_:3245>.
+
+<_:938> a rdf:List;
+  rdf:first "TFTC";
+  rdf:rest <_:1034>.
+
+<_:939> a rdf:List;
+  rdf:first "CAF";
+  rdf:rest <_:222>.
+
+<_:9398> a rdf:List;
+  rdf:first "IRQ";
+  rdf:rest <_:3916>.
+
+<_:94> a rdf:List;
+  rdf:first "25X3";
+  rdf:rest <_:18>.
+
+<_:940> a rdf:List;
+  rdf:first "EU";
+  rdf:rest <_:997>.
+
+<_:941> a rdf:List;
+  rdf:first "AFG";
+  rdf:rest <_:8312>.
+
+<_:942> a rdf:List;
+  rdf:first "MNP";
+  rdf:rest <_:2760>.
+
+<_:9423> a rdf:List;
+  rdf:first "XAC";
+  rdf:rest <_:9091>.
+
+<_:9425> a rdf:List;
+  rdf:first "FISAB";
+  rdf:rest <_:9250>.
+
+<_:9428> a rdf:List;
+  rdf:first "LBN";
+  rdf:rest <_:2793>.
+
+<_:943> a rdf:List;
+  rdf:first "NKIC";
+  rdf:rest <_:883>.
+
+<_:9435> a rdf:List;
+  rdf:first "AZE";
+  rdf:rest <_:506>.
+
+<_:944> a rdf:List;
+  rdf:first "VEN";
+  rdf:rest <_:508>.
+
+<_:9440> a rdf:List;
+  rdf:first "TRACE";
+  rdf:rest <_:9049>.
+
+<_:9447> a rdf:List;
+  rdf:first "TAI";
+  rdf:rest <_:5590>.
+
+<_:945> a rdf:List;
+  rdf:first "APFS";
+  rdf:rest <_:660>.
+
+<_:946> a rdfs:Datatype;
+  owl:oneOf ("RS" "FOUO" "OC" "OC-USGOV" "IMC" "NF" "PR" "REL" "RELIDO" "EYES" "DSEN" "RAWFISA" "FISA" "DISPLAYONLY" "EXEMPT_FROM_ICD501_DISCOVERY" "WAIVED" "AC" "AWP" "DL_ONLY" "FED_ONLY" "FEDCON" "NOCON").
+
+<_:947> a rdf:List;
+  rdf:first "XBK";
+  rdf:rest <_:172>.
+
+<_:9474> a rdf:List;
+  rdf:first "GUM";
+  rdf:rest <_:798>.
+
+<_:948> a rdf:List;
+  rdf:first "LBY";
+  rdf:rest <_:678>.
+
+<_:9485> a rdf:List;
+  rdf:first "APFS";
+  rdf:rest <_:9975>.
+
+<_:949> a rdf:List;
+  rdf:first "EFOR";
+  rdf:rest <_:662>.
+
+<_:9496> a rdf:List;
+  rdf:first "HKG";
+  rdf:rest <_:2567>.
+
+<_:95> a rdf:List;
+  rdf:first "50X2";
+  rdf:rest <_:7>.
+
+<_:950> a rdf:List;
+  rdf:first "MAF";
+  rdf:rest <_:864>.
+
+<_:9501> a rdf:List;
+  rdf:first "CUW";
+  rdf:rest <_:800>.
+
+<_:951> a rdf:List;
+  rdf:first "RWA";
+  rdf:rest <_:584>.
+
+<_:952> a rdf:List;
+  rdf:first "RUS";
+  rdf:rest <_:951>.
+
+<_:953> a rdf:List;
+  rdf:first "MMR";
+  rdf:rest <_:786>.
+
+<_:9534> a rdfs:Datatype;
+  owl:oneOf ("FISA_00001" "FISA_00002" "FISA_00003" "RAWFISA_00001" "CNWDI_00001" "RD_00001" "FRD_00001" "DS_00001" "DSEN_00001" "DoD-Dist-A_00001" "COMSEC_00001" "SSI_00001" "GEOCAP_00001" "NATO_00001" "NATO_00002" "NATO_00003" "NATO_00004" "NATO_00005" "RC_Dissemination_Control_Required_00001" "ITAR-EAR_00001" "DISPLAYONLY_00001").
+
+<_:954> a rdf:List;
+  rdf:first "NZL";
+  rdf:rest <_:692>.
+
+<_:9549> a rdf:List;
+  rdf:first "KHM";
+  rdf:rest <_:5980>.
+
+<_:955> a rdf:List;
+  rdf:first "AUT";
+  rdf:rest <_:6277>.
+
+<_:9555> a rdf:List;
+  rdf:first "MDA";
+  rdf:rest <_:1713>.
+
+<_:956> a rdf:List;
+  rdf:first "IOT";
+  rdf:rest <_:743>.
+
+<_:9561> a rdf:List;
+  rdf:first "KOR";
+  rdf:rest <_:476>.
+
+<_:9566> a rdf:List;
+  rdf:first "CRI";
+  rdf:rest <_:2947>.
+
+<_:957> a rdf:List;
+  rdf:first "SSD";
+  rdf:rest <_:574>.
+
+<_:9572> a rdf:List;
+  rdf:first "LIE";
+  rdf:rest <_:2443>.
+
+<_:9573> a rdf:List;
+  rdf:first "SXM";
+  rdf:rest <_:4115>.
+
+<_:958> a rdf:List;
+  rdf:first "RISC";
+  rdf:rest <_:136>.
+
+<_:959> a rdf:List;
+  rdf:first "ARE";
+  rdf:rest <_:504>.
+
+<_:9592> a rdf:List;
+  rdf:first "DREC";
+  rdf:rest <_:7857>.
+
+<_:96> a rdf:List;
+  rdf:first "MOZ";
+  rdf:rest <_:505>.
+
+<_:960> a rdf:List;
+  rdf:first "BWCS";
+  rdf:rest <_:796>.
+
+<_:9604> a rdf:List;
+  rdf:first "BWCS";
+  rdf:rest <_:1083>.
+
+<_:961> a rdf:List;
+  rdf:first "XJV";
+  rdf:rest <_:565>.
+
+<_:9613> a rdf:List;
+  rdf:first "CMFP";
+  rdf:rest <_:6073>.
+
+<_:9614> a rdf:List;
+  rdf:first "AUT";
+  rdf:rest <_:1982>.
+
+<_:9615> a rdf:List;
+  rdf:first "PGMF";
+  rdf:rest <_:8085>.
+
+<_:9616> a rdf:List;
+  rdf:first "PSMX";
+  rdf:rest <_:187>.
+
+<_:962> a rdf:List;
+  rdf:first "NCFE";
+  rdf:rest <_:943>.
+
+<_:963> a rdf:List;
+  rdf:first "GRC";
+  rdf:rest <_:552>.
+
+<_:964> a rdf:List;
+  rdf:first "AUSTRALIA_GROUP";
+  rdf:rest <_:5779>.
+
+<_:965> a rdf:List;
+  rdf:first "AZE";
+  rdf:rest <_:79>.
+
+<_:9655> a rdf:List;
+  rdf:first "ETH";
+  rdf:rest <_:3682>.
+
+<_:966> a rdf:List;
+  rdf:first "XSV";
+  rdf:rest <_:899>.
+
+<_:9666> a rdf:List;
+  rdf:first "GTM";
+  rdf:rest <_:1537>.
+
+<_:9669> a rdf:List;
+  rdf:first "XNV";
+  rdf:rest <_:6438>.
+
+<_:967> a rdf:List;
+  rdf:first "EXEMPT_FROM_ICD501_DISCOVERY";
+  rdf:rest <_:27>.
+
+<_:968> a rdf:List;
+  rdf:first "IRN";
+  rdf:rest <_:773>.
+
+<_:9689> a rdf:List;
+  rdf:first "SDN";
+  rdf:rest <_:1049>.
+
+<_:969> a rdf:List;
+  rdf:first "REU";
+  rdf:rest <_:388>.
+
+<_:9691> a rdf:List;
+  rdf:first "NIU";
+  rdf:rest <_:141>.
+
+<_:9694> a rdf:List;
+  rdf:first "ARE";
+  rdf:rest <_:9819>.
+
+<_:97> a rdf:List;
+  rdf:first "AFG";
+  rdf:rest <_:163>.
+
+<_:970> a rdf:List;
+  rdf:first "IOT";
+  rdf:rest <_:726>.
+
+<_:971> a rdf:List;
+  rdf:first "AX2";
+  rdf:rest <_:7316>.
+
+<_:9714> a rdfs:Datatype;
+.
+
+<_:972> a rdf:List;
+  rdf:first "IMSP";
+  rdf:rest <_:514>.
+
+<_:9723> a rdf:List;
+  rdf:first "APFS";
+  rdf:rest <_:3091>.
+
+<_:973> a rdf:List;
+  rdf:first "SXM";
+  rdf:rest <_:170>.
+
+<_:9730> a rdf:List;
+  rdf:first "JPN";
+  rdf:rest <_:6074>.
+
+<_:974> a rdf:List;
+  rdf:first "RAWFISA";
+  rdf:rest <_:218>.
+
+<_:975> a rdf:List;
+  rdf:first "NGA";
+  rdf:rest <_:129>.
+
+<_:9754> a rdf:List;
+  rdf:first "SOFP";
+  rdf:rest <_:431>.
+
+<_:976> a rdf:List;
+  rdf:first "DSEN";
+  rdf:rest <_:418>.
+
+<_:9762> a rdf:List;
+  rdf:first "STUD";
+  rdf:rest <_:8422>.
+
+<_:977> a rdf:List;
+  rdf:first "CMFC";
+  rdf:rest <_:467>.
+
+<_:9773> a rdf:List;
+  rdf:first "PLW";
+  rdf:rest <_:850>.
+
+<_:978> a rdf:List;
+  rdf:first "BRA";
+  rdf:rest <_:809>.
+
+<_:979> a rdf:List;
+  rdf:first "NER";
+  rdf:rest <_:586>.
+
+<_:9792> a rdf:List;
+  rdf:first "NGA";
+  rdf:rest <_:481>.
+
+<_:98> a rdf:List;
+  rdf:first "FED_ONLY";
+  rdf:rest <_:75>.
+
+<_:980> a rdf:List;
+  rdf:first "GNB";
+  rdf:rest <_:558>.
+
+<_:9800> a rdf:List;
+  rdf:first "HLTH";
+  rdf:rest <_:5501>.
+
+<_:9801> a rdf:List;
+  rdf:first "INTEL";
+  rdf:rest <_:7932>.
+
+<_:981> a rdf:List;
+  rdf:first "MTQ";
+  rdf:rest <_:351>.
+
+<_:9814> a rdf:List;
+  rdf:first "MUS";
+  rdf:rest <_:3645>.
+
+<_:9817> a rdf:List;
+  rdf:first "IMSP";
+  rdf:rest <_:8319>.
+
+<_:9819> a rdf:List;
+  rdf:first "ARG";
+  rdf:rest <_:7630>.
+
+<_:982> a rdf:List;
+  rdf:first "PRI";
+  rdf:rest <_:5938>.
+
+<_:9826> a rdf:List;
+  rdf:first "PSEC";
+  rdf:rest <_:7449>.
+
+<_:983> a rdf:List;
+  rdf:first "SPM";
+  rdf:rest <_:2259>.
+
+<_:984> a rdf:List;
+  rdf:first "SWE";
+  rdf:rest <_:329>.
+
+<_:985> a rdf:List;
+  rdf:first "NATO";
+  rdf:rest <_:9182>.
+
+<_:986> a rdf:List;
+  rdf:first "DOM";
+  rdf:rest <_:5239>.
+
+<_:987> a rdf:List;
+  rdf:first "GFNX";
+  rdf:rest <_:5081>.
+
+<_:988> a rdf:List;
+  rdf:first "MLI";
+  rdf:rest <_:882>.
+
+<_:989> a rdf:List;
+  rdf:first "VIR";
+  rdf:rest <_:561>.
+
+<_:9894> a rdf:List;
+  rdf:first "UGA";
+  rdf:rest <_:9035>.
+
+<_:9899> a rdf:List;
+  rdf:first "AUSTRALIA_GROUP";
+  rdf:rest <_:517>.
+
+<_:99> a rdf:List;
+  rdf:first "IMC";
+  rdf:rest <_:260>.
+
+<_:990> a rdf:List;
+  rdf:first "NATO";
+  rdf:rest <_:962>.
+
+<_:991> a rdf:List;
+  rdf:first "ZAF";
+  rdf:rest <_:390>.
+
+<_:9911> a rdf:List;
+  rdf:first "REU";
+  rdf:rest <_:907>.
+
+<_:9912> a rdf:List;
+  rdf:first "SLV";
+  rdf:rest <_:5278>.
+
+<_:992> a rdf:List;
+  rdf:first "NRU";
+  rdf:rest <_:6124>.
+
+<_:993> a rdf:List;
+  rdf:first "URY";
+  rdf:rest <_:304>.
+
+<_:9931> a rdf:List;
+  rdf:first "LSCRN";
+  rdf:rest <_:4544>.
+
+<_:9938> a rdf:List;
+  rdf:first "CZE";
+  rdf:rest <_:5972>.
+
+<_:994> a rdf:List;
+  rdf:first "MHL";
+  rdf:rest <_:535>.
+
+<_:9944> a rdf:List;
+  rdf:first "INV";
+  rdf:rest <_:6857>.
+
+<_:995> a rdf:List;
+  rdf:first "ATF";
+  rdf:rest <_:545>.
+
+<_:9953> a rdf:List;
+  rdf:first "XJN";
+  rdf:rest <_:3045>.
+
+<_:996> a rdf:List;
+  rdf:first "ERI";
+  rdf:rest <_:513>.
+
+<_:9966> a rdf:List;
+  rdf:first "NUC";
+  rdf:rest <_:3887>.
+
+<_:997> a rdf:List;
+  rdf:first "EUDA";
+  rdf:rest <_:430>.
+
+<_:9975> a rdf:List;
+  rdf:first "ASEA";
+  rdf:rest <_:964>.
+
+<_:9980> a rdf:List;
+  rdf:first "CFUP";
+  rdf:rest <_:2257>.
+
+<_:999> a rdf:List;
+  rdf:first "CFUP";
+  rdf:rest <_:6906>.
 
 ism25x:25X1 a skos:Concept;
   skos:inScheme ism25x:CVEnumISM25X;
@@ -189,33 +6980,7 @@ ism25x:CVEnumISM25X a skos:ConceptScheme;
     ism25x:NATO-AEA.
 
 ism25x:CVEnumISM25XValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "25X1",
-    "25X1-EO-12951",
-    "25X2",
-    "25X3",
-    "25X4",
-    "25X5",
-    "25X6",
-    "25X7",
-    "25X8",
-    "25X9",
-    "50X1",
-    "50X1-HUM",
-    "50X2",
-    "50X2-WMD",
-    "50X3",
-    "50X4",
-    "50X5",
-    "50X6",
-    "50X7",
-    "50X8",
-    "50X9",
-    "75X",
-    "AEA",
-    "NATO",
-    "NATO-AEA".
+  owl:equivalentClass <_:0>.
 
 ism25x:NATO a skos:Concept;
   skos:inScheme ism25x:CVEnumISM25X;
@@ -246,22 +7011,7 @@ ismatomic:CVEnumISMatomicEnergyMarkings a skos:ConceptScheme;
     ismatomic:UCNI.
 
 ismatomic:CVEnumISMatomicEnergyMarkingsValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "DCNI",
-    "FRD",
-    "FRD-SG-14",
-    "FRD-SG-15",
-    "FRD-SG-18",
-    "FRD-SG-20",
-    "RD",
-    "RD-CNWDI",
-    "RD-SG-14",
-    "RD-SG-15",
-    "RD-SG-18",
-    "RD-SG-20",
-    "TFNI",
-    "UCNI".
+  owl:equivalentClass <_:45>.
 
 ismatomic:DCNI a skos:Concept;
   skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings;
@@ -348,13 +7098,7 @@ ismclassall:CVEnumISMClassificationAll a skos:ConceptScheme;
     ismclassall:U.
 
 ismclassall:CVEnumISMClassificationAllValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "C",
-    "R",
-    "S",
-    "TS",
-    "U".
+  owl:equivalentClass <_:59>.
 
 ismclassall:R a skos:Concept;
   skos:inScheme ismclassall:CVEnumISMClassificationAll;
@@ -387,14 +7131,7 @@ ismcomplies:CVEnumISMCompliesWith a skos:ConceptScheme;
     ismcomplies:USIC.
 
 ismcomplies:CVEnumISMCompliesWithValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "OtherAuthority",
-    "USA-CUI",
-    "USA-CUI-ONLY",
-    "USDOD",
-    "USGov",
-    "USIC".
+  owl:equivalentClass <_:720>.
 
 ismcomplies:OtherAuthority a skos:Concept;
   skos:inScheme ismcomplies:CVEnumISMCompliesWith;
@@ -629,101 +7366,7 @@ ismcuibasic:CVEnumISMCUIBasic a skos:ConceptScheme;
     ismcuibasic:XFER.
 
 ismcuibasic:CVEnumISMCUIBasicValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "ADJ",
-    "ADPO",
-    "AG",
-    "APP",
-    "ASYL",
-    "BARG",
-    "BATT",
-    "CMPRS",
-    "COMPT",
-    "CONREG",
-    "CONV",
-    "CRIT",
-    "CUI-PROVISIONAL-HSAI",
-    "CUI-PROVISIONAL-HSEI",
-    "CUI-PROVISIONAL-IAIH",
-    "CUI-PROVISIONAL-ISVIH",
-    "CUI-PROVISIONAL-OSI",
-    "CUI-PROVISIONAL-PHYSH",
-    "CUI-PROVISIONAL-PII",
-    "CUI-PROVISIONAL-PRIVACY",
-    "CUI-PROVISIONAL-PSI",
-    "CVI",
-    "CVIC",
-    "DCNI",
-    "DCRIT",
-    "DREC",
-    "EMGT",
-    "EXPT",
-    "EXPTR",
-    "FHFANPI",
-    "FINT",
-    "FNC",
-    "FSEC",
-    "FSI",
-    "GENETIC",
-    "HLTH",
-    "ID",
-    "INF",
-    "INTEL",
-    "INV",
-    "INVENT",
-    "ISVI",
-    "IVIC",
-    "JURY",
-    "JUV",
-    "LCOMM",
-    "LEI",
-    "LMI",
-    "LNSL",
-    "LPROT",
-    "LSCRN",
-    "LVIC",
-    "MERG",
-    "MIL",
-    "NETW",
-    "NNPI",
-    "NUC",
-    "OCCMTO",
-    "OPSEC",
-    "PERS",
-    "PEST",
-    "PHYS",
-    "POST",
-    "PRE",
-    "PRIIG",
-    "PRIOR",
-    "PRIVILEGE",
-    "PROPIN",
-    "PROT",
-    "PRVCY",
-    "PSEC",
-    "RAIL",
-    "RECCOM",
-    "RESD",
-    "RTR",
-    "RWRD",
-    "SAFE",
-    "SBIZ",
-    "SCV",
-    "SERV",
-    "SRI",
-    "SSEL",
-    "STAT",
-    "STUD",
-    "SURV",
-    "TAI",
-    "TRACE",
-    "UCNI",
-    "VISA",
-    "WATER",
-    "WHSTL",
-    "WIT",
-    "XFER".
+  owl:equivalentClass <_:1000>.
 
 ismcuibasic:CVI a skos:Concept;
   skos:inScheme ismcuibasic:CVEnumISMCUIBasic;
@@ -1207,65 +7850,7 @@ ismcuispecified:CVEnumISMCUISpecified a skos:ConceptScheme;
     ismcuispecified:WIT.
 
 ismcuispecified:CVEnumISMCUISpecifiedValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "ADPO",
-    "AIV",
-    "ARCHR",
-    "BUDG",
-    "CCI",
-    "CEII",
-    "CENS",
-    "CHLD",
-    "CHRI",
-    "CONTRACT",
-    "CRITAN",
-    "CTI",
-    "CVI",
-    "DCNI",
-    "EXPT",
-    "FISA",
-    "FISAB",
-    "FNC",
-    "FSEC",
-    "FUND",
-    "GENETIC",
-    "GEO",
-    "HISTP",
-    "HLTH",
-    "ID",
-    "IFNC",
-    "INF",
-    "INTEL",
-    "INTL",
-    "INV",
-    "JURY",
-    "LDNA",
-    "LFNC",
-    "LPROT",
-    "MFC",
-    "NNPI",
-    "NPSR",
-    "NUC",
-    "PCII",
-    "PERS",
-    "PRIIG",
-    "PROCURE",
-    "PROPIN",
-    "PRVCY",
-    "SGI",
-    "SRI",
-    "SSEL",
-    "SSI",
-    "STAT",
-    "STUD",
-    "SUB",
-    "TAX",
-    "TSCA",
-    "UCNI",
-    "WDT",
-    "WHSTL",
-    "WIT".
+  owl:equivalentClass <_:8669>.
 
 ismcuispecified:CVI a skos:Concept;
   skos:inScheme ismcuispecified:CVEnumISMCUISpecified;
@@ -1529,30 +8114,7 @@ ismdissem:CVEnumISMDissem a skos:ConceptScheme;
     ismdissem:WAIVED.
 
 ismdissem:CVEnumISMDissemValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "AC",
-    "AWP",
-    "DISPLAYONLY",
-    "DL_ONLY",
-    "DSEN",
-    "EXEMPT_FROM_ICD501_DISCOVERY",
-    "EYES",
-    "FED_ONLY",
-    "FEDCON",
-    "FISA",
-    "FOUO",
-    "IMC",
-    "NF",
-    "NOCON",
-    "OC",
-    "OC-USGOV",
-    "PR",
-    "RAWFISA",
-    "REL",
-    "RELIDO",
-    "RS",
-    "WAIVED".
+  owl:equivalentClass <_:946>.
 
 ismdissem:DISPLAYONLY a skos:Concept;
   skos:inScheme ismdissem:CVEnumISMDissem;
@@ -1661,10 +8223,7 @@ ismexempt:CVEnumISMExemptFrom a skos:ConceptScheme;
     ismexempt:IC_710_MANDATORY_FDR.
 
 ismexempt:CVEnumISMExemptFromValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "DOD_DISTRO_STATEMENT",
-    "IC_710_MANDATORY_FDR".
+  owl:equivalentClass <_:3521>.
 
 ismexempt:DOD_DISTRO_STATEMENT a skos:Concept;
   skos:inScheme ismexempt:CVEnumISMExemptFrom;
@@ -1686,13 +8245,7 @@ ismhighwaternato:CVEnumISMHighWaterNATO a skos:ConceptScheme;
     ismhighwaternato:NATO-U.
 
 ismhighwaternato:CVEnumISMHighWaterNATOValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "NATO-C",
-    "NATO-R",
-    "NATO-S",
-    "NATO-TS",
-    "NATO-U".
+  owl:equivalentClass <_:936>.
 
 ismhighwaternato:NATO-C a skos:Concept;
   skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO;
@@ -1733,17 +8286,7 @@ ismnonic:CVEnumISMNonIC a skos:ConceptScheme;
     ismnonic:XD.
 
 ismnonic:CVEnumISMNonICValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "DS",
-    "LES",
-    "LES-NF",
-    "ND",
-    "NNPI",
-    "SBU",
-    "SBU-NF",
-    "SSI",
-    "XD".
+  owl:equivalentClass <_:830>.
 
 ismnonic:DS a skos:Concept;
   skos:inScheme ismnonic:CVEnumISMNonIC;
@@ -1798,11 +8341,7 @@ ismnonus:CVEnumISMNonUSControls a skos:ConceptScheme;
     ismnonus:NATO-BOHEMIA.
 
 ismnonus:CVEnumISMNonUSControlsValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "NATO-ATOMAL",
-    "NATO-BALK",
-    "NATO-BOHEMIA".
+  owl:equivalentClass <_:608>.
 
 ismnonus:NATO-ATOMAL a skos:Concept;
   skos:inScheme ismnonus:CVEnumISMNonUSControls;
@@ -1861,35 +8400,7 @@ ismnotice:CVEnumISMNotice a skos:ConceptScheme;
     ismnotice:US-Person.
 
 ismnotice:CVEnumISMNoticeValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "CNWDI",
-    "COMSEC",
-    "DoD-Dist-A",
-    "DoD-Dist-B",
-    "DoD-Dist-C",
-    "DoD-Dist-D",
-    "DoD-Dist-E",
-    "DoD-Dist-F",
-    "DS",
-    "DSEN",
-    "FISA",
-    "FRD",
-    "GEOCAP",
-    "IMC",
-    "IMCON_RSEN",
-    "ITAR-EAR",
-    "LES",
-    "LES-NF",
-    "NATO",
-    "POC",
-    "pre13526ORCON",
-    "RAWFISA",
-    "RC_Dissemination_Control_Required",
-    "RD",
-    "RSEN",
-    "SSI",
-    "US-Person".
+  owl:equivalentClass <_:597>.
 
 ismnotice:DoD-Dist-A a skos:Concept;
   skos:inScheme ismnotice:CVEnumISMNotice;
@@ -2052,29 +8563,7 @@ ismnoticeprose:CVEnumISMNoticeProse a skos:ConceptScheme;
     ismnoticeprose:SSI_00001.
 
 ismnoticeprose:CVEnumISMNoticeProseValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "CNWDI_00001",
-    "COMSEC_00001",
-    "DISPLAYONLY_00001",
-    "DoD-Dist-A_00001",
-    "DS_00001",
-    "DSEN_00001",
-    "FISA_00001",
-    "FISA_00002",
-    "FISA_00003",
-    "FRD_00001",
-    "GEOCAP_00001",
-    "ITAR-EAR_00001",
-    "NATO_00001",
-    "NATO_00002",
-    "NATO_00003",
-    "NATO_00004",
-    "NATO_00005",
-    "RAWFISA_00001",
-    "RC_Dissemination_Control_Required_00001",
-    "RD_00001",
-    "SSI_00001".
+  owl:equivalentClass <_:9534>.
 
 ismnoticeprose:DISPLAYONLY_00001 a skos:Concept;
   skos:inScheme ismnoticeprose:CVEnumISMNoticeProse;
@@ -2182,14 +8671,7 @@ ismpoctyp:CVEnumISMPocType a skos:ConceptScheme;
     ismpoctyp:ICD-710.
 
 ismpoctyp:CVEnumISMPocTypeValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "DoD-Dist-B",
-    "DoD-Dist-C",
-    "DoD-Dist-D",
-    "DoD-Dist-E",
-    "DoD-Dist-F",
-    "ICD-710".
+  owl:equivalentClass <_:7510>.
 
 ismpoctyp:DoD-Dist-B a skos:Concept;
   skos:inScheme ismpoctyp:CVEnumISMPocType;
@@ -2225,7 +8707,7 @@ ismsar:CVEnumISMSAR a skos:ConceptScheme;
   dc:title "(U) ismsar:CVEnumISMSAR definition".
 
 ismsar:CVEnumISMSARValues a rdfs:Datatype;
-.
+  owl:equivalentClass <_:9714>.
 
 ismscicon:BUR a skos:Concept;
   skos:inScheme ismscicon:CVEnumISMSCIControls;
@@ -2272,28 +8754,7 @@ ismscicon:CVEnumISMSCIControls a skos:ConceptScheme;
     ismscicon:TK-KAND.
 
 ismscicon:CVEnumISMSCIControlsValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "BUR",
-    "BUR-BLG",
-    "BUR-DTP",
-    "BUR-WRG",
-    "HCS",
-    "HCS-O",
-    "HCS-P",
-    "HCS-X",
-    "KLM",
-    "KLM-R",
-    "MVL",
-    "RSV",
-    "SI",
-    "SI-EU",
-    "SI-G",
-    "SI-NK",
-    "TK",
-    "TK-BLFH",
-    "TK-IDIT",
-    "TK-KAND".
+  owl:equivalentClass <_:2643>.
 
 ismscicon:HCS a skos:Concept;
   skos:inScheme ismscicon:CVEnumISMSCIControls;
@@ -2401,14 +8862,7 @@ ismsecondbannerline:CVEnumISMSecondBannerLine a skos:ConceptScheme;
     ismsecondbannerline:SSS.
 
 ismsecondbannerline:CVEnumISMSecondBannerLineValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "ACPI",
-    "AWP",
-    "CUSPI",
-    "DPPD",
-    "HVCO",
-    "SSS".
+  owl:equivalentClass <_:3202>.
 
 ismsecondbannerline:DPPD a skos:Concept;
   skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine;
@@ -3141,348 +9595,7 @@ ismcatfgio:CVEnumISMCATFGIOpen a skos:ConceptScheme;
     ismcatfgio:ZWE.
 
 ismcatfgio:CVEnumISMCATFGIOpenValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "ABW",
-    "ACGU",
-    "AFG",
-    "AGO",
-    "AIA",
-    "ALB",
-    "AMSP",
-    "AND",
-    "AOSC",
-    "APFS",
-    "ARE",
-    "ARG",
-    "ARM",
-    "ASEA",
-    "ASM",
-    "ATA",
-    "ATF",
-    "ATG",
-    "AUS",
-    "AUSTRALIA_GROUP",
-    "AUT",
-    "AX1",
-    "AX2",
-    "AX3",
-    "AZE",
-    "BDI",
-    "BEL",
-    "BEN",
-    "BES",
-    "BFA",
-    "BGD",
-    "BGR",
-    "BHR",
-    "BHS",
-    "BHTF",
-    "BIH",
-    "BLM",
-    "BLR",
-    "BLZ",
-    "BMU",
-    "BOL",
-    "BRA",
-    "BRB",
-    "BRN",
-    "BTN",
-    "BVT",
-    "BWA",
-    "BWCS",
-    "CAF",
-    "CAN",
-    "CCK",
-    "CFCK",
-    "CFOD",
-    "CFUP",
-    "CHE",
-    "CHL",
-    "CHN",
-    "CIV",
-    "CLFC",
-    "CMFC",
-    "CMFP",
-    "CMR",
-    "COD",
-    "COG",
-    "COK",
-    "COL",
-    "COM",
-    "CPMT",
-    "CPT",
-    "CPV",
-    "CRI",
-    "CTOC",
-    "CUB",
-    "CUW",
-    "CWCS",
-    "CXR",
-    "CYM",
-    "CYP",
-    "CZE",
-    "DEU",
-    "DGA",
-    "DJI",
-    "DMA",
-    "DNK",
-    "DOM",
-    "DZA",
-    "ECTF",
-    "ECU",
-    "EFOR",
-    "EGY",
-    "ERI",
-    "ESH",
-    "ESP",
-    "EST",
-    "ETH",
-    "EU",
-    "EUDA",
-    "FIN",
-    "FJI",
-    "FLK",
-    "FRA",
-    "FRME",
-    "FRO",
-    "FSM",
-    "FVEY",
-    "GAB",
-    "GBR",
-    "GCCH",
-    "GCTF",
-    "GEO",
-    "GFNX",
-    "GGY",
-    "GHA",
-    "GIB",
-    "GIN",
-    "GLP",
-    "GMB",
-    "GMIF",
-    "GNB",
-    "GNQ",
-    "GRC",
-    "GRD",
-    "GRL",
-    "GTM",
-    "GUF",
-    "GUM",
-    "GUY",
-    "HKG",
-    "HMD",
-    "HND",
-    "HRV",
-    "HTI",
-    "HUN",
-    "IDN",
-    "IESC",
-    "IMN",
-    "IMSC",
-    "IMSP",
-    "IND",
-    "IOT",
-    "IPMC",
-    "IRKS",
-    "IRL",
-    "IRN",
-    "IRQ",
-    "ISAF",
-    "ISL",
-    "ISR",
-    "ISSG",
-    "ITA",
-    "JAM",
-    "JEY",
-    "JOR",
-    "JPN",
-    "KAZ",
-    "KEN",
-    "KFOR",
-    "KGZ",
-    "KHM",
-    "KIR",
-    "KNA",
-    "KOR",
-    "KWT",
-    "LAO",
-    "LBN",
-    "LBR",
-    "LBY",
-    "LCA",
-    "LIE",
-    "LKA",
-    "LSO",
-    "LTU",
-    "LUX",
-    "LVA",
-    "MAC",
-    "MAF",
-    "MAR",
-    "MCFI",
-    "MCO",
-    "MDA",
-    "MDG",
-    "MDV",
-    "MESF",
-    "MEX",
-    "MGEU",
-    "MHL",
-    "MIFH",
-    "MKD",
-    "MLEC",
-    "MLI",
-    "MLT",
-    "MMR",
-    "MNE",
-    "MNG",
-    "MNP",
-    "MNTF",
-    "MOZ",
-    "MPFL",
-    "MRT",
-    "MSR",
-    "MTQ",
-    "MUS",
-    "MWI",
-    "MYS",
-    "MYT",
-    "NACT",
-    "NAM",
-    "NATO",
-    "NCFE",
-    "NCL",
-    "NER",
-    "NFK",
-    "NGA",
-    "NIC",
-    "NIU",
-    "NKIC",
-    "NLD",
-    "NOR",
-    "NPL",
-    "NRDC",
-    "NRU",
-    "NSG",
-    "NZL",
-    "OMN",
-    "OSAG",
-    "OSTY",
-    "PAK",
-    "PAN",
-    "PAWA",
-    "PCN",
-    "PER",
-    "PGMF",
-    "PHL",
-    "PLW",
-    "PNG",
-    "POL",
-    "PRI",
-    "PRK",
-    "PRT",
-    "PRY",
-    "PSMX",
-    "PYF",
-    "QAT",
-    "REU",
-    "RISC",
-    "ROU",
-    "RSMA",
-    "RUS",
-    "RWA",
-    "SAU",
-    "SDN",
-    "SEN",
-    "SFOR",
-    "SGP",
-    "SGS",
-    "SHN",
-    "SLB",
-    "SLE",
-    "SLV",
-    "SMR",
-    "SOFP",
-    "SOM",
-    "SPAA",
-    "SPM",
-    "SRB",
-    "SSD",
-    "STP",
-    "SUR",
-    "SVK",
-    "SVN",
-    "SWE",
-    "SWZ",
-    "SXM",
-    "SYC",
-    "SYR",
-    "TCA",
-    "TCD",
-    "TEYE",
-    "TFTC",
-    "TGO",
-    "THA",
-    "TJK",
-    "TKL",
-    "TKM",
-    "TLS",
-    "TON",
-    "TTO",
-    "TUN",
-    "TUR",
-    "TUV",
-    "TWN",
-    "TZA",
-    "UGA",
-    "UKR",
-    "UNCK",
-    "URY",
-    "UZB",
-    "VAT",
-    "VCT",
-    "VEN",
-    "VGB",
-    "VIR",
-    "VNM",
-    "VUT",
-    "WLF",
-    "WSM",
-    "XAC",
-    "XAZ",
-    "XBI",
-    "XBK",
-    "XCR",
-    "XCS",
-    "XCY",
-    "XEU",
-    "XGL",
-    "XGZ",
-    "XHO",
-    "XJA",
-    "XJM",
-    "XJN",
-    "XJV",
-    "XKM",
-    "XKN",
-    "XKR",
-    "XKS",
-    "XMW",
-    "XNV",
-    "XPL",
-    "XPR",
-    "XQZ",
-    "XSP",
-    "XSV",
-    "XTR",
-    "XWB",
-    "XWK",
-    "XXD",
-    "YEM",
-    "ZAF",
-    "ZMB",
-    "ZWE".
+  owl:equivalentClass <_:858>.
 
 ismcatfgio:CWCS a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
@@ -4157,7 +10270,7 @@ ismcatfgio:NATO a skos:Concept;
 ismcatfgio:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:2>.
+  sh:property <_:55>.
 
 ismcatfgio:NCFE a skos:Concept;
   skos:inScheme ismcatfgio:CVEnumISMCATFGIOpen;
@@ -5530,348 +11643,7 @@ ismcatfgip:CVEnumISMCATFGIProtected a skos:ConceptScheme;
     ismcatfgip:ZWE.
 
 ismcatfgip:CVEnumISMCATFGIProtectedValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "ABW",
-    "ACGU",
-    "AFG",
-    "AGO",
-    "AIA",
-    "ALB",
-    "AMSP",
-    "AND",
-    "AOSC",
-    "APFS",
-    "ARE",
-    "ARG",
-    "ARM",
-    "ASEA",
-    "ASM",
-    "ATA",
-    "ATF",
-    "ATG",
-    "AUS",
-    "AUSTRALIA_GROUP",
-    "AUT",
-    "AX2",
-    "AX3",
-    "AZE",
-    "BDI",
-    "BEL",
-    "BEN",
-    "BES",
-    "BFA",
-    "BGD",
-    "BGR",
-    "BHR",
-    "BHS",
-    "BHTF",
-    "BIH",
-    "BLM",
-    "BLR",
-    "BLZ",
-    "BMU",
-    "BOL",
-    "BRA",
-    "BRB",
-    "BRN",
-    "BTN",
-    "BVT",
-    "BWA",
-    "BWCS",
-    "CAF",
-    "CAN",
-    "CCK",
-    "CFCK",
-    "CFOD",
-    "CFUP",
-    "CHE",
-    "CHL",
-    "CHN",
-    "CIV",
-    "CLFC",
-    "CMFC",
-    "CMFP",
-    "CMR",
-    "COD",
-    "COG",
-    "COK",
-    "COL",
-    "COM",
-    "CPMT",
-    "CPT",
-    "CPV",
-    "CRI",
-    "CTOC",
-    "CUB",
-    "CUW",
-    "CWCS",
-    "CXR",
-    "CYM",
-    "CYP",
-    "CZE",
-    "DEU",
-    "DGA",
-    "DJI",
-    "DMA",
-    "DNK",
-    "DOM",
-    "DZA",
-    "ECTF",
-    "ECU",
-    "EFOR",
-    "EGY",
-    "ERI",
-    "ESH",
-    "ESP",
-    "EST",
-    "ETH",
-    "EU",
-    "EUDA",
-    "FGI",
-    "FIN",
-    "FJI",
-    "FLK",
-    "FRA",
-    "FRME",
-    "FRO",
-    "FSM",
-    "FVEY",
-    "GAB",
-    "GBR",
-    "GCCH",
-    "GCTF",
-    "GEO",
-    "GFNX",
-    "GGY",
-    "GHA",
-    "GIB",
-    "GIN",
-    "GLP",
-    "GMB",
-    "GMIF",
-    "GNB",
-    "GNQ",
-    "GRC",
-    "GRD",
-    "GRL",
-    "GTM",
-    "GUF",
-    "GUM",
-    "GUY",
-    "HKG",
-    "HMD",
-    "HND",
-    "HRV",
-    "HTI",
-    "HUN",
-    "IDN",
-    "IESC",
-    "IMN",
-    "IMSC",
-    "IMSP",
-    "IND",
-    "IOT",
-    "IPMC",
-    "IRKS",
-    "IRL",
-    "IRN",
-    "IRQ",
-    "ISAF",
-    "ISL",
-    "ISR",
-    "ISSG",
-    "ITA",
-    "JAM",
-    "JEY",
-    "JOR",
-    "JPN",
-    "KAZ",
-    "KEN",
-    "KFOR",
-    "KGZ",
-    "KHM",
-    "KIR",
-    "KNA",
-    "KOR",
-    "KWT",
-    "LAO",
-    "LBN",
-    "LBR",
-    "LBY",
-    "LCA",
-    "LIE",
-    "LKA",
-    "LSO",
-    "LTU",
-    "LUX",
-    "LVA",
-    "MAC",
-    "MAF",
-    "MAR",
-    "MCFI",
-    "MCO",
-    "MDA",
-    "MDG",
-    "MDV",
-    "MESF",
-    "MEX",
-    "MGEU",
-    "MHL",
-    "MIFH",
-    "MKD",
-    "MLEC",
-    "MLI",
-    "MLT",
-    "MMR",
-    "MNE",
-    "MNG",
-    "MNP",
-    "MNTF",
-    "MOZ",
-    "MPFL",
-    "MRT",
-    "MSR",
-    "MTQ",
-    "MUS",
-    "MWI",
-    "MYS",
-    "MYT",
-    "NACT",
-    "NAM",
-    "NATO",
-    "NCFE",
-    "NCL",
-    "NER",
-    "NFK",
-    "NGA",
-    "NIC",
-    "NIU",
-    "NKIC",
-    "NLD",
-    "NOR",
-    "NPL",
-    "NRDC",
-    "NRU",
-    "NSG",
-    "NZL",
-    "OMN",
-    "OSAG",
-    "OSTY",
-    "PAK",
-    "PAN",
-    "PAWA",
-    "PCN",
-    "PER",
-    "PGMF",
-    "PHL",
-    "PLW",
-    "PNG",
-    "POL",
-    "PRI",
-    "PRK",
-    "PRT",
-    "PRY",
-    "PSMX",
-    "PYF",
-    "QAT",
-    "REU",
-    "RISC",
-    "ROU",
-    "RSMA",
-    "RUS",
-    "RWA",
-    "SAU",
-    "SDN",
-    "SEN",
-    "SFOR",
-    "SGP",
-    "SGS",
-    "SHN",
-    "SLB",
-    "SLE",
-    "SLV",
-    "SMR",
-    "SOFP",
-    "SOM",
-    "SPAA",
-    "SPM",
-    "SRB",
-    "SSD",
-    "STP",
-    "SUR",
-    "SVK",
-    "SVN",
-    "SWE",
-    "SWZ",
-    "SXM",
-    "SYC",
-    "SYR",
-    "TCA",
-    "TCD",
-    "TEYE",
-    "TFTC",
-    "TGO",
-    "THA",
-    "TJK",
-    "TKL",
-    "TKM",
-    "TLS",
-    "TON",
-    "TTO",
-    "TUN",
-    "TUR",
-    "TUV",
-    "TWN",
-    "TZA",
-    "UGA",
-    "UKR",
-    "UNCK",
-    "URY",
-    "UZB",
-    "VAT",
-    "VCT",
-    "VEN",
-    "VGB",
-    "VIR",
-    "VNM",
-    "VUT",
-    "WLF",
-    "WSM",
-    "XAC",
-    "XAZ",
-    "XBI",
-    "XBK",
-    "XCR",
-    "XCS",
-    "XCY",
-    "XEU",
-    "XGL",
-    "XGZ",
-    "XHO",
-    "XJA",
-    "XJM",
-    "XJN",
-    "XJV",
-    "XKM",
-    "XKN",
-    "XKR",
-    "XKS",
-    "XMW",
-    "XNV",
-    "XPL",
-    "XPR",
-    "XQZ",
-    "XSP",
-    "XSV",
-    "XTR",
-    "XWB",
-    "XWK",
-    "XXD",
-    "YEM",
-    "ZAF",
-    "ZMB",
-    "ZWE".
+  owl:equivalentClass <_:237>.
 
 ismcatfgip:CWCS a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
@@ -6551,7 +12323,7 @@ ismcatfgip:NATO a skos:Concept;
 ismcatfgip:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:93>.
+  sh:property <_:309>.
 
 ismcatfgip:NCFE a skos:Concept;
   skos:inScheme ismcatfgip:CVEnumISMCATFGIProtected;
@@ -7925,349 +13697,7 @@ ismcatownpro:CVEnumISMCATOwnerProducer a skos:ConceptScheme;
     ismcatownpro:ZWE.
 
 ismcatownpro:CVEnumISMCATOwnerProducerValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "ABW",
-    "ACGU",
-    "AFG",
-    "AGO",
-    "AIA",
-    "ALB",
-    "AMSP",
-    "AND",
-    "AOSC",
-    "APFS",
-    "ARE",
-    "ARG",
-    "ARM",
-    "ASEA",
-    "ASM",
-    "ATA",
-    "ATF",
-    "ATG",
-    "AUS",
-    "AUSTRALIA_GROUP",
-    "AUT",
-    "AX2",
-    "AX3",
-    "AZE",
-    "BDI",
-    "BEL",
-    "BEN",
-    "BES",
-    "BFA",
-    "BGD",
-    "BGR",
-    "BHR",
-    "BHS",
-    "BHTF",
-    "BIH",
-    "BLM",
-    "BLR",
-    "BLZ",
-    "BMU",
-    "BOL",
-    "BRA",
-    "BRB",
-    "BRN",
-    "BTN",
-    "BVT",
-    "BWA",
-    "BWCS",
-    "CAF",
-    "CAN",
-    "CCK",
-    "CFCK",
-    "CFOD",
-    "CFUP",
-    "CHE",
-    "CHL",
-    "CHN",
-    "CIV",
-    "CLFC",
-    "CMFC",
-    "CMFP",
-    "CMR",
-    "COD",
-    "COG",
-    "COK",
-    "COL",
-    "COM",
-    "CPMT",
-    "CPT",
-    "CPV",
-    "CRI",
-    "CTOC",
-    "CUB",
-    "CUW",
-    "CWCS",
-    "CXR",
-    "CYM",
-    "CYP",
-    "CZE",
-    "DEU",
-    "DGA",
-    "DJI",
-    "DMA",
-    "DNK",
-    "DOM",
-    "DZA",
-    "ECTF",
-    "ECU",
-    "EFOR",
-    "EGY",
-    "ERI",
-    "ESH",
-    "ESP",
-    "EST",
-    "ETH",
-    "EU",
-    "EUDA",
-    "FGI",
-    "FIN",
-    "FJI",
-    "FLK",
-    "FRA",
-    "FRME",
-    "FRO",
-    "FSM",
-    "FVEY",
-    "GAB",
-    "GBR",
-    "GCCH",
-    "GCTF",
-    "GEO",
-    "GFNX",
-    "GGY",
-    "GHA",
-    "GIB",
-    "GIN",
-    "GLP",
-    "GMB",
-    "GMIF",
-    "GNB",
-    "GNQ",
-    "GRC",
-    "GRD",
-    "GRL",
-    "GTM",
-    "GUF",
-    "GUM",
-    "GUY",
-    "HKG",
-    "HMD",
-    "HND",
-    "HRV",
-    "HTI",
-    "HUN",
-    "IDN",
-    "IESC",
-    "IMN",
-    "IMSC",
-    "IMSP",
-    "IND",
-    "IOT",
-    "IPMC",
-    "IRKS",
-    "IRL",
-    "IRN",
-    "IRQ",
-    "ISAF",
-    "ISL",
-    "ISR",
-    "ISSG",
-    "ITA",
-    "JAM",
-    "JEY",
-    "JOR",
-    "JPN",
-    "KAZ",
-    "KEN",
-    "KFOR",
-    "KGZ",
-    "KHM",
-    "KIR",
-    "KNA",
-    "KOR",
-    "KWT",
-    "LAO",
-    "LBN",
-    "LBR",
-    "LBY",
-    "LCA",
-    "LIE",
-    "LKA",
-    "LSO",
-    "LTU",
-    "LUX",
-    "LVA",
-    "MAC",
-    "MAF",
-    "MAR",
-    "MCFI",
-    "MCO",
-    "MDA",
-    "MDG",
-    "MDV",
-    "MESF",
-    "MEX",
-    "MGEU",
-    "MHL",
-    "MIFH",
-    "MKD",
-    "MLEC",
-    "MLI",
-    "MLT",
-    "MMR",
-    "MNE",
-    "MNG",
-    "MNP",
-    "MNTF",
-    "MOZ",
-    "MPFL",
-    "MRT",
-    "MSR",
-    "MTQ",
-    "MUS",
-    "MWI",
-    "MYS",
-    "MYT",
-    "NACT",
-    "NAM",
-    "NATO",
-    "NCFE",
-    "NCL",
-    "NER",
-    "NFK",
-    "NGA",
-    "NIC",
-    "NIU",
-    "NKIC",
-    "NLD",
-    "NOR",
-    "NPL",
-    "NRDC",
-    "NRU",
-    "NSG",
-    "NZL",
-    "OMN",
-    "OSAG",
-    "OSTY",
-    "PAK",
-    "PAN",
-    "PAWA",
-    "PCN",
-    "PER",
-    "PGMF",
-    "PHL",
-    "PLW",
-    "PNG",
-    "POL",
-    "PRI",
-    "PRK",
-    "PRT",
-    "PRY",
-    "PSMX",
-    "PYF",
-    "QAT",
-    "REU",
-    "RISC",
-    "ROU",
-    "RSMA",
-    "RUS",
-    "RWA",
-    "SAU",
-    "SDN",
-    "SEN",
-    "SFOR",
-    "SGP",
-    "SGS",
-    "SHN",
-    "SLB",
-    "SLE",
-    "SLV",
-    "SMR",
-    "SOFP",
-    "SOM",
-    "SPAA",
-    "SPM",
-    "SRB",
-    "SSD",
-    "STP",
-    "SUR",
-    "SVK",
-    "SVN",
-    "SWE",
-    "SWZ",
-    "SXM",
-    "SYC",
-    "SYR",
-    "TCA",
-    "TCD",
-    "TEYE",
-    "TFTC",
-    "TGO",
-    "THA",
-    "TJK",
-    "TKL",
-    "TKM",
-    "TLS",
-    "TON",
-    "TTO",
-    "TUN",
-    "TUR",
-    "TUV",
-    "TWN",
-    "TZA",
-    "UGA",
-    "UKR",
-    "UNCK",
-    "URY",
-    "USA",
-    "UZB",
-    "VAT",
-    "VCT",
-    "VEN",
-    "VGB",
-    "VIR",
-    "VNM",
-    "VUT",
-    "WLF",
-    "WSM",
-    "XAC",
-    "XAZ",
-    "XBI",
-    "XBK",
-    "XCR",
-    "XCS",
-    "XCY",
-    "XEU",
-    "XGL",
-    "XGZ",
-    "XHO",
-    "XJA",
-    "XJM",
-    "XJN",
-    "XJV",
-    "XKM",
-    "XKN",
-    "XKR",
-    "XKS",
-    "XMW",
-    "XNV",
-    "XPL",
-    "XPR",
-    "XQZ",
-    "XSP",
-    "XSV",
-    "XTR",
-    "XWB",
-    "XWK",
-    "XXD",
-    "YEM",
-    "ZAF",
-    "ZMB",
-    "ZWE".
+  owl:equivalentClass <_:806>.
 
 ismcatownpro:CWCS a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
@@ -8947,7 +14377,7 @@ ismcatownpro:NATO a skos:Concept;
 ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:9>.
+  sh:property <_:581>.
 
 ismcatownpro:NCFE a skos:Concept;
   skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
@@ -10325,348 +15755,7 @@ ismcatrelto:CVEnumISMCATRelTo a skos:ConceptScheme;
     ismcatrelto:ZWE.
 
 ismcatrelto:CVEnumISMCATRelToValues a rdfs:Datatype;
-  rdfs:subClassOf xs:string;
-  owl:oneOf
-    "ABW",
-    "ACGU",
-    "AFG",
-    "AGO",
-    "AIA",
-    "ALB",
-    "AMSP",
-    "AND",
-    "AOSC",
-    "APFS",
-    "ARE",
-    "ARG",
-    "ARM",
-    "ASEA",
-    "ASM",
-    "ATA",
-    "ATF",
-    "ATG",
-    "AUS",
-    "AUSTRALIA_GROUP",
-    "AUT",
-    "AX2",
-    "AX3",
-    "AZE",
-    "BDI",
-    "BEL",
-    "BEN",
-    "BES",
-    "BFA",
-    "BGD",
-    "BGR",
-    "BHR",
-    "BHS",
-    "BHTF",
-    "BIH",
-    "BLM",
-    "BLR",
-    "BLZ",
-    "BMU",
-    "BOL",
-    "BRA",
-    "BRB",
-    "BRN",
-    "BTN",
-    "BVT",
-    "BWA",
-    "BWCS",
-    "CAF",
-    "CAN",
-    "CCK",
-    "CFCK",
-    "CFOD",
-    "CFUP",
-    "CHE",
-    "CHL",
-    "CHN",
-    "CIV",
-    "CLFC",
-    "CMFC",
-    "CMFP",
-    "CMR",
-    "COD",
-    "COG",
-    "COK",
-    "COL",
-    "COM",
-    "CPMT",
-    "CPT",
-    "CPV",
-    "CRI",
-    "CTOC",
-    "CUB",
-    "CUW",
-    "CWCS",
-    "CXR",
-    "CYM",
-    "CYP",
-    "CZE",
-    "DEU",
-    "DGA",
-    "DJI",
-    "DMA",
-    "DNK",
-    "DOM",
-    "DZA",
-    "ECTF",
-    "ECU",
-    "EFOR",
-    "EGY",
-    "ERI",
-    "ESH",
-    "ESP",
-    "EST",
-    "ETH",
-    "EU",
-    "EUDA",
-    "FIN",
-    "FJI",
-    "FLK",
-    "FRA",
-    "FRME",
-    "FRO",
-    "FSM",
-    "FVEY",
-    "GAB",
-    "GBR",
-    "GCCH",
-    "GCTF",
-    "GEO",
-    "GFNX",
-    "GGY",
-    "GHA",
-    "GIB",
-    "GIN",
-    "GLP",
-    "GMB",
-    "GMIF",
-    "GNB",
-    "GNQ",
-    "GRC",
-    "GRD",
-    "GRL",
-    "GTM",
-    "GUF",
-    "GUM",
-    "GUY",
-    "HKG",
-    "HMD",
-    "HND",
-    "HRV",
-    "HTI",
-    "HUN",
-    "IDN",
-    "IESC",
-    "IMN",
-    "IMSC",
-    "IMSP",
-    "IND",
-    "IOT",
-    "IPMC",
-    "IRKS",
-    "IRL",
-    "IRN",
-    "IRQ",
-    "ISAF",
-    "ISL",
-    "ISR",
-    "ISSG",
-    "ITA",
-    "JAM",
-    "JEY",
-    "JOR",
-    "JPN",
-    "KAZ",
-    "KEN",
-    "KFOR",
-    "KGZ",
-    "KHM",
-    "KIR",
-    "KNA",
-    "KOR",
-    "KWT",
-    "LAO",
-    "LBN",
-    "LBR",
-    "LBY",
-    "LCA",
-    "LIE",
-    "LKA",
-    "LSO",
-    "LTU",
-    "LUX",
-    "LVA",
-    "MAC",
-    "MAF",
-    "MAR",
-    "MCFI",
-    "MCO",
-    "MDA",
-    "MDG",
-    "MDV",
-    "MESF",
-    "MEX",
-    "MGEU",
-    "MHL",
-    "MIFH",
-    "MKD",
-    "MLEC",
-    "MLI",
-    "MLT",
-    "MMR",
-    "MNE",
-    "MNG",
-    "MNP",
-    "MNTF",
-    "MOZ",
-    "MPFL",
-    "MRT",
-    "MSR",
-    "MTQ",
-    "MUS",
-    "MWI",
-    "MYS",
-    "MYT",
-    "NACT",
-    "NAM",
-    "NATO",
-    "NCFE",
-    "NCL",
-    "NER",
-    "NFK",
-    "NGA",
-    "NIC",
-    "NIU",
-    "NKIC",
-    "NLD",
-    "NOR",
-    "NPL",
-    "NRDC",
-    "NRU",
-    "NSG",
-    "NZL",
-    "OMN",
-    "OSAG",
-    "OSTY",
-    "PAK",
-    "PAN",
-    "PAWA",
-    "PCN",
-    "PER",
-    "PGMF",
-    "PHL",
-    "PLW",
-    "PNG",
-    "POL",
-    "PRI",
-    "PRK",
-    "PRT",
-    "PRY",
-    "PSMX",
-    "PYF",
-    "QAT",
-    "REU",
-    "RISC",
-    "ROU",
-    "RSMA",
-    "RUS",
-    "RWA",
-    "SAU",
-    "SDN",
-    "SEN",
-    "SFOR",
-    "SGP",
-    "SGS",
-    "SHN",
-    "SLB",
-    "SLE",
-    "SLV",
-    "SMR",
-    "SOFP",
-    "SOM",
-    "SPAA",
-    "SPM",
-    "SRB",
-    "SSD",
-    "STP",
-    "SUR",
-    "SVK",
-    "SVN",
-    "SWE",
-    "SWZ",
-    "SXM",
-    "SYC",
-    "SYR",
-    "TCA",
-    "TCD",
-    "TEYE",
-    "TFTC",
-    "TGO",
-    "THA",
-    "TJK",
-    "TKL",
-    "TKM",
-    "TLS",
-    "TON",
-    "TTO",
-    "TUN",
-    "TUR",
-    "TUV",
-    "TWN",
-    "TZA",
-    "UGA",
-    "UKR",
-    "UNCK",
-    "URY",
-    "USA",
-    "UZB",
-    "VAT",
-    "VCT",
-    "VEN",
-    "VGB",
-    "VIR",
-    "VNM",
-    "VUT",
-    "WLF",
-    "WSM",
-    "XAC",
-    "XAZ",
-    "XBI",
-    "XBK",
-    "XCR",
-    "XCS",
-    "XCY",
-    "XEU",
-    "XGL",
-    "XGZ",
-    "XHO",
-    "XJA",
-    "XJM",
-    "XJN",
-    "XJV",
-    "XKM",
-    "XKN",
-    "XKR",
-    "XKS",
-    "XMW",
-    "XNV",
-    "XPL",
-    "XPR",
-    "XQZ",
-    "XSP",
-    "XSV",
-    "XTR",
-    "XWB",
-    "XWK",
-    "XXD",
-    "YEM",
-    "ZAF",
-    "ZMB",
-    "ZWE".
+  owl:equivalentClass <_:2620>.
 
 ismcatrelto:CWCS a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
@@ -11341,7 +16430,7 @@ ismcatrelto:NATO a skos:Concept;
 ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
   skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:8>.
+  sh:property <_:2101>.
 
 ismcatrelto:NCFE a skos:Concept;
   skos:inScheme ismcatrelto:CVEnumISMCATRelTo;

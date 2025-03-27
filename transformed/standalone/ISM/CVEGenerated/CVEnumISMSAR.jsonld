@@ -10,6 +10,10 @@
   },
   "@graph": [
     {
+      "@id": "_:7",
+      "@type": "rdfs:Datatype"
+    },
+    {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSAR",
       "@type": "http://www.w3.org/2002/07/owl#Ontology"
     },
@@ -20,7 +24,10 @@
     },
     {
       "@id": "ismsar:CVEnumISMSARValues",
-      "@type": "rdfs:Datatype"
+      "@type": "rdfs:Datatype",
+      "http://www.w3.org/2002/07/owl#equivalentClass": {
+        "@id": "_:7"
+      }
     }
   ]
 }

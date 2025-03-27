@@ -252,15 +252,22 @@ let blankIndex = 0;
               }
 
               const allowedNotationsId = `${schemeId}Values`;
+              standalone.namespaces[RDFS_URI] = 'rdfs';
+              standalone.g.add(allowedNotationsId, RDF_TYPE, 'rdfs:Datatype');  // optional
+              const equivalentClass = standalone.g.add(null, 'rdf:type', 'rdfs:Datatype');
+              standalone.g.add(allowedNotationsId, 'owl:equivalentClass', { type: 'bnode', value: equivalentClass._s });
+              let rest = null;
               for (const aConcept of concepts) {
                 standalone.g.add(schemeId, 'skos:hasTopConcept', aConcept.conceptId);
                 standalone.namespaces[OWL_URI] = 'owl';
                 standalone.g.add(aConcept.conceptId, RDF_TYPE, 'skos:Concept');
                 standalone.g.add(aConcept.conceptId, 'skos:inScheme', schemeId);
                 if (aConcept.notation) {
-                  standalone.g.addD(aConcept.conceptId, 'skos:notation', aConcept.notation);
-                  standalone.g.add(allowedNotationsId, 'rdfs:subClassOf', `${XML_SCHEMA_URI}#string`);
-                  standalone.g.addL(allowedNotationsId, 'owl:oneOf', aConcept.notation);
+                  standalone.g.addL(aConcept.conceptId, 'skos:notation', aConcept.notation);
+                  const list: any = standalone.g.add(null, 'rdf:type', 'rdf:List');
+                  standalone.g.addL(list._s, 'rdf:first', aConcept.notation);
+                  standalone.g.add((rest || equivalentClass)._s, rest ? 'rdf:rest' : 'owl:oneOf', { type: 'bnode', value: list._s });
+                  rest = list;
                 } else if (aConcept.pattern) {
                   standalone.namespaces[SHACL_URI] = 'sh';
                   const restriction = standalone.g.addL(null, 'sh:pattern', aConcept.pattern);
@@ -272,8 +279,9 @@ let blankIndex = 0;
                   standalone.g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.prefLabel);
                 }
               }
-              standalone.namespaces[RDFS_URI] = 'rdfs';
-              standalone.g.add(allowedNotationsId, RDF_TYPE, 'rdfs:Datatype');
+              if (rest) {
+                standalone.g.add(rest._s, 'rdf:rest', 'rdf:nil');
+              }
             }
             delete standalone.namespaces[XML_SCHEMA_URI];
             const extname = path.extname(inputFilepath);

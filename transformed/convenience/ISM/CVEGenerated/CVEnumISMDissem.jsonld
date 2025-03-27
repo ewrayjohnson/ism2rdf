@@ -6,10 +6,40 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:2",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "RS",
+          "FOUO",
+          "OC",
+          "OC-USGOV",
+          "IMC",
+          "NF",
+          "PR",
+          "REL",
+          "RELIDO",
+          "EYES",
+          "DSEN",
+          "RAWFISA",
+          "FISA",
+          "DISPLAYONLY",
+          "EXEMPT_FROM_ICD501_DISCOVERY",
+          "WAIVED",
+          "AC",
+          "AWP",
+          "DL_ONLY",
+          "FED_ONLY",
+          "FEDCON",
+          "NOCON"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissem",
       "@type": "owl:Ontology"
@@ -108,33 +138,9 @@
     {
       "@id": "ismdissem:CVEnumISMDissemValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "RS",
-        "FOUO",
-        "OC",
-        "OC-USGOV",
-        "IMC",
-        "NF",
-        "PR",
-        "REL",
-        "RELIDO",
-        "EYES",
-        "DSEN",
-        "RAWFISA",
-        "FISA",
-        "DISPLAYONLY",
-        "EXEMPT_FROM_ICD501_DISCOVERY",
-        "WAIVED",
-        "AC",
-        "AWP",
-        "DL_ONLY",
-        "FED_ONLY",
-        "FEDCON",
-        "NOCON"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:2"
+      }
     },
     {
       "@id": "ismdissem:DISPLAYONLY",

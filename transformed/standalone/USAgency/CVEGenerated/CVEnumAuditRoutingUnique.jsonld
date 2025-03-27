@@ -6,10 +6,43 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:2",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "USA.USAFRICOM",
+          "USA.USCENTCOM",
+          "USA.USCYBERCOM",
+          "USA.USEUCOM",
+          "USA.USFK",
+          "USA.USNORTHCOM",
+          "USA.USPACOM",
+          "USA.USSOCOM",
+          "USA.USSOUTHCOM",
+          "USA.USSTRATCOM",
+          "USA.USTRANSCOM",
+          "USA.DARPA",
+          "USA.DISA",
+          "USA.DODCIO",
+          "USA.DODIG",
+          "USA.DODIO",
+          "USA.DSS",
+          "USA.DTRA",
+          "USA.JCS",
+          "USA.JIDA",
+          "USA.MDA",
+          "USA.OUSDATL",
+          "USA.OUSDI",
+          "USA.INA",
+          "USA.TSA"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:USAgency:CVEGenerated:CVEnumAuditRoutingUnique",
       "@type": "owl:Ontology"
@@ -99,36 +132,9 @@
     {
       "@id": "usaru:CVEnumAuditRoutingUniqueValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "USA.USAFRICOM",
-        "USA.USCENTCOM",
-        "USA.USCYBERCOM",
-        "USA.USEUCOM",
-        "USA.USFK",
-        "USA.USNORTHCOM",
-        "USA.USPACOM",
-        "USA.USSOCOM",
-        "USA.USSOUTHCOM",
-        "USA.USSTRATCOM",
-        "USA.USTRANSCOM",
-        "USA.DARPA",
-        "USA.DISA",
-        "USA.DODCIO",
-        "USA.DODIG",
-        "USA.DODIO",
-        "USA.DSS",
-        "USA.DTRA",
-        "USA.JCS",
-        "USA.JIDA",
-        "USA.MDA",
-        "USA.OUSDATL",
-        "USA.OUSDI",
-        "USA.INA",
-        "USA.TSA"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:2"
+      }
     },
     {
       "@id": "usaru:USA.DARPA",

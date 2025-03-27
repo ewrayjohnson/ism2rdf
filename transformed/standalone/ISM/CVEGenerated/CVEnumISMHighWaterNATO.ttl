@@ -4,7 +4,29 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdf:List;
+  rdf:first "NATO-TS";
+  rdf:rest rdf:nil.
+
+<_:1> a rdf:List;
+  rdf:first "NATO-U";
+  rdf:rest <_:5>.
+
+<_:5> a rdf:List;
+  rdf:first "NATO-R";
+  rdf:rest <_:94>.
+
+<_:6> a rdfs:Datatype;
+  owl:oneOf ("NATO-U" "NATO-R" "NATO-C" "NATO-S" "NATO-TS").
+
+<_:9> a rdf:List;
+  rdf:first "NATO-S";
+  rdf:rest <_:0>.
+
+<_:94> a rdf:List;
+  rdf:first "NATO-C";
+  rdf:rest <_:9>.
 
 ismhighwaternato:CVEnumISMHighWaterNATO a skos:ConceptScheme;
   dc:title "(U) The highest classification of any portion that has either @ism:ownerProducer contains NATO or @FGIsourceOpen contains NATO. The @ism:highWaterNATO attribute will be compared against an entity's fineAccessControls NATO value. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMHighWaterNATO.xml";
@@ -16,13 +38,7 @@ ismhighwaternato:CVEnumISMHighWaterNATO a skos:ConceptScheme;
     ismhighwaternato:NATO-U.
 
 ismhighwaternato:CVEnumISMHighWaterNATOValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "NATO-C",
-    "NATO-R",
-    "NATO-S",
-    "NATO-TS",
-    "NATO-U".
+  owl:equivalentClass <_:6>.
 
 ismhighwaternato:NATO-C a skos:Concept;
   skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO;

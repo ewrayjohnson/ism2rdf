@@ -4,7 +4,93 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdf:List;
+  rdf:first "RAWFISA";
+  rdf:rest <_:73>.
+
+<_:10> a rdf:List;
+  rdf:first "RS";
+  rdf:rest <_:3>.
+
+<_:16> a rdf:List;
+  rdf:first "AWP";
+  rdf:rest <_:24>.
+
+<_:2> a rdf:List;
+  rdf:first "NF";
+  rdf:rest <_:64>.
+
+<_:23> a rdf:List;
+  rdf:first "DISPLAYONLY";
+  rdf:rest <_:66>.
+
+<_:24> a rdf:List;
+  rdf:first "DL_ONLY";
+  rdf:rest <_:61>.
+
+<_:29> a rdf:List;
+  rdf:first "FEDCON";
+  rdf:rest <_:97>.
+
+<_:3> a rdf:List;
+  rdf:first "OC";
+  rdf:rest <_:7>.
+
+<_:4> a rdf:List;
+  rdf:first "RELIDO";
+  rdf:rest <_:8>.
+
+<_:43> a rdf:List;
+  rdf:first "DSEN";
+  rdf:rest <_:0>.
+
+<_:49> a rdf:List;
+  rdf:first "WAIVED";
+  rdf:rest <_:72>.
+
+<_:6> a rdf:List;
+  rdf:first "REL";
+  rdf:rest <_:4>.
+
+<_:61> a rdf:List;
+  rdf:first "FED_ONLY";
+  rdf:rest <_:29>.
+
+<_:64> a rdf:List;
+  rdf:first "PR";
+  rdf:rest <_:6>.
+
+<_:66> a rdf:List;
+  rdf:first "EXEMPT_FROM_ICD501_DISCOVERY";
+  rdf:rest <_:49>.
+
+<_:7> a rdf:List;
+  rdf:first "OC-USGOV";
+  rdf:rest <_:83>.
+
+<_:72> a rdf:List;
+  rdf:first "AC";
+  rdf:rest <_:16>.
+
+<_:73> a rdf:List;
+  rdf:first "FISA";
+  rdf:rest <_:23>.
+
+<_:8> a rdf:List;
+  rdf:first "EYES";
+  rdf:rest <_:43>.
+
+<_:83> a rdf:List;
+  rdf:first "IMC";
+  rdf:rest <_:2>.
+
+<_:9> a rdfs:Datatype;
+  owl:oneOf ("RS" "OC" "OC-USGOV" "IMC" "NF" "PR" "REL" "RELIDO" "EYES" "DSEN" "RAWFISA" "FISA" "DISPLAYONLY" "EXEMPT_FROM_ICD501_DISCOVERY" "WAIVED" "AC" "AWP" "DL_ONLY" "FED_ONLY" "FEDCON" "NOCON").
+
+<_:97> a rdf:List;
+  rdf:first "NOCON";
+  rdf:rest rdf:nil.
 
 ismdissemcommingled:AC a skos:Concept;
   skos:inScheme ismdissemcommingled:CVEnumISMDissemCommingled;
@@ -42,29 +128,7 @@ ismdissemcommingled:CVEnumISMDissemCommingled a skos:ConceptScheme;
     ismdissemcommingled:WAIVED.
 
 ismdissemcommingled:CVEnumISMDissemCommingledValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "AC",
-    "AWP",
-    "DISPLAYONLY",
-    "DL_ONLY",
-    "DSEN",
-    "EXEMPT_FROM_ICD501_DISCOVERY",
-    "EYES",
-    "FED_ONLY",
-    "FEDCON",
-    "FISA",
-    "IMC",
-    "NF",
-    "NOCON",
-    "OC",
-    "OC-USGOV",
-    "PR",
-    "RAWFISA",
-    "REL",
-    "RELIDO",
-    "RS",
-    "WAIVED".
+  owl:equivalentClass <_:9>.
 
 ismdissemcommingled:DISPLAYONLY a skos:Concept;
   skos:inScheme ismdissemcommingled:CVEnumISMDissemCommingled;

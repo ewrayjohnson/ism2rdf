@@ -4,7 +4,21 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:2> a rdf:List;
+  rdf:first "NATO-BALK";
+  rdf:rest rdf:nil.
+
+<_:3> a rdfs:Datatype;
+  owl:oneOf ("NATO-ATOMAL" "NATO-BOHEMIA" "NATO-BALK").
+
+<_:6> a rdf:List;
+  rdf:first "NATO-ATOMAL";
+  rdf:rest <_:75>.
+
+<_:75> a rdf:List;
+  rdf:first "NATO-BOHEMIA";
+  rdf:rest <_:2>.
 
 ismnonus:CVEnumISMNonUSControls a skos:ConceptScheme;
   dc:title "(U) ismnonus:CVEnumISMNonUSControls definition";
@@ -14,11 +28,7 @@ ismnonus:CVEnumISMNonUSControls a skos:ConceptScheme;
     ismnonus:NATO-BOHEMIA.
 
 ismnonus:CVEnumISMNonUSControlsValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "NATO-ATOMAL",
-    "NATO-BALK",
-    "NATO-BOHEMIA".
+  owl:equivalentClass <_:3>.
 
 ismnonus:NATO-ATOMAL a skos:Concept;
   skos:inScheme ismnonus:CVEnumISMNonUSControls;

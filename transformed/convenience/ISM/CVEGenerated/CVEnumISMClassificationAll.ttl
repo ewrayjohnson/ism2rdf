@@ -4,7 +4,29 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdf:List;
+  rdf:first "U";
+  rdf:rest rdf:nil.
+
+<_:1> a rdfs:Datatype;
+  owl:oneOf ("R" "C" "S" "TS" "U").
+
+<_:10> a rdf:List;
+  rdf:first "S";
+  rdf:rest <_:69>.
+
+<_:3> a rdf:List;
+  rdf:first "R";
+  rdf:rest <_:7>.
+
+<_:69> a rdf:List;
+  rdf:first "TS";
+  rdf:rest <_:0>.
+
+<_:7> a rdf:List;
+  rdf:first "C";
+  rdf:rest <_:10>.
 
 ismclassall:C a skos:Concept;
   skos:inScheme ismclassall:CVEnumISMClassificationAll;
@@ -21,13 +43,7 @@ ismclassall:CVEnumISMClassificationAll a skos:ConceptScheme;
     ismclassall:U.
 
 ismclassall:CVEnumISMClassificationAllValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "C",
-    "R",
-    "S",
-    "TS",
-    "U".
+  owl:equivalentClass <_:1>.
 
 ismclassall:R a skos:Concept;
   skos:inScheme ismclassall:CVEnumISMClassificationAll;

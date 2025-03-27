@@ -4,7 +4,53 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:1> a rdf:List;
+  rdf:first "AC";
+  rdf:rest <_:7>.
+
+<_:10> a rdf:List;
+  rdf:first "DISPLAYONLY";
+  rdf:rest <_:6>.
+
+<_:25> a rdf:List;
+  rdf:first "REL";
+  rdf:rest <_:57>.
+
+<_:28> a rdf:List;
+  rdf:first "NOCON";
+  rdf:rest <_:25>.
+
+<_:31> a rdf:List;
+  rdf:first "EXEMPT_FROM_ICD501_DISCOVERY";
+  rdf:rest <_:79>.
+
+<_:49> a rdf:List;
+  rdf:first "FEDCON";
+  rdf:rest <_:8>.
+
+<_:5> a rdfs:Datatype;
+  owl:oneOf ("AC" "AWP" "DISPLAYONLY" "DL_ONLY" "EXEMPT_FROM_ICD501_DISCOVERY" "FED_ONLY" "FEDCON" "NF" "NOCON" "REL" "RELIDO").
+
+<_:57> a rdf:List;
+  rdf:first "RELIDO";
+  rdf:rest rdf:nil.
+
+<_:6> a rdf:List;
+  rdf:first "DL_ONLY";
+  rdf:rest <_:31>.
+
+<_:7> a rdf:List;
+  rdf:first "AWP";
+  rdf:rest <_:10>.
+
+<_:79> a rdf:List;
+  rdf:first "FED_ONLY";
+  rdf:rest <_:49>.
+
+<_:8> a rdf:List;
+  rdf:first "NF";
+  rdf:rest <_:28>.
 
 ismdissemcui:AC a skos:Concept;
   skos:inScheme ismdissemcui:CVEnumISMDissemCui;
@@ -32,19 +78,7 @@ ismdissemcui:CVEnumISMDissemCui a skos:ConceptScheme;
     ismdissemcui:RELIDO.
 
 ismdissemcui:CVEnumISMDissemCuiValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "AC",
-    "AWP",
-    "DISPLAYONLY",
-    "DL_ONLY",
-    "EXEMPT_FROM_ICD501_DISCOVERY",
-    "FED_ONLY",
-    "FEDCON",
-    "NF",
-    "NOCON",
-    "REL",
-    "RELIDO".
+  owl:equivalentClass <_:5>.
 
 ismdissemcui:DISPLAYONLY a skos:Concept;
   skos:inScheme ismdissemcui:CVEnumISMDissemCui;

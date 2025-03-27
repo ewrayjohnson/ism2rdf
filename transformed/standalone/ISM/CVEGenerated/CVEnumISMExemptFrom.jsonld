@@ -6,10 +6,20 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:4",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "IC_710_MANDATORY_FDR",
+          "DOD_DISTRO_STATEMENT"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMExemptFrom",
       "@type": "owl:Ontology"
@@ -30,13 +40,9 @@
     {
       "@id": "ismexempt:CVEnumISMExemptFromValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "IC_710_MANDATORY_FDR",
-        "DOD_DISTRO_STATEMENT"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:4"
+      }
     },
     {
       "@id": "ismexempt:DOD_DISTRO_STATEMENT",

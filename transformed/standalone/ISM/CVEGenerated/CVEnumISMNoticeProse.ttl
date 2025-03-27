@@ -4,7 +4,93 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdf:List;
+  rdf:first "NATO_00003";
+  rdf:rest <_:38>.
+
+<_:1> a rdf:List;
+  rdf:first "COMSEC_00001";
+  rdf:rest <_:22>.
+
+<_:10> a rdf:List;
+  rdf:first "NATO_00001";
+  rdf:rest <_:47>.
+
+<_:2> a rdf:List;
+  rdf:first "DoD-Dist-A_00001";
+  rdf:rest <_:1>.
+
+<_:22> a rdf:List;
+  rdf:first "SSI_00001";
+  rdf:rest <_:95>.
+
+<_:25> a rdf:List;
+  rdf:first "FISA_00003";
+  rdf:rest <_:44>.
+
+<_:3> a rdf:List;
+  rdf:first "FRD_00001";
+  rdf:rest <_:80>.
+
+<_:38> a rdf:List;
+  rdf:first "NATO_00004";
+  rdf:rest <_:46>.
+
+<_:39> a rdf:List;
+  rdf:first "DISPLAYONLY_00001";
+  rdf:rest rdf:nil.
+
+<_:4> a rdf:List;
+  rdf:first "CNWDI_00001";
+  rdf:rest <_:5>.
+
+<_:44> a rdf:List;
+  rdf:first "RAWFISA_00001";
+  rdf:rest <_:4>.
+
+<_:46> a rdf:List;
+  rdf:first "NATO_00005";
+  rdf:rest <_:65>.
+
+<_:47> a rdf:List;
+  rdf:first "NATO_00002";
+  rdf:rest <_:0>.
+
+<_:5> a rdf:List;
+  rdf:first "RD_00001";
+  rdf:rest <_:3>.
+
+<_:55> a rdf:List;
+  rdf:first "ITAR-EAR_00001";
+  rdf:rest <_:39>.
+
+<_:6> a rdfs:Datatype;
+  owl:oneOf ("FISA_00001" "FISA_00002" "FISA_00003" "RAWFISA_00001" "CNWDI_00001" "RD_00001" "FRD_00001" "DS_00001" "DSEN_00001" "DoD-Dist-A_00001" "COMSEC_00001" "SSI_00001" "GEOCAP_00001" "NATO_00001" "NATO_00002" "NATO_00003" "NATO_00004" "NATO_00005" "RC_Dissemination_Control_Required_00001" "ITAR-EAR_00001" "DISPLAYONLY_00001").
+
+<_:65> a rdf:List;
+  rdf:first "RC_Dissemination_Control_Required_00001";
+  rdf:rest <_:55>.
+
+<_:7> a rdf:List;
+  rdf:first "DSEN_00001";
+  rdf:rest <_:2>.
+
+<_:8> a rdf:List;
+  rdf:first "FISA_00002";
+  rdf:rest <_:25>.
+
+<_:80> a rdf:List;
+  rdf:first "DS_00001";
+  rdf:rest <_:7>.
+
+<_:9> a rdf:List;
+  rdf:first "FISA_00001";
+  rdf:rest <_:8>.
+
+<_:95> a rdf:List;
+  rdf:first "GEOCAP_00001";
+  rdf:rest <_:10>.
 
 ismnoticeprose:CNWDI_00001 a skos:Concept;
   skos:inScheme ismnoticeprose:CVEnumISMNoticeProse;
@@ -42,29 +128,7 @@ ismnoticeprose:CVEnumISMNoticeProse a skos:ConceptScheme;
     ismnoticeprose:SSI_00001.
 
 ismnoticeprose:CVEnumISMNoticeProseValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "CNWDI_00001",
-    "COMSEC_00001",
-    "DISPLAYONLY_00001",
-    "DoD-Dist-A_00001",
-    "DS_00001",
-    "DSEN_00001",
-    "FISA_00001",
-    "FISA_00002",
-    "FISA_00003",
-    "FRD_00001",
-    "GEOCAP_00001",
-    "ITAR-EAR_00001",
-    "NATO_00001",
-    "NATO_00002",
-    "NATO_00003",
-    "NATO_00004",
-    "NATO_00005",
-    "RAWFISA_00001",
-    "RC_Dissemination_Control_Required_00001",
-    "RD_00001",
-    "SSI_00001".
+  owl:equivalentClass <_:6>.
 
 ismnoticeprose:DISPLAYONLY_00001 a skos:Concept;
   skos:inScheme ismnoticeprose:CVEnumISMNoticeProse;

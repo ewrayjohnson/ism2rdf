@@ -6,10 +6,23 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:9",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "NATO-U",
+          "NATO-R",
+          "NATO-C",
+          "NATO-S",
+          "NATO-TS"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMHighWaterNATO",
       "@type": "owl:Ontology"
@@ -39,16 +52,9 @@
     {
       "@id": "ismhighwaternato:CVEnumISMHighWaterNATOValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "NATO-U",
-        "NATO-R",
-        "NATO-C",
-        "NATO-S",
-        "NATO-TS"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:9"
+      }
     },
     {
       "@id": "ismhighwaternato:NATO-C",

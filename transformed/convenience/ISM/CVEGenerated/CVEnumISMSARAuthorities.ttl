@@ -4,7 +4,33 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:1> a rdf:List;
+  rdf:first "AG";
+  rdf:rest <_:6>.
+
+<_:3> a rdf:List;
+  rdf:first "DHS";
+  rdf:rest <_:1>.
+
+<_:4> a rdf:List;
+  rdf:first "STATE";
+  rdf:rest <_:7>.
+
+<_:5> a rdfs:Datatype;
+  owl:oneOf ("STATE" "DOD" "DOE" "DHS" "AG" "DNI").
+
+<_:6> a rdf:List;
+  rdf:first "DNI";
+  rdf:rest rdf:nil.
+
+<_:7> a rdf:List;
+  rdf:first "DOD";
+  rdf:rest <_:8>.
+
+<_:8> a rdf:List;
+  rdf:first "DOE";
+  rdf:rest <_:3>.
 
 ismsar:AG a skos:Concept;
   skos:inScheme ismsar:CVEnumISMSARAuthorities;
@@ -22,14 +48,7 @@ ismsar:CVEnumISMSARAuthorities a skos:ConceptScheme;
     ismsar:STATE.
 
 ismsar:CVEnumISMSARAuthoritiesValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "AG",
-    "DHS",
-    "DNI",
-    "DOD",
-    "DOE",
-    "STATE".
+  owl:equivalentClass <_:5>.
 
 ismsar:DHS a skos:Concept;
   skos:inScheme ismsar:CVEnumISMSARAuthorities;

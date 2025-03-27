@@ -4,7 +4,65 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdf:List;
+  rdf:first "RD-CNWDI";
+  rdf:rest <_:4>.
+
+<_:1> a rdf:List;
+  rdf:first "FRD";
+  rdf:rest <_:3>.
+
+<_:10> a rdf:List;
+  rdf:first "FRD-SG-15";
+  rdf:rest <_:16>.
+
+<_:16> a rdf:List;
+  rdf:first "FRD-SG-18";
+  rdf:rest <_:96>.
+
+<_:2> a rdfs:Datatype;
+  owl:oneOf ("RD" "RD-CNWDI" "RD-SG-14" "RD-SG-15" "RD-SG-18" "RD-SG-20" "FRD" "FRD-SG-14" "FRD-SG-15" "FRD-SG-18" "FRD-SG-20" "DCNI" "UCNI" "TFNI").
+
+<_:3> a rdf:List;
+  rdf:first "FRD-SG-14";
+  rdf:rest <_:10>.
+
+<_:35> a rdf:List;
+  rdf:first "RD-SG-18";
+  rdf:rest <_:7>.
+
+<_:4> a rdf:List;
+  rdf:first "RD-SG-14";
+  rdf:rest <_:6>.
+
+<_:5> a rdf:List;
+  rdf:first "RD";
+  rdf:rest <_:0>.
+
+<_:6> a rdf:List;
+  rdf:first "RD-SG-15";
+  rdf:rest <_:35>.
+
+<_:7> a rdf:List;
+  rdf:first "RD-SG-20";
+  rdf:rest <_:1>.
+
+<_:71> a rdf:List;
+  rdf:first "UCNI";
+  rdf:rest <_:73>.
+
+<_:73> a rdf:List;
+  rdf:first "TFNI";
+  rdf:rest rdf:nil.
+
+<_:90> a rdf:List;
+  rdf:first "DCNI";
+  rdf:rest <_:71>.
+
+<_:96> a rdf:List;
+  rdf:first "FRD-SG-20";
+  rdf:rest <_:90>.
 
 ismatomic:CVEnumISMatomicEnergyMarkings a skos:ConceptScheme;
   dc:title "(U) ismatomic:CVEnumISMatomicEnergyMarkings definition";
@@ -25,22 +83,7 @@ ismatomic:CVEnumISMatomicEnergyMarkings a skos:ConceptScheme;
     ismatomic:UCNI.
 
 ismatomic:CVEnumISMatomicEnergyMarkingsValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "DCNI",
-    "FRD",
-    "FRD-SG-14",
-    "FRD-SG-15",
-    "FRD-SG-18",
-    "FRD-SG-20",
-    "RD",
-    "RD-CNWDI",
-    "RD-SG-14",
-    "RD-SG-15",
-    "RD-SG-18",
-    "RD-SG-20",
-    "TFNI",
-    "UCNI".
+  owl:equivalentClass <_:2>.
 
 ismatomic:DCNI a skos:Concept;
   skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings;

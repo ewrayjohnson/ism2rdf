@@ -6,10 +6,45 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:8",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "FISA",
+          "RAWFISA",
+          "IMC",
+          "CNWDI",
+          "RD",
+          "FRD",
+          "DS",
+          "LES",
+          "LES-NF",
+          "DSEN",
+          "DoD-Dist-A",
+          "DoD-Dist-B",
+          "DoD-Dist-C",
+          "DoD-Dist-D",
+          "DoD-Dist-E",
+          "DoD-Dist-F",
+          "US-Person",
+          "pre13526ORCON",
+          "POC",
+          "COMSEC",
+          "SSI",
+          "RSEN",
+          "IMCON_RSEN",
+          "GEOCAP",
+          "NATO",
+          "RC_Dissemination_Control_Required",
+          "ITAR-EAR"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNotice",
       "@type": "owl:Ontology"
@@ -123,38 +158,9 @@
     {
       "@id": "ismnotice:CVEnumISMNoticeValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "FISA",
-        "RAWFISA",
-        "IMC",
-        "CNWDI",
-        "RD",
-        "FRD",
-        "DS",
-        "LES",
-        "LES-NF",
-        "DSEN",
-        "DoD-Dist-A",
-        "DoD-Dist-B",
-        "DoD-Dist-C",
-        "DoD-Dist-D",
-        "DoD-Dist-E",
-        "DoD-Dist-F",
-        "US-Person",
-        "pre13526ORCON",
-        "POC",
-        "COMSEC",
-        "SSI",
-        "RSEN",
-        "IMCON_RSEN",
-        "GEOCAP",
-        "NATO",
-        "RC_Dissemination_Control_Required",
-        "ITAR-EAR"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:8"
+      }
     },
     {
       "@id": "ismnotice:DS",

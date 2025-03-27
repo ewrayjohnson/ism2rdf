@@ -4,7 +4,197 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdf:List;
+  rdf:first "classifiedBy";
+  rdf:rest <_:12>.
+
+<_:1> a rdf:List;
+  rdf:first "atomicEnergyMarkings";
+  rdf:rest <_:7>.
+
+<_:10> a rdf:List;
+  rdf:first "SARIdentifier";
+  rdf:rest <_:1>.
+
+<_:12> a rdf:List;
+  rdf:first "derivativelyClassifiedBy";
+  rdf:rest <_:64>.
+
+<_:16> a rdf:List;
+  rdf:first "noticeDate";
+  rdf:rest <_:936>.
+
+<_:19> a rdf:List;
+  rdf:first "handleViaChannels";
+  rdf:rest rdf:nil.
+
+<_:2> a rdf:List;
+  rdf:first "ownerProducer";
+  rdf:rest <_:8>.
+
+<_:20> a rdf:List;
+  rdf:first "cuiDecontrolEvent";
+  rdf:rest <_:27>.
+
+<_:21> a rdf:List;
+  rdf:first "exemptFrom";
+  rdf:rest <_:66>.
+
+<_:23> a rdf:List;
+  rdf:first "joint";
+  rdf:rest <_:37>.
+
+<_:24> a rdf:List;
+  rdf:first "compilationReason";
+  rdf:rest <_:93>.
+
+<_:27> a rdf:List;
+  rdf:first "cuiControlledBy";
+  rdf:rest <_:89>.
+
+<_:29> a rdf:List;
+  rdf:first "cuiPOC";
+  rdf:rest <_:43>.
+
+<_:3> a rdf:List;
+  rdf:first "displayOnlyTo";
+  rdf:rest <_:88>.
+
+<_:30> a rdf:List;
+  rdf:first "hasApproximateMarkings";
+  rdf:rest <_:46>.
+
+<_:34> a rdf:List;
+  rdf:first "createDate";
+  rdf:rest <_:24>.
+
+<_:35> a rdf:List;
+  rdf:first "ISMCATCESVersion";
+  rdf:rest <_:16>.
+
+<_:37> a rdf:List;
+  rdf:first "cuiBasic";
+  rdf:rest <_:69>.
+
+<_:38> a rdf:List;
+  rdf:first "declassEvent";
+  rdf:rest <_:9>.
+
+<_:4> a rdf:List;
+  rdf:first "compliesWith";
+  rdf:rest <_:67>.
+
+<_:41> a rdf:List;
+  rdf:first "externalNotice";
+  rdf:rest <_:92>.
+
+<_:43> a rdf:List;
+  rdf:first "secondBannerLine";
+  rdf:rest <_:19>.
+
+<_:46> a rdf:List;
+  rdf:first "releasableTo";
+  rdf:rest <_:3>.
+
+<_:47> a rdf:List;
+  rdf:first "FGIsourceOpen";
+  rdf:rest <_:70>.
+
+<_:5> a rdfs:Datatype;
+  owl:oneOf ("compliesWith" "classification" "ownerProducer" "SCIcontrols" "SARIdentifier" "atomicEnergyMarkings" "disseminationControls" "FGIsourceOpen" "FGIsourceProtected" "hasApproximateMarkings" "releasableTo" "displayOnlyTo" "nonICmarkings" "classifiedBy" "derivativelyClassifiedBy" "classificationReason" "nonUSControls" "derivedFrom" "declassDate" "declassEvent" "declassException" "resourceElement" "highWaterNATO" "excludeFromRollup" "createDate" "compilationReason" "noAggregation" "noticeType" "noticeProseID" "externalNotice" "DESVersion" "ISMCATCESVersion" "noticeDate" "noticeReason" "exemptFrom" "unregisteredNoticeType" "pocType" "joint" "cuiBasic" "cuiSpecified" "cuiDecontrolDate" "cuiDecontrolEvent" "cuiControlledBy" "cuiControlledByOffice" "cuiPOC" "secondBannerLine" "handleViaChannels").
+
+<_:54> a rdf:List;
+  rdf:first "noticeType";
+  rdf:rest <_:65>.
+
+<_:56> a rdf:List;
+  rdf:first "cuiDecontrolDate";
+  rdf:rest <_:20>.
+
+<_:6> a rdf:List;
+  rdf:first "nonUSControls";
+  rdf:rest <_:91>.
+
+<_:64> a rdf:List;
+  rdf:first "classificationReason";
+  rdf:rest <_:6>.
+
+<_:65> a rdf:List;
+  rdf:first "noticeProseID";
+  rdf:rest <_:41>.
+
+<_:66> a rdf:List;
+  rdf:first "unregisteredNoticeType";
+  rdf:rest <_:76>.
+
+<_:67> a rdf:List;
+  rdf:first "classification";
+  rdf:rest <_:2>.
+
+<_:69> a rdf:List;
+  rdf:first "cuiSpecified";
+  rdf:rest <_:56>.
+
+<_:7> a rdf:List;
+  rdf:first "disseminationControls";
+  rdf:rest <_:47>.
+
+<_:70> a rdf:List;
+  rdf:first "FGIsourceProtected";
+  rdf:rest <_:30>.
+
+<_:74> a rdf:List;
+  rdf:first "excludeFromRollup";
+  rdf:rest <_:34>.
+
+<_:76> a rdf:List;
+  rdf:first "pocType";
+  rdf:rest <_:23>.
+
+<_:78> a rdf:List;
+  rdf:first "resourceElement";
+  rdf:rest <_:86>.
+
+<_:8> a rdf:List;
+  rdf:first "SCIcontrols";
+  rdf:rest <_:10>.
+
+<_:86> a rdf:List;
+  rdf:first "highWaterNATO";
+  rdf:rest <_:74>.
+
+<_:88> a rdf:List;
+  rdf:first "nonICmarkings";
+  rdf:rest <_:0>.
+
+<_:89> a rdf:List;
+  rdf:first "cuiControlledByOffice";
+  rdf:rest <_:29>.
+
+<_:9> a rdf:List;
+  rdf:first "declassException";
+  rdf:rest <_:78>.
+
+<_:90> a rdf:List;
+  rdf:first "declassDate";
+  rdf:rest <_:38>.
+
+<_:91> a rdf:List;
+  rdf:first "derivedFrom";
+  rdf:rest <_:90>.
+
+<_:92> a rdf:List;
+  rdf:first "DESVersion";
+  rdf:rest <_:35>.
+
+<_:93> a rdf:List;
+  rdf:first "noAggregation";
+  rdf:rest <_:54>.
+
+<_:936> a rdf:List;
+  rdf:first "noticeReason";
+  rdf:rest <_:21>.
 
 ismattrib:atomicEnergyMarkings a skos:Concept;
   skos:inScheme ismattrib:CVEnumISMAttributes;
@@ -128,55 +318,7 @@ ismattrib:CVEnumISMAttributes a skos:ConceptScheme;
     ismattrib:unregisteredNoticeType.
 
 ismattrib:CVEnumISMAttributesValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "atomicEnergyMarkings",
-    "classification",
-    "classificationReason",
-    "classifiedBy",
-    "compilationReason",
-    "compliesWith",
-    "createDate",
-    "cuiBasic",
-    "cuiControlledBy",
-    "cuiControlledByOffice",
-    "cuiDecontrolDate",
-    "cuiDecontrolEvent",
-    "cuiPOC",
-    "cuiSpecified",
-    "declassDate",
-    "declassEvent",
-    "declassException",
-    "derivativelyClassifiedBy",
-    "derivedFrom",
-    "DESVersion",
-    "displayOnlyTo",
-    "disseminationControls",
-    "excludeFromRollup",
-    "exemptFrom",
-    "externalNotice",
-    "FGIsourceOpen",
-    "FGIsourceProtected",
-    "handleViaChannels",
-    "hasApproximateMarkings",
-    "highWaterNATO",
-    "ISMCATCESVersion",
-    "joint",
-    "noAggregation",
-    "nonICmarkings",
-    "nonUSControls",
-    "noticeDate",
-    "noticeProseID",
-    "noticeReason",
-    "noticeType",
-    "ownerProducer",
-    "pocType",
-    "releasableTo",
-    "resourceElement",
-    "SARIdentifier",
-    "SCIcontrols",
-    "secondBannerLine",
-    "unregisteredNoticeType".
+  owl:equivalentClass <_:5>.
 
 ismattrib:declassDate a skos:Concept;
   skos:inScheme ismattrib:CVEnumISMAttributes;

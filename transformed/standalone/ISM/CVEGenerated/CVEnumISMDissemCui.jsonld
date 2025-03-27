@@ -6,10 +6,29 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:6",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "AC",
+          "AWP",
+          "DISPLAYONLY",
+          "DL_ONLY",
+          "EXEMPT_FROM_ICD501_DISCOVERY",
+          "FED_ONLY",
+          "FEDCON",
+          "NF",
+          "NOCON",
+          "REL",
+          "RELIDO"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissemCui",
       "@type": "owl:Ontology"
@@ -75,22 +94,9 @@
     {
       "@id": "ismdissemcui:CVEnumISMDissemCuiValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "AC",
-        "AWP",
-        "DISPLAYONLY",
-        "DL_ONLY",
-        "EXEMPT_FROM_ICD501_DISCOVERY",
-        "FED_ONLY",
-        "FEDCON",
-        "NF",
-        "NOCON",
-        "REL",
-        "RELIDO"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:6"
+      }
     },
     {
       "@id": "ismdissemcui:DISPLAYONLY",

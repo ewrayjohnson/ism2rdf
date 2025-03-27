@@ -5,10 +5,22 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:3",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "urn:us:gov:ic:ntk:profile:agencydissem",
+          "urn:us:gov:ic:ntk:profile:datasphere",
+          "urn:us:gov:ic:ntk:profile:grp-ind",
+          "urn:us:gov:ic:ntk:profile:role"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumNTKProfileDes",
       "@type": "owl:Ontology"
@@ -35,15 +47,9 @@
     {
       "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "urn:us:gov:ic:ntk:profile:agencydissem",
-        "urn:us:gov:ic:ntk:profile:datasphere",
-        "urn:us:gov:ic:ntk:profile:grp-ind",
-        "urn:us:gov:ic:ntk:profile:role"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:3"
+      }
     },
     {
       "@id": "urn:us:gov:ic:ntk:profile:agencydissem",

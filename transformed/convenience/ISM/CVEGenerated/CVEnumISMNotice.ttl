@@ -4,7 +4,117 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdf:List;
+  rdf:first "US-Person";
+  rdf:rest <_:79>.
+
+<_:1> a rdf:List;
+  rdf:first "IMC";
+  rdf:rest <_:2>.
+
+<_:10> a rdf:List;
+  rdf:first "DoD-Dist-B";
+  rdf:rest <_:78>.
+
+<_:15> a rdf:List;
+  rdf:first "POC";
+  rdf:rest <_:5>.
+
+<_:16> a rdf:List;
+  rdf:first "DoD-Dist-A";
+  rdf:rest <_:10>.
+
+<_:18> a rdf:List;
+  rdf:first "SSI";
+  rdf:rest <_:64>.
+
+<_:2> a rdf:List;
+  rdf:first "CNWDI";
+  rdf:rest <_:9>.
+
+<_:22> a rdf:List;
+  rdf:first "ITAR-EAR";
+  rdf:rest rdf:nil.
+
+<_:24> a rdf:List;
+  rdf:first "GEOCAP";
+  rdf:rest <_:31>.
+
+<_:26> a rdf:List;
+  rdf:first "DoD-Dist-F";
+  rdf:rest <_:0>.
+
+<_:27> a rdf:List;
+  rdf:first "DoD-Dist-E";
+  rdf:rest <_:26>.
+
+<_:28> a rdf:List;
+  rdf:first "DS";
+  rdf:rest <_:50>.
+
+<_:29> a rdf:List;
+  rdf:first "IMCON_RSEN";
+  rdf:rest <_:24>.
+
+<_:31> a rdf:List;
+  rdf:first "NATO";
+  rdf:rest <_:90>.
+
+<_:36> a rdf:List;
+  rdf:first "LES-NF";
+  rdf:rest <_:65>.
+
+<_:4> a rdf:List;
+  rdf:first "FISA";
+  rdf:rest <_:8>.
+
+<_:5> a rdf:List;
+  rdf:first "COMSEC";
+  rdf:rest <_:18>.
+
+<_:50> a rdf:List;
+  rdf:first "LES";
+  rdf:rest <_:36>.
+
+<_:6> a rdf:List;
+  rdf:first "FRD";
+  rdf:rest <_:28>.
+
+<_:64> a rdf:List;
+  rdf:first "RSEN";
+  rdf:rest <_:29>.
+
+<_:65> a rdf:List;
+  rdf:first "DSEN";
+  rdf:rest <_:16>.
+
+<_:7> a rdfs:Datatype;
+  owl:oneOf ("FISA" "RAWFISA" "IMC" "CNWDI" "RD" "FRD" "DS" "LES" "LES-NF" "DSEN" "DoD-Dist-A" "DoD-Dist-B" "DoD-Dist-C" "DoD-Dist-D" "DoD-Dist-E" "DoD-Dist-F" "US-Person" "pre13526ORCON" "POC" "COMSEC" "SSI" "RSEN" "IMCON_RSEN" "GEOCAP" "NATO" "RC_Dissemination_Control_Required" "ITAR-EAR").
+
+<_:78> a rdf:List;
+  rdf:first "DoD-Dist-C";
+  rdf:rest <_:82>.
+
+<_:79> a rdf:List;
+  rdf:first "pre13526ORCON";
+  rdf:rest <_:15>.
+
+<_:8> a rdf:List;
+  rdf:first "RAWFISA";
+  rdf:rest <_:1>.
+
+<_:82> a rdf:List;
+  rdf:first "DoD-Dist-D";
+  rdf:rest <_:27>.
+
+<_:9> a rdf:List;
+  rdf:first "RD";
+  rdf:rest <_:6>.
+
+<_:90> a rdf:List;
+  rdf:first "RC_Dissemination_Control_Required";
+  rdf:rest <_:22>.
 
 ismnotice:CNWDI a skos:Concept;
   skos:inScheme ismnotice:CVEnumISMNotice;
@@ -48,35 +158,7 @@ ismnotice:CVEnumISMNotice a skos:ConceptScheme;
     ismnotice:US-Person.
 
 ismnotice:CVEnumISMNoticeValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "CNWDI",
-    "COMSEC",
-    "DoD-Dist-A",
-    "DoD-Dist-B",
-    "DoD-Dist-C",
-    "DoD-Dist-D",
-    "DoD-Dist-E",
-    "DoD-Dist-F",
-    "DS",
-    "DSEN",
-    "FISA",
-    "FRD",
-    "GEOCAP",
-    "IMC",
-    "IMCON_RSEN",
-    "ITAR-EAR",
-    "LES",
-    "LES-NF",
-    "NATO",
-    "POC",
-    "pre13526ORCON",
-    "RAWFISA",
-    "RC_Dissemination_Control_Required",
-    "RD",
-    "RSEN",
-    "SSI",
-    "US-Person".
+  owl:equivalentClass <_:7>.
 
 ismnotice:DoD-Dist-A a skos:Concept;
   skos:inScheme ismnotice:CVEnumISMNotice;

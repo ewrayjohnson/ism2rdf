@@ -4,7 +4,33 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdfs:Datatype;
+  owl:oneOf ("ACPI" "AWP" "CUSPI" "DPPD" "HVCO" "SSS").
+
+<_:2> a rdf:List;
+  rdf:first "CUSPI";
+  rdf:rest <_:8>.
+
+<_:3> a rdf:List;
+  rdf:first "SSS";
+  rdf:rest rdf:nil.
+
+<_:33> a rdf:List;
+  rdf:first "HVCO";
+  rdf:rest <_:3>.
+
+<_:4> a rdf:List;
+  rdf:first "AWP";
+  rdf:rest <_:2>.
+
+<_:8> a rdf:List;
+  rdf:first "DPPD";
+  rdf:rest <_:33>.
+
+<_:9> a rdf:List;
+  rdf:first "ACPI";
+  rdf:rest <_:4>.
 
 ismsecondbannerline:ACPI a skos:Concept;
   skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine;
@@ -32,14 +58,7 @@ ismsecondbannerline:CVEnumISMSecondBannerLine a skos:ConceptScheme;
     ismsecondbannerline:SSS.
 
 ismsecondbannerline:CVEnumISMSecondBannerLineValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "ACPI",
-    "AWP",
-    "CUSPI",
-    "DPPD",
-    "HVCO",
-    "SSS".
+  owl:equivalentClass <_:0>.
 
 ismsecondbannerline:DPPD a skos:Concept;
   skos:inScheme ismsecondbannerline:CVEnumISMSecondBannerLine;

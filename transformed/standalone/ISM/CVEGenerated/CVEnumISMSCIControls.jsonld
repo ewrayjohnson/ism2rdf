@@ -6,10 +6,38 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:7",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "BUR",
+          "BUR-BLG",
+          "BUR-DTP",
+          "BUR-WRG",
+          "HCS",
+          "HCS-O",
+          "HCS-P",
+          "HCS-X",
+          "KLM",
+          "KLM-R",
+          "MVL",
+          "RSV",
+          "SI",
+          "SI-EU",
+          "SI-G",
+          "SI-NK",
+          "TK",
+          "TK-BLFH",
+          "TK-IDIT",
+          "TK-KAND"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSCIControls",
       "@type": "owl:Ontology"
@@ -120,31 +148,9 @@
     {
       "@id": "ismscicon:CVEnumISMSCIControlsValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "BUR",
-        "BUR-BLG",
-        "BUR-DTP",
-        "BUR-WRG",
-        "HCS",
-        "HCS-O",
-        "HCS-P",
-        "HCS-X",
-        "KLM",
-        "KLM-R",
-        "MVL",
-        "RSV",
-        "SI",
-        "SI-EU",
-        "SI-G",
-        "SI-NK",
-        "TK",
-        "TK-BLFH",
-        "TK-IDIT",
-        "TK-KAND"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:7"
+      }
     },
     {
       "@id": "ismscicon:HCS",

@@ -4,7 +4,89 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:0> a rdf:List;
+  rdf:first "BUR";
+  rdf:rest <_:3>.
+
+<_:1> a rdf:List;
+  rdf:first "HCS-O";
+  rdf:rest <_:2>.
+
+<_:10> a rdf:List;
+  rdf:first "BUR-DTP";
+  rdf:rest <_:54>.
+
+<_:2> a rdf:List;
+  rdf:first "HCS-P";
+  rdf:rest <_:73>.
+
+<_:25> a rdf:List;
+  rdf:first "KLM-R";
+  rdf:rest <_:8>.
+
+<_:3> a rdf:List;
+  rdf:first "BUR-BLG";
+  rdf:rest <_:10>.
+
+<_:4> a rdf:List;
+  rdf:first "TK";
+  rdf:rest <_:57>.
+
+<_:40> a rdf:List;
+  rdf:first "SI-EU";
+  rdf:rest <_:61>.
+
+<_:44> a rdf:List;
+  rdf:first "RSV";
+  rdf:rest <_:48>.
+
+<_:47> a rdf:List;
+  rdf:first "TK-IDIT";
+  rdf:rest <_:88>.
+
+<_:48> a rdf:List;
+  rdf:first "SI";
+  rdf:rest <_:40>.
+
+<_:54> a rdf:List;
+  rdf:first "BUR-WRG";
+  rdf:rest <_:6>.
+
+<_:57> a rdf:List;
+  rdf:first "TK-BLFH";
+  rdf:rest <_:47>.
+
+<_:6> a rdf:List;
+  rdf:first "HCS";
+  rdf:rest <_:1>.
+
+<_:61> a rdf:List;
+  rdf:first "SI-G";
+  rdf:rest <_:68>.
+
+<_:68> a rdf:List;
+  rdf:first "SI-NK";
+  rdf:rest <_:4>.
+
+<_:7> a rdfs:Datatype;
+  owl:oneOf ("BUR" "BUR-BLG" "BUR-DTP" "BUR-WRG" "HCS" "HCS-O" "HCS-P" "HCS-X" "KLM" "KLM-R" "MVL" "RSV" "SI" "SI-EU" "SI-G" "SI-NK" "TK" "TK-BLFH" "TK-IDIT" "TK-KAND").
+
+<_:73> a rdf:List;
+  rdf:first "HCS-X";
+  rdf:rest <_:85>.
+
+<_:8> a rdf:List;
+  rdf:first "MVL";
+  rdf:rest <_:44>.
+
+<_:85> a rdf:List;
+  rdf:first "KLM";
+  rdf:rest <_:25>.
+
+<_:88> a rdf:List;
+  rdf:first "TK-KAND";
+  rdf:rest rdf:nil.
 
 ismscicon:BUR a skos:Concept;
   skos:inScheme ismscicon:CVEnumISMSCIControls;
@@ -51,28 +133,7 @@ ismscicon:CVEnumISMSCIControls a skos:ConceptScheme;
     ismscicon:TK-KAND.
 
 ismscicon:CVEnumISMSCIControlsValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "BUR",
-    "BUR-BLG",
-    "BUR-DTP",
-    "BUR-WRG",
-    "HCS",
-    "HCS-O",
-    "HCS-P",
-    "HCS-X",
-    "KLM",
-    "KLM-R",
-    "MVL",
-    "RSV",
-    "SI",
-    "SI-EU",
-    "SI-G",
-    "SI-NK",
-    "TK",
-    "TK-BLFH",
-    "TK-IDIT",
-    "TK-KAND".
+  owl:equivalentClass <_:7>.
 
 ismscicon:HCS a skos:Concept;
   skos:inScheme ismscicon:CVEnumISMSCIControls;

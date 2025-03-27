@@ -4,6 +4,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix tetra: <urn:us:gov:ic:taxonomy:catt:tetragraph#>.
 
+<_:7> a rdfs:Datatype;
+.
+
 <urn:us:gov:ic:ISMCAT:Tetragraph> a <http://www.w3.org/2002/07/owl#Ontology>;
   <http://www.w3.org/2002/07/owl#imports>
     <urn:us:gov:ic:../ISM/IC-ARH.jsonld>,
@@ -16,4 +19,4 @@ tetra:DecomposableType a skos:ConceptScheme;
   dc:title "Decomposition is the breaking down of a tetragraph into its component countries for the purposes of rollup. An example is decomposing FVEY into the five member countries. This decomposition allows a portion marked RELEASABLE TO USA, GBR and another portion marked RELEASEABLE TO USA, FVEY to rollup to RELEASABLE TO USA, GBR. If FVEY was not decomposable the rollup would have to have been NF. NA is \"Not Applicable\" and is applied to deprecated tetragraphs.".
 
 tetra:DecomposableTypeValues a rdfs:Datatype;
-.
+  <http://www.w3.org/2002/07/owl#equivalentClass> <_:7>.

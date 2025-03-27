@@ -4,7 +4,33 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<_:10> a rdf:List;
+  rdf:first "DoD-Dist-C";
+  rdf:rest <_:8>.
+
+<_:2> a rdf:List;
+  rdf:first "ICD-710";
+  rdf:rest <_:6>.
+
+<_:21> a rdf:List;
+  rdf:first "DoD-Dist-F";
+  rdf:rest rdf:nil.
+
+<_:5> a rdfs:Datatype;
+  owl:oneOf ("ICD-710" "DoD-Dist-B" "DoD-Dist-C" "DoD-Dist-D" "DoD-Dist-E" "DoD-Dist-F").
+
+<_:6> a rdf:List;
+  rdf:first "DoD-Dist-B";
+  rdf:rest <_:10>.
+
+<_:8> a rdf:List;
+  rdf:first "DoD-Dist-D";
+  rdf:rest <_:9>.
+
+<_:9> a rdf:List;
+  rdf:first "DoD-Dist-E";
+  rdf:rest <_:21>.
 
 ismpoctype:CVEnumISMPocType a skos:ConceptScheme;
   dc:title "(U) ismpoctype:CVEnumISMPocType definition";
@@ -17,14 +43,7 @@ ismpoctype:CVEnumISMPocType a skos:ConceptScheme;
     ismpoctype:ICD-710.
 
 ismpoctype:CVEnumISMPocTypeValues a rdfs:Datatype;
-  rdfs:subClassOf xsd:string;
-  owl:oneOf
-    "DoD-Dist-B",
-    "DoD-Dist-C",
-    "DoD-Dist-D",
-    "DoD-Dist-E",
-    "DoD-Dist-F",
-    "ICD-710".
+  owl:equivalentClass <_:5>.
 
 ismpoctype:DoD-Dist-B a skos:Concept;
   skos:inScheme ismpoctype:CVEnumISMPocType;

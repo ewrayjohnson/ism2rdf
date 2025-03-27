@@ -6,10 +6,27 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
+    {
+      "@id": "_:10",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "DS",
+          "XD",
+          "ND",
+          "SBU",
+          "SBU-NF",
+          "LES",
+          "LES-NF",
+          "SSI",
+          "NNPI"
+        ]
+      }
+    },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNonIC",
       "@type": "owl:Ontology"
@@ -51,20 +68,9 @@
     {
       "@id": "ismnonic:CVEnumISMNonICValues",
       "@type": "rdfs:Datatype",
-      "rdfs:subClassOf": {
-        "@id": "xsd:string"
-      },
-      "owl:oneOf": [
-        "DS",
-        "XD",
-        "ND",
-        "SBU",
-        "SBU-NF",
-        "LES",
-        "LES-NF",
-        "SSI",
-        "NNPI"
-      ]
+      "owl:equivalentClass": {
+        "@id": "_:10"
+      }
     },
     {
       "@id": "ismnonic:DS",

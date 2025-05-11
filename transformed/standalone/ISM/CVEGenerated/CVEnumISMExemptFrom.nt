@@ -1,0 +1,23 @@
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMExemptFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom> <http://purl.org/dc/elements/1.1/title> "(U) ismexempt:CVEnumISMExemptFrom definition" .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:exemptfrom#IC_710_MANDATORY_FDR> .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:exemptfrom#DOD_DISTRO_STATEMENT> .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFromValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFromValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:5 .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:5 <http://www.w3.org/2002/07/owl#oneOf> _:7 .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#IC_710_MANDATORY_FDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#IC_710_MANDATORY_FDR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom> .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#IC_710_MANDATORY_FDR> <http://www.w3.org/2004/02/skos/core#notation> "IC_710_MANDATORY_FDR" .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#IC_710_MANDATORY_FDR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Document claims exemption from ICD-710 rules mandating the use of Foreign Disclosure and Release markings that have been encoded in ISM. Currently, the requirement for FD&R is only mandatory for Disseminated Analytic Product; however, it is strongly encouraged otherwise." .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IC_710_MANDATORY_FDR" .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:37 .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#DOD_DISTRO_STATEMENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#DOD_DISTRO_STATEMENT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom> .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#DOD_DISTRO_STATEMENT> <http://www.w3.org/2004/02/skos/core#notation> "DOD_DISTRO_STATEMENT" .
+<urn:us:gov:ic:cvenum:ism:exemptfrom#DOD_DISTRO_STATEMENT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Document claims exemption from the rules in DoD5230.24 requiring DoD Distribution Statements that have been encoded into ISM." .
+_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DOD_DISTRO_STATEMENT" .
+_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

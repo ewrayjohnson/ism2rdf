@@ -1,0 +1,9 @@
+<urn:us:gov:ic:USAgency:USAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:USAgency:USAgency> <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:./CVEGenerated/CVEnumUSAgencyAcronym.jsonld> .
+<urn:us:gov:ic:USAgency:USAgency> <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:./CVEGenerated/CVEnumUSGOVAgencyAcronym.jsonld> .
+<urn:us:gov:ic:usagency#usagency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<urn:us:gov:ic:usagency#usagency> <http://www.w3.org/2000/01/rdf-schema#range> <urn:us:gov:ic:cvenum:usagency:agencyacronym#CVEnumUSAgencyAcronymValues> .
+<urn:us:gov:ic:usagency#usagency> <http://www.w3.org/2000/01/rdf-schema#comment> "An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies." .
+<urn:us:gov:ic:usagency#usgovagency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<urn:us:gov:ic:usagency#usgovagency> <http://www.w3.org/2000/01/rdf-schema#range> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronymValues> .
+<urn:us:gov:ic:usagency#usgovagency> <http://www.w3.org/2000/01/rdf-schema#comment> "An attribute limited to allowable agency acronyms for USA. Contains the Executive branch agencies." .

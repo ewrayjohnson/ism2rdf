@@ -1,0 +1,6 @@
+<urn:us:gov:ic:ISM:IC-ARH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:ISM:IC-ARH> <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:./IC-ISM.jsonld> .
+<urn:us:gov:ic:ISM:IC-ARH> <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:./IC-NTK.jsonld> .
+<urn:us:gov:ic:arh#DESVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<urn:us:gov:ic:arh#DESVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<urn:us:gov:ic:arh#DESVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "The version number of the DES" .

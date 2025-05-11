@@ -1,0 +1,47 @@
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMElements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> <http://purl.org/dc/elements/1.1/title> "(U) All currently authorized ISM element names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMElements.xml" .
+<urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:elements#Notice> .
+<urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:elements#NoticeText> .
+<urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:elements#NoticeList> .
+<urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:elements#NoticeExternal> .
+<urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:elements#NoticeExternalList> .
+<urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElementsValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElementsValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:8 .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:8 <http://www.w3.org/2002/07/owl#oneOf> _:90 .
+<urn:us:gov:ic:cvenum:ism:elements#Notice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:elements#Notice> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> .
+<urn:us:gov:ic:cvenum:ism:elements#Notice> <http://www.w3.org/2004/02/skos/core#notation> "Notice" .
+<urn:us:gov:ic:cvenum:ism:elements#Notice> <http://www.w3.org/2004/02/skos/core#prefLabel> "Notice element" .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Notice" .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:12 .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeText> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeText> <http://www.w3.org/2004/02/skos/core#notation> "NoticeText" .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeText> <http://www.w3.org/2004/02/skos/core#prefLabel> "NoticeText element" .
+_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NoticeText" .
+_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:9 .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeList> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeList> <http://www.w3.org/2004/02/skos/core#notation> "NoticeList" .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeList> <http://www.w3.org/2004/02/skos/core#prefLabel> "NoticeList element" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NoticeList" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:4 .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeExternal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeExternal> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeExternal> <http://www.w3.org/2004/02/skos/core#notation> "NoticeExternal" .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeExternal> <http://www.w3.org/2004/02/skos/core#prefLabel> "NoticeExternal element" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NoticeExternal" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:2 .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeExternalList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeExternalList> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements> .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeExternalList> <http://www.w3.org/2004/02/skos/core#notation> "NoticeExternalList" .
+<urn:us:gov:ic:cvenum:ism:elements#NoticeExternalList> <http://www.w3.org/2004/02/skos/core#prefLabel> "NoticeExternalList element" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NoticeExternalList" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

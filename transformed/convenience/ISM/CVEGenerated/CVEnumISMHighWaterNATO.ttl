@@ -1,69 +1,56 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismhighwaternato: <urn:us:gov:ic:cvenum:ism:HighWaterNATO#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix ismhighwaternato: <urn:us:gov:ic:cvenum:ism:HighWaterNATO#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<_:10> a rdf:List;
-  rdf:first "NATO-TS";
-  rdf:rest rdf:nil.
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMHighWaterNATO> a owl:Ontology .
 
-<_:2> a rdf:List;
-  rdf:first "NATO-R";
-  rdf:rest <_:5>.
+ismhighwaternato:CVEnumISMHighWaterNATO a skos:ConceptScheme ;
+	dc:title "(U) The highest classification of any portion that has either @ism:ownerProducer contains NATO or @FGIsourceOpen contains NATO. The @ism:highWaterNATO attribute will be compared against an entity's fineAccessControls NATO value. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMHighWaterNATO.xml" ;
+	skos:hasTopConcept ismhighwaternato:NATO-U ;
+	skos:hasTopConcept ismhighwaternato:NATO-R ;
+	skos:hasTopConcept ismhighwaternato:NATO-C ;
+	skos:hasTopConcept ismhighwaternato:NATO-S ;
+	skos:hasTopConcept ismhighwaternato:NATO-TS .
 
-<_:3> a rdf:List;
-  rdf:first "NATO-U";
-  rdf:rest <_:2>.
+ismhighwaternato:CVEnumISMHighWaterNATOValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"NATO-U"
+			"NATO-R"
+			"NATO-C"
+			"NATO-S"
+			"NATO-TS"
+		) ;
+	] .
 
-<_:47> a rdf:List;
-  rdf:first "NATO-S";
-  rdf:rest <_:10>.
+ismhighwaternato:NATO-C a skos:Concept ;
+	skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO ;
+	skos:notation "NATO-C" ;
+	skos:prefLabel "NATO CONFIDENTIAL" .
 
-<_:5> a rdf:List;
-  rdf:first "NATO-C";
-  rdf:rest <_:47>.
+ismhighwaternato:NATO-R a skos:Concept ;
+	skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO ;
+	skos:notation "NATO-R" ;
+	skos:prefLabel "NATO RESTRICTED" .
 
-<_:9> a rdfs:Datatype;
-  owl:oneOf ("NATO-U" "NATO-R" "NATO-C" "NATO-S" "NATO-TS").
+ismhighwaternato:NATO-S a skos:Concept ;
+	skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO ;
+	skos:notation "NATO-S" ;
+	skos:prefLabel "NATO SECRET" .
 
-ismhighwaternato:CVEnumISMHighWaterNATO a skos:ConceptScheme;
-  dc:title "(U) The highest classification of any portion that has either @ism:ownerProducer contains NATO or @FGIsourceOpen contains NATO. The @ism:highWaterNATO attribute will be compared against an entity's fineAccessControls NATO value. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMHighWaterNATO.xml";
-  skos:hasTopConcept
-    ismhighwaternato:NATO-C,
-    ismhighwaternato:NATO-R,
-    ismhighwaternato:NATO-S,
-    ismhighwaternato:NATO-TS,
-    ismhighwaternato:NATO-U.
+ismhighwaternato:NATO-TS a skos:Concept ;
+	skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO ;
+	skos:notation "NATO-TS" ;
+	skos:prefLabel "NATO TOP SECRET" .
 
-ismhighwaternato:CVEnumISMHighWaterNATOValues a rdfs:Datatype;
-  owl:equivalentClass <_:9>.
+ismhighwaternato:NATO-U a skos:Concept ;
+	skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO ;
+	skos:notation "NATO-U" ;
+	skos:prefLabel "NATO UNCLASSIFIED" .
 
-ismhighwaternato:NATO-C a skos:Concept;
-  skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO;
-  skos:notation "NATO-C";
-  skos:prefLabel "NATO CONFIDENTIAL".
-
-ismhighwaternato:NATO-R a skos:Concept;
-  skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO;
-  skos:notation "NATO-R";
-  skos:prefLabel "NATO RESTRICTED".
-
-ismhighwaternato:NATO-S a skos:Concept;
-  skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO;
-  skos:notation "NATO-S";
-  skos:prefLabel "NATO SECRET".
-
-ismhighwaternato:NATO-TS a skos:Concept;
-  skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO;
-  skos:notation "NATO-TS";
-  skos:prefLabel "NATO TOP SECRET".
-
-ismhighwaternato:NATO-U a skos:Concept;
-  skos:inScheme ismhighwaternato:CVEnumISMHighWaterNATO;
-  skos:notation "NATO-U";
-  skos:prefLabel "NATO UNCLASSIFIED".
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMHighWaterNATO> a owl:Ontology;
-.

@@ -1,0 +1,135 @@
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissemIcrm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://purl.org/dc/elements/1.1/title> "(U) ismdissemicrm:CVEnumISMDissemIcrm definition" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#RS> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#FOUO> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#OC> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#OC-USGOV> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#IMC> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#NF> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#PR> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#REL> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#RELIDO> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#EYES> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#DSEN> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#RAWFISA> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#FISA> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#DISPLAYONLY> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#EXEMPT_FROM_ICD501_DISCOVERY> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:dissem:icrm#WAIVED> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrmValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrmValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:7 .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:7 <http://www.w3.org/2002/07/owl#oneOf> _:4 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RS> <http://www.w3.org/2004/02/skos/core#notation> "RS" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RS> <http://www.w3.org/2004/02/skos/core#prefLabel> "RISK SENSITIVE" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RS" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:3 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#FOUO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#FOUO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#FOUO> <http://www.w3.org/2004/02/skos/core#notation> "FOUO" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#FOUO> <http://www.w3.org/2004/02/skos/core#prefLabel> "FOR OFFICIAL USE ONLY" .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FOUO" .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:6 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#OC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#OC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#OC> <http://www.w3.org/2004/02/skos/core#notation> "OC" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#OC> <http://www.w3.org/2004/02/skos/core#prefLabel> "ORIGINATOR CONTROLLED" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "OC" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:90 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#OC-USGOV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#OC-USGOV> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#OC-USGOV> <http://www.w3.org/2004/02/skos/core#notation> "OC-USGOV" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#OC-USGOV> <http://www.w3.org/2004/02/skos/core#prefLabel> "ORIGINATOR CONTROLLED US GOVERNMENT" .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "OC-USGOV" .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:10 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#IMC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#IMC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#IMC> <http://www.w3.org/2004/02/skos/core#notation> "IMC" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#IMC> <http://www.w3.org/2004/02/skos/core#prefLabel> "CONTROLLED IMAGERY" .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IMC" .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:89 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#NF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#NF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#NF> <http://www.w3.org/2004/02/skos/core#notation> "NF" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#NF> <http://www.w3.org/2004/02/skos/core#prefLabel> "NOT RELEASABLE TO FOREIGN NATIONALS" .
+_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NF" .
+_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:9 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#PR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#PR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#PR> <http://www.w3.org/2004/02/skos/core#notation> "PR" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#PR> <http://www.w3.org/2004/02/skos/core#prefLabel> "CAUTION-PROPRIETARY INFORMATION INVOLVED" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PR" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#REL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#REL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#REL> <http://www.w3.org/2004/02/skos/core#notation> "REL" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#REL> <http://www.w3.org/2004/02/skos/core#prefLabel> "AUTHORIZED FOR RELEASE TO" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "REL" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:67 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RELIDO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RELIDO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RELIDO> <http://www.w3.org/2004/02/skos/core#notation> "RELIDO" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RELIDO> <http://www.w3.org/2004/02/skos/core#prefLabel> "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL" .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RELIDO" .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:5 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#EYES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#EYES> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#EYES> <http://www.w3.org/2004/02/skos/core#notation> "EYES" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#EYES> <http://www.w3.org/2004/02/skos/core#prefLabel> "EYES ONLY" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EYES" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:34 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#DSEN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#DSEN> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#DSEN> <http://www.w3.org/2004/02/skos/core#notation> "DSEN" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#DSEN> <http://www.w3.org/2004/02/skos/core#prefLabel> "DEA SENSITIVE" .
+_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DSEN" .
+_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:8 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RAWFISA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RAWFISA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RAWFISA> <http://www.w3.org/2004/02/skos/core#notation> "RAWFISA" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#RAWFISA> <http://www.w3.org/2004/02/skos/core#prefLabel> "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT" .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RAWFISA" .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:42 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#FISA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#FISA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#FISA> <http://www.w3.org/2004/02/skos/core#notation> "FISA" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#FISA> <http://www.w3.org/2004/02/skos/core#prefLabel> "FOREIGN INTELLIGENCE SURVEILLANCE ACT" .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FISA" .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:51 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#DISPLAYONLY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#DISPLAYONLY> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#DISPLAYONLY> <http://www.w3.org/2004/02/skos/core#notation> "DISPLAYONLY" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#DISPLAYONLY> <http://www.w3.org/2004/02/skos/core#prefLabel> "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO" .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DISPLAYONLY" .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:22 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#EXEMPT_FROM_ICD501_DISCOVERY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#EXEMPT_FROM_ICD501_DISCOVERY> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#EXEMPT_FROM_ICD501_DISCOVERY> <http://www.w3.org/2004/02/skos/core#notation> "EXEMPT_FROM_ICD501_DISCOVERY" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#EXEMPT_FROM_ICD501_DISCOVERY> <http://www.w3.org/2004/02/skos/core#prefLabel> "EXEMPT FROM ICD501 DISCOVERY" .
+_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EXEMPT_FROM_ICD501_DISCOVERY" .
+_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:54 .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#WAIVED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#WAIVED> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm> .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#WAIVED> <http://www.w3.org/2004/02/skos/core#notation> "WAIVED" .
+<urn:us:gov:ic:cvenum:ism:dissem:icrm#WAIVED> <http://www.w3.org/2004/02/skos/core#prefLabel> "WAIVED" .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "WAIVED" .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

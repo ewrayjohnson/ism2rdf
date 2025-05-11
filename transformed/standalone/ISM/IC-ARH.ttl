@@ -1,14 +1,21 @@
-@prefix arh: <urn:us:gov:ic:arh#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix xs: <http://www.w3.org/2001/XMLSchema#>.
+@prefix arh: <urn:us:gov:ic:arh#> .
+@prefix ism: <urn:us:gov:ic:ism#> .
+@prefix ntk: <urn:us:gov:ic:ntk#> .
+@prefix xlink: <http://www.w3.org/1999/xlink> .
+@prefix xhtml: <http://www.w3.org/1999/xhtml-StopBrowserRendering> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-arh:DESVersion a owl:DatatypeProperty;
-  rdfs:comment "The version number of the DES";
-  rdfs:range xs:string.
+<urn:us:gov:ic:ISM:IC-ARH> a owl:Ontology ;
+	owl:imports urn:us:gov:ic:./IC-ISM.jsonld ;
+	owl:imports urn:us:gov:ic:./IC-NTK.jsonld .
 
-<urn:us:gov:ic:ISM:IC-ARH> a owl:Ontology;
-  owl:imports
-    <urn:us:gov:ic:./IC-ISM.jsonld>,
-    <urn:us:gov:ic:./IC-NTK.jsonld>.
+arh:DESVersion a owl:DatatypeProperty ;
+	rdfs:comment "The version number of the DES" ;
+	rdfs:range xs:string .
+

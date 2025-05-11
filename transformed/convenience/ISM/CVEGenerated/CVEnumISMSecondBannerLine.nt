@@ -1,0 +1,55 @@
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSecondBannerLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> <http://purl.org/dc/elements/1.1/title> "(U) ismsecondbannerline:CVEnumISMSecondBannerLine definition" .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:secondbannerline#ACPI> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:secondbannerline#AWP> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:secondbannerline#CUSPI> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:secondbannerline#DPPD> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:secondbannerline#HVCO> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:secondbannerline#SSS> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLineValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLineValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:3 .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:3 <http://www.w3.org/2002/07/owl#oneOf> _:100 .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#ACPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#ACPI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#ACPI> <http://www.w3.org/2004/02/skos/core#notation> "ACPI" .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#ACPI> <http://www.w3.org/2004/02/skos/core#prefLabel> "ATTORNEY-CLIENT PRIVILEGED INFO" .
+_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ACPI" .
+_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:8 .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#AWP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#AWP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#AWP> <http://www.w3.org/2004/02/skos/core#notation> "AWP" .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#AWP> <http://www.w3.org/2004/02/skos/core#prefLabel> "ATTORNEY WORK PRODUCT" .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "AWP" .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:4 .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CUSPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CUSPI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CUSPI> <http://www.w3.org/2004/02/skos/core#notation> "CUSPI" .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#CUSPI> <http://www.w3.org/2004/02/skos/core#prefLabel> "CONTENTS INCLUDE US PERSON INFORMATION" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUSPI" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:1 .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#DPPD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#DPPD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#DPPD> <http://www.w3.org/2004/02/skos/core#notation> "DPPD" .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#DPPD> <http://www.w3.org/2004/02/skos/core#prefLabel> "DELIBERATIVE PROCESS PRIVILEGED DOCUMENT" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DPPD" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#HVCO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#HVCO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#HVCO> <http://www.w3.org/2004/02/skos/core#notation> "HVCO" .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#HVCO> <http://www.w3.org/2004/02/skos/core#prefLabel> "HANDLE VIA CHANNELS ONLY" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "HVCO" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:5 .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#SSS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#SSS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine> .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#SSS> <http://www.w3.org/2004/02/skos/core#notation> "SSS" .
+<urn:us:gov:ic:cvenum:ism:secondbannerline#SSS> <http://www.w3.org/2004/02/skos/core#prefLabel> "SOURCE SELECTION SENSITIVE" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SSS" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

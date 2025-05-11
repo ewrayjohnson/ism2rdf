@@ -1,4 +1,12 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix arh: <urn:us:gov:ic:arh#> .
+@prefix xhtml: <http://www.w3.org/1999/xhtml-StopBrowserRendering> .
+@prefix ism: <urn:us:gov:ic:ism#> .
+@prefix tax: <urn:us:gov:ic:taxonomy:common#> .
+@prefix ismcatrelto: <urn:us:gov:ic:cvenum:ismcat:relto#> .
+@prefix ismcatre: <urn:us:gov:ic:cvenum:ismcat:responsibleentity#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
 
-<urn:us:gov:ic:Taxonomy:Taxonomy> a <http://www.w3.org/2002/07/owl#Ontology>;
-  <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:../ISM/IC-ISM.jsonld>.

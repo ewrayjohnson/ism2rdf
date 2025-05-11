@@ -1,219 +1,161 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismscicon: <urn:us:gov:ic:cvenum:ism:scicontrols#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix ismscicon: <urn:us:gov:ic:cvenum:ism:scicontrols#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<_:0> a rdf:List;
-  rdf:first "BUR";
-  rdf:rest <_:3>.
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSCIControls> a owl:Ontology .
 
-<_:1> a rdf:List;
-  rdf:first "HCS-O";
-  rdf:rest <_:2>.
+ismscicon:BUR a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "BUR" ;
+	skos:prefLabel "BUR" .
 
-<_:10> a rdf:List;
-  rdf:first "BUR-DTP";
-  rdf:rest <_:54>.
+ismscicon:BUR-BLG a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "BUR-BLG" ;
+	skos:prefLabel "BUR-BLG" .
 
-<_:2> a rdf:List;
-  rdf:first "HCS-P";
-  rdf:rest <_:73>.
+ismscicon:BUR-DTP a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "BUR-DTP" ;
+	skos:prefLabel "BUR-DTP" .
 
-<_:25> a rdf:List;
-  rdf:first "KLM-R";
-  rdf:rest <_:8>.
+ismscicon:BUR-WRG a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "BUR-WRG" ;
+	skos:prefLabel "BUR-WRG" .
 
-<_:3> a rdf:List;
-  rdf:first "BUR-BLG";
-  rdf:rest <_:10>.
+ismscicon:CVEnumISMSCIControls a skos:ConceptScheme ;
+	dc:title "(U) ismscicon:CVEnumISMSCIControls definition" ;
+	skos:hasTopConcept ismscicon:BUR ;
+	skos:hasTopConcept ismscicon:BUR-BLG ;
+	skos:hasTopConcept ismscicon:BUR-DTP ;
+	skos:hasTopConcept ismscicon:BUR-WRG ;
+	skos:hasTopConcept ismscicon:HCS ;
+	skos:hasTopConcept ismscicon:HCS-O ;
+	skos:hasTopConcept ismscicon:HCS-P ;
+	skos:hasTopConcept ismscicon:HCS-X ;
+	skos:hasTopConcept ismscicon:KLM ;
+	skos:hasTopConcept ismscicon:KLM-R ;
+	skos:hasTopConcept ismscicon:MVL ;
+	skos:hasTopConcept ismscicon:RSV ;
+	skos:hasTopConcept ismscicon:SI ;
+	skos:hasTopConcept ismscicon:SI-EU ;
+	skos:hasTopConcept ismscicon:SI-G ;
+	skos:hasTopConcept ismscicon:SI-NK ;
+	skos:hasTopConcept ismscicon:TK ;
+	skos:hasTopConcept ismscicon:TK-BLFH ;
+	skos:hasTopConcept ismscicon:TK-IDIT ;
+	skos:hasTopConcept ismscicon:TK-KAND .
 
-<_:4> a rdf:List;
-  rdf:first "TK";
-  rdf:rest <_:57>.
+ismscicon:CVEnumISMSCIControlsValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"BUR"
+			"BUR-BLG"
+			"BUR-DTP"
+			"BUR-WRG"
+			"HCS"
+			"HCS-O"
+			"HCS-P"
+			"HCS-X"
+			"KLM"
+			"KLM-R"
+			"MVL"
+			"RSV"
+			"SI"
+			"SI-EU"
+			"SI-G"
+			"SI-NK"
+			"TK"
+			"TK-BLFH"
+			"TK-IDIT"
+			"TK-KAND"
+		) ;
+	] .
 
-<_:40> a rdf:List;
-  rdf:first "SI-EU";
-  rdf:rest <_:61>.
+ismscicon:HCS a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "HCS" ;
+	skos:prefLabel "HCS" .
 
-<_:44> a rdf:List;
-  rdf:first "RSV";
-  rdf:rest <_:48>.
+ismscicon:HCS-O a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "HCS-O" ;
+	skos:prefLabel "HCS-O" .
 
-<_:47> a rdf:List;
-  rdf:first "TK-IDIT";
-  rdf:rest <_:88>.
+ismscicon:HCS-P a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "HCS-P" ;
+	skos:prefLabel "HCS-P" .
 
-<_:48> a rdf:List;
-  rdf:first "SI";
-  rdf:rest <_:40>.
+ismscicon:HCS-X a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "HCS-X" ;
+	skos:prefLabel "HCS-X" .
 
-<_:54> a rdf:List;
-  rdf:first "BUR-WRG";
-  rdf:rest <_:6>.
+ismscicon:KLM a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "KLM" ;
+	skos:prefLabel "KLAMATH" .
 
-<_:57> a rdf:List;
-  rdf:first "TK-BLFH";
-  rdf:rest <_:47>.
+ismscicon:KLM-R a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "KLM-R" ;
+	skos:prefLabel "KLAMATH-R" .
 
-<_:6> a rdf:List;
-  rdf:first "HCS";
-  rdf:rest <_:1>.
+ismscicon:MVL a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "MVL" ;
+	skos:prefLabel "MARVEL" .
 
-<_:61> a rdf:List;
-  rdf:first "SI-G";
-  rdf:rest <_:68>.
+ismscicon:RSV a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "RSV" ;
+	skos:prefLabel "RESERVE" .
 
-<_:68> a rdf:List;
-  rdf:first "SI-NK";
-  rdf:rest <_:4>.
+ismscicon:SI a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "SI" ;
+	skos:prefLabel "SPECIAL INTELLIGENCE" .
 
-<_:7> a rdfs:Datatype;
-  owl:oneOf ("BUR" "BUR-BLG" "BUR-DTP" "BUR-WRG" "HCS" "HCS-O" "HCS-P" "HCS-X" "KLM" "KLM-R" "MVL" "RSV" "SI" "SI-EU" "SI-G" "SI-NK" "TK" "TK-BLFH" "TK-IDIT" "TK-KAND").
+ismscicon:SI-EU a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "SI-EU" ;
+	skos:prefLabel "ECRU" .
 
-<_:73> a rdf:List;
-  rdf:first "HCS-X";
-  rdf:rest <_:85>.
+ismscicon:SI-G a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "SI-G" ;
+	skos:prefLabel "SI-GAMMA" .
 
-<_:8> a rdf:List;
-  rdf:first "MVL";
-  rdf:rest <_:44>.
+ismscicon:SI-NK a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "SI-NK" ;
+	skos:prefLabel "NONBOOK" .
 
-<_:85> a rdf:List;
-  rdf:first "KLM";
-  rdf:rest <_:25>.
+ismscicon:TK a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "TK" ;
+	skos:prefLabel "TALENT KEYHOLE" .
 
-<_:88> a rdf:List;
-  rdf:first "TK-KAND";
-  rdf:rest rdf:nil.
+ismscicon:TK-BLFH a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "TK-BLFH" ;
+	skos:prefLabel "BLUEFISH" .
 
-ismscicon:BUR a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "BUR";
-  skos:prefLabel "BUR".
+ismscicon:TK-IDIT a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "TK-IDIT" ;
+	skos:prefLabel "IDITAROD" .
 
-ismscicon:BUR-BLG a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "BUR-BLG";
-  skos:prefLabel "BUR-BLG".
+ismscicon:TK-KAND a skos:Concept ;
+	skos:inScheme ismscicon:CVEnumISMSCIControls ;
+	skos:notation "TK-KAND" ;
+	skos:prefLabel "KANDIK" .
 
-ismscicon:BUR-DTP a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "BUR-DTP";
-  skos:prefLabel "BUR-DTP".
-
-ismscicon:BUR-WRG a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "BUR-WRG";
-  skos:prefLabel "BUR-WRG".
-
-ismscicon:CVEnumISMSCIControls a skos:ConceptScheme;
-  dc:title "(U) ismscicon:CVEnumISMSCIControls definition";
-  skos:hasTopConcept
-    ismscicon:BUR,
-    ismscicon:BUR-BLG,
-    ismscicon:BUR-DTP,
-    ismscicon:BUR-WRG,
-    ismscicon:HCS,
-    ismscicon:HCS-O,
-    ismscicon:HCS-P,
-    ismscicon:HCS-X,
-    ismscicon:KLM,
-    ismscicon:KLM-R,
-    ismscicon:MVL,
-    ismscicon:RSV,
-    ismscicon:SI,
-    ismscicon:SI-EU,
-    ismscicon:SI-G,
-    ismscicon:SI-NK,
-    ismscicon:TK,
-    ismscicon:TK-BLFH,
-    ismscicon:TK-IDIT,
-    ismscicon:TK-KAND.
-
-ismscicon:CVEnumISMSCIControlsValues a rdfs:Datatype;
-  owl:equivalentClass <_:7>.
-
-ismscicon:HCS a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "HCS";
-  skos:prefLabel "HCS".
-
-ismscicon:HCS-O a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "HCS-O";
-  skos:prefLabel "HCS-O".
-
-ismscicon:HCS-P a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "HCS-P";
-  skos:prefLabel "HCS-P".
-
-ismscicon:HCS-X a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "HCS-X";
-  skos:prefLabel "HCS-X".
-
-ismscicon:KLM a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "KLM";
-  skos:prefLabel "KLAMATH".
-
-ismscicon:KLM-R a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "KLM-R";
-  skos:prefLabel "KLAMATH-R".
-
-ismscicon:MVL a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "MVL";
-  skos:prefLabel "MARVEL".
-
-ismscicon:RSV a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "RSV";
-  skos:prefLabel "RESERVE".
-
-ismscicon:SI a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "SI";
-  skos:prefLabel "SPECIAL INTELLIGENCE".
-
-ismscicon:SI-EU a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "SI-EU";
-  skos:prefLabel "ECRU".
-
-ismscicon:SI-G a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "SI-G";
-  skos:prefLabel "SI-GAMMA".
-
-ismscicon:SI-NK a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "SI-NK";
-  skos:prefLabel "NONBOOK".
-
-ismscicon:TK a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "TK";
-  skos:prefLabel "TALENT KEYHOLE".
-
-ismscicon:TK-BLFH a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "TK-BLFH";
-  skos:prefLabel "BLUEFISH".
-
-ismscicon:TK-IDIT a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "TK-IDIT";
-  skos:prefLabel "IDITAROD".
-
-ismscicon:TK-KAND a skos:Concept;
-  skos:inScheme ismscicon:CVEnumISMSCIControls;
-  skos:notation "TK-KAND";
-  skos:prefLabel "KANDIK".
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSCIControls> a owl:Ontology;
-.

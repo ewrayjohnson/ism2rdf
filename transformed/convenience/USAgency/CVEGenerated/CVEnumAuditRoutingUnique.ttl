@@ -1,269 +1,196 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix usaru: <urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#>.
+@prefix usaru: <urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<_:0> a rdf:List;
-  rdf:first "USA.USAFRICOM";
-  rdf:rest <_:4>.
+<urn:us:gov:ic:USAgency:CVEGenerated:CVEnumAuditRoutingUnique> a owl:Ontology .
 
-<_:10> a rdf:List;
-  rdf:first "USA.USSOCOM";
-  rdf:rest <_:50>.
+usaru:CVEnumAuditRoutingUnique a skos:ConceptScheme ;
+	dc:title "(U) usaru:CVEnumAuditRoutingUnique definition" ;
+	skos:hasTopConcept usaru:USA.USAFRICOM ;
+	skos:hasTopConcept usaru:USA.USCENTCOM ;
+	skos:hasTopConcept usaru:USA.USCYBERCOM ;
+	skos:hasTopConcept usaru:USA.USEUCOM ;
+	skos:hasTopConcept usaru:USA.USFK ;
+	skos:hasTopConcept usaru:USA.USNORTHCOM ;
+	skos:hasTopConcept usaru:USA.USPACOM ;
+	skos:hasTopConcept usaru:USA.USSOCOM ;
+	skos:hasTopConcept usaru:USA.USSOUTHCOM ;
+	skos:hasTopConcept usaru:USA.USSTRATCOM ;
+	skos:hasTopConcept usaru:USA.USTRANSCOM ;
+	skos:hasTopConcept usaru:USA.DARPA ;
+	skos:hasTopConcept usaru:USA.DISA ;
+	skos:hasTopConcept usaru:USA.DODCIO ;
+	skos:hasTopConcept usaru:USA.DODIG ;
+	skos:hasTopConcept usaru:USA.DODIO ;
+	skos:hasTopConcept usaru:USA.DSS ;
+	skos:hasTopConcept usaru:USA.DTRA ;
+	skos:hasTopConcept usaru:USA.JCS ;
+	skos:hasTopConcept usaru:USA.JIDA ;
+	skos:hasTopConcept usaru:USA.MDA ;
+	skos:hasTopConcept usaru:USA.OUSDATL ;
+	skos:hasTopConcept usaru:USA.OUSDI ;
+	skos:hasTopConcept usaru:USA.INA ;
+	skos:hasTopConcept usaru:USA.TSA .
 
-<_:16> a rdf:List;
-  rdf:first "USA.USTRANSCOM";
-  rdf:rest <_:20>.
+usaru:CVEnumAuditRoutingUniqueValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"USA.USAFRICOM"
+			"USA.USCENTCOM"
+			"USA.USCYBERCOM"
+			"USA.USEUCOM"
+			"USA.USFK"
+			"USA.USNORTHCOM"
+			"USA.USPACOM"
+			"USA.USSOCOM"
+			"USA.USSOUTHCOM"
+			"USA.USSTRATCOM"
+			"USA.USTRANSCOM"
+			"USA.DARPA"
+			"USA.DISA"
+			"USA.DODCIO"
+			"USA.DODIG"
+			"USA.DODIO"
+			"USA.DSS"
+			"USA.DTRA"
+			"USA.JCS"
+			"USA.JIDA"
+			"USA.MDA"
+			"USA.OUSDATL"
+			"USA.OUSDI"
+			"USA.INA"
+			"USA.TSA"
+		) ;
+	] .
 
-<_:2> a rdf:List;
-  rdf:first "USA.USCYBERCOM";
-  rdf:rest <_:3>.
+usaru:USA.DARPA a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.DARPA" ;
+	skos:prefLabel "Defense Advanced Research Projects Agency (Type: DOD)" .
 
-<_:20> a rdf:List;
-  rdf:first "USA.DARPA";
-  rdf:rest <_:8>.
+usaru:USA.DISA a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.DISA" ;
+	skos:prefLabel "Defense Information Systems Agency (Type: DOD)" .
 
-<_:29> a rdf:List;
-  rdf:first "USA.JIDA";
-  rdf:rest <_:99>.
+usaru:USA.DODCIO a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.DODCIO" ;
+	skos:prefLabel "Assistant Secretary of Defense for Networks and Information Integration and DoD Chief Information Officer (Type: DOD)" .
 
-<_:3> a rdf:List;
-  rdf:first "USA.USEUCOM";
-  rdf:rest <_:7>.
+usaru:USA.DODIG a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.DODIG" ;
+	skos:prefLabel "Department of Defense Inspector General (Type: DOD)" .
 
-<_:39> a rdf:List;
-  rdf:first "USA.USPACOM";
-  rdf:rest <_:10>.
+usaru:USA.DODIO a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.DODIO" ;
+	skos:prefLabel "Assistant to the Secretary of Defense for Intelligence Oversight (Type: DOD)" .
 
-<_:4> a rdf:List;
-  rdf:first "USA.USCENTCOM";
-  rdf:rest <_:2>.
+usaru:USA.DSS a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.DSS" ;
+	skos:prefLabel "Defense Security Service (Type: DOD)" .
 
-<_:5> a rdf:List;
-  rdf:first "USA.USSTRATCOM";
-  rdf:rest <_:16>.
+usaru:USA.DTRA a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.DTRA" ;
+	skos:prefLabel "Defense Threat-Reduction Agency (Type: DOD)" .
 
-<_:50> a rdf:List;
-  rdf:first "USA.USSOUTHCOM";
-  rdf:rest <_:5>.
+usaru:USA.INA a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.INA" ;
+	skos:prefLabel "United States Department of Homeland Security, Office of Intelligence and Analysis (Type: IC)" .
 
-<_:51> a rdf:List;
-  rdf:first "USA.INA";
-  rdf:rest <_:58>.
+usaru:USA.JCS a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.JCS" ;
+	skos:prefLabel "Office of the Joint Chiefs of Staff (Type: DOD)" .
 
-<_:52> a rdf:List;
-  rdf:first "USA.JCS";
-  rdf:rest <_:29>.
+usaru:USA.JIDA a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.JIDA" ;
+	skos:prefLabel "Joint Improvised-Threat Defeat Agency (Type: DOD)" .
 
-<_:58> a rdf:List;
-  rdf:first "USA.TSA";
-  rdf:rest rdf:nil.
+usaru:USA.MDA a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.MDA" ;
+	skos:prefLabel "Missile Defense Agency (Type: DOD)" .
 
-<_:6> a rdf:List;
-  rdf:first "USA.DSS";
-  rdf:rest <_:94>.
+usaru:USA.OUSDATL a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.OUSDATL" ;
+	skos:prefLabel "Office of the Undersecretary of Defense (Acquisition, Technology and Logistics) (Type: DOD)" .
 
-<_:7> a rdf:List;
-  rdf:first "USA.USFK";
-  rdf:rest <_:90>.
+usaru:USA.OUSDI a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.OUSDI" ;
+	skos:prefLabel "Office of the Undersecretary of Defense (Intelligence) (Type: DOD)" .
 
-<_:77> a rdf:List;
-  rdf:first "USA.OUSDATL";
-  rdf:rest <_:96>.
+usaru:USA.TSA a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.TSA" ;
+	skos:prefLabel "United States Department of Homeland Security, Transportation Security Administration (Type: IC)" .
 
-<_:78> a rdf:List;
-  rdf:first "USA.DODIG";
-  rdf:rest <_:79>.
+usaru:USA.USAFRICOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USAFRICOM" ;
+	skos:prefLabel "United States Africa Command (Type: COCOM)" .
 
-<_:79> a rdf:List;
-  rdf:first "USA.DODIO";
-  rdf:rest <_:6>.
+usaru:USA.USCENTCOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USCENTCOM" ;
+	skos:prefLabel "United States Central Command (Type: COCOM)" .
 
-<_:8> a rdf:List;
-  rdf:first "USA.DISA";
-  rdf:rest <_:95>.
+usaru:USA.USCYBERCOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USCYBERCOM" ;
+	skos:prefLabel "United States Strategic Command, US Cyber Command (Type: COCOM)" .
 
-<_:9> a rdfs:Datatype;
-  owl:oneOf ("USA.USAFRICOM" "USA.USCENTCOM" "USA.USCYBERCOM" "USA.USEUCOM" "USA.USFK" "USA.USNORTHCOM" "USA.USPACOM" "USA.USSOCOM" "USA.USSOUTHCOM" "USA.USSTRATCOM" "USA.USTRANSCOM" "USA.DARPA" "USA.DISA" "USA.DODCIO" "USA.DODIG" "USA.DODIO" "USA.DSS" "USA.DTRA" "USA.JCS" "USA.JIDA" "USA.MDA" "USA.OUSDATL" "USA.OUSDI" "USA.INA" "USA.TSA").
+usaru:USA.USEUCOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USEUCOM" ;
+	skos:prefLabel "United States European Command (Type: COCOM)" .
 
-<_:90> a rdf:List;
-  rdf:first "USA.USNORTHCOM";
-  rdf:rest <_:39>.
+usaru:USA.USFK a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USFK" ;
+	skos:prefLabel "United States Pacific Command, US Forces Korea (Type: COCOM)" .
 
-<_:94> a rdf:List;
-  rdf:first "USA.DTRA";
-  rdf:rest <_:52>.
+usaru:USA.USNORTHCOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USNORTHCOM" ;
+	skos:prefLabel "United States Northern Command (Type: COCOM)" .
 
-<_:95> a rdf:List;
-  rdf:first "USA.DODCIO";
-  rdf:rest <_:78>.
+usaru:USA.USPACOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USPACOM" ;
+	skos:prefLabel "United States Pacific Command (Type: COCOM)" .
 
-<_:96> a rdf:List;
-  rdf:first "USA.OUSDI";
-  rdf:rest <_:51>.
+usaru:USA.USSOCOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USSOCOM" ;
+	skos:prefLabel "United States Special Operations Command (Type: COCOM)" .
 
-<_:99> a rdf:List;
-  rdf:first "USA.MDA";
-  rdf:rest <_:77>.
+usaru:USA.USSOUTHCOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USSOUTHCOM" ;
+	skos:prefLabel "United States Southern Command (Type: COCOM)" .
 
-usaru:CVEnumAuditRoutingUnique a skos:ConceptScheme;
-  dc:title "(U) usaru:CVEnumAuditRoutingUnique definition";
-  skos:hasTopConcept
-    usaru:USA.DARPA,
-    usaru:USA.DISA,
-    usaru:USA.DODCIO,
-    usaru:USA.DODIG,
-    usaru:USA.DODIO,
-    usaru:USA.DSS,
-    usaru:USA.DTRA,
-    usaru:USA.INA,
-    usaru:USA.JCS,
-    usaru:USA.JIDA,
-    usaru:USA.MDA,
-    usaru:USA.OUSDATL,
-    usaru:USA.OUSDI,
-    usaru:USA.TSA,
-    usaru:USA.USAFRICOM,
-    usaru:USA.USCENTCOM,
-    usaru:USA.USCYBERCOM,
-    usaru:USA.USEUCOM,
-    usaru:USA.USFK,
-    usaru:USA.USNORTHCOM,
-    usaru:USA.USPACOM,
-    usaru:USA.USSOCOM,
-    usaru:USA.USSOUTHCOM,
-    usaru:USA.USSTRATCOM,
-    usaru:USA.USTRANSCOM.
+usaru:USA.USSTRATCOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USSTRATCOM" ;
+	skos:prefLabel "United States Strategic Command (Type: COCOM)" .
 
-usaru:CVEnumAuditRoutingUniqueValues a rdfs:Datatype;
-  owl:equivalentClass <_:9>.
+usaru:USA.USTRANSCOM a skos:Concept ;
+	skos:inScheme usaru:CVEnumAuditRoutingUnique ;
+	skos:notation "USA.USTRANSCOM" ;
+	skos:prefLabel "United States Transportation Command (Type: COCOM)" .
 
-usaru:USA.DARPA a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.DARPA";
-  skos:prefLabel "Defense Advanced Research Projects Agency (Type: DOD)".
-
-usaru:USA.DISA a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.DISA";
-  skos:prefLabel "Defense Information Systems Agency (Type: DOD)".
-
-usaru:USA.DODCIO a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.DODCIO";
-  skos:prefLabel "Assistant Secretary of Defense for Networks and Information Integration and DoD Chief Information Officer (Type: DOD)".
-
-usaru:USA.DODIG a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.DODIG";
-  skos:prefLabel "Department of Defense Inspector General (Type: DOD)".
-
-usaru:USA.DODIO a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.DODIO";
-  skos:prefLabel "Assistant to the Secretary of Defense for Intelligence Oversight (Type: DOD)".
-
-usaru:USA.DSS a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.DSS";
-  skos:prefLabel "Defense Security Service (Type: DOD)".
-
-usaru:USA.DTRA a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.DTRA";
-  skos:prefLabel "Defense Threat-Reduction Agency (Type: DOD)".
-
-usaru:USA.INA a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.INA";
-  skos:prefLabel "United States Department of Homeland Security, Office of Intelligence and Analysis (Type: IC)".
-
-usaru:USA.JCS a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.JCS";
-  skos:prefLabel "Office of the Joint Chiefs of Staff (Type: DOD)".
-
-usaru:USA.JIDA a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.JIDA";
-  skos:prefLabel "Joint Improvised-Threat Defeat Agency (Type: DOD)".
-
-usaru:USA.MDA a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.MDA";
-  skos:prefLabel "Missile Defense Agency (Type: DOD)".
-
-usaru:USA.OUSDATL a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.OUSDATL";
-  skos:prefLabel "Office of the Undersecretary of Defense (Acquisition, Technology and Logistics) (Type: DOD)".
-
-usaru:USA.OUSDI a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.OUSDI";
-  skos:prefLabel "Office of the Undersecretary of Defense (Intelligence) (Type: DOD)".
-
-usaru:USA.TSA a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.TSA";
-  skos:prefLabel "United States Department of Homeland Security, Transportation Security Administration (Type: IC)".
-
-usaru:USA.USAFRICOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USAFRICOM";
-  skos:prefLabel "United States Africa Command (Type: COCOM)".
-
-usaru:USA.USCENTCOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USCENTCOM";
-  skos:prefLabel "United States Central Command (Type: COCOM)".
-
-usaru:USA.USCYBERCOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USCYBERCOM";
-  skos:prefLabel "United States Strategic Command, US Cyber Command (Type: COCOM)".
-
-usaru:USA.USEUCOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USEUCOM";
-  skos:prefLabel "United States European Command (Type: COCOM)".
-
-usaru:USA.USFK a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USFK";
-  skos:prefLabel "United States Pacific Command, US Forces Korea (Type: COCOM)".
-
-usaru:USA.USNORTHCOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USNORTHCOM";
-  skos:prefLabel "United States Northern Command (Type: COCOM)".
-
-usaru:USA.USPACOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USPACOM";
-  skos:prefLabel "United States Pacific Command (Type: COCOM)".
-
-usaru:USA.USSOCOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USSOCOM";
-  skos:prefLabel "United States Special Operations Command (Type: COCOM)".
-
-usaru:USA.USSOUTHCOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USSOUTHCOM";
-  skos:prefLabel "United States Southern Command (Type: COCOM)".
-
-usaru:USA.USSTRATCOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USSTRATCOM";
-  skos:prefLabel "United States Strategic Command (Type: COCOM)".
-
-usaru:USA.USTRANSCOM a skos:Concept;
-  skos:inScheme usaru:CVEnumAuditRoutingUnique;
-  skos:notation "USA.USTRANSCOM";
-  skos:prefLabel "United States Transportation Command (Type: COCOM)".
-
-<urn:us:gov:ic:USAgency:CVEGenerated:CVEnumAuditRoutingUnique> a owl:Ontology;
-.

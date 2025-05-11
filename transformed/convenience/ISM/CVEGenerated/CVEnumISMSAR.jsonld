@@ -6,28 +6,61 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sh": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "@graph": [
     {
-      "@id": "_:2",
-      "@type": "rdfs:Datatype"
+      "@id": "_:6",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "BP",
+          "MB"
+        ]
+      }
     },
     {
       "@id": "urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMSAR",
-      "@type": "http://www.w3.org/2002/07/owl#Ontology"
+      "@type": "owl:Ontology"
+    },
+    {
+      "@id": "ismsar:BP",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsar:CVEnumISMSAR"
+      },
+      "skos:notation": "BP",
+      "skos:prefLabel": "BUTTER POPCORN"
     },
     {
       "@id": "ismsar:CVEnumISMSAR",
       "@type": "skos:ConceptScheme",
-      "dc:title": "(U) ismsar:CVEnumISMSAR definition"
+      "dc:title": "(U) ismsar:CVEnumISMSAR definition",
+      "skos:hasTopConcept": [
+        {
+          "@id": "ismsar:BP"
+        },
+        {
+          "@id": "ismsar:MB"
+        }
+      ]
     },
     {
       "@id": "ismsar:CVEnumISMSARValues",
       "@type": "rdfs:Datatype",
-      "http://www.w3.org/2002/07/owl#equivalentClass": {
-        "@id": "_:2"
+      "owl:equivalentClass": {
+        "@id": "_:6"
       }
+    },
+    {
+      "@id": "ismsar:MB",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "ismsar:CVEnumISMSAR"
+      },
+      "skos:notation": "MB",
+      "skos:prefLabel": "MEDIAN BELL"
     }
   ]
 }

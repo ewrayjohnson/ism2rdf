@@ -1,0 +1,383 @@
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMAttributes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://purl.org/dc/elements/1.1/title> "(U) ismattrib:CVEnumISMAttributes definition" .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#compliesWith> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#classification> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#ownerProducer> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#SCIcontrols> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#SARIdentifier> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#atomicEnergyMarkings> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#disseminationControls> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#FGIsourceOpen> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#FGIsourceProtected> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#hasApproximateMarkings> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#releasableTo> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#displayOnlyTo> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#nonICmarkings> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#classifiedBy> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#derivativelyClassifiedBy> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#classificationReason> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#nonUSControls> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#derivedFrom> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#declassDate> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#declassEvent> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#declassException> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#resourceElement> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#highWaterNATO> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#excludeFromRollup> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#createDate> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#compilationReason> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#noAggregation> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#noticeType> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#noticeProseID> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#externalNotice> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#DESVersion> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#ISMCATCESVersion> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#noticeDate> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#noticeReason> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#exemptFrom> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#unregisteredNoticeType> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#pocType> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#joint> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#cuiBasic> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#cuiSpecified> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolDate> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolEvent> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#cuiControlledBy> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#cuiControlledByOffice> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#cuiPOC> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#secondBannerLine> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:attributes#handleViaChannels> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributesValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributesValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:10 .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:10 <http://www.w3.org/2002/07/owl#oneOf> _:6 .
+<urn:us:gov:ic:cvenum:ism:attributes#compliesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#compliesWith> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#compliesWith> <http://www.w3.org/2004/02/skos/core#notation> "compliesWith" .
+<urn:us:gov:ic:cvenum:ism:attributes#compliesWith> <http://www.w3.org/2004/02/skos/core#prefLabel> "compliesWith attribute" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "compliesWith" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:1 .
+<urn:us:gov:ic:cvenum:ism:attributes#classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#classification> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#classification> <http://www.w3.org/2004/02/skos/core#notation> "classification" .
+<urn:us:gov:ic:cvenum:ism:attributes#classification> <http://www.w3.org/2004/02/skos/core#prefLabel> "classification attribute" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "classification" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:3 .
+<urn:us:gov:ic:cvenum:ism:attributes#ownerProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#ownerProducer> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#ownerProducer> <http://www.w3.org/2004/02/skos/core#notation> "ownerProducer" .
+<urn:us:gov:ic:cvenum:ism:attributes#ownerProducer> <http://www.w3.org/2004/02/skos/core#prefLabel> "ownerProducer attribute" .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ownerProducer" .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:25 .
+<urn:us:gov:ic:cvenum:ism:attributes#SCIcontrols> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#SCIcontrols> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#SCIcontrols> <http://www.w3.org/2004/02/skos/core#notation> "SCIcontrols" .
+<urn:us:gov:ic:cvenum:ism:attributes#SCIcontrols> <http://www.w3.org/2004/02/skos/core#prefLabel> "SCIcontrols attribute" .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SCIcontrols" .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:9 .
+<urn:us:gov:ic:cvenum:ism:attributes#SARIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#SARIdentifier> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#SARIdentifier> <http://www.w3.org/2004/02/skos/core#notation> "SARIdentifier" .
+<urn:us:gov:ic:cvenum:ism:attributes#SARIdentifier> <http://www.w3.org/2004/02/skos/core#prefLabel> "SARIdentifier attribute" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SARIdentifier" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:81 .
+<urn:us:gov:ic:cvenum:ism:attributes#atomicEnergyMarkings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#atomicEnergyMarkings> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#atomicEnergyMarkings> <http://www.w3.org/2004/02/skos/core#notation> "atomicEnergyMarkings" .
+<urn:us:gov:ic:cvenum:ism:attributes#atomicEnergyMarkings> <http://www.w3.org/2004/02/skos/core#prefLabel> "atomicEnergyMarkings attribute" .
+_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "atomicEnergyMarkings" .
+_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:59 .
+<urn:us:gov:ic:cvenum:ism:attributes#disseminationControls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#disseminationControls> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#disseminationControls> <http://www.w3.org/2004/02/skos/core#notation> "disseminationControls" .
+<urn:us:gov:ic:cvenum:ism:attributes#disseminationControls> <http://www.w3.org/2004/02/skos/core#prefLabel> "disseminationControls attribute" .
+_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "disseminationControls" .
+_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:14 .
+<urn:us:gov:ic:cvenum:ism:attributes#FGIsourceOpen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#FGIsourceOpen> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#FGIsourceOpen> <http://www.w3.org/2004/02/skos/core#notation> "FGIsourceOpen" .
+<urn:us:gov:ic:cvenum:ism:attributes#FGIsourceOpen> <http://www.w3.org/2004/02/skos/core#prefLabel> "FGIsourceOpen attribute" .
+_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FGIsourceOpen" .
+_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:5 .
+<urn:us:gov:ic:cvenum:ism:attributes#FGIsourceProtected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#FGIsourceProtected> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#FGIsourceProtected> <http://www.w3.org/2004/02/skos/core#notation> "FGIsourceProtected" .
+<urn:us:gov:ic:cvenum:ism:attributes#FGIsourceProtected> <http://www.w3.org/2004/02/skos/core#prefLabel> "FGIsourceProtected attribute" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FGIsourceProtected" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:8 .
+<urn:us:gov:ic:cvenum:ism:attributes#hasApproximateMarkings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#hasApproximateMarkings> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#hasApproximateMarkings> <http://www.w3.org/2004/02/skos/core#notation> "hasApproximateMarkings" .
+<urn:us:gov:ic:cvenum:ism:attributes#hasApproximateMarkings> <http://www.w3.org/2004/02/skos/core#prefLabel> "hasApproximateMarkings attribute" .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "hasApproximateMarkings" .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:54 .
+<urn:us:gov:ic:cvenum:ism:attributes#releasableTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#releasableTo> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#releasableTo> <http://www.w3.org/2004/02/skos/core#notation> "releasableTo" .
+<urn:us:gov:ic:cvenum:ism:attributes#releasableTo> <http://www.w3.org/2004/02/skos/core#prefLabel> "releasableTo attribute" .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "releasableTo" .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:38 .
+<urn:us:gov:ic:cvenum:ism:attributes#displayOnlyTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#displayOnlyTo> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#displayOnlyTo> <http://www.w3.org/2004/02/skos/core#notation> "displayOnlyTo" .
+<urn:us:gov:ic:cvenum:ism:attributes#displayOnlyTo> <http://www.w3.org/2004/02/skos/core#prefLabel> "displayOnlyTo attribute" .
+_:38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "displayOnlyTo" .
+_:38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:7 .
+<urn:us:gov:ic:cvenum:ism:attributes#nonICmarkings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#nonICmarkings> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#nonICmarkings> <http://www.w3.org/2004/02/skos/core#notation> "nonICmarkings" .
+<urn:us:gov:ic:cvenum:ism:attributes#nonICmarkings> <http://www.w3.org/2004/02/skos/core#prefLabel> "nonICmarkings attribute" .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "nonICmarkings" .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:94 .
+<urn:us:gov:ic:cvenum:ism:attributes#classifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#classifiedBy> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#classifiedBy> <http://www.w3.org/2004/02/skos/core#notation> "classifiedBy" .
+<urn:us:gov:ic:cvenum:ism:attributes#classifiedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "classifiedBy attribute" .
+_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "classifiedBy" .
+_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:36 .
+<urn:us:gov:ic:cvenum:ism:attributes#derivativelyClassifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#derivativelyClassifiedBy> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#derivativelyClassifiedBy> <http://www.w3.org/2004/02/skos/core#notation> "derivativelyClassifiedBy" .
+<urn:us:gov:ic:cvenum:ism:attributes#derivativelyClassifiedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "derivativelyClassifiedBy attribute" .
+_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "derivativelyClassifiedBy" .
+_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:395 .
+<urn:us:gov:ic:cvenum:ism:attributes#classificationReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#classificationReason> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#classificationReason> <http://www.w3.org/2004/02/skos/core#notation> "classificationReason" .
+<urn:us:gov:ic:cvenum:ism:attributes#classificationReason> <http://www.w3.org/2004/02/skos/core#prefLabel> "classificationReason attribute" .
+_:395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "classificationReason" .
+_:395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:47 .
+<urn:us:gov:ic:cvenum:ism:attributes#nonUSControls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#nonUSControls> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#nonUSControls> <http://www.w3.org/2004/02/skos/core#notation> "nonUSControls" .
+<urn:us:gov:ic:cvenum:ism:attributes#nonUSControls> <http://www.w3.org/2004/02/skos/core#prefLabel> "nonUSControls attribute" .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "nonUSControls" .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:79 .
+<urn:us:gov:ic:cvenum:ism:attributes#derivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#derivedFrom> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#derivedFrom> <http://www.w3.org/2004/02/skos/core#notation> "derivedFrom" .
+<urn:us:gov:ic:cvenum:ism:attributes#derivedFrom> <http://www.w3.org/2004/02/skos/core#prefLabel> "derivedFrom attribute" .
+_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "derivedFrom" .
+_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
+<urn:us:gov:ic:cvenum:ism:attributes#declassDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#declassDate> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#declassDate> <http://www.w3.org/2004/02/skos/core#notation> "declassDate" .
+<urn:us:gov:ic:cvenum:ism:attributes#declassDate> <http://www.w3.org/2004/02/skos/core#prefLabel> "declassDate attribute" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "declassDate" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:4 .
+<urn:us:gov:ic:cvenum:ism:attributes#declassEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#declassEvent> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#declassEvent> <http://www.w3.org/2004/02/skos/core#notation> "declassEvent" .
+<urn:us:gov:ic:cvenum:ism:attributes#declassEvent> <http://www.w3.org/2004/02/skos/core#prefLabel> "declassEvent attribute" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "declassEvent" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:97 .
+<urn:us:gov:ic:cvenum:ism:attributes#declassException> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#declassException> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#declassException> <http://www.w3.org/2004/02/skos/core#notation> "declassException" .
+<urn:us:gov:ic:cvenum:ism:attributes#declassException> <http://www.w3.org/2004/02/skos/core#prefLabel> "declassException attribute" .
+_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "declassException" .
+_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:50 .
+<urn:us:gov:ic:cvenum:ism:attributes#resourceElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#resourceElement> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#resourceElement> <http://www.w3.org/2004/02/skos/core#notation> "resourceElement" .
+<urn:us:gov:ic:cvenum:ism:attributes#resourceElement> <http://www.w3.org/2004/02/skos/core#prefLabel> "resourceElement attribute" .
+_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "resourceElement" .
+_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:60 .
+<urn:us:gov:ic:cvenum:ism:attributes#highWaterNATO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#highWaterNATO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#highWaterNATO> <http://www.w3.org/2004/02/skos/core#notation> "highWaterNATO" .
+<urn:us:gov:ic:cvenum:ism:attributes#highWaterNATO> <http://www.w3.org/2004/02/skos/core#prefLabel> "highWaterNATO attribute" .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "highWaterNATO" .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:91 .
+<urn:us:gov:ic:cvenum:ism:attributes#excludeFromRollup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#excludeFromRollup> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#excludeFromRollup> <http://www.w3.org/2004/02/skos/core#notation> "excludeFromRollup" .
+<urn:us:gov:ic:cvenum:ism:attributes#excludeFromRollup> <http://www.w3.org/2004/02/skos/core#prefLabel> "excludeFromRollup attribute" .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "excludeFromRollup" .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:2 .
+<urn:us:gov:ic:cvenum:ism:attributes#createDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#createDate> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#createDate> <http://www.w3.org/2004/02/skos/core#notation> "createDate" .
+<urn:us:gov:ic:cvenum:ism:attributes#createDate> <http://www.w3.org/2004/02/skos/core#prefLabel> "createDate attribute" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "createDate" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:13 .
+<urn:us:gov:ic:cvenum:ism:attributes#compilationReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#compilationReason> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#compilationReason> <http://www.w3.org/2004/02/skos/core#notation> "compilationReason" .
+<urn:us:gov:ic:cvenum:ism:attributes#compilationReason> <http://www.w3.org/2004/02/skos/core#prefLabel> "compilationReason attribute" .
+_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "compilationReason" .
+_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:32 .
+<urn:us:gov:ic:cvenum:ism:attributes#noAggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#noAggregation> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#noAggregation> <http://www.w3.org/2004/02/skos/core#notation> "noAggregation" .
+<urn:us:gov:ic:cvenum:ism:attributes#noAggregation> <http://www.w3.org/2004/02/skos/core#prefLabel> "noAggregation attribute" .
+_:32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "noAggregation" .
+_:32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:84 .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeType> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeType> <http://www.w3.org/2004/02/skos/core#notation> "noticeType" .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeType> <http://www.w3.org/2004/02/skos/core#prefLabel> "noticeType attribute" .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "noticeType" .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:98 .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeProseID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeProseID> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeProseID> <http://www.w3.org/2004/02/skos/core#notation> "noticeProseID" .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeProseID> <http://www.w3.org/2004/02/skos/core#prefLabel> "noticeProseID attribute" .
+_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "noticeProseID" .
+_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:18 .
+<urn:us:gov:ic:cvenum:ism:attributes#externalNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#externalNotice> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#externalNotice> <http://www.w3.org/2004/02/skos/core#notation> "externalNotice" .
+<urn:us:gov:ic:cvenum:ism:attributes#externalNotice> <http://www.w3.org/2004/02/skos/core#prefLabel> "externalNotice attribute" .
+_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "externalNotice" .
+_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:53 .
+<urn:us:gov:ic:cvenum:ism:attributes#DESVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#DESVersion> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#DESVersion> <http://www.w3.org/2004/02/skos/core#notation> "DESVersion" .
+<urn:us:gov:ic:cvenum:ism:attributes#DESVersion> <http://www.w3.org/2004/02/skos/core#prefLabel> "DESVersion attribute" .
+_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DESVersion" .
+_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:58 .
+<urn:us:gov:ic:cvenum:ism:attributes#ISMCATCESVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#ISMCATCESVersion> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#ISMCATCESVersion> <http://www.w3.org/2004/02/skos/core#notation> "ISMCATCESVersion" .
+<urn:us:gov:ic:cvenum:ism:attributes#ISMCATCESVersion> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISMCATCESVersion attribute" .
+_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ISMCATCESVersion" .
+_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:86 .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeDate> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeDate> <http://www.w3.org/2004/02/skos/core#notation> "noticeDate" .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeDate> <http://www.w3.org/2004/02/skos/core#prefLabel> "notice date attribute" .
+_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "noticeDate" .
+_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:11 .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeReason> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeReason> <http://www.w3.org/2004/02/skos/core#notation> "noticeReason" .
+<urn:us:gov:ic:cvenum:ism:attributes#noticeReason> <http://www.w3.org/2004/02/skos/core#prefLabel> "notice Reason attribute" .
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "noticeReason" .
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:99 .
+<urn:us:gov:ic:cvenum:ism:attributes#exemptFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#exemptFrom> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#exemptFrom> <http://www.w3.org/2004/02/skos/core#notation> "exemptFrom" .
+<urn:us:gov:ic:cvenum:ism:attributes#exemptFrom> <http://www.w3.org/2004/02/skos/core#prefLabel> "exemptFrom attribute" .
+_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "exemptFrom" .
+_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:66 .
+<urn:us:gov:ic:cvenum:ism:attributes#unregisteredNoticeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#unregisteredNoticeType> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#unregisteredNoticeType> <http://www.w3.org/2004/02/skos/core#notation> "unregisteredNoticeType" .
+<urn:us:gov:ic:cvenum:ism:attributes#unregisteredNoticeType> <http://www.w3.org/2004/02/skos/core#prefLabel> "unregisteredNoticeType attribute" .
+_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "unregisteredNoticeType" .
+_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:51 .
+<urn:us:gov:ic:cvenum:ism:attributes#pocType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#pocType> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#pocType> <http://www.w3.org/2004/02/skos/core#notation> "pocType" .
+<urn:us:gov:ic:cvenum:ism:attributes#pocType> <http://www.w3.org/2004/02/skos/core#prefLabel> "Specifies a point-of contact for a security-related requirement." .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "pocType" .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:88 .
+<urn:us:gov:ic:cvenum:ism:attributes#joint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#joint> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#joint> <http://www.w3.org/2004/02/skos/core#notation> "joint" .
+<urn:us:gov:ic:cvenum:ism:attributes#joint> <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicator that multiple ownerProducers should be interpreted as JOINT." .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "joint" .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:73 .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiBasic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiBasic> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiBasic> <http://www.w3.org/2004/02/skos/core#notation> "cuiBasic" .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiBasic> <http://www.w3.org/2004/02/skos/core#prefLabel> "CUI Basic markings." .
+_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cuiBasic" .
+_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:41 .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiSpecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiSpecified> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiSpecified> <http://www.w3.org/2004/02/skos/core#notation> "cuiSpecified" .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiSpecified> <http://www.w3.org/2004/02/skos/core#prefLabel> "CUI Specified markings." .
+_:41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cuiSpecified" .
+_:41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:69 .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolDate> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolDate> <http://www.w3.org/2004/02/skos/core#notation> "cuiDecontrolDate" .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolDate> <http://www.w3.org/2004/02/skos/core#prefLabel> "Decontrol date for CUI." .
+_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cuiDecontrolDate" .
+_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:83 .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolEvent> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolEvent> <http://www.w3.org/2004/02/skos/core#notation> "cuiDecontrolEvent" .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiDecontrolEvent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Decontrol event for CUI." .
+_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cuiDecontrolEvent" .
+_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:67 .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiControlledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiControlledBy> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiControlledBy> <http://www.w3.org/2004/02/skos/core#notation> "cuiControlledBy" .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiControlledBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "Person or authority for labeling and controlling information as CUI." .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cuiControlledBy" .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:760 .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiControlledByOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiControlledByOffice> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiControlledByOffice> <http://www.w3.org/2004/02/skos/core#notation> "cuiControlledByOffice" .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiControlledByOffice> <http://www.w3.org/2004/02/skos/core#prefLabel> "Office in an agency or department that is responsible for labeling and controlling information as CUI. Ref DOD INSTRUCTION 5200.48." .
+_:760 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:760 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cuiControlledByOffice" .
+_:760 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:33 .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiPOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiPOC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiPOC> <http://www.w3.org/2004/02/skos/core#notation> "cuiPOC" .
+<urn:us:gov:ic:cvenum:ism:attributes#cuiPOC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Point of Contact for labeling and controlling information as CUI. Ref DOD INSTRUCTION 5200.48." .
+_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "cuiPOC" .
+_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:85 .
+<urn:us:gov:ic:cvenum:ism:attributes#secondBannerLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#secondBannerLine> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#secondBannerLine> <http://www.w3.org/2004/02/skos/core#notation> "secondBannerLine" .
+<urn:us:gov:ic:cvenum:ism:attributes#secondBannerLine> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner." .
+_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "secondBannerLine" .
+_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:413 .
+<urn:us:gov:ic:cvenum:ism:attributes#handleViaChannels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:attributes#handleViaChannels> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes> .
+<urn:us:gov:ic:cvenum:ism:attributes#handleViaChannels> <http://www.w3.org/2004/02/skos/core#notation> "handleViaChannels" .
+<urn:us:gov:ic:cvenum:ism:attributes#handleViaChannels> <http://www.w3.org/2004/02/skos/core#prefLabel> "Handle VIA Channels that may appear in the second banner line." .
+_:413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "handleViaChannels" .
+_:413 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

@@ -2,8 +2,7 @@ import { Graph, namespaces } from '@entryscape/rdfjson';
 import rdf from '@rdfjs/data-model';
 import PrefixMap from '@rdfjs/prefix-map/PrefixMap.js';
 import SerializerJsonld from '@rdfjs/serializer-jsonld-ext';
-import TurtleSerializer from '@rdfjs/serializer-turtle';
-import { NamedNode, Quad } from '@rdfjs/types';
+import { Literal, NamedNode, Quad } from '@rdfjs/types';
 import fs from 'fs';
 import getStream, { AnyStream } from 'get-stream';
 import _ from 'lodash';
@@ -11,6 +10,8 @@ import path from 'path';
 import { Readable } from 'stream';
 import { fileURLToPath } from 'url';
 import xml2js from 'xml2js';
+
+// const require = createRequire(import.meta.url);
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
@@ -171,6 +172,7 @@ let blankIndex = 0;
                 imported.standalone.g.findAndRemove(null, IMPORTS_PROPERTY, null);
                 imported.convienence.g.findAndRemove(null, RDF_TYPE, ONTOLOGY_TYPE);
                 convienence.g.addAll(imported.convienence.g);
+                while (deduplicateBlankNodes(convienence.g) > 0);
               }
             }
 
@@ -302,8 +304,13 @@ let blankIndex = 0;
 
             async function writeGraph(p: Package, outputDir: string) {
               const context = _.invert(p.namespaces);
-
+              if (!fs.existsSync(outputDir)) {
+                fs.mkdirSync(outputDir, { recursive: true });
+              }
               outputDir = path.join(outputDir, relative);
+              if (!fs.existsSync(outputDir)) {
+                fs.mkdirSync(outputDir, { recursive: true });
+              }
 
               const prefixesArr: Array<[string, NamedNode]> = [];
               Object.entries(context).forEach((e: [string, string]) => {
@@ -335,11 +342,14 @@ let blankIndex = 0;
               const jsonld: string = await getStream(jsonldSerializer.import(input) as AnyStream);
               const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
               fs.writeFileSync(jsonldOutputFilepath, jsonld);
+              const turtle: string = saveTurtle(JSON.parse(jsonld));
 
-              const turtleSerializer = new TurtleSerializer({ prefixes: prefixes });
-              const turtle: string = turtleSerializer.transform(quads);
               const turtleOutputFilepath = path.join(outputDir, `${basename}.ttl`);
               fs.writeFileSync(turtleOutputFilepath, turtle);
+
+              const triples = triplesToString(quads);
+              const triplesOutputFilepath = path.join(outputDir, `${basename}.nt`);
+              fs.writeFileSync(triplesOutputFilepath, triples);
             }
           }
         }
@@ -349,6 +359,165 @@ let blankIndex = 0;
   }
 })();
 
+function deduplicateBlankNodes(g: typeof Graph) {
+  const before = g.size();
+  const stmts = g.find();
+  const bnodeIdx: { [key: string]: string } = {};
+  for (let i = 0; i < stmts.length; i++) {
+    const source = stmts[i];
+    const sourceURI = source.getSubject();
+    if (sourceURI.indexOf('_:') === 0) {
+      let { signature, candidates }: { signature: string; candidates: any; } = getBlankSignature(sourceURI);
+      const targetURI = bnodeIdx[signature];
+      if (targetURI) {
+        if (sourceURI !== targetURI) {
+          for (let j = 0; j < stmts.length; j++) {
+            const target = stmts[j];
+            const p2 = target.getPredicate();
+            if (p2 === sourceURI) {
+              target.setPredicate(targetURI);
+            }
+            const o2 = target.getObject();
+            if (o2.type === 'bnode' && o2.value === sourceURI) {
+              o2.value = targetURI;
+            }
+          }
+          candidates.forEach((stmt: any) => {
+            g.remove(stmt);
+          });
+        }
+      } else {
+        bnodeIdx[signature] = sourceURI;
+      }
+    }
+  }
+  return before - g.size();
+
+  function getBlankSignature(sourceURI: any) {
+    const candidates2 = g.find(sourceURI);
+    const signature: string = candidates2.reduce((acc: [string], stmt: any) => {
+      const p = stmt.getPredicate();
+      let o = stmt.getCleanObject();
+      if (o.type === 'bnode') {
+        const { signature, candidates } = getBlankSignature(o.value);
+        o = signature;
+      }
+      acc.push(`{${[p, o].join(',')}`);
+      return acc;
+    },
+      []).sort((a: any, b: any) => a.localeCompare(b)).join('\n');
+    return { signature, candidates: candidates2 };
+  }
+}
+
 function removeWhitespace(documentation: any) {
   return (documentation['xhtml:p']?.[0]?._ || documentation).replace(/\s+/g, ' ').trim();
+}
+
+function triplesToString(triples: Quad[]): string {
+  return triples.map(tripleToString).join('');
+}
+
+function tripleToString(quad: Quad): string {
+  return `${tri(quad.subject)} ${tri(quad.predicate)} ${tri(quad.object)} .\n`;
+
+  function tri(x: any) {
+    const val = x.value;
+    let objectString: string;
+
+    switch (quad.object.constructor.name) {
+      case 'Literal':
+        const literal: Literal = x;
+        if (literal.datatype && literal.datatype.value === `${XML_SCHEMA_URI}#string`) {
+          objectString = JSON.stringify(literal.value);
+          break;
+        }
+
+      case 'NamedNode':
+        if (val.startsWith('_:')) {
+          objectString = val;
+          break;
+        }
+
+      default:
+        objectString = `<${val}>`;
+    }
+    return objectString;
+  }
+}
+function saveTurtle(jsonLd: any): string {
+  let turtle: string = '';
+  const context = jsonLd['@context'];
+  Object.entries(context).forEach((value: [string, any]) => {
+    turtle += `@prefix ${value[0]}: <${value[1]}> .\n`;
+  });
+  turtle += '\n';
+  const graph = jsonLd['@graph'];
+  if (graph) {
+    graph.forEach((obj: any) => {
+      const id = obj['@id'];
+      if (!id.startsWith('_:')) {
+        writeObj(obj, id, '\t');
+      }
+    });
+
+    function writeObj(obj: any, id: string, indention: string) {
+      let type = obj['@type'];
+      if (type) {
+        if (!Array.isArray(type)) {
+          type = [type];
+        } else {
+          debugger;
+        }
+        const types = type.map((t: string) => {
+          if (t.startsWith('http://')) {
+            return `<${t}>`;
+          }
+          return `${t}`;
+        }
+        );
+        const isCurie = id.indexOf('://') < 0 && id.split(':').length === 2;
+        turtle += `${indention.substring(0, indention.length - 1)}` +
+          `${id.startsWith('_:') ? '' : isCurie ? id : `<${id}>`}` +
+          `${indention.length > 1 ? 'rdf:type' : ' a'} ` +
+          `${types.join(' ')} ;\n`;
+        Object.keys(obj).forEach((predicate: string) => {
+          if (predicate !== '@id' && predicate !== '@type') {
+            let objects = obj[predicate];
+            if (!Array.isArray(objects)) {
+              objects = [objects];
+            }
+            objects.forEach((object: any) => {
+              if (typeof object === 'object') {
+                const list = object['@list'];
+                if (list) {
+                  turtle += `${indention}${predicate} ( `;
+                  list.forEach((item: any) => {
+                    turtle += `\n${indention + '\t'}${item['@id'] || JSON.stringify(item)}`;
+                  });
+                  turtle += `\n${indention}) ;\n`;
+                  return;
+                }
+                const subId = object['@id'];
+                if (subId.startsWith('_:')) {
+                  turtle += `${indention}${predicate} [\n`;
+                  writeObj(graph.find((o: any) => o['@id'] === subId), subId, indention + '\t');
+                  turtle += `${indention}] ;\n`;
+                  return;
+                }
+              }
+              if (typeof object === 'string') {
+                object = JSON.stringify(object);
+              }
+              turtle += `${indention}${predicate} ${object['@id'] || object} ;\n`;
+            });
+          }
+        });
+        if (indention.length <= 1) {
+          turtle = turtle.slice(0, -2) + '.\n\n';
+        }
+      }
+    }
+  }
+  return turtle;
 }

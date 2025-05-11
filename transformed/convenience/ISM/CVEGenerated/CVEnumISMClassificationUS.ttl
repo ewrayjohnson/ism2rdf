@@ -1,59 +1,49 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismclassus: <urn:us:gov:ic:cvenum:ism:classification:us#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix ismclassus: <urn:us:gov:ic:cvenum:ism:classification:us#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<_:0> a rdf:List;
-  rdf:first "C";
-  rdf:rest <_:3>.
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMClassificationUS> a owl:Ontology .
 
-<_:2> a rdf:List;
-  rdf:first "TS";
-  rdf:rest <_:68>.
+ismclassus:C a skos:Concept ;
+	skos:inScheme ismclassus:CVEnumISMClassificationUS ;
+	skos:notation "C" ;
+	skos:prefLabel "CONFIDENTIAL" .
 
-<_:3> a rdf:List;
-  rdf:first "U";
-  rdf:rest rdf:nil.
+ismclassus:CVEnumISMClassificationUS a skos:ConceptScheme ;
+	dc:title "(U) All currently valid US classification marks. This file is not imported by the schema. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMClassificationUS.xml" ;
+	skos:hasTopConcept ismclassus:TS ;
+	skos:hasTopConcept ismclassus:S ;
+	skos:hasTopConcept ismclassus:C ;
+	skos:hasTopConcept ismclassus:U .
 
-<_:68> a rdf:List;
-  rdf:first "S";
-  rdf:rest <_:0>.
+ismclassus:CVEnumISMClassificationUSValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"TS"
+			"S"
+			"C"
+			"U"
+		) ;
+	] .
 
-<_:7> a rdfs:Datatype;
-  owl:oneOf ("TS" "S" "C" "U").
+ismclassus:S a skos:Concept ;
+	skos:inScheme ismclassus:CVEnumISMClassificationUS ;
+	skos:notation "S" ;
+	skos:prefLabel "SECRET" .
 
-ismclassus:C a skos:Concept;
-  skos:inScheme ismclassus:CVEnumISMClassificationUS;
-  skos:notation "C";
-  skos:prefLabel "CONFIDENTIAL".
+ismclassus:TS a skos:Concept ;
+	skos:inScheme ismclassus:CVEnumISMClassificationUS ;
+	skos:notation "TS" ;
+	skos:prefLabel "TOP SECRET" .
 
-ismclassus:CVEnumISMClassificationUS a skos:ConceptScheme;
-  dc:title "(U) All currently valid US classification marks. This file is not imported by the schema. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMClassificationUS.xml";
-  skos:hasTopConcept
-    ismclassus:C,
-    ismclassus:S,
-    ismclassus:TS,
-    ismclassus:U.
+ismclassus:U a skos:Concept ;
+	skos:inScheme ismclassus:CVEnumISMClassificationUS ;
+	skos:notation "U" ;
+	skos:prefLabel "UNCLASSIFIED" .
 
-ismclassus:CVEnumISMClassificationUSValues a rdfs:Datatype;
-  owl:equivalentClass <_:7>.
-
-ismclassus:S a skos:Concept;
-  skos:inScheme ismclassus:CVEnumISMClassificationUS;
-  skos:notation "S";
-  skos:prefLabel "SECRET".
-
-ismclassus:TS a skos:Concept;
-  skos:inScheme ismclassus:CVEnumISMClassificationUS;
-  skos:notation "TS";
-  skos:prefLabel "TOP SECRET".
-
-ismclassus:U a skos:Concept;
-  skos:inScheme ismclassus:CVEnumISMClassificationUS;
-  skos:notation "U";
-  skos:prefLabel "UNCLASSIFIED".
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMClassificationUS> a owl:Ontology;
-.

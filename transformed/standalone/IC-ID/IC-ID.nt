@@ -1,0 +1,4 @@
+<urn:us:gov:ic:IC-ID:IC-ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:id#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<urn:us:gov:ic:id#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <urn:us:gov:ic:id#IcIdTypeValues> .
+<urn:us:gov:ic:id#identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute to hold the IC-ID of the data object." .

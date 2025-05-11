@@ -1,0 +1,79 @@
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNonIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://purl.org/dc/elements/1.1/title> "(U) ismnonic:CVEnumISMNonIC definition" .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonic#DS> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonic#XD> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonic#ND> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonic#SBU> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonic#SBU-NF> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonic#LES> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonic#LES-NF> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonic#SSI> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonic#NNPI> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonICValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonICValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:9 .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:9 <http://www.w3.org/2002/07/owl#oneOf> _:0 .
+<urn:us:gov:ic:cvenum:ism:nonic#DS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:nonic#DS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> .
+<urn:us:gov:ic:cvenum:ism:nonic#DS> <http://www.w3.org/2004/02/skos/core#notation> "DS" .
+<urn:us:gov:ic:cvenum:ism:nonic#DS> <http://www.w3.org/2004/02/skos/core#prefLabel> "LIMITED DISTRIBUTION" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DS" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:4 .
+<urn:us:gov:ic:cvenum:ism:nonic#XD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:nonic#XD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> .
+<urn:us:gov:ic:cvenum:ism:nonic#XD> <http://www.w3.org/2004/02/skos/core#notation> "XD" .
+<urn:us:gov:ic:cvenum:ism:nonic#XD> <http://www.w3.org/2004/02/skos/core#prefLabel> "EXCLUSIVE DISTRIBUTION" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "XD" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:7 .
+<urn:us:gov:ic:cvenum:ism:nonic#ND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:nonic#ND> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> .
+<urn:us:gov:ic:cvenum:ism:nonic#ND> <http://www.w3.org/2004/02/skos/core#notation> "ND" .
+<urn:us:gov:ic:cvenum:ism:nonic#ND> <http://www.w3.org/2004/02/skos/core#prefLabel> "NO DISTRIBUTION" .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ND" .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:54 .
+<urn:us:gov:ic:cvenum:ism:nonic#SBU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:nonic#SBU> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> .
+<urn:us:gov:ic:cvenum:ism:nonic#SBU> <http://www.w3.org/2004/02/skos/core#notation> "SBU" .
+<urn:us:gov:ic:cvenum:ism:nonic#SBU> <http://www.w3.org/2004/02/skos/core#prefLabel> "SENSITIVE BUT UNCLASSIFIED" .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SBU" .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:35 .
+<urn:us:gov:ic:cvenum:ism:nonic#SBU-NF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:nonic#SBU-NF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> .
+<urn:us:gov:ic:cvenum:ism:nonic#SBU-NF> <http://www.w3.org/2004/02/skos/core#notation> "SBU-NF" .
+<urn:us:gov:ic:cvenum:ism:nonic#SBU-NF> <http://www.w3.org/2004/02/skos/core#prefLabel> "SENSITIVE BUT UNCLASSIFIED NOFORN" .
+_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SBU-NF" .
+_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:1 .
+<urn:us:gov:ic:cvenum:ism:nonic#LES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:nonic#LES> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> .
+<urn:us:gov:ic:cvenum:ism:nonic#LES> <http://www.w3.org/2004/02/skos/core#notation> "LES" .
+<urn:us:gov:ic:cvenum:ism:nonic#LES> <http://www.w3.org/2004/02/skos/core#prefLabel> "LAW ENFORCEMENT SENSITIVE" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LES" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:91 .
+<urn:us:gov:ic:cvenum:ism:nonic#LES-NF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:nonic#LES-NF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> .
+<urn:us:gov:ic:cvenum:ism:nonic#LES-NF> <http://www.w3.org/2004/02/skos/core#notation> "LES-NF" .
+<urn:us:gov:ic:cvenum:ism:nonic#LES-NF> <http://www.w3.org/2004/02/skos/core#prefLabel> "LAW ENFORCEMENT SENSITIVE NOFORN" .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LES-NF" .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:3 .
+<urn:us:gov:ic:cvenum:ism:nonic#SSI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:nonic#SSI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> .
+<urn:us:gov:ic:cvenum:ism:nonic#SSI> <http://www.w3.org/2004/02/skos/core#notation> "SSI" .
+<urn:us:gov:ic:cvenum:ism:nonic#SSI> <http://www.w3.org/2004/02/skos/core#prefLabel> "SENSITIVE SECURITY INFORMATION" .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SSI" .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:18 .
+<urn:us:gov:ic:cvenum:ism:nonic#NNPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:nonic#NNPI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC> .
+<urn:us:gov:ic:cvenum:ism:nonic#NNPI> <http://www.w3.org/2004/02/skos/core#notation> "NNPI" .
+<urn:us:gov:ic:cvenum:ism:nonic#NNPI> <http://www.w3.org/2004/02/skos/core#prefLabel> "NAVAL NUCLEAR PROPULSION INFORMATION" .
+_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NNPI" .
+_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

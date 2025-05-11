@@ -1,239 +1,175 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismdissem: <urn:us:gov:ic:cvenum:ism:dissem#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix ismdissem: <urn:us:gov:ic:cvenum:ism:dissem#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<_:0> a rdf:List;
-  rdf:first "PR";
-  rdf:rest <_:10>.
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissem> a owl:Ontology .
 
-<_:1> a rdf:List;
-  rdf:first "NF";
-  rdf:rest <_:0>.
+ismdissem:AC a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "AC" ;
+	skos:prefLabel "Attorney-Client" .
 
-<_:10> a rdf:List;
-  rdf:first "REL";
-  rdf:rest <_:48>.
+ismdissem:AWP a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "AWP" ;
+	skos:prefLabel "Attorney-WP" .
 
-<_:11> a rdf:List;
-  rdf:first "FISA";
-  rdf:rest <_:5>.
+ismdissem:CVEnumISMDissem a skos:ConceptScheme ;
+	dc:title "(U) ismdissem:CVEnumISMDissem definition" ;
+	skos:hasTopConcept ismdissem:RS ;
+	skos:hasTopConcept ismdissem:FOUO ;
+	skos:hasTopConcept ismdissem:OC ;
+	skos:hasTopConcept ismdissem:OC-USGOV ;
+	skos:hasTopConcept ismdissem:IMC ;
+	skos:hasTopConcept ismdissem:NF ;
+	skos:hasTopConcept ismdissem:PR ;
+	skos:hasTopConcept ismdissem:REL ;
+	skos:hasTopConcept ismdissem:RELIDO ;
+	skos:hasTopConcept ismdissem:EYES ;
+	skos:hasTopConcept ismdissem:DSEN ;
+	skos:hasTopConcept ismdissem:RAWFISA ;
+	skos:hasTopConcept ismdissem:FISA ;
+	skos:hasTopConcept ismdissem:DISPLAYONLY ;
+	skos:hasTopConcept ismdissem:EXEMPT_FROM_ICD501_DISCOVERY ;
+	skos:hasTopConcept ismdissem:WAIVED ;
+	skos:hasTopConcept ismdissem:AC ;
+	skos:hasTopConcept ismdissem:AWP ;
+	skos:hasTopConcept ismdissem:DL_ONLY ;
+	skos:hasTopConcept ismdissem:FED_ONLY ;
+	skos:hasTopConcept ismdissem:FEDCON ;
+	skos:hasTopConcept ismdissem:NOCON .
 
-<_:18> a rdf:List;
-  rdf:first "WAIVED";
-  rdf:rest <_:4>.
+ismdissem:CVEnumISMDissemValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"RS"
+			"FOUO"
+			"OC"
+			"OC-USGOV"
+			"IMC"
+			"NF"
+			"PR"
+			"REL"
+			"RELIDO"
+			"EYES"
+			"DSEN"
+			"RAWFISA"
+			"FISA"
+			"DISPLAYONLY"
+			"EXEMPT_FROM_ICD501_DISCOVERY"
+			"WAIVED"
+			"AC"
+			"AWP"
+			"DL_ONLY"
+			"FED_ONLY"
+			"FEDCON"
+			"NOCON"
+		) ;
+	] .
 
-<_:2> a rdf:List;
-  rdf:first "DL_ONLY";
-  rdf:rest <_:28>.
+ismdissem:DISPLAYONLY a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "DISPLAYONLY" ;
+	skos:prefLabel "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO" .
 
-<_:25> a rdf:List;
-  rdf:first "FOUO";
-  rdf:rest <_:47>.
+ismdissem:DL_ONLY a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "DL_ONLY" ;
+	skos:prefLabel "DL ONLY" .
 
-<_:28> a rdf:List;
-  rdf:first "FED_ONLY";
-  rdf:rest <_:93>.
+ismdissem:DSEN a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "DSEN" ;
+	skos:prefLabel "DEA SENSITIVE" .
 
-<_:3> a rdfs:Datatype;
-  owl:oneOf ("RS" "FOUO" "OC" "OC-USGOV" "IMC" "NF" "PR" "REL" "RELIDO" "EYES" "DSEN" "RAWFISA" "FISA" "DISPLAYONLY" "EXEMPT_FROM_ICD501_DISCOVERY" "WAIVED" "AC" "AWP" "DL_ONLY" "FED_ONLY" "FEDCON" "NOCON").
+ismdissem:EXEMPT_FROM_ICD501_DISCOVERY a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "EXEMPT_FROM_ICD501_DISCOVERY" ;
+	skos:prefLabel "EXEMPT FROM ICD501 DISCOVERY" .
 
-<_:4> a rdf:List;
-  rdf:first "AC";
-  rdf:rest <_:6>.
+ismdissem:EYES a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "EYES" ;
+	skos:prefLabel "EYES ONLY" .
 
-<_:47> a rdf:List;
-  rdf:first "OC";
-  rdf:rest <_:9>.
+ismdissem:FEDCON a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "FEDCON" ;
+	skos:prefLabel "FEDCON" .
 
-<_:48> a rdf:List;
-  rdf:first "RELIDO";
-  rdf:rest <_:66>.
+ismdissem:FED_ONLY a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "FED_ONLY" ;
+	skos:prefLabel "FED ONLY" .
 
-<_:5> a rdf:List;
-  rdf:first "DISPLAYONLY";
-  rdf:rest <_:58>.
+ismdissem:FISA a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "FISA" ;
+	skos:prefLabel "FOREIGN INTELLIGENCE SURVEILLANCE ACT" .
 
-<_:50> a rdf:List;
-  rdf:first "DSEN";
-  rdf:rest <_:80>.
+ismdissem:FOUO a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "FOUO" ;
+	skos:prefLabel "FOR OFFICIAL USE ONLY" .
 
-<_:58> a rdf:List;
-  rdf:first "EXEMPT_FROM_ICD501_DISCOVERY";
-  rdf:rest <_:18>.
+ismdissem:IMC a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "IMC" ;
+	skos:prefLabel "CONTROLLED IMAGERY" .
 
-<_:6> a rdf:List;
-  rdf:first "AWP";
-  rdf:rest <_:2>.
+ismdissem:NF a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "NF" ;
+	skos:prefLabel "NOT RELEASABLE TO FOREIGN NATIONALS" .
 
-<_:66> a rdf:List;
-  rdf:first "EYES";
-  rdf:rest <_:50>.
+ismdissem:NOCON a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "NOCON" ;
+	skos:prefLabel "NOCON" .
 
-<_:7> a rdf:List;
-  rdf:first "RS";
-  rdf:rest <_:25>.
+ismdissem:OC a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "OC" ;
+	skos:prefLabel "ORIGINATOR CONTROLLED" .
 
-<_:8> a rdf:List;
-  rdf:first "IMC";
-  rdf:rest <_:1>.
+ismdissem:OC-USGOV a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "OC-USGOV" ;
+	skos:prefLabel "ORIGINATOR CONTROLLED US GOVERNMENT" .
 
-<_:80> a rdf:List;
-  rdf:first "RAWFISA";
-  rdf:rest <_:11>.
+ismdissem:PR a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "PR" ;
+	skos:prefLabel "CAUTION-PROPRIETARY INFORMATION INVOLVED" .
 
-<_:87> a rdf:List;
-  rdf:first "NOCON";
-  rdf:rest rdf:nil.
+ismdissem:RAWFISA a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "RAWFISA" ;
+	skos:prefLabel "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT" .
 
-<_:9> a rdf:List;
-  rdf:first "OC-USGOV";
-  rdf:rest <_:8>.
+ismdissem:REL a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "REL" ;
+	skos:prefLabel "AUTHORIZED FOR RELEASE TO" .
 
-<_:93> a rdf:List;
-  rdf:first "FEDCON";
-  rdf:rest <_:87>.
+ismdissem:RELIDO a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "RELIDO" ;
+	skos:prefLabel "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL" .
 
-ismdissem:AC a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "AC";
-  skos:prefLabel "Attorney-Client".
+ismdissem:RS a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "RS" ;
+	skos:prefLabel "RISK SENSITIVE" .
 
-ismdissem:AWP a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "AWP";
-  skos:prefLabel "Attorney-WP".
+ismdissem:WAIVED a skos:Concept ;
+	skos:inScheme ismdissem:CVEnumISMDissem ;
+	skos:notation "WAIVED" ;
+	skos:prefLabel "WAIVED" .
 
-ismdissem:CVEnumISMDissem a skos:ConceptScheme;
-  dc:title "(U) ismdissem:CVEnumISMDissem definition";
-  skos:hasTopConcept
-    ismdissem:AC,
-    ismdissem:AWP,
-    ismdissem:DISPLAYONLY,
-    ismdissem:DL_ONLY,
-    ismdissem:DSEN,
-    ismdissem:EXEMPT_FROM_ICD501_DISCOVERY,
-    ismdissem:EYES,
-    ismdissem:FED_ONLY,
-    ismdissem:FEDCON,
-    ismdissem:FISA,
-    ismdissem:FOUO,
-    ismdissem:IMC,
-    ismdissem:NF,
-    ismdissem:NOCON,
-    ismdissem:OC,
-    ismdissem:OC-USGOV,
-    ismdissem:PR,
-    ismdissem:RAWFISA,
-    ismdissem:REL,
-    ismdissem:RELIDO,
-    ismdissem:RS,
-    ismdissem:WAIVED.
-
-ismdissem:CVEnumISMDissemValues a rdfs:Datatype;
-  owl:equivalentClass <_:3>.
-
-ismdissem:DISPLAYONLY a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "DISPLAYONLY";
-  skos:prefLabel "AUTHORIZED FOR DISPLAY BUT NOT RELEASE TO".
-
-ismdissem:DL_ONLY a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "DL_ONLY";
-  skos:prefLabel "DL ONLY".
-
-ismdissem:DSEN a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "DSEN";
-  skos:prefLabel "DEA SENSITIVE".
-
-ismdissem:EXEMPT_FROM_ICD501_DISCOVERY a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "EXEMPT_FROM_ICD501_DISCOVERY";
-  skos:prefLabel "EXEMPT FROM ICD501 DISCOVERY".
-
-ismdissem:EYES a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "EYES";
-  skos:prefLabel "EYES ONLY".
-
-ismdissem:FED_ONLY a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "FED_ONLY";
-  skos:prefLabel "FED ONLY".
-
-ismdissem:FEDCON a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "FEDCON";
-  skos:prefLabel "FEDCON".
-
-ismdissem:FISA a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "FISA";
-  skos:prefLabel "FOREIGN INTELLIGENCE SURVEILLANCE ACT".
-
-ismdissem:FOUO a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "FOUO";
-  skos:prefLabel "FOR OFFICIAL USE ONLY".
-
-ismdissem:IMC a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "IMC";
-  skos:prefLabel "CONTROLLED IMAGERY".
-
-ismdissem:NF a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "NF";
-  skos:prefLabel "NOT RELEASABLE TO FOREIGN NATIONALS".
-
-ismdissem:NOCON a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "NOCON";
-  skos:prefLabel "NOCON".
-
-ismdissem:OC a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "OC";
-  skos:prefLabel "ORIGINATOR CONTROLLED".
-
-ismdissem:OC-USGOV a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "OC-USGOV";
-  skos:prefLabel "ORIGINATOR CONTROLLED US GOVERNMENT".
-
-ismdissem:PR a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "PR";
-  skos:prefLabel "CAUTION-PROPRIETARY INFORMATION INVOLVED".
-
-ismdissem:RAWFISA a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "RAWFISA";
-  skos:prefLabel "RAW FOREIGN INTELLIGENCE SURVEILLANCE ACT".
-
-ismdissem:REL a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "REL";
-  skos:prefLabel "AUTHORIZED FOR RELEASE TO".
-
-ismdissem:RELIDO a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "RELIDO";
-  skos:prefLabel "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL".
-
-ismdissem:RS a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "RS";
-  skos:prefLabel "RISK SENSITIVE".
-
-ismdissem:WAIVED a skos:Concept;
-  skos:inScheme ismdissem:CVEnumISMDissem;
-  skos:notation "WAIVED";
-  skos:prefLabel "WAIVED".
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMDissem> a owl:Ontology;
-.

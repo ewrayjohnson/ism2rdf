@@ -1,79 +1,63 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismpoctype: <urn:us:gov:ic:cvenum:ism:pocType#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix ismpoctype: <urn:us:gov:ic:cvenum:ism:pocType#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<_:10> a rdf:List;
-  rdf:first "DoD-Dist-C";
-  rdf:rest <_:8>.
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMPocType> a owl:Ontology .
 
-<_:2> a rdf:List;
-  rdf:first "ICD-710";
-  rdf:rest <_:6>.
+ismpoctype:CVEnumISMPocType a skos:ConceptScheme ;
+	dc:title "(U) ismpoctype:CVEnumISMPocType definition" ;
+	skos:hasTopConcept ismpoctype:ICD-710 ;
+	skos:hasTopConcept ismpoctype:DoD-Dist-B ;
+	skos:hasTopConcept ismpoctype:DoD-Dist-C ;
+	skos:hasTopConcept ismpoctype:DoD-Dist-D ;
+	skos:hasTopConcept ismpoctype:DoD-Dist-E ;
+	skos:hasTopConcept ismpoctype:DoD-Dist-F .
 
-<_:21> a rdf:List;
-  rdf:first "DoD-Dist-F";
-  rdf:rest rdf:nil.
+ismpoctype:CVEnumISMPocTypeValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"ICD-710"
+			"DoD-Dist-B"
+			"DoD-Dist-C"
+			"DoD-Dist-D"
+			"DoD-Dist-E"
+			"DoD-Dist-F"
+		) ;
+	] .
 
-<_:5> a rdfs:Datatype;
-  owl:oneOf ("ICD-710" "DoD-Dist-B" "DoD-Dist-C" "DoD-Dist-D" "DoD-Dist-E" "DoD-Dist-F").
+ismpoctype:DoD-Dist-B a skos:Concept ;
+	skos:inScheme ismpoctype:CVEnumISMPocType ;
+	skos:notation "DoD-Dist-B" ;
+	skos:prefLabel "DoD Distribution statement B from DoD Directive 5230.24" .
 
-<_:6> a rdf:List;
-  rdf:first "DoD-Dist-B";
-  rdf:rest <_:10>.
+ismpoctype:DoD-Dist-C a skos:Concept ;
+	skos:inScheme ismpoctype:CVEnumISMPocType ;
+	skos:notation "DoD-Dist-C" ;
+	skos:prefLabel "DoD Distribution statement C from DoD Directive 5230.24" .
 
-<_:8> a rdf:List;
-  rdf:first "DoD-Dist-D";
-  rdf:rest <_:9>.
+ismpoctype:DoD-Dist-D a skos:Concept ;
+	skos:inScheme ismpoctype:CVEnumISMPocType ;
+	skos:notation "DoD-Dist-D" ;
+	skos:prefLabel "DoD Distribution statement D from DoD Directive 5230.24" .
 
-<_:9> a rdf:List;
-  rdf:first "DoD-Dist-E";
-  rdf:rest <_:21>.
+ismpoctype:DoD-Dist-E a skos:Concept ;
+	skos:inScheme ismpoctype:CVEnumISMPocType ;
+	skos:notation "DoD-Dist-E" ;
+	skos:prefLabel "DoD Distribution statement E from DoD Directive 5230.24" .
 
-ismpoctype:CVEnumISMPocType a skos:ConceptScheme;
-  dc:title "(U) ismpoctype:CVEnumISMPocType definition";
-  skos:hasTopConcept
-    ismpoctype:DoD-Dist-B,
-    ismpoctype:DoD-Dist-C,
-    ismpoctype:DoD-Dist-D,
-    ismpoctype:DoD-Dist-E,
-    ismpoctype:DoD-Dist-F,
-    ismpoctype:ICD-710.
+ismpoctype:DoD-Dist-F a skos:Concept ;
+	skos:inScheme ismpoctype:CVEnumISMPocType ;
+	skos:notation "DoD-Dist-F" ;
+	skos:prefLabel "DoD Distribution statement F from DoD Directive 5230.24" .
 
-ismpoctype:CVEnumISMPocTypeValues a rdfs:Datatype;
-  owl:equivalentClass <_:5>.
+ismpoctype:ICD-710 a skos:Concept ;
+	skos:inScheme ismpoctype:CVEnumISMPocType ;
+	skos:notation "ICD-710" ;
+	skos:prefLabel "Point-of-contact for an ICD-710 notice." .
 
-ismpoctype:DoD-Dist-B a skos:Concept;
-  skos:inScheme ismpoctype:CVEnumISMPocType;
-  skos:notation "DoD-Dist-B";
-  skos:prefLabel "DoD Distribution statement B from DoD Directive 5230.24".
-
-ismpoctype:DoD-Dist-C a skos:Concept;
-  skos:inScheme ismpoctype:CVEnumISMPocType;
-  skos:notation "DoD-Dist-C";
-  skos:prefLabel "DoD Distribution statement C from DoD Directive 5230.24".
-
-ismpoctype:DoD-Dist-D a skos:Concept;
-  skos:inScheme ismpoctype:CVEnumISMPocType;
-  skos:notation "DoD-Dist-D";
-  skos:prefLabel "DoD Distribution statement D from DoD Directive 5230.24".
-
-ismpoctype:DoD-Dist-E a skos:Concept;
-  skos:inScheme ismpoctype:CVEnumISMPocType;
-  skos:notation "DoD-Dist-E";
-  skos:prefLabel "DoD Distribution statement E from DoD Directive 5230.24".
-
-ismpoctype:DoD-Dist-F a skos:Concept;
-  skos:inScheme ismpoctype:CVEnumISMPocType;
-  skos:notation "DoD-Dist-F";
-  skos:prefLabel "DoD Distribution statement F from DoD Directive 5230.24".
-
-ismpoctype:ICD-710 a skos:Concept;
-  skos:inScheme ismpoctype:CVEnumISMPocType;
-  skos:notation "ICD-710";
-  skos:prefLabel "Point-of-contact for an ICD-710 notice.".
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMPocType> a owl:Ontology;
-.

@@ -1,0 +1,223 @@
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://purl.org/dc/elements/1.1/title> "(U) ismnotice:CVEnumISMNotice definition" .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#FISA> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#RAWFISA> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#IMC> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#CNWDI> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#RD> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#FRD> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#DS> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#LES> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#LES-NF> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#DSEN> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-A> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-B> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-C> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-D> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-E> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-F> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#US-Person> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#pre13526ORCON> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#POC> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#COMSEC> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#SSI> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#RSEN> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#IMCON_RSEN> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#GEOCAP> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#NATO> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#RC_Dissemination_Control_Required> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:notice#ITAR-EAR> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNoticeValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNoticeValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:3 .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:3 <http://www.w3.org/2002/07/owl#oneOf> _:7 .
+<urn:us:gov:ic:cvenum:ism:notice#FISA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#FISA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#FISA> <http://www.w3.org/2004/02/skos/core#notation> "FISA" .
+<urn:us:gov:ic:cvenum:ism:notice#FISA> <http://www.w3.org/2004/02/skos/core#prefLabel> "FISA Warning statement" .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FISA" .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:10 .
+<urn:us:gov:ic:cvenum:ism:notice#RAWFISA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#RAWFISA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#RAWFISA> <http://www.w3.org/2004/02/skos/core#notation> "RAWFISA" .
+<urn:us:gov:ic:cvenum:ism:notice#RAWFISA> <http://www.w3.org/2004/02/skos/core#prefLabel> "RAWFISA Warning statement" .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RAWFISA" .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
+<urn:us:gov:ic:cvenum:ism:notice#IMC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#IMC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#IMC> <http://www.w3.org/2004/02/skos/core#notation> "IMC" .
+<urn:us:gov:ic:cvenum:ism:notice#IMC> <http://www.w3.org/2004/02/skos/core#prefLabel> "IMCON Warning statement" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IMC" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:5 .
+<urn:us:gov:ic:cvenum:ism:notice#CNWDI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#CNWDI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#CNWDI> <http://www.w3.org/2004/02/skos/core#notation> "CNWDI" .
+<urn:us:gov:ic:cvenum:ism:notice#CNWDI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Controled Nuclear Weapon Design Information Warning statement" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CNWDI" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:60 .
+<urn:us:gov:ic:cvenum:ism:notice#RD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#RD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#RD> <http://www.w3.org/2004/02/skos/core#notation> "RD" .
+<urn:us:gov:ic:cvenum:ism:notice#RD> <http://www.w3.org/2004/02/skos/core#prefLabel> "RD Warning statement" .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RD" .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:9 .
+<urn:us:gov:ic:cvenum:ism:notice#FRD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#FRD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#FRD> <http://www.w3.org/2004/02/skos/core#notation> "FRD" .
+<urn:us:gov:ic:cvenum:ism:notice#FRD> <http://www.w3.org/2004/02/skos/core#prefLabel> "FRD Warning statement" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FRD" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:1 .
+<urn:us:gov:ic:cvenum:ism:notice#DS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#DS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#DS> <http://www.w3.org/2004/02/skos/core#notation> "DS" .
+<urn:us:gov:ic:cvenum:ism:notice#DS> <http://www.w3.org/2004/02/skos/core#prefLabel> "LIMDIS caveat" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DS" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:42 .
+<urn:us:gov:ic:cvenum:ism:notice#LES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#LES> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#LES> <http://www.w3.org/2004/02/skos/core#notation> "LES" .
+<urn:us:gov:ic:cvenum:ism:notice#LES> <http://www.w3.org/2004/02/skos/core#prefLabel> "LES Notice" .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LES" .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:47 .
+<urn:us:gov:ic:cvenum:ism:notice#LES-NF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#LES-NF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#LES-NF> <http://www.w3.org/2004/02/skos/core#notation> "LES-NF" .
+<urn:us:gov:ic:cvenum:ism:notice#LES-NF> <http://www.w3.org/2004/02/skos/core#prefLabel> "LES-NF Notice" .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LES-NF" .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:39 .
+<urn:us:gov:ic:cvenum:ism:notice#DSEN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#DSEN> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#DSEN> <http://www.w3.org/2004/02/skos/core#notation> "DSEN" .
+<urn:us:gov:ic:cvenum:ism:notice#DSEN> <http://www.w3.org/2004/02/skos/core#prefLabel> "DSEN Notice" .
+_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DSEN" .
+_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:19 .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-A> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-A> <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-A" .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-A> <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement A from DoD Directive 5230.24" .
+_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DoD-Dist-A" .
+_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:63 .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-B> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-B> <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-B" .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-B> <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement B from DoD Directive 5230.24" .
+_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DoD-Dist-B" .
+_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:52 .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-C> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-C> <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-C" .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-C> <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement C from DoD Directive 5230.24" .
+_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DoD-Dist-C" .
+_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:4 .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-D> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-D> <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-D" .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-D> <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement D from DoD Directive 5230.24" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DoD-Dist-D" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:15 .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-E> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-E> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-E> <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-E" .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-E> <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement E from DoD Directive 5230.24" .
+_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DoD-Dist-E" .
+_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:77 .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-F> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-F> <http://www.w3.org/2004/02/skos/core#notation> "DoD-Dist-F" .
+<urn:us:gov:ic:cvenum:ism:notice#DoD-Dist-F> <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Distribution statement F from DoD Directive 5230.24" .
+_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DoD-Dist-F" .
+_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:84 .
+<urn:us:gov:ic:cvenum:ism:notice#US-Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#US-Person> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#US-Person> <http://www.w3.org/2004/02/skos/core#notation> "US-Person" .
+<urn:us:gov:ic:cvenum:ism:notice#US-Person> <http://www.w3.org/2004/02/skos/core#prefLabel> "US Person info Notice" .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "US-Person" .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:8 .
+<urn:us:gov:ic:cvenum:ism:notice#pre13526ORCON> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#pre13526ORCON> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#pre13526ORCON> <http://www.w3.org/2004/02/skos/core#notation> "pre13526ORCON" .
+<urn:us:gov:ic:cvenum:ism:notice#pre13526ORCON> <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicates that an instance document must abide by rules pertaining to ORIGINATOR CONTROLLED data issued prior to Executive Order 13526." .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "pre13526ORCON" .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:25 .
+<urn:us:gov:ic:cvenum:ism:notice#POC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#POC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#POC> <http://www.w3.org/2004/02/skos/core#notation> "POC" .
+<urn:us:gov:ic:cvenum:ism:notice#POC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicates that the contents of this notice specify the contact information for a required point-of-contact." .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "POC" .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:85 .
+<urn:us:gov:ic:cvenum:ism:notice#COMSEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#COMSEC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#COMSEC> <http://www.w3.org/2004/02/skos/core#notation> "COMSEC" .
+<urn:us:gov:ic:cvenum:ism:notice#COMSEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "COMSEC Notice" .
+_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "COMSEC" .
+_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:6 .
+<urn:us:gov:ic:cvenum:ism:notice#SSI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#SSI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#SSI> <http://www.w3.org/2004/02/skos/core#notation> "SSI" .
+<urn:us:gov:ic:cvenum:ism:notice#SSI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicates that this is the notice for Sensitive Security Information" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SSI" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:43 .
+<urn:us:gov:ic:cvenum:ism:notice#RSEN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#RSEN> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#RSEN> <http://www.w3.org/2004/02/skos/core#notation> "RSEN" .
+<urn:us:gov:ic:cvenum:ism:notice#RSEN> <http://www.w3.org/2004/02/skos/core#prefLabel> "Risk Sensitive Notice" .
+_:43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RSEN" .
+_:43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:28 .
+<urn:us:gov:ic:cvenum:ism:notice#IMCON_RSEN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#IMCON_RSEN> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#IMCON_RSEN> <http://www.w3.org/2004/02/skos/core#notation> "IMCON_RSEN" .
+<urn:us:gov:ic:cvenum:ism:notice#IMCON_RSEN> <http://www.w3.org/2004/02/skos/core#prefLabel> "Indicates SAT warning statements include IMCON and RSEN markings" .
+_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IMCON_RSEN" .
+_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:62 .
+<urn:us:gov:ic:cvenum:ism:notice#GEOCAP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#GEOCAP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#GEOCAP> <http://www.w3.org/2004/02/skos/core#notation> "GEOCAP" .
+<urn:us:gov:ic:cvenum:ism:notice#GEOCAP> <http://www.w3.org/2004/02/skos/core#prefLabel> "GEOCAP Warning statement" .
+_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "GEOCAP" .
+_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:34 .
+<urn:us:gov:ic:cvenum:ism:notice#NATO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#NATO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#NATO> <http://www.w3.org/2004/02/skos/core#notation> "NATO" .
+<urn:us:gov:ic:cvenum:ism:notice#NATO> <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO Warning statement" .
+_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO" .
+_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:88 .
+<urn:us:gov:ic:cvenum:ism:notice#RC_Dissemination_Control_Required> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#RC_Dissemination_Control_Required> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#RC_Dissemination_Control_Required> <http://www.w3.org/2004/02/skos/core#notation> "RC_Dissemination_Control_Required" .
+<urn:us:gov:ic:cvenum:ism:notice#RC_Dissemination_Control_Required> <http://www.w3.org/2004/02/skos/core#prefLabel> "This product was collected in a restricted collection mode. Redaction, chipping and release determination shall not result in more permissive release than NOFORN regardless of the Security Indicator Codes (SIC) associated with the product" .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RC_Dissemination_Control_Required" .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:64 .
+<urn:us:gov:ic:cvenum:ism:notice#ITAR-EAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:cvenum:ism:notice#ITAR-EAR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice> .
+<urn:us:gov:ic:cvenum:ism:notice#ITAR-EAR> <http://www.w3.org/2004/02/skos/core#notation> "ITAR-EAR" .
+<urn:us:gov:ic:cvenum:ism:notice#ITAR-EAR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Warning statement for International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR) in accordance with DoD 5230.24, Distribution Statements on Technical Documents." .
+_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ITAR-EAR" .
+_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

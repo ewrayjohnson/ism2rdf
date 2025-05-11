@@ -1,0 +1,11 @@
+<urn:us:gov:ic:ISM:IC-NTK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:ISM:IC-NTK> <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:./IC-ISM.jsonld> .
+<urn:us:gov:ic:ntk#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<urn:us:gov:ic:ntk#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#ID> .
+<urn:us:gov:ic:ntk#id> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique XML identifier used to assign an XML unique identifier to an element, such as a paragraph, note or table." .
+<urn:us:gov:ic:ntk#IDReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<urn:us:gov:ic:ntk#IDReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#IDREFS> .
+<urn:us:gov:ic:ntk#IDReference> <http://www.w3.org/2000/01/rdf-schema#comment> "A cross-reference to a unique identifier used to point from one element to one or more other elements. The value of the attribute must be one or more XML unique identifiers that are the value(s) of id attribute(s) elsewhere in the document." .
+<urn:us:gov:ic:ntk#qualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<urn:us:gov:ic:ntk#qualifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<urn:us:gov:ic:ntk#qualifier> <http://www.w3.org/2000/01/rdf-schema#comment> "A user-defined property used to provide contextual meaning to the" .

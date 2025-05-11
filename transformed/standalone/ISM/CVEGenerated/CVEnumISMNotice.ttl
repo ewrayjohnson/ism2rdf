@@ -1,289 +1,210 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismnotice: <urn:us:gov:ic:cvenum:ism:notice#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix ismnotice: <urn:us:gov:ic:cvenum:ism:notice#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<_:0> a rdf:List;
-  rdf:first "IMC";
-  rdf:rest <_:9>.
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNotice> a owl:Ontology .
 
-<_:1> a rdf:List;
-  rdf:first "FRD";
-  rdf:rest <_:30>.
+ismnotice:CNWDI a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "CNWDI" ;
+	skos:prefLabel "Controled Nuclear Weapon Design Information Warning statement" .
 
-<_:10> a rdf:List;
-  rdf:first "RAWFISA";
-  rdf:rest <_:0>.
+ismnotice:COMSEC a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "COMSEC" ;
+	skos:prefLabel "COMSEC Notice" .
 
-<_:100> a rdf:List;
-  rdf:first "DoD-Dist-A";
-  rdf:rest <_:3>.
+ismnotice:CVEnumISMNotice a skos:ConceptScheme ;
+	dc:title "(U) ismnotice:CVEnumISMNotice definition" ;
+	skos:hasTopConcept ismnotice:FISA ;
+	skos:hasTopConcept ismnotice:RAWFISA ;
+	skos:hasTopConcept ismnotice:IMC ;
+	skos:hasTopConcept ismnotice:CNWDI ;
+	skos:hasTopConcept ismnotice:RD ;
+	skos:hasTopConcept ismnotice:FRD ;
+	skos:hasTopConcept ismnotice:DS ;
+	skos:hasTopConcept ismnotice:LES ;
+	skos:hasTopConcept ismnotice:LES-NF ;
+	skos:hasTopConcept ismnotice:DSEN ;
+	skos:hasTopConcept ismnotice:DoD-Dist-A ;
+	skos:hasTopConcept ismnotice:DoD-Dist-B ;
+	skos:hasTopConcept ismnotice:DoD-Dist-C ;
+	skos:hasTopConcept ismnotice:DoD-Dist-D ;
+	skos:hasTopConcept ismnotice:DoD-Dist-E ;
+	skos:hasTopConcept ismnotice:DoD-Dist-F ;
+	skos:hasTopConcept ismnotice:US-Person ;
+	skos:hasTopConcept ismnotice:pre13526ORCON ;
+	skos:hasTopConcept ismnotice:POC ;
+	skos:hasTopConcept ismnotice:COMSEC ;
+	skos:hasTopConcept ismnotice:SSI ;
+	skos:hasTopConcept ismnotice:RSEN ;
+	skos:hasTopConcept ismnotice:IMCON_RSEN ;
+	skos:hasTopConcept ismnotice:GEOCAP ;
+	skos:hasTopConcept ismnotice:NATO ;
+	skos:hasTopConcept ismnotice:RC_Dissemination_Control_Required ;
+	skos:hasTopConcept ismnotice:ITAR-EAR .
 
-<_:2> a rdf:List;
-  rdf:first "NATO";
-  rdf:rest <_:72>.
+ismnotice:CVEnumISMNoticeValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"FISA"
+			"RAWFISA"
+			"IMC"
+			"CNWDI"
+			"RD"
+			"FRD"
+			"DS"
+			"LES"
+			"LES-NF"
+			"DSEN"
+			"DoD-Dist-A"
+			"DoD-Dist-B"
+			"DoD-Dist-C"
+			"DoD-Dist-D"
+			"DoD-Dist-E"
+			"DoD-Dist-F"
+			"US-Person"
+			"pre13526ORCON"
+			"POC"
+			"COMSEC"
+			"SSI"
+			"RSEN"
+			"IMCON_RSEN"
+			"GEOCAP"
+			"NATO"
+			"RC_Dissemination_Control_Required"
+			"ITAR-EAR"
+		) ;
+	] .
 
-<_:23> a rdf:List;
-  rdf:first "DoD-Dist-D";
-  rdf:rest <_:7>.
+ismnotice:DS a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "DS" ;
+	skos:prefLabel "LIMDIS caveat" .
 
-<_:24> a rdf:List;
-  rdf:first "LES-NF";
-  rdf:rest <_:51>.
+ismnotice:DSEN a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "DSEN" ;
+	skos:prefLabel "DSEN Notice" .
 
-<_:3> a rdf:List;
-  rdf:first "DoD-Dist-B";
-  rdf:rest <_:84>.
+ismnotice:DoD-Dist-A a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "DoD-Dist-A" ;
+	skos:prefLabel "DoD Distribution statement A from DoD Directive 5230.24" .
 
-<_:30> a rdf:List;
-  rdf:first "DS";
-  rdf:rest <_:45>.
+ismnotice:DoD-Dist-B a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "DoD-Dist-B" ;
+	skos:prefLabel "DoD Distribution statement B from DoD Directive 5230.24" .
 
-<_:4> a rdf:List;
-  rdf:first "COMSEC";
-  rdf:rest <_:88>.
+ismnotice:DoD-Dist-C a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "DoD-Dist-C" ;
+	skos:prefLabel "DoD Distribution statement C from DoD Directive 5230.24" .
 
-<_:45> a rdf:List;
-  rdf:first "LES";
-  rdf:rest <_:24>.
+ismnotice:DoD-Dist-D a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "DoD-Dist-D" ;
+	skos:prefLabel "DoD Distribution statement D from DoD Directive 5230.24" .
 
-<_:48> a rdf:List;
-  rdf:first "US-Person";
-  rdf:rest <_:75>.
+ismnotice:DoD-Dist-E a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "DoD-Dist-E" ;
+	skos:prefLabel "DoD Distribution statement E from DoD Directive 5230.24" .
 
-<_:5> a rdf:List;
-  rdf:first "POC";
-  rdf:rest <_:4>.
+ismnotice:DoD-Dist-F a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "DoD-Dist-F" ;
+	skos:prefLabel "DoD Distribution statement F from DoD Directive 5230.24" .
 
-<_:51> a rdf:List;
-  rdf:first "DSEN";
-  rdf:rest <_:100>.
+ismnotice:FISA a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "FISA" ;
+	skos:prefLabel "FISA Warning statement" .
 
-<_:6> a rdf:List;
-  rdf:first "RD";
-  rdf:rest <_:1>.
+ismnotice:FRD a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "FRD" ;
+	skos:prefLabel "FRD Warning statement" .
 
-<_:7> a rdf:List;
-  rdf:first "DoD-Dist-E";
-  rdf:rest <_:93>.
+ismnotice:GEOCAP a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "GEOCAP" ;
+	skos:prefLabel "GEOCAP Warning statement" .
 
-<_:71> a rdf:List;
-  rdf:first "ITAR-EAR";
-  rdf:rest rdf:nil.
+ismnotice:IMC a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "IMC" ;
+	skos:prefLabel "IMCON Warning statement" .
 
-<_:72> a rdf:List;
-  rdf:first "RC_Dissemination_Control_Required";
-  rdf:rest <_:71>.
+ismnotice:IMCON_RSEN a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "IMCON_RSEN" ;
+	skos:prefLabel "Indicates SAT warning statements include IMCON and RSEN markings" .
 
-<_:75> a rdf:List;
-  rdf:first "pre13526ORCON";
-  rdf:rest <_:5>.
+ismnotice:ITAR-EAR a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "ITAR-EAR" ;
+	skos:prefLabel "Warning statement for International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR) in accordance with DoD 5230.24, Distribution Statements on Technical Documents." .
 
-<_:78> a rdf:List;
-  rdf:first "RSEN";
-  rdf:rest <_:86>.
+ismnotice:LES a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "LES" ;
+	skos:prefLabel "LES Notice" .
 
-<_:8> a rdfs:Datatype;
-  owl:oneOf ("FISA" "RAWFISA" "IMC" "CNWDI" "RD" "FRD" "DS" "LES" "LES-NF" "DSEN" "DoD-Dist-A" "DoD-Dist-B" "DoD-Dist-C" "DoD-Dist-D" "DoD-Dist-E" "DoD-Dist-F" "US-Person" "pre13526ORCON" "POC" "COMSEC" "SSI" "RSEN" "IMCON_RSEN" "GEOCAP" "NATO" "RC_Dissemination_Control_Required" "ITAR-EAR").
+ismnotice:LES-NF a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "LES-NF" ;
+	skos:prefLabel "LES-NF Notice" .
 
-<_:84> a rdf:List;
-  rdf:first "DoD-Dist-C";
-  rdf:rest <_:23>.
+ismnotice:NATO a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "NATO" ;
+	skos:prefLabel "NATO Warning statement" .
 
-<_:86> a rdf:List;
-  rdf:first "IMCON_RSEN";
-  rdf:rest <_:994>.
+ismnotice:POC a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "POC" ;
+	skos:prefLabel "Indicates that the contents of this notice specify the contact information for a required point-of-contact." .
 
-<_:88> a rdf:List;
-  rdf:first "SSI";
-  rdf:rest <_:78>.
+ismnotice:RAWFISA a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "RAWFISA" ;
+	skos:prefLabel "RAWFISA Warning statement" .
 
-<_:89> a rdf:List;
-  rdf:first "FISA";
-  rdf:rest <_:10>.
+ismnotice:RC_Dissemination_Control_Required a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "RC_Dissemination_Control_Required" ;
+	skos:prefLabel "This product was collected in a restricted collection mode. Redaction, chipping and release determination shall not result in more permissive release than NOFORN regardless of the Security Indicator Codes (SIC) associated with the product" .
 
-<_:9> a rdf:List;
-  rdf:first "CNWDI";
-  rdf:rest <_:6>.
+ismnotice:RD a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "RD" ;
+	skos:prefLabel "RD Warning statement" .
 
-<_:93> a rdf:List;
-  rdf:first "DoD-Dist-F";
-  rdf:rest <_:48>.
+ismnotice:RSEN a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "RSEN" ;
+	skos:prefLabel "Risk Sensitive Notice" .
 
-<_:994> a rdf:List;
-  rdf:first "GEOCAP";
-  rdf:rest <_:2>.
+ismnotice:SSI a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "SSI" ;
+	skos:prefLabel "Indicates that this is the notice for Sensitive Security Information" .
 
-ismnotice:CNWDI a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "CNWDI";
-  skos:prefLabel "Controled Nuclear Weapon Design Information Warning statement".
+ismnotice:US-Person a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "US-Person" ;
+	skos:prefLabel "US Person info Notice" .
 
-ismnotice:COMSEC a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "COMSEC";
-  skos:prefLabel "COMSEC Notice".
+ismnotice:pre13526ORCON a skos:Concept ;
+	skos:inScheme ismnotice:CVEnumISMNotice ;
+	skos:notation "pre13526ORCON" ;
+	skos:prefLabel "Indicates that an instance document must abide by rules pertaining to ORIGINATOR CONTROLLED data issued prior to Executive Order 13526." .
 
-ismnotice:CVEnumISMNotice a skos:ConceptScheme;
-  dc:title "(U) ismnotice:CVEnumISMNotice definition";
-  skos:hasTopConcept
-    ismnotice:CNWDI,
-    ismnotice:COMSEC,
-    ismnotice:DoD-Dist-A,
-    ismnotice:DoD-Dist-B,
-    ismnotice:DoD-Dist-C,
-    ismnotice:DoD-Dist-D,
-    ismnotice:DoD-Dist-E,
-    ismnotice:DoD-Dist-F,
-    ismnotice:DS,
-    ismnotice:DSEN,
-    ismnotice:FISA,
-    ismnotice:FRD,
-    ismnotice:GEOCAP,
-    ismnotice:IMC,
-    ismnotice:IMCON_RSEN,
-    ismnotice:ITAR-EAR,
-    ismnotice:LES,
-    ismnotice:LES-NF,
-    ismnotice:NATO,
-    ismnotice:POC,
-    ismnotice:pre13526ORCON,
-    ismnotice:RAWFISA,
-    ismnotice:RC_Dissemination_Control_Required,
-    ismnotice:RD,
-    ismnotice:RSEN,
-    ismnotice:SSI,
-    ismnotice:US-Person.
-
-ismnotice:CVEnumISMNoticeValues a rdfs:Datatype;
-  owl:equivalentClass <_:8>.
-
-ismnotice:DoD-Dist-A a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "DoD-Dist-A";
-  skos:prefLabel "DoD Distribution statement A from DoD Directive 5230.24".
-
-ismnotice:DoD-Dist-B a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "DoD-Dist-B";
-  skos:prefLabel "DoD Distribution statement B from DoD Directive 5230.24".
-
-ismnotice:DoD-Dist-C a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "DoD-Dist-C";
-  skos:prefLabel "DoD Distribution statement C from DoD Directive 5230.24".
-
-ismnotice:DoD-Dist-D a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "DoD-Dist-D";
-  skos:prefLabel "DoD Distribution statement D from DoD Directive 5230.24".
-
-ismnotice:DoD-Dist-E a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "DoD-Dist-E";
-  skos:prefLabel "DoD Distribution statement E from DoD Directive 5230.24".
-
-ismnotice:DoD-Dist-F a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "DoD-Dist-F";
-  skos:prefLabel "DoD Distribution statement F from DoD Directive 5230.24".
-
-ismnotice:DS a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "DS";
-  skos:prefLabel "LIMDIS caveat".
-
-ismnotice:DSEN a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "DSEN";
-  skos:prefLabel "DSEN Notice".
-
-ismnotice:FISA a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "FISA";
-  skos:prefLabel "FISA Warning statement".
-
-ismnotice:FRD a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "FRD";
-  skos:prefLabel "FRD Warning statement".
-
-ismnotice:GEOCAP a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "GEOCAP";
-  skos:prefLabel "GEOCAP Warning statement".
-
-ismnotice:IMC a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "IMC";
-  skos:prefLabel "IMCON Warning statement".
-
-ismnotice:IMCON_RSEN a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "IMCON_RSEN";
-  skos:prefLabel "Indicates SAT warning statements include IMCON and RSEN markings".
-
-ismnotice:ITAR-EAR a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "ITAR-EAR";
-  skos:prefLabel "Warning statement for International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR) in accordance with DoD 5230.24, Distribution Statements on Technical Documents.".
-
-ismnotice:LES a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "LES";
-  skos:prefLabel "LES Notice".
-
-ismnotice:LES-NF a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "LES-NF";
-  skos:prefLabel "LES-NF Notice".
-
-ismnotice:NATO a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "NATO";
-  skos:prefLabel "NATO Warning statement".
-
-ismnotice:POC a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "POC";
-  skos:prefLabel "Indicates that the contents of this notice specify the contact information for a required point-of-contact.".
-
-ismnotice:pre13526ORCON a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "pre13526ORCON";
-  skos:prefLabel "Indicates that an instance document must abide by rules pertaining to ORIGINATOR CONTROLLED data issued prior to Executive Order 13526.".
-
-ismnotice:RAWFISA a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "RAWFISA";
-  skos:prefLabel "RAWFISA Warning statement".
-
-ismnotice:RC_Dissemination_Control_Required a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "RC_Dissemination_Control_Required";
-  skos:prefLabel "This product was collected in a restricted collection mode. Redaction, chipping and release determination shall not result in more permissive release than NOFORN regardless of the Security Indicator Codes (SIC) associated with the product".
-
-ismnotice:RD a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "RD";
-  skos:prefLabel "RD Warning statement".
-
-ismnotice:RSEN a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "RSEN";
-  skos:prefLabel "Risk Sensitive Notice".
-
-ismnotice:SSI a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "SSI";
-  skos:prefLabel "Indicates that this is the notice for Sensitive Security Information".
-
-ismnotice:US-Person a skos:Concept;
-  skos:inScheme ismnotice:CVEnumISMNotice;
-  skos:notation "US-Person";
-  skos:prefLabel "US Person info Notice".
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNotice> a owl:Ontology;
-.

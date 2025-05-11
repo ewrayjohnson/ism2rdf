@@ -1,0 +1,39 @@
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumNTKProfileDes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> <http://purl.org/dc/elements/1.1/title> "(U) NTK ProfileDes namespaces identify the type of NTK. All NTK enterprise profile namespace URNs start with ‘urn:us:gov:ic:ntk:profile’. Values in this CVE correspond to the terminating portion of NTK profile namespace URNs. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumNTKProfileDes.xml" .
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:ntk:profile:agencydissem> .
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:ntk:profile:datasphere> .
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:ntk:profile:grp-ind> .
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:ntk:profile:role> .
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:3 .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:3 <http://www.w3.org/2002/07/owl#oneOf> _:10 .
+<urn:us:gov:ic:ntk:profile:agencydissem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:ntk:profile:agencydissem> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> .
+<urn:us:gov:ic:ntk:profile:agencydissem> <http://www.w3.org/2004/02/skos/core#notation> "urn:us:gov:ic:ntk:profile:agencydissem" .
+<urn:us:gov:ic:ntk:profile:agencydissem> <http://www.w3.org/2004/02/skos/core#prefLabel> "Agency Dissem" .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "urn:us:gov:ic:ntk:profile:agencydissem" .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:2 .
+<urn:us:gov:ic:ntk:profile:datasphere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:ntk:profile:datasphere> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> .
+<urn:us:gov:ic:ntk:profile:datasphere> <http://www.w3.org/2004/02/skos/core#notation> "urn:us:gov:ic:ntk:profile:datasphere" .
+<urn:us:gov:ic:ntk:profile:datasphere> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Sphere" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "urn:us:gov:ic:ntk:profile:datasphere" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:6 .
+<urn:us:gov:ic:ntk:profile:grp-ind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:ntk:profile:grp-ind> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> .
+<urn:us:gov:ic:ntk:profile:grp-ind> <http://www.w3.org/2004/02/skos/core#notation> "urn:us:gov:ic:ntk:profile:grp-ind" .
+<urn:us:gov:ic:ntk:profile:grp-ind> <http://www.w3.org/2004/02/skos/core#prefLabel> "Group and Individual" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "urn:us:gov:ic:ntk:profile:grp-ind" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
+<urn:us:gov:ic:ntk:profile:role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<urn:us:gov:ic:ntk:profile:role> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> .
+<urn:us:gov:ic:ntk:profile:role> <http://www.w3.org/2004/02/skos/core#notation> "urn:us:gov:ic:ntk:profile:role" .
+<urn:us:gov:ic:ntk:profile:role> <http://www.w3.org/2004/02/skos/core#prefLabel> "ROLE" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "urn:us:gov:ic:ntk:profile:role" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

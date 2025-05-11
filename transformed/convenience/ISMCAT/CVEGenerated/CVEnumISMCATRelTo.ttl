@@ -1,3430 +1,2408 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismcatrelto: <urn:us:gov:ic:cvenum:ismcat:relto#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix sh: <http://www.w3.org/ns/shacl#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-
-<_:0>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:1> a rdf:List;
-  rdf:first "ARG";
-  rdf:rest <_:60>.
-
-<_:10> a rdfs:Datatype;
-  owl:oneOf ("USA" "ABW" "AFG" "AGO" "AIA" "ALB" "AND" "ARE" "ARG" "ARM" "ASM" "ATA" "ATF" "ATG" "AUS" "AUT" "AX2" "AX3" "AZE" "BDI" "BEL" "BEN" "BES" "BFA" "BGD" "BGR" "BHR" "BHS" "BIH" "BLM" "BLR" "BLZ" "BMU" "BOL" "BRA" "BRB" "BRN" "BTN" "BVT" "BWA" "CAF" "CAN" "CCK" "CHE" "CHL" "CHN" "CIV" "CMR" "COD" "COG" "COK" "COL" "COM" "CPT" "CPV" "CRI" "CUB" "CUW" "CXR" "CYM" "CYP" "CZE" "DEU" "DGA" "DJI" "DMA" "DNK" "DOM" "DZA" "ECU" "EGY" "ERI" "ESH" "ESP" "EST" "ETH" "FIN" "FJI" "FLK" "FRA" "FRO" "FSM" "GAB" "GBR" "GEO" "GGY" "GHA" "GIB" "GIN" "GLP" "GMB" "GNB" "GNQ" "GRC" "GRD" "GRL" "GTM" "GUF" "GUM" "GUY" "HKG" "HMD" "HND" "HRV" "HTI" "HUN" "IDN" "IMN" "IND" "IOT" "IRL" "IRN" "IRQ" "ISL" "ISR" "ITA" "JAM" "JEY" "JOR" "JPN" "KAZ" "KEN" "KGZ" "KHM" "KIR" "KNA" "KOR" "KWT" "LAO" "LBN" "LBR" "LBY" "LCA" "LIE" "LKA" "LSO" "LTU" "LUX" "LVA" "MAC" "MAF" "MAR" "MCO" "MDA" "MDG" "MDV" "MEX" "MHL" "MKD" "MLI" "MLT" "MMR" "MNE" "MNG" "MNP" "MOZ" "MRT" "MSR" "MTQ" "MUS" "MWI" "MYS" "MYT" "NAM" "NCL" "NER" "NFK" "NGA" "NIC" "NIU" "NLD" "NOR" "NPL" "NRU" "NZL" "OMN" "PAK" "PAN" "PCN" "PER" "PHL" "PLW" "PNG" "POL" "PRI" "PRK" "PRT" "PRY" "PYF" "QAT" "REU" "ROU" "RUS" "RWA" "SAU" "SDN" "SEN" "SGP" "SGS" "SHN" "SLB" "SLE" "SLV" "SMR" "SOM" "SPM" "SRB" "SSD" "STP" "SUR" "SVK" "SVN" "SWE" "SWZ" "SXM" "SYC" "SYR" "TCA" "TCD" "TGO" "THA" "TJK" "TKL" "TKM" "TLS" "TON" "TTO" "TUN" "TUR" "TUV" "TWN" "TZA" "UGA" "UKR" "URY" "UZB" "VAT" "VCT" "VEN" "VGB" "VIR" "VNM" "VUT" "WLF" "WSM" "XAC" "XAZ" "XBI" "XBK" "XCR" "XCS" "XCY" "XEU" "XGL" "XGZ" "XHO" "XJA" "XJM" "XJN" "XJV" "XKM" "XKN" "XKR" "XKS" "XMW" "XNV" "XPL" "XPR" "XQZ" "XSP" "XSV" "XTR" "XWB" "XWK" "XXD" "YEM" "ZAF" "ZMB" "ZWE" "ACGU" "AMSP" "AOSC" "APFS" "ASEA" "AUSTRALIA_GROUP" "BHTF" "BWCS" "CFCK" "CFOD" "CFUP" "CLFC" "CMFC" "CMFP" "CPMT" "CTOC" "CWCS" "ECTF" "EFOR" "EU" "EUDA" "FRME" "FVEY" "GCCH" "GCTF" "GFNX" "GMIF" "IESC" "IMSC" "IMSP" "IPMC" "IRKS" "ISAF" "ISSG" "KFOR" "MCFI" "MESF" "MGEU" "MIFH" "MLEC" "MNTF" "MPFL" "NACT" "NATO" "NCFE" "NKIC" "NRDC" "NSG" "OSAG" "OSTY" "PAWA" "PGMF" "PSMX" "RISC" "RSMA" "SFOR" "SOFP" "SPAA" "TEYE" "TFTC" "UNCK").
-
-<_:100> a rdf:List;
-  rdf:first "PRI";
-  rdf:rest <_:54>.
-
-<_:104> a rdf:List;
-  rdf:first "CTOC";
-  rdf:rest <_:899>.
-
-<_:108> a rdf:List;
-  rdf:first "OSAG";
-  rdf:rest <_:592>.
-
-<_:11> a rdf:List;
-  rdf:first "ITA";
-  rdf:rest <_:473>.
-
-<_:111> a rdf:List;
-  rdf:first "YEM";
-  rdf:rest <_:691>.
-
-<_:112> a rdf:List;
-  rdf:first "SGS";
-  rdf:rest <_:994>.
-
-<_:114> a rdf:List;
-  rdf:first "MDV";
-  rdf:rest <_:52>.
-
-<_:118> a rdf:List;
-  rdf:first "UZB";
-  rdf:rest <_:505>.
-
-<_:12> a rdf:List;
-  rdf:first "AGO";
-  rdf:rest <_:21>.
-
-<_:121> a rdf:List;
-  rdf:first "MESF";
-  rdf:rest <_:619>.
-
-<_:122> a rdf:List;
-  rdf:first "ETH";
-  rdf:rest <_:59>.
-
-<_:125> a rdf:List;
-  rdf:first "ROU";
-  rdf:rest <_:929>.
-
-<_:126> a rdf:List;
-  rdf:first "UNCK";
-  rdf:rest rdf:nil.
-
-<_:13> a rdf:List;
-  rdf:first "LUX";
-  rdf:rest <_:981>.
-
-<_:130> a rdf:List;
-  rdf:first "SLB";
-  rdf:rest <_:302>.
-
-<_:135> a rdf:List;
-  rdf:first "TCA";
-  rdf:rest <_:216>.
-
-<_:136> a rdf:List;
-  rdf:first "XCY";
-  rdf:rest <_:343>.
-
-<_:137> a rdf:List;
-  rdf:first "TKM";
-  rdf:rest <_:202>.
-
-<_:139> a rdf:List;
-  rdf:first "TZA";
-  rdf:rest <_:964>.
-
-<_:14> a rdf:List;
-  rdf:first "BLZ";
-  rdf:rest <_:82>.
-
-<_:143> a rdf:List;
-  rdf:first "MNE";
-  rdf:rest <_:95>.
-
-<_:146> a rdf:List;
-  rdf:first "FRME";
-  rdf:rest <_:476>.
-
-<_:148> a rdf:List;
-  rdf:first "XNV";
-  rdf:rest <_:822>.
-
-<_:15> a rdf:List;
-  rdf:first "DGA";
-  rdf:rest <_:51>.
-
-<_:158> a rdf:List;
-  rdf:first "BHTF";
-  rdf:rest <_:649>.
-
-<_:16> a rdf:List;
-  rdf:first "AUT";
-  rdf:rest <_:58>.
-
-<_:167> a rdf:List;
-  rdf:first "TGO";
-  rdf:rest <_:698>.
-
-<_:17> a rdf:List;
-  rdf:first "BLR";
-  rdf:rest <_:14>.
-
-<_:175> a rdf:List;
-  rdf:first "GMB";
-  rdf:rest <_:903>.
-
-<_:178> a rdf:List;
-  rdf:first "GMIF";
-  rdf:rest <_:448>.
-
-<_:18> a rdf:List;
-  rdf:first "BOL";
-  rdf:rest <_:23>.
-
-<_:187> a rdf:List;
-  rdf:first "TUR";
-  rdf:rest <_:346>.
-
-<_:19> a rdf:List;
-  rdf:first "GBR";
-  rdf:rest <_:88>.
-
-<_:191> a rdf:List;
-  rdf:first "NLD";
-  rdf:rest <_:352>.
-
-<_:193> a rdf:List;
-  rdf:first "VCT";
-  rdf:rest <_:206>.
-
-<_:195> a rdf:List;
-  rdf:first "NGA";
-  rdf:rest <_:867>.
-
-<_:196> a rdf:List;
-  rdf:first "SUR";
-  rdf:rest <_:721>.
-
-<_:198> a rdf:List;
-  rdf:first "MNTF";
-  rdf:rest <_:351>.
-
-<_:2> a rdf:List;
-  rdf:first "ATG";
-  rdf:rest <_:25>.
-
-<_:20> a rdf:List;
-  rdf:first "GUY";
-  rdf:rest <_:907>.
-
-<_:202> a rdf:List;
-  rdf:first "TLS";
-  rdf:rest <_:513>.
-
-<_:204> a rdf:List;
-  rdf:first "ACGU";
-  rdf:rest <_:974>.
-
-<_:205> a rdf:List;
-  rdf:first "CMR";
-  rdf:rest <_:96>.
-
-<_:206> a rdf:List;
-  rdf:first "VEN";
-  rdf:rest <_:829>.
-
-<_:21> a rdf:List;
-  rdf:first "AIA";
-  rdf:rest <_:9>.
-
-<_:216> a rdf:List;
-  rdf:first "TCD";
-  rdf:rest <_:167>.
-
-<_:22> a rdf:List;
-  rdf:first "IRN";
-  rdf:rest <_:26>.
-
-<_:222> a rdf:List;
-  rdf:first "MLT";
-  rdf:rest <_:471>.
-
-<_:229> a rdf:List;
-  rdf:first "ECTF";
-  rdf:rest <_:508>.
-
-<_:23> a rdf:List;
-  rdf:first "BRA";
-  rdf:rest <_:62>.
-
-<_:232> a rdf:List;
-  rdf:first "VIR";
-  rdf:rest <_:357>.
-
-<_:233> a rdf:List;
-  rdf:first "GIB";
-  rdf:rest <_:65>.
-
-<_:235> a rdf:List;
-  rdf:first "NAM";
-  rdf:rest <_:997>.
-
-<_:237> a rdf:List;
-  rdf:first "DEU";
-  rdf:rest <_:15>.
-
-<_:24> a rdf:List;
-  rdf:first "KGZ";
-  rdf:rest <_:806>.
-
-<_:240> a rdf:List;
-  rdf:first "TKL";
-  rdf:rest <_:137>.
-
-<_:246> a rdf:List;
-  rdf:first "NRDC";
-  rdf:rest <_:834>.
-
-<_:247> a rdf:List;
-  rdf:first "SRB";
-  rdf:rest <_:812>.
-
-<_:248> a rdf:List;
-  rdf:first "XGL";
-  rdf:rest <_:888>.
-
-<_:249> a rdf:List;
-  rdf:first "SWZ";
-  rdf:rest <_:341>.
-
-<_:25> a rdf:List;
-  rdf:first "AUS";
-  rdf:rest <_:16>.
-
-<_:251> a rdf:List;
-  rdf:first "CLFC";
-  rdf:rest <_:906>.
-
-<_:252> a rdf:List;
-  rdf:first "XXD";
-  rdf:rest <_:111>.
-
-<_:258> a rdf:List;
-  rdf:first "IMSP";
-  rdf:rest <_:489>.
-
-<_:26> a rdf:List;
-  rdf:first "IRQ";
-  rdf:rest <_:594>.
-
-<_:261> a rdf:List;
-  rdf:first "ZWE";
-  rdf:rest <_:204>.
-
-<_:263> a rdf:List;
-  rdf:first "WSM";
-  rdf:rest <_:924>.
-
-<_:27> a rdf:List;
-  rdf:first "COG";
-  rdf:rest <_:78>.
-
-<_:28> a rdf:List;
-  rdf:first "BGR";
-  rdf:rest <_:53>.
-
-<_:286> a rdf:List;
-  rdf:first "SFOR";
-  rdf:rest <_:900>.
-
-<_:29> a rdf:List;
-  rdf:first "CRI";
-  rdf:rest <_:94>.
-
-<_:3> a rdf:List;
-  rdf:first "ARE";
-  rdf:rest <_:1>.
-
-<_:30> a rdf:List;
-  rdf:first "EGY";
-  rdf:rest <_:81>.
-
-<_:302> a rdf:List;
-  rdf:first "SLE";
-  rdf:rest <_:783>.
-
-<_:305> a rdf:List;
-  rdf:first "RWA";
-  rdf:rest <_:831>.
-
-<_:31> a rdf:List;
-  rdf:first "MAR";
-  rdf:rest <_:529>.
-
-<_:313> a rdf:List;
-  rdf:first "SVN";
-  rdf:rest <_:593>.
-
-<_:319> a rdf:List;
-  rdf:first "LAO";
-  rdf:rest <_:40>.
-
-<_:32> a rdf:List;
-  rdf:first "AND";
-  rdf:rest <_:3>.
-
-<_:324> a rdf:List;
-  rdf:first "XTR";
-  rdf:rest <_:938>.
-
-<_:326> a rdf:List;
-  rdf:first "MHL";
-  rdf:rest <_:753>.
-
-<_:328> a rdf:List;
-  rdf:first "NER";
-  rdf:rest <_:523>.
-
-<_:33> a rdf:List;
-  rdf:first "ASM";
-  rdf:rest <_:4>.
-
-<_:331> a rdf:List;
-  rdf:first "PYF";
-  rdf:rest <_:710>.
-
-<_:335> a rdf:List;
-  rdf:first "VUT";
-  rdf:rest <_:385>.
-
-<_:34> a rdf:List;
-  rdf:first "CXR";
-  rdf:rest <_:45>.
-
-<_:341> a rdf:List;
-  rdf:first "SXM";
-  rdf:rest <_:373>.
-
-<_:343> a rdf:List;
-  rdf:first "XEU";
-  rdf:rest <_:248>.
-
-<_:346> a rdf:List;
-  rdf:first "TUV";
-  rdf:rest <_:603>.
-
-<_:347> a rdf:List;
-  rdf:first "XBI";
-  rdf:rest <_:557>.
-
-<_:35> a rdf:List;
-  rdf:first "AFG";
-  rdf:rest <_:12>.
-
-<_:351> a rdf:List;
-  rdf:first "MPFL";
-  rdf:rest <_:538>.
-
-<_:352> a rdf:List;
-  rdf:first "NOR";
-  rdf:rest <_:378>.
-
-<_:356> a rdf:List;
-  rdf:first "MUS";
-  rdf:rest <_:491>.
-
-<_:357> a rdf:List;
-  rdf:first "VNM";
-  rdf:rest <_:335>.
-
-<_:36> a rdf:List;
-  rdf:first "FRO";
-  rdf:rest <_:525>.
-
-<_:361> a rdf:List;
-  rdf:first "TEYE";
-  rdf:rest <_:790>.
-
-<_:363> a rdf:List;
-  rdf:first "PAN";
-  rdf:rest <_:727>.
-
-<_:364> a rdf:List;
-  rdf:first "XJV";
-  rdf:rest <_:901>.
-
-<_:367> a rdf:List;
-  rdf:first "HND";
-  rdf:rest <_:707>.
-
-<_:37> a rdf:List;
-  rdf:first "PAK";
-  rdf:rest <_:363>.
-
-<_:373> a rdf:List;
-  rdf:first "SYC";
-  rdf:rest <_:675>.
-
-<_:378> a rdf:List;
-  rdf:first "NPL";
-  rdf:rest <_:682>.
-
-<_:38> a rdf:List;
-  rdf:first "BLM";
-  rdf:rest <_:17>.
-
-<_:380> a rdf:List;
-  rdf:first "URY";
-  rdf:rest <_:118>.
-
-<_:385> a rdf:List;
-  rdf:first "WLF";
-  rdf:rest <_:263>.
-
-<_:39> a rdf:List;
-  rdf:first "FRA";
-  rdf:rest <_:36>.
-
-<_:391> a rdf:List;
-  rdf:first "IDN";
-  rdf:rest <_:434>.
-
-<_:394> a rdf:List;
-  rdf:first "SPM";
-  rdf:rest <_:247>.
-
-<_:395> a rdf:List;
-  rdf:first "AOSC";
-  rdf:rest <_:916>.
-
-<_:399> a rdf:List;
-  rdf:first "EUDA";
-  rdf:rest <_:146>.
-
-<_:4> a rdf:List;
-  rdf:first "ATA";
-  rdf:rest <_:7>.
-
-<_:40> a rdf:List;
-  rdf:first "LBN";
-  rdf:rest <_:70>.
-
-<_:400> a rdf:List;
-  rdf:first "GNQ";
-  rdf:rest <_:87>.
-
-<_:403> a rdf:List;
-  rdf:first "XJA";
-  rdf:rest <_:766>.
-
-<_:41> a rdf:List;
-  rdf:first "CIV";
-  rdf:rest <_:205>.
-
-<_:410> a rdf:List;
-  rdf:first "SDN";
-  rdf:rest <_:653>.
-
-<_:42> a rdf:List;
-  rdf:first "BES";
-  rdf:rest <_:97>.
-
-<_:420> a rdf:List;
-  rdf:first "XCR";
-  rdf:rest <_:646>.
-
-<_:422> a rdf:List;
-  rdf:first "GRD";
-  rdf:rest <_:561>.
-
-<_:426> a rdf:List;
-  rdf:first "MTQ";
-  rdf:rest <_:356>.
-
-<_:43> a rdf:List;
-  rdf:first "AX3";
-  rdf:rest <_:69>.
-
-<_:430> a rdf:List;
-  rdf:first "MYT";
-  rdf:rest <_:235>.
-
-<_:433> a rdf:List;
-  rdf:first "LTU";
-  rdf:rest <_:13>.
-
-<_:434> a rdf:List;
-  rdf:first "IMN";
-  rdf:rest <_:657>.
-
-<_:44> a rdf:List;
-  rdf:first "OMN";
-  rdf:rest <_:37>.
-
-<_:443> a rdf:List;
-  rdf:first "COL";
-  rdf:rest <_:83>.
-
-<_:444> a rdf:List;
-  rdf:first "ISR";
-  rdf:rest <_:11>.
-
-<_:448> a rdf:List;
-  rdf:first "IESC";
-  rdf:rest <_:807>.
-
-<_:45> a rdf:List;
-  rdf:first "CYM";
-  rdf:rest <_:598>.
-
-<_:451> a rdf:List;
-  rdf:first "GUF";
-  rdf:rest <_:61>.
-
-<_:456> a rdf:List;
-  rdf:first "MOZ";
-  rdf:rest <_:526>.
-
-<_:457> a rdf:List;
-  rdf:first "PER";
-  rdf:rest <_:643>.
-
-<_:46> a rdf:List;
-  rdf:first "GGY";
-  rdf:rest <_:624>.
-
-<_:47> a rdf:List;
-  rdf:first "GAB";
-  rdf:rest <_:19>.
-
-<_:471> a rdf:List;
-  rdf:first "MMR";
-  rdf:rest <_:143>.
-
-<_:473> a rdf:List;
-  rdf:first "JAM";
-  rdf:rest <_:66>.
-
-<_:476> a rdf:List;
-  rdf:first "FVEY";
-  rdf:rest <_:735>.
-
-<_:477> a rdf:List;
-  rdf:first "GTM";
-  rdf:rest <_:451>.
-
-<_:48> a rdf:List;
-  rdf:first "BIH";
-  rdf:rest <_:38>.
-
-<_:481> a rdf:List;
-  rdf:first "SGP";
-  rdf:rest <_:112>.
-
-<_:482> a rdf:List;
-  rdf:first "CFCK";
-  rdf:rest <_:943>.
-
-<_:489> a rdf:List;
-  rdf:first "IPMC";
-  rdf:rest <_:898>.
-
-<_:49> a rdf:List;
-  rdf:first "BWA";
-  rdf:rest <_:67>.
-
-<_:491> a rdf:List;
-  rdf:first "MWI";
-  rdf:rest <_:586>.
-
-<_:492> a rdf:List;
-  rdf:first "UKR";
-  rdf:rest <_:380>.
-
-<_:493> a rdf:List;
-  rdf:first "MAC";
-  rdf:rest <_:7809>.
-
-<_:494> a rdf:List;
-  rdf:first "KNA";
-  rdf:rest <_:919>.
-
-<_:499> a rdf:List;
-  rdf:first "XHO";
-  rdf:rest <_:403>.
-
-<_:5> a rdf:List;
-  rdf:first "BGD";
-  rdf:rest <_:28>.
-
-<_:50> a rdf:List;
-  rdf:first "CHE";
-  rdf:rest <_:79>.
-
-<_:504> a rdf:List;
-  rdf:first "MIFH";
-  rdf:rest <_:852>.
-
-<_:505> a rdf:List;
-  rdf:first "VAT";
-  rdf:rest <_:193>.
-
-<_:506> a rdf:List;
-  rdf:first "TJK";
-  rdf:rest <_:240>.
-
-<_:507> a rdf:List;
-  rdf:first "PGMF";
-  rdf:rest <_:596>.
-
-<_:508> a rdf:List;
-  rdf:first "EFOR";
-  rdf:rest <_:732>.
-
-<_:51> a rdf:List;
-  rdf:first "DJI";
-  rdf:rest <_:75>.
-
-<_:513> a rdf:List;
-  rdf:first "TON";
-  rdf:rest <_:951>.
-
-<_:517> a rdf:List;
-  rdf:first "RISC";
-  rdf:rest <_:902>.
-
-<_:519> a rdf:List;
-  rdf:first "TUN";
-  rdf:rest <_:187>.
-
-<_:52> a rdf:List;
-  rdf:first "MEX";
-  rdf:rest <_:326>.
-
-<_:523> a rdf:List;
-  rdf:first "NFK";
-  rdf:rest <_:195>.
-
-<_:525> a rdf:List;
-  rdf:first "FSM";
-  rdf:rest <_:47>.
-
-<_:526> a rdf:List;
-  rdf:first "MRT";
-  rdf:rest <_:694>.
-
-<_:529> a rdf:List;
-  rdf:first "MCO";
-  rdf:rest <_:537>.
-
-<_:53> a rdf:List;
-  rdf:first "BHR";
-  rdf:rest <_:92>.
-
-<_:530> a rdf:List;
-  rdf:first "GFNX";
-  rdf:rest <_:178>.
-
-<_:536> a rdf:List;
-  rdf:first "LIE";
-  rdf:rest <_:817>.
-
-<_:537> a rdf:List;
-  rdf:first "MDA";
-  rdf:rest <_:864>.
-
-<_:538> a rdf:List;
-  rdf:first "NACT";
-  rdf:rest <_:891>.
-
-<_:539> a rdf:List;
-  rdf:first "XQZ";
-  rdf:rest <_:808>.
-
-<_:54> a rdf:List;
-  rdf:first "PRK";
-  rdf:rest <_:665>.
-
-<_:542> a rdf:List;
-  rdf:first "POL";
-  rdf:rest <_:100>.
-
-<_:544> a rdf:List;
-  rdf:first "NIU";
-  rdf:rest <_:191>.
-
-<_:545> a rdf:List;
-  rdf:first "IRL";
-  rdf:rest <_:22>.
-
-<_:55> a rdf:List;
-  rdf:first "DNK";
-  rdf:rest <_:84>.
-
-<_:555> a rdf:List;
-  rdf:first "SPAA";
-  rdf:rest <_:361>.
-
-<_:557> a rdf:List;
-  rdf:first "XBK";
-  rdf:rest <_:420>.
-
-<_:56> a rdf:List;
-  rdf:first "GLP";
-  rdf:rest <_:175>.
-
-<_:561> a rdf:List;
-  rdf:first "GRL";
-  rdf:rest <_:477>.
-
-<_:562> a rdf:List;
-  rdf:first "XAZ";
-  rdf:rest <_:347>.
-
-<_:569> a rdf:List;
-  rdf:first "NKIC";
-  rdf:rest <_:246>.
-
-<_:57> a rdf:List;
-  rdf:first "CAN";
-  rdf:rest <_:90>.
-
-<_:576> a rdf:List;
-  rdf:first "GCTF";
-  rdf:rest <_:530>.
-
-<_:58> a rdf:List;
-  rdf:first "AX2";
-  rdf:rest <_:43>.
-
-<_:586> a rdf:List;
-  rdf:first "MYS";
-  rdf:rest <_:430>.
-
-<_:59> a rdf:List;
-  rdf:first "FIN";
-  rdf:rest <_:946>.
-
-<_:592> a rdf:List;
-  rdf:first "OSTY";
-  rdf:rest <_:652>.
-
-<_:593> a rdf:List;
-  rdf:first "SWE";
-  rdf:rest <_:249>.
-
-<_:594> a rdf:List;
-  rdf:first "ISL";
-  rdf:rest <_:444>.
-
-<_:596> a rdf:List;
-  rdf:first "PSMX";
-  rdf:rest <_:517>.
-
-<_:598> a rdf:List;
-  rdf:first "CYP";
-  rdf:rest <_:73>.
-
-<_:6> a rdf:List;
-  rdf:first "USA";
-  rdf:rest <_:8>.
-
-<_:60> a rdf:List;
-  rdf:first "ARM";
-  rdf:rest <_:33>.
-
-<_:603> a rdf:List;
-  rdf:first "TWN";
-  rdf:rest <_:139>.
-
-<_:608> a rdf:List;
-  rdf:first "PRY";
-  rdf:rest <_:331>.
-
-<_:61> a rdf:List;
-  rdf:first "GUM";
-  rdf:rest <_:20>.
-
-<_:619> a rdf:List;
-  rdf:first "MGEU";
-  rdf:rest <_:504>.
-
-<_:62> a rdf:List;
-  rdf:first "BRB";
-  rdf:rest <_:800>.
-
-<_:624> a rdf:List;
-  rdf:first "GHA";
-  rdf:rest <_:233>.
-
-<_:628> a rdf:List;
-  rdf:first "LCA";
-  rdf:rest <_:536>.
-
-<_:63> a rdf:List;
-  rdf:first "ESP";
-  rdf:rest <_:80>.
-
-<_:64> a rdf:List;
-  rdf:first "JPN";
-  rdf:rest <_:89>.
-
-<_:642> a rdf:List;
-  rdf:first "KWT";
-  rdf:rest <_:319>.
-
-<_:643> a rdf:List;
-  rdf:first "PHL";
-  rdf:rest <_:843>.
-
-<_:646> a rdf:List;
-  rdf:first "XCS";
-  rdf:rest <_:136>.
-
-<_:649> a rdf:List;
-  rdf:first "BWCS";
-  rdf:rest <_:482>.
-
-<_:65> a rdf:List;
-  rdf:first "GIN";
-  rdf:rest <_:56>.
-
-<_:651> a rdf:List;
-  rdf:first "XSV";
-  rdf:rest <_:324>.
-
-<_:652> a rdf:List;
-  rdf:first "PAWA";
-  rdf:rest <_:507>.
-
-<_:653> a rdf:List;
-  rdf:first "SEN";
-  rdf:rest <_:481>.
-
-<_:657> a rdf:List;
-  rdf:first "IND";
-  rdf:rest <_:801>.
-
-<_:66> a rdf:List;
-  rdf:first "JEY";
-  rdf:rest <_:98>.
-
-<_:665> a rdf:List;
-  rdf:first "PRT";
-  rdf:rest <_:608>.
-
-<_:67> a rdf:List;
-  rdf:first "CAF";
-  rdf:rest <_:57>.
-
-<_:675> a rdf:List;
-  rdf:first "SYR";
-  rdf:rest <_:135>.
-
-<_:68> a rdf:List;
-  rdf:first "DZA";
-  rdf:rest <_:697>.
-
-<_:680> a rdf:List;
-  rdf:first "XKN";
-  rdf:rest <_:748>.
-
-<_:681> a rdf:List;
-  rdf:first "KEN";
-  rdf:rest <_:24>.
-
-<_:682> a rdf:List;
-  rdf:first "NRU";
-  rdf:rest <_:905>.
-
-<_:69> a rdf:List;
-  rdf:first "AZE";
-  rdf:rest <_:85>.
-
-<_:691> a rdf:List;
-  rdf:first "ZAF";
-  rdf:rest <_:776>.
-
-<_:694> a rdf:List;
-  rdf:first "MSR";
-  rdf:rest <_:426>.
-
-<_:697> a rdf:List;
-  rdf:first "ECU";
-  rdf:rest <_:30>.
-
-<_:698> a rdf:List;
-  rdf:first "THA";
-  rdf:rest <_:506>.
-
-<_:7> a rdf:List;
-  rdf:first "ATF";
-  rdf:rest <_:2>.
-
-<_:70> a rdf:List;
-  rdf:first "LBR";
-  rdf:rest <_:746>.
-
-<_:700> a rdf:List;
-  rdf:first "XJN";
-  rdf:rest <_:364>.
-
-<_:707> a rdf:List;
-  rdf:first "HRV";
-  rdf:rest <_:789>.
-
-<_:71> a rdf:List;
-  rdf:first "BTN";
-  rdf:rest <_:74>.
-
-<_:710> a rdf:List;
-  rdf:first "QAT";
-  rdf:rest <_:823>.
-
-<_:72> a rdf:List;
-  rdf:first "FLK";
-  rdf:rest <_:39>.
-
-<_:721> a rdf:List;
-  rdf:first "SVK";
-  rdf:rest <_:313>.
-
-<_:723> a rdf:List;
-  rdf:first "SMR";
-  rdf:rest <_:837>.
-
-<_:727> a rdf:List;
-  rdf:first "PCN";
-  rdf:rest <_:457>.
-
-<_:73> a rdf:List;
-  rdf:first "CZE";
-  rdf:rest <_:237>.
-
-<_:732> a rdf:List;
-  rdf:first "EU";
-  rdf:rest <_:399>.
-
-<_:735> a rdf:List;
-  rdf:first "GCCH";
-  rdf:rest <_:576>.
-
-<_:74> a rdf:List;
-  rdf:first "BVT";
-  rdf:rest <_:49>.
-
-<_:742> a rdf:List;
-  rdf:first "MNP";
-  rdf:rest <_:456>.
-
-<_:746> a rdf:List;
-  rdf:first "LBY";
-  rdf:rest <_:628>.
-
-<_:748> a rdf:List;
-  rdf:first "XKR";
-  rdf:rest <_:838>.
-
-<_:75> a rdf:List;
-  rdf:first "DMA";
-  rdf:rest <_:55>.
-
-<_:753> a rdf:List;
-  rdf:first "MKD";
-  rdf:rest <_:841>.
-
-<_:754> a rdf:List;
-  rdf:first "MCFI";
-  rdf:rest <_:121>.
-
-<_:76> a rdf:List;
-  rdf:first "HMD";
-  rdf:rest <_:367>.
-
-<_:766> a rdf:List;
-  rdf:first "XJM";
-  rdf:rest <_:700>.
-
-<_:77> a rdf:List;
-  rdf:first "BEN";
-  rdf:rest <_:42>.
-
-<_:773> a rdf:List;
-  rdf:first "CPMT";
-  rdf:rest <_:104>.
-
-<_:776> a rdf:List;
-  rdf:first "ZMB";
-  rdf:rest <_:261>.
-
-<_:78> a rdf:List;
-  rdf:first "COK";
-  rdf:rest <_:443>.
-
-<_:780> a rdf:List;
-  rdf:first "CMFP";
-  rdf:rest <_:773>.
-
-<_:7809> a rdf:List;
-  rdf:first "MAF";
-  rdf:rest <_:31>.
-
-<_:783> a rdf:List;
-  rdf:first "SLV";
-  rdf:rest <_:723>.
-
-<_:787> a rdf:List;
-  rdf:first "KIR";
-  rdf:rest <_:494>.
-
-<_:789> a rdf:List;
-  rdf:first "HTI";
-  rdf:rest <_:985>.
-
-<_:79> a rdf:List;
-  rdf:first "CHL";
-  rdf:rest <_:927>.
-
-<_:790> a rdf:List;
-  rdf:first "TFTC";
-  rdf:rest <_:126>.
-
-<_:794> a rdf:List;
-  rdf:first "ESH";
-  rdf:rest <_:63>.
-
-<_:8> a rdf:List;
-  rdf:first "ABW";
-  rdf:rest <_:35>.
-
-<_:80> a rdf:List;
-  rdf:first "EST";
-  rdf:rest <_:122>.
-
-<_:800> a rdf:List;
-  rdf:first "BRN";
-  rdf:rest <_:71>.
-
-<_:801> a rdf:List;
-  rdf:first "IOT";
-  rdf:rest <_:545>.
-
-<_:806> a rdf:List;
-  rdf:first "KHM";
-  rdf:rest <_:787>.
-
-<_:807> a rdf:List;
-  rdf:first "IMSC";
-  rdf:rest <_:258>.
-
-<_:808> a rdf:List;
-  rdf:first "XSP";
-  rdf:rest <_:651>.
-
-<_:81> a rdf:List;
-  rdf:first "ERI";
-  rdf:rest <_:794>.
-
-<_:812> a rdf:List;
-  rdf:first "SSD";
-  rdf:rest <_:977>.
-
-<_:815> a rdf:List;
-  rdf:first "NCFE";
-  rdf:rest <_:569>.
-
-<_:817> a rdf:List;
-  rdf:first "LKA";
-  rdf:rest <_:93>.
-
-<_:82> a rdf:List;
-  rdf:first "BMU";
-  rdf:rest <_:18>.
-
-<_:822> a rdf:List;
-  rdf:first "XPL";
-  rdf:rest <_:976>.
-
-<_:823> a rdf:List;
-  rdf:first "REU";
-  rdf:rest <_:125>.
-
-<_:829> a rdf:List;
-  rdf:first "VGB";
-  rdf:rest <_:232>.
-
-<_:83> a rdf:List;
-  rdf:first "COM";
-  rdf:rest <_:99>.
-
-<_:831> a rdf:List;
-  rdf:first "SAU";
-  rdf:rest <_:410>.
-
-<_:834> a rdf:List;
-  rdf:first "NSG";
-  rdf:rest <_:108>.
-
-<_:837> a rdf:List;
-  rdf:first "SOM";
-  rdf:rest <_:394>.
-
-<_:838> a rdf:List;
-  rdf:first "XKS";
-  rdf:rest <_:875>.
-
-<_:84> a rdf:List;
-  rdf:first "DOM";
-  rdf:rest <_:68>.
-
-<_:841> a rdf:List;
-  rdf:first "MLI";
-  rdf:rest <_:222>.
-
-<_:843> a rdf:List;
-  rdf:first "PLW";
-  rdf:rest <_:918>.
-
-<_:85> a rdf:List;
-  rdf:first "BDI";
-  rdf:rest <_:86>.
-
-<_:852> a rdf:List;
-  rdf:first "MLEC";
-  rdf:rest <_:198>.
-
-<_:86> a rdf:List;
-  rdf:first "BEL";
-  rdf:rest <_:77>.
-
-<_:864> a rdf:List;
-  rdf:first "MDG";
-  rdf:rest <_:114>.
-
-<_:867> a rdf:List;
-  rdf:first "NIC";
-  rdf:rest <_:544>.
-
-<_:87> a rdf:List;
-  rdf:first "GRC";
-  rdf:rest <_:422>.
-
-<_:875> a rdf:List;
-  rdf:first "XMW";
-  rdf:rest <_:148>.
-
-<_:88> a rdf:List;
-  rdf:first "GEO";
-  rdf:rest <_:46>.
-
-<_:887> a rdf:List;
-  rdf:first "ISSG";
-  rdf:rest <_:912>.
-
-<_:888> a rdf:List;
-  rdf:first "XGZ";
-  rdf:rest <_:499>.
-
-<_:89> a rdf:List;
-  rdf:first "KAZ";
-  rdf:rest <_:681>.
-
-<_:891> a rdf:List;
-  rdf:first "NATO";
-  rdf:rest <_:815>.
-
-<_:893> a rdf:List;
-  rdf:first "CUW";
-  rdf:rest <_:34>.
-
-<_:898> a rdf:List;
-  rdf:first "IRKS";
-  rdf:rest <_:932>.
-
-<_:899> a rdf:List;
-  rdf:first "CWCS";
-  rdf:rest <_:229>.
-
-<_:9> a rdf:List;
-  rdf:first "ALB";
-  rdf:rest <_:32>.
-
-<_:90> a rdf:List;
-  rdf:first "CCK";
-  rdf:rest <_:50>.
-
-<_:900> a rdf:List;
-  rdf:first "SOFP";
-  rdf:rest <_:555>.
-
-<_:901> a rdf:List;
-  rdf:first "XKM";
-  rdf:rest <_:680>.
-
-<_:902> a rdf:List;
-  rdf:first "RSMA";
-  rdf:rest <_:286>.
-
-<_:903> a rdf:List;
-  rdf:first "GNB";
-  rdf:rest <_:400>.
-
-<_:905> a rdf:List;
-  rdf:first "NZL";
-  rdf:rest <_:44>.
-
-<_:906> a rdf:List;
-  rdf:first "CMFC";
-  rdf:rest <_:780>.
-
-<_:907> a rdf:List;
-  rdf:first "HKG";
-  rdf:rest <_:76>.
-
-<_:91> a rdf:List;
-  rdf:first "CPV";
-  rdf:rest <_:29>.
-
-<_:912> a rdf:List;
-  rdf:first "KFOR";
-  rdf:rest <_:754>.
-
-<_:916> a rdf:List;
-  rdf:first "APFS";
-  rdf:rest <_:923>.
-
-<_:918> a rdf:List;
-  rdf:first "PNG";
-  rdf:rest <_:542>.
-
-<_:919> a rdf:List;
-  rdf:first "KOR";
-  rdf:rest <_:642>.
-
-<_:92> a rdf:List;
-  rdf:first "BHS";
-  rdf:rest <_:48>.
-
-<_:923> a rdf:List;
-  rdf:first "ASEA";
-  rdf:rest <_:995>.
-
-<_:924> a rdf:List;
-  rdf:first "XAC";
-  rdf:rest <_:562>.
-
-<_:927> a rdf:List;
-  rdf:first "CHN";
-  rdf:rest <_:41>.
-
-<_:929> a rdf:List;
-  rdf:first "RUS";
-  rdf:rest <_:305>.
-
-<_:93> a rdf:List;
-  rdf:first "LSO";
-  rdf:rest <_:433>.
-
-<_:932> a rdf:List;
-  rdf:first "ISAF";
-  rdf:rest <_:887>.
-
-<_:938> a rdf:List;
-  rdf:first "XWB";
-  rdf:rest <_:975>.
-
-<_:94> a rdf:List;
-  rdf:first "CUB";
-  rdf:rest <_:893>.
-
-<_:943> a rdf:List;
-  rdf:first "CFOD";
-  rdf:rest <_:949>.
-
-<_:946> a rdf:List;
-  rdf:first "FJI";
-  rdf:rest <_:72>.
-
-<_:949> a rdf:List;
-  rdf:first "CFUP";
-  rdf:rest <_:251>.
-
-<_:95> a rdf:List;
-  rdf:first "MNG";
-  rdf:rest <_:742>.
-
-<_:951> a rdf:List;
-  rdf:first "TTO";
-  rdf:rest <_:519>.
-
-<_:96> a rdf:List;
-  rdf:first "COD";
-  rdf:rest <_:27>.
-
-<_:964> a rdf:List;
-  rdf:first "UGA";
-  rdf:rest <_:492>.
-
-<_:97> a rdf:List;
-  rdf:first "BFA";
-  rdf:rest <_:5>.
-
-<_:974> a rdf:List;
-  rdf:first "AMSP";
-  rdf:rest <_:395>.
-
-<_:975> a rdf:List;
-  rdf:first "XWK";
-  rdf:rest <_:252>.
-
-<_:976> a rdf:List;
-  rdf:first "XPR";
-  rdf:rest <_:539>.
-
-<_:977> a rdf:List;
-  rdf:first "STP";
-  rdf:rest <_:196>.
-
-<_:98> a rdf:List;
-  rdf:first "JOR";
-  rdf:rest <_:64>.
-
-<_:981> a rdf:List;
-  rdf:first "LVA";
-  rdf:rest <_:493>.
-
-<_:985> a rdf:List;
-  rdf:first "HUN";
-  rdf:rest <_:391>.
-
-<_:99> a rdf:List;
-  rdf:first "CPT";
-  rdf:rest <_:91>.
-
-<_:994> a rdf:List;
-  rdf:first "SHN";
-  rdf:rest <_:130>.
-
-<_:995> a rdf:List;
-  rdf:first "AUSTRALIA_GROUP";
-  rdf:rest <_:158>.
-
-<_:997> a rdf:List;
-  rdf:first "NCL";
-  rdf:rest <_:328>.
-
-ismcatrelto:ABW a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ABW";
-  skos:prefLabel "Aruba".
-
-ismcatrelto:ACGU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ACGU";
-  skos:prefLabel "FOUR EYES".
-
-ismcatrelto:AFG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AFG";
-  skos:prefLabel "Islamic Republic of Afghanistan".
-
-ismcatrelto:AGO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AGO";
-  skos:prefLabel "Republic of Angola".
-
-ismcatrelto:AIA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AIA";
-  skos:prefLabel "Anguilla".
-
-ismcatrelto:ALB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ALB";
-  skos:prefLabel "Republic of Albania".
-
-ismcatrelto:AMSP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AMSP";
-  skos:prefLabel "AFRICOM Multinational Strategic Partners".
-
-ismcatrelto:AND a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AND";
-  skos:prefLabel "Principality of Andorra".
-
-ismcatrelto:AOSC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AOSC";
-  skos:prefLabel "Athens Olympics Security Coalition".
-
-ismcatrelto:APFS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "APFS";
-  skos:prefLabel "African Peacekeeping Force Somalia".
-
-ismcatrelto:ARE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ARE";
-  skos:prefLabel "United Arab Emirates".
-
-ismcatrelto:ARG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ARG";
-  skos:prefLabel "Argentine Republic".
-
-ismcatrelto:ARM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ARM";
-  skos:prefLabel "Republic of Armenia".
-
-ismcatrelto:ASEA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ASEA";
-  skos:prefLabel "Association of Southeast Asian Nations (ASEAN)".
-
-ismcatrelto:ASM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ASM";
-  skos:prefLabel "Territory of American Samoa".
-
-ismcatrelto:ATA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ATA";
-  skos:prefLabel "Antarctica".
-
-ismcatrelto:ATF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ATF";
-  skos:prefLabel "French Southern and Antarctic Lands".
-
-ismcatrelto:ATG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ATG";
-  skos:prefLabel "Antigua and Barbuda".
-
-ismcatrelto:AUS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AUS";
-  skos:prefLabel "Commonwealth of Australia".
-
-ismcatrelto:AUSTRALIA_GROUP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AUSTRALIA_GROUP";
-  skos:prefLabel "Australia Group".
-
-ismcatrelto:AUT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AUT";
-  skos:prefLabel "Republic of Austria".
-
-ismcatrelto:AX2 a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AX2";
-  skos:prefLabel "Guantanamo Bay Naval Base".
-
-ismcatrelto:AX3 a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AX3";
-  skos:prefLabel "Entity 6".
-
-ismcatrelto:AZE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "AZE";
-  skos:prefLabel "Republic of Azerbaijan".
-
-ismcatrelto:BDI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BDI";
-  skos:prefLabel "Republic of Burundi".
-
-ismcatrelto:BEL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BEL";
-  skos:prefLabel "Kingdom of Belgium".
-
-ismcatrelto:BEN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BEN";
-  skos:prefLabel "Republic of Benin".
-
-ismcatrelto:BES a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BES";
-  skos:prefLabel "Bonaire, Sint Eustatius, and Saba".
-
-ismcatrelto:BFA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BFA";
-  skos:prefLabel "Burkina Faso".
-
-ismcatrelto:BGD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BGD";
-  skos:prefLabel "People’s Republic of Bangladesh".
-
-ismcatrelto:BGR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BGR";
-  skos:prefLabel "Republic of Bulgaria".
-
-ismcatrelto:BHR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BHR";
-  skos:prefLabel "Kingdom of Bahrain".
-
-ismcatrelto:BHS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BHS";
-  skos:prefLabel "Commonwealth of The Bahamas".
-
-ismcatrelto:BHTF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BHTF";
-  skos:prefLabel "Boko Haram Task Force".
-
-ismcatrelto:BIH a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BIH";
-  skos:prefLabel "Bosnia and Herzegovina".
-
-ismcatrelto:BLM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BLM";
-  skos:prefLabel "Saint Barthelemy".
-
-ismcatrelto:BLR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BLR";
-  skos:prefLabel "Republic of Belarus".
-
-ismcatrelto:BLZ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BLZ";
-  skos:prefLabel "Belize".
-
-ismcatrelto:BMU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BMU";
-  skos:prefLabel "Bermuda".
-
-ismcatrelto:BOL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BOL";
-  skos:prefLabel "Plurinational State of Bolivia".
-
-ismcatrelto:BRA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BRA";
-  skos:prefLabel "Federative Republic of Brazil".
-
-ismcatrelto:BRB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BRB";
-  skos:prefLabel "Barbados".
-
-ismcatrelto:BRN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BRN";
-  skos:prefLabel "Brunei Darussalam".
-
-ismcatrelto:BTN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BTN";
-  skos:prefLabel "Kingdom of Bhutan".
-
-ismcatrelto:BVT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BVT";
-  skos:prefLabel "Bouvet Island".
-
-ismcatrelto:BWA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BWA";
-  skos:prefLabel "Republic of Botswana".
-
-ismcatrelto:BWCS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "BWCS";
-  skos:prefLabel "Biological Weapons Convention States".
-
-ismcatrelto:CAF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CAF";
-  skos:prefLabel "Central African Republic".
-
-ismcatrelto:CAN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CAN";
-  skos:prefLabel "Canada".
-
-ismcatrelto:CCK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CCK";
-  skos:prefLabel "Territory of Cocos (Keeling) Islands".
-
-ismcatrelto:CFCK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CFCK";
-  skos:prefLabel "Combined Forces Command Korea".
-
-ismcatrelto:CFOD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CFOD";
-  skos:prefLabel "Coalition Forces Odyssey Dawn".
-
-ismcatrelto:CFUP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CFUP";
-  skos:prefLabel "Coalition Forces Unified Protector".
-
-ismcatrelto:CHE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CHE";
-  skos:prefLabel "Swiss Confederation".
-
-ismcatrelto:CHL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CHL";
-  skos:prefLabel "Republic of Chile".
-
-ismcatrelto:CHN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CHN";
-  skos:prefLabel "People’s Republic of China".
-
-ismcatrelto:CIV a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CIV";
-  skos:prefLabel "Republic of Côte d’Ivoire".
-
-ismcatrelto:CLFC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CLFC";
-  skos:prefLabel "Combined Libya Fusion Cell".
-
-ismcatrelto:CMFC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CMFC";
-  skos:prefLabel "Combined Maritime Forces Central".
-
-ismcatrelto:CMFP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CMFP";
-  skos:prefLabel "Cooperative Maritime Forces Pacific".
-
-ismcatrelto:CMR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CMR";
-  skos:prefLabel "Republic of Cameroon".
-
-ismcatrelto:COD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "COD";
-  skos:prefLabel "Democratic Republic of the Congo".
-
-ismcatrelto:COG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "COG";
-  skos:prefLabel "Republic of the Congo".
-
-ismcatrelto:COK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "COK";
-  skos:prefLabel "Cook Islands".
-
-ismcatrelto:COL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "COL";
-  skos:prefLabel "Republic of Colombia".
-
-ismcatrelto:COM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "COM";
-  skos:prefLabel "Union of the Comoros".
-
-ismcatrelto:CPMT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CPMT";
-  skos:prefLabel "Civilian Protection Monitoring Team for Sudan".
-
-ismcatrelto:CPT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CPT";
-  skos:prefLabel "Clipperton Island".
-
-ismcatrelto:CPV a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CPV";
-  skos:prefLabel "Republic of Cabo Verde".
-
-ismcatrelto:CRI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CRI";
-  skos:prefLabel "Republic of Costa Rica".
-
-ismcatrelto:CTOC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CTOC";
-  skos:prefLabel "Countering Transnational Organized Crime".
-
-ismcatrelto:CUB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CUB";
-  skos:prefLabel "Republic of Cuba".
-
-ismcatrelto:CUW a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CUW";
-  skos:prefLabel "Curaçao".
-
-ismcatrelto:CVEnumISMCATRelTo a skos:ConceptScheme;
-  dc:title "(U) ismcatrelto:CVEnumISMCATRelTo definition";
-  skos:hasTopConcept
-    ismcatrelto:ABW,
-    ismcatrelto:ACGU,
-    ismcatrelto:AFG,
-    ismcatrelto:AGO,
-    ismcatrelto:AIA,
-    ismcatrelto:ALB,
-    ismcatrelto:AMSP,
-    ismcatrelto:AND,
-    ismcatrelto:AOSC,
-    ismcatrelto:APFS,
-    ismcatrelto:ARE,
-    ismcatrelto:ARG,
-    ismcatrelto:ARM,
-    ismcatrelto:ASEA,
-    ismcatrelto:ASM,
-    ismcatrelto:ATA,
-    ismcatrelto:ATF,
-    ismcatrelto:ATG,
-    ismcatrelto:AUS,
-    ismcatrelto:AUSTRALIA_GROUP,
-    ismcatrelto:AUT,
-    ismcatrelto:AX2,
-    ismcatrelto:AX3,
-    ismcatrelto:AZE,
-    ismcatrelto:BDI,
-    ismcatrelto:BEL,
-    ismcatrelto:BEN,
-    ismcatrelto:BES,
-    ismcatrelto:BFA,
-    ismcatrelto:BGD,
-    ismcatrelto:BGR,
-    ismcatrelto:BHR,
-    ismcatrelto:BHS,
-    ismcatrelto:BHTF,
-    ismcatrelto:BIH,
-    ismcatrelto:BLM,
-    ismcatrelto:BLR,
-    ismcatrelto:BLZ,
-    ismcatrelto:BMU,
-    ismcatrelto:BOL,
-    ismcatrelto:BRA,
-    ismcatrelto:BRB,
-    ismcatrelto:BRN,
-    ismcatrelto:BTN,
-    ismcatrelto:BVT,
-    ismcatrelto:BWA,
-    ismcatrelto:BWCS,
-    ismcatrelto:CAF,
-    ismcatrelto:CAN,
-    ismcatrelto:CCK,
-    ismcatrelto:CFCK,
-    ismcatrelto:CFOD,
-    ismcatrelto:CFUP,
-    ismcatrelto:CHE,
-    ismcatrelto:CHL,
-    ismcatrelto:CHN,
-    ismcatrelto:CIV,
-    ismcatrelto:CLFC,
-    ismcatrelto:CMFC,
-    ismcatrelto:CMFP,
-    ismcatrelto:CMR,
-    ismcatrelto:COD,
-    ismcatrelto:COG,
-    ismcatrelto:COK,
-    ismcatrelto:COL,
-    ismcatrelto:COM,
-    ismcatrelto:CPMT,
-    ismcatrelto:CPT,
-    ismcatrelto:CPV,
-    ismcatrelto:CRI,
-    ismcatrelto:CTOC,
-    ismcatrelto:CUB,
-    ismcatrelto:CUW,
-    ismcatrelto:CWCS,
-    ismcatrelto:CXR,
-    ismcatrelto:CYM,
-    ismcatrelto:CYP,
-    ismcatrelto:CZE,
-    ismcatrelto:DEU,
-    ismcatrelto:DGA,
-    ismcatrelto:DJI,
-    ismcatrelto:DMA,
-    ismcatrelto:DNK,
-    ismcatrelto:DOM,
-    ismcatrelto:DZA,
-    ismcatrelto:ECTF,
-    ismcatrelto:ECU,
-    ismcatrelto:EFOR,
-    ismcatrelto:EGY,
-    ismcatrelto:ERI,
-    ismcatrelto:ESH,
-    ismcatrelto:ESP,
-    ismcatrelto:EST,
-    ismcatrelto:ETH,
-    ismcatrelto:EU,
-    ismcatrelto:EUDA,
-    ismcatrelto:FIN,
-    ismcatrelto:FJI,
-    ismcatrelto:FLK,
-    ismcatrelto:FRA,
-    ismcatrelto:FRME,
-    ismcatrelto:FRO,
-    ismcatrelto:FSM,
-    ismcatrelto:FVEY,
-    ismcatrelto:GAB,
-    ismcatrelto:GBR,
-    ismcatrelto:GCCH,
-    ismcatrelto:GCTF,
-    ismcatrelto:GEO,
-    ismcatrelto:GFNX,
-    ismcatrelto:GGY,
-    ismcatrelto:GHA,
-    ismcatrelto:GIB,
-    ismcatrelto:GIN,
-    ismcatrelto:GLP,
-    ismcatrelto:GMB,
-    ismcatrelto:GMIF,
-    ismcatrelto:GNB,
-    ismcatrelto:GNQ,
-    ismcatrelto:GRC,
-    ismcatrelto:GRD,
-    ismcatrelto:GRL,
-    ismcatrelto:GTM,
-    ismcatrelto:GUF,
-    ismcatrelto:GUM,
-    ismcatrelto:GUY,
-    ismcatrelto:HKG,
-    ismcatrelto:HMD,
-    ismcatrelto:HND,
-    ismcatrelto:HRV,
-    ismcatrelto:HTI,
-    ismcatrelto:HUN,
-    ismcatrelto:IDN,
-    ismcatrelto:IESC,
-    ismcatrelto:IMN,
-    ismcatrelto:IMSC,
-    ismcatrelto:IMSP,
-    ismcatrelto:IND,
-    ismcatrelto:IOT,
-    ismcatrelto:IPMC,
-    ismcatrelto:IRKS,
-    ismcatrelto:IRL,
-    ismcatrelto:IRN,
-    ismcatrelto:IRQ,
-    ismcatrelto:ISAF,
-    ismcatrelto:ISL,
-    ismcatrelto:ISR,
-    ismcatrelto:ISSG,
-    ismcatrelto:ITA,
-    ismcatrelto:JAM,
-    ismcatrelto:JEY,
-    ismcatrelto:JOR,
-    ismcatrelto:JPN,
-    ismcatrelto:KAZ,
-    ismcatrelto:KEN,
-    ismcatrelto:KFOR,
-    ismcatrelto:KGZ,
-    ismcatrelto:KHM,
-    ismcatrelto:KIR,
-    ismcatrelto:KNA,
-    ismcatrelto:KOR,
-    ismcatrelto:KWT,
-    ismcatrelto:LAO,
-    ismcatrelto:LBN,
-    ismcatrelto:LBR,
-    ismcatrelto:LBY,
-    ismcatrelto:LCA,
-    ismcatrelto:LIE,
-    ismcatrelto:LKA,
-    ismcatrelto:LSO,
-    ismcatrelto:LTU,
-    ismcatrelto:LUX,
-    ismcatrelto:LVA,
-    ismcatrelto:MAC,
-    ismcatrelto:MAF,
-    ismcatrelto:MAR,
-    ismcatrelto:MCFI,
-    ismcatrelto:MCO,
-    ismcatrelto:MDA,
-    ismcatrelto:MDG,
-    ismcatrelto:MDV,
-    ismcatrelto:MESF,
-    ismcatrelto:MEX,
-    ismcatrelto:MGEU,
-    ismcatrelto:MHL,
-    ismcatrelto:MIFH,
-    ismcatrelto:MKD,
-    ismcatrelto:MLEC,
-    ismcatrelto:MLI,
-    ismcatrelto:MLT,
-    ismcatrelto:MMR,
-    ismcatrelto:MNE,
-    ismcatrelto:MNG,
-    ismcatrelto:MNP,
-    ismcatrelto:MNTF,
-    ismcatrelto:MOZ,
-    ismcatrelto:MPFL,
-    ismcatrelto:MRT,
-    ismcatrelto:MSR,
-    ismcatrelto:MTQ,
-    ismcatrelto:MUS,
-    ismcatrelto:MWI,
-    ismcatrelto:MYS,
-    ismcatrelto:MYT,
-    ismcatrelto:NACT,
-    ismcatrelto:NAM,
-    ismcatrelto:NATO,
-    ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D,
-    ismcatrelto:NCFE,
-    ismcatrelto:NCL,
-    ismcatrelto:NER,
-    ismcatrelto:NFK,
-    ismcatrelto:NGA,
-    ismcatrelto:NIC,
-    ismcatrelto:NIU,
-    ismcatrelto:NKIC,
-    ismcatrelto:NLD,
-    ismcatrelto:NOR,
-    ismcatrelto:NPL,
-    ismcatrelto:NRDC,
-    ismcatrelto:NRU,
-    ismcatrelto:NSG,
-    ismcatrelto:NZL,
-    ismcatrelto:OMN,
-    ismcatrelto:OSAG,
-    ismcatrelto:OSTY,
-    ismcatrelto:PAK,
-    ismcatrelto:PAN,
-    ismcatrelto:PAWA,
-    ismcatrelto:PCN,
-    ismcatrelto:PER,
-    ismcatrelto:PGMF,
-    ismcatrelto:PHL,
-    ismcatrelto:PLW,
-    ismcatrelto:PNG,
-    ismcatrelto:POL,
-    ismcatrelto:PRI,
-    ismcatrelto:PRK,
-    ismcatrelto:PRT,
-    ismcatrelto:PRY,
-    ismcatrelto:PSMX,
-    ismcatrelto:PYF,
-    ismcatrelto:QAT,
-    ismcatrelto:REU,
-    ismcatrelto:RISC,
-    ismcatrelto:ROU,
-    ismcatrelto:RSMA,
-    ismcatrelto:RUS,
-    ismcatrelto:RWA,
-    ismcatrelto:SAU,
-    ismcatrelto:SDN,
-    ismcatrelto:SEN,
-    ismcatrelto:SFOR,
-    ismcatrelto:SGP,
-    ismcatrelto:SGS,
-    ismcatrelto:SHN,
-    ismcatrelto:SLB,
-    ismcatrelto:SLE,
-    ismcatrelto:SLV,
-    ismcatrelto:SMR,
-    ismcatrelto:SOFP,
-    ismcatrelto:SOM,
-    ismcatrelto:SPAA,
-    ismcatrelto:SPM,
-    ismcatrelto:SRB,
-    ismcatrelto:SSD,
-    ismcatrelto:STP,
-    ismcatrelto:SUR,
-    ismcatrelto:SVK,
-    ismcatrelto:SVN,
-    ismcatrelto:SWE,
-    ismcatrelto:SWZ,
-    ismcatrelto:SXM,
-    ismcatrelto:SYC,
-    ismcatrelto:SYR,
-    ismcatrelto:TCA,
-    ismcatrelto:TCD,
-    ismcatrelto:TEYE,
-    ismcatrelto:TFTC,
-    ismcatrelto:TGO,
-    ismcatrelto:THA,
-    ismcatrelto:TJK,
-    ismcatrelto:TKL,
-    ismcatrelto:TKM,
-    ismcatrelto:TLS,
-    ismcatrelto:TON,
-    ismcatrelto:TTO,
-    ismcatrelto:TUN,
-    ismcatrelto:TUR,
-    ismcatrelto:TUV,
-    ismcatrelto:TWN,
-    ismcatrelto:TZA,
-    ismcatrelto:UGA,
-    ismcatrelto:UKR,
-    ismcatrelto:UNCK,
-    ismcatrelto:URY,
-    ismcatrelto:USA,
-    ismcatrelto:UZB,
-    ismcatrelto:VAT,
-    ismcatrelto:VCT,
-    ismcatrelto:VEN,
-    ismcatrelto:VGB,
-    ismcatrelto:VIR,
-    ismcatrelto:VNM,
-    ismcatrelto:VUT,
-    ismcatrelto:WLF,
-    ismcatrelto:WSM,
-    ismcatrelto:XAC,
-    ismcatrelto:XAZ,
-    ismcatrelto:XBI,
-    ismcatrelto:XBK,
-    ismcatrelto:XCR,
-    ismcatrelto:XCS,
-    ismcatrelto:XCY,
-    ismcatrelto:XEU,
-    ismcatrelto:XGL,
-    ismcatrelto:XGZ,
-    ismcatrelto:XHO,
-    ismcatrelto:XJA,
-    ismcatrelto:XJM,
-    ismcatrelto:XJN,
-    ismcatrelto:XJV,
-    ismcatrelto:XKM,
-    ismcatrelto:XKN,
-    ismcatrelto:XKR,
-    ismcatrelto:XKS,
-    ismcatrelto:XMW,
-    ismcatrelto:XNV,
-    ismcatrelto:XPL,
-    ismcatrelto:XPR,
-    ismcatrelto:XQZ,
-    ismcatrelto:XSP,
-    ismcatrelto:XSV,
-    ismcatrelto:XTR,
-    ismcatrelto:XWB,
-    ismcatrelto:XWK,
-    ismcatrelto:XXD,
-    ismcatrelto:YEM,
-    ismcatrelto:ZAF,
-    ismcatrelto:ZMB,
-    ismcatrelto:ZWE.
-
-ismcatrelto:CVEnumISMCATRelToValues a rdfs:Datatype;
-  owl:equivalentClass <_:10>.
-
-ismcatrelto:CWCS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CWCS";
-  skos:prefLabel "Chemical Weapons Convention States".
-
-ismcatrelto:CXR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CXR";
-  skos:prefLabel "Territory of Christmas Island".
-
-ismcatrelto:CYM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CYM";
-  skos:prefLabel "Cayman Islands".
-
-ismcatrelto:CYP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CYP";
-  skos:prefLabel "Republic of Cyprus".
-
-ismcatrelto:CZE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "CZE";
-  skos:prefLabel "Czech Republic".
-
-ismcatrelto:DEU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "DEU";
-  skos:prefLabel "Federal Republic of Germany".
-
-ismcatrelto:DGA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "DGA";
-  skos:prefLabel "Diego Garcia".
-
-ismcatrelto:DJI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "DJI";
-  skos:prefLabel "Republic of Djibouti".
-
-ismcatrelto:DMA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "DMA";
-  skos:prefLabel "Commonwealth of Dominica".
-
-ismcatrelto:DNK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "DNK";
-  skos:prefLabel "Kingdom of Denmark".
-
-ismcatrelto:DOM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "DOM";
-  skos:prefLabel "Dominican Republic".
-
-ismcatrelto:DZA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "DZA";
-  skos:prefLabel "People’s Democratic Republic of Algeria".
-
-ismcatrelto:ECTF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ECTF";
-  skos:prefLabel "European Counter-Terrorism Forces".
-
-ismcatrelto:ECU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ECU";
-  skos:prefLabel "Republic of Ecuador".
-
-ismcatrelto:EFOR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "EFOR";
-  skos:prefLabel "European Union Stabilization Forces in Bosnia".
-
-ismcatrelto:EGY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "EGY";
-  skos:prefLabel "Arab Republic of Egypt".
-
-ismcatrelto:ERI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ERI";
-  skos:prefLabel "State of Eritrea".
-
-ismcatrelto:ESH a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ESH";
-  skos:prefLabel "Western Sahara".
-
-ismcatrelto:ESP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ESP";
-  skos:prefLabel "Kingdom of Spain".
-
-ismcatrelto:EST a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "EST";
-  skos:prefLabel "Republic of Estonia".
-
-ismcatrelto:ETH a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ETH";
-  skos:prefLabel "Federal Democratic Republic of Ethiopia".
-
-ismcatrelto:EU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "EU";
-  skos:prefLabel "European Union".
-
-ismcatrelto:EUDA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "EUDA";
-  skos:prefLabel "European Union DARFUR".
-
-ismcatrelto:FIN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "FIN";
-  skos:prefLabel "Republic of Finland".
-
-ismcatrelto:FJI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "FJI";
-  skos:prefLabel "Republic of Fiji".
-
-ismcatrelto:FLK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "FLK";
-  skos:prefLabel "Falkland Islands (Islas Malvinas)".
-
-ismcatrelto:FRA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "FRA";
-  skos:prefLabel "French Republic".
-
-ismcatrelto:FRME a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "FRME";
-  skos:prefLabel "Counter Violent Extremist Organizations Framework Partners".
-
-ismcatrelto:FRO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "FRO";
-  skos:prefLabel "Faroe Islands".
-
-ismcatrelto:FSM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "FSM";
-  skos:prefLabel "Federated States of Micronesia".
-
-ismcatrelto:FVEY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "FVEY";
-  skos:prefLabel "FIVE EYES".
-
-ismcatrelto:GAB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GAB";
-  skos:prefLabel "Gabonese Republic".
-
-ismcatrelto:GBR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GBR";
-  skos:prefLabel "United Kingdom of Great Britain and Northern Ireland".
-
-ismcatrelto:GCCH a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GCCH";
-  skos:prefLabel "Gulf Cooperation Council".
-
-ismcatrelto:GCTF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GCTF";
-  skos:prefLabel "Global Counter-Terrorism Forces".
-
-ismcatrelto:GEO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GEO";
-  skos:prefLabel "Georgia".
-
-ismcatrelto:GFNX a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GFNX";
-  skos:prefLabel "Global Foreign Terrorist Fighter Network Exchange".
-
-ismcatrelto:GGY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GGY";
-  skos:prefLabel "Bailiwick of Guernsey".
-
-ismcatrelto:GHA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GHA";
-  skos:prefLabel "Republic of Ghana".
-
-ismcatrelto:GIB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GIB";
-  skos:prefLabel "Gibraltar".
-
-ismcatrelto:GIN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GIN";
-  skos:prefLabel "Republic of Guinea".
-
-ismcatrelto:GLP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GLP";
-  skos:prefLabel "Region of Guadeloupe".
-
-ismcatrelto:GMB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GMB";
-  skos:prefLabel "Republic of The Gambia".
-
-ismcatrelto:GMIF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GMIF";
-  skos:prefLabel "Global Maritime Interception Forces".
-
-ismcatrelto:GNB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GNB";
-  skos:prefLabel "Republic of Guinea-Bissau".
-
-ismcatrelto:GNQ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GNQ";
-  skos:prefLabel "Republic of Equatorial Guinea".
-
-ismcatrelto:GRC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GRC";
-  skos:prefLabel "Hellenic Republic".
-
-ismcatrelto:GRD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GRD";
-  skos:prefLabel "Grenada".
-
-ismcatrelto:GRL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GRL";
-  skos:prefLabel "Greenland".
-
-ismcatrelto:GTM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GTM";
-  skos:prefLabel "Republic of Guatemala".
-
-ismcatrelto:GUF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GUF";
-  skos:prefLabel "Territorial Collectivity of Guiana".
-
-ismcatrelto:GUM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GUM";
-  skos:prefLabel "Territory of Guam".
-
-ismcatrelto:GUY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "GUY";
-  skos:prefLabel "Co-operative Republic of Guyana".
-
-ismcatrelto:HKG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "HKG";
-  skos:prefLabel "Hong Kong Special Administrative Region".
-
-ismcatrelto:HMD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "HMD";
-  skos:prefLabel "Territory of Heard Island and McDonald Islands".
-
-ismcatrelto:HND a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "HND";
-  skos:prefLabel "Republic of Honduras".
-
-ismcatrelto:HRV a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "HRV";
-  skos:prefLabel "Republic of Croatia".
-
-ismcatrelto:HTI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "HTI";
-  skos:prefLabel "Republic of Haiti".
-
-ismcatrelto:HUN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "HUN";
-  skos:prefLabel "Hungary".
-
-ismcatrelto:IDN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IDN";
-  skos:prefLabel "Republic of Indonesia".
-
-ismcatrelto:IESC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IESC";
-  skos:prefLabel "International Events Security Coalition".
-
-ismcatrelto:IMN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IMN";
-  skos:prefLabel "Isle of Man".
-
-ismcatrelto:IMSC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IMSC";
-  skos:prefLabel "International Maritime Security Construct".
-
-ismcatrelto:IMSP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IMSP";
-  skos:prefLabel "INDOPACOM Multinational Strategic Partners".
-
-ismcatrelto:IND a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IND";
-  skos:prefLabel "Republic of India".
-
-ismcatrelto:IOT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IOT";
-  skos:prefLabel "British Indian Ocean Territory".
-
-ismcatrelto:IPMC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IPMC";
-  skos:prefLabel "INDO PACIFIC Maritime Call".
-
-ismcatrelto:IRKS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IRKS";
-  skos:prefLabel "Inherent Resolve Kinetic Support".
-
-ismcatrelto:IRL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IRL";
-  skos:prefLabel "Ireland".
-
-ismcatrelto:IRN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IRN";
-  skos:prefLabel "Islamic Republic of Iran".
-
-ismcatrelto:IRQ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "IRQ";
-  skos:prefLabel "Republic of Iraq".
-
-ismcatrelto:ISAF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ISAF";
-  skos:prefLabel "International Security Assistance Force for Afghanistan".
-
-ismcatrelto:ISL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ISL";
-  skos:prefLabel "Republic of Iceland".
-
-ismcatrelto:ISR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ISR";
-  skos:prefLabel "State of Israel".
-
-ismcatrelto:ISSG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ISSG";
-  skos:prefLabel "International Syria Support Group".
-
-ismcatrelto:ITA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ITA";
-  skos:prefLabel "Italian Republic".
-
-ismcatrelto:JAM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "JAM";
-  skos:prefLabel "Jamaica".
-
-ismcatrelto:JEY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "JEY";
-  skos:prefLabel "Bailiwick of Jersey".
-
-ismcatrelto:JOR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "JOR";
-  skos:prefLabel "Hashemite Kingdom of Jordan".
-
-ismcatrelto:JPN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "JPN";
-  skos:prefLabel "Japan".
-
-ismcatrelto:KAZ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "KAZ";
-  skos:prefLabel "Republic of Kazakhstan".
-
-ismcatrelto:KEN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "KEN";
-  skos:prefLabel "Republic of Kenya".
-
-ismcatrelto:KFOR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "KFOR";
-  skos:prefLabel "Stabilization Forces in Kosovo".
-
-ismcatrelto:KGZ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "KGZ";
-  skos:prefLabel "Kyrgyz Republic".
-
-ismcatrelto:KHM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "KHM";
-  skos:prefLabel "Kingdom of Cambodia".
-
-ismcatrelto:KIR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "KIR";
-  skos:prefLabel "Republic of Kiribati".
-
-ismcatrelto:KNA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "KNA";
-  skos:prefLabel "Federation of Saint Kitts and Nevis".
-
-ismcatrelto:KOR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "KOR";
-  skos:prefLabel "Republic of Korea".
-
-ismcatrelto:KWT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "KWT";
-  skos:prefLabel "State of Kuwait".
-
-ismcatrelto:LAO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LAO";
-  skos:prefLabel "Lao People’s Democratic Republic".
-
-ismcatrelto:LBN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LBN";
-  skos:prefLabel "Lebanese Republic".
-
-ismcatrelto:LBR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LBR";
-  skos:prefLabel "Republic of Liberia".
-
-ismcatrelto:LBY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LBY";
-  skos:prefLabel "State of Libya".
-
-ismcatrelto:LCA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LCA";
-  skos:prefLabel "Saint Lucia".
-
-ismcatrelto:LIE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LIE";
-  skos:prefLabel "Principality of Liechtenstein".
-
-ismcatrelto:LKA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LKA";
-  skos:prefLabel "Democratic Socialist Republic of Sri Lanka".
-
-ismcatrelto:LSO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LSO";
-  skos:prefLabel "Kingdom of Lesotho".
-
-ismcatrelto:LTU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LTU";
-  skos:prefLabel "Republic of Lithuania".
-
-ismcatrelto:LUX a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LUX";
-  skos:prefLabel "Grand Duchy of Luxembourg".
-
-ismcatrelto:LVA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "LVA";
-  skos:prefLabel "Republic of Latvia".
-
-ismcatrelto:MAC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MAC";
-  skos:prefLabel "Macau Special Administrative Region".
-
-ismcatrelto:MAF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MAF";
-  skos:prefLabel "Saint Martin".
-
-ismcatrelto:MAR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MAR";
-  skos:prefLabel "Kingdom of Morocco".
-
-ismcatrelto:MCFI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MCFI";
-  skos:prefLabel "Multinational Coalition Forces-Iraq".
-
-ismcatrelto:MCO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MCO";
-  skos:prefLabel "Principality of Monaco".
-
-ismcatrelto:MDA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MDA";
-  skos:prefLabel "Republic of Moldova".
-
-ismcatrelto:MDG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MDG";
-  skos:prefLabel "Republic of Madagascar".
-
-ismcatrelto:MDV a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MDV";
-  skos:prefLabel "Republic of Maldives".
-
-ismcatrelto:MESF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MESF";
-  skos:prefLabel "Middle East Stability Force".
-
-ismcatrelto:MEX a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MEX";
-  skos:prefLabel "United Mexican States".
-
-ismcatrelto:MGEU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MGEU";
-  skos:prefLabel "Multinational GEOINT Europe".
-
-ismcatrelto:MHL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MHL";
-  skos:prefLabel "Republic of the Marshall Islands".
-
-ismcatrelto:MIFH a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MIFH";
-  skos:prefLabel "Multinational Interim Force Haiti".
-
-ismcatrelto:MKD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MKD";
-  skos:prefLabel "Republic of North Macedonia".
-
-ismcatrelto:MLEC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MLEC";
-  skos:prefLabel "Multi-Lateral Enduring Contingency".
-
-ismcatrelto:MLI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MLI";
-  skos:prefLabel "Republic of Mali".
-
-ismcatrelto:MLT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MLT";
-  skos:prefLabel "Republic of Malta".
-
-ismcatrelto:MMR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MMR";
-  skos:prefLabel "Union of Burma".
-
-ismcatrelto:MNE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MNE";
-  skos:prefLabel "Montenegro".
-
-ismcatrelto:MNG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MNG";
-  skos:prefLabel "Mongolia".
-
-ismcatrelto:MNP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MNP";
-  skos:prefLabel "Commonwealth of the Northern Mariana Islands".
-
-ismcatrelto:MNTF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MNTF";
-  skos:prefLabel "Multinational Task Force".
-
-ismcatrelto:MOZ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MOZ";
-  skos:prefLabel "Republic of Mozambique".
-
-ismcatrelto:MPFL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MPFL";
-  skos:prefLabel "Multinational Peacekeeping Forces".
-
-ismcatrelto:MRT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MRT";
-  skos:prefLabel "Islamic Republic of Mauritania".
-
-ismcatrelto:MSR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MSR";
-  skos:prefLabel "Montserrat".
-
-ismcatrelto:MTQ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MTQ";
-  skos:prefLabel "Territorial Collectivity of Martinique".
-
-ismcatrelto:MUS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MUS";
-  skos:prefLabel "Republic of Mauritius".
-
-ismcatrelto:MWI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MWI";
-  skos:prefLabel "Republic of Malawi".
-
-ismcatrelto:MYS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MYS";
-  skos:prefLabel "Malaysia".
-
-ismcatrelto:MYT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "MYT";
-  skos:prefLabel "Department of Mayotte".
-
-ismcatrelto:NACT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NACT";
-  skos:prefLabel "North African Counter-Terrorism Forces".
-
-ismcatrelto:NAM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NAM";
-  skos:prefLabel "Republic of Namibia".
-
-ismcatrelto:NATO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NATO";
-  skos:prefLabel "North Atlantic Treaty Organization".
-
-ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:0>.
-
-ismcatrelto:NCFE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NCFE";
-  skos:prefLabel "NATO CFE Treaty on Conventional Armed Forces in Europe".
-
-ismcatrelto:NCL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NCL";
-  skos:prefLabel "New Caledonia".
-
-ismcatrelto:NER a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NER";
-  skos:prefLabel "Republic of Niger".
-
-ismcatrelto:NFK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NFK";
-  skos:prefLabel "Territory of Norfolk Island".
-
-ismcatrelto:NGA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NGA";
-  skos:prefLabel "Federal Republic of Nigeria".
-
-ismcatrelto:NIC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NIC";
-  skos:prefLabel "Republic of Nicaragua".
-
-ismcatrelto:NIU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NIU";
-  skos:prefLabel "Niue".
-
-ismcatrelto:NKIC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NKIC";
-  skos:prefLabel "North Korea Intelligence Coalition".
-
-ismcatrelto:NLD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NLD";
-  skos:prefLabel "Kingdom of the Netherlands".
-
-ismcatrelto:NOR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NOR";
-  skos:prefLabel "Kingdom of Norway".
-
-ismcatrelto:NPL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NPL";
-  skos:prefLabel "Federal Democratic Republic of Nepal".
-
-ismcatrelto:NRDC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NRDC";
-  skos:prefLabel "NORDIC".
-
-ismcatrelto:NRU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NRU";
-  skos:prefLabel "Republic of Nauru".
-
-ismcatrelto:NSG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NSG";
-  skos:prefLabel "Nuclear Suppliers' Group".
-
-ismcatrelto:NZL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "NZL";
-  skos:prefLabel "New Zealand".
-
-ismcatrelto:OMN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "OMN";
-  skos:prefLabel "Sultanate of Oman".
-
-ismcatrelto:OSAG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "OSAG";
-  skos:prefLabel "Olympic Security Advisory Group".
-
-ismcatrelto:OSTY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "OSTY";
-  skos:prefLabel "Open Skies Treaty".
-
-ismcatrelto:PAK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PAK";
-  skos:prefLabel "Islamic Republic of Pakistan".
-
-ismcatrelto:PAN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PAN";
-  skos:prefLabel "Republic of Panama".
-
-ismcatrelto:PAWA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PAWA";
-  skos:prefLabel "Partnership for Actions in West Africa".
-
-ismcatrelto:PCN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PCN";
-  skos:prefLabel "Pitcairn, Henderson, Ducie, and Oeno Islands".
-
-ismcatrelto:PER a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PER";
-  skos:prefLabel "Republic of Peru".
-
-ismcatrelto:PGMF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PGMF";
-  skos:prefLabel "Persian Gulf Multinational Forces".
-
-ismcatrelto:PHL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PHL";
-  skos:prefLabel "Republic of the Philippines".
-
-ismcatrelto:PLW a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PLW";
-  skos:prefLabel "Republic of Palau".
-
-ismcatrelto:PNG a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PNG";
-  skos:prefLabel "Independent State of Papua New Guinea".
-
-ismcatrelto:POL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "POL";
-  skos:prefLabel "Republic of Poland".
-
-ismcatrelto:PRI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PRI";
-  skos:prefLabel "Commonwealth of Puerto Rico".
-
-ismcatrelto:PRK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PRK";
-  skos:prefLabel "Democratic People’s Republic of Korea".
-
-ismcatrelto:PRT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PRT";
-  skos:prefLabel "Portuguese Republic".
-
-ismcatrelto:PRY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PRY";
-  skos:prefLabel "Republic of Paraguay".
-
-ismcatrelto:PSMX a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PSMX";
-  skos:prefLabel "Pacific Security Monitoring Exchange".
-
-ismcatrelto:PYF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "PYF";
-  skos:prefLabel "French Polynesia".
-
-ismcatrelto:QAT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "QAT";
-  skos:prefLabel "State of Qatar".
-
-ismcatrelto:REU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "REU";
-  skos:prefLabel "Region of Reunion".
-
-ismcatrelto:RISC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "RISC";
-  skos:prefLabel "Russia Intelligence Sharing Coalition".
-
-ismcatrelto:ROU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ROU";
-  skos:prefLabel "Romania".
-
-ismcatrelto:RSMA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "RSMA";
-  skos:prefLabel "Resolute Support Mission Afghanistan".
-
-ismcatrelto:RUS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "RUS";
-  skos:prefLabel "Russian Federation".
-
-ismcatrelto:RWA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "RWA";
-  skos:prefLabel "Republic of Rwanda".
-
-ismcatrelto:SAU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SAU";
-  skos:prefLabel "Kingdom of Saudi Arabia".
-
-ismcatrelto:SDN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SDN";
-  skos:prefLabel "Republic of the Sudan".
-
-ismcatrelto:SEN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SEN";
-  skos:prefLabel "Republic of Senegal".
-
-ismcatrelto:SFOR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SFOR";
-  skos:prefLabel "Stabilization Force".
-
-ismcatrelto:SGP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SGP";
-  skos:prefLabel "Republic of Singapore".
-
-ismcatrelto:SGS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SGS";
-  skos:prefLabel "South Georgia and the South Sandwich Islands".
-
-ismcatrelto:SHN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SHN";
-  skos:prefLabel "Saint Helena, Ascension, and Tristan da Cunha".
-
-ismcatrelto:SLB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SLB";
-  skos:prefLabel "Solomon Islands".
-
-ismcatrelto:SLE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SLE";
-  skos:prefLabel "Republic of Sierra Leone".
-
-ismcatrelto:SLV a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SLV";
-  skos:prefLabel "Republic of El Salvador".
-
-ismcatrelto:SMR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SMR";
-  skos:prefLabel "Republic of San Marino".
-
-ismcatrelto:SOFP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SOFP";
-  skos:prefLabel "Special Operations Forces Partners".
-
-ismcatrelto:SOM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SOM";
-  skos:prefLabel "Federal Republic of Somalia".
-
-ismcatrelto:SPAA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SPAA";
-  skos:prefLabel "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")".
-
-ismcatrelto:SPM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SPM";
-  skos:prefLabel "Territorial Collectivity of Saint Pierre and Miquelon".
-
-ismcatrelto:SRB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SRB";
-  skos:prefLabel "Republic of Serbia".
-
-ismcatrelto:SSD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SSD";
-  skos:prefLabel "Republic of South Sudan".
-
-ismcatrelto:STP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "STP";
-  skos:prefLabel "Democratic Republic of Sao Tome and Principe".
-
-ismcatrelto:SUR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SUR";
-  skos:prefLabel "Republic of Suriname".
-
-ismcatrelto:SVK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SVK";
-  skos:prefLabel "Slovak Republic".
-
-ismcatrelto:SVN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SVN";
-  skos:prefLabel "Republic of Slovenia".
-
-ismcatrelto:SWE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SWE";
-  skos:prefLabel "Kingdom of Sweden".
-
-ismcatrelto:SWZ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SWZ";
-  skos:prefLabel "Kingdom of Eswatini".
-
-ismcatrelto:SXM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SXM";
-  skos:prefLabel "Sint Maarten".
-
-ismcatrelto:SYC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SYC";
-  skos:prefLabel "Republic of Seychelles".
-
-ismcatrelto:SYR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "SYR";
-  skos:prefLabel "Syrian Arab Republic".
-
-ismcatrelto:TCA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TCA";
-  skos:prefLabel "Turks and Caicos Islands".
-
-ismcatrelto:TCD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TCD";
-  skos:prefLabel "Republic of Chad".
-
-ismcatrelto:TEYE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TEYE";
-  skos:prefLabel "THREE EYES".
-
-ismcatrelto:TFTC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TFTC";
-  skos:prefLabel "Terrorist Financing Targeting Center".
-
-ismcatrelto:TGO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TGO";
-  skos:prefLabel "Togolese Republic".
-
-ismcatrelto:THA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "THA";
-  skos:prefLabel "Kingdom of Thailand".
-
-ismcatrelto:TJK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TJK";
-  skos:prefLabel "Republic of Tajikistan".
-
-ismcatrelto:TKL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TKL";
-  skos:prefLabel "Tokelau".
-
-ismcatrelto:TKM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TKM";
-  skos:prefLabel "Turkmenistan".
-
-ismcatrelto:TLS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TLS";
-  skos:prefLabel "Democratic Republic of Timor-Leste".
-
-ismcatrelto:TON a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TON";
-  skos:prefLabel "Kingdom of Tonga".
-
-ismcatrelto:TTO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TTO";
-  skos:prefLabel "Republic of Trinidad and Tobago".
-
-ismcatrelto:TUN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TUN";
-  skos:prefLabel "Republic of Tunisia".
-
-ismcatrelto:TUR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TUR";
-  skos:prefLabel "Republic of Turkey".
-
-ismcatrelto:TUV a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TUV";
-  skos:prefLabel "Tuvalu".
-
-ismcatrelto:TWN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TWN";
-  skos:prefLabel "Taiwan".
-
-ismcatrelto:TZA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "TZA";
-  skos:prefLabel "United Republic of Tanzania".
-
-ismcatrelto:UGA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "UGA";
-  skos:prefLabel "Republic of Uganda".
-
-ismcatrelto:UKR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "UKR";
-  skos:prefLabel "Ukraine".
-
-ismcatrelto:UNCK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "UNCK";
-  skos:prefLabel "United Nations Command, Korea".
-
-ismcatrelto:URY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "URY";
-  skos:prefLabel "Oriental Republic of Uruguay".
-
-ismcatrelto:USA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "USA";
-  skos:prefLabel "United States of America".
-
-ismcatrelto:UZB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "UZB";
-  skos:prefLabel "Republic of Uzbekistan".
-
-ismcatrelto:VAT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "VAT";
-  skos:prefLabel "State of the Vatican City".
-
-ismcatrelto:VCT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "VCT";
-  skos:prefLabel "Saint Vincent and the Grenadines".
-
-ismcatrelto:VEN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "VEN";
-  skos:prefLabel "Bolivarian Republic of Venezuela".
-
-ismcatrelto:VGB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "VGB";
-  skos:prefLabel "British Virgin Islands".
-
-ismcatrelto:VIR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "VIR";
-  skos:prefLabel "United States Virgin Islands".
-
-ismcatrelto:VNM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "VNM";
-  skos:prefLabel "Socialist Republic of Vietnam".
-
-ismcatrelto:VUT a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "VUT";
-  skos:prefLabel "Republic of Vanuatu".
-
-ismcatrelto:WLF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "WLF";
-  skos:prefLabel "Wallis and Futuna".
-
-ismcatrelto:WSM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "WSM";
-  skos:prefLabel "Independent State of Samoa".
-
-ismcatrelto:XAC a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XAC";
-  skos:prefLabel "Territory of Ashmore and Cartier Islands".
-
-ismcatrelto:XAZ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XAZ";
-  skos:prefLabel "Entity 1".
-
-ismcatrelto:XBI a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XBI";
-  skos:prefLabel "Bassas da India".
-
-ismcatrelto:XBK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XBK";
-  skos:prefLabel "Baker Island".
-
-ismcatrelto:XCR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XCR";
-  skos:prefLabel "Entity 2".
-
-ismcatrelto:XCS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XCS";
-  skos:prefLabel "Coral Sea Islands Territory".
-
-ismcatrelto:XCY a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XCY";
-  skos:prefLabel "Entity 3".
-
-ismcatrelto:XEU a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XEU";
-  skos:prefLabel "Europa Island".
-
-ismcatrelto:XGL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XGL";
-  skos:prefLabel "Glorioso Islands".
-
-ismcatrelto:XGZ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XGZ";
-  skos:prefLabel "Gaza Strip".
-
-ismcatrelto:XHO a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XHO";
-  skos:prefLabel "Howland Island".
-
-ismcatrelto:XJA a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XJA";
-  skos:prefLabel "Johnston Atoll".
-
-ismcatrelto:XJM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XJM";
-  skos:prefLabel "Jan Mayen".
-
-ismcatrelto:XJN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XJN";
-  skos:prefLabel "Juan de Nova Island".
-
-ismcatrelto:XJV a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XJV";
-  skos:prefLabel "Jarvis Island".
-
-ismcatrelto:XKM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XKM";
-  skos:prefLabel "Entity 4".
-
-ismcatrelto:XKN a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XKN";
-  skos:prefLabel "Entity 5".
-
-ismcatrelto:XKR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XKR";
-  skos:prefLabel "Kingman Reef".
-
-ismcatrelto:XKS a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XKS";
-  skos:prefLabel "Republic of Kosovo".
-
-ismcatrelto:XMW a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XMW";
-  skos:prefLabel "Midway Islands".
-
-ismcatrelto:XNV a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XNV";
-  skos:prefLabel "Navassa Island".
-
-ismcatrelto:XPL a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XPL";
-  skos:prefLabel "Palmyra Atoll".
-
-ismcatrelto:XPR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XPR";
-  skos:prefLabel "Paracel Islands".
-
-ismcatrelto:XQZ a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XQZ";
-  skos:prefLabel "Akrotiri".
-
-ismcatrelto:XSP a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XSP";
-  skos:prefLabel "Spratly Islands".
-
-ismcatrelto:XSV a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XSV";
-  skos:prefLabel "Svalbard".
-
-ismcatrelto:XTR a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XTR";
-  skos:prefLabel "Tromelin Island".
-
-ismcatrelto:XWB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XWB";
-  skos:prefLabel "West Bank".
-
-ismcatrelto:XWK a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XWK";
-  skos:prefLabel "Wake Island".
-
-ismcatrelto:XXD a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "XXD";
-  skos:prefLabel "Dhekelia".
-
-ismcatrelto:YEM a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "YEM";
-  skos:prefLabel "Republic of Yemen".
-
-ismcatrelto:ZAF a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ZAF";
-  skos:prefLabel "Republic of South Africa".
-
-ismcatrelto:ZMB a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ZMB";
-  skos:prefLabel "Republic of Zambia".
-
-ismcatrelto:ZWE a skos:Concept;
-  skos:inScheme ismcatrelto:CVEnumISMCATRelTo;
-  skos:notation "ZWE";
-  skos:prefLabel "Republic of Zimbabwe".
-
-<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATRelTo> a owl:Ontology;
-.
+@prefix ismcatrelto: <urn:us:gov:ic:cvenum:ismcat:relto#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATRelTo> a owl:Ontology .
+
+ismcatrelto:ABW a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ABW" ;
+	skos:prefLabel "Aruba" .
+
+ismcatrelto:ACGU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ACGU" ;
+	skos:prefLabel "FOUR EYES" .
+
+ismcatrelto:AFG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AFG" ;
+	skos:prefLabel "Islamic Republic of Afghanistan" .
+
+ismcatrelto:AGO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AGO" ;
+	skos:prefLabel "Republic of Angola" .
+
+ismcatrelto:AIA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AIA" ;
+	skos:prefLabel "Anguilla" .
+
+ismcatrelto:ALB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ALB" ;
+	skos:prefLabel "Republic of Albania" .
+
+ismcatrelto:AMSP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AMSP" ;
+	skos:prefLabel "AFRICOM Multinational Strategic Partners" .
+
+ismcatrelto:AND a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AND" ;
+	skos:prefLabel "Principality of Andorra" .
+
+ismcatrelto:AOSC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AOSC" ;
+	skos:prefLabel "Athens Olympics Security Coalition" .
+
+ismcatrelto:APFS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "APFS" ;
+	skos:prefLabel "African Peacekeeping Force Somalia" .
+
+ismcatrelto:ARE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ARE" ;
+	skos:prefLabel "United Arab Emirates" .
+
+ismcatrelto:ARG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ARG" ;
+	skos:prefLabel "Argentine Republic" .
+
+ismcatrelto:ARM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ARM" ;
+	skos:prefLabel "Republic of Armenia" .
+
+ismcatrelto:ASEA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ASEA" ;
+	skos:prefLabel "Association of Southeast Asian Nations (ASEAN)" .
+
+ismcatrelto:ASM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ASM" ;
+	skos:prefLabel "Territory of American Samoa" .
+
+ismcatrelto:ATA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ATA" ;
+	skos:prefLabel "Antarctica" .
+
+ismcatrelto:ATF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ATF" ;
+	skos:prefLabel "French Southern and Antarctic Lands" .
+
+ismcatrelto:ATG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ATG" ;
+	skos:prefLabel "Antigua and Barbuda" .
+
+ismcatrelto:AUS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AUS" ;
+	skos:prefLabel "Commonwealth of Australia" .
+
+ismcatrelto:AUSTRALIA_GROUP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AUSTRALIA_GROUP" ;
+	skos:prefLabel "Australia Group" .
+
+ismcatrelto:AUT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AUT" ;
+	skos:prefLabel "Republic of Austria" .
+
+ismcatrelto:AX2 a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AX2" ;
+	skos:prefLabel "Guantanamo Bay Naval Base" .
+
+ismcatrelto:AX3 a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AX3" ;
+	skos:prefLabel "Entity 6" .
+
+ismcatrelto:AZE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "AZE" ;
+	skos:prefLabel "Republic of Azerbaijan" .
+
+ismcatrelto:BDI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BDI" ;
+	skos:prefLabel "Republic of Burundi" .
+
+ismcatrelto:BEL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BEL" ;
+	skos:prefLabel "Kingdom of Belgium" .
+
+ismcatrelto:BEN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BEN" ;
+	skos:prefLabel "Republic of Benin" .
+
+ismcatrelto:BES a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BES" ;
+	skos:prefLabel "Bonaire, Sint Eustatius, and Saba" .
+
+ismcatrelto:BFA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BFA" ;
+	skos:prefLabel "Burkina Faso" .
+
+ismcatrelto:BGD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BGD" ;
+	skos:prefLabel "People’s Republic of Bangladesh" .
+
+ismcatrelto:BGR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BGR" ;
+	skos:prefLabel "Republic of Bulgaria" .
+
+ismcatrelto:BHR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BHR" ;
+	skos:prefLabel "Kingdom of Bahrain" .
+
+ismcatrelto:BHS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BHS" ;
+	skos:prefLabel "Commonwealth of The Bahamas" .
+
+ismcatrelto:BHTF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BHTF" ;
+	skos:prefLabel "Boko Haram Task Force" .
+
+ismcatrelto:BIH a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BIH" ;
+	skos:prefLabel "Bosnia and Herzegovina" .
+
+ismcatrelto:BLM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BLM" ;
+	skos:prefLabel "Saint Barthelemy" .
+
+ismcatrelto:BLR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BLR" ;
+	skos:prefLabel "Republic of Belarus" .
+
+ismcatrelto:BLZ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BLZ" ;
+	skos:prefLabel "Belize" .
+
+ismcatrelto:BMU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BMU" ;
+	skos:prefLabel "Bermuda" .
+
+ismcatrelto:BOL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BOL" ;
+	skos:prefLabel "Plurinational State of Bolivia" .
+
+ismcatrelto:BRA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BRA" ;
+	skos:prefLabel "Federative Republic of Brazil" .
+
+ismcatrelto:BRB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BRB" ;
+	skos:prefLabel "Barbados" .
+
+ismcatrelto:BRN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BRN" ;
+	skos:prefLabel "Brunei Darussalam" .
+
+ismcatrelto:BTN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BTN" ;
+	skos:prefLabel "Kingdom of Bhutan" .
+
+ismcatrelto:BVT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BVT" ;
+	skos:prefLabel "Bouvet Island" .
+
+ismcatrelto:BWA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BWA" ;
+	skos:prefLabel "Republic of Botswana" .
+
+ismcatrelto:BWCS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "BWCS" ;
+	skos:prefLabel "Biological Weapons Convention States" .
+
+ismcatrelto:CAF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CAF" ;
+	skos:prefLabel "Central African Republic" .
+
+ismcatrelto:CAN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CAN" ;
+	skos:prefLabel "Canada" .
+
+ismcatrelto:CCK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CCK" ;
+	skos:prefLabel "Territory of Cocos (Keeling) Islands" .
+
+ismcatrelto:CFCK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CFCK" ;
+	skos:prefLabel "Combined Forces Command Korea" .
+
+ismcatrelto:CFOD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CFOD" ;
+	skos:prefLabel "Coalition Forces Odyssey Dawn" .
+
+ismcatrelto:CFUP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CFUP" ;
+	skos:prefLabel "Coalition Forces Unified Protector" .
+
+ismcatrelto:CHE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CHE" ;
+	skos:prefLabel "Swiss Confederation" .
+
+ismcatrelto:CHL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CHL" ;
+	skos:prefLabel "Republic of Chile" .
+
+ismcatrelto:CHN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CHN" ;
+	skos:prefLabel "People’s Republic of China" .
+
+ismcatrelto:CIV a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CIV" ;
+	skos:prefLabel "Republic of Côte d’Ivoire" .
+
+ismcatrelto:CLFC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CLFC" ;
+	skos:prefLabel "Combined Libya Fusion Cell" .
+
+ismcatrelto:CMFC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CMFC" ;
+	skos:prefLabel "Combined Maritime Forces Central" .
+
+ismcatrelto:CMFP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CMFP" ;
+	skos:prefLabel "Cooperative Maritime Forces Pacific" .
+
+ismcatrelto:CMR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CMR" ;
+	skos:prefLabel "Republic of Cameroon" .
+
+ismcatrelto:COD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "COD" ;
+	skos:prefLabel "Democratic Republic of the Congo" .
+
+ismcatrelto:COG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "COG" ;
+	skos:prefLabel "Republic of the Congo" .
+
+ismcatrelto:COK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "COK" ;
+	skos:prefLabel "Cook Islands" .
+
+ismcatrelto:COL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "COL" ;
+	skos:prefLabel "Republic of Colombia" .
+
+ismcatrelto:COM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "COM" ;
+	skos:prefLabel "Union of the Comoros" .
+
+ismcatrelto:CPMT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CPMT" ;
+	skos:prefLabel "Civilian Protection Monitoring Team for Sudan" .
+
+ismcatrelto:CPT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CPT" ;
+	skos:prefLabel "Clipperton Island" .
+
+ismcatrelto:CPV a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CPV" ;
+	skos:prefLabel "Republic of Cabo Verde" .
+
+ismcatrelto:CRI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CRI" ;
+	skos:prefLabel "Republic of Costa Rica" .
+
+ismcatrelto:CTOC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CTOC" ;
+	skos:prefLabel "Countering Transnational Organized Crime" .
+
+ismcatrelto:CUB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CUB" ;
+	skos:prefLabel "Republic of Cuba" .
+
+ismcatrelto:CUW a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CUW" ;
+	skos:prefLabel "Curaçao" .
+
+ismcatrelto:CVEnumISMCATRelTo a skos:ConceptScheme ;
+	dc:title "(U) ismcatrelto:CVEnumISMCATRelTo definition" ;
+	skos:hasTopConcept ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D ;
+	skos:hasTopConcept ismcatrelto:USA ;
+	skos:hasTopConcept ismcatrelto:ABW ;
+	skos:hasTopConcept ismcatrelto:AFG ;
+	skos:hasTopConcept ismcatrelto:AGO ;
+	skos:hasTopConcept ismcatrelto:AIA ;
+	skos:hasTopConcept ismcatrelto:ALB ;
+	skos:hasTopConcept ismcatrelto:AND ;
+	skos:hasTopConcept ismcatrelto:ARE ;
+	skos:hasTopConcept ismcatrelto:ARG ;
+	skos:hasTopConcept ismcatrelto:ARM ;
+	skos:hasTopConcept ismcatrelto:ASM ;
+	skos:hasTopConcept ismcatrelto:ATA ;
+	skos:hasTopConcept ismcatrelto:ATF ;
+	skos:hasTopConcept ismcatrelto:ATG ;
+	skos:hasTopConcept ismcatrelto:AUS ;
+	skos:hasTopConcept ismcatrelto:AUT ;
+	skos:hasTopConcept ismcatrelto:AX2 ;
+	skos:hasTopConcept ismcatrelto:AX3 ;
+	skos:hasTopConcept ismcatrelto:AZE ;
+	skos:hasTopConcept ismcatrelto:BDI ;
+	skos:hasTopConcept ismcatrelto:BEL ;
+	skos:hasTopConcept ismcatrelto:BEN ;
+	skos:hasTopConcept ismcatrelto:BES ;
+	skos:hasTopConcept ismcatrelto:BFA ;
+	skos:hasTopConcept ismcatrelto:BGD ;
+	skos:hasTopConcept ismcatrelto:BGR ;
+	skos:hasTopConcept ismcatrelto:BHR ;
+	skos:hasTopConcept ismcatrelto:BHS ;
+	skos:hasTopConcept ismcatrelto:BIH ;
+	skos:hasTopConcept ismcatrelto:BLM ;
+	skos:hasTopConcept ismcatrelto:BLR ;
+	skos:hasTopConcept ismcatrelto:BLZ ;
+	skos:hasTopConcept ismcatrelto:BMU ;
+	skos:hasTopConcept ismcatrelto:BOL ;
+	skos:hasTopConcept ismcatrelto:BRA ;
+	skos:hasTopConcept ismcatrelto:BRB ;
+	skos:hasTopConcept ismcatrelto:BRN ;
+	skos:hasTopConcept ismcatrelto:BTN ;
+	skos:hasTopConcept ismcatrelto:BVT ;
+	skos:hasTopConcept ismcatrelto:BWA ;
+	skos:hasTopConcept ismcatrelto:CAF ;
+	skos:hasTopConcept ismcatrelto:CAN ;
+	skos:hasTopConcept ismcatrelto:CCK ;
+	skos:hasTopConcept ismcatrelto:CHE ;
+	skos:hasTopConcept ismcatrelto:CHL ;
+	skos:hasTopConcept ismcatrelto:CHN ;
+	skos:hasTopConcept ismcatrelto:CIV ;
+	skos:hasTopConcept ismcatrelto:CMR ;
+	skos:hasTopConcept ismcatrelto:COD ;
+	skos:hasTopConcept ismcatrelto:COG ;
+	skos:hasTopConcept ismcatrelto:COK ;
+	skos:hasTopConcept ismcatrelto:COL ;
+	skos:hasTopConcept ismcatrelto:COM ;
+	skos:hasTopConcept ismcatrelto:CPT ;
+	skos:hasTopConcept ismcatrelto:CPV ;
+	skos:hasTopConcept ismcatrelto:CRI ;
+	skos:hasTopConcept ismcatrelto:CUB ;
+	skos:hasTopConcept ismcatrelto:CUW ;
+	skos:hasTopConcept ismcatrelto:CXR ;
+	skos:hasTopConcept ismcatrelto:CYM ;
+	skos:hasTopConcept ismcatrelto:CYP ;
+	skos:hasTopConcept ismcatrelto:CZE ;
+	skos:hasTopConcept ismcatrelto:DEU ;
+	skos:hasTopConcept ismcatrelto:DGA ;
+	skos:hasTopConcept ismcatrelto:DJI ;
+	skos:hasTopConcept ismcatrelto:DMA ;
+	skos:hasTopConcept ismcatrelto:DNK ;
+	skos:hasTopConcept ismcatrelto:DOM ;
+	skos:hasTopConcept ismcatrelto:DZA ;
+	skos:hasTopConcept ismcatrelto:ECU ;
+	skos:hasTopConcept ismcatrelto:EGY ;
+	skos:hasTopConcept ismcatrelto:ERI ;
+	skos:hasTopConcept ismcatrelto:ESH ;
+	skos:hasTopConcept ismcatrelto:ESP ;
+	skos:hasTopConcept ismcatrelto:EST ;
+	skos:hasTopConcept ismcatrelto:ETH ;
+	skos:hasTopConcept ismcatrelto:FIN ;
+	skos:hasTopConcept ismcatrelto:FJI ;
+	skos:hasTopConcept ismcatrelto:FLK ;
+	skos:hasTopConcept ismcatrelto:FRA ;
+	skos:hasTopConcept ismcatrelto:FRO ;
+	skos:hasTopConcept ismcatrelto:FSM ;
+	skos:hasTopConcept ismcatrelto:GAB ;
+	skos:hasTopConcept ismcatrelto:GBR ;
+	skos:hasTopConcept ismcatrelto:GEO ;
+	skos:hasTopConcept ismcatrelto:GGY ;
+	skos:hasTopConcept ismcatrelto:GHA ;
+	skos:hasTopConcept ismcatrelto:GIB ;
+	skos:hasTopConcept ismcatrelto:GIN ;
+	skos:hasTopConcept ismcatrelto:GLP ;
+	skos:hasTopConcept ismcatrelto:GMB ;
+	skos:hasTopConcept ismcatrelto:GNB ;
+	skos:hasTopConcept ismcatrelto:GNQ ;
+	skos:hasTopConcept ismcatrelto:GRC ;
+	skos:hasTopConcept ismcatrelto:GRD ;
+	skos:hasTopConcept ismcatrelto:GRL ;
+	skos:hasTopConcept ismcatrelto:GTM ;
+	skos:hasTopConcept ismcatrelto:GUF ;
+	skos:hasTopConcept ismcatrelto:GUM ;
+	skos:hasTopConcept ismcatrelto:GUY ;
+	skos:hasTopConcept ismcatrelto:HKG ;
+	skos:hasTopConcept ismcatrelto:HMD ;
+	skos:hasTopConcept ismcatrelto:HND ;
+	skos:hasTopConcept ismcatrelto:HRV ;
+	skos:hasTopConcept ismcatrelto:HTI ;
+	skos:hasTopConcept ismcatrelto:HUN ;
+	skos:hasTopConcept ismcatrelto:IDN ;
+	skos:hasTopConcept ismcatrelto:IMN ;
+	skos:hasTopConcept ismcatrelto:IND ;
+	skos:hasTopConcept ismcatrelto:IOT ;
+	skos:hasTopConcept ismcatrelto:IRL ;
+	skos:hasTopConcept ismcatrelto:IRN ;
+	skos:hasTopConcept ismcatrelto:IRQ ;
+	skos:hasTopConcept ismcatrelto:ISL ;
+	skos:hasTopConcept ismcatrelto:ISR ;
+	skos:hasTopConcept ismcatrelto:ITA ;
+	skos:hasTopConcept ismcatrelto:JAM ;
+	skos:hasTopConcept ismcatrelto:JEY ;
+	skos:hasTopConcept ismcatrelto:JOR ;
+	skos:hasTopConcept ismcatrelto:JPN ;
+	skos:hasTopConcept ismcatrelto:KAZ ;
+	skos:hasTopConcept ismcatrelto:KEN ;
+	skos:hasTopConcept ismcatrelto:KGZ ;
+	skos:hasTopConcept ismcatrelto:KHM ;
+	skos:hasTopConcept ismcatrelto:KIR ;
+	skos:hasTopConcept ismcatrelto:KNA ;
+	skos:hasTopConcept ismcatrelto:KOR ;
+	skos:hasTopConcept ismcatrelto:KWT ;
+	skos:hasTopConcept ismcatrelto:LAO ;
+	skos:hasTopConcept ismcatrelto:LBN ;
+	skos:hasTopConcept ismcatrelto:LBR ;
+	skos:hasTopConcept ismcatrelto:LBY ;
+	skos:hasTopConcept ismcatrelto:LCA ;
+	skos:hasTopConcept ismcatrelto:LIE ;
+	skos:hasTopConcept ismcatrelto:LKA ;
+	skos:hasTopConcept ismcatrelto:LSO ;
+	skos:hasTopConcept ismcatrelto:LTU ;
+	skos:hasTopConcept ismcatrelto:LUX ;
+	skos:hasTopConcept ismcatrelto:LVA ;
+	skos:hasTopConcept ismcatrelto:MAC ;
+	skos:hasTopConcept ismcatrelto:MAF ;
+	skos:hasTopConcept ismcatrelto:MAR ;
+	skos:hasTopConcept ismcatrelto:MCO ;
+	skos:hasTopConcept ismcatrelto:MDA ;
+	skos:hasTopConcept ismcatrelto:MDG ;
+	skos:hasTopConcept ismcatrelto:MDV ;
+	skos:hasTopConcept ismcatrelto:MEX ;
+	skos:hasTopConcept ismcatrelto:MHL ;
+	skos:hasTopConcept ismcatrelto:MKD ;
+	skos:hasTopConcept ismcatrelto:MLI ;
+	skos:hasTopConcept ismcatrelto:MLT ;
+	skos:hasTopConcept ismcatrelto:MMR ;
+	skos:hasTopConcept ismcatrelto:MNE ;
+	skos:hasTopConcept ismcatrelto:MNG ;
+	skos:hasTopConcept ismcatrelto:MNP ;
+	skos:hasTopConcept ismcatrelto:MOZ ;
+	skos:hasTopConcept ismcatrelto:MRT ;
+	skos:hasTopConcept ismcatrelto:MSR ;
+	skos:hasTopConcept ismcatrelto:MTQ ;
+	skos:hasTopConcept ismcatrelto:MUS ;
+	skos:hasTopConcept ismcatrelto:MWI ;
+	skos:hasTopConcept ismcatrelto:MYS ;
+	skos:hasTopConcept ismcatrelto:MYT ;
+	skos:hasTopConcept ismcatrelto:NAM ;
+	skos:hasTopConcept ismcatrelto:NCL ;
+	skos:hasTopConcept ismcatrelto:NER ;
+	skos:hasTopConcept ismcatrelto:NFK ;
+	skos:hasTopConcept ismcatrelto:NGA ;
+	skos:hasTopConcept ismcatrelto:NIC ;
+	skos:hasTopConcept ismcatrelto:NIU ;
+	skos:hasTopConcept ismcatrelto:NLD ;
+	skos:hasTopConcept ismcatrelto:NOR ;
+	skos:hasTopConcept ismcatrelto:NPL ;
+	skos:hasTopConcept ismcatrelto:NRU ;
+	skos:hasTopConcept ismcatrelto:NZL ;
+	skos:hasTopConcept ismcatrelto:OMN ;
+	skos:hasTopConcept ismcatrelto:PAK ;
+	skos:hasTopConcept ismcatrelto:PAN ;
+	skos:hasTopConcept ismcatrelto:PCN ;
+	skos:hasTopConcept ismcatrelto:PER ;
+	skos:hasTopConcept ismcatrelto:PHL ;
+	skos:hasTopConcept ismcatrelto:PLW ;
+	skos:hasTopConcept ismcatrelto:PNG ;
+	skos:hasTopConcept ismcatrelto:POL ;
+	skos:hasTopConcept ismcatrelto:PRI ;
+	skos:hasTopConcept ismcatrelto:PRK ;
+	skos:hasTopConcept ismcatrelto:PRT ;
+	skos:hasTopConcept ismcatrelto:PRY ;
+	skos:hasTopConcept ismcatrelto:PYF ;
+	skos:hasTopConcept ismcatrelto:QAT ;
+	skos:hasTopConcept ismcatrelto:REU ;
+	skos:hasTopConcept ismcatrelto:ROU ;
+	skos:hasTopConcept ismcatrelto:RUS ;
+	skos:hasTopConcept ismcatrelto:RWA ;
+	skos:hasTopConcept ismcatrelto:SAU ;
+	skos:hasTopConcept ismcatrelto:SDN ;
+	skos:hasTopConcept ismcatrelto:SEN ;
+	skos:hasTopConcept ismcatrelto:SGP ;
+	skos:hasTopConcept ismcatrelto:SGS ;
+	skos:hasTopConcept ismcatrelto:SHN ;
+	skos:hasTopConcept ismcatrelto:SLB ;
+	skos:hasTopConcept ismcatrelto:SLE ;
+	skos:hasTopConcept ismcatrelto:SLV ;
+	skos:hasTopConcept ismcatrelto:SMR ;
+	skos:hasTopConcept ismcatrelto:SOM ;
+	skos:hasTopConcept ismcatrelto:SPM ;
+	skos:hasTopConcept ismcatrelto:SRB ;
+	skos:hasTopConcept ismcatrelto:SSD ;
+	skos:hasTopConcept ismcatrelto:STP ;
+	skos:hasTopConcept ismcatrelto:SUR ;
+	skos:hasTopConcept ismcatrelto:SVK ;
+	skos:hasTopConcept ismcatrelto:SVN ;
+	skos:hasTopConcept ismcatrelto:SWE ;
+	skos:hasTopConcept ismcatrelto:SWZ ;
+	skos:hasTopConcept ismcatrelto:SXM ;
+	skos:hasTopConcept ismcatrelto:SYC ;
+	skos:hasTopConcept ismcatrelto:SYR ;
+	skos:hasTopConcept ismcatrelto:TCA ;
+	skos:hasTopConcept ismcatrelto:TCD ;
+	skos:hasTopConcept ismcatrelto:TGO ;
+	skos:hasTopConcept ismcatrelto:THA ;
+	skos:hasTopConcept ismcatrelto:TJK ;
+	skos:hasTopConcept ismcatrelto:TKL ;
+	skos:hasTopConcept ismcatrelto:TKM ;
+	skos:hasTopConcept ismcatrelto:TLS ;
+	skos:hasTopConcept ismcatrelto:TON ;
+	skos:hasTopConcept ismcatrelto:TTO ;
+	skos:hasTopConcept ismcatrelto:TUN ;
+	skos:hasTopConcept ismcatrelto:TUR ;
+	skos:hasTopConcept ismcatrelto:TUV ;
+	skos:hasTopConcept ismcatrelto:TWN ;
+	skos:hasTopConcept ismcatrelto:TZA ;
+	skos:hasTopConcept ismcatrelto:UGA ;
+	skos:hasTopConcept ismcatrelto:UKR ;
+	skos:hasTopConcept ismcatrelto:URY ;
+	skos:hasTopConcept ismcatrelto:UZB ;
+	skos:hasTopConcept ismcatrelto:VAT ;
+	skos:hasTopConcept ismcatrelto:VCT ;
+	skos:hasTopConcept ismcatrelto:VEN ;
+	skos:hasTopConcept ismcatrelto:VGB ;
+	skos:hasTopConcept ismcatrelto:VIR ;
+	skos:hasTopConcept ismcatrelto:VNM ;
+	skos:hasTopConcept ismcatrelto:VUT ;
+	skos:hasTopConcept ismcatrelto:WLF ;
+	skos:hasTopConcept ismcatrelto:WSM ;
+	skos:hasTopConcept ismcatrelto:XAC ;
+	skos:hasTopConcept ismcatrelto:XAZ ;
+	skos:hasTopConcept ismcatrelto:XBI ;
+	skos:hasTopConcept ismcatrelto:XBK ;
+	skos:hasTopConcept ismcatrelto:XCR ;
+	skos:hasTopConcept ismcatrelto:XCS ;
+	skos:hasTopConcept ismcatrelto:XCY ;
+	skos:hasTopConcept ismcatrelto:XEU ;
+	skos:hasTopConcept ismcatrelto:XGL ;
+	skos:hasTopConcept ismcatrelto:XGZ ;
+	skos:hasTopConcept ismcatrelto:XHO ;
+	skos:hasTopConcept ismcatrelto:XJA ;
+	skos:hasTopConcept ismcatrelto:XJM ;
+	skos:hasTopConcept ismcatrelto:XJN ;
+	skos:hasTopConcept ismcatrelto:XJV ;
+	skos:hasTopConcept ismcatrelto:XKM ;
+	skos:hasTopConcept ismcatrelto:XKN ;
+	skos:hasTopConcept ismcatrelto:XKR ;
+	skos:hasTopConcept ismcatrelto:XKS ;
+	skos:hasTopConcept ismcatrelto:XMW ;
+	skos:hasTopConcept ismcatrelto:XNV ;
+	skos:hasTopConcept ismcatrelto:XPL ;
+	skos:hasTopConcept ismcatrelto:XPR ;
+	skos:hasTopConcept ismcatrelto:XQZ ;
+	skos:hasTopConcept ismcatrelto:XSP ;
+	skos:hasTopConcept ismcatrelto:XSV ;
+	skos:hasTopConcept ismcatrelto:XTR ;
+	skos:hasTopConcept ismcatrelto:XWB ;
+	skos:hasTopConcept ismcatrelto:XWK ;
+	skos:hasTopConcept ismcatrelto:XXD ;
+	skos:hasTopConcept ismcatrelto:YEM ;
+	skos:hasTopConcept ismcatrelto:ZAF ;
+	skos:hasTopConcept ismcatrelto:ZMB ;
+	skos:hasTopConcept ismcatrelto:ZWE ;
+	skos:hasTopConcept ismcatrelto:ACGU ;
+	skos:hasTopConcept ismcatrelto:AMSP ;
+	skos:hasTopConcept ismcatrelto:AOSC ;
+	skos:hasTopConcept ismcatrelto:APFS ;
+	skos:hasTopConcept ismcatrelto:ASEA ;
+	skos:hasTopConcept ismcatrelto:AUSTRALIA_GROUP ;
+	skos:hasTopConcept ismcatrelto:BHTF ;
+	skos:hasTopConcept ismcatrelto:BWCS ;
+	skos:hasTopConcept ismcatrelto:CFCK ;
+	skos:hasTopConcept ismcatrelto:CFOD ;
+	skos:hasTopConcept ismcatrelto:CFUP ;
+	skos:hasTopConcept ismcatrelto:CLFC ;
+	skos:hasTopConcept ismcatrelto:CMFC ;
+	skos:hasTopConcept ismcatrelto:CMFP ;
+	skos:hasTopConcept ismcatrelto:CPMT ;
+	skos:hasTopConcept ismcatrelto:CTOC ;
+	skos:hasTopConcept ismcatrelto:CWCS ;
+	skos:hasTopConcept ismcatrelto:ECTF ;
+	skos:hasTopConcept ismcatrelto:EFOR ;
+	skos:hasTopConcept ismcatrelto:EU ;
+	skos:hasTopConcept ismcatrelto:EUDA ;
+	skos:hasTopConcept ismcatrelto:FRME ;
+	skos:hasTopConcept ismcatrelto:FVEY ;
+	skos:hasTopConcept ismcatrelto:GCCH ;
+	skos:hasTopConcept ismcatrelto:GCTF ;
+	skos:hasTopConcept ismcatrelto:GFNX ;
+	skos:hasTopConcept ismcatrelto:GMIF ;
+	skos:hasTopConcept ismcatrelto:IESC ;
+	skos:hasTopConcept ismcatrelto:IMSC ;
+	skos:hasTopConcept ismcatrelto:IMSP ;
+	skos:hasTopConcept ismcatrelto:IPMC ;
+	skos:hasTopConcept ismcatrelto:IRKS ;
+	skos:hasTopConcept ismcatrelto:ISAF ;
+	skos:hasTopConcept ismcatrelto:ISSG ;
+	skos:hasTopConcept ismcatrelto:KFOR ;
+	skos:hasTopConcept ismcatrelto:MCFI ;
+	skos:hasTopConcept ismcatrelto:MESF ;
+	skos:hasTopConcept ismcatrelto:MGEU ;
+	skos:hasTopConcept ismcatrelto:MIFH ;
+	skos:hasTopConcept ismcatrelto:MLEC ;
+	skos:hasTopConcept ismcatrelto:MNTF ;
+	skos:hasTopConcept ismcatrelto:MPFL ;
+	skos:hasTopConcept ismcatrelto:NACT ;
+	skos:hasTopConcept ismcatrelto:NATO ;
+	skos:hasTopConcept ismcatrelto:NCFE ;
+	skos:hasTopConcept ismcatrelto:NKIC ;
+	skos:hasTopConcept ismcatrelto:NRDC ;
+	skos:hasTopConcept ismcatrelto:NSG ;
+	skos:hasTopConcept ismcatrelto:OSAG ;
+	skos:hasTopConcept ismcatrelto:OSTY ;
+	skos:hasTopConcept ismcatrelto:PAWA ;
+	skos:hasTopConcept ismcatrelto:PGMF ;
+	skos:hasTopConcept ismcatrelto:PSMX ;
+	skos:hasTopConcept ismcatrelto:RISC ;
+	skos:hasTopConcept ismcatrelto:RSMA ;
+	skos:hasTopConcept ismcatrelto:SFOR ;
+	skos:hasTopConcept ismcatrelto:SOFP ;
+	skos:hasTopConcept ismcatrelto:SPAA ;
+	skos:hasTopConcept ismcatrelto:TEYE ;
+	skos:hasTopConcept ismcatrelto:TFTC ;
+	skos:hasTopConcept ismcatrelto:UNCK .
+
+ismcatrelto:CVEnumISMCATRelToValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"USA"
+			"ABW"
+			"AFG"
+			"AGO"
+			"AIA"
+			"ALB"
+			"AND"
+			"ARE"
+			"ARG"
+			"ARM"
+			"ASM"
+			"ATA"
+			"ATF"
+			"ATG"
+			"AUS"
+			"AUT"
+			"AX2"
+			"AX3"
+			"AZE"
+			"BDI"
+			"BEL"
+			"BEN"
+			"BES"
+			"BFA"
+			"BGD"
+			"BGR"
+			"BHR"
+			"BHS"
+			"BIH"
+			"BLM"
+			"BLR"
+			"BLZ"
+			"BMU"
+			"BOL"
+			"BRA"
+			"BRB"
+			"BRN"
+			"BTN"
+			"BVT"
+			"BWA"
+			"CAF"
+			"CAN"
+			"CCK"
+			"CHE"
+			"CHL"
+			"CHN"
+			"CIV"
+			"CMR"
+			"COD"
+			"COG"
+			"COK"
+			"COL"
+			"COM"
+			"CPT"
+			"CPV"
+			"CRI"
+			"CUB"
+			"CUW"
+			"CXR"
+			"CYM"
+			"CYP"
+			"CZE"
+			"DEU"
+			"DGA"
+			"DJI"
+			"DMA"
+			"DNK"
+			"DOM"
+			"DZA"
+			"ECU"
+			"EGY"
+			"ERI"
+			"ESH"
+			"ESP"
+			"EST"
+			"ETH"
+			"FIN"
+			"FJI"
+			"FLK"
+			"FRA"
+			"FRO"
+			"FSM"
+			"GAB"
+			"GBR"
+			"GEO"
+			"GGY"
+			"GHA"
+			"GIB"
+			"GIN"
+			"GLP"
+			"GMB"
+			"GNB"
+			"GNQ"
+			"GRC"
+			"GRD"
+			"GRL"
+			"GTM"
+			"GUF"
+			"GUM"
+			"GUY"
+			"HKG"
+			"HMD"
+			"HND"
+			"HRV"
+			"HTI"
+			"HUN"
+			"IDN"
+			"IMN"
+			"IND"
+			"IOT"
+			"IRL"
+			"IRN"
+			"IRQ"
+			"ISL"
+			"ISR"
+			"ITA"
+			"JAM"
+			"JEY"
+			"JOR"
+			"JPN"
+			"KAZ"
+			"KEN"
+			"KGZ"
+			"KHM"
+			"KIR"
+			"KNA"
+			"KOR"
+			"KWT"
+			"LAO"
+			"LBN"
+			"LBR"
+			"LBY"
+			"LCA"
+			"LIE"
+			"LKA"
+			"LSO"
+			"LTU"
+			"LUX"
+			"LVA"
+			"MAC"
+			"MAF"
+			"MAR"
+			"MCO"
+			"MDA"
+			"MDG"
+			"MDV"
+			"MEX"
+			"MHL"
+			"MKD"
+			"MLI"
+			"MLT"
+			"MMR"
+			"MNE"
+			"MNG"
+			"MNP"
+			"MOZ"
+			"MRT"
+			"MSR"
+			"MTQ"
+			"MUS"
+			"MWI"
+			"MYS"
+			"MYT"
+			"NAM"
+			"NCL"
+			"NER"
+			"NFK"
+			"NGA"
+			"NIC"
+			"NIU"
+			"NLD"
+			"NOR"
+			"NPL"
+			"NRU"
+			"NZL"
+			"OMN"
+			"PAK"
+			"PAN"
+			"PCN"
+			"PER"
+			"PHL"
+			"PLW"
+			"PNG"
+			"POL"
+			"PRI"
+			"PRK"
+			"PRT"
+			"PRY"
+			"PYF"
+			"QAT"
+			"REU"
+			"ROU"
+			"RUS"
+			"RWA"
+			"SAU"
+			"SDN"
+			"SEN"
+			"SGP"
+			"SGS"
+			"SHN"
+			"SLB"
+			"SLE"
+			"SLV"
+			"SMR"
+			"SOM"
+			"SPM"
+			"SRB"
+			"SSD"
+			"STP"
+			"SUR"
+			"SVK"
+			"SVN"
+			"SWE"
+			"SWZ"
+			"SXM"
+			"SYC"
+			"SYR"
+			"TCA"
+			"TCD"
+			"TGO"
+			"THA"
+			"TJK"
+			"TKL"
+			"TKM"
+			"TLS"
+			"TON"
+			"TTO"
+			"TUN"
+			"TUR"
+			"TUV"
+			"TWN"
+			"TZA"
+			"UGA"
+			"UKR"
+			"URY"
+			"UZB"
+			"VAT"
+			"VCT"
+			"VEN"
+			"VGB"
+			"VIR"
+			"VNM"
+			"VUT"
+			"WLF"
+			"WSM"
+			"XAC"
+			"XAZ"
+			"XBI"
+			"XBK"
+			"XCR"
+			"XCS"
+			"XCY"
+			"XEU"
+			"XGL"
+			"XGZ"
+			"XHO"
+			"XJA"
+			"XJM"
+			"XJN"
+			"XJV"
+			"XKM"
+			"XKN"
+			"XKR"
+			"XKS"
+			"XMW"
+			"XNV"
+			"XPL"
+			"XPR"
+			"XQZ"
+			"XSP"
+			"XSV"
+			"XTR"
+			"XWB"
+			"XWK"
+			"XXD"
+			"YEM"
+			"ZAF"
+			"ZMB"
+			"ZWE"
+			"ACGU"
+			"AMSP"
+			"AOSC"
+			"APFS"
+			"ASEA"
+			"AUSTRALIA_GROUP"
+			"BHTF"
+			"BWCS"
+			"CFCK"
+			"CFOD"
+			"CFUP"
+			"CLFC"
+			"CMFC"
+			"CMFP"
+			"CPMT"
+			"CTOC"
+			"CWCS"
+			"ECTF"
+			"EFOR"
+			"EU"
+			"EUDA"
+			"FRME"
+			"FVEY"
+			"GCCH"
+			"GCTF"
+			"GFNX"
+			"GMIF"
+			"IESC"
+			"IMSC"
+			"IMSP"
+			"IPMC"
+			"IRKS"
+			"ISAF"
+			"ISSG"
+			"KFOR"
+			"MCFI"
+			"MESF"
+			"MGEU"
+			"MIFH"
+			"MLEC"
+			"MNTF"
+			"MPFL"
+			"NACT"
+			"NATO"
+			"NCFE"
+			"NKIC"
+			"NRDC"
+			"NSG"
+			"OSAG"
+			"OSTY"
+			"PAWA"
+			"PGMF"
+			"PSMX"
+			"RISC"
+			"RSMA"
+			"SFOR"
+			"SOFP"
+			"SPAA"
+			"TEYE"
+			"TFTC"
+			"UNCK"
+		) ;
+	] .
+
+ismcatrelto:CWCS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CWCS" ;
+	skos:prefLabel "Chemical Weapons Convention States" .
+
+ismcatrelto:CXR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CXR" ;
+	skos:prefLabel "Territory of Christmas Island" .
+
+ismcatrelto:CYM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CYM" ;
+	skos:prefLabel "Cayman Islands" .
+
+ismcatrelto:CYP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CYP" ;
+	skos:prefLabel "Republic of Cyprus" .
+
+ismcatrelto:CZE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "CZE" ;
+	skos:prefLabel "Czech Republic" .
+
+ismcatrelto:DEU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "DEU" ;
+	skos:prefLabel "Federal Republic of Germany" .
+
+ismcatrelto:DGA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "DGA" ;
+	skos:prefLabel "Diego Garcia" .
+
+ismcatrelto:DJI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "DJI" ;
+	skos:prefLabel "Republic of Djibouti" .
+
+ismcatrelto:DMA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "DMA" ;
+	skos:prefLabel "Commonwealth of Dominica" .
+
+ismcatrelto:DNK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "DNK" ;
+	skos:prefLabel "Kingdom of Denmark" .
+
+ismcatrelto:DOM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "DOM" ;
+	skos:prefLabel "Dominican Republic" .
+
+ismcatrelto:DZA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "DZA" ;
+	skos:prefLabel "People’s Democratic Republic of Algeria" .
+
+ismcatrelto:ECTF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ECTF" ;
+	skos:prefLabel "European Counter-Terrorism Forces" .
+
+ismcatrelto:ECU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ECU" ;
+	skos:prefLabel "Republic of Ecuador" .
+
+ismcatrelto:EFOR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "EFOR" ;
+	skos:prefLabel "European Union Stabilization Forces in Bosnia" .
+
+ismcatrelto:EGY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "EGY" ;
+	skos:prefLabel "Arab Republic of Egypt" .
+
+ismcatrelto:ERI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ERI" ;
+	skos:prefLabel "State of Eritrea" .
+
+ismcatrelto:ESH a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ESH" ;
+	skos:prefLabel "Western Sahara" .
+
+ismcatrelto:ESP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ESP" ;
+	skos:prefLabel "Kingdom of Spain" .
+
+ismcatrelto:EST a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "EST" ;
+	skos:prefLabel "Republic of Estonia" .
+
+ismcatrelto:ETH a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ETH" ;
+	skos:prefLabel "Federal Democratic Republic of Ethiopia" .
+
+ismcatrelto:EU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "EU" ;
+	skos:prefLabel "European Union" .
+
+ismcatrelto:EUDA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "EUDA" ;
+	skos:prefLabel "European Union DARFUR" .
+
+ismcatrelto:FIN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "FIN" ;
+	skos:prefLabel "Republic of Finland" .
+
+ismcatrelto:FJI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "FJI" ;
+	skos:prefLabel "Republic of Fiji" .
+
+ismcatrelto:FLK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "FLK" ;
+	skos:prefLabel "Falkland Islands (Islas Malvinas)" .
+
+ismcatrelto:FRA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "FRA" ;
+	skos:prefLabel "French Republic" .
+
+ismcatrelto:FRME a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "FRME" ;
+	skos:prefLabel "Counter Violent Extremist Organizations Framework Partners" .
+
+ismcatrelto:FRO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "FRO" ;
+	skos:prefLabel "Faroe Islands" .
+
+ismcatrelto:FSM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "FSM" ;
+	skos:prefLabel "Federated States of Micronesia" .
+
+ismcatrelto:FVEY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "FVEY" ;
+	skos:prefLabel "FIVE EYES" .
+
+ismcatrelto:GAB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GAB" ;
+	skos:prefLabel "Gabonese Republic" .
+
+ismcatrelto:GBR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GBR" ;
+	skos:prefLabel "United Kingdom of Great Britain and Northern Ireland" .
+
+ismcatrelto:GCCH a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GCCH" ;
+	skos:prefLabel "Gulf Cooperation Council" .
+
+ismcatrelto:GCTF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GCTF" ;
+	skos:prefLabel "Global Counter-Terrorism Forces" .
+
+ismcatrelto:GEO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GEO" ;
+	skos:prefLabel "Georgia" .
+
+ismcatrelto:GFNX a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GFNX" ;
+	skos:prefLabel "Global Foreign Terrorist Fighter Network Exchange" .
+
+ismcatrelto:GGY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GGY" ;
+	skos:prefLabel "Bailiwick of Guernsey" .
+
+ismcatrelto:GHA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GHA" ;
+	skos:prefLabel "Republic of Ghana" .
+
+ismcatrelto:GIB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GIB" ;
+	skos:prefLabel "Gibraltar" .
+
+ismcatrelto:GIN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GIN" ;
+	skos:prefLabel "Republic of Guinea" .
+
+ismcatrelto:GLP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GLP" ;
+	skos:prefLabel "Region of Guadeloupe" .
+
+ismcatrelto:GMB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GMB" ;
+	skos:prefLabel "Republic of The Gambia" .
+
+ismcatrelto:GMIF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GMIF" ;
+	skos:prefLabel "Global Maritime Interception Forces" .
+
+ismcatrelto:GNB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GNB" ;
+	skos:prefLabel "Republic of Guinea-Bissau" .
+
+ismcatrelto:GNQ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GNQ" ;
+	skos:prefLabel "Republic of Equatorial Guinea" .
+
+ismcatrelto:GRC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GRC" ;
+	skos:prefLabel "Hellenic Republic" .
+
+ismcatrelto:GRD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GRD" ;
+	skos:prefLabel "Grenada" .
+
+ismcatrelto:GRL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GRL" ;
+	skos:prefLabel "Greenland" .
+
+ismcatrelto:GTM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GTM" ;
+	skos:prefLabel "Republic of Guatemala" .
+
+ismcatrelto:GUF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GUF" ;
+	skos:prefLabel "Territorial Collectivity of Guiana" .
+
+ismcatrelto:GUM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GUM" ;
+	skos:prefLabel "Territory of Guam" .
+
+ismcatrelto:GUY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "GUY" ;
+	skos:prefLabel "Co-operative Republic of Guyana" .
+
+ismcatrelto:HKG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "HKG" ;
+	skos:prefLabel "Hong Kong Special Administrative Region" .
+
+ismcatrelto:HMD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "HMD" ;
+	skos:prefLabel "Territory of Heard Island and McDonald Islands" .
+
+ismcatrelto:HND a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "HND" ;
+	skos:prefLabel "Republic of Honduras" .
+
+ismcatrelto:HRV a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "HRV" ;
+	skos:prefLabel "Republic of Croatia" .
+
+ismcatrelto:HTI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "HTI" ;
+	skos:prefLabel "Republic of Haiti" .
+
+ismcatrelto:HUN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "HUN" ;
+	skos:prefLabel "Hungary" .
+
+ismcatrelto:IDN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IDN" ;
+	skos:prefLabel "Republic of Indonesia" .
+
+ismcatrelto:IESC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IESC" ;
+	skos:prefLabel "International Events Security Coalition" .
+
+ismcatrelto:IMN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IMN" ;
+	skos:prefLabel "Isle of Man" .
+
+ismcatrelto:IMSC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IMSC" ;
+	skos:prefLabel "International Maritime Security Construct" .
+
+ismcatrelto:IMSP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IMSP" ;
+	skos:prefLabel "INDOPACOM Multinational Strategic Partners" .
+
+ismcatrelto:IND a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IND" ;
+	skos:prefLabel "Republic of India" .
+
+ismcatrelto:IOT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IOT" ;
+	skos:prefLabel "British Indian Ocean Territory" .
+
+ismcatrelto:IPMC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IPMC" ;
+	skos:prefLabel "INDO PACIFIC Maritime Call" .
+
+ismcatrelto:IRKS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IRKS" ;
+	skos:prefLabel "Inherent Resolve Kinetic Support" .
+
+ismcatrelto:IRL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IRL" ;
+	skos:prefLabel "Ireland" .
+
+ismcatrelto:IRN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IRN" ;
+	skos:prefLabel "Islamic Republic of Iran" .
+
+ismcatrelto:IRQ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "IRQ" ;
+	skos:prefLabel "Republic of Iraq" .
+
+ismcatrelto:ISAF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ISAF" ;
+	skos:prefLabel "International Security Assistance Force for Afghanistan" .
+
+ismcatrelto:ISL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ISL" ;
+	skos:prefLabel "Republic of Iceland" .
+
+ismcatrelto:ISR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ISR" ;
+	skos:prefLabel "State of Israel" .
+
+ismcatrelto:ISSG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ISSG" ;
+	skos:prefLabel "International Syria Support Group" .
+
+ismcatrelto:ITA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ITA" ;
+	skos:prefLabel "Italian Republic" .
+
+ismcatrelto:JAM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "JAM" ;
+	skos:prefLabel "Jamaica" .
+
+ismcatrelto:JEY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "JEY" ;
+	skos:prefLabel "Bailiwick of Jersey" .
+
+ismcatrelto:JOR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "JOR" ;
+	skos:prefLabel "Hashemite Kingdom of Jordan" .
+
+ismcatrelto:JPN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "JPN" ;
+	skos:prefLabel "Japan" .
+
+ismcatrelto:KAZ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "KAZ" ;
+	skos:prefLabel "Republic of Kazakhstan" .
+
+ismcatrelto:KEN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "KEN" ;
+	skos:prefLabel "Republic of Kenya" .
+
+ismcatrelto:KFOR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "KFOR" ;
+	skos:prefLabel "Stabilization Forces in Kosovo" .
+
+ismcatrelto:KGZ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "KGZ" ;
+	skos:prefLabel "Kyrgyz Republic" .
+
+ismcatrelto:KHM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "KHM" ;
+	skos:prefLabel "Kingdom of Cambodia" .
+
+ismcatrelto:KIR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "KIR" ;
+	skos:prefLabel "Republic of Kiribati" .
+
+ismcatrelto:KNA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "KNA" ;
+	skos:prefLabel "Federation of Saint Kitts and Nevis" .
+
+ismcatrelto:KOR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "KOR" ;
+	skos:prefLabel "Republic of Korea" .
+
+ismcatrelto:KWT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "KWT" ;
+	skos:prefLabel "State of Kuwait" .
+
+ismcatrelto:LAO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LAO" ;
+	skos:prefLabel "Lao People’s Democratic Republic" .
+
+ismcatrelto:LBN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LBN" ;
+	skos:prefLabel "Lebanese Republic" .
+
+ismcatrelto:LBR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LBR" ;
+	skos:prefLabel "Republic of Liberia" .
+
+ismcatrelto:LBY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LBY" ;
+	skos:prefLabel "State of Libya" .
+
+ismcatrelto:LCA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LCA" ;
+	skos:prefLabel "Saint Lucia" .
+
+ismcatrelto:LIE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LIE" ;
+	skos:prefLabel "Principality of Liechtenstein" .
+
+ismcatrelto:LKA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LKA" ;
+	skos:prefLabel "Democratic Socialist Republic of Sri Lanka" .
+
+ismcatrelto:LSO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LSO" ;
+	skos:prefLabel "Kingdom of Lesotho" .
+
+ismcatrelto:LTU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LTU" ;
+	skos:prefLabel "Republic of Lithuania" .
+
+ismcatrelto:LUX a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LUX" ;
+	skos:prefLabel "Grand Duchy of Luxembourg" .
+
+ismcatrelto:LVA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "LVA" ;
+	skos:prefLabel "Republic of Latvia" .
+
+ismcatrelto:MAC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MAC" ;
+	skos:prefLabel "Macau Special Administrative Region" .
+
+ismcatrelto:MAF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MAF" ;
+	skos:prefLabel "Saint Martin" .
+
+ismcatrelto:MAR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MAR" ;
+	skos:prefLabel "Kingdom of Morocco" .
+
+ismcatrelto:MCFI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MCFI" ;
+	skos:prefLabel "Multinational Coalition Forces-Iraq" .
+
+ismcatrelto:MCO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MCO" ;
+	skos:prefLabel "Principality of Monaco" .
+
+ismcatrelto:MDA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MDA" ;
+	skos:prefLabel "Republic of Moldova" .
+
+ismcatrelto:MDG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MDG" ;
+	skos:prefLabel "Republic of Madagascar" .
+
+ismcatrelto:MDV a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MDV" ;
+	skos:prefLabel "Republic of Maldives" .
+
+ismcatrelto:MESF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MESF" ;
+	skos:prefLabel "Middle East Stability Force" .
+
+ismcatrelto:MEX a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MEX" ;
+	skos:prefLabel "United Mexican States" .
+
+ismcatrelto:MGEU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MGEU" ;
+	skos:prefLabel "Multinational GEOINT Europe" .
+
+ismcatrelto:MHL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MHL" ;
+	skos:prefLabel "Republic of the Marshall Islands" .
+
+ismcatrelto:MIFH a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MIFH" ;
+	skos:prefLabel "Multinational Interim Force Haiti" .
+
+ismcatrelto:MKD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MKD" ;
+	skos:prefLabel "Republic of North Macedonia" .
+
+ismcatrelto:MLEC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MLEC" ;
+	skos:prefLabel "Multi-Lateral Enduring Contingency" .
+
+ismcatrelto:MLI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MLI" ;
+	skos:prefLabel "Republic of Mali" .
+
+ismcatrelto:MLT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MLT" ;
+	skos:prefLabel "Republic of Malta" .
+
+ismcatrelto:MMR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MMR" ;
+	skos:prefLabel "Union of Burma" .
+
+ismcatrelto:MNE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MNE" ;
+	skos:prefLabel "Montenegro" .
+
+ismcatrelto:MNG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MNG" ;
+	skos:prefLabel "Mongolia" .
+
+ismcatrelto:MNP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MNP" ;
+	skos:prefLabel "Commonwealth of the Northern Mariana Islands" .
+
+ismcatrelto:MNTF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MNTF" ;
+	skos:prefLabel "Multinational Task Force" .
+
+ismcatrelto:MOZ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MOZ" ;
+	skos:prefLabel "Republic of Mozambique" .
+
+ismcatrelto:MPFL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MPFL" ;
+	skos:prefLabel "Multinational Peacekeeping Forces" .
+
+ismcatrelto:MRT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MRT" ;
+	skos:prefLabel "Islamic Republic of Mauritania" .
+
+ismcatrelto:MSR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MSR" ;
+	skos:prefLabel "Montserrat" .
+
+ismcatrelto:MTQ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MTQ" ;
+	skos:prefLabel "Territorial Collectivity of Martinique" .
+
+ismcatrelto:MUS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MUS" ;
+	skos:prefLabel "Republic of Mauritius" .
+
+ismcatrelto:MWI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MWI" ;
+	skos:prefLabel "Republic of Malawi" .
+
+ismcatrelto:MYS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MYS" ;
+	skos:prefLabel "Malaysia" .
+
+ismcatrelto:MYT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "MYT" ;
+	skos:prefLabel "Department of Mayotte" .
+
+ismcatrelto:NACT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NACT" ;
+	skos:prefLabel "North African Counter-Terrorism Forces" .
+
+ismcatrelto:NAM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NAM" ;
+	skos:prefLabel "Republic of Namibia" .
+
+ismcatrelto:NATO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NATO" ;
+	skos:prefLabel "North Atlantic Treaty Organization" .
+
+ismcatrelto:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:prefLabel "North Atlantic Treaty Organization Special Words" ;
+	sh:property [
+	] .
+
+ismcatrelto:NCFE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NCFE" ;
+	skos:prefLabel "NATO CFE Treaty on Conventional Armed Forces in Europe" .
+
+ismcatrelto:NCL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NCL" ;
+	skos:prefLabel "New Caledonia" .
+
+ismcatrelto:NER a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NER" ;
+	skos:prefLabel "Republic of Niger" .
+
+ismcatrelto:NFK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NFK" ;
+	skos:prefLabel "Territory of Norfolk Island" .
+
+ismcatrelto:NGA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NGA" ;
+	skos:prefLabel "Federal Republic of Nigeria" .
+
+ismcatrelto:NIC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NIC" ;
+	skos:prefLabel "Republic of Nicaragua" .
+
+ismcatrelto:NIU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NIU" ;
+	skos:prefLabel "Niue" .
+
+ismcatrelto:NKIC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NKIC" ;
+	skos:prefLabel "North Korea Intelligence Coalition" .
+
+ismcatrelto:NLD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NLD" ;
+	skos:prefLabel "Kingdom of the Netherlands" .
+
+ismcatrelto:NOR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NOR" ;
+	skos:prefLabel "Kingdom of Norway" .
+
+ismcatrelto:NPL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NPL" ;
+	skos:prefLabel "Federal Democratic Republic of Nepal" .
+
+ismcatrelto:NRDC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NRDC" ;
+	skos:prefLabel "NORDIC" .
+
+ismcatrelto:NRU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NRU" ;
+	skos:prefLabel "Republic of Nauru" .
+
+ismcatrelto:NSG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NSG" ;
+	skos:prefLabel "Nuclear Suppliers' Group" .
+
+ismcatrelto:NZL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "NZL" ;
+	skos:prefLabel "New Zealand" .
+
+ismcatrelto:OMN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "OMN" ;
+	skos:prefLabel "Sultanate of Oman" .
+
+ismcatrelto:OSAG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "OSAG" ;
+	skos:prefLabel "Olympic Security Advisory Group" .
+
+ismcatrelto:OSTY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "OSTY" ;
+	skos:prefLabel "Open Skies Treaty" .
+
+ismcatrelto:PAK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PAK" ;
+	skos:prefLabel "Islamic Republic of Pakistan" .
+
+ismcatrelto:PAN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PAN" ;
+	skos:prefLabel "Republic of Panama" .
+
+ismcatrelto:PAWA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PAWA" ;
+	skos:prefLabel "Partnership for Actions in West Africa" .
+
+ismcatrelto:PCN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PCN" ;
+	skos:prefLabel "Pitcairn, Henderson, Ducie, and Oeno Islands" .
+
+ismcatrelto:PER a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PER" ;
+	skos:prefLabel "Republic of Peru" .
+
+ismcatrelto:PGMF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PGMF" ;
+	skos:prefLabel "Persian Gulf Multinational Forces" .
+
+ismcatrelto:PHL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PHL" ;
+	skos:prefLabel "Republic of the Philippines" .
+
+ismcatrelto:PLW a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PLW" ;
+	skos:prefLabel "Republic of Palau" .
+
+ismcatrelto:PNG a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PNG" ;
+	skos:prefLabel "Independent State of Papua New Guinea" .
+
+ismcatrelto:POL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "POL" ;
+	skos:prefLabel "Republic of Poland" .
+
+ismcatrelto:PRI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PRI" ;
+	skos:prefLabel "Commonwealth of Puerto Rico" .
+
+ismcatrelto:PRK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PRK" ;
+	skos:prefLabel "Democratic People’s Republic of Korea" .
+
+ismcatrelto:PRT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PRT" ;
+	skos:prefLabel "Portuguese Republic" .
+
+ismcatrelto:PRY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PRY" ;
+	skos:prefLabel "Republic of Paraguay" .
+
+ismcatrelto:PSMX a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PSMX" ;
+	skos:prefLabel "Pacific Security Monitoring Exchange" .
+
+ismcatrelto:PYF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "PYF" ;
+	skos:prefLabel "French Polynesia" .
+
+ismcatrelto:QAT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "QAT" ;
+	skos:prefLabel "State of Qatar" .
+
+ismcatrelto:REU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "REU" ;
+	skos:prefLabel "Region of Reunion" .
+
+ismcatrelto:RISC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "RISC" ;
+	skos:prefLabel "Russia Intelligence Sharing Coalition" .
+
+ismcatrelto:ROU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ROU" ;
+	skos:prefLabel "Romania" .
+
+ismcatrelto:RSMA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "RSMA" ;
+	skos:prefLabel "Resolute Support Mission Afghanistan" .
+
+ismcatrelto:RUS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "RUS" ;
+	skos:prefLabel "Russian Federation" .
+
+ismcatrelto:RWA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "RWA" ;
+	skos:prefLabel "Republic of Rwanda" .
+
+ismcatrelto:SAU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SAU" ;
+	skos:prefLabel "Kingdom of Saudi Arabia" .
+
+ismcatrelto:SDN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SDN" ;
+	skos:prefLabel "Republic of the Sudan" .
+
+ismcatrelto:SEN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SEN" ;
+	skos:prefLabel "Republic of Senegal" .
+
+ismcatrelto:SFOR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SFOR" ;
+	skos:prefLabel "Stabilization Force" .
+
+ismcatrelto:SGP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SGP" ;
+	skos:prefLabel "Republic of Singapore" .
+
+ismcatrelto:SGS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SGS" ;
+	skos:prefLabel "South Georgia and the South Sandwich Islands" .
+
+ismcatrelto:SHN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SHN" ;
+	skos:prefLabel "Saint Helena, Ascension, and Tristan da Cunha" .
+
+ismcatrelto:SLB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SLB" ;
+	skos:prefLabel "Solomon Islands" .
+
+ismcatrelto:SLE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SLE" ;
+	skos:prefLabel "Republic of Sierra Leone" .
+
+ismcatrelto:SLV a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SLV" ;
+	skos:prefLabel "Republic of El Salvador" .
+
+ismcatrelto:SMR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SMR" ;
+	skos:prefLabel "Republic of San Marino" .
+
+ismcatrelto:SOFP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SOFP" ;
+	skos:prefLabel "Special Operations Forces Partners" .
+
+ismcatrelto:SOM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SOM" ;
+	skos:prefLabel "Federal Republic of Somalia" .
+
+ismcatrelto:SPAA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SPAA" ;
+	skos:prefLabel "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")" .
+
+ismcatrelto:SPM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SPM" ;
+	skos:prefLabel "Territorial Collectivity of Saint Pierre and Miquelon" .
+
+ismcatrelto:SRB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SRB" ;
+	skos:prefLabel "Republic of Serbia" .
+
+ismcatrelto:SSD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SSD" ;
+	skos:prefLabel "Republic of South Sudan" .
+
+ismcatrelto:STP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "STP" ;
+	skos:prefLabel "Democratic Republic of Sao Tome and Principe" .
+
+ismcatrelto:SUR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SUR" ;
+	skos:prefLabel "Republic of Suriname" .
+
+ismcatrelto:SVK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SVK" ;
+	skos:prefLabel "Slovak Republic" .
+
+ismcatrelto:SVN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SVN" ;
+	skos:prefLabel "Republic of Slovenia" .
+
+ismcatrelto:SWE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SWE" ;
+	skos:prefLabel "Kingdom of Sweden" .
+
+ismcatrelto:SWZ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SWZ" ;
+	skos:prefLabel "Kingdom of Eswatini" .
+
+ismcatrelto:SXM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SXM" ;
+	skos:prefLabel "Sint Maarten" .
+
+ismcatrelto:SYC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SYC" ;
+	skos:prefLabel "Republic of Seychelles" .
+
+ismcatrelto:SYR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "SYR" ;
+	skos:prefLabel "Syrian Arab Republic" .
+
+ismcatrelto:TCA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TCA" ;
+	skos:prefLabel "Turks and Caicos Islands" .
+
+ismcatrelto:TCD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TCD" ;
+	skos:prefLabel "Republic of Chad" .
+
+ismcatrelto:TEYE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TEYE" ;
+	skos:prefLabel "THREE EYES" .
+
+ismcatrelto:TFTC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TFTC" ;
+	skos:prefLabel "Terrorist Financing Targeting Center" .
+
+ismcatrelto:TGO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TGO" ;
+	skos:prefLabel "Togolese Republic" .
+
+ismcatrelto:THA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "THA" ;
+	skos:prefLabel "Kingdom of Thailand" .
+
+ismcatrelto:TJK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TJK" ;
+	skos:prefLabel "Republic of Tajikistan" .
+
+ismcatrelto:TKL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TKL" ;
+	skos:prefLabel "Tokelau" .
+
+ismcatrelto:TKM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TKM" ;
+	skos:prefLabel "Turkmenistan" .
+
+ismcatrelto:TLS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TLS" ;
+	skos:prefLabel "Democratic Republic of Timor-Leste" .
+
+ismcatrelto:TON a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TON" ;
+	skos:prefLabel "Kingdom of Tonga" .
+
+ismcatrelto:TTO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TTO" ;
+	skos:prefLabel "Republic of Trinidad and Tobago" .
+
+ismcatrelto:TUN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TUN" ;
+	skos:prefLabel "Republic of Tunisia" .
+
+ismcatrelto:TUR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TUR" ;
+	skos:prefLabel "Republic of Turkey" .
+
+ismcatrelto:TUV a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TUV" ;
+	skos:prefLabel "Tuvalu" .
+
+ismcatrelto:TWN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TWN" ;
+	skos:prefLabel "Taiwan" .
+
+ismcatrelto:TZA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "TZA" ;
+	skos:prefLabel "United Republic of Tanzania" .
+
+ismcatrelto:UGA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "UGA" ;
+	skos:prefLabel "Republic of Uganda" .
+
+ismcatrelto:UKR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "UKR" ;
+	skos:prefLabel "Ukraine" .
+
+ismcatrelto:UNCK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "UNCK" ;
+	skos:prefLabel "United Nations Command, Korea" .
+
+ismcatrelto:URY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "URY" ;
+	skos:prefLabel "Oriental Republic of Uruguay" .
+
+ismcatrelto:USA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "USA" ;
+	skos:prefLabel "United States of America" .
+
+ismcatrelto:UZB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "UZB" ;
+	skos:prefLabel "Republic of Uzbekistan" .
+
+ismcatrelto:VAT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "VAT" ;
+	skos:prefLabel "State of the Vatican City" .
+
+ismcatrelto:VCT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "VCT" ;
+	skos:prefLabel "Saint Vincent and the Grenadines" .
+
+ismcatrelto:VEN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "VEN" ;
+	skos:prefLabel "Bolivarian Republic of Venezuela" .
+
+ismcatrelto:VGB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "VGB" ;
+	skos:prefLabel "British Virgin Islands" .
+
+ismcatrelto:VIR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "VIR" ;
+	skos:prefLabel "United States Virgin Islands" .
+
+ismcatrelto:VNM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "VNM" ;
+	skos:prefLabel "Socialist Republic of Vietnam" .
+
+ismcatrelto:VUT a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "VUT" ;
+	skos:prefLabel "Republic of Vanuatu" .
+
+ismcatrelto:WLF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "WLF" ;
+	skos:prefLabel "Wallis and Futuna" .
+
+ismcatrelto:WSM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "WSM" ;
+	skos:prefLabel "Independent State of Samoa" .
+
+ismcatrelto:XAC a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XAC" ;
+	skos:prefLabel "Territory of Ashmore and Cartier Islands" .
+
+ismcatrelto:XAZ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XAZ" ;
+	skos:prefLabel "Entity 1" .
+
+ismcatrelto:XBI a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XBI" ;
+	skos:prefLabel "Bassas da India" .
+
+ismcatrelto:XBK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XBK" ;
+	skos:prefLabel "Baker Island" .
+
+ismcatrelto:XCR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XCR" ;
+	skos:prefLabel "Entity 2" .
+
+ismcatrelto:XCS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XCS" ;
+	skos:prefLabel "Coral Sea Islands Territory" .
+
+ismcatrelto:XCY a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XCY" ;
+	skos:prefLabel "Entity 3" .
+
+ismcatrelto:XEU a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XEU" ;
+	skos:prefLabel "Europa Island" .
+
+ismcatrelto:XGL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XGL" ;
+	skos:prefLabel "Glorioso Islands" .
+
+ismcatrelto:XGZ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XGZ" ;
+	skos:prefLabel "Gaza Strip" .
+
+ismcatrelto:XHO a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XHO" ;
+	skos:prefLabel "Howland Island" .
+
+ismcatrelto:XJA a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XJA" ;
+	skos:prefLabel "Johnston Atoll" .
+
+ismcatrelto:XJM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XJM" ;
+	skos:prefLabel "Jan Mayen" .
+
+ismcatrelto:XJN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XJN" ;
+	skos:prefLabel "Juan de Nova Island" .
+
+ismcatrelto:XJV a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XJV" ;
+	skos:prefLabel "Jarvis Island" .
+
+ismcatrelto:XKM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XKM" ;
+	skos:prefLabel "Entity 4" .
+
+ismcatrelto:XKN a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XKN" ;
+	skos:prefLabel "Entity 5" .
+
+ismcatrelto:XKR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XKR" ;
+	skos:prefLabel "Kingman Reef" .
+
+ismcatrelto:XKS a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XKS" ;
+	skos:prefLabel "Republic of Kosovo" .
+
+ismcatrelto:XMW a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XMW" ;
+	skos:prefLabel "Midway Islands" .
+
+ismcatrelto:XNV a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XNV" ;
+	skos:prefLabel "Navassa Island" .
+
+ismcatrelto:XPL a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XPL" ;
+	skos:prefLabel "Palmyra Atoll" .
+
+ismcatrelto:XPR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XPR" ;
+	skos:prefLabel "Paracel Islands" .
+
+ismcatrelto:XQZ a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XQZ" ;
+	skos:prefLabel "Akrotiri" .
+
+ismcatrelto:XSP a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XSP" ;
+	skos:prefLabel "Spratly Islands" .
+
+ismcatrelto:XSV a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XSV" ;
+	skos:prefLabel "Svalbard" .
+
+ismcatrelto:XTR a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XTR" ;
+	skos:prefLabel "Tromelin Island" .
+
+ismcatrelto:XWB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XWB" ;
+	skos:prefLabel "West Bank" .
+
+ismcatrelto:XWK a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XWK" ;
+	skos:prefLabel "Wake Island" .
+
+ismcatrelto:XXD a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "XXD" ;
+	skos:prefLabel "Dhekelia" .
+
+ismcatrelto:YEM a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "YEM" ;
+	skos:prefLabel "Republic of Yemen" .
+
+ismcatrelto:ZAF a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ZAF" ;
+	skos:prefLabel "Republic of South Africa" .
+
+ismcatrelto:ZMB a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ZMB" ;
+	skos:prefLabel "Republic of Zambia" .
+
+ismcatrelto:ZWE a skos:Concept ;
+	skos:inScheme ismcatrelto:CVEnumISMCATRelTo ;
+	skos:notation "ZWE" ;
+	skos:prefLabel "Republic of Zimbabwe" .
+

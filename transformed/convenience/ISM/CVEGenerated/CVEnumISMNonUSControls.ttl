@@ -1,49 +1,42 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismnonus: <urn:us:gov:ic:cvenum:ism:nonuscontrols#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix ismnonus: <urn:us:gov:ic:cvenum:ism:nonuscontrols#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<_:10> a rdfs:Datatype;
-  owl:oneOf ("NATO-ATOMAL" "NATO-BOHEMIA" "NATO-BALK").
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNonUSControls> a owl:Ontology .
 
-<_:2> a rdf:List;
-  rdf:first "NATO-BALK";
-  rdf:rest rdf:nil.
+ismnonus:CVEnumISMNonUSControls a skos:ConceptScheme ;
+	dc:title "(U) ismnonus:CVEnumISMNonUSControls definition" ;
+	skos:hasTopConcept ismnonus:NATO-ATOMAL ;
+	skos:hasTopConcept ismnonus:NATO-BOHEMIA ;
+	skos:hasTopConcept ismnonus:NATO-BALK .
 
-<_:7> a rdf:List;
-  rdf:first "NATO-BOHEMIA";
-  rdf:rest <_:2>.
+ismnonus:CVEnumISMNonUSControlsValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"NATO-ATOMAL"
+			"NATO-BOHEMIA"
+			"NATO-BALK"
+		) ;
+	] .
 
-<_:8> a rdf:List;
-  rdf:first "NATO-ATOMAL";
-  rdf:rest <_:7>.
+ismnonus:NATO-ATOMAL a skos:Concept ;
+	skos:inScheme ismnonus:CVEnumISMNonUSControls ;
+	skos:notation "NATO-ATOMAL" ;
+	skos:prefLabel "NATO Atomal mark" .
 
-ismnonus:CVEnumISMNonUSControls a skos:ConceptScheme;
-  dc:title "(U) ismnonus:CVEnumISMNonUSControls definition";
-  skos:hasTopConcept
-    ismnonus:NATO-ATOMAL,
-    ismnonus:NATO-BALK,
-    ismnonus:NATO-BOHEMIA.
+ismnonus:NATO-BALK a skos:Concept ;
+	skos:inScheme ismnonus:CVEnumISMNonUSControls ;
+	skos:notation "NATO-BALK" ;
+	skos:prefLabel "NATO Balk mark" .
 
-ismnonus:CVEnumISMNonUSControlsValues a rdfs:Datatype;
-  owl:equivalentClass <_:10>.
+ismnonus:NATO-BOHEMIA a skos:Concept ;
+	skos:inScheme ismnonus:CVEnumISMNonUSControls ;
+	skos:notation "NATO-BOHEMIA" ;
+	skos:prefLabel "NATO Bohemia mark" .
 
-ismnonus:NATO-ATOMAL a skos:Concept;
-  skos:inScheme ismnonus:CVEnumISMNonUSControls;
-  skos:notation "NATO-ATOMAL";
-  skos:prefLabel "NATO Atomal mark".
-
-ismnonus:NATO-BALK a skos:Concept;
-  skos:inScheme ismnonus:CVEnumISMNonUSControls;
-  skos:notation "NATO-BALK";
-  skos:prefLabel "NATO Balk mark".
-
-ismnonus:NATO-BOHEMIA a skos:Concept;
-  skos:inScheme ismnonus:CVEnumISMNonUSControls;
-  skos:notation "NATO-BOHEMIA";
-  skos:prefLabel "NATO Bohemia mark".
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNonUSControls> a owl:Ontology;
-.

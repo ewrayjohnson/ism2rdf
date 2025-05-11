@@ -1,3440 +1,2415 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismcatownpro: <urn:us:gov:ic:cvenum:ismcat:ownerproducer#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix sh: <http://www.w3.org/ns/shacl#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-
-<_:0> a rdf:List;
-  rdf:first "AIA";
-  rdf:rest <_:29>.
-
-<_:1>
-  sh:path skos:notation;
-  sh:pattern "NATO:[a-zA-Z\\-_]{1,256}".
-
-<_:10> a rdf:List;
-  rdf:first "AGO";
-  rdf:rest <_:0>.
-
-<_:100> a rdf:List;
-  rdf:first "CZE";
-  rdf:rest <_:271>.
-
-<_:1000> a rdf:List;
-  rdf:first "SMR";
-  rdf:rest <_:863>.
-
-<_:103> a rdf:List;
-  rdf:first "MNG";
-  rdf:rest <_:804>.
-
-<_:11> a rdf:List;
-  rdf:first "BIH";
-  rdf:rest <_:72>.
-
-<_:110> a rdf:List;
-  rdf:first "CFOD";
-  rdf:rest <_:188>.
-
-<_:114> a rdf:List;
-  rdf:first "IDN";
-  rdf:rest <_:20>.
-
-<_:116> a rdf:List;
-  rdf:first "GRD";
-  rdf:rest <_:866>.
-
-<_:117> a rdf:List;
-  rdf:first "TON";
-  rdf:rest <_:233>.
-
-<_:12> a rdf:List;
-  rdf:first "GEO";
-  rdf:rest <_:694>.
-
-<_:120> a rdf:List;
-  rdf:first "ZAF";
-  rdf:rest <_:714>.
-
-<_:122> a rdf:List;
-  rdf:first "PYF";
-  rdf:rest <_:404>.
-
-<_:126> a rdf:List;
-  rdf:first "XKS";
-  rdf:rest <_:181>.
-
-<_:129> a rdf:List;
-  rdf:first "ZWE";
-  rdf:rest <_:353>.
-
-<_:13> a rdf:List;
-  rdf:first "NPL";
-  rdf:rest <_:566>.
-
-<_:130> a rdf:List;
-  rdf:first "FRME";
-  rdf:rest <_:935>.
-
-<_:139> a rdf:List;
-  rdf:first "ISSG";
-  rdf:rest <_:179>.
-
-<_:14> a rdf:List;
-  rdf:first "GUF";
-  rdf:rest <_:723>.
-
-<_:144> a rdf:List;
-  rdf:first "SAU";
-  rdf:rest <_:330>.
-
-<_:146> a rdf:List;
-  rdf:first "MMR";
-  rdf:rest <_:345>.
-
-<_:15> a rdf:List;
-  rdf:first "BMU";
-  rdf:rest <_:27>.
-
-<_:155> a rdf:List;
-  rdf:first "LKA";
-  rdf:rest <_:682>.
-
-<_:158> a rdf:List;
-  rdf:first "SSD";
-  rdf:rest <_:653>.
-
-<_:16> a rdf:List;
-  rdf:first "MLI";
-  rdf:rest <_:351>.
-
-<_:166> a rdf:List;
-  rdf:first "ISL";
-  rdf:rest <_:502>.
-
-<_:17> a rdf:List;
-  rdf:first "ATG";
-  rdf:rest <_:86>.
-
-<_:172> a rdf:List;
-  rdf:first "XAC";
-  rdf:rest <_:960>.
-
-<_:173> a rdf:List;
-  rdf:first "NSG";
-  rdf:rest <_:969>.
-
-<_:179> a rdf:List;
-  rdf:first "KFOR";
-  rdf:rest <_:707>.
-
-<_:18> a rdf:List;
-  rdf:first "EGY";
-  rdf:rest <_:64>.
-
-<_:180> a rdf:List;
-  rdf:first "GCCH";
-  rdf:rest <_:183>.
-
-<_:181> a rdf:List;
-  rdf:first "XMW";
-  rdf:rest <_:921>.
-
-<_:182> a rdf:List;
-  rdf:first "NAM";
-  rdf:rest <_:346>.
-
-<_:183> a rdf:List;
-  rdf:first "GCTF";
-  rdf:rest <_:574>.
-
-<_:184> a rdf:List;
-  rdf:first "KHM";
-  rdf:rest <_:889>.
-
-<_:188> a rdf:List;
-  rdf:first "CFUP";
-  rdf:rest <_:469>.
-
-<_:189> a rdf:List;
-  rdf:first "WLF";
-  rdf:rest <_:600>.
-
-<_:19> a rdf:List;
-  rdf:first "DZA";
-  rdf:rest <_:58>.
-
-<_:190> a rdf:List;
-  rdf:first "XPL";
-  rdf:rest <_:713>.
-
-<_:191> a rdf:List;
-  rdf:first "XBK";
-  rdf:rest <_:937>.
-
-<_:197> a rdf:List;
-  rdf:first "CMFC";
-  rdf:rest <_:211>.
-
-<_:199> a rdf:List;
-  rdf:first "TJK";
-  rdf:rest <_:794>.
-
-<_:2> a rdf:List;
-  rdf:first "AND";
-  rdf:rest <_:25>.
-
-<_:20> a rdf:List;
-  rdf:first "IMN";
-  rdf:rest <_:98>.
-
-<_:204> a rdf:List;
-  rdf:first "UKR";
-  rdf:rest <_:446>.
-
-<_:21> a rdf:List;
-  rdf:first "AX3";
-  rdf:rest <_:9>.
-
-<_:211> a rdf:List;
-  rdf:first "CMFP";
-  rdf:rest <_:614>.
-
-<_:215> a rdf:List;
-  rdf:first "SLV";
-  rdf:rest <_:1000>.
-
-<_:219> a rdf:List;
-  rdf:first "LBY";
-  rdf:rest <_:391>.
-
-<_:22> a rdf:List;
-  rdf:first "BTN";
-  rdf:rest <_:55>.
-
-<_:220> a rdf:List;
-  rdf:first "GAB";
-  rdf:rest <_:60>.
-
-<_:23> a rdf:List;
-  rdf:first "CAF";
-  rdf:rest <_:84>.
-
-<_:233> a rdf:List;
-  rdf:first "TTO";
-  rdf:rest <_:674>.
-
-<_:234> a rdf:List;
-  rdf:first "XSP";
-  rdf:rest <_:436>.
-
-<_:236> a rdf:List;
-  rdf:first "SWE";
-  rdf:rest <_:721>.
-
-<_:24> a rdf:List;
-  rdf:first "CYP";
-  rdf:rest <_:100>.
-
-<_:243> a rdf:List;
-  rdf:first "ASEA";
-  rdf:rest <_:836>.
-
-<_:244> a rdf:List;
-  rdf:first "TGO";
-  rdf:rest <_:747>.
-
-<_:246> a rdf:List;
-  rdf:first "PSMX";
-  rdf:rest <_:420>.
-
-<_:247> a rdf:List;
-  rdf:first "NACT";
-  rdf:rest <_:576>.
-
-<_:248> a rdf:List;
-  rdf:first "HRV";
-  rdf:rest <_:37>.
-
-<_:25> a rdf:List;
-  rdf:first "ARE";
-  rdf:rest <_:77>.
-
-<_:252> a rdf:List;
-  rdf:first "SLE";
-  rdf:rest <_:215>.
-
-<_:254> a rdf:List;
-  rdf:first "VCT";
-  rdf:rest <_:928>.
-
-<_:255> a rdf:List;
-  rdf:first "VUT";
-  rdf:rest <_:189>.
-
-<_:257> a rdf:List;
-  rdf:first "UZB";
-  rdf:rest <_:515>.
-
-<_:258> a rdf:List;
-  rdf:first "IESC";
-  rdf:rest <_:8412>.
-
-<_:26> a rdf:List;
-  rdf:first "GHA";
-  rdf:rest <_:594>.
-
-<_:263> a rdf:List;
-  rdf:first "TCD";
-  rdf:rest <_:244>.
-
-<_:265> a rdf:List;
-  rdf:first "NGA";
-  rdf:rest <_:307>.
-
-<_:266> a rdf:List;
-  rdf:first "JAM";
-  rdf:rest <_:701>.
-
-<_:27> a rdf:List;
-  rdf:first "BOL";
-  rdf:rest <_:49>.
-
-<_:271> a rdf:List;
-  rdf:first "DEU";
-  rdf:rest <_:91>.
-
-<_:272> a rdf:List;
-  rdf:first "XKN";
-  rdf:rest <_:421>.
-
-<_:274> a rdf:List;
-  rdf:first "SVN";
-  rdf:rest <_:236>.
-
-<_:276> a rdf:List;
-  rdf:first "NER";
-  rdf:rest <_:764>.
-
-<_:278> a rdf:List;
-  rdf:first "XGL";
-  rdf:rest <_:543>.
-
-<_:28> a rdf:List;
-  rdf:first "BLR";
-  rdf:rest <_:81>.
-
-<_:281> a rdf:List;
-  rdf:first "ESH";
-  rdf:rest <_:781>.
-
-<_:29> a rdf:List;
-  rdf:first "ALB";
-  rdf:rest <_:2>.
-
-<_:295> a rdf:List;
-  rdf:first "MGEU";
-  rdf:rest <_:913>.
-
-<_:297> a rdf:List;
-  rdf:first "MYT";
-  rdf:rest <_:182>.
-
-<_:3> a rdf:List;
-  rdf:first "FGI";
-  rdf:rest <_:4>.
-
-<_:30> a rdf:List;
-  rdf:first "ETH";
-  rdf:rest <_:54>.
-
-<_:304> a rdf:List;
-  rdf:first "ISAF";
-  rdf:rest <_:139>.
-
-<_:307> a rdf:List;
-  rdf:first "NIC";
-  rdf:rest <_:660>.
-
-<_:31> a rdf:List;
-  rdf:first "DNK";
-  rdf:rest <_:920>.
-
-<_:311> a rdf:List;
-  rdf:first "EU";
-  rdf:rest <_:943>.
-
-<_:32> a rdf:List;
-  rdf:first "MHL";
-  rdf:rest <_:48>.
-
-<_:328> a rdf:List;
-  rdf:first "XKM";
-  rdf:rest <_:272>.
-
-<_:33> a rdf:List;
-  rdf:first "FSM";
-  rdf:rest <_:220>.
-
-<_:330> a rdf:List;
-  rdf:first "SDN";
-  rdf:rest <_:871>.
-
-<_:331> a rdf:List;
-  rdf:first "MOZ";
-  rdf:rest <_:461>.
-
-<_:34> a rdf:List;
-  rdf:first "BFA";
-  rdf:rest <_:53>.
-
-<_:345> a rdf:List;
-  rdf:first "MNE";
-  rdf:rest <_:103>.
-
-<_:346> a rdf:List;
-  rdf:first "NCL";
-  rdf:rest <_:276>.
-
-<_:35> a rdf:List;
-  rdf:first "GNB";
-  rdf:rest <_:358>.
-
-<_:351> a rdf:List;
-  rdf:first "MLT";
-  rdf:rest <_:146>.
-
-<_:352> a rdf:List;
-  rdf:first "TCA";
-  rdf:rest <_:263>.
-
-<_:353> a rdf:List;
-  rdf:first "ACGU";
-  rdf:rest <_:903>.
-
-<_:357> a rdf:List;
-  rdf:first "IRKS";
-  rdf:rest <_:304>.
-
-<_:358> a rdf:List;
-  rdf:first "GNQ";
-  rdf:rest <_:740>.
-
-<_:36> a rdf:List;
-  rdf:first "FLK";
-  rdf:rest <_:540>.
-
-<_:37> a rdf:List;
-  rdf:first "HTI";
-  rdf:rest <_:443>.
-
-<_:377> a rdf:List;
-  rdf:first "XWK";
-  rdf:rest <_:776>.
-
-<_:38> a rdf:List;
-  rdf:first "GTM";
-  rdf:rest <_:14>.
-
-<_:383> a rdf:List;
-  rdf:first "GIN";
-  rdf:rest <_:66>.
-
-<_:39> a rdf:List;
-  rdf:first "BDI";
-  rdf:rest <_:8>.
-
-<_:390> a rdf:List;
-  rdf:first "MWI";
-  rdf:rest <_:923>.
-
-<_:391> a rdf:List;
-  rdf:first "LCA";
-  rdf:rest <_:938>.
-
-<_:397> a rdf:List;
-  rdf:first "MNTF";
-  rdf:rest <_:883>.
-
-<_:4> a rdf:List;
-  rdf:first "ABW";
-  rdf:rest <_:71>.
-
-<_:40> a rdf:List;
-  rdf:first "EST";
-  rdf:rest <_:30>.
-
-<_:401> a rdf:List;
-  rdf:first "HKG";
-  rdf:rest <_:83>.
-
-<_:402> a rdf:List;
-  rdf:first "SXM";
-  rdf:rest <_:945>.
-
-<_:404> a rdf:List;
-  rdf:first "QAT";
-  rdf:rest <_:948>.
-
-<_:405> a rdf:List;
-  rdf:first "LAO";
-  rdf:rest <_:634>.
-
-<_:409> a rdf:List;
-  rdf:first "VGB";
-  rdf:rest <_:811>.
-
-<_:41> a rdf:List;
-  rdf:first "CCK";
-  rdf:rest <_:95>.
-
-<_:412> a rdf:List;
-  rdf:first "MAR";
-  rdf:rest <_:905>.
-
-<_:418> a rdf:List;
-  rdf:first "GMIF";
-  rdf:rest <_:258>.
-
-<_:419> a rdf:List;
-  rdf:first "PAK";
-  rdf:rest <_:506>.
-
-<_:42> a rdf:List;
-  rdf:first "LBR";
-  rdf:rest <_:219>.
-
-<_:420> a rdf:List;
-  rdf:first "RISC";
-  rdf:rest <_:999>.
-
-<_:421> a rdf:List;
-  rdf:first "XKR";
-  rdf:rest <_:126>.
-
-<_:424> a rdf:List;
-  rdf:first "PLW";
-  rdf:rest <_:826>.
-
-<_:425> a rdf:List;
-  rdf:first "IRQ";
-  rdf:rest <_:166>.
-
-<_:43> a rdf:List;
-  rdf:first "AX2";
-  rdf:rest <_:21>.
-
-<_:432> a rdf:List;
-  rdf:first "SVK";
-  rdf:rest <_:274>.
-
-<_:436> a rdf:List;
-  rdf:first "XSV";
-  rdf:rest <_:439>.
-
-<_:439> a rdf:List;
-  rdf:first "XTR";
-  rdf:rest <_:851>.
-
-<_:44> a rdf:List;
-  rdf:first "BEN";
-  rdf:rest <_:62>.
-
-<_:443> a rdf:List;
-  rdf:first "HUN";
-  rdf:rest <_:114>.
-
-<_:446> a rdf:List;
-  rdf:first "URY";
-  rdf:rest <_:885>.
-
-<_:45> a rdf:List;
-  rdf:first "KOR";
-  rdf:rest <_:563>.
-
-<_:450> a rdf:List;
-  rdf:first "TZA";
-  rdf:rest <_:730>.
-
-<_:451> a rdf:List;
-  rdf:first "NKIC";
-  rdf:rest <_:984>.
-
-<_:457> a rdf:List;
-  rdf:first "APFS";
-  rdf:rest <_:243>.
-
-<_:458> a rdf:List;
-  rdf:first "DMA";
-  rdf:rest <_:31>.
-
-<_:46> a rdf:List;
-  rdf:first "IOT";
-  rdf:rest <_:61>.
-
-<_:461> a rdf:List;
-  rdf:first "MRT";
-  rdf:rest <_:602>.
-
-<_:464> a rdf:List;
-  rdf:first "MEX";
-  rdf:rest <_:32>.
-
-<_:467> a rdf:List;
-  rdf:first "MUS";
-  rdf:rest <_:390>.
-
-<_:469> a rdf:List;
-  rdf:first "CLFC";
-  rdf:rest <_:197>.
-
-<_:47> a rdf:List;
-  rdf:first "CIV";
-  rdf:rest <_:93>.
-
-<_:471> a rdf:List;
-  rdf:first "RUS";
-  rdf:rest <_:692>.
-
-<_:48> a rdf:List;
-  rdf:first "MKD";
-  rdf:rest <_:16>.
-
-<_:486> a rdf:List;
-  rdf:first "PGMF";
-  rdf:rest <_:246>.
-
-<_:489> a rdf:List;
-  rdf:first "NLD";
-  rdf:rest <_:68>.
-
-<_:49> a rdf:List;
-  rdf:first "BRA";
-  rdf:rest <_:88>.
-
-<_:499> a rdf:List;
-  rdf:first "MESF";
-  rdf:rest <_:295>.
-
-<_:5> a rdf:List;
-  rdf:first "ATF";
-  rdf:rest <_:17>.
-
-<_:50> a rdf:List;
-  rdf:first "CUW";
-  rdf:rest <_:575>.
-
-<_:502> a rdf:List;
-  rdf:first "ISR";
-  rdf:rest <_:624>.
-
-<_:504> a rdf:List;
-  rdf:first "SLB";
-  rdf:rest <_:252>.
-
-<_:505> a rdf:List;
-  rdf:first "SHN";
-  rdf:rest <_:504>.
-
-<_:506> a rdf:List;
-  rdf:first "PAN";
-  rdf:rest <_:900>.
-
-<_:51> a rdf:List;
-  rdf:first "CHN";
-  rdf:rest <_:47>.
-
-<_:513> a rdf:List;
-  rdf:first "MLEC";
-  rdf:rest <_:397>.
-
-<_:514> a rdf:List;
-  rdf:first "GMB";
-  rdf:rest <_:35>.
-
-<_:515> a rdf:List;
-  rdf:first "VAT";
-  rdf:rest <_:254>.
-
-<_:517> a rdf:List;
-  rdf:first "PRY";
-  rdf:rest <_:122>.
-
-<_:52> a rdf:List;
-  rdf:first "CYM";
-  rdf:rest <_:24>.
+@prefix ismcatownpro: <urn:us:gov:ic:cvenum:ismcat:ownerproducer#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATOwnerProducer> a owl:Ontology .
+
+ismcatownpro:ABW a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ABW" ;
+	skos:prefLabel "Aruba" .
+
+ismcatownpro:ACGU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ACGU" ;
+	skos:prefLabel "FOUR EYES" .
+
+ismcatownpro:AFG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AFG" ;
+	skos:prefLabel "Islamic Republic of Afghanistan" .
+
+ismcatownpro:AGO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AGO" ;
+	skos:prefLabel "Republic of Angola" .
+
+ismcatownpro:AIA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AIA" ;
+	skos:prefLabel "Anguilla" .
+
+ismcatownpro:ALB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ALB" ;
+	skos:prefLabel "Republic of Albania" .
+
+ismcatownpro:AMSP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AMSP" ;
+	skos:prefLabel "AFRICOM Multinational Strategic Partners" .
+
+ismcatownpro:AND a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AND" ;
+	skos:prefLabel "Principality of Andorra" .
+
+ismcatownpro:AOSC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AOSC" ;
+	skos:prefLabel "Athens Olympics Security Coalition" .
+
+ismcatownpro:APFS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "APFS" ;
+	skos:prefLabel "African Peacekeeping Force Somalia" .
+
+ismcatownpro:ARE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ARE" ;
+	skos:prefLabel "United Arab Emirates" .
+
+ismcatownpro:ARG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ARG" ;
+	skos:prefLabel "Argentine Republic" .
+
+ismcatownpro:ARM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ARM" ;
+	skos:prefLabel "Republic of Armenia" .
+
+ismcatownpro:ASEA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ASEA" ;
+	skos:prefLabel "Association of Southeast Asian Nations (ASEAN)" .
+
+ismcatownpro:ASM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ASM" ;
+	skos:prefLabel "Territory of American Samoa" .
+
+ismcatownpro:ATA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ATA" ;
+	skos:prefLabel "Antarctica" .
+
+ismcatownpro:ATF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ATF" ;
+	skos:prefLabel "French Southern and Antarctic Lands" .
+
+ismcatownpro:ATG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ATG" ;
+	skos:prefLabel "Antigua and Barbuda" .
+
+ismcatownpro:AUS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AUS" ;
+	skos:prefLabel "Commonwealth of Australia" .
+
+ismcatownpro:AUSTRALIA_GROUP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AUSTRALIA_GROUP" ;
+	skos:prefLabel "Australia Group" .
+
+ismcatownpro:AUT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AUT" ;
+	skos:prefLabel "Republic of Austria" .
+
+ismcatownpro:AX2 a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AX2" ;
+	skos:prefLabel "Guantanamo Bay Naval Base" .
+
+ismcatownpro:AX3 a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AX3" ;
+	skos:prefLabel "Entity 6" .
+
+ismcatownpro:AZE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "AZE" ;
+	skos:prefLabel "Republic of Azerbaijan" .
+
+ismcatownpro:BDI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BDI" ;
+	skos:prefLabel "Republic of Burundi" .
+
+ismcatownpro:BEL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BEL" ;
+	skos:prefLabel "Kingdom of Belgium" .
+
+ismcatownpro:BEN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BEN" ;
+	skos:prefLabel "Republic of Benin" .
+
+ismcatownpro:BES a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BES" ;
+	skos:prefLabel "Bonaire, Sint Eustatius, and Saba" .
+
+ismcatownpro:BFA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BFA" ;
+	skos:prefLabel "Burkina Faso" .
+
+ismcatownpro:BGD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BGD" ;
+	skos:prefLabel "People’s Republic of Bangladesh" .
+
+ismcatownpro:BGR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BGR" ;
+	skos:prefLabel "Republic of Bulgaria" .
+
+ismcatownpro:BHR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BHR" ;
+	skos:prefLabel "Kingdom of Bahrain" .
+
+ismcatownpro:BHS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BHS" ;
+	skos:prefLabel "Commonwealth of The Bahamas" .
+
+ismcatownpro:BHTF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BHTF" ;
+	skos:prefLabel "Boko Haram Task Force" .
+
+ismcatownpro:BIH a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BIH" ;
+	skos:prefLabel "Bosnia and Herzegovina" .
+
+ismcatownpro:BLM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BLM" ;
+	skos:prefLabel "Saint Barthelemy" .
+
+ismcatownpro:BLR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BLR" ;
+	skos:prefLabel "Republic of Belarus" .
+
+ismcatownpro:BLZ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BLZ" ;
+	skos:prefLabel "Belize" .
+
+ismcatownpro:BMU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BMU" ;
+	skos:prefLabel "Bermuda" .
+
+ismcatownpro:BOL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BOL" ;
+	skos:prefLabel "Plurinational State of Bolivia" .
+
+ismcatownpro:BRA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BRA" ;
+	skos:prefLabel "Federative Republic of Brazil" .
+
+ismcatownpro:BRB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BRB" ;
+	skos:prefLabel "Barbados" .
+
+ismcatownpro:BRN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BRN" ;
+	skos:prefLabel "Brunei Darussalam" .
+
+ismcatownpro:BTN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BTN" ;
+	skos:prefLabel "Kingdom of Bhutan" .
+
+ismcatownpro:BVT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BVT" ;
+	skos:prefLabel "Bouvet Island" .
+
+ismcatownpro:BWA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BWA" ;
+	skos:prefLabel "Republic of Botswana" .
+
+ismcatownpro:BWCS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "BWCS" ;
+	skos:prefLabel "Biological Weapons Convention States" .
+
+ismcatownpro:CAF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CAF" ;
+	skos:prefLabel "Central African Republic" .
+
+ismcatownpro:CAN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CAN" ;
+	skos:prefLabel "Canada" .
+
+ismcatownpro:CCK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CCK" ;
+	skos:prefLabel "Territory of Cocos (Keeling) Islands" .
+
+ismcatownpro:CFCK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CFCK" ;
+	skos:prefLabel "Combined Forces Command Korea" .
+
+ismcatownpro:CFOD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CFOD" ;
+	skos:prefLabel "Coalition Forces Odyssey Dawn" .
+
+ismcatownpro:CFUP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CFUP" ;
+	skos:prefLabel "Coalition Forces Unified Protector" .
+
+ismcatownpro:CHE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CHE" ;
+	skos:prefLabel "Swiss Confederation" .
+
+ismcatownpro:CHL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CHL" ;
+	skos:prefLabel "Republic of Chile" .
+
+ismcatownpro:CHN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CHN" ;
+	skos:prefLabel "People’s Republic of China" .
+
+ismcatownpro:CIV a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CIV" ;
+	skos:prefLabel "Republic of Côte d’Ivoire" .
+
+ismcatownpro:CLFC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CLFC" ;
+	skos:prefLabel "Combined Libya Fusion Cell" .
+
+ismcatownpro:CMFC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CMFC" ;
+	skos:prefLabel "Combined Maritime Forces Central" .
+
+ismcatownpro:CMFP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CMFP" ;
+	skos:prefLabel "Cooperative Maritime Forces Pacific" .
+
+ismcatownpro:CMR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CMR" ;
+	skos:prefLabel "Republic of Cameroon" .
+
+ismcatownpro:COD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "COD" ;
+	skos:prefLabel "Democratic Republic of the Congo" .
+
+ismcatownpro:COG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "COG" ;
+	skos:prefLabel "Republic of the Congo" .
+
+ismcatownpro:COK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "COK" ;
+	skos:prefLabel "Cook Islands" .
+
+ismcatownpro:COL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "COL" ;
+	skos:prefLabel "Republic of Colombia" .
+
+ismcatownpro:COM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "COM" ;
+	skos:prefLabel "Union of the Comoros" .
+
+ismcatownpro:CPMT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CPMT" ;
+	skos:prefLabel "Civilian Protection Monitoring Team for Sudan" .
+
+ismcatownpro:CPT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CPT" ;
+	skos:prefLabel "Clipperton Island" .
+
+ismcatownpro:CPV a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CPV" ;
+	skos:prefLabel "Republic of Cabo Verde" .
+
+ismcatownpro:CRI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CRI" ;
+	skos:prefLabel "Republic of Costa Rica" .
+
+ismcatownpro:CTOC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CTOC" ;
+	skos:prefLabel "Countering Transnational Organized Crime" .
+
+ismcatownpro:CUB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CUB" ;
+	skos:prefLabel "Republic of Cuba" .
+
+ismcatownpro:CUW a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CUW" ;
+	skos:prefLabel "Curaçao" .
+
+ismcatownpro:CVEnumISMCATOwnerProducer a skos:ConceptScheme ;
+	dc:title "(U) ismcatownpro:CVEnumISMCATOwnerProducer definition" ;
+	skos:hasTopConcept ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D ;
+	skos:hasTopConcept ismcatownpro:FGI ;
+	skos:hasTopConcept ismcatownpro:ABW ;
+	skos:hasTopConcept ismcatownpro:AFG ;
+	skos:hasTopConcept ismcatownpro:AGO ;
+	skos:hasTopConcept ismcatownpro:AIA ;
+	skos:hasTopConcept ismcatownpro:ALB ;
+	skos:hasTopConcept ismcatownpro:AND ;
+	skos:hasTopConcept ismcatownpro:ARE ;
+	skos:hasTopConcept ismcatownpro:ARG ;
+	skos:hasTopConcept ismcatownpro:ARM ;
+	skos:hasTopConcept ismcatownpro:ASM ;
+	skos:hasTopConcept ismcatownpro:ATA ;
+	skos:hasTopConcept ismcatownpro:ATF ;
+	skos:hasTopConcept ismcatownpro:ATG ;
+	skos:hasTopConcept ismcatownpro:AUS ;
+	skos:hasTopConcept ismcatownpro:AUT ;
+	skos:hasTopConcept ismcatownpro:AX2 ;
+	skos:hasTopConcept ismcatownpro:AX3 ;
+	skos:hasTopConcept ismcatownpro:AZE ;
+	skos:hasTopConcept ismcatownpro:BDI ;
+	skos:hasTopConcept ismcatownpro:BEL ;
+	skos:hasTopConcept ismcatownpro:BEN ;
+	skos:hasTopConcept ismcatownpro:BES ;
+	skos:hasTopConcept ismcatownpro:BFA ;
+	skos:hasTopConcept ismcatownpro:BGD ;
+	skos:hasTopConcept ismcatownpro:BGR ;
+	skos:hasTopConcept ismcatownpro:BHR ;
+	skos:hasTopConcept ismcatownpro:BHS ;
+	skos:hasTopConcept ismcatownpro:BIH ;
+	skos:hasTopConcept ismcatownpro:BLM ;
+	skos:hasTopConcept ismcatownpro:BLR ;
+	skos:hasTopConcept ismcatownpro:BLZ ;
+	skos:hasTopConcept ismcatownpro:BMU ;
+	skos:hasTopConcept ismcatownpro:BOL ;
+	skos:hasTopConcept ismcatownpro:BRA ;
+	skos:hasTopConcept ismcatownpro:BRB ;
+	skos:hasTopConcept ismcatownpro:BRN ;
+	skos:hasTopConcept ismcatownpro:BTN ;
+	skos:hasTopConcept ismcatownpro:BVT ;
+	skos:hasTopConcept ismcatownpro:BWA ;
+	skos:hasTopConcept ismcatownpro:CAF ;
+	skos:hasTopConcept ismcatownpro:CAN ;
+	skos:hasTopConcept ismcatownpro:CCK ;
+	skos:hasTopConcept ismcatownpro:CHE ;
+	skos:hasTopConcept ismcatownpro:CHL ;
+	skos:hasTopConcept ismcatownpro:CHN ;
+	skos:hasTopConcept ismcatownpro:CIV ;
+	skos:hasTopConcept ismcatownpro:CMR ;
+	skos:hasTopConcept ismcatownpro:COD ;
+	skos:hasTopConcept ismcatownpro:COG ;
+	skos:hasTopConcept ismcatownpro:COK ;
+	skos:hasTopConcept ismcatownpro:COL ;
+	skos:hasTopConcept ismcatownpro:COM ;
+	skos:hasTopConcept ismcatownpro:CPT ;
+	skos:hasTopConcept ismcatownpro:CPV ;
+	skos:hasTopConcept ismcatownpro:CRI ;
+	skos:hasTopConcept ismcatownpro:CUB ;
+	skos:hasTopConcept ismcatownpro:CUW ;
+	skos:hasTopConcept ismcatownpro:CXR ;
+	skos:hasTopConcept ismcatownpro:CYM ;
+	skos:hasTopConcept ismcatownpro:CYP ;
+	skos:hasTopConcept ismcatownpro:CZE ;
+	skos:hasTopConcept ismcatownpro:DEU ;
+	skos:hasTopConcept ismcatownpro:DGA ;
+	skos:hasTopConcept ismcatownpro:DJI ;
+	skos:hasTopConcept ismcatownpro:DMA ;
+	skos:hasTopConcept ismcatownpro:DNK ;
+	skos:hasTopConcept ismcatownpro:DOM ;
+	skos:hasTopConcept ismcatownpro:DZA ;
+	skos:hasTopConcept ismcatownpro:ECU ;
+	skos:hasTopConcept ismcatownpro:EGY ;
+	skos:hasTopConcept ismcatownpro:ERI ;
+	skos:hasTopConcept ismcatownpro:ESH ;
+	skos:hasTopConcept ismcatownpro:ESP ;
+	skos:hasTopConcept ismcatownpro:EST ;
+	skos:hasTopConcept ismcatownpro:ETH ;
+	skos:hasTopConcept ismcatownpro:FIN ;
+	skos:hasTopConcept ismcatownpro:FJI ;
+	skos:hasTopConcept ismcatownpro:FLK ;
+	skos:hasTopConcept ismcatownpro:FRA ;
+	skos:hasTopConcept ismcatownpro:FRO ;
+	skos:hasTopConcept ismcatownpro:FSM ;
+	skos:hasTopConcept ismcatownpro:GAB ;
+	skos:hasTopConcept ismcatownpro:GBR ;
+	skos:hasTopConcept ismcatownpro:GEO ;
+	skos:hasTopConcept ismcatownpro:GGY ;
+	skos:hasTopConcept ismcatownpro:GHA ;
+	skos:hasTopConcept ismcatownpro:GIB ;
+	skos:hasTopConcept ismcatownpro:GIN ;
+	skos:hasTopConcept ismcatownpro:GLP ;
+	skos:hasTopConcept ismcatownpro:GMB ;
+	skos:hasTopConcept ismcatownpro:GNB ;
+	skos:hasTopConcept ismcatownpro:GNQ ;
+	skos:hasTopConcept ismcatownpro:GRC ;
+	skos:hasTopConcept ismcatownpro:GRD ;
+	skos:hasTopConcept ismcatownpro:GRL ;
+	skos:hasTopConcept ismcatownpro:GTM ;
+	skos:hasTopConcept ismcatownpro:GUF ;
+	skos:hasTopConcept ismcatownpro:GUM ;
+	skos:hasTopConcept ismcatownpro:GUY ;
+	skos:hasTopConcept ismcatownpro:HKG ;
+	skos:hasTopConcept ismcatownpro:HMD ;
+	skos:hasTopConcept ismcatownpro:HND ;
+	skos:hasTopConcept ismcatownpro:HRV ;
+	skos:hasTopConcept ismcatownpro:HTI ;
+	skos:hasTopConcept ismcatownpro:HUN ;
+	skos:hasTopConcept ismcatownpro:IDN ;
+	skos:hasTopConcept ismcatownpro:IMN ;
+	skos:hasTopConcept ismcatownpro:IND ;
+	skos:hasTopConcept ismcatownpro:IOT ;
+	skos:hasTopConcept ismcatownpro:IRL ;
+	skos:hasTopConcept ismcatownpro:IRN ;
+	skos:hasTopConcept ismcatownpro:IRQ ;
+	skos:hasTopConcept ismcatownpro:ISL ;
+	skos:hasTopConcept ismcatownpro:ISR ;
+	skos:hasTopConcept ismcatownpro:ITA ;
+	skos:hasTopConcept ismcatownpro:JAM ;
+	skos:hasTopConcept ismcatownpro:JEY ;
+	skos:hasTopConcept ismcatownpro:JOR ;
+	skos:hasTopConcept ismcatownpro:JPN ;
+	skos:hasTopConcept ismcatownpro:KAZ ;
+	skos:hasTopConcept ismcatownpro:KEN ;
+	skos:hasTopConcept ismcatownpro:KGZ ;
+	skos:hasTopConcept ismcatownpro:KHM ;
+	skos:hasTopConcept ismcatownpro:KIR ;
+	skos:hasTopConcept ismcatownpro:KNA ;
+	skos:hasTopConcept ismcatownpro:KOR ;
+	skos:hasTopConcept ismcatownpro:KWT ;
+	skos:hasTopConcept ismcatownpro:LAO ;
+	skos:hasTopConcept ismcatownpro:LBN ;
+	skos:hasTopConcept ismcatownpro:LBR ;
+	skos:hasTopConcept ismcatownpro:LBY ;
+	skos:hasTopConcept ismcatownpro:LCA ;
+	skos:hasTopConcept ismcatownpro:LIE ;
+	skos:hasTopConcept ismcatownpro:LKA ;
+	skos:hasTopConcept ismcatownpro:LSO ;
+	skos:hasTopConcept ismcatownpro:LTU ;
+	skos:hasTopConcept ismcatownpro:LUX ;
+	skos:hasTopConcept ismcatownpro:LVA ;
+	skos:hasTopConcept ismcatownpro:MAC ;
+	skos:hasTopConcept ismcatownpro:MAF ;
+	skos:hasTopConcept ismcatownpro:MAR ;
+	skos:hasTopConcept ismcatownpro:MCO ;
+	skos:hasTopConcept ismcatownpro:MDA ;
+	skos:hasTopConcept ismcatownpro:MDG ;
+	skos:hasTopConcept ismcatownpro:MDV ;
+	skos:hasTopConcept ismcatownpro:MEX ;
+	skos:hasTopConcept ismcatownpro:MHL ;
+	skos:hasTopConcept ismcatownpro:MKD ;
+	skos:hasTopConcept ismcatownpro:MLI ;
+	skos:hasTopConcept ismcatownpro:MLT ;
+	skos:hasTopConcept ismcatownpro:MMR ;
+	skos:hasTopConcept ismcatownpro:MNE ;
+	skos:hasTopConcept ismcatownpro:MNG ;
+	skos:hasTopConcept ismcatownpro:MNP ;
+	skos:hasTopConcept ismcatownpro:MOZ ;
+	skos:hasTopConcept ismcatownpro:MRT ;
+	skos:hasTopConcept ismcatownpro:MSR ;
+	skos:hasTopConcept ismcatownpro:MTQ ;
+	skos:hasTopConcept ismcatownpro:MUS ;
+	skos:hasTopConcept ismcatownpro:MWI ;
+	skos:hasTopConcept ismcatownpro:MYS ;
+	skos:hasTopConcept ismcatownpro:MYT ;
+	skos:hasTopConcept ismcatownpro:NAM ;
+	skos:hasTopConcept ismcatownpro:NCL ;
+	skos:hasTopConcept ismcatownpro:NER ;
+	skos:hasTopConcept ismcatownpro:NFK ;
+	skos:hasTopConcept ismcatownpro:NGA ;
+	skos:hasTopConcept ismcatownpro:NIC ;
+	skos:hasTopConcept ismcatownpro:NIU ;
+	skos:hasTopConcept ismcatownpro:NLD ;
+	skos:hasTopConcept ismcatownpro:NOR ;
+	skos:hasTopConcept ismcatownpro:NPL ;
+	skos:hasTopConcept ismcatownpro:NRU ;
+	skos:hasTopConcept ismcatownpro:NZL ;
+	skos:hasTopConcept ismcatownpro:OMN ;
+	skos:hasTopConcept ismcatownpro:PAK ;
+	skos:hasTopConcept ismcatownpro:PAN ;
+	skos:hasTopConcept ismcatownpro:PCN ;
+	skos:hasTopConcept ismcatownpro:PER ;
+	skos:hasTopConcept ismcatownpro:PHL ;
+	skos:hasTopConcept ismcatownpro:PLW ;
+	skos:hasTopConcept ismcatownpro:PNG ;
+	skos:hasTopConcept ismcatownpro:POL ;
+	skos:hasTopConcept ismcatownpro:PRI ;
+	skos:hasTopConcept ismcatownpro:PRK ;
+	skos:hasTopConcept ismcatownpro:PRT ;
+	skos:hasTopConcept ismcatownpro:PRY ;
+	skos:hasTopConcept ismcatownpro:PYF ;
+	skos:hasTopConcept ismcatownpro:QAT ;
+	skos:hasTopConcept ismcatownpro:REU ;
+	skos:hasTopConcept ismcatownpro:ROU ;
+	skos:hasTopConcept ismcatownpro:RUS ;
+	skos:hasTopConcept ismcatownpro:RWA ;
+	skos:hasTopConcept ismcatownpro:SAU ;
+	skos:hasTopConcept ismcatownpro:SDN ;
+	skos:hasTopConcept ismcatownpro:SEN ;
+	skos:hasTopConcept ismcatownpro:SGP ;
+	skos:hasTopConcept ismcatownpro:SGS ;
+	skos:hasTopConcept ismcatownpro:SHN ;
+	skos:hasTopConcept ismcatownpro:SLB ;
+	skos:hasTopConcept ismcatownpro:SLE ;
+	skos:hasTopConcept ismcatownpro:SLV ;
+	skos:hasTopConcept ismcatownpro:SMR ;
+	skos:hasTopConcept ismcatownpro:SOM ;
+	skos:hasTopConcept ismcatownpro:SPM ;
+	skos:hasTopConcept ismcatownpro:SRB ;
+	skos:hasTopConcept ismcatownpro:SSD ;
+	skos:hasTopConcept ismcatownpro:STP ;
+	skos:hasTopConcept ismcatownpro:SUR ;
+	skos:hasTopConcept ismcatownpro:SVK ;
+	skos:hasTopConcept ismcatownpro:SVN ;
+	skos:hasTopConcept ismcatownpro:SWE ;
+	skos:hasTopConcept ismcatownpro:SWZ ;
+	skos:hasTopConcept ismcatownpro:SXM ;
+	skos:hasTopConcept ismcatownpro:SYC ;
+	skos:hasTopConcept ismcatownpro:SYR ;
+	skos:hasTopConcept ismcatownpro:TCA ;
+	skos:hasTopConcept ismcatownpro:TCD ;
+	skos:hasTopConcept ismcatownpro:TGO ;
+	skos:hasTopConcept ismcatownpro:THA ;
+	skos:hasTopConcept ismcatownpro:TJK ;
+	skos:hasTopConcept ismcatownpro:TKL ;
+	skos:hasTopConcept ismcatownpro:TKM ;
+	skos:hasTopConcept ismcatownpro:TLS ;
+	skos:hasTopConcept ismcatownpro:TON ;
+	skos:hasTopConcept ismcatownpro:TTO ;
+	skos:hasTopConcept ismcatownpro:TUN ;
+	skos:hasTopConcept ismcatownpro:TUR ;
+	skos:hasTopConcept ismcatownpro:TUV ;
+	skos:hasTopConcept ismcatownpro:TWN ;
+	skos:hasTopConcept ismcatownpro:TZA ;
+	skos:hasTopConcept ismcatownpro:UGA ;
+	skos:hasTopConcept ismcatownpro:UKR ;
+	skos:hasTopConcept ismcatownpro:URY ;
+	skos:hasTopConcept ismcatownpro:USA ;
+	skos:hasTopConcept ismcatownpro:UZB ;
+	skos:hasTopConcept ismcatownpro:VAT ;
+	skos:hasTopConcept ismcatownpro:VCT ;
+	skos:hasTopConcept ismcatownpro:VEN ;
+	skos:hasTopConcept ismcatownpro:VGB ;
+	skos:hasTopConcept ismcatownpro:VIR ;
+	skos:hasTopConcept ismcatownpro:VNM ;
+	skos:hasTopConcept ismcatownpro:VUT ;
+	skos:hasTopConcept ismcatownpro:WLF ;
+	skos:hasTopConcept ismcatownpro:WSM ;
+	skos:hasTopConcept ismcatownpro:XAC ;
+	skos:hasTopConcept ismcatownpro:XAZ ;
+	skos:hasTopConcept ismcatownpro:XBI ;
+	skos:hasTopConcept ismcatownpro:XBK ;
+	skos:hasTopConcept ismcatownpro:XCR ;
+	skos:hasTopConcept ismcatownpro:XCS ;
+	skos:hasTopConcept ismcatownpro:XCY ;
+	skos:hasTopConcept ismcatownpro:XEU ;
+	skos:hasTopConcept ismcatownpro:XGL ;
+	skos:hasTopConcept ismcatownpro:XGZ ;
+	skos:hasTopConcept ismcatownpro:XHO ;
+	skos:hasTopConcept ismcatownpro:XJA ;
+	skos:hasTopConcept ismcatownpro:XJM ;
+	skos:hasTopConcept ismcatownpro:XJN ;
+	skos:hasTopConcept ismcatownpro:XJV ;
+	skos:hasTopConcept ismcatownpro:XKM ;
+	skos:hasTopConcept ismcatownpro:XKN ;
+	skos:hasTopConcept ismcatownpro:XKR ;
+	skos:hasTopConcept ismcatownpro:XKS ;
+	skos:hasTopConcept ismcatownpro:XMW ;
+	skos:hasTopConcept ismcatownpro:XNV ;
+	skos:hasTopConcept ismcatownpro:XPL ;
+	skos:hasTopConcept ismcatownpro:XPR ;
+	skos:hasTopConcept ismcatownpro:XQZ ;
+	skos:hasTopConcept ismcatownpro:XSP ;
+	skos:hasTopConcept ismcatownpro:XSV ;
+	skos:hasTopConcept ismcatownpro:XTR ;
+	skos:hasTopConcept ismcatownpro:XWB ;
+	skos:hasTopConcept ismcatownpro:XWK ;
+	skos:hasTopConcept ismcatownpro:XXD ;
+	skos:hasTopConcept ismcatownpro:YEM ;
+	skos:hasTopConcept ismcatownpro:ZAF ;
+	skos:hasTopConcept ismcatownpro:ZMB ;
+	skos:hasTopConcept ismcatownpro:ZWE ;
+	skos:hasTopConcept ismcatownpro:ACGU ;
+	skos:hasTopConcept ismcatownpro:AMSP ;
+	skos:hasTopConcept ismcatownpro:AOSC ;
+	skos:hasTopConcept ismcatownpro:APFS ;
+	skos:hasTopConcept ismcatownpro:ASEA ;
+	skos:hasTopConcept ismcatownpro:AUSTRALIA_GROUP ;
+	skos:hasTopConcept ismcatownpro:BHTF ;
+	skos:hasTopConcept ismcatownpro:BWCS ;
+	skos:hasTopConcept ismcatownpro:CFCK ;
+	skos:hasTopConcept ismcatownpro:CFOD ;
+	skos:hasTopConcept ismcatownpro:CFUP ;
+	skos:hasTopConcept ismcatownpro:CLFC ;
+	skos:hasTopConcept ismcatownpro:CMFC ;
+	skos:hasTopConcept ismcatownpro:CMFP ;
+	skos:hasTopConcept ismcatownpro:CPMT ;
+	skos:hasTopConcept ismcatownpro:CTOC ;
+	skos:hasTopConcept ismcatownpro:CWCS ;
+	skos:hasTopConcept ismcatownpro:ECTF ;
+	skos:hasTopConcept ismcatownpro:EFOR ;
+	skos:hasTopConcept ismcatownpro:EU ;
+	skos:hasTopConcept ismcatownpro:EUDA ;
+	skos:hasTopConcept ismcatownpro:FRME ;
+	skos:hasTopConcept ismcatownpro:FVEY ;
+	skos:hasTopConcept ismcatownpro:GCCH ;
+	skos:hasTopConcept ismcatownpro:GCTF ;
+	skos:hasTopConcept ismcatownpro:GFNX ;
+	skos:hasTopConcept ismcatownpro:GMIF ;
+	skos:hasTopConcept ismcatownpro:IESC ;
+	skos:hasTopConcept ismcatownpro:IMSC ;
+	skos:hasTopConcept ismcatownpro:IMSP ;
+	skos:hasTopConcept ismcatownpro:IPMC ;
+	skos:hasTopConcept ismcatownpro:IRKS ;
+	skos:hasTopConcept ismcatownpro:ISAF ;
+	skos:hasTopConcept ismcatownpro:ISSG ;
+	skos:hasTopConcept ismcatownpro:KFOR ;
+	skos:hasTopConcept ismcatownpro:MCFI ;
+	skos:hasTopConcept ismcatownpro:MESF ;
+	skos:hasTopConcept ismcatownpro:MGEU ;
+	skos:hasTopConcept ismcatownpro:MIFH ;
+	skos:hasTopConcept ismcatownpro:MLEC ;
+	skos:hasTopConcept ismcatownpro:MNTF ;
+	skos:hasTopConcept ismcatownpro:MPFL ;
+	skos:hasTopConcept ismcatownpro:NACT ;
+	skos:hasTopConcept ismcatownpro:NATO ;
+	skos:hasTopConcept ismcatownpro:NCFE ;
+	skos:hasTopConcept ismcatownpro:NKIC ;
+	skos:hasTopConcept ismcatownpro:NRDC ;
+	skos:hasTopConcept ismcatownpro:NSG ;
+	skos:hasTopConcept ismcatownpro:OSAG ;
+	skos:hasTopConcept ismcatownpro:OSTY ;
+	skos:hasTopConcept ismcatownpro:PAWA ;
+	skos:hasTopConcept ismcatownpro:PGMF ;
+	skos:hasTopConcept ismcatownpro:PSMX ;
+	skos:hasTopConcept ismcatownpro:RISC ;
+	skos:hasTopConcept ismcatownpro:RSMA ;
+	skos:hasTopConcept ismcatownpro:SFOR ;
+	skos:hasTopConcept ismcatownpro:SOFP ;
+	skos:hasTopConcept ismcatownpro:SPAA ;
+	skos:hasTopConcept ismcatownpro:TEYE ;
+	skos:hasTopConcept ismcatownpro:TFTC ;
+	skos:hasTopConcept ismcatownpro:UNCK .
+
+ismcatownpro:CVEnumISMCATOwnerProducerValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"FGI"
+			"ABW"
+			"AFG"
+			"AGO"
+			"AIA"
+			"ALB"
+			"AND"
+			"ARE"
+			"ARG"
+			"ARM"
+			"ASM"
+			"ATA"
+			"ATF"
+			"ATG"
+			"AUS"
+			"AUT"
+			"AX2"
+			"AX3"
+			"AZE"
+			"BDI"
+			"BEL"
+			"BEN"
+			"BES"
+			"BFA"
+			"BGD"
+			"BGR"
+			"BHR"
+			"BHS"
+			"BIH"
+			"BLM"
+			"BLR"
+			"BLZ"
+			"BMU"
+			"BOL"
+			"BRA"
+			"BRB"
+			"BRN"
+			"BTN"
+			"BVT"
+			"BWA"
+			"CAF"
+			"CAN"
+			"CCK"
+			"CHE"
+			"CHL"
+			"CHN"
+			"CIV"
+			"CMR"
+			"COD"
+			"COG"
+			"COK"
+			"COL"
+			"COM"
+			"CPT"
+			"CPV"
+			"CRI"
+			"CUB"
+			"CUW"
+			"CXR"
+			"CYM"
+			"CYP"
+			"CZE"
+			"DEU"
+			"DGA"
+			"DJI"
+			"DMA"
+			"DNK"
+			"DOM"
+			"DZA"
+			"ECU"
+			"EGY"
+			"ERI"
+			"ESH"
+			"ESP"
+			"EST"
+			"ETH"
+			"FIN"
+			"FJI"
+			"FLK"
+			"FRA"
+			"FRO"
+			"FSM"
+			"GAB"
+			"GBR"
+			"GEO"
+			"GGY"
+			"GHA"
+			"GIB"
+			"GIN"
+			"GLP"
+			"GMB"
+			"GNB"
+			"GNQ"
+			"GRC"
+			"GRD"
+			"GRL"
+			"GTM"
+			"GUF"
+			"GUM"
+			"GUY"
+			"HKG"
+			"HMD"
+			"HND"
+			"HRV"
+			"HTI"
+			"HUN"
+			"IDN"
+			"IMN"
+			"IND"
+			"IOT"
+			"IRL"
+			"IRN"
+			"IRQ"
+			"ISL"
+			"ISR"
+			"ITA"
+			"JAM"
+			"JEY"
+			"JOR"
+			"JPN"
+			"KAZ"
+			"KEN"
+			"KGZ"
+			"KHM"
+			"KIR"
+			"KNA"
+			"KOR"
+			"KWT"
+			"LAO"
+			"LBN"
+			"LBR"
+			"LBY"
+			"LCA"
+			"LIE"
+			"LKA"
+			"LSO"
+			"LTU"
+			"LUX"
+			"LVA"
+			"MAC"
+			"MAF"
+			"MAR"
+			"MCO"
+			"MDA"
+			"MDG"
+			"MDV"
+			"MEX"
+			"MHL"
+			"MKD"
+			"MLI"
+			"MLT"
+			"MMR"
+			"MNE"
+			"MNG"
+			"MNP"
+			"MOZ"
+			"MRT"
+			"MSR"
+			"MTQ"
+			"MUS"
+			"MWI"
+			"MYS"
+			"MYT"
+			"NAM"
+			"NCL"
+			"NER"
+			"NFK"
+			"NGA"
+			"NIC"
+			"NIU"
+			"NLD"
+			"NOR"
+			"NPL"
+			"NRU"
+			"NZL"
+			"OMN"
+			"PAK"
+			"PAN"
+			"PCN"
+			"PER"
+			"PHL"
+			"PLW"
+			"PNG"
+			"POL"
+			"PRI"
+			"PRK"
+			"PRT"
+			"PRY"
+			"PYF"
+			"QAT"
+			"REU"
+			"ROU"
+			"RUS"
+			"RWA"
+			"SAU"
+			"SDN"
+			"SEN"
+			"SGP"
+			"SGS"
+			"SHN"
+			"SLB"
+			"SLE"
+			"SLV"
+			"SMR"
+			"SOM"
+			"SPM"
+			"SRB"
+			"SSD"
+			"STP"
+			"SUR"
+			"SVK"
+			"SVN"
+			"SWE"
+			"SWZ"
+			"SXM"
+			"SYC"
+			"SYR"
+			"TCA"
+			"TCD"
+			"TGO"
+			"THA"
+			"TJK"
+			"TKL"
+			"TKM"
+			"TLS"
+			"TON"
+			"TTO"
+			"TUN"
+			"TUR"
+			"TUV"
+			"TWN"
+			"TZA"
+			"UGA"
+			"UKR"
+			"URY"
+			"USA"
+			"UZB"
+			"VAT"
+			"VCT"
+			"VEN"
+			"VGB"
+			"VIR"
+			"VNM"
+			"VUT"
+			"WLF"
+			"WSM"
+			"XAC"
+			"XAZ"
+			"XBI"
+			"XBK"
+			"XCR"
+			"XCS"
+			"XCY"
+			"XEU"
+			"XGL"
+			"XGZ"
+			"XHO"
+			"XJA"
+			"XJM"
+			"XJN"
+			"XJV"
+			"XKM"
+			"XKN"
+			"XKR"
+			"XKS"
+			"XMW"
+			"XNV"
+			"XPL"
+			"XPR"
+			"XQZ"
+			"XSP"
+			"XSV"
+			"XTR"
+			"XWB"
+			"XWK"
+			"XXD"
+			"YEM"
+			"ZAF"
+			"ZMB"
+			"ZWE"
+			"ACGU"
+			"AMSP"
+			"AOSC"
+			"APFS"
+			"ASEA"
+			"AUSTRALIA_GROUP"
+			"BHTF"
+			"BWCS"
+			"CFCK"
+			"CFOD"
+			"CFUP"
+			"CLFC"
+			"CMFC"
+			"CMFP"
+			"CPMT"
+			"CTOC"
+			"CWCS"
+			"ECTF"
+			"EFOR"
+			"EU"
+			"EUDA"
+			"FRME"
+			"FVEY"
+			"GCCH"
+			"GCTF"
+			"GFNX"
+			"GMIF"
+			"IESC"
+			"IMSC"
+			"IMSP"
+			"IPMC"
+			"IRKS"
+			"ISAF"
+			"ISSG"
+			"KFOR"
+			"MCFI"
+			"MESF"
+			"MGEU"
+			"MIFH"
+			"MLEC"
+			"MNTF"
+			"MPFL"
+			"NACT"
+			"NATO"
+			"NCFE"
+			"NKIC"
+			"NRDC"
+			"NSG"
+			"OSAG"
+			"OSTY"
+			"PAWA"
+			"PGMF"
+			"PSMX"
+			"RISC"
+			"RSMA"
+			"SFOR"
+			"SOFP"
+			"SPAA"
+			"TEYE"
+			"TFTC"
+			"UNCK"
+		) ;
+	] .
+
+ismcatownpro:CWCS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CWCS" ;
+	skos:prefLabel "Chemical Weapons Convention States" .
+
+ismcatownpro:CXR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CXR" ;
+	skos:prefLabel "Territory of Christmas Island" .
+
+ismcatownpro:CYM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CYM" ;
+	skos:prefLabel "Cayman Islands" .
+
+ismcatownpro:CYP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CYP" ;
+	skos:prefLabel "Republic of Cyprus" .
+
+ismcatownpro:CZE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "CZE" ;
+	skos:prefLabel "Czech Republic" .
+
+ismcatownpro:DEU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "DEU" ;
+	skos:prefLabel "Federal Republic of Germany" .
+
+ismcatownpro:DGA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "DGA" ;
+	skos:prefLabel "Diego Garcia" .
+
+ismcatownpro:DJI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "DJI" ;
+	skos:prefLabel "Republic of Djibouti" .
+
+ismcatownpro:DMA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "DMA" ;
+	skos:prefLabel "Commonwealth of Dominica" .
+
+ismcatownpro:DNK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "DNK" ;
+	skos:prefLabel "Kingdom of Denmark" .
+
+ismcatownpro:DOM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "DOM" ;
+	skos:prefLabel "Dominican Republic" .
+
+ismcatownpro:DZA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "DZA" ;
+	skos:prefLabel "People’s Democratic Republic of Algeria" .
+
+ismcatownpro:ECTF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ECTF" ;
+	skos:prefLabel "European Counter-Terrorism Forces" .
+
+ismcatownpro:ECU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ECU" ;
+	skos:prefLabel "Republic of Ecuador" .
+
+ismcatownpro:EFOR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "EFOR" ;
+	skos:prefLabel "European Union Stabilization Forces in Bosnia" .
+
+ismcatownpro:EGY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "EGY" ;
+	skos:prefLabel "Arab Republic of Egypt" .
+
+ismcatownpro:ERI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ERI" ;
+	skos:prefLabel "State of Eritrea" .
+
+ismcatownpro:ESH a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ESH" ;
+	skos:prefLabel "Western Sahara" .
+
+ismcatownpro:ESP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ESP" ;
+	skos:prefLabel "Kingdom of Spain" .
+
+ismcatownpro:EST a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "EST" ;
+	skos:prefLabel "Republic of Estonia" .
+
+ismcatownpro:ETH a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ETH" ;
+	skos:prefLabel "Federal Democratic Republic of Ethiopia" .
+
+ismcatownpro:EU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "EU" ;
+	skos:prefLabel "European Union" .
+
+ismcatownpro:EUDA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "EUDA" ;
+	skos:prefLabel "European Union DARFUR" .
+
+ismcatownpro:FGI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "FGI" ;
+	skos:prefLabel "Foreign Government Information" .
+
+ismcatownpro:FIN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "FIN" ;
+	skos:prefLabel "Republic of Finland" .
+
+ismcatownpro:FJI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "FJI" ;
+	skos:prefLabel "Republic of Fiji" .
+
+ismcatownpro:FLK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "FLK" ;
+	skos:prefLabel "Falkland Islands (Islas Malvinas)" .
+
+ismcatownpro:FRA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "FRA" ;
+	skos:prefLabel "French Republic" .
+
+ismcatownpro:FRME a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "FRME" ;
+	skos:prefLabel "Counter Violent Extremist Organizations Framework Partners" .
+
+ismcatownpro:FRO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "FRO" ;
+	skos:prefLabel "Faroe Islands" .
+
+ismcatownpro:FSM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "FSM" ;
+	skos:prefLabel "Federated States of Micronesia" .
+
+ismcatownpro:FVEY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "FVEY" ;
+	skos:prefLabel "FIVE EYES" .
+
+ismcatownpro:GAB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GAB" ;
+	skos:prefLabel "Gabonese Republic" .
+
+ismcatownpro:GBR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GBR" ;
+	skos:prefLabel "United Kingdom of Great Britain and Northern Ireland" .
+
+ismcatownpro:GCCH a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GCCH" ;
+	skos:prefLabel "Gulf Cooperation Council" .
+
+ismcatownpro:GCTF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GCTF" ;
+	skos:prefLabel "Global Counter-Terrorism Forces" .
+
+ismcatownpro:GEO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GEO" ;
+	skos:prefLabel "Georgia" .
+
+ismcatownpro:GFNX a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GFNX" ;
+	skos:prefLabel "Global Foreign Terrorist Fighter Network Exchange" .
+
+ismcatownpro:GGY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GGY" ;
+	skos:prefLabel "Bailiwick of Guernsey" .
+
+ismcatownpro:GHA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GHA" ;
+	skos:prefLabel "Republic of Ghana" .
+
+ismcatownpro:GIB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GIB" ;
+	skos:prefLabel "Gibraltar" .
+
+ismcatownpro:GIN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GIN" ;
+	skos:prefLabel "Republic of Guinea" .
+
+ismcatownpro:GLP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GLP" ;
+	skos:prefLabel "Region of Guadeloupe" .
+
+ismcatownpro:GMB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GMB" ;
+	skos:prefLabel "Republic of The Gambia" .
+
+ismcatownpro:GMIF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GMIF" ;
+	skos:prefLabel "Global Maritime Interception Forces" .
+
+ismcatownpro:GNB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GNB" ;
+	skos:prefLabel "Republic of Guinea-Bissau" .
+
+ismcatownpro:GNQ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GNQ" ;
+	skos:prefLabel "Republic of Equatorial Guinea" .
+
+ismcatownpro:GRC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GRC" ;
+	skos:prefLabel "Hellenic Republic" .
+
+ismcatownpro:GRD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GRD" ;
+	skos:prefLabel "Grenada" .
+
+ismcatownpro:GRL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GRL" ;
+	skos:prefLabel "Greenland" .
+
+ismcatownpro:GTM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GTM" ;
+	skos:prefLabel "Republic of Guatemala" .
+
+ismcatownpro:GUF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GUF" ;
+	skos:prefLabel "Territorial Collectivity of Guiana" .
+
+ismcatownpro:GUM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GUM" ;
+	skos:prefLabel "Territory of Guam" .
+
+ismcatownpro:GUY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "GUY" ;
+	skos:prefLabel "Co-operative Republic of Guyana" .
+
+ismcatownpro:HKG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "HKG" ;
+	skos:prefLabel "Hong Kong Special Administrative Region" .
+
+ismcatownpro:HMD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "HMD" ;
+	skos:prefLabel "Territory of Heard Island and McDonald Islands" .
+
+ismcatownpro:HND a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "HND" ;
+	skos:prefLabel "Republic of Honduras" .
+
+ismcatownpro:HRV a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "HRV" ;
+	skos:prefLabel "Republic of Croatia" .
+
+ismcatownpro:HTI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "HTI" ;
+	skos:prefLabel "Republic of Haiti" .
+
+ismcatownpro:HUN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "HUN" ;
+	skos:prefLabel "Hungary" .
+
+ismcatownpro:IDN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IDN" ;
+	skos:prefLabel "Republic of Indonesia" .
+
+ismcatownpro:IESC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IESC" ;
+	skos:prefLabel "International Events Security Coalition" .
+
+ismcatownpro:IMN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IMN" ;
+	skos:prefLabel "Isle of Man" .
+
+ismcatownpro:IMSC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IMSC" ;
+	skos:prefLabel "International Maritime Security Construct" .
+
+ismcatownpro:IMSP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IMSP" ;
+	skos:prefLabel "INDOPACOM Multinational Strategic Partners" .
+
+ismcatownpro:IND a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IND" ;
+	skos:prefLabel "Republic of India" .
+
+ismcatownpro:IOT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IOT" ;
+	skos:prefLabel "British Indian Ocean Territory" .
+
+ismcatownpro:IPMC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IPMC" ;
+	skos:prefLabel "INDO PACIFIC Maritime Call" .
+
+ismcatownpro:IRKS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IRKS" ;
+	skos:prefLabel "Inherent Resolve Kinetic Support" .
+
+ismcatownpro:IRL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IRL" ;
+	skos:prefLabel "Ireland" .
+
+ismcatownpro:IRN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IRN" ;
+	skos:prefLabel "Islamic Republic of Iran" .
+
+ismcatownpro:IRQ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "IRQ" ;
+	skos:prefLabel "Republic of Iraq" .
+
+ismcatownpro:ISAF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ISAF" ;
+	skos:prefLabel "International Security Assistance Force for Afghanistan" .
+
+ismcatownpro:ISL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ISL" ;
+	skos:prefLabel "Republic of Iceland" .
+
+ismcatownpro:ISR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ISR" ;
+	skos:prefLabel "State of Israel" .
+
+ismcatownpro:ISSG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ISSG" ;
+	skos:prefLabel "International Syria Support Group" .
+
+ismcatownpro:ITA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ITA" ;
+	skos:prefLabel "Italian Republic" .
+
+ismcatownpro:JAM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "JAM" ;
+	skos:prefLabel "Jamaica" .
+
+ismcatownpro:JEY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "JEY" ;
+	skos:prefLabel "Bailiwick of Jersey" .
+
+ismcatownpro:JOR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "JOR" ;
+	skos:prefLabel "Hashemite Kingdom of Jordan" .
+
+ismcatownpro:JPN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "JPN" ;
+	skos:prefLabel "Japan" .
+
+ismcatownpro:KAZ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "KAZ" ;
+	skos:prefLabel "Republic of Kazakhstan" .
+
+ismcatownpro:KEN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "KEN" ;
+	skos:prefLabel "Republic of Kenya" .
+
+ismcatownpro:KFOR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "KFOR" ;
+	skos:prefLabel "Stabilization Forces in Kosovo" .
+
+ismcatownpro:KGZ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "KGZ" ;
+	skos:prefLabel "Kyrgyz Republic" .
+
+ismcatownpro:KHM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "KHM" ;
+	skos:prefLabel "Kingdom of Cambodia" .
+
+ismcatownpro:KIR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "KIR" ;
+	skos:prefLabel "Republic of Kiribati" .
+
+ismcatownpro:KNA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "KNA" ;
+	skos:prefLabel "Federation of Saint Kitts and Nevis" .
+
+ismcatownpro:KOR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "KOR" ;
+	skos:prefLabel "Republic of Korea" .
+
+ismcatownpro:KWT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "KWT" ;
+	skos:prefLabel "State of Kuwait" .
+
+ismcatownpro:LAO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LAO" ;
+	skos:prefLabel "Lao People’s Democratic Republic" .
+
+ismcatownpro:LBN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LBN" ;
+	skos:prefLabel "Lebanese Republic" .
+
+ismcatownpro:LBR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LBR" ;
+	skos:prefLabel "Republic of Liberia" .
+
+ismcatownpro:LBY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LBY" ;
+	skos:prefLabel "State of Libya" .
+
+ismcatownpro:LCA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LCA" ;
+	skos:prefLabel "Saint Lucia" .
+
+ismcatownpro:LIE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LIE" ;
+	skos:prefLabel "Principality of Liechtenstein" .
+
+ismcatownpro:LKA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LKA" ;
+	skos:prefLabel "Democratic Socialist Republic of Sri Lanka" .
+
+ismcatownpro:LSO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LSO" ;
+	skos:prefLabel "Kingdom of Lesotho" .
+
+ismcatownpro:LTU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LTU" ;
+	skos:prefLabel "Republic of Lithuania" .
+
+ismcatownpro:LUX a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LUX" ;
+	skos:prefLabel "Grand Duchy of Luxembourg" .
+
+ismcatownpro:LVA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "LVA" ;
+	skos:prefLabel "Republic of Latvia" .
+
+ismcatownpro:MAC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MAC" ;
+	skos:prefLabel "Macau Special Administrative Region" .
+
+ismcatownpro:MAF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MAF" ;
+	skos:prefLabel "Saint Martin" .
+
+ismcatownpro:MAR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MAR" ;
+	skos:prefLabel "Kingdom of Morocco" .
+
+ismcatownpro:MCFI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MCFI" ;
+	skos:prefLabel "Multinational Coalition Forces-Iraq" .
+
+ismcatownpro:MCO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MCO" ;
+	skos:prefLabel "Principality of Monaco" .
+
+ismcatownpro:MDA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MDA" ;
+	skos:prefLabel "Republic of Moldova" .
+
+ismcatownpro:MDG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MDG" ;
+	skos:prefLabel "Republic of Madagascar" .
+
+ismcatownpro:MDV a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MDV" ;
+	skos:prefLabel "Republic of Maldives" .
+
+ismcatownpro:MESF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MESF" ;
+	skos:prefLabel "Middle East Stability Force" .
+
+ismcatownpro:MEX a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MEX" ;
+	skos:prefLabel "United Mexican States" .
+
+ismcatownpro:MGEU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MGEU" ;
+	skos:prefLabel "Multinational GEOINT Europe" .
+
+ismcatownpro:MHL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MHL" ;
+	skos:prefLabel "Republic of the Marshall Islands" .
+
+ismcatownpro:MIFH a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MIFH" ;
+	skos:prefLabel "Multinational Interim Force Haiti" .
+
+ismcatownpro:MKD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MKD" ;
+	skos:prefLabel "Republic of North Macedonia" .
+
+ismcatownpro:MLEC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MLEC" ;
+	skos:prefLabel "Multi-Lateral Enduring Contingency" .
+
+ismcatownpro:MLI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MLI" ;
+	skos:prefLabel "Republic of Mali" .
+
+ismcatownpro:MLT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MLT" ;
+	skos:prefLabel "Republic of Malta" .
+
+ismcatownpro:MMR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MMR" ;
+	skos:prefLabel "Union of Burma" .
+
+ismcatownpro:MNE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MNE" ;
+	skos:prefLabel "Montenegro" .
+
+ismcatownpro:MNG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MNG" ;
+	skos:prefLabel "Mongolia" .
+
+ismcatownpro:MNP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MNP" ;
+	skos:prefLabel "Commonwealth of the Northern Mariana Islands" .
+
+ismcatownpro:MNTF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MNTF" ;
+	skos:prefLabel "Multinational Task Force" .
+
+ismcatownpro:MOZ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MOZ" ;
+	skos:prefLabel "Republic of Mozambique" .
+
+ismcatownpro:MPFL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MPFL" ;
+	skos:prefLabel "Multinational Peacekeeping Forces" .
+
+ismcatownpro:MRT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MRT" ;
+	skos:prefLabel "Islamic Republic of Mauritania" .
+
+ismcatownpro:MSR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MSR" ;
+	skos:prefLabel "Montserrat" .
+
+ismcatownpro:MTQ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MTQ" ;
+	skos:prefLabel "Territorial Collectivity of Martinique" .
+
+ismcatownpro:MUS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MUS" ;
+	skos:prefLabel "Republic of Mauritius" .
+
+ismcatownpro:MWI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MWI" ;
+	skos:prefLabel "Republic of Malawi" .
+
+ismcatownpro:MYS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MYS" ;
+	skos:prefLabel "Malaysia" .
+
+ismcatownpro:MYT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "MYT" ;
+	skos:prefLabel "Department of Mayotte" .
+
+ismcatownpro:NACT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NACT" ;
+	skos:prefLabel "North African Counter-Terrorism Forces" .
+
+ismcatownpro:NAM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NAM" ;
+	skos:prefLabel "Republic of Namibia" .
+
+ismcatownpro:NATO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NATO" ;
+	skos:prefLabel "North Atlantic Treaty Organization" .
+
+ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:prefLabel "North Atlantic Treaty Organization Special Words" ;
+	sh:property [
+	] .
+
+ismcatownpro:NCFE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NCFE" ;
+	skos:prefLabel "NATO CFE Treaty on Conventional Armed Forces in Europe" .
+
+ismcatownpro:NCL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NCL" ;
+	skos:prefLabel "New Caledonia" .
+
+ismcatownpro:NER a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NER" ;
+	skos:prefLabel "Republic of Niger" .
+
+ismcatownpro:NFK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NFK" ;
+	skos:prefLabel "Territory of Norfolk Island" .
+
+ismcatownpro:NGA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NGA" ;
+	skos:prefLabel "Federal Republic of Nigeria" .
+
+ismcatownpro:NIC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NIC" ;
+	skos:prefLabel "Republic of Nicaragua" .
+
+ismcatownpro:NIU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NIU" ;
+	skos:prefLabel "Niue" .
+
+ismcatownpro:NKIC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NKIC" ;
+	skos:prefLabel "North Korea Intelligence Coalition" .
+
+ismcatownpro:NLD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NLD" ;
+	skos:prefLabel "Kingdom of the Netherlands" .
+
+ismcatownpro:NOR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NOR" ;
+	skos:prefLabel "Kingdom of Norway" .
+
+ismcatownpro:NPL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NPL" ;
+	skos:prefLabel "Federal Democratic Republic of Nepal" .
+
+ismcatownpro:NRDC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NRDC" ;
+	skos:prefLabel "NORDIC" .
+
+ismcatownpro:NRU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NRU" ;
+	skos:prefLabel "Republic of Nauru" .
+
+ismcatownpro:NSG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NSG" ;
+	skos:prefLabel "Nuclear Suppliers' Group" .
+
+ismcatownpro:NZL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "NZL" ;
+	skos:prefLabel "New Zealand" .
+
+ismcatownpro:OMN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "OMN" ;
+	skos:prefLabel "Sultanate of Oman" .
+
+ismcatownpro:OSAG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "OSAG" ;
+	skos:prefLabel "Olympic Security Advisory Group" .
+
+ismcatownpro:OSTY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "OSTY" ;
+	skos:prefLabel "Open Skies Treaty" .
+
+ismcatownpro:PAK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PAK" ;
+	skos:prefLabel "Islamic Republic of Pakistan" .
+
+ismcatownpro:PAN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PAN" ;
+	skos:prefLabel "Republic of Panama" .
+
+ismcatownpro:PAWA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PAWA" ;
+	skos:prefLabel "Partnership for Actions in West Africa" .
+
+ismcatownpro:PCN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PCN" ;
+	skos:prefLabel "Pitcairn, Henderson, Ducie, and Oeno Islands" .
+
+ismcatownpro:PER a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PER" ;
+	skos:prefLabel "Republic of Peru" .
+
+ismcatownpro:PGMF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PGMF" ;
+	skos:prefLabel "Persian Gulf Multinational Forces" .
+
+ismcatownpro:PHL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PHL" ;
+	skos:prefLabel "Republic of the Philippines" .
+
+ismcatownpro:PLW a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PLW" ;
+	skos:prefLabel "Republic of Palau" .
+
+ismcatownpro:PNG a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PNG" ;
+	skos:prefLabel "Independent State of Papua New Guinea" .
+
+ismcatownpro:POL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "POL" ;
+	skos:prefLabel "Republic of Poland" .
+
+ismcatownpro:PRI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PRI" ;
+	skos:prefLabel "Commonwealth of Puerto Rico" .
+
+ismcatownpro:PRK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PRK" ;
+	skos:prefLabel "Democratic People’s Republic of Korea" .
+
+ismcatownpro:PRT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PRT" ;
+	skos:prefLabel "Portuguese Republic" .
+
+ismcatownpro:PRY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PRY" ;
+	skos:prefLabel "Republic of Paraguay" .
+
+ismcatownpro:PSMX a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PSMX" ;
+	skos:prefLabel "Pacific Security Monitoring Exchange" .
+
+ismcatownpro:PYF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "PYF" ;
+	skos:prefLabel "French Polynesia" .
+
+ismcatownpro:QAT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "QAT" ;
+	skos:prefLabel "State of Qatar" .
+
+ismcatownpro:REU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "REU" ;
+	skos:prefLabel "Region of Reunion" .
+
+ismcatownpro:RISC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "RISC" ;
+	skos:prefLabel "Russia Intelligence Sharing Coalition" .
+
+ismcatownpro:ROU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ROU" ;
+	skos:prefLabel "Romania" .
+
+ismcatownpro:RSMA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "RSMA" ;
+	skos:prefLabel "Resolute Support Mission Afghanistan" .
+
+ismcatownpro:RUS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "RUS" ;
+	skos:prefLabel "Russian Federation" .
+
+ismcatownpro:RWA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "RWA" ;
+	skos:prefLabel "Republic of Rwanda" .
+
+ismcatownpro:SAU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SAU" ;
+	skos:prefLabel "Kingdom of Saudi Arabia" .
+
+ismcatownpro:SDN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SDN" ;
+	skos:prefLabel "Republic of the Sudan" .
+
+ismcatownpro:SEN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SEN" ;
+	skos:prefLabel "Republic of Senegal" .
+
+ismcatownpro:SFOR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SFOR" ;
+	skos:prefLabel "Stabilization Force" .
+
+ismcatownpro:SGP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SGP" ;
+	skos:prefLabel "Republic of Singapore" .
+
+ismcatownpro:SGS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SGS" ;
+	skos:prefLabel "South Georgia and the South Sandwich Islands" .
+
+ismcatownpro:SHN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SHN" ;
+	skos:prefLabel "Saint Helena, Ascension, and Tristan da Cunha" .
+
+ismcatownpro:SLB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SLB" ;
+	skos:prefLabel "Solomon Islands" .
+
+ismcatownpro:SLE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SLE" ;
+	skos:prefLabel "Republic of Sierra Leone" .
+
+ismcatownpro:SLV a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SLV" ;
+	skos:prefLabel "Republic of El Salvador" .
+
+ismcatownpro:SMR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SMR" ;
+	skos:prefLabel "Republic of San Marino" .
+
+ismcatownpro:SOFP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SOFP" ;
+	skos:prefLabel "Special Operations Forces Partners" .
+
+ismcatownpro:SOM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SOM" ;
+	skos:prefLabel "Federal Republic of Somalia" .
+
+ismcatownpro:SPAA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SPAA" ;
+	skos:prefLabel "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")" .
+
+ismcatownpro:SPM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SPM" ;
+	skos:prefLabel "Territorial Collectivity of Saint Pierre and Miquelon" .
+
+ismcatownpro:SRB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SRB" ;
+	skos:prefLabel "Republic of Serbia" .
+
+ismcatownpro:SSD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SSD" ;
+	skos:prefLabel "Republic of South Sudan" .
+
+ismcatownpro:STP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "STP" ;
+	skos:prefLabel "Democratic Republic of Sao Tome and Principe" .
+
+ismcatownpro:SUR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SUR" ;
+	skos:prefLabel "Republic of Suriname" .
+
+ismcatownpro:SVK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SVK" ;
+	skos:prefLabel "Slovak Republic" .
+
+ismcatownpro:SVN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SVN" ;
+	skos:prefLabel "Republic of Slovenia" .
+
+ismcatownpro:SWE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SWE" ;
+	skos:prefLabel "Kingdom of Sweden" .
+
+ismcatownpro:SWZ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SWZ" ;
+	skos:prefLabel "Kingdom of Eswatini" .
+
+ismcatownpro:SXM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SXM" ;
+	skos:prefLabel "Sint Maarten" .
+
+ismcatownpro:SYC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SYC" ;
+	skos:prefLabel "Republic of Seychelles" .
+
+ismcatownpro:SYR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "SYR" ;
+	skos:prefLabel "Syrian Arab Republic" .
+
+ismcatownpro:TCA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TCA" ;
+	skos:prefLabel "Turks and Caicos Islands" .
+
+ismcatownpro:TCD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TCD" ;
+	skos:prefLabel "Republic of Chad" .
+
+ismcatownpro:TEYE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TEYE" ;
+	skos:prefLabel "THREE EYES" .
+
+ismcatownpro:TFTC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TFTC" ;
+	skos:prefLabel "Terrorist Financing Targeting Center" .
+
+ismcatownpro:TGO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TGO" ;
+	skos:prefLabel "Togolese Republic" .
+
+ismcatownpro:THA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "THA" ;
+	skos:prefLabel "Kingdom of Thailand" .
+
+ismcatownpro:TJK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TJK" ;
+	skos:prefLabel "Republic of Tajikistan" .
+
+ismcatownpro:TKL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TKL" ;
+	skos:prefLabel "Tokelau" .
+
+ismcatownpro:TKM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TKM" ;
+	skos:prefLabel "Turkmenistan" .
+
+ismcatownpro:TLS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TLS" ;
+	skos:prefLabel "Democratic Republic of Timor-Leste" .
+
+ismcatownpro:TON a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TON" ;
+	skos:prefLabel "Kingdom of Tonga" .
+
+ismcatownpro:TTO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TTO" ;
+	skos:prefLabel "Republic of Trinidad and Tobago" .
+
+ismcatownpro:TUN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TUN" ;
+	skos:prefLabel "Republic of Tunisia" .
+
+ismcatownpro:TUR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TUR" ;
+	skos:prefLabel "Republic of Turkey" .
+
+ismcatownpro:TUV a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TUV" ;
+	skos:prefLabel "Tuvalu" .
+
+ismcatownpro:TWN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TWN" ;
+	skos:prefLabel "Taiwan" .
+
+ismcatownpro:TZA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "TZA" ;
+	skos:prefLabel "United Republic of Tanzania" .
+
+ismcatownpro:UGA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "UGA" ;
+	skos:prefLabel "Republic of Uganda" .
+
+ismcatownpro:UKR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "UKR" ;
+	skos:prefLabel "Ukraine" .
+
+ismcatownpro:UNCK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "UNCK" ;
+	skos:prefLabel "United Nations Command, Korea" .
+
+ismcatownpro:URY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "URY" ;
+	skos:prefLabel "Oriental Republic of Uruguay" .
+
+ismcatownpro:USA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "USA" ;
+	skos:prefLabel "United States of America" .
+
+ismcatownpro:UZB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "UZB" ;
+	skos:prefLabel "Republic of Uzbekistan" .
+
+ismcatownpro:VAT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "VAT" ;
+	skos:prefLabel "State of the Vatican City" .
+
+ismcatownpro:VCT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "VCT" ;
+	skos:prefLabel "Saint Vincent and the Grenadines" .
+
+ismcatownpro:VEN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "VEN" ;
+	skos:prefLabel "Bolivarian Republic of Venezuela" .
+
+ismcatownpro:VGB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "VGB" ;
+	skos:prefLabel "British Virgin Islands" .
+
+ismcatownpro:VIR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "VIR" ;
+	skos:prefLabel "United States Virgin Islands" .
+
+ismcatownpro:VNM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "VNM" ;
+	skos:prefLabel "Socialist Republic of Vietnam" .
+
+ismcatownpro:VUT a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "VUT" ;
+	skos:prefLabel "Republic of Vanuatu" .
+
+ismcatownpro:WLF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "WLF" ;
+	skos:prefLabel "Wallis and Futuna" .
+
+ismcatownpro:WSM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "WSM" ;
+	skos:prefLabel "Independent State of Samoa" .
+
+ismcatownpro:XAC a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XAC" ;
+	skos:prefLabel "Territory of Ashmore and Cartier Islands" .
+
+ismcatownpro:XAZ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XAZ" ;
+	skos:prefLabel "Entity 1" .
+
+ismcatownpro:XBI a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XBI" ;
+	skos:prefLabel "Bassas da India" .
+
+ismcatownpro:XBK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XBK" ;
+	skos:prefLabel "Baker Island" .
+
+ismcatownpro:XCR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XCR" ;
+	skos:prefLabel "Entity 2" .
+
+ismcatownpro:XCS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XCS" ;
+	skos:prefLabel "Coral Sea Islands Territory" .
+
+ismcatownpro:XCY a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XCY" ;
+	skos:prefLabel "Entity 3" .
+
+ismcatownpro:XEU a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XEU" ;
+	skos:prefLabel "Europa Island" .
+
+ismcatownpro:XGL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XGL" ;
+	skos:prefLabel "Glorioso Islands" .
+
+ismcatownpro:XGZ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XGZ" ;
+	skos:prefLabel "Gaza Strip" .
+
+ismcatownpro:XHO a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XHO" ;
+	skos:prefLabel "Howland Island" .
+
+ismcatownpro:XJA a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XJA" ;
+	skos:prefLabel "Johnston Atoll" .
+
+ismcatownpro:XJM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XJM" ;
+	skos:prefLabel "Jan Mayen" .
+
+ismcatownpro:XJN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XJN" ;
+	skos:prefLabel "Juan de Nova Island" .
+
+ismcatownpro:XJV a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XJV" ;
+	skos:prefLabel "Jarvis Island" .
+
+ismcatownpro:XKM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XKM" ;
+	skos:prefLabel "Entity 4" .
+
+ismcatownpro:XKN a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XKN" ;
+	skos:prefLabel "Entity 5" .
+
+ismcatownpro:XKR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XKR" ;
+	skos:prefLabel "Kingman Reef" .
+
+ismcatownpro:XKS a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XKS" ;
+	skos:prefLabel "Republic of Kosovo" .
+
+ismcatownpro:XMW a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XMW" ;
+	skos:prefLabel "Midway Islands" .
+
+ismcatownpro:XNV a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XNV" ;
+	skos:prefLabel "Navassa Island" .
+
+ismcatownpro:XPL a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XPL" ;
+	skos:prefLabel "Palmyra Atoll" .
+
+ismcatownpro:XPR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XPR" ;
+	skos:prefLabel "Paracel Islands" .
+
+ismcatownpro:XQZ a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XQZ" ;
+	skos:prefLabel "Akrotiri" .
+
+ismcatownpro:XSP a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XSP" ;
+	skos:prefLabel "Spratly Islands" .
+
+ismcatownpro:XSV a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XSV" ;
+	skos:prefLabel "Svalbard" .
+
+ismcatownpro:XTR a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XTR" ;
+	skos:prefLabel "Tromelin Island" .
+
+ismcatownpro:XWB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XWB" ;
+	skos:prefLabel "West Bank" .
+
+ismcatownpro:XWK a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XWK" ;
+	skos:prefLabel "Wake Island" .
+
+ismcatownpro:XXD a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "XXD" ;
+	skos:prefLabel "Dhekelia" .
+
+ismcatownpro:YEM a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "YEM" ;
+	skos:prefLabel "Republic of Yemen" .
+
+ismcatownpro:ZAF a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ZAF" ;
+	skos:prefLabel "Republic of South Africa" .
+
+ismcatownpro:ZMB a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ZMB" ;
+	skos:prefLabel "Republic of Zambia" .
+
+ismcatownpro:ZWE a skos:Concept ;
+	skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer ;
+	skos:notation "ZWE" ;
+	skos:prefLabel "Republic of Zimbabwe" .
 
-<_:522> a rdf:List;
-  rdf:first "MDV";
-  rdf:rest <_:464>.
-
-<_:53> a rdf:List;
-  rdf:first "BGD";
-  rdf:rest <_:67>.
-
-<_:533> a rdf:List;
-  rdf:first "MDA";
-  rdf:rest <_:786>.
-
-<_:54> a rdf:List;
-  rdf:first "FIN";
-  rdf:rest <_:727>.
-
-<_:540> a rdf:List;
-  rdf:first "FRA";
-  rdf:rest <_:94>.
-
-<_:543> a rdf:List;
-  rdf:first "XGZ";
-  rdf:rest <_:690>.
-
-<_:545> a rdf:List;
-  rdf:first "GUY";
-  rdf:rest <_:401>.
-
-<_:549> a rdf:List;
-  rdf:first "TUV";
-  rdf:rest <_:801>.
-
-<_:55> a rdf:List;
-  rdf:first "BVT";
-  rdf:rest <_:99>.
-
-<_:551> a rdf:List;
-  rdf:first "VNM";
-  rdf:rest <_:255>.
-
-<_:557> a rdf:List;
-  rdf:first "XQZ";
-  rdf:rest <_:234>.
-
-<_:56> a rdf:List;
-  rdf:first "AUT";
-  rdf:rest <_:43>.
-
-<_:562> a rdf:List;
-  rdf:first "NCFE";
-  rdf:rest <_:451>.
-
-<_:563> a rdf:List;
-  rdf:first "KWT";
-  rdf:rest <_:405>.
-
-<_:566> a rdf:List;
-  rdf:first "NRU";
-  rdf:rest <_:750>.
-
-<_:57> a rdf:List;
-  rdf:first "PRI";
-  rdf:rest <_:864>.
-
-<_:574> a rdf:List;
-  rdf:first "GFNX";
-  rdf:rest <_:418>.
-
-<_:575> a rdf:List;
-  rdf:first "CXR";
-  rdf:rest <_:52>.
-
-<_:576> a rdf:List;
-  rdf:first "NATO";
-  rdf:rest <_:562>.
-
-<_:58> a rdf:List;
-  rdf:first "ECU";
-  rdf:rest <_:18>.
-
-<_:59> a rdf:List;
-  rdf:first "LVA";
-  rdf:rest <_:896>.
-
-<_:592> a rdf:List;
-  rdf:first "XCY";
-  rdf:rest <_:908>.
-
-<_:593> a rdf:List;
-  rdf:first "KAZ";
-  rdf:rest <_:87>.
-
-<_:594> a rdf:List;
-  rdf:first "GIB";
-  rdf:rest <_:383>.
-
-<_:6> a rdfs:Datatype;
-  owl:oneOf ("FGI" "ABW" "AFG" "AGO" "AIA" "ALB" "AND" "ARE" "ARG" "ARM" "ASM" "ATA" "ATF" "ATG" "AUS" "AUT" "AX2" "AX3" "AZE" "BDI" "BEL" "BEN" "BES" "BFA" "BGD" "BGR" "BHR" "BHS" "BIH" "BLM" "BLR" "BLZ" "BMU" "BOL" "BRA" "BRB" "BRN" "BTN" "BVT" "BWA" "CAF" "CAN" "CCK" "CHE" "CHL" "CHN" "CIV" "CMR" "COD" "COG" "COK" "COL" "COM" "CPT" "CPV" "CRI" "CUB" "CUW" "CXR" "CYM" "CYP" "CZE" "DEU" "DGA" "DJI" "DMA" "DNK" "DOM" "DZA" "ECU" "EGY" "ERI" "ESH" "ESP" "EST" "ETH" "FIN" "FJI" "FLK" "FRA" "FRO" "FSM" "GAB" "GBR" "GEO" "GGY" "GHA" "GIB" "GIN" "GLP" "GMB" "GNB" "GNQ" "GRC" "GRD" "GRL" "GTM" "GUF" "GUM" "GUY" "HKG" "HMD" "HND" "HRV" "HTI" "HUN" "IDN" "IMN" "IND" "IOT" "IRL" "IRN" "IRQ" "ISL" "ISR" "ITA" "JAM" "JEY" "JOR" "JPN" "KAZ" "KEN" "KGZ" "KHM" "KIR" "KNA" "KOR" "KWT" "LAO" "LBN" "LBR" "LBY" "LCA" "LIE" "LKA" "LSO" "LTU" "LUX" "LVA" "MAC" "MAF" "MAR" "MCO" "MDA" "MDG" "MDV" "MEX" "MHL" "MKD" "MLI" "MLT" "MMR" "MNE" "MNG" "MNP" "MOZ" "MRT" "MSR" "MTQ" "MUS" "MWI" "MYS" "MYT" "NAM" "NCL" "NER" "NFK" "NGA" "NIC" "NIU" "NLD" "NOR" "NPL" "NRU" "NZL" "OMN" "PAK" "PAN" "PCN" "PER" "PHL" "PLW" "PNG" "POL" "PRI" "PRK" "PRT" "PRY" "PYF" "QAT" "REU" "ROU" "RUS" "RWA" "SAU" "SDN" "SEN" "SGP" "SGS" "SHN" "SLB" "SLE" "SLV" "SMR" "SOM" "SPM" "SRB" "SSD" "STP" "SUR" "SVK" "SVN" "SWE" "SWZ" "SXM" "SYC" "SYR" "TCA" "TCD" "TGO" "THA" "TJK" "TKL" "TKM" "TLS" "TON" "TTO" "TUN" "TUR" "TUV" "TWN" "TZA" "UGA" "UKR" "URY" "USA" "UZB" "VAT" "VCT" "VEN" "VGB" "VIR" "VNM" "VUT" "WLF" "WSM" "XAC" "XAZ" "XBI" "XBK" "XCR" "XCS" "XCY" "XEU" "XGL" "XGZ" "XHO" "XJA" "XJM" "XJN" "XJV" "XKM" "XKN" "XKR" "XKS" "XMW" "XNV" "XPL" "XPR" "XQZ" "XSP" "XSV" "XTR" "XWB" "XWK" "XXD" "YEM" "ZAF" "ZMB" "ZWE" "ACGU" "AMSP" "AOSC" "APFS" "ASEA" "AUSTRALIA_GROUP" "BHTF" "BWCS" "CFCK" "CFOD" "CFUP" "CLFC" "CMFC" "CMFP" "CPMT" "CTOC" "CWCS" "ECTF" "EFOR" "EU" "EUDA" "FRME" "FVEY" "GCCH" "GCTF" "GFNX" "GMIF" "IESC" "IMSC" "IMSP" "IPMC" "IRKS" "ISAF" "ISSG" "KFOR" "MCFI" "MESF" "MGEU" "MIFH" "MLEC" "MNTF" "MPFL" "NACT" "NATO" "NCFE" "NKIC" "NRDC" "NSG" "OSAG" "OSTY" "PAWA" "PGMF" "PSMX" "RISC" "RSMA" "SFOR" "SOFP" "SPAA" "TEYE" "TFTC" "UNCK").
-
-<_:60> a rdf:List;
-  rdf:first "GBR";
-  rdf:rest <_:12>.
-
-<_:600> a rdf:List;
-  rdf:first "WSM";
-  rdf:rest <_:172>.
-
-<_:602> a rdf:List;
-  rdf:first "MSR";
-  rdf:rest <_:722>.
-
-<_:61> a rdf:List;
-  rdf:first "IRL";
-  rdf:rest <_:712>.
-
-<_:614> a rdf:List;
-  rdf:first "CPMT";
-  rdf:rest <_:957>.
-
-<_:62> a rdf:List;
-  rdf:first "BES";
-  rdf:rest <_:34>.
-
-<_:622> a rdf:List;
-  rdf:first "TLS";
-  rdf:rest <_:117>.
-
-<_:624> a rdf:List;
-  rdf:first "ITA";
-  rdf:rest <_:266>.
-
-<_:63> a rdf:List;
-  rdf:first "COK";
-  rdf:rest <_:89>.
-
-<_:634> a rdf:List;
-  rdf:first "LBN";
-  rdf:rest <_:42>.
-
-<_:639> a rdf:List;
-  rdf:first "HND";
-  rdf:rest <_:248>.
-
-<_:64> a rdf:List;
-  rdf:first "ERI";
-  rdf:rest <_:281>.
-
-<_:644> a rdf:List;
-  rdf:first "DJI";
-  rdf:rest <_:458>.
-
-<_:646> a rdf:List;
-  rdf:first "XJM";
-  rdf:rest <_:746>.
-
-<_:65> a rdf:List;
-  rdf:first "BHR";
-  rdf:rest <_:74>.
-
-<_:653> a rdf:List;
-  rdf:first "STP";
-  rdf:rest <_:715>.
-
-<_:659> a rdf:List;
-  rdf:first "ECTF";
-  rdf:rest <_:887>.
-
-<_:66> a rdf:List;
-  rdf:first "GLP";
-  rdf:rest <_:514>.
-
-<_:660> a rdf:List;
-  rdf:first "NIU";
-  rdf:rest <_:489>.
-
-<_:67> a rdf:List;
-  rdf:first "BGR";
-  rdf:rest <_:65>.
-
-<_:674> a rdf:List;
-  rdf:first "TUN";
-  rdf:rest <_:929>.
-
-<_:679> a rdf:List;
-  rdf:first "BWCS";
-  rdf:rest <_:890>.
-
-<_:68> a rdf:List;
-  rdf:first "NOR";
-  rdf:rest <_:13>.
-
-<_:680> a rdf:List;
-  rdf:first "XJV";
-  rdf:rest <_:328>.
-
-<_:682> a rdf:List;
-  rdf:first "LSO";
-  rdf:rest <_:686>.
-
-<_:686> a rdf:List;
-  rdf:first "LTU";
-  rdf:rest <_:758>.
-
-<_:69> a rdf:List;
-  rdf:first "COD";
-  rdf:rest <_:716>.
-
-<_:690> a rdf:List;
-  rdf:first "XHO";
-  rdf:rest <_:799>.
-
-<_:692> a rdf:List;
-  rdf:first "RWA";
-  rdf:rest <_:144>.
-
-<_:694> a rdf:List;
-  rdf:first "GGY";
-  rdf:rest <_:26>.
-
-<_:7> a rdf:List;
-  rdf:first "ARM";
-  rdf:rest <_:75>.
-
-<_:70> a rdf:List;
-  rdf:first "BRN";
-  rdf:rest <_:22>.
-
-<_:700> a rdf:List;
-  rdf:first "XCS";
-  rdf:rest <_:592>.
-
-<_:701> a rdf:List;
-  rdf:first "JEY";
-  rdf:rest <_:82>.
-
-<_:706> a rdf:List;
-  rdf:first "PRT";
-  rdf:rest <_:517>.
-
-<_:707> a rdf:List;
-  rdf:first "MCFI";
-  rdf:rest <_:499>.
-
-<_:709> a rdf:List;
-  rdf:first "TKM";
-  rdf:rest <_:622>.
-
-<_:71> a rdf:List;
-  rdf:first "AFG";
-  rdf:rest <_:10>.
-
-<_:712> a rdf:List;
-  rdf:first "IRN";
-  rdf:rest <_:425>.
-
-<_:713> a rdf:List;
-  rdf:first "XPR";
-  rdf:rest <_:557>.
-
-<_:714> a rdf:List;
-  rdf:first "ZMB";
-  rdf:rest <_:129>.
-
-<_:715> a rdf:List;
-  rdf:first "SUR";
-  rdf:rest <_:432>.
-
-<_:716> a rdf:List;
-  rdf:first "COG";
-  rdf:rest <_:63>.
-
-<_:718> a rdf:List;
-  rdf:first "SPM";
-  rdf:rest <_:881>.
-
-<_:72> a rdf:List;
-  rdf:first "BLM";
-  rdf:rest <_:28>.
-
-<_:721> a rdf:List;
-  rdf:first "SWZ";
-  rdf:rest <_:402>.
-
-<_:722> a rdf:List;
-  rdf:first "MTQ";
-  rdf:rest <_:467>.
-
-<_:723> a rdf:List;
-  rdf:first "GUM";
-  rdf:rest <_:545>.
-
-<_:725> a rdf:List;
-  rdf:first "ROU";
-  rdf:rest <_:471>.
-
-<_:727> a rdf:List;
-  rdf:first "FJI";
-  rdf:rest <_:36>.
-
-<_:73> a rdf:List;
-  rdf:first "CRI";
-  rdf:rest <_:79>.
-
-<_:730> a rdf:List;
-  rdf:first "UGA";
-  rdf:rest <_:204>.
-
-<_:731> a rdf:List;
-  rdf:first "OMN";
-  rdf:rest <_:419>.
-
-<_:737> a rdf:List;
-  rdf:first "PAWA";
-  rdf:rest <_:486>.
-
-<_:739> a rdf:List;
-  rdf:first "SFOR";
-  rdf:rest <_:898>.
-
-<_:74> a rdf:List;
-  rdf:first "BHS";
-  rdf:rest <_:11>.
-
-<_:740> a rdf:List;
-  rdf:first "GRC";
-  rdf:rest <_:116>.
-
-<_:746> a rdf:List;
-  rdf:first "XJN";
-  rdf:rest <_:680>.
-
-<_:747> a rdf:List;
-  rdf:first "THA";
-  rdf:rest <_:199>.
-
-<_:75> a rdf:List;
-  rdf:first "ASM";
-  rdf:rest <_:96>.
-
-<_:750> a rdf:List;
-  rdf:first "NZL";
-  rdf:rest <_:731>.
-
-<_:751> a rdf:List;
-  rdf:first "AOSC";
-  rdf:rest <_:457>.
-
-<_:758> a rdf:List;
-  rdf:first "LUX";
-  rdf:rest <_:59>.
-
-<_:76> a rdf:List;
-  rdf:first "CPT";
-  rdf:rest <_:97>.
-
-<_:761> a rdf:List;
-  rdf:first "IPMC";
-  rdf:rest <_:357>.
-
-<_:764> a rdf:List;
-  rdf:first "NFK";
-  rdf:rest <_:265>.
-
-<_:77> a rdf:List;
-  rdf:first "ARG";
-  rdf:rest <_:7>.
-
-<_:775> a rdf:List;
-  rdf:first "SGS";
-  rdf:rest <_:505>.
-
-<_:776> a rdf:List;
-  rdf:first "XXD";
-  rdf:rest <_:9457>.
-
-<_:78> a rdf:List;
-  rdf:first "BHTF";
-  rdf:rest <_:679>.
-
-<_:781> a rdf:List;
-  rdf:first "ESP";
-  rdf:rest <_:40>.
-
-<_:786> a rdf:List;
-  rdf:first "MDG";
-  rdf:rest <_:522>.
-
-<_:79> a rdf:List;
-  rdf:first "CUB";
-  rdf:rest <_:50>.
-
-<_:791> a rdf:List;
-  rdf:first "IMSP";
-  rdf:rest <_:761>.
-
-<_:794> a rdf:List;
-  rdf:first "TKL";
-  rdf:rest <_:709>.
-
-<_:799> a rdf:List;
-  rdf:first "XJA";
-  rdf:rest <_:646>.
-
-<_:8> a rdf:List;
-  rdf:first "BEL";
-  rdf:rest <_:44>.
-
-<_:80> a rdf:List;
-  rdf:first "COM";
-  rdf:rest <_:76>.
-
-<_:801> a rdf:List;
-  rdf:first "TWN";
-  rdf:rest <_:450>.
-
-<_:804> a rdf:List;
-  rdf:first "MNP";
-  rdf:rest <_:331>.
-
-<_:81> a rdf:List;
-  rdf:first "BLZ";
-  rdf:rest <_:15>.
-
-<_:811> a rdf:List;
-  rdf:first "VIR";
-  rdf:rest <_:551>.
-
-<_:819> a rdf:List;
-  rdf:first "PER";
-  rdf:rest <_:90>.
-
-<_:82> a rdf:List;
-  rdf:first "JOR";
-  rdf:rest <_:92>.
-
-<_:826> a rdf:List;
-  rdf:first "PNG";
-  rdf:rest <_:954>.
-
-<_:83> a rdf:List;
-  rdf:first "HMD";
-  rdf:rest <_:639>.
-
-<_:835> a rdf:List;
-  rdf:first "TFTC";
-  rdf:rest <_:981>.
-
-<_:836> a rdf:List;
-  rdf:first "AUSTRALIA_GROUP";
-  rdf:rest <_:78>.
-
-<_:84> a rdf:List;
-  rdf:first "CAN";
-  rdf:rest <_:41>.
-
-<_:8412> a rdf:List;
-  rdf:first "IMSC";
-  rdf:rest <_:791>.
-
-<_:842> a rdf:List;
-  rdf:first "SYR";
-  rdf:rest <_:352>.
-
-<_:85> a rdf:List;
-  rdf:first "CHL";
-  rdf:rest <_:51>.
-
-<_:851> a rdf:List;
-  rdf:first "XWB";
-  rdf:rest <_:377>.
-
-<_:853> a rdf:List;
-  rdf:first "TEYE";
-  rdf:rest <_:835>.
-
-<_:856> a rdf:List;
-  rdf:first "KGZ";
-  rdf:rest <_:184>.
-
-<_:86> a rdf:List;
-  rdf:first "AUS";
-  rdf:rest <_:56>.
-
-<_:863> a rdf:List;
-  rdf:first "SOM";
-  rdf:rest <_:718>.
-
-<_:864> a rdf:List;
-  rdf:first "PRK";
-  rdf:rest <_:706>.
-
-<_:866> a rdf:List;
-  rdf:first "GRL";
-  rdf:rest <_:38>.
-
-<_:87> a rdf:List;
-  rdf:first "KEN";
-  rdf:rest <_:856>.
-
-<_:871> a rdf:List;
-  rdf:first "SEN";
-  rdf:rest <_:980>.
-
-<_:88> a rdf:List;
-  rdf:first "BRB";
-  rdf:rest <_:70>.
-
-<_:881> a rdf:List;
-  rdf:first "SRB";
-  rdf:rest <_:158>.
-
-<_:883> a rdf:List;
-  rdf:first "MPFL";
-  rdf:rest <_:247>.
-
-<_:884> a rdf:List;
-  rdf:first "XBI";
-  rdf:rest <_:191>.
-
-<_:885> a rdf:List;
-  rdf:first "USA";
-  rdf:rest <_:257>.
-
-<_:887> a rdf:List;
-  rdf:first "EFOR";
-  rdf:rest <_:311>.
-
-<_:889> a rdf:List;
-  rdf:first "KIR";
-  rdf:rest <_:978>.
-
-<_:89> a rdf:List;
-  rdf:first "COL";
-  rdf:rest <_:80>.
-
-<_:890> a rdf:List;
-  rdf:first "CFCK";
-  rdf:rest <_:110>.
-
-<_:896> a rdf:List;
-  rdf:first "MAC";
-  rdf:rest <_:916>.
-
-<_:898> a rdf:List;
-  rdf:first "SOFP";
-  rdf:rest <_:955>.
-
-<_:9> a rdf:List;
-  rdf:first "AZE";
-  rdf:rest <_:39>.
-
-<_:90> a rdf:List;
-  rdf:first "PHL";
-  rdf:rest <_:424>.
-
-<_:900> a rdf:List;
-  rdf:first "PCN";
-  rdf:rest <_:819>.
-
-<_:903> a rdf:List;
-  rdf:first "AMSP";
-  rdf:rest <_:751>.
-
-<_:905> a rdf:List;
-  rdf:first "MCO";
-  rdf:rest <_:533>.
-
-<_:908> a rdf:List;
-  rdf:first "XEU";
-  rdf:rest <_:278>.
-
-<_:91> a rdf:List;
-  rdf:first "DGA";
-  rdf:rest <_:644>.
-
-<_:913> a rdf:List;
-  rdf:first "MIFH";
-  rdf:rest <_:513>.
-
-<_:916> a rdf:List;
-  rdf:first "MAF";
-  rdf:rest <_:412>.
-
-<_:918> a rdf:List;
-  rdf:first "CWCS";
-  rdf:rest <_:659>.
-
-<_:92> a rdf:List;
-  rdf:first "JPN";
-  rdf:rest <_:593>.
-
-<_:920> a rdf:List;
-  rdf:first "DOM";
-  rdf:rest <_:19>.
-
-<_:921> a rdf:List;
-  rdf:first "XNV";
-  rdf:rest <_:190>.
-
-<_:923> a rdf:List;
-  rdf:first "MYS";
-  rdf:rest <_:297>.
-
-<_:928> a rdf:List;
-  rdf:first "VEN";
-  rdf:rest <_:409>.
-
-<_:929> a rdf:List;
-  rdf:first "TUR";
-  rdf:rest <_:549>.
-
-<_:93> a rdf:List;
-  rdf:first "CMR";
-  rdf:rest <_:69>.
-
-<_:935> a rdf:List;
-  rdf:first "FVEY";
-  rdf:rest <_:180>.
-
-<_:937> a rdf:List;
-  rdf:first "XCR";
-  rdf:rest <_:700>.
-
-<_:938> a rdf:List;
-  rdf:first "LIE";
-  rdf:rest <_:155>.
-
-<_:94> a rdf:List;
-  rdf:first "FRO";
-  rdf:rest <_:33>.
-
-<_:943> a rdf:List;
-  rdf:first "EUDA";
-  rdf:rest <_:130>.
-
-<_:945> a rdf:List;
-  rdf:first "SYC";
-  rdf:rest <_:842>.
-
-<_:9457> a rdf:List;
-  rdf:first "YEM";
-  rdf:rest <_:120>.
-
-<_:948> a rdf:List;
-  rdf:first "REU";
-  rdf:rest <_:725>.
-
-<_:95> a rdf:List;
-  rdf:first "CHE";
-  rdf:rest <_:85>.
-
-<_:954> a rdf:List;
-  rdf:first "POL";
-  rdf:rest <_:57>.
-
-<_:955> a rdf:List;
-  rdf:first "SPAA";
-  rdf:rest <_:853>.
-
-<_:957> a rdf:List;
-  rdf:first "CTOC";
-  rdf:rest <_:918>.
-
-<_:958> a rdf:List;
-  rdf:first "OSTY";
-  rdf:rest <_:737>.
-
-<_:96> a rdf:List;
-  rdf:first "ATA";
-  rdf:rest <_:5>.
-
-<_:960> a rdf:List;
-  rdf:first "XAZ";
-  rdf:rest <_:884>.
-
-<_:969> a rdf:List;
-  rdf:first "OSAG";
-  rdf:rest <_:958>.
-
-<_:97> a rdf:List;
-  rdf:first "CPV";
-  rdf:rest <_:73>.
-
-<_:978> a rdf:List;
-  rdf:first "KNA";
-  rdf:rest <_:45>.
-
-<_:98> a rdf:List;
-  rdf:first "IND";
-  rdf:rest <_:46>.
-
-<_:980> a rdf:List;
-  rdf:first "SGP";
-  rdf:rest <_:775>.
-
-<_:981> a rdf:List;
-  rdf:first "UNCK";
-  rdf:rest rdf:nil.
-
-<_:984> a rdf:List;
-  rdf:first "NRDC";
-  rdf:rest <_:173>.
-
-<_:99> a rdf:List;
-  rdf:first "BWA";
-  rdf:rest <_:23>.
-
-<_:999> a rdf:List;
-  rdf:first "RSMA";
-  rdf:rest <_:739>.
-
-ismcatownpro:ABW a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ABW";
-  skos:prefLabel "Aruba".
-
-ismcatownpro:ACGU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ACGU";
-  skos:prefLabel "FOUR EYES".
-
-ismcatownpro:AFG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AFG";
-  skos:prefLabel "Islamic Republic of Afghanistan".
-
-ismcatownpro:AGO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AGO";
-  skos:prefLabel "Republic of Angola".
-
-ismcatownpro:AIA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AIA";
-  skos:prefLabel "Anguilla".
-
-ismcatownpro:ALB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ALB";
-  skos:prefLabel "Republic of Albania".
-
-ismcatownpro:AMSP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AMSP";
-  skos:prefLabel "AFRICOM Multinational Strategic Partners".
-
-ismcatownpro:AND a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AND";
-  skos:prefLabel "Principality of Andorra".
-
-ismcatownpro:AOSC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AOSC";
-  skos:prefLabel "Athens Olympics Security Coalition".
-
-ismcatownpro:APFS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "APFS";
-  skos:prefLabel "African Peacekeeping Force Somalia".
-
-ismcatownpro:ARE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ARE";
-  skos:prefLabel "United Arab Emirates".
-
-ismcatownpro:ARG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ARG";
-  skos:prefLabel "Argentine Republic".
-
-ismcatownpro:ARM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ARM";
-  skos:prefLabel "Republic of Armenia".
-
-ismcatownpro:ASEA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ASEA";
-  skos:prefLabel "Association of Southeast Asian Nations (ASEAN)".
-
-ismcatownpro:ASM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ASM";
-  skos:prefLabel "Territory of American Samoa".
-
-ismcatownpro:ATA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ATA";
-  skos:prefLabel "Antarctica".
-
-ismcatownpro:ATF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ATF";
-  skos:prefLabel "French Southern and Antarctic Lands".
-
-ismcatownpro:ATG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ATG";
-  skos:prefLabel "Antigua and Barbuda".
-
-ismcatownpro:AUS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AUS";
-  skos:prefLabel "Commonwealth of Australia".
-
-ismcatownpro:AUSTRALIA_GROUP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AUSTRALIA_GROUP";
-  skos:prefLabel "Australia Group".
-
-ismcatownpro:AUT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AUT";
-  skos:prefLabel "Republic of Austria".
-
-ismcatownpro:AX2 a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AX2";
-  skos:prefLabel "Guantanamo Bay Naval Base".
-
-ismcatownpro:AX3 a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AX3";
-  skos:prefLabel "Entity 6".
-
-ismcatownpro:AZE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "AZE";
-  skos:prefLabel "Republic of Azerbaijan".
-
-ismcatownpro:BDI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BDI";
-  skos:prefLabel "Republic of Burundi".
-
-ismcatownpro:BEL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BEL";
-  skos:prefLabel "Kingdom of Belgium".
-
-ismcatownpro:BEN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BEN";
-  skos:prefLabel "Republic of Benin".
-
-ismcatownpro:BES a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BES";
-  skos:prefLabel "Bonaire, Sint Eustatius, and Saba".
-
-ismcatownpro:BFA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BFA";
-  skos:prefLabel "Burkina Faso".
-
-ismcatownpro:BGD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BGD";
-  skos:prefLabel "People’s Republic of Bangladesh".
-
-ismcatownpro:BGR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BGR";
-  skos:prefLabel "Republic of Bulgaria".
-
-ismcatownpro:BHR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BHR";
-  skos:prefLabel "Kingdom of Bahrain".
-
-ismcatownpro:BHS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BHS";
-  skos:prefLabel "Commonwealth of The Bahamas".
-
-ismcatownpro:BHTF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BHTF";
-  skos:prefLabel "Boko Haram Task Force".
-
-ismcatownpro:BIH a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BIH";
-  skos:prefLabel "Bosnia and Herzegovina".
-
-ismcatownpro:BLM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BLM";
-  skos:prefLabel "Saint Barthelemy".
-
-ismcatownpro:BLR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BLR";
-  skos:prefLabel "Republic of Belarus".
-
-ismcatownpro:BLZ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BLZ";
-  skos:prefLabel "Belize".
-
-ismcatownpro:BMU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BMU";
-  skos:prefLabel "Bermuda".
-
-ismcatownpro:BOL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BOL";
-  skos:prefLabel "Plurinational State of Bolivia".
-
-ismcatownpro:BRA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BRA";
-  skos:prefLabel "Federative Republic of Brazil".
-
-ismcatownpro:BRB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BRB";
-  skos:prefLabel "Barbados".
-
-ismcatownpro:BRN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BRN";
-  skos:prefLabel "Brunei Darussalam".
-
-ismcatownpro:BTN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BTN";
-  skos:prefLabel "Kingdom of Bhutan".
-
-ismcatownpro:BVT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BVT";
-  skos:prefLabel "Bouvet Island".
-
-ismcatownpro:BWA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BWA";
-  skos:prefLabel "Republic of Botswana".
-
-ismcatownpro:BWCS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "BWCS";
-  skos:prefLabel "Biological Weapons Convention States".
-
-ismcatownpro:CAF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CAF";
-  skos:prefLabel "Central African Republic".
-
-ismcatownpro:CAN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CAN";
-  skos:prefLabel "Canada".
-
-ismcatownpro:CCK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CCK";
-  skos:prefLabel "Territory of Cocos (Keeling) Islands".
-
-ismcatownpro:CFCK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CFCK";
-  skos:prefLabel "Combined Forces Command Korea".
-
-ismcatownpro:CFOD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CFOD";
-  skos:prefLabel "Coalition Forces Odyssey Dawn".
-
-ismcatownpro:CFUP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CFUP";
-  skos:prefLabel "Coalition Forces Unified Protector".
-
-ismcatownpro:CHE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CHE";
-  skos:prefLabel "Swiss Confederation".
-
-ismcatownpro:CHL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CHL";
-  skos:prefLabel "Republic of Chile".
-
-ismcatownpro:CHN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CHN";
-  skos:prefLabel "People’s Republic of China".
-
-ismcatownpro:CIV a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CIV";
-  skos:prefLabel "Republic of Côte d’Ivoire".
-
-ismcatownpro:CLFC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CLFC";
-  skos:prefLabel "Combined Libya Fusion Cell".
-
-ismcatownpro:CMFC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CMFC";
-  skos:prefLabel "Combined Maritime Forces Central".
-
-ismcatownpro:CMFP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CMFP";
-  skos:prefLabel "Cooperative Maritime Forces Pacific".
-
-ismcatownpro:CMR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CMR";
-  skos:prefLabel "Republic of Cameroon".
-
-ismcatownpro:COD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "COD";
-  skos:prefLabel "Democratic Republic of the Congo".
-
-ismcatownpro:COG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "COG";
-  skos:prefLabel "Republic of the Congo".
-
-ismcatownpro:COK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "COK";
-  skos:prefLabel "Cook Islands".
-
-ismcatownpro:COL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "COL";
-  skos:prefLabel "Republic of Colombia".
-
-ismcatownpro:COM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "COM";
-  skos:prefLabel "Union of the Comoros".
-
-ismcatownpro:CPMT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CPMT";
-  skos:prefLabel "Civilian Protection Monitoring Team for Sudan".
-
-ismcatownpro:CPT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CPT";
-  skos:prefLabel "Clipperton Island".
-
-ismcatownpro:CPV a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CPV";
-  skos:prefLabel "Republic of Cabo Verde".
-
-ismcatownpro:CRI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CRI";
-  skos:prefLabel "Republic of Costa Rica".
-
-ismcatownpro:CTOC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CTOC";
-  skos:prefLabel "Countering Transnational Organized Crime".
-
-ismcatownpro:CUB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CUB";
-  skos:prefLabel "Republic of Cuba".
-
-ismcatownpro:CUW a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CUW";
-  skos:prefLabel "Curaçao".
-
-ismcatownpro:CVEnumISMCATOwnerProducer a skos:ConceptScheme;
-  dc:title "(U) ismcatownpro:CVEnumISMCATOwnerProducer definition";
-  skos:hasTopConcept
-    ismcatownpro:ABW,
-    ismcatownpro:ACGU,
-    ismcatownpro:AFG,
-    ismcatownpro:AGO,
-    ismcatownpro:AIA,
-    ismcatownpro:ALB,
-    ismcatownpro:AMSP,
-    ismcatownpro:AND,
-    ismcatownpro:AOSC,
-    ismcatownpro:APFS,
-    ismcatownpro:ARE,
-    ismcatownpro:ARG,
-    ismcatownpro:ARM,
-    ismcatownpro:ASEA,
-    ismcatownpro:ASM,
-    ismcatownpro:ATA,
-    ismcatownpro:ATF,
-    ismcatownpro:ATG,
-    ismcatownpro:AUS,
-    ismcatownpro:AUSTRALIA_GROUP,
-    ismcatownpro:AUT,
-    ismcatownpro:AX2,
-    ismcatownpro:AX3,
-    ismcatownpro:AZE,
-    ismcatownpro:BDI,
-    ismcatownpro:BEL,
-    ismcatownpro:BEN,
-    ismcatownpro:BES,
-    ismcatownpro:BFA,
-    ismcatownpro:BGD,
-    ismcatownpro:BGR,
-    ismcatownpro:BHR,
-    ismcatownpro:BHS,
-    ismcatownpro:BHTF,
-    ismcatownpro:BIH,
-    ismcatownpro:BLM,
-    ismcatownpro:BLR,
-    ismcatownpro:BLZ,
-    ismcatownpro:BMU,
-    ismcatownpro:BOL,
-    ismcatownpro:BRA,
-    ismcatownpro:BRB,
-    ismcatownpro:BRN,
-    ismcatownpro:BTN,
-    ismcatownpro:BVT,
-    ismcatownpro:BWA,
-    ismcatownpro:BWCS,
-    ismcatownpro:CAF,
-    ismcatownpro:CAN,
-    ismcatownpro:CCK,
-    ismcatownpro:CFCK,
-    ismcatownpro:CFOD,
-    ismcatownpro:CFUP,
-    ismcatownpro:CHE,
-    ismcatownpro:CHL,
-    ismcatownpro:CHN,
-    ismcatownpro:CIV,
-    ismcatownpro:CLFC,
-    ismcatownpro:CMFC,
-    ismcatownpro:CMFP,
-    ismcatownpro:CMR,
-    ismcatownpro:COD,
-    ismcatownpro:COG,
-    ismcatownpro:COK,
-    ismcatownpro:COL,
-    ismcatownpro:COM,
-    ismcatownpro:CPMT,
-    ismcatownpro:CPT,
-    ismcatownpro:CPV,
-    ismcatownpro:CRI,
-    ismcatownpro:CTOC,
-    ismcatownpro:CUB,
-    ismcatownpro:CUW,
-    ismcatownpro:CWCS,
-    ismcatownpro:CXR,
-    ismcatownpro:CYM,
-    ismcatownpro:CYP,
-    ismcatownpro:CZE,
-    ismcatownpro:DEU,
-    ismcatownpro:DGA,
-    ismcatownpro:DJI,
-    ismcatownpro:DMA,
-    ismcatownpro:DNK,
-    ismcatownpro:DOM,
-    ismcatownpro:DZA,
-    ismcatownpro:ECTF,
-    ismcatownpro:ECU,
-    ismcatownpro:EFOR,
-    ismcatownpro:EGY,
-    ismcatownpro:ERI,
-    ismcatownpro:ESH,
-    ismcatownpro:ESP,
-    ismcatownpro:EST,
-    ismcatownpro:ETH,
-    ismcatownpro:EU,
-    ismcatownpro:EUDA,
-    ismcatownpro:FGI,
-    ismcatownpro:FIN,
-    ismcatownpro:FJI,
-    ismcatownpro:FLK,
-    ismcatownpro:FRA,
-    ismcatownpro:FRME,
-    ismcatownpro:FRO,
-    ismcatownpro:FSM,
-    ismcatownpro:FVEY,
-    ismcatownpro:GAB,
-    ismcatownpro:GBR,
-    ismcatownpro:GCCH,
-    ismcatownpro:GCTF,
-    ismcatownpro:GEO,
-    ismcatownpro:GFNX,
-    ismcatownpro:GGY,
-    ismcatownpro:GHA,
-    ismcatownpro:GIB,
-    ismcatownpro:GIN,
-    ismcatownpro:GLP,
-    ismcatownpro:GMB,
-    ismcatownpro:GMIF,
-    ismcatownpro:GNB,
-    ismcatownpro:GNQ,
-    ismcatownpro:GRC,
-    ismcatownpro:GRD,
-    ismcatownpro:GRL,
-    ismcatownpro:GTM,
-    ismcatownpro:GUF,
-    ismcatownpro:GUM,
-    ismcatownpro:GUY,
-    ismcatownpro:HKG,
-    ismcatownpro:HMD,
-    ismcatownpro:HND,
-    ismcatownpro:HRV,
-    ismcatownpro:HTI,
-    ismcatownpro:HUN,
-    ismcatownpro:IDN,
-    ismcatownpro:IESC,
-    ismcatownpro:IMN,
-    ismcatownpro:IMSC,
-    ismcatownpro:IMSP,
-    ismcatownpro:IND,
-    ismcatownpro:IOT,
-    ismcatownpro:IPMC,
-    ismcatownpro:IRKS,
-    ismcatownpro:IRL,
-    ismcatownpro:IRN,
-    ismcatownpro:IRQ,
-    ismcatownpro:ISAF,
-    ismcatownpro:ISL,
-    ismcatownpro:ISR,
-    ismcatownpro:ISSG,
-    ismcatownpro:ITA,
-    ismcatownpro:JAM,
-    ismcatownpro:JEY,
-    ismcatownpro:JOR,
-    ismcatownpro:JPN,
-    ismcatownpro:KAZ,
-    ismcatownpro:KEN,
-    ismcatownpro:KFOR,
-    ismcatownpro:KGZ,
-    ismcatownpro:KHM,
-    ismcatownpro:KIR,
-    ismcatownpro:KNA,
-    ismcatownpro:KOR,
-    ismcatownpro:KWT,
-    ismcatownpro:LAO,
-    ismcatownpro:LBN,
-    ismcatownpro:LBR,
-    ismcatownpro:LBY,
-    ismcatownpro:LCA,
-    ismcatownpro:LIE,
-    ismcatownpro:LKA,
-    ismcatownpro:LSO,
-    ismcatownpro:LTU,
-    ismcatownpro:LUX,
-    ismcatownpro:LVA,
-    ismcatownpro:MAC,
-    ismcatownpro:MAF,
-    ismcatownpro:MAR,
-    ismcatownpro:MCFI,
-    ismcatownpro:MCO,
-    ismcatownpro:MDA,
-    ismcatownpro:MDG,
-    ismcatownpro:MDV,
-    ismcatownpro:MESF,
-    ismcatownpro:MEX,
-    ismcatownpro:MGEU,
-    ismcatownpro:MHL,
-    ismcatownpro:MIFH,
-    ismcatownpro:MKD,
-    ismcatownpro:MLEC,
-    ismcatownpro:MLI,
-    ismcatownpro:MLT,
-    ismcatownpro:MMR,
-    ismcatownpro:MNE,
-    ismcatownpro:MNG,
-    ismcatownpro:MNP,
-    ismcatownpro:MNTF,
-    ismcatownpro:MOZ,
-    ismcatownpro:MPFL,
-    ismcatownpro:MRT,
-    ismcatownpro:MSR,
-    ismcatownpro:MTQ,
-    ismcatownpro:MUS,
-    ismcatownpro:MWI,
-    ismcatownpro:MYS,
-    ismcatownpro:MYT,
-    ismcatownpro:NACT,
-    ismcatownpro:NAM,
-    ismcatownpro:NATO,
-    ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D,
-    ismcatownpro:NCFE,
-    ismcatownpro:NCL,
-    ismcatownpro:NER,
-    ismcatownpro:NFK,
-    ismcatownpro:NGA,
-    ismcatownpro:NIC,
-    ismcatownpro:NIU,
-    ismcatownpro:NKIC,
-    ismcatownpro:NLD,
-    ismcatownpro:NOR,
-    ismcatownpro:NPL,
-    ismcatownpro:NRDC,
-    ismcatownpro:NRU,
-    ismcatownpro:NSG,
-    ismcatownpro:NZL,
-    ismcatownpro:OMN,
-    ismcatownpro:OSAG,
-    ismcatownpro:OSTY,
-    ismcatownpro:PAK,
-    ismcatownpro:PAN,
-    ismcatownpro:PAWA,
-    ismcatownpro:PCN,
-    ismcatownpro:PER,
-    ismcatownpro:PGMF,
-    ismcatownpro:PHL,
-    ismcatownpro:PLW,
-    ismcatownpro:PNG,
-    ismcatownpro:POL,
-    ismcatownpro:PRI,
-    ismcatownpro:PRK,
-    ismcatownpro:PRT,
-    ismcatownpro:PRY,
-    ismcatownpro:PSMX,
-    ismcatownpro:PYF,
-    ismcatownpro:QAT,
-    ismcatownpro:REU,
-    ismcatownpro:RISC,
-    ismcatownpro:ROU,
-    ismcatownpro:RSMA,
-    ismcatownpro:RUS,
-    ismcatownpro:RWA,
-    ismcatownpro:SAU,
-    ismcatownpro:SDN,
-    ismcatownpro:SEN,
-    ismcatownpro:SFOR,
-    ismcatownpro:SGP,
-    ismcatownpro:SGS,
-    ismcatownpro:SHN,
-    ismcatownpro:SLB,
-    ismcatownpro:SLE,
-    ismcatownpro:SLV,
-    ismcatownpro:SMR,
-    ismcatownpro:SOFP,
-    ismcatownpro:SOM,
-    ismcatownpro:SPAA,
-    ismcatownpro:SPM,
-    ismcatownpro:SRB,
-    ismcatownpro:SSD,
-    ismcatownpro:STP,
-    ismcatownpro:SUR,
-    ismcatownpro:SVK,
-    ismcatownpro:SVN,
-    ismcatownpro:SWE,
-    ismcatownpro:SWZ,
-    ismcatownpro:SXM,
-    ismcatownpro:SYC,
-    ismcatownpro:SYR,
-    ismcatownpro:TCA,
-    ismcatownpro:TCD,
-    ismcatownpro:TEYE,
-    ismcatownpro:TFTC,
-    ismcatownpro:TGO,
-    ismcatownpro:THA,
-    ismcatownpro:TJK,
-    ismcatownpro:TKL,
-    ismcatownpro:TKM,
-    ismcatownpro:TLS,
-    ismcatownpro:TON,
-    ismcatownpro:TTO,
-    ismcatownpro:TUN,
-    ismcatownpro:TUR,
-    ismcatownpro:TUV,
-    ismcatownpro:TWN,
-    ismcatownpro:TZA,
-    ismcatownpro:UGA,
-    ismcatownpro:UKR,
-    ismcatownpro:UNCK,
-    ismcatownpro:URY,
-    ismcatownpro:USA,
-    ismcatownpro:UZB,
-    ismcatownpro:VAT,
-    ismcatownpro:VCT,
-    ismcatownpro:VEN,
-    ismcatownpro:VGB,
-    ismcatownpro:VIR,
-    ismcatownpro:VNM,
-    ismcatownpro:VUT,
-    ismcatownpro:WLF,
-    ismcatownpro:WSM,
-    ismcatownpro:XAC,
-    ismcatownpro:XAZ,
-    ismcatownpro:XBI,
-    ismcatownpro:XBK,
-    ismcatownpro:XCR,
-    ismcatownpro:XCS,
-    ismcatownpro:XCY,
-    ismcatownpro:XEU,
-    ismcatownpro:XGL,
-    ismcatownpro:XGZ,
-    ismcatownpro:XHO,
-    ismcatownpro:XJA,
-    ismcatownpro:XJM,
-    ismcatownpro:XJN,
-    ismcatownpro:XJV,
-    ismcatownpro:XKM,
-    ismcatownpro:XKN,
-    ismcatownpro:XKR,
-    ismcatownpro:XKS,
-    ismcatownpro:XMW,
-    ismcatownpro:XNV,
-    ismcatownpro:XPL,
-    ismcatownpro:XPR,
-    ismcatownpro:XQZ,
-    ismcatownpro:XSP,
-    ismcatownpro:XSV,
-    ismcatownpro:XTR,
-    ismcatownpro:XWB,
-    ismcatownpro:XWK,
-    ismcatownpro:XXD,
-    ismcatownpro:YEM,
-    ismcatownpro:ZAF,
-    ismcatownpro:ZMB,
-    ismcatownpro:ZWE.
-
-ismcatownpro:CVEnumISMCATOwnerProducerValues a rdfs:Datatype;
-  owl:equivalentClass <_:6>.
-
-ismcatownpro:CWCS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CWCS";
-  skos:prefLabel "Chemical Weapons Convention States".
-
-ismcatownpro:CXR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CXR";
-  skos:prefLabel "Territory of Christmas Island".
-
-ismcatownpro:CYM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CYM";
-  skos:prefLabel "Cayman Islands".
-
-ismcatownpro:CYP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CYP";
-  skos:prefLabel "Republic of Cyprus".
-
-ismcatownpro:CZE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "CZE";
-  skos:prefLabel "Czech Republic".
-
-ismcatownpro:DEU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "DEU";
-  skos:prefLabel "Federal Republic of Germany".
-
-ismcatownpro:DGA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "DGA";
-  skos:prefLabel "Diego Garcia".
-
-ismcatownpro:DJI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "DJI";
-  skos:prefLabel "Republic of Djibouti".
-
-ismcatownpro:DMA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "DMA";
-  skos:prefLabel "Commonwealth of Dominica".
-
-ismcatownpro:DNK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "DNK";
-  skos:prefLabel "Kingdom of Denmark".
-
-ismcatownpro:DOM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "DOM";
-  skos:prefLabel "Dominican Republic".
-
-ismcatownpro:DZA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "DZA";
-  skos:prefLabel "People’s Democratic Republic of Algeria".
-
-ismcatownpro:ECTF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ECTF";
-  skos:prefLabel "European Counter-Terrorism Forces".
-
-ismcatownpro:ECU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ECU";
-  skos:prefLabel "Republic of Ecuador".
-
-ismcatownpro:EFOR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "EFOR";
-  skos:prefLabel "European Union Stabilization Forces in Bosnia".
-
-ismcatownpro:EGY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "EGY";
-  skos:prefLabel "Arab Republic of Egypt".
-
-ismcatownpro:ERI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ERI";
-  skos:prefLabel "State of Eritrea".
-
-ismcatownpro:ESH a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ESH";
-  skos:prefLabel "Western Sahara".
-
-ismcatownpro:ESP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ESP";
-  skos:prefLabel "Kingdom of Spain".
-
-ismcatownpro:EST a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "EST";
-  skos:prefLabel "Republic of Estonia".
-
-ismcatownpro:ETH a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ETH";
-  skos:prefLabel "Federal Democratic Republic of Ethiopia".
-
-ismcatownpro:EU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "EU";
-  skos:prefLabel "European Union".
-
-ismcatownpro:EUDA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "EUDA";
-  skos:prefLabel "European Union DARFUR".
-
-ismcatownpro:FGI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "FGI";
-  skos:prefLabel "Foreign Government Information".
-
-ismcatownpro:FIN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "FIN";
-  skos:prefLabel "Republic of Finland".
-
-ismcatownpro:FJI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "FJI";
-  skos:prefLabel "Republic of Fiji".
-
-ismcatownpro:FLK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "FLK";
-  skos:prefLabel "Falkland Islands (Islas Malvinas)".
-
-ismcatownpro:FRA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "FRA";
-  skos:prefLabel "French Republic".
-
-ismcatownpro:FRME a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "FRME";
-  skos:prefLabel "Counter Violent Extremist Organizations Framework Partners".
-
-ismcatownpro:FRO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "FRO";
-  skos:prefLabel "Faroe Islands".
-
-ismcatownpro:FSM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "FSM";
-  skos:prefLabel "Federated States of Micronesia".
-
-ismcatownpro:FVEY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "FVEY";
-  skos:prefLabel "FIVE EYES".
-
-ismcatownpro:GAB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GAB";
-  skos:prefLabel "Gabonese Republic".
-
-ismcatownpro:GBR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GBR";
-  skos:prefLabel "United Kingdom of Great Britain and Northern Ireland".
-
-ismcatownpro:GCCH a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GCCH";
-  skos:prefLabel "Gulf Cooperation Council".
-
-ismcatownpro:GCTF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GCTF";
-  skos:prefLabel "Global Counter-Terrorism Forces".
-
-ismcatownpro:GEO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GEO";
-  skos:prefLabel "Georgia".
-
-ismcatownpro:GFNX a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GFNX";
-  skos:prefLabel "Global Foreign Terrorist Fighter Network Exchange".
-
-ismcatownpro:GGY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GGY";
-  skos:prefLabel "Bailiwick of Guernsey".
-
-ismcatownpro:GHA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GHA";
-  skos:prefLabel "Republic of Ghana".
-
-ismcatownpro:GIB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GIB";
-  skos:prefLabel "Gibraltar".
-
-ismcatownpro:GIN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GIN";
-  skos:prefLabel "Republic of Guinea".
-
-ismcatownpro:GLP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GLP";
-  skos:prefLabel "Region of Guadeloupe".
-
-ismcatownpro:GMB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GMB";
-  skos:prefLabel "Republic of The Gambia".
-
-ismcatownpro:GMIF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GMIF";
-  skos:prefLabel "Global Maritime Interception Forces".
-
-ismcatownpro:GNB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GNB";
-  skos:prefLabel "Republic of Guinea-Bissau".
-
-ismcatownpro:GNQ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GNQ";
-  skos:prefLabel "Republic of Equatorial Guinea".
-
-ismcatownpro:GRC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GRC";
-  skos:prefLabel "Hellenic Republic".
-
-ismcatownpro:GRD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GRD";
-  skos:prefLabel "Grenada".
-
-ismcatownpro:GRL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GRL";
-  skos:prefLabel "Greenland".
-
-ismcatownpro:GTM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GTM";
-  skos:prefLabel "Republic of Guatemala".
-
-ismcatownpro:GUF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GUF";
-  skos:prefLabel "Territorial Collectivity of Guiana".
-
-ismcatownpro:GUM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GUM";
-  skos:prefLabel "Territory of Guam".
-
-ismcatownpro:GUY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "GUY";
-  skos:prefLabel "Co-operative Republic of Guyana".
-
-ismcatownpro:HKG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "HKG";
-  skos:prefLabel "Hong Kong Special Administrative Region".
-
-ismcatownpro:HMD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "HMD";
-  skos:prefLabel "Territory of Heard Island and McDonald Islands".
-
-ismcatownpro:HND a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "HND";
-  skos:prefLabel "Republic of Honduras".
-
-ismcatownpro:HRV a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "HRV";
-  skos:prefLabel "Republic of Croatia".
-
-ismcatownpro:HTI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "HTI";
-  skos:prefLabel "Republic of Haiti".
-
-ismcatownpro:HUN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "HUN";
-  skos:prefLabel "Hungary".
-
-ismcatownpro:IDN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IDN";
-  skos:prefLabel "Republic of Indonesia".
-
-ismcatownpro:IESC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IESC";
-  skos:prefLabel "International Events Security Coalition".
-
-ismcatownpro:IMN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IMN";
-  skos:prefLabel "Isle of Man".
-
-ismcatownpro:IMSC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IMSC";
-  skos:prefLabel "International Maritime Security Construct".
-
-ismcatownpro:IMSP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IMSP";
-  skos:prefLabel "INDOPACOM Multinational Strategic Partners".
-
-ismcatownpro:IND a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IND";
-  skos:prefLabel "Republic of India".
-
-ismcatownpro:IOT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IOT";
-  skos:prefLabel "British Indian Ocean Territory".
-
-ismcatownpro:IPMC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IPMC";
-  skos:prefLabel "INDO PACIFIC Maritime Call".
-
-ismcatownpro:IRKS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IRKS";
-  skos:prefLabel "Inherent Resolve Kinetic Support".
-
-ismcatownpro:IRL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IRL";
-  skos:prefLabel "Ireland".
-
-ismcatownpro:IRN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IRN";
-  skos:prefLabel "Islamic Republic of Iran".
-
-ismcatownpro:IRQ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "IRQ";
-  skos:prefLabel "Republic of Iraq".
-
-ismcatownpro:ISAF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ISAF";
-  skos:prefLabel "International Security Assistance Force for Afghanistan".
-
-ismcatownpro:ISL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ISL";
-  skos:prefLabel "Republic of Iceland".
-
-ismcatownpro:ISR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ISR";
-  skos:prefLabel "State of Israel".
-
-ismcatownpro:ISSG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ISSG";
-  skos:prefLabel "International Syria Support Group".
-
-ismcatownpro:ITA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ITA";
-  skos:prefLabel "Italian Republic".
-
-ismcatownpro:JAM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "JAM";
-  skos:prefLabel "Jamaica".
-
-ismcatownpro:JEY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "JEY";
-  skos:prefLabel "Bailiwick of Jersey".
-
-ismcatownpro:JOR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "JOR";
-  skos:prefLabel "Hashemite Kingdom of Jordan".
-
-ismcatownpro:JPN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "JPN";
-  skos:prefLabel "Japan".
-
-ismcatownpro:KAZ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "KAZ";
-  skos:prefLabel "Republic of Kazakhstan".
-
-ismcatownpro:KEN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "KEN";
-  skos:prefLabel "Republic of Kenya".
-
-ismcatownpro:KFOR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "KFOR";
-  skos:prefLabel "Stabilization Forces in Kosovo".
-
-ismcatownpro:KGZ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "KGZ";
-  skos:prefLabel "Kyrgyz Republic".
-
-ismcatownpro:KHM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "KHM";
-  skos:prefLabel "Kingdom of Cambodia".
-
-ismcatownpro:KIR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "KIR";
-  skos:prefLabel "Republic of Kiribati".
-
-ismcatownpro:KNA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "KNA";
-  skos:prefLabel "Federation of Saint Kitts and Nevis".
-
-ismcatownpro:KOR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "KOR";
-  skos:prefLabel "Republic of Korea".
-
-ismcatownpro:KWT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "KWT";
-  skos:prefLabel "State of Kuwait".
-
-ismcatownpro:LAO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LAO";
-  skos:prefLabel "Lao People’s Democratic Republic".
-
-ismcatownpro:LBN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LBN";
-  skos:prefLabel "Lebanese Republic".
-
-ismcatownpro:LBR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LBR";
-  skos:prefLabel "Republic of Liberia".
-
-ismcatownpro:LBY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LBY";
-  skos:prefLabel "State of Libya".
-
-ismcatownpro:LCA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LCA";
-  skos:prefLabel "Saint Lucia".
-
-ismcatownpro:LIE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LIE";
-  skos:prefLabel "Principality of Liechtenstein".
-
-ismcatownpro:LKA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LKA";
-  skos:prefLabel "Democratic Socialist Republic of Sri Lanka".
-
-ismcatownpro:LSO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LSO";
-  skos:prefLabel "Kingdom of Lesotho".
-
-ismcatownpro:LTU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LTU";
-  skos:prefLabel "Republic of Lithuania".
-
-ismcatownpro:LUX a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LUX";
-  skos:prefLabel "Grand Duchy of Luxembourg".
-
-ismcatownpro:LVA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "LVA";
-  skos:prefLabel "Republic of Latvia".
-
-ismcatownpro:MAC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MAC";
-  skos:prefLabel "Macau Special Administrative Region".
-
-ismcatownpro:MAF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MAF";
-  skos:prefLabel "Saint Martin".
-
-ismcatownpro:MAR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MAR";
-  skos:prefLabel "Kingdom of Morocco".
-
-ismcatownpro:MCFI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MCFI";
-  skos:prefLabel "Multinational Coalition Forces-Iraq".
-
-ismcatownpro:MCO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MCO";
-  skos:prefLabel "Principality of Monaco".
-
-ismcatownpro:MDA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MDA";
-  skos:prefLabel "Republic of Moldova".
-
-ismcatownpro:MDG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MDG";
-  skos:prefLabel "Republic of Madagascar".
-
-ismcatownpro:MDV a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MDV";
-  skos:prefLabel "Republic of Maldives".
-
-ismcatownpro:MESF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MESF";
-  skos:prefLabel "Middle East Stability Force".
-
-ismcatownpro:MEX a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MEX";
-  skos:prefLabel "United Mexican States".
-
-ismcatownpro:MGEU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MGEU";
-  skos:prefLabel "Multinational GEOINT Europe".
-
-ismcatownpro:MHL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MHL";
-  skos:prefLabel "Republic of the Marshall Islands".
-
-ismcatownpro:MIFH a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MIFH";
-  skos:prefLabel "Multinational Interim Force Haiti".
-
-ismcatownpro:MKD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MKD";
-  skos:prefLabel "Republic of North Macedonia".
-
-ismcatownpro:MLEC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MLEC";
-  skos:prefLabel "Multi-Lateral Enduring Contingency".
-
-ismcatownpro:MLI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MLI";
-  skos:prefLabel "Republic of Mali".
-
-ismcatownpro:MLT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MLT";
-  skos:prefLabel "Republic of Malta".
-
-ismcatownpro:MMR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MMR";
-  skos:prefLabel "Union of Burma".
-
-ismcatownpro:MNE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MNE";
-  skos:prefLabel "Montenegro".
-
-ismcatownpro:MNG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MNG";
-  skos:prefLabel "Mongolia".
-
-ismcatownpro:MNP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MNP";
-  skos:prefLabel "Commonwealth of the Northern Mariana Islands".
-
-ismcatownpro:MNTF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MNTF";
-  skos:prefLabel "Multinational Task Force".
-
-ismcatownpro:MOZ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MOZ";
-  skos:prefLabel "Republic of Mozambique".
-
-ismcatownpro:MPFL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MPFL";
-  skos:prefLabel "Multinational Peacekeeping Forces".
-
-ismcatownpro:MRT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MRT";
-  skos:prefLabel "Islamic Republic of Mauritania".
-
-ismcatownpro:MSR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MSR";
-  skos:prefLabel "Montserrat".
-
-ismcatownpro:MTQ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MTQ";
-  skos:prefLabel "Territorial Collectivity of Martinique".
-
-ismcatownpro:MUS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MUS";
-  skos:prefLabel "Republic of Mauritius".
-
-ismcatownpro:MWI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MWI";
-  skos:prefLabel "Republic of Malawi".
-
-ismcatownpro:MYS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MYS";
-  skos:prefLabel "Malaysia".
-
-ismcatownpro:MYT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "MYT";
-  skos:prefLabel "Department of Mayotte".
-
-ismcatownpro:NACT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NACT";
-  skos:prefLabel "North African Counter-Terrorism Forces".
-
-ismcatownpro:NAM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NAM";
-  skos:prefLabel "Republic of Namibia".
-
-ismcatownpro:NATO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NATO";
-  skos:prefLabel "North Atlantic Treaty Organization".
-
-ismcatownpro:NATO%3A%5Ba-zA-Z%5C-_%5D%7B1%2C256%7D a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:prefLabel "North Atlantic Treaty Organization Special Words";
-  sh:property <_:1>.
-
-ismcatownpro:NCFE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NCFE";
-  skos:prefLabel "NATO CFE Treaty on Conventional Armed Forces in Europe".
-
-ismcatownpro:NCL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NCL";
-  skos:prefLabel "New Caledonia".
-
-ismcatownpro:NER a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NER";
-  skos:prefLabel "Republic of Niger".
-
-ismcatownpro:NFK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NFK";
-  skos:prefLabel "Territory of Norfolk Island".
-
-ismcatownpro:NGA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NGA";
-  skos:prefLabel "Federal Republic of Nigeria".
-
-ismcatownpro:NIC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NIC";
-  skos:prefLabel "Republic of Nicaragua".
-
-ismcatownpro:NIU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NIU";
-  skos:prefLabel "Niue".
-
-ismcatownpro:NKIC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NKIC";
-  skos:prefLabel "North Korea Intelligence Coalition".
-
-ismcatownpro:NLD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NLD";
-  skos:prefLabel "Kingdom of the Netherlands".
-
-ismcatownpro:NOR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NOR";
-  skos:prefLabel "Kingdom of Norway".
-
-ismcatownpro:NPL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NPL";
-  skos:prefLabel "Federal Democratic Republic of Nepal".
-
-ismcatownpro:NRDC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NRDC";
-  skos:prefLabel "NORDIC".
-
-ismcatownpro:NRU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NRU";
-  skos:prefLabel "Republic of Nauru".
-
-ismcatownpro:NSG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NSG";
-  skos:prefLabel "Nuclear Suppliers' Group".
-
-ismcatownpro:NZL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "NZL";
-  skos:prefLabel "New Zealand".
-
-ismcatownpro:OMN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "OMN";
-  skos:prefLabel "Sultanate of Oman".
-
-ismcatownpro:OSAG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "OSAG";
-  skos:prefLabel "Olympic Security Advisory Group".
-
-ismcatownpro:OSTY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "OSTY";
-  skos:prefLabel "Open Skies Treaty".
-
-ismcatownpro:PAK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PAK";
-  skos:prefLabel "Islamic Republic of Pakistan".
-
-ismcatownpro:PAN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PAN";
-  skos:prefLabel "Republic of Panama".
-
-ismcatownpro:PAWA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PAWA";
-  skos:prefLabel "Partnership for Actions in West Africa".
-
-ismcatownpro:PCN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PCN";
-  skos:prefLabel "Pitcairn, Henderson, Ducie, and Oeno Islands".
-
-ismcatownpro:PER a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PER";
-  skos:prefLabel "Republic of Peru".
-
-ismcatownpro:PGMF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PGMF";
-  skos:prefLabel "Persian Gulf Multinational Forces".
-
-ismcatownpro:PHL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PHL";
-  skos:prefLabel "Republic of the Philippines".
-
-ismcatownpro:PLW a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PLW";
-  skos:prefLabel "Republic of Palau".
-
-ismcatownpro:PNG a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PNG";
-  skos:prefLabel "Independent State of Papua New Guinea".
-
-ismcatownpro:POL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "POL";
-  skos:prefLabel "Republic of Poland".
-
-ismcatownpro:PRI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PRI";
-  skos:prefLabel "Commonwealth of Puerto Rico".
-
-ismcatownpro:PRK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PRK";
-  skos:prefLabel "Democratic People’s Republic of Korea".
-
-ismcatownpro:PRT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PRT";
-  skos:prefLabel "Portuguese Republic".
-
-ismcatownpro:PRY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PRY";
-  skos:prefLabel "Republic of Paraguay".
-
-ismcatownpro:PSMX a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PSMX";
-  skos:prefLabel "Pacific Security Monitoring Exchange".
-
-ismcatownpro:PYF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "PYF";
-  skos:prefLabel "French Polynesia".
-
-ismcatownpro:QAT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "QAT";
-  skos:prefLabel "State of Qatar".
-
-ismcatownpro:REU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "REU";
-  skos:prefLabel "Region of Reunion".
-
-ismcatownpro:RISC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "RISC";
-  skos:prefLabel "Russia Intelligence Sharing Coalition".
-
-ismcatownpro:ROU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ROU";
-  skos:prefLabel "Romania".
-
-ismcatownpro:RSMA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "RSMA";
-  skos:prefLabel "Resolute Support Mission Afghanistan".
-
-ismcatownpro:RUS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "RUS";
-  skos:prefLabel "Russian Federation".
-
-ismcatownpro:RWA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "RWA";
-  skos:prefLabel "Republic of Rwanda".
-
-ismcatownpro:SAU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SAU";
-  skos:prefLabel "Kingdom of Saudi Arabia".
-
-ismcatownpro:SDN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SDN";
-  skos:prefLabel "Republic of the Sudan".
-
-ismcatownpro:SEN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SEN";
-  skos:prefLabel "Republic of Senegal".
-
-ismcatownpro:SFOR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SFOR";
-  skos:prefLabel "Stabilization Force".
-
-ismcatownpro:SGP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SGP";
-  skos:prefLabel "Republic of Singapore".
-
-ismcatownpro:SGS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SGS";
-  skos:prefLabel "South Georgia and the South Sandwich Islands".
-
-ismcatownpro:SHN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SHN";
-  skos:prefLabel "Saint Helena, Ascension, and Tristan da Cunha".
-
-ismcatownpro:SLB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SLB";
-  skos:prefLabel "Solomon Islands".
-
-ismcatownpro:SLE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SLE";
-  skos:prefLabel "Republic of Sierra Leone".
-
-ismcatownpro:SLV a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SLV";
-  skos:prefLabel "Republic of El Salvador".
-
-ismcatownpro:SMR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SMR";
-  skos:prefLabel "Republic of San Marino".
-
-ismcatownpro:SOFP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SOFP";
-  skos:prefLabel "Special Operations Forces Partners".
-
-ismcatownpro:SOM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SOM";
-  skos:prefLabel "Federal Republic of Somalia".
-
-ismcatownpro:SPAA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SPAA";
-  skos:prefLabel "SOF Planning Activities in Afghanistan (also called \"11-Eyes\")".
-
-ismcatownpro:SPM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SPM";
-  skos:prefLabel "Territorial Collectivity of Saint Pierre and Miquelon".
-
-ismcatownpro:SRB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SRB";
-  skos:prefLabel "Republic of Serbia".
-
-ismcatownpro:SSD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SSD";
-  skos:prefLabel "Republic of South Sudan".
-
-ismcatownpro:STP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "STP";
-  skos:prefLabel "Democratic Republic of Sao Tome and Principe".
-
-ismcatownpro:SUR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SUR";
-  skos:prefLabel "Republic of Suriname".
-
-ismcatownpro:SVK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SVK";
-  skos:prefLabel "Slovak Republic".
-
-ismcatownpro:SVN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SVN";
-  skos:prefLabel "Republic of Slovenia".
-
-ismcatownpro:SWE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SWE";
-  skos:prefLabel "Kingdom of Sweden".
-
-ismcatownpro:SWZ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SWZ";
-  skos:prefLabel "Kingdom of Eswatini".
-
-ismcatownpro:SXM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SXM";
-  skos:prefLabel "Sint Maarten".
-
-ismcatownpro:SYC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SYC";
-  skos:prefLabel "Republic of Seychelles".
-
-ismcatownpro:SYR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "SYR";
-  skos:prefLabel "Syrian Arab Republic".
-
-ismcatownpro:TCA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TCA";
-  skos:prefLabel "Turks and Caicos Islands".
-
-ismcatownpro:TCD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TCD";
-  skos:prefLabel "Republic of Chad".
-
-ismcatownpro:TEYE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TEYE";
-  skos:prefLabel "THREE EYES".
-
-ismcatownpro:TFTC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TFTC";
-  skos:prefLabel "Terrorist Financing Targeting Center".
-
-ismcatownpro:TGO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TGO";
-  skos:prefLabel "Togolese Republic".
-
-ismcatownpro:THA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "THA";
-  skos:prefLabel "Kingdom of Thailand".
-
-ismcatownpro:TJK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TJK";
-  skos:prefLabel "Republic of Tajikistan".
-
-ismcatownpro:TKL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TKL";
-  skos:prefLabel "Tokelau".
-
-ismcatownpro:TKM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TKM";
-  skos:prefLabel "Turkmenistan".
-
-ismcatownpro:TLS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TLS";
-  skos:prefLabel "Democratic Republic of Timor-Leste".
-
-ismcatownpro:TON a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TON";
-  skos:prefLabel "Kingdom of Tonga".
-
-ismcatownpro:TTO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TTO";
-  skos:prefLabel "Republic of Trinidad and Tobago".
-
-ismcatownpro:TUN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TUN";
-  skos:prefLabel "Republic of Tunisia".
-
-ismcatownpro:TUR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TUR";
-  skos:prefLabel "Republic of Turkey".
-
-ismcatownpro:TUV a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TUV";
-  skos:prefLabel "Tuvalu".
-
-ismcatownpro:TWN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TWN";
-  skos:prefLabel "Taiwan".
-
-ismcatownpro:TZA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "TZA";
-  skos:prefLabel "United Republic of Tanzania".
-
-ismcatownpro:UGA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "UGA";
-  skos:prefLabel "Republic of Uganda".
-
-ismcatownpro:UKR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "UKR";
-  skos:prefLabel "Ukraine".
-
-ismcatownpro:UNCK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "UNCK";
-  skos:prefLabel "United Nations Command, Korea".
-
-ismcatownpro:URY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "URY";
-  skos:prefLabel "Oriental Republic of Uruguay".
-
-ismcatownpro:USA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "USA";
-  skos:prefLabel "United States of America".
-
-ismcatownpro:UZB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "UZB";
-  skos:prefLabel "Republic of Uzbekistan".
-
-ismcatownpro:VAT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "VAT";
-  skos:prefLabel "State of the Vatican City".
-
-ismcatownpro:VCT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "VCT";
-  skos:prefLabel "Saint Vincent and the Grenadines".
-
-ismcatownpro:VEN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "VEN";
-  skos:prefLabel "Bolivarian Republic of Venezuela".
-
-ismcatownpro:VGB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "VGB";
-  skos:prefLabel "British Virgin Islands".
-
-ismcatownpro:VIR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "VIR";
-  skos:prefLabel "United States Virgin Islands".
-
-ismcatownpro:VNM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "VNM";
-  skos:prefLabel "Socialist Republic of Vietnam".
-
-ismcatownpro:VUT a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "VUT";
-  skos:prefLabel "Republic of Vanuatu".
-
-ismcatownpro:WLF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "WLF";
-  skos:prefLabel "Wallis and Futuna".
-
-ismcatownpro:WSM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "WSM";
-  skos:prefLabel "Independent State of Samoa".
-
-ismcatownpro:XAC a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XAC";
-  skos:prefLabel "Territory of Ashmore and Cartier Islands".
-
-ismcatownpro:XAZ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XAZ";
-  skos:prefLabel "Entity 1".
-
-ismcatownpro:XBI a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XBI";
-  skos:prefLabel "Bassas da India".
-
-ismcatownpro:XBK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XBK";
-  skos:prefLabel "Baker Island".
-
-ismcatownpro:XCR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XCR";
-  skos:prefLabel "Entity 2".
-
-ismcatownpro:XCS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XCS";
-  skos:prefLabel "Coral Sea Islands Territory".
-
-ismcatownpro:XCY a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XCY";
-  skos:prefLabel "Entity 3".
-
-ismcatownpro:XEU a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XEU";
-  skos:prefLabel "Europa Island".
-
-ismcatownpro:XGL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XGL";
-  skos:prefLabel "Glorioso Islands".
-
-ismcatownpro:XGZ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XGZ";
-  skos:prefLabel "Gaza Strip".
-
-ismcatownpro:XHO a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XHO";
-  skos:prefLabel "Howland Island".
-
-ismcatownpro:XJA a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XJA";
-  skos:prefLabel "Johnston Atoll".
-
-ismcatownpro:XJM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XJM";
-  skos:prefLabel "Jan Mayen".
-
-ismcatownpro:XJN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XJN";
-  skos:prefLabel "Juan de Nova Island".
-
-ismcatownpro:XJV a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XJV";
-  skos:prefLabel "Jarvis Island".
-
-ismcatownpro:XKM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XKM";
-  skos:prefLabel "Entity 4".
-
-ismcatownpro:XKN a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XKN";
-  skos:prefLabel "Entity 5".
-
-ismcatownpro:XKR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XKR";
-  skos:prefLabel "Kingman Reef".
-
-ismcatownpro:XKS a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XKS";
-  skos:prefLabel "Republic of Kosovo".
-
-ismcatownpro:XMW a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XMW";
-  skos:prefLabel "Midway Islands".
-
-ismcatownpro:XNV a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XNV";
-  skos:prefLabel "Navassa Island".
-
-ismcatownpro:XPL a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XPL";
-  skos:prefLabel "Palmyra Atoll".
-
-ismcatownpro:XPR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XPR";
-  skos:prefLabel "Paracel Islands".
-
-ismcatownpro:XQZ a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XQZ";
-  skos:prefLabel "Akrotiri".
-
-ismcatownpro:XSP a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XSP";
-  skos:prefLabel "Spratly Islands".
-
-ismcatownpro:XSV a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XSV";
-  skos:prefLabel "Svalbard".
-
-ismcatownpro:XTR a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XTR";
-  skos:prefLabel "Tromelin Island".
-
-ismcatownpro:XWB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XWB";
-  skos:prefLabel "West Bank".
-
-ismcatownpro:XWK a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XWK";
-  skos:prefLabel "Wake Island".
-
-ismcatownpro:XXD a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "XXD";
-  skos:prefLabel "Dhekelia".
-
-ismcatownpro:YEM a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "YEM";
-  skos:prefLabel "Republic of Yemen".
-
-ismcatownpro:ZAF a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ZAF";
-  skos:prefLabel "Republic of South Africa".
-
-ismcatownpro:ZMB a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ZMB";
-  skos:prefLabel "Republic of Zambia".
-
-ismcatownpro:ZWE a skos:Concept;
-  skos:inScheme ismcatownpro:CVEnumISMCATOwnerProducer;
-  skos:notation "ZWE";
-  skos:prefLabel "Republic of Zimbabwe".
-
-<urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATOwnerProducer> a owl:Ontology;
-.

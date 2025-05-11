@@ -27,7 +27,18 @@
                          
                      </xsd:documentation>
       </xsd:annotation>
-      <xsd:restriction base="xsd:token"/>
+      <xsd:restriction base="xsd:token">
+         <xsd:enumeration value="BP">
+            <xsd:annotation>
+               <xsd:documentation>BUTTER POPCORN</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+         <xsd:enumeration value="MB">
+            <xsd:annotation>
+               <xsd:documentation>MEDIAN BELL</xsd:documentation>
+            </xsd:annotation>
+         </xsd:enumeration>
+      </xsd:restriction>
    </xsd:simpleType>
    <xsd:simpleType name="CVEnumISMSAR">
       <xsd:annotation>

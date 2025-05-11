@@ -1,109 +1,84 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix ismnonic: <urn:us:gov:ic:cvenum:ism:nonic#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix ismnonic: <urn:us:gov:ic:cvenum:ism:nonic#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<_:0> a rdf:List;
-  rdf:first "ND";
-  rdf:rest <_:93>.
+<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNonIC> a owl:Ontology .
 
-<_:2> a rdf:List;
-  rdf:first "SBU-NF";
-  rdf:rest <_:8>.
+ismnonic:CVEnumISMNonIC a skos:ConceptScheme ;
+	dc:title "(U) ismnonic:CVEnumISMNonIC definition" ;
+	skos:hasTopConcept ismnonic:DS ;
+	skos:hasTopConcept ismnonic:XD ;
+	skos:hasTopConcept ismnonic:ND ;
+	skos:hasTopConcept ismnonic:SBU ;
+	skos:hasTopConcept ismnonic:SBU-NF ;
+	skos:hasTopConcept ismnonic:LES ;
+	skos:hasTopConcept ismnonic:LES-NF ;
+	skos:hasTopConcept ismnonic:SSI ;
+	skos:hasTopConcept ismnonic:NNPI .
 
-<_:3> a rdf:List;
-  rdf:first "NNPI";
-  rdf:rest rdf:nil.
+ismnonic:CVEnumISMNonICValues a rdfs:Datatype ;
+	owl:equivalentClass [
+	rdf:type rdfs:Datatype ;
+		owl:oneOf ( 
+			"DS"
+			"XD"
+			"ND"
+			"SBU"
+			"SBU-NF"
+			"LES"
+			"LES-NF"
+			"SSI"
+			"NNPI"
+		) ;
+	] .
 
-<_:4> a rdf:List;
-  rdf:first "DS";
-  rdf:rest <_:90>.
+ismnonic:DS a skos:Concept ;
+	skos:inScheme ismnonic:CVEnumISMNonIC ;
+	skos:notation "DS" ;
+	skos:prefLabel "LIMITED DISTRIBUTION" .
 
-<_:5> a rdf:List;
-  rdf:first "LES-NF";
-  rdf:rest <_:85>.
+ismnonic:LES a skos:Concept ;
+	skos:inScheme ismnonic:CVEnumISMNonIC ;
+	skos:notation "LES" ;
+	skos:prefLabel "LAW ENFORCEMENT SENSITIVE" .
 
-<_:8> a rdf:List;
-  rdf:first "LES";
-  rdf:rest <_:5>.
+ismnonic:LES-NF a skos:Concept ;
+	skos:inScheme ismnonic:CVEnumISMNonIC ;
+	skos:notation "LES-NF" ;
+	skos:prefLabel "LAW ENFORCEMENT SENSITIVE NOFORN" .
 
-<_:85> a rdf:List;
-  rdf:first "SSI";
-  rdf:rest <_:3>.
+ismnonic:ND a skos:Concept ;
+	skos:inScheme ismnonic:CVEnumISMNonIC ;
+	skos:notation "ND" ;
+	skos:prefLabel "NO DISTRIBUTION" .
 
-<_:9> a rdfs:Datatype;
-  owl:oneOf ("DS" "XD" "ND" "SBU" "SBU-NF" "LES" "LES-NF" "SSI" "NNPI").
+ismnonic:NNPI a skos:Concept ;
+	skos:inScheme ismnonic:CVEnumISMNonIC ;
+	skos:notation "NNPI" ;
+	skos:prefLabel "NAVAL NUCLEAR PROPULSION INFORMATION" .
 
-<_:90> a rdf:List;
-  rdf:first "XD";
-  rdf:rest <_:0>.
+ismnonic:SBU a skos:Concept ;
+	skos:inScheme ismnonic:CVEnumISMNonIC ;
+	skos:notation "SBU" ;
+	skos:prefLabel "SENSITIVE BUT UNCLASSIFIED" .
 
-<_:93> a rdf:List;
-  rdf:first "SBU";
-  rdf:rest <_:2>.
+ismnonic:SBU-NF a skos:Concept ;
+	skos:inScheme ismnonic:CVEnumISMNonIC ;
+	skos:notation "SBU-NF" ;
+	skos:prefLabel "SENSITIVE BUT UNCLASSIFIED NOFORN" .
 
-ismnonic:CVEnumISMNonIC a skos:ConceptScheme;
-  dc:title "(U) ismnonic:CVEnumISMNonIC definition";
-  skos:hasTopConcept
-    ismnonic:DS,
-    ismnonic:LES,
-    ismnonic:LES-NF,
-    ismnonic:ND,
-    ismnonic:NNPI,
-    ismnonic:SBU,
-    ismnonic:SBU-NF,
-    ismnonic:SSI,
-    ismnonic:XD.
+ismnonic:SSI a skos:Concept ;
+	skos:inScheme ismnonic:CVEnumISMNonIC ;
+	skos:notation "SSI" ;
+	skos:prefLabel "SENSITIVE SECURITY INFORMATION" .
 
-ismnonic:CVEnumISMNonICValues a rdfs:Datatype;
-  owl:equivalentClass <_:9>.
+ismnonic:XD a skos:Concept ;
+	skos:inScheme ismnonic:CVEnumISMNonIC ;
+	skos:notation "XD" ;
+	skos:prefLabel "EXCLUSIVE DISTRIBUTION" .
 
-ismnonic:DS a skos:Concept;
-  skos:inScheme ismnonic:CVEnumISMNonIC;
-  skos:notation "DS";
-  skos:prefLabel "LIMITED DISTRIBUTION".
-
-ismnonic:LES a skos:Concept;
-  skos:inScheme ismnonic:CVEnumISMNonIC;
-  skos:notation "LES";
-  skos:prefLabel "LAW ENFORCEMENT SENSITIVE".
-
-ismnonic:LES-NF a skos:Concept;
-  skos:inScheme ismnonic:CVEnumISMNonIC;
-  skos:notation "LES-NF";
-  skos:prefLabel "LAW ENFORCEMENT SENSITIVE NOFORN".
-
-ismnonic:ND a skos:Concept;
-  skos:inScheme ismnonic:CVEnumISMNonIC;
-  skos:notation "ND";
-  skos:prefLabel "NO DISTRIBUTION".
-
-ismnonic:NNPI a skos:Concept;
-  skos:inScheme ismnonic:CVEnumISMNonIC;
-  skos:notation "NNPI";
-  skos:prefLabel "NAVAL NUCLEAR PROPULSION INFORMATION".
-
-ismnonic:SBU a skos:Concept;
-  skos:inScheme ismnonic:CVEnumISMNonIC;
-  skos:notation "SBU";
-  skos:prefLabel "SENSITIVE BUT UNCLASSIFIED".
-
-ismnonic:SBU-NF a skos:Concept;
-  skos:inScheme ismnonic:CVEnumISMNonIC;
-  skos:notation "SBU-NF";
-  skos:prefLabel "SENSITIVE BUT UNCLASSIFIED NOFORN".
-
-ismnonic:SSI a skos:Concept;
-  skos:inScheme ismnonic:CVEnumISMNonIC;
-  skos:notation "SSI";
-  skos:prefLabel "SENSITIVE SECURITY INFORMATION".
-
-ismnonic:XD a skos:Concept;
-  skos:inScheme ismnonic:CVEnumISMNonIC;
-  skos:notation "XD";
-  skos:prefLabel "EXCLUSIVE DISTRIBUTION".
-
-<urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMNonIC> a owl:Ontology;
-.

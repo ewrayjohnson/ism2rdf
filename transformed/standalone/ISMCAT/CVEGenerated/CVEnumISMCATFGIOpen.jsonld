@@ -11,13 +11,6 @@
   },
   "@graph": [
     {
-      "@id": "_:10",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
       "@id": "_:3",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
@@ -364,6 +357,13 @@
           "UNCK"
         ]
       }
+    },
+    {
+      "@id": "_:7",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATFGIOpen",
@@ -3286,7 +3286,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:10"
+        "@id": "_:7"
       }
     },
     {

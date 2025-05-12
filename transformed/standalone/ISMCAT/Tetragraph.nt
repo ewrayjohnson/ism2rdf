@@ -7,5 +7,5 @@
 <urn:us:gov:ic:taxonomy:catt:tetragraph#DecomposableType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <urn:us:gov:ic:taxonomy:catt:tetragraph#DecomposableType> <http://purl.org/dc/elements/1.1/title> "Decomposition is the breaking down of a tetragraph into its component countries for the purposes of rollup. An example is decomposing FVEY into the five member countries. This decomposition allows a portion marked RELEASABLE TO USA, GBR and another portion marked RELEASEABLE TO USA, FVEY to rollup to RELEASABLE TO USA, GBR. If FVEY was not decomposable the rollup would have to have been NF. NA is \"Not Applicable\" and is applied to deprecated tetragraphs." .
 <urn:us:gov:ic:taxonomy:catt:tetragraph#DecomposableTypeValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<urn:us:gov:ic:taxonomy:catt:tetragraph#DecomposableTypeValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:4 .
-_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:taxonomy:catt:tetragraph#DecomposableTypeValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:9 .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .

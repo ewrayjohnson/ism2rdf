@@ -176,1224 +176,1224 @@
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHCPS> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHMO> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronymValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronymValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:2 .
-_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:2 <http://www.w3.org/2002/07/owl#oneOf> _:1 .
+<urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronymValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:7 .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:7 <http://www.w3.org/2002/07/owl#oneOf> _:9 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ABMC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ABMC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ABMC> <http://www.w3.org/2004/02/skos/core#notation> "USA.ABMC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ABMC> <http://www.w3.org/2004/02/skos/core#prefLabel> "American Battle Monuments Commission" .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ABMC" .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:8 .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ABMC" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACCESS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACCESS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACCESS> <http://www.w3.org/2004/02/skos/core#notation> "USA.ACCESS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACCESS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Architectural and Transportation Barriers Compliance Board" .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ACCESS" .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:70 .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ACCESS" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:8 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACFR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACFR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACFR> <http://www.w3.org/2004/02/skos/core#notation> "USA.ACFR" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACFR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Administrative Committee of the Federal Register" .
-_:70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ACFR" .
-_:70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:5 .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ACFR" .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:6 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACHP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACHP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACHP> <http://www.w3.org/2004/02/skos/core#notation> "USA.ACHP" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACHP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Advisory Council on Historic Preservation" .
-_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ACHP" .
-_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:6 .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ACHP" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:13 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACUS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACUS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACUS> <http://www.w3.org/2004/02/skos/core#notation> "USA.ACUS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ACUS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Administrative Conference of the United States" .
-_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ACUS" .
-_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:81 .
+_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ACUS" .
+_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:4 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ADF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ADF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ADF> <http://www.w3.org/2004/02/skos/core#notation> "USA.ADF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ADF> <http://www.w3.org/2004/02/skos/core#prefLabel> "African Development Foundation" .
-_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ADF" .
-_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:3 .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ADF" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:42 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.AMICC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.AMICC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.AMICC> <http://www.w3.org/2004/02/skos/core#notation> "USA.AMICC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.AMICC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Arthritis and Musculoskeletal Interagency Coordinating Committee" .
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.AMICC" .
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:25 .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.AMICC" .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:47 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.AMTRAK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.AMTRAK> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.AMTRAK> <http://www.w3.org/2004/02/skos/core#notation> "USA.AMTRAK" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.AMTRAK> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Railroad Passenger Corporation" .
-_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.AMTRAK" .
-_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.AMTRAK" .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:2 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ARC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ARC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ARC> <http://www.w3.org/2004/02/skos/core#notation> "USA.ARC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ARC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Appalachian Regional Commission" .
-_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ARC" .
-_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:34 .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ARC" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:3 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ARCTIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ARCTIC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ARCTIC> <http://www.w3.org/2004/02/skos/core#notation> "USA.ARCTIC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ARCTIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Arctic Research Commission" .
-_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ARCTIC" .
-_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:10 .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ARCTIC" .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:65 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.BBG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.BBG> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.BBG> <http://www.w3.org/2004/02/skos/core#notation> "USA.BBG" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.BBG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Broadcasting Board of Governors" .
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.BBG" .
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:7 .
+_:65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.BBG" .
+_:65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:94 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.BMGS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.BMGS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.BMGS> <http://www.w3.org/2004/02/skos/core#notation> "USA.BMGS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.BMGS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barry M. Goldwater Scholarship and Excellence in Education Foundation" .
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.BMGS" .
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:73 .
+_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.BMGS" .
+_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:33 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CAOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CAOC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CAOC> <http://www.w3.org/2004/02/skos/core#notation> "USA.CAOC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CAOC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chief Acquisition Officers Council" .
-_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CAOC" .
-_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:22 .
+_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CAOC" .
+_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:51 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CCJJ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CCJJ> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CCJJ> <http://www.w3.org/2004/02/skos/core#notation> "USA.CCJJ" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CCJJ> <http://www.w3.org/2004/02/skos/core#prefLabel> "Coordinating Council on Juvenile Justice and Delinquency Prevention" .
-_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CCJJ" .
-_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:46 .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CCJJ" .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:5 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CCR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CCR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CCR> <http://www.w3.org/2004/02/skos/core#notation> "USA.CCR" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CCR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Commission on Civil Rights" .
-_:46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CCR" .
-_:46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:52 .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CCR" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:76 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CEA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CEA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CEA> <http://www.w3.org/2004/02/skos/core#notation> "USA.CEA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CEA> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Council of Economic Advisers" .
-_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CEA" .
-_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:64 .
+_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CEA" .
+_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:62 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFA> <http://www.w3.org/2004/02/skos/core#notation> "USA.CFA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Commission of Fine Arts" .
-_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CFA" .
-_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:99 .
+_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CFA" .
+_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:10 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFI> <http://www.w3.org/2004/02/skos/core#notation> "USA.CFI" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Committee on Foreign Investments in the United States" .
-_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CFI" .
-_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:23 .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CFI" .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:23 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFOC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFOC> <http://www.w3.org/2004/02/skos/core#notation> "USA.CFOC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFOC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chief Financial Officers Council" .
 _:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CFOC" .
-_:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:67 .
+_:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:58 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFTC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFTC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFTC> <http://www.w3.org/2004/02/skos/core#notation> "USA.CFTC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CFTC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Commodity Futures Trading Commission" .
-_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CFTC" .
-_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:27 .
+_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CFTC" .
+_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:71 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CHCOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CHCOC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CHCOC> <http://www.w3.org/2004/02/skos/core#notation> "USA.CHCOC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CHCOC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chief Human Capital Officers Council" .
-_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CHCOC" .
-_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:9 .
+_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CHCOC" .
+_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:77 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIA> <http://www.w3.org/2004/02/skos/core#notation> "USA.CIA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Central Intelligence Agency" .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CIA" .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:69 .
+_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CIA" .
+_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:31 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIOC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIOC> <http://www.w3.org/2004/02/skos/core#notation> "USA.CIOC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIOC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chief Information Officers Council" .
-_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CIOC" .
-_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:78 .
+_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CIOC" .
+_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:1 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIRF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIRF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIRF> <http://www.w3.org/2004/02/skos/core#notation> "USA.CIRF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CIRF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Commission on International Religious Freedom" .
-_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CIRF" .
-_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:63 .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CIRF" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:82 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CITA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CITA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CITA> <http://www.w3.org/2004/02/skos/core#notation> "USA.CITA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CITA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Committee for the Implementation of Textile Agreements" .
-_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CITA" .
-_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:100 .
+_:82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CITA" .
+_:82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:92 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CNCS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CNCS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CNCS> <http://www.w3.org/2004/02/skos/core#notation> "USA.CNCS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CNCS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Corporation for National and Community Service" .
-_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CNCS" .
-_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:57 .
+_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CNCS" .
+_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:57 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.COMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.COMP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.COMP> <http://www.w3.org/2004/02/skos/core#notation> "USA.COMP" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.COMP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Compliance" .
 _:57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.COMP" .
-_:57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:24 .
+_:57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:27 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CPSC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CPSC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CPSC> <http://www.w3.org/2004/02/skos/core#notation> "USA.CPSC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CPSC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Consumer Product Safety Commission" .
-_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CPSC" .
-_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:4 .
+_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CPSC" .
+_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:37 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSAC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSAC> <http://www.w3.org/2004/02/skos/core#notation> "USA.CSAC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSAC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Citizens' Stamp Advisory Committee" .
-_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CSAC" .
-_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:30 .
+_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CSAC" .
+_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:60 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSHIB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSHIB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSHIB> <http://www.w3.org/2004/02/skos/core#notation> "USA.CSHIB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSHIB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chemical Safety and Hazard Investigation Board" .
-_:30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CSHIB" .
-_:30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:74 .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CSHIB" .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:95 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSOSA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSOSA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSOSA> <http://www.w3.org/2004/02/skos/core#notation> "USA.CSOSA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.CSOSA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Court Services and Offender Supervision Agency for the District of Columbia" .
-_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CSOSA" .
-_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:66 .
+_:95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.CSOSA" .
+_:95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:56 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DEA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DEA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DEA> <http://www.w3.org/2004/02/skos/core#notation> "USA.DEA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DEA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Drug Enforcement Administration" .
-_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DEA" .
-_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:79 .
+_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DEA" .
+_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:52 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DENALI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DENALI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DENALI> <http://www.w3.org/2004/02/skos/core#notation> "USA.DENALI" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DENALI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Denali Commission" .
-_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DENALI" .
-_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:738 .
+_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DENALI" .
+_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:447 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DFC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DFC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DFC> <http://www.w3.org/2004/02/skos/core#notation> "USA.DFC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DFC> <http://www.w3.org/2004/02/skos/core#prefLabel> "U.S. International Development Finance Corporation" .
-_:738 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:738 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DFC" .
-_:738 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:51 .
+_:447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DFC" .
+_:447 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:308 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DHS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DHS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DHS> <http://www.w3.org/2004/02/skos/core#notation> "USA.DHS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DHS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Homeland Security" .
-_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DHS" .
-_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:48 .
+_:308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DHS" .
+_:308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:96 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DIA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DIA> <http://www.w3.org/2004/02/skos/core#notation> "USA.DIA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DIA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Defense Intelligence Agency" .
-_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DIA" .
-_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:13 .
+_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DIA" .
+_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:85 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DNFSB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DNFSB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DNFSB> <http://www.w3.org/2004/02/skos/core#notation> "USA.DNFSB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DNFSB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Defense Nuclear Facilities Safety Board" .
-_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DNFSB" .
-_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:47 .
+_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DNFSB" .
+_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:78 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DNI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DNI> <http://www.w3.org/2004/02/skos/core#notation> "USA.DNI" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DNI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the Director of National Intelligence" .
-_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DNI" .
-_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:15 .
+_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DNI" .
+_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:40 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOC> <http://www.w3.org/2004/02/skos/core#notation> "USA.DOC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Commerce" .
-_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOC" .
-_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:60 .
+_:40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOC" .
+_:40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:35 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOD> <http://www.w3.org/2004/02/skos/core#notation> "USA.DOD" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Defense" .
-_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOD" .
-_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:38 .
+_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOD" .
+_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:66 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOE> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOE> <http://www.w3.org/2004/02/skos/core#notation> "USA.DOE" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Energy" .
-_:38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOE" .
-_:38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:16 .
+_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOE" .
+_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:64 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOI> <http://www.w3.org/2004/02/skos/core#notation> "USA.DOI" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of the Interior" .
-_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOI" .
-_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:97 .
+_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOI" .
+_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:44 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOJ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOJ> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOJ> <http://www.w3.org/2004/02/skos/core#notation> "USA.DOJ" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOJ> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Justice" .
-_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOJ" .
-_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:61 .
+_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOJ" .
+_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:90 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOL> <http://www.w3.org/2004/02/skos/core#notation> "USA.DOL" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Labor" .
-_:61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOL" .
-_:61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:50 .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOL" .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:72 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOT> <http://www.w3.org/2004/02/skos/core#notation> "USA.DOT" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DOT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Transportation" .
-_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOT" .
-_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:77 .
+_:72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DOT" .
+_:72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:70 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DRBC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DRBC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DRBC> <http://www.w3.org/2004/02/skos/core#notation> "USA.DRBC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.DRBC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Delaware River Basin Commission" .
-_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DRBC" .
-_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:56 .
+_:70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.DRBC" .
+_:70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:22 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EAC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EAC> <http://www.w3.org/2004/02/skos/core#notation> "USA.EAC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EAC> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Election Assistance Commission" .
-_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EAC" .
-_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:89 .
+_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EAC" .
+_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:24 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ED> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ED> <http://www.w3.org/2004/02/skos/core#notation> "USA.ED" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ED> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Education" .
-_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ED" .
-_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:92 .
+_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ED" .
+_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:98 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EEOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EEOC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EEOC> <http://www.w3.org/2004/02/skos/core#notation> "USA.EEOC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EEOC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Equal Employment Opportunity Commission" .
-_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EEOC" .
-_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:42 .
+_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EEOC" .
+_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:54 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EIBUS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EIBUS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EIBUS> <http://www.w3.org/2004/02/skos/core#notation> "USA.EIBUS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EIBUS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Export-Import Bank of the United States" .
-_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EIBUS" .
-_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:75 .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EIBUS" .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:145 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EOP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EOP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EOP> <http://www.w3.org/2004/02/skos/core#notation> "USA.EOP" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EOP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Executive Office of the President" .
-_:75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EOP" .
-_:75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:76 .
+_:145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EOP" .
+_:145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:73 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EPA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EPA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EPA> <http://www.w3.org/2004/02/skos/core#notation> "USA.EPA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.EPA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Environmental Protection Agency" .
-_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EPA" .
-_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:94 .
+_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.EPA" .
+_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:12 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ESC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ESC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ESC> <http://www.w3.org/2004/02/skos/core#notation> "USA.ESC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ESC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Endangered Species Committee" .
-_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ESC" .
-_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:26 .
+_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ESC" .
+_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:97 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FAC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FAC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FAC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FAC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Advisory Committees" .
-_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FAC" .
-_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:35 .
+_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FAC" .
+_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:646 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FASAB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FASAB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FASAB> <http://www.w3.org/2004/02/skos/core#notation> "USA.FASAB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FASAB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Accounting Standards Advisory Board" .
-_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FASAB" .
-_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:32 .
+_:646 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:646 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FASAB" .
+_:646 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:46 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FBI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FBI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FBI> <http://www.w3.org/2004/02/skos/core#notation> "USA.FBI" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FBI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Bureau of Investigation" .
-_:32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FBI" .
-_:32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:68 .
+_:46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FBI" .
+_:46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:32 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCA> <http://www.w3.org/2004/02/skos/core#notation> "USA.FCA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Farm Credit Administration" .
-_:68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FCA" .
-_:68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:102 .
+_:32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FCA" .
+_:32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:28 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FCC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Communications Commission" .
-_:102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FCC" .
-_:102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:59 .
+_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FCC" .
+_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:30 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCIC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCIC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FCIC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Financial Crisis Inquiry Commission" .
-_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FCIC" .
-_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:899 .
+_:30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FCIC" .
+_:30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:502 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCSIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCSIC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCSIC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FCSIC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FCSIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Farm Credit System Insurance Corporation" .
-_:899 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:899 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FCSIC" .
-_:899 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:619 .
+_:502 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:502 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FCSIC" .
+_:502 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:91 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FDIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FDIC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FDIC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FDIC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FDIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Deposit Insurance Corporation" .
-_:619 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:619 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FDIC" .
-_:619 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:21 .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FDIC" .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:844 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FEB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FEB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FEB> <http://www.w3.org/2004/02/skos/core#notation> "USA.FEB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FEB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Executive Boards" .
-_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FEB" .
-_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:11 .
+_:844 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:844 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FEB" .
+_:844 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:16 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FEC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FEC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FEC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Election Commission" .
-_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FEC" .
-_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:71 .
+_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FEC" .
+_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:80 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FERC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FERC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FERC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FERC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FERC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Energy Regulatory Commission" .
-_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FERC" .
-_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:33 .
+_:80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FERC" .
+_:80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:86 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FFB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FFB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FFB> <http://www.w3.org/2004/02/skos/core#notation> "USA.FFB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FFB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Financing Bank" .
-_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FFB" .
-_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:55 .
+_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FFB" .
+_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:596 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FFIEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FFIEC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FFIEC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FFIEC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FFIEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Financial Institutions Examination Council" .
-_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FFIEC" .
-_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:308 .
+_:596 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:596 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FFIEC" .
+_:596 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:19 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FGDC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FGDC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FGDC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FGDC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FGDC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Geographic Data Committee" .
-_:308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FGDC" .
-_:308 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:788 .
+_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FGDC" .
+_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:14 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FHRA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FHRA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FHRA> <http://www.w3.org/2004/02/skos/core#notation> "USA.FHRA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FHRA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Housing Finance Agency" .
-_:788 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:788 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FHRA" .
-_:788 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:31 .
+_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FHRA" .
+_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:776 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICE> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICE> <http://www.w3.org/2004/02/skos/core#notation> "USA.FICE" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Interagency Committee on Education" .
-_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FICE" .
-_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:96 .
+_:776 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:776 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FICE" .
+_:776 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:55 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICMNEW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICMNEW> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICMNEW> <http://www.w3.org/2004/02/skos/core#notation> "USA.FICMNEW" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICMNEW> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Interagency Committee for the Management of Noxious and Exotic Weeds" .
-_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FICMNEW" .
-_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:58 .
+_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FICMNEW" .
+_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:93 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICSP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICSP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICSP> <http://www.w3.org/2004/02/skos/core#notation> "USA.FICSP" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FICSP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Interagency Council on Statistical Policy" .
-_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FICSP" .
-_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:36 .
+_:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FICSP" .
+_:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:21 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLCTT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLCTT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLCTT> <http://www.w3.org/2004/02/skos/core#notation> "USA.FLCTT" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLCTT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Laboratory Consortium for Technology Transfer" .
-_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FLCTT" .
-_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:594 .
+_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FLCTT" .
+_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:579 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLICC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLICC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLICC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FLICC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLICC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Library and Information Center Committee" .
-_:594 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:594 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FLICC" .
-_:594 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:800 .
+_:579 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:579 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FLICC" .
+_:579 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:571 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLRA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLRA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLRA> <http://www.w3.org/2004/02/skos/core#notation> "USA.FLRA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FLRA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Labor Relations Authority" .
-_:800 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:800 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FLRA" .
-_:800 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:658 .
+_:571 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:571 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FLRA" .
+_:571 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:36 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FMC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Maritime Commission" .
-_:658 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:658 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FMC" .
-_:658 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:189 .
+_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FMC" .
+_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:854 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMCS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMCS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMCS> <http://www.w3.org/2004/02/skos/core#notation> "USA.FMCS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMCS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Mediation and Conciliation Service" .
-_:189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FMCS" .
-_:189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:400 .
+_:854 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:854 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FMCS" .
+_:854 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:417 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMSHRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMSHRC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMSHRC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FMSHRC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FMSHRC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Mine Safety and Health Review Commission" .
-_:400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FMSHRC" .
-_:400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:53 .
+_:417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FMSHRC" .
+_:417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:443 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FRS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FRS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FRS> <http://www.w3.org/2004/02/skos/core#notation> "USA.FRS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FRS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Reserve System" .
-_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FRS" .
-_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:142 .
+_:443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FRS" .
+_:443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:547 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FRTIB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FRTIB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FRTIB> <http://www.w3.org/2004/02/skos/core#notation> "USA.FRTIB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FRTIB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Retirement Thrift Investment Board" .
-_:142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FRTIB" .
-_:142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:49 .
+_:547 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:547 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FRTIB" .
+_:547 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:15 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FTC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FTC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FTC> <http://www.w3.org/2004/02/skos/core#notation> "USA.FTC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.FTC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Trade Commission" .
-_:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FTC" .
-_:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:65 .
+_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.FTC" .
+_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:556 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.GSA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.GSA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.GSA> <http://www.w3.org/2004/02/skos/core#notation> "USA.GSA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.GSA> <http://www.w3.org/2004/02/skos/core#prefLabel> "General Services Administration" .
-_:65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.GSA" .
-_:65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:28 .
+_:556 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:556 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.GSA" .
+_:556 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:449 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HELSINKI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HELSINKI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HELSINKI> <http://www.w3.org/2004/02/skos/core#notation> "USA.HELSINKI" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HELSINKI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Commission on Security and Cooperation in Europe" .
-_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HELSINKI" .
-_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:82 .
+_:449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HELSINKI" .
+_:449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:68 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HHS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HHS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HHS> <http://www.w3.org/2004/02/skos/core#notation> "USA.HHS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HHS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Health and Human Services" .
-_:82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HHS" .
-_:82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:54 .
+_:68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HHS" .
+_:68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:785 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HMM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HMM> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HMM> <http://www.w3.org/2004/02/skos/core#notation> "USA.HMM" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HMM> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Holocaust Memorial Museum" .
-_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HMM" .
-_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:393 .
+_:785 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:785 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HMM" .
+_:785 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:74 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HSTSF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HSTSF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HSTSF> <http://www.w3.org/2004/02/skos/core#notation> "USA.HSTSF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HSTSF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Harry S. Truman Scholarship Foundation" .
-_:393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HSTSF" .
-_:393 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:353 .
+_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HSTSF" .
+_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:88 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HUD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HUD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HUD> <http://www.w3.org/2004/02/skos/core#notation> "USA.HUD" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.HUD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Housing and Urban Development" .
-_:353 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:353 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HUD" .
-_:353 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:797 .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.HUD" .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:61 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IACB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IACB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IACB> <http://www.w3.org/2004/02/skos/core#notation> "USA.IACB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IACB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Indian Arts and Crafts Board" .
-_:797 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:797 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IACB" .
-_:797 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:543 .
+_:61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IACB" .
+_:61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:157 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IADRWG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IADRWG> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IADRWG> <http://www.w3.org/2004/02/skos/core#notation> "USA.IADRWG" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IADRWG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interagency Alternative Dispute Resolution Working Group" .
-_:543 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:543 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IADRWG" .
-_:543 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:72 .
+_:157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IADRWG" .
+_:157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:59 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IAF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IAF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IAF> <http://www.w3.org/2004/02/skos/core#notation> "USA.IAF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IAF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inter-American Foundation" .
-_:72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IAF" .
-_:72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:17 .
+_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IAF" .
+_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:732 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IBB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IBB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IBB> <http://www.w3.org/2004/02/skos/core#notation> "USA.IBB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IBB> <http://www.w3.org/2004/02/skos/core#prefLabel> "International Broadcasting Bureau" .
-_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IBB" .
-_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:258 .
+_:732 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:732 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IBB" .
+_:732 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:26 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ICH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ICH> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ICH> <http://www.w3.org/2004/02/skos/core#notation> "USA.ICH" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ICH> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interagency Council on Homelessness" .
-_:258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ICH" .
-_:258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:95 .
+_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ICH" .
+_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:25 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ICPRB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ICPRB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ICPRB> <http://www.w3.org/2004/02/skos/core#notation> "USA.ICPRB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ICPRB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interstate Commission on the Potomac River Basin" .
-_:95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ICPRB" .
-_:95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:91 .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ICPRB" .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:793 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IMCNHCC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IMCNHCC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IMCNHCC> <http://www.w3.org/2004/02/skos/core#notation> "USA.IMCNHCC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IMCNHCC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Illinois and Michigan Canal National Heritage Corridor Commission" .
-_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IMCNHCC" .
-_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:957 .
+_:793 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:793 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IMCNHCC" .
+_:793 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:81 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IMLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IMLS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IMLS> <http://www.w3.org/2004/02/skos/core#notation> "USA.IMLS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.IMLS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Institute of Museum and Library Services" .
-_:957 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:957 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IMLS" .
-_:957 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:93 .
+_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.IMLS" .
+_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:193 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ITC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ITC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ITC> <http://www.w3.org/2004/02/skos/core#notation> "USA.ITC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ITC> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States International Trade Commission" .
-_:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ITC" .
-_:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:84 .
+_:193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ITC" .
+_:193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:326 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JBEA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JBEA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JBEA> <http://www.w3.org/2004/02/skos/core#notation> "USA.JBEA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JBEA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Joint Board for the Enrollment of Actuaries" .
-_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JBEA" .
-_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:232 .
+_:326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JBEA" .
+_:326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:75 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JFSP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JFSP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JFSP> <http://www.w3.org/2004/02/skos/core#notation> "USA.JFSP" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JFSP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Joint Fire Science Program" .
-_:232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JFSP" .
-_:232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:12 .
+_:75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JFSP" .
+_:75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:43 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JMMFF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JMMFF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JMMFF> <http://www.w3.org/2004/02/skos/core#notation> "USA.JMMFF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JMMFF> <http://www.w3.org/2004/02/skos/core#prefLabel> "James Madison Memorial Fellowship Foundation" .
-_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JMMFF" .
-_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:112 .
+_:43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JMMFF" .
+_:43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:63 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JUSFC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JUSFC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JUSFC> <http://www.w3.org/2004/02/skos/core#notation> "USA.JUSFC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JUSFC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Japan-United States Friendship Commission" .
-_:112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JUSFC" .
-_:112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:156 .
+_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JUSFC" .
+_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:701 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JWFFSB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JWFFSB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JWFFSB> <http://www.w3.org/2004/02/skos/core#notation> "USA.JWFFSB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.JWFFSB> <http://www.w3.org/2004/02/skos/core#prefLabel> "J. William Fulbright Foreign Scholarship Board" .
-_:156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JWFFSB" .
-_:156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:705 .
+_:701 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:701 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.JWFFSB" .
+_:701 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:69 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.LSC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.LSC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.LSC> <http://www.w3.org/2004/02/skos/core#notation> "USA.LSC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.LSC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal Services Corporation" .
-_:705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.LSC" .
-_:705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:90 .
+_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.LSC" .
+_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:39 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MBCC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MBCC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MBCC> <http://www.w3.org/2004/02/skos/core#notation> "USA.MBCC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MBCC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Migratory Bird Conservation Commission" .
-_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MBCC" .
-_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:449 .
+_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MBCC" .
+_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:89 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MCC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MCC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MCC> <http://www.w3.org/2004/02/skos/core#notation> "USA.MCC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MCC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Millennium Challenge Corporation" .
-_:449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MCC" .
-_:449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:86 .
+_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MCC" .
+_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:87 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MKUF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MKUF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MKUF> <http://www.w3.org/2004/02/skos/core#notation> "USA.MKUF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MKUF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Morris K. Udall Foundation: Scholarship and Excellence in National Environmental Policy" .
-_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MKUF" .
-_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:674 .
+_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MKUF" .
+_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:623 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MMC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MMC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MMC> <http://www.w3.org/2004/02/skos/core#notation> "USA.MMC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MMC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Marine Mammal Commission" .
-_:674 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:674 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MMC" .
-_:674 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:568 .
+_:623 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:623 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MMC" .
+_:623 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:50 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MRC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MRC> <http://www.w3.org/2004/02/skos/core#notation> "USA.MRC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MRC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mississippi River Commission" .
-_:568 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:568 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MRC" .
-_:568 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:303 .
+_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MRC" .
+_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:352 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MSPB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MSPB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MSPB> <http://www.w3.org/2004/02/skos/core#notation> "USA.MSPB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.MSPB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Merit Systems Protection Board" .
-_:303 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:303 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MSPB" .
-_:303 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:40 .
+_:352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.MSPB" .
+_:352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:888 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NARA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NARA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NARA> <http://www.w3.org/2004/02/skos/core#notation> "USA.NARA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NARA> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Archives and Records Administration" .
-_:40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NARA" .
-_:40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:900 .
+_:888 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:888 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NARA" .
+_:888 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:543 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NASA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NASA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NASA> <http://www.w3.org/2004/02/skos/core#notation> "USA.NASA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NASA> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Aeronautics and Space Administration" .
-_:900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NASA" .
-_:900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:39 .
+_:543 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:543 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NASA" .
+_:543 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:529 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NBCFM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NBCFM> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NBCFM> <http://www.w3.org/2004/02/skos/core#notation> "USA.NBCFM" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NBCFM> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Bipartisan Commission on the Future of Medicare" .
-_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NBCFM" .
-_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:979 .
+_:529 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:529 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NBCFM" .
+_:529 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:29 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCD> <http://www.w3.org/2004/02/skos/core#notation> "USA.NCD" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCD> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Council on Disability" .
-_:979 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:979 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NCD" .
-_:979 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:493 .
+_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NCD" .
+_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:964 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCFRR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCFRR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCFRR> <http://www.w3.org/2004/02/skos/core#notation> "USA.NCFRR" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCFRR> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Commission on Fiscal Responsibility and Reform" .
-_:493 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:493 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NCFRR" .
-_:493 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:80 .
+_:964 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:964 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NCFRR" .
+_:964 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:994 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCPC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCPC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCPC> <http://www.w3.org/2004/02/skos/core#notation> "USA.NCPC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCPC> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Capital Planning Commission" .
-_:80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NCPC" .
-_:80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:87 .
+_:994 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:994 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NCPC" .
+_:994 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:346 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCUA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCUA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCUA> <http://www.w3.org/2004/02/skos/core#notation> "USA.NCUA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NCUA> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Credit Union Administration" .
-_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NCUA" .
-_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:533 .
+_:346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NCUA" .
+_:346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:761 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NEA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NEA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NEA> <http://www.w3.org/2004/02/skos/core#notation> "USA.NEA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NEA> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Endowment for the Arts" .
-_:533 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:533 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NEA" .
-_:533 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:83 .
+_:761 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:761 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NEA" .
+_:761 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:354 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NEH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NEH> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NEH> <http://www.w3.org/2004/02/skos/core#notation> "USA.NEH" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NEH> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Endowment for the Humanities" .
-_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NEH" .
-_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:784 .
+_:354 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:354 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NEH" .
+_:354 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:518 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NGA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NGA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NGA> <http://www.w3.org/2004/02/skos/core#notation> "USA.NGA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NGA> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Geospatial-Intelligence Agency" .
-_:784 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:784 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NGA" .
-_:784 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:975 .
+_:518 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:518 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NGA" .
+_:518 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:783 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NIGC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NIGC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NIGC> <http://www.w3.org/2004/02/skos/core#notation> "USA.NIGC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NIGC> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Indian Gaming Commission" .
-_:975 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:975 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NIGC" .
-_:975 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:62 .
+_:783 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:783 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NIGC" .
+_:783 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:17 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NLRB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NLRB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NLRB> <http://www.w3.org/2004/02/skos/core#notation> "USA.NLRB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NLRB> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Labor Relations Board" .
-_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NLRB" .
-_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:299 .
+_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NLRB" .
+_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:103 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NMB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NMB> <http://www.w3.org/2004/02/skos/core#notation> "USA.NMB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NMB> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Mediation Board" .
-_:299 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:299 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NMB" .
-_:299 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:853 .
+_:103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NMB" .
+_:103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:391 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NPF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NPF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NPF> <http://www.w3.org/2004/02/skos/core#notation> "USA.NPF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NPF> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Park Foundation" .
-_:853 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:853 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NPF" .
-_:853 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:613 .
+_:391 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:391 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NPF" .
+_:391 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:100 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NPPC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NPPC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NPPC> <http://www.w3.org/2004/02/skos/core#notation> "USA.NPPC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NPPC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Northwest Power Planning Council" .
-_:613 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:613 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NPPC" .
-_:613 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:421 .
+_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NPPC" .
+_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:212 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NRC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NRC> <http://www.w3.org/2004/02/skos/core#notation> "USA.NRC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NRC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Regulatory Commission" .
-_:421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NRC" .
-_:421 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:642 .
+_:212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NRC" .
+_:212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:53 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NRO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NRO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NRO> <http://www.w3.org/2004/02/skos/core#notation> "USA.NRO" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NRO> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Reconnaissance Office" .
-_:642 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:642 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NRO" .
-_:642 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:43 .
+_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NRO" .
+_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:669 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NSA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NSA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NSA> <http://www.w3.org/2004/02/skos/core#notation> "USA.NSA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NSA> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Security Agency" .
-_:43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NSA" .
-_:43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:263 .
+_:669 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:669 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NSA" .
+_:669 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:611 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NSF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NSF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NSF> <http://www.w3.org/2004/02/skos/core#notation> "USA.NSF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NSF> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Science Foundation" .
-_:263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NSF" .
-_:263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:262 .
+_:611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NSF" .
+_:611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:49 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NTSB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NTSB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NTSB> <http://www.w3.org/2004/02/skos/core#notation> "USA.NTSB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NTSB> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Transportation Safety Board" .
-_:262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NTSB" .
-_:262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:300 .
+_:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NTSB" .
+_:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:795 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NWTRB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NWTRB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NWTRB> <http://www.w3.org/2004/02/skos/core#notation> "USA.NWTRB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.NWTRB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Waste Technical Review Board" .
-_:300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NWTRB" .
-_:300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:439 .
+_:795 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:795 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.NWTRB" .
+_:795 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:726 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OGE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OGE> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OGE> <http://www.w3.org/2004/02/skos/core#notation> "USA.OGE" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OGE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Government Ethics" .
-_:439 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:439 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OGE" .
-_:439 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:429 .
+_:726 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:726 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OGE" .
+_:726 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:41 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OMB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OMB> <http://www.w3.org/2004/02/skos/core#notation> "USA.OMB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OMB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Management and Budget" .
-_:429 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:429 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OMB" .
-_:429 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:574 .
+_:41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OMB" .
+_:41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:368 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ONCIX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ONCIX> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ONCIX> <http://www.w3.org/2004/02/skos/core#notation> "USA.ONCIX" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.ONCIX> <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the National Counterintelligence Executive" .
-_:574 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:574 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ONCIX" .
-_:574 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:832 .
+_:368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.ONCIX" .
+_:368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:856 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OPIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OPIC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OPIC> <http://www.w3.org/2004/02/skos/core#notation> "USA.OPIC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OPIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Overseas Private Investment Corporation" .
-_:832 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:832 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OPIC" .
-_:832 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:314 .
+_:856 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:856 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OPIC" .
+_:856 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:822 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OPM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OPM> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OPM> <http://www.w3.org/2004/02/skos/core#notation> "USA.OPM" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OPM> <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Personnel Management" .
-_:314 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:314 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OPM" .
-_:314 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:798 .
+_:822 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:822 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OPM" .
+_:822 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:67 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OSC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OSC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OSC> <http://www.w3.org/2004/02/skos/core#notation> "USA.OSC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OSC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of Special Counsel" .
-_:798 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:798 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OSC" .
-_:798 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:647 .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OSC" .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:48 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OSHRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OSHRC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OSHRC> <http://www.w3.org/2004/02/skos/core#notation> "USA.OSHRC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OSHRC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Occupational Safety and Health Review Commission" .
-_:647 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:647 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OSHRC" .
-_:647 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:37 .
+_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OSHRC" .
+_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:775 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OVP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OVP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OVP> <http://www.w3.org/2004/02/skos/core#notation> "USA.OVP" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.OVP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Office of the Vice President" .
-_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OVP" .
-_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:85 .
+_:775 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:775 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.OVP" .
+_:775 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:83 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PBGC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PBGC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PBGC> <http://www.w3.org/2004/02/skos/core#notation> "USA.PBGC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PBGC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pension Benefit Guaranty Corporation" .
-_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PBGC" .
-_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:254 .
+_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PBGC" .
+_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:825 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PCC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PCC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PCC> <http://www.w3.org/2004/02/skos/core#notation> "USA.PCC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PCC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Panama Canal Commission" .
-_:254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PCC" .
-_:254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:666 .
+_:825 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:825 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PCC" .
+_:825 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:135 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PEACE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PEACE> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PEACE> <http://www.w3.org/2004/02/skos/core#notation> "USA.PEACE" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PEACE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Peace Corps" .
-_:666 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:666 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PEACE" .
-_:666 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:959 .
+_:135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PEACE" .
+_:135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:709 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PRC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PRC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PRC> <http://www.w3.org/2004/02/skos/core#notation> "USA.PRC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PRC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Postal Regulatory Commission" .
-_:959 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:959 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PRC" .
-_:959 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:891 .
+_:709 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:709 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PRC" .
+_:709 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:11 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PRESIDIO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PRESIDIO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PRESIDIO> <http://www.w3.org/2004/02/skos/core#notation> "USA.PRESIDIO" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.PRESIDIO> <http://www.w3.org/2004/02/skos/core#prefLabel> "Presidio Trust" .
-_:891 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:891 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PRESIDIO" .
-_:891 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:20 .
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.PRESIDIO" .
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:588 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.RISC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.RISC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.RISC> <http://www.w3.org/2004/02/skos/core#notation> "USA.RISC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.RISC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Regulatory Information Service Center" .
-_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.RISC" .
-_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:44 .
+_:588 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:588 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.RISC" .
+_:588 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:799 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.RRB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.RRB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.RRB> <http://www.w3.org/2004/02/skos/core#notation> "USA.RRB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.RRB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Railroad Retirement Board" .
-_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.RRB" .
-_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:557 .
+_:799 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:799 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.RRB" .
+_:799 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:218 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SBA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SBA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SBA> <http://www.w3.org/2004/02/skos/core#notation> "USA.SBA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SBA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Small Business Administration" .
-_:557 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:557 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SBA" .
-_:557 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:951 .
+_:218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SBA" .
+_:218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:883 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SEC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SEC> <http://www.w3.org/2004/02/skos/core#notation> "USA.SEC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Securities and Exchange Commission" .
-_:951 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:951 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SEC" .
-_:951 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:309 .
+_:883 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:883 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SEC" .
+_:883 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:744 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SJI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SJI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SJI> <http://www.w3.org/2004/02/skos/core#notation> "USA.SJI" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SJI> <http://www.w3.org/2004/02/skos/core#prefLabel> "State Justice Institute" .
-_:309 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:309 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SJI" .
-_:309 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:610 .
+_:744 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:744 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SJI" .
+_:744 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:794 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SMITH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SMITH> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SMITH> <http://www.w3.org/2004/02/skos/core#notation> "USA.SMITH" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SMITH> <http://www.w3.org/2004/02/skos/core#prefLabel> "Smithsonian Institution" .
-_:610 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:610 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SMITH" .
-_:610 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:609 .
+_:794 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:794 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SMITH" .
+_:794 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:982 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SRBC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SRBC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SRBC> <http://www.w3.org/2004/02/skos/core#notation> "USA.SRBC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SRBC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Susquehanna River Basin Commission" .
-_:609 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:609 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SRBC" .
-_:609 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:869 .
+_:982 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:982 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SRBC" .
+_:982 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:99 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSA> <http://www.w3.org/2004/02/skos/core#notation> "USA.SSA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Social Security Administration" .
-_:869 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:869 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SSA" .
-_:869 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:903 .
+_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SSA" .
+_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:723 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSAB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSAB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSAB> <http://www.w3.org/2004/02/skos/core#notation> "USA.SSAB" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSAB> <http://www.w3.org/2004/02/skos/core#prefLabel> "Social Security Advisory Board" .
-_:903 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:903 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SSAB" .
-_:903 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:219 .
+_:723 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:723 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SSAB" .
+_:723 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:79 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSS> <http://www.w3.org/2004/02/skos/core#notation> "USA.SSS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.SSS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Selective Service System" .
-_:219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SSS" .
-_:219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:124 .
+_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.SSS" .
+_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:34 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.STATE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.STATE> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.STATE> <http://www.w3.org/2004/02/skos/core#notation> "USA.STATE" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.STATE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of State" .
-_:124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.STATE" .
-_:124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:745 .
+_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.STATE" .
+_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:265 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TAP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TAP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TAP> <http://www.w3.org/2004/02/skos/core#notation> "USA.TAP" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TAP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Taxpayer Advocacy Panel" .
-_:745 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:745 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.TAP" .
-_:745 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:441 .
+_:265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.TAP" .
+_:265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:111 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TDA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TDA> <http://www.w3.org/2004/02/skos/core#notation> "USA.TDA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TDA> <http://www.w3.org/2004/02/skos/core#prefLabel> "U.S. Trade and Development Agency" .
-_:441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.TDA" .
-_:441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:871 .
+_:111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.TDA" .
+_:111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:84 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TREAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TREAS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TREAS> <http://www.w3.org/2004/02/skos/core#notation> "USA.TREAS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TREAS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of the Treasury" .
-_:871 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:871 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.TREAS" .
-_:871 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:29 .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.TREAS" .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:526 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TVA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TVA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TVA> <http://www.w3.org/2004/02/skos/core#notation> "USA.TVA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.TVA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tennessee Valley Authority" .
-_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.TVA" .
-_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:818 .
+_:526 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:526 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.TVA" .
+_:526 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:608 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USA> <http://www.w3.org/2004/02/skos/core#notation> "USA.USA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USA> <http://www.w3.org/2004/02/skos/core#prefLabel> "US Army" .
-_:818 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:818 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USA" .
-_:818 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:630 .
+_:608 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:608 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USA" .
+_:608 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:664 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAF> <http://www.w3.org/2004/02/skos/core#notation> "USA.USAF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAF> <http://www.w3.org/2004/02/skos/core#prefLabel> "US Air Force" .
-_:630 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:630 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USAF" .
-_:630 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:152 .
+_:664 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:664 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USAF" .
+_:664 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:386 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAID> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAID> <http://www.w3.org/2004/02/skos/core#notation> "USA.USAID" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAID> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Agency for International Development" .
-_:152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USAID" .
-_:152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:469 .
+_:386 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:386 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USAID" .
+_:386 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:276 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAOC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAOC> <http://www.w3.org/2004/02/skos/core#notation> "USA.USAOC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USAOC> <http://www.w3.org/2004/02/skos/core#prefLabel> "U.S. AbilityOne Commission" .
-_:469 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:469 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USAOC" .
-_:469 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:530 .
+_:276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USAOC" .
+_:276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:650 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USCG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USCG> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USCG> <http://www.w3.org/2004/02/skos/core#notation> "USA.USCG" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USCG> <http://www.w3.org/2004/02/skos/core#prefLabel> "US Coast Guard" .
-_:530 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:530 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USCG" .
-_:530 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:704 .
+_:650 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:650 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USCG" .
+_:650 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:990 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USDA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USDA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USDA> <http://www.w3.org/2004/02/skos/core#notation> "USA.USDA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USDA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Agriculture" .
-_:704 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:704 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USDA" .
-_:704 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:537 .
+_:990 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:990 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USDA" .
+_:990 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:893 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USIP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USIP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USIP> <http://www.w3.org/2004/02/skos/core#notation> "USA.USIP" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USIP> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Institute of Peace" .
-_:537 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:537 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USIP" .
-_:537 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:455 .
+_:893 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:893 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USIP" .
+_:893 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:424 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USMC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USMC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USMC> <http://www.w3.org/2004/02/skos/core#notation> "USA.USMC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USMC> <http://www.w3.org/2004/02/skos/core#prefLabel> "US Marine Corps" .
-_:455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USMC" .
-_:455 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:260 .
+_:424 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:424 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USMC" .
+_:424 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:148 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USN> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USN> <http://www.w3.org/2004/02/skos/core#notation> "USA.USN" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USN> <http://www.w3.org/2004/02/skos/core#prefLabel> "US Navy" .
-_:260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USN" .
-_:260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:428 .
+_:148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USN" .
+_:148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:977 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USPS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USPS> <http://www.w3.org/2004/02/skos/core#notation> "USA.USPS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USPS> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Postal Service" .
-_:428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USPS" .
-_:428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:974 .
+_:977 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:977 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USPS" .
+_:977 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:643 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USSF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USSF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USSF> <http://www.w3.org/2004/02/skos/core#notation> "USA.USSF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USSF> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Space Force" .
-_:974 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:974 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USSF" .
-_:974 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:873 .
+_:643 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:643 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USSF" .
+_:643 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:402 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USTR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USTR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USTR> <http://www.w3.org/2004/02/skos/core#notation> "USA.USTR" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USTR> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Office of the Trade Representative" .
-_:873 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:873 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USTR" .
-_:873 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:748 .
+_:402 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:402 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USTR" .
+_:402 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:298 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USUN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USUN> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USUN> <http://www.w3.org/2004/02/skos/core#notation> "USA.USUN" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.USUN> <http://www.w3.org/2004/02/skos/core#prefLabel> "United States Mission to the United Nations" .
-_:748 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:748 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USUN" .
-_:748 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:916 .
+_:298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.USUN" .
+_:298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:532 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VA> <http://www.w3.org/2004/02/skos/core#notation> "USA.VA" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Department of Veterans Affairs" .
-_:916 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:916 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.VA" .
-_:916 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:19 .
+_:532 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:532 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.VA" .
+_:532 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:440 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VDNC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VDNC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VDNC> <http://www.w3.org/2004/02/skos/core#notation> "USA.VDNC" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VDNC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Veterans Day National Committee" .
-_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.VDNC" .
-_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:494 .
+_:440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.VDNC" .
+_:440 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:816 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VEF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VEF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VEF> <http://www.w3.org/2004/02/skos/core#notation> "USA.VEF" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.VEF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vietnam Educational Foundation" .
-_:494 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:494 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.VEF" .
-_:494 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:98 .
+_:816 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:816 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.VEF" .
+_:816 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:809 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHCPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHCPS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHCPS> <http://www.w3.org/2004/02/skos/core#notation> "USA.WHCPS" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHCPS> <http://www.w3.org/2004/02/skos/core#prefLabel> "White House Commission on Presidential Scholars: Presidential Scholars Program" .
-_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.WHCPS" .
-_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:690 .
+_:809 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:809 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.WHCPS" .
+_:809 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:128 .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHMO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHMO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym> .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHMO> <http://www.w3.org/2004/02/skos/core#notation> "USA.WHMO" .
 <urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#USA.WHMO> <http://www.w3.org/2004/02/skos/core#prefLabel> "White House Military Office" .
-_:690 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:690 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.WHMO" .
-_:690 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "USA.WHMO" .
+_:128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

@@ -172,10 +172,13 @@ let blankIndex = 0;
                 imported.convienence.g.findAndRemove(null, RDF_TYPE, ONTOLOGY_TYPE);
                 convienence.g.addAll(imported.convienence.g);
                 let removed;
-                while ((removed = deduplicateNodes(convienence.g, (s) => s.startsWith('_:'))) > 0)
+                while ((removed = deduplicateNodes(convienence.g, (s) => s.getSubject().startsWith('_:'), true)) > 0)
                   console.log('removed ' + removed + ' bnodes');
-                while ((removed = deduplicateNodes(convienence.g, (s) => true)) > 0)
-                  console.log('removed ' + removed + ' named nodes');
+                // while ((removed = deduplicateNodes(convienence.g, (s) => s.getCleanObject().type === 'bnode', false)) > 0)
+                //   console.log('removed ' + removed + ' named nodes');
+                // const newer = new Graph({});
+                // newer.addAll(convienence.g);
+                // convienence.g = newer;
               }
             }
 
@@ -362,56 +365,74 @@ let blankIndex = 0;
   }
 })();
 
-function deduplicateNodes(g: typeof Graph, isValid: (s: any) => any) {
+function deduplicateNodes(g: typeof Graph, isValid: (stmt: any) => any, descend: boolean): number {
   const before = g.size();
   const stmts = g.find();
   const bnodeIdx: { [key: string]: string } = {};
-  for (let i = 0; i < stmts.length; i++) {
-    const source = stmts[i];
+  stmts.filter(isValid).forEach((source: any) => {
     const sourceURI = source.getSubject();
-    if (isValid(sourceURI)) {
-      let { signature, candidates }: { signature: string; candidates: any; } = getSignature(sourceURI);
-      const targetURI = bnodeIdx[signature];
-      if (targetURI) {
-        if (sourceURI !== targetURI) {
-          for (let j = 0; j < stmts.length; j++) {
-            const target = stmts[j];
-            const p2 = target.getPredicate();
-            if (p2 === sourceURI) {
-              target.setPredicate(targetURI);
-            }
-            const o2 = target.getObject();
-            if (o2.type === 'bnode' && o2.value === sourceURI) {
-              o2.value = targetURI;
-            }
+    let { signature, candidates }: { signature: string; candidates: any; } = getSignature(sourceURI, descend);
+    const targetURI = bnodeIdx[signature];
+    if (targetURI) {
+      if (sourceURI !== targetURI) {
+        for (let j = 0; j < stmts.length; j++) {
+          const target = stmts[j];
+          const p2 = target.getPredicate();
+          if (p2 === sourceURI) {
+            target.setPredicate(targetURI);
           }
-          candidates.forEach((stmt: any) => {
-            g.remove(stmt);
-          });
+          const o2 = target.getObject();
+          if (o2.type === 'bnode' && o2.value === sourceURI) {
+            o2.value = targetURI;
+          }
         }
-      } else {
-        bnodeIdx[signature] = sourceURI;
+        candidates.forEach((stmt: any) => {
+          g.remove(stmt);
+        });
       }
+    } else {
+      bnodeIdx[signature] = sourceURI;
     }
-  }
+  });
   return before - g.size();
 
-  function getSignature(sourceURI: any) {
+  function getSignature(sourceURI: any, descend: boolean): { signature: string; candidates: any; } {
     const candidates2 = g.find(sourceURI);
-    const signature: string = candidates2.reduce((acc: [string], stmt: any) => {
+    const signature = `{${candidates2.reduce((acc: [any], stmt: any) => {
       const p = stmt.getPredicate();
       let o = stmt.getCleanObject();
-      if (o.type === 'bnode') {
-        const { signature, candidates } = getSignature(o.value);
+      if (descend && o.type === 'bnode') {
+        const { signature: subsignature, candidates } = getSignature(o.value, descend);
         candidates2.push(...candidates);
-        o = signature;
+        o.value = subsignature;
       }
-      acc.push(`{${[p, o].join(',')}`);
+
+      acc.push([p, o]);
       return acc;
     },
-      []).sort((a: any, b: any) => a.localeCompare(b)).join('\n');
+      []).sort((a: any, b: any) => a[0].localeCompare(b[0])).reduce((acc: [string], e: any) => {
+        let o = e[1];
+        o = descend && o.type === 'bnode' ? o.value : comparableStringify(o);
+        acc.push(`${JSON.stringify(e[0])} : ${o}`);
+        return acc;
+      }
+        , []).join(',')}}`;
     return { signature, candidates: candidates2 };
   }
+}
+
+function comparableStringify(obj: any): string {
+  if (typeof obj !== 'object' || obj === null) {
+    return JSON.stringify(obj);
+  }
+
+  const orderedKeys = Object.keys(obj).sort();
+  const orderedObj: { [key: string]: any } = {};
+  for (const key of orderedKeys) {
+    orderedObj[key] = obj[key];
+  }
+
+  return JSON.stringify(orderedObj);
 }
 
 function removeWhitespace(documentation: any) {

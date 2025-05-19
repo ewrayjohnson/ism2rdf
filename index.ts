@@ -418,11 +418,11 @@ function convertRdfListToTurtleList(rdfListString: string): string {
   let match;
   do {
     // Regular expression to extract the RDF list part and the surrounding text
-    const regex = /(.*?)\s*\[\s*a rdf:List[\s\S]*?rdf:rest rdf:nil(\s*]\n)*(.*)/s;
+    const regex = /(.*?)(\s*\[\s*a rdf:List[\s\S]*?rdf:rest rdf:nil)(\s*]\n)*(.*)/s;
     match = rdfListString.match(regex);
-    if (match && match.length > 3) {
+    if (match && match.length > 4) {
       const prefix = match[1];
-      const suffix = match[3];
+      const suffix = match[4];
 
       // Regular expression to extract the string values from rdf:first
       const valueRegex = /rdf:first\s+("[^"]*"(?:\^\^(\w+(?:\:\w+)?))?)/g;
@@ -430,12 +430,12 @@ function convertRdfListToTurtleList(rdfListString: string): string {
       const extractedValues: string[] = [];
 
       // Iterate through the matches and extract the values
-      while ((valueMatch = valueRegex.exec(rdfListString)) !== null) {
+      while ((valueMatch = valueRegex.exec(match[2])) !== null) {
         extractedValues.push(valueMatch[1]);
       }
 
       // Construct the output string
-      const listString = ` (\n\t\t${extractedValues.join('\n\t\t')}\n\t) ;\n`; // Added semicolon
+      const listString = ` (\n\t\t\t${extractedValues.join('\n\t\t\t')}\n\t\t) ;\n`; // Added semicolon
 
       rdfListString = prefix + listString + suffix;
     }

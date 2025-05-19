@@ -33,9 +33,9 @@
 <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues> owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"urn:us:gov:ic:ntk:profile:agencydissem"
-		"urn:us:gov:ic:ntk:profile:datasphere"
-		"urn:us:gov:ic:ntk:profile:grp-ind"
-		"urn:us:gov:ic:ntk:profile:role"
-	) ;
+			"urn:us:gov:ic:ntk:profile:agencydissem"
+			"urn:us:gov:ic:ntk:profile:datasphere"
+			"urn:us:gov:ic:ntk:profile:grp-ind"
+			"urn:us:gov:ic:ntk:profile:role"
+		) ;
   ] .

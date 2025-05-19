@@ -29,8 +29,8 @@ ismnonus:NATO-BALK a skos:Concept ;
 ismnonus:CVEnumISMNonUSControlsValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"NATO-ATOMAL"
-		"NATO-BOHEMIA"
-		"NATO-BALK"
-	) ;
+			"NATO-ATOMAL"
+			"NATO-BOHEMIA"
+			"NATO-BALK"
+		) ;
   ] .

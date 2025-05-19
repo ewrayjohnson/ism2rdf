@@ -44,11 +44,11 @@ ismsar:DNI a skos:Concept ;
 ismsar:CVEnumISMSARAuthoritiesValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"STATE"
-		"DOD"
-		"DOE"
-		"DHS"
-		"AG"
-		"DNI"
-	) ;
+			"STATE"
+			"DOD"
+			"DOE"
+			"DHS"
+			"AG"
+			"DNI"
+		) ;
   ] .

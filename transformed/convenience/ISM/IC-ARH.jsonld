@@ -38,529 +38,7 @@
   },
   "@graph": [
     {
-      "@id": "_:1762",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "FISA",
-          "RAWFISA",
-          "IMC",
-          "CNWDI",
-          "RD",
-          "FRD",
-          "DS",
-          "LES",
-          "LES-NF",
-          "DSEN",
-          "DoD-Dist-A",
-          "DoD-Dist-B",
-          "DoD-Dist-C",
-          "DoD-Dist-D",
-          "DoD-Dist-E",
-          "DoD-Dist-F",
-          "US-Person",
-          "pre13526ORCON",
-          "POC",
-          "COMSEC",
-          "SSI",
-          "RSEN",
-          "IMCON_RSEN",
-          "GEOCAP",
-          "NATO",
-          "RC_Dissemination_Control_Required",
-          "ITAR-EAR"
-        ]
-      }
-    },
-    {
-      "@id": "_:1824",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "USGov",
-          "USIC",
-          "USDOD",
-          "OtherAuthority",
-          "USA-CUI-ONLY",
-          "USA-CUI"
-        ]
-      }
-    },
-    {
-      "@id": "_:207",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:2072",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "FGI",
-          "ABW",
-          "AFG",
-          "AGO",
-          "AIA",
-          "ALB",
-          "AND",
-          "ARE",
-          "ARG",
-          "ARM",
-          "ASM",
-          "ATA",
-          "ATF",
-          "ATG",
-          "AUS",
-          "AUT",
-          "AX2",
-          "AX3",
-          "AZE",
-          "BDI",
-          "BEL",
-          "BEN",
-          "BES",
-          "BFA",
-          "BGD",
-          "BGR",
-          "BHR",
-          "BHS",
-          "BIH",
-          "BLM",
-          "BLR",
-          "BLZ",
-          "BMU",
-          "BOL",
-          "BRA",
-          "BRB",
-          "BRN",
-          "BTN",
-          "BVT",
-          "BWA",
-          "CAF",
-          "CAN",
-          "CCK",
-          "CHE",
-          "CHL",
-          "CHN",
-          "CIV",
-          "CMR",
-          "COD",
-          "COG",
-          "COK",
-          "COL",
-          "COM",
-          "CPT",
-          "CPV",
-          "CRI",
-          "CUB",
-          "CUW",
-          "CXR",
-          "CYM",
-          "CYP",
-          "CZE",
-          "DEU",
-          "DGA",
-          "DJI",
-          "DMA",
-          "DNK",
-          "DOM",
-          "DZA",
-          "ECU",
-          "EGY",
-          "ERI",
-          "ESH",
-          "ESP",
-          "EST",
-          "ETH",
-          "FIN",
-          "FJI",
-          "FLK",
-          "FRA",
-          "FRO",
-          "FSM",
-          "GAB",
-          "GBR",
-          "GEO",
-          "GGY",
-          "GHA",
-          "GIB",
-          "GIN",
-          "GLP",
-          "GMB",
-          "GNB",
-          "GNQ",
-          "GRC",
-          "GRD",
-          "GRL",
-          "GTM",
-          "GUF",
-          "GUM",
-          "GUY",
-          "HKG",
-          "HMD",
-          "HND",
-          "HRV",
-          "HTI",
-          "HUN",
-          "IDN",
-          "IMN",
-          "IND",
-          "IOT",
-          "IRL",
-          "IRN",
-          "IRQ",
-          "ISL",
-          "ISR",
-          "ITA",
-          "JAM",
-          "JEY",
-          "JOR",
-          "JPN",
-          "KAZ",
-          "KEN",
-          "KGZ",
-          "KHM",
-          "KIR",
-          "KNA",
-          "KOR",
-          "KWT",
-          "LAO",
-          "LBN",
-          "LBR",
-          "LBY",
-          "LCA",
-          "LIE",
-          "LKA",
-          "LSO",
-          "LTU",
-          "LUX",
-          "LVA",
-          "MAC",
-          "MAF",
-          "MAR",
-          "MCO",
-          "MDA",
-          "MDG",
-          "MDV",
-          "MEX",
-          "MHL",
-          "MKD",
-          "MLI",
-          "MLT",
-          "MMR",
-          "MNE",
-          "MNG",
-          "MNP",
-          "MOZ",
-          "MRT",
-          "MSR",
-          "MTQ",
-          "MUS",
-          "MWI",
-          "MYS",
-          "MYT",
-          "NAM",
-          "NCL",
-          "NER",
-          "NFK",
-          "NGA",
-          "NIC",
-          "NIU",
-          "NLD",
-          "NOR",
-          "NPL",
-          "NRU",
-          "NZL",
-          "OMN",
-          "PAK",
-          "PAN",
-          "PCN",
-          "PER",
-          "PHL",
-          "PLW",
-          "PNG",
-          "POL",
-          "PRI",
-          "PRK",
-          "PRT",
-          "PRY",
-          "PYF",
-          "QAT",
-          "REU",
-          "ROU",
-          "RUS",
-          "RWA",
-          "SAU",
-          "SDN",
-          "SEN",
-          "SGP",
-          "SGS",
-          "SHN",
-          "SLB",
-          "SLE",
-          "SLV",
-          "SMR",
-          "SOM",
-          "SPM",
-          "SRB",
-          "SSD",
-          "STP",
-          "SUR",
-          "SVK",
-          "SVN",
-          "SWE",
-          "SWZ",
-          "SXM",
-          "SYC",
-          "SYR",
-          "TCA",
-          "TCD",
-          "TGO",
-          "THA",
-          "TJK",
-          "TKL",
-          "TKM",
-          "TLS",
-          "TON",
-          "TTO",
-          "TUN",
-          "TUR",
-          "TUV",
-          "TWN",
-          "TZA",
-          "UGA",
-          "UKR",
-          "URY",
-          "UZB",
-          "VAT",
-          "VCT",
-          "VEN",
-          "VGB",
-          "VIR",
-          "VNM",
-          "VUT",
-          "WLF",
-          "WSM",
-          "XAC",
-          "XAZ",
-          "XBI",
-          "XBK",
-          "XCR",
-          "XCS",
-          "XCY",
-          "XEU",
-          "XGL",
-          "XGZ",
-          "XHO",
-          "XJA",
-          "XJM",
-          "XJN",
-          "XJV",
-          "XKM",
-          "XKN",
-          "XKR",
-          "XKS",
-          "XMW",
-          "XNV",
-          "XPL",
-          "XPR",
-          "XQZ",
-          "XSP",
-          "XSV",
-          "XTR",
-          "XWB",
-          "XWK",
-          "XXD",
-          "YEM",
-          "ZAF",
-          "ZMB",
-          "ZWE",
-          "ACGU",
-          "AMSP",
-          "AOSC",
-          "APFS",
-          "ASEA",
-          "AUSTRALIA_GROUP",
-          "BHTF",
-          "BWCS",
-          "CFCK",
-          "CFOD",
-          "CFUP",
-          "CLFC",
-          "CMFC",
-          "CMFP",
-          "CPMT",
-          "CTOC",
-          "CWCS",
-          "ECTF",
-          "EFOR",
-          "EU",
-          "EUDA",
-          "FRME",
-          "FVEY",
-          "GCCH",
-          "GCTF",
-          "GFNX",
-          "GMIF",
-          "IESC",
-          "IMSC",
-          "IMSP",
-          "IPMC",
-          "IRKS",
-          "ISAF",
-          "ISSG",
-          "KFOR",
-          "MCFI",
-          "MESF",
-          "MGEU",
-          "MIFH",
-          "MLEC",
-          "MNTF",
-          "MPFL",
-          "NACT",
-          "NATO",
-          "NCFE",
-          "NKIC",
-          "NRDC",
-          "NSG",
-          "OSAG",
-          "OSTY",
-          "PAWA",
-          "PGMF",
-          "PSMX",
-          "RISC",
-          "RSMA",
-          "SFOR",
-          "SOFP",
-          "SPAA",
-          "TEYE",
-          "TFTC",
-          "UNCK"
-        ]
-      }
-    },
-    {
-      "@id": "_:2518",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "ADPO",
-          "AG",
-          "ASYL",
-          "FSEC",
-          "BATT",
-          "CVI",
-          "CVIC",
-          "BARG",
-          "CMPRS",
-          "LCOMM",
-          "COMPT",
-          "DREC",
-          "DCRIT",
-          "XFER",
-          "EMGT",
-          "EXPT",
-          "EXPTR",
-          "JURY",
-          "FHFANPI",
-          "FSI",
-          "CRIT",
-          "FNC",
-          "INTEL",
-          "LEI",
-          "NUC",
-          "PRVCY",
-          "PROPIN",
-          "GENETIC",
-          "HLTH",
-          "CUI-PROVISIONAL-HSAI",
-          "CUI-PROVISIONAL-HSEI",
-          "INF",
-          "ISVI",
-          "CUI-PROVISIONAL-ISVIH",
-          "PRIIG",
-          "ID",
-          "CUI-PROVISIONAL-IAIH",
-          "FINT",
-          "INVENT",
-          "INV",
-          "SURV",
-          "JUV",
-          "PRIVILEGE",
-          "LMI",
-          "MERG",
-          "MIL",
-          "LNSL",
-          "NETW",
-          "NNPI",
-          "OPSEC",
-          "RECCOM",
-          "SRI",
-          "OCCMTO",
-          "SERV",
-          "CUI-PROVISIONAL-OSI",
-          "APP",
-          "TRACE",
-          "RESD",
-          "PERS",
-          "CUI-PROVISIONAL-PSI",
-          "PEST",
-          "PHYS",
-          "CUI-PROVISIONAL-PHYSH",
-          "PRE",
-          "PRIOR",
-          "CUI-PROVISIONAL-PRIVACY",
-          "POST",
-          "LPROT",
-          "RAIL",
-          "RTR",
-          "RWRD",
-          "SAFE",
-          "PSEC",
-          "CUI-PROVISIONAL-PII",
-          "SCV",
-          "SBIZ",
-          "SSEL",
-          "STAT",
-          "ADJ",
-          "STUD",
-          "CONREG",
-          "CONV",
-          "TAI",
-          "PROT",
-          "LSCRN",
-          "DCNI",
-          "UCNI",
-          "LVIC",
-          "IVIC",
-          "VISA",
-          "WATER",
-          "WHSTL",
-          "WIT"
-        ]
-      }
-    },
-    {
-      "@id": "_:252",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "DS",
-          "XD",
-          "ND",
-          "SBU",
-          "SBU-NF",
-          "LES",
-          "LES-NF",
-          "SSI",
-          "NNPI"
-        ]
-      }
-    },
-    {
-      "@id": "_:3",
+      "@id": "_:0",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -593,51 +71,20 @@
       }
     },
     {
-      "@id": "_:330",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:365",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:39",
+      "@id": "_:1144",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
-          "R",
-          "C",
-          "S",
-          "TS",
-          "U"
+          "NATO-U",
+          "NATO-R",
+          "NATO-C",
+          "NATO-S",
+          "NATO-TS"
         ]
       }
     },
     {
-      "@id": "_:4511",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:5350",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "BP",
-          "MB"
-        ]
-      }
-    },
-    {
-      "@id": "_:55",
+      "@id": "_:17",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -985,188 +432,11 @@
       }
     },
     {
-      "@id": "_:56",
+      "@id": "_:195",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
-          "RD",
-          "RD-CNWDI",
-          "RD-SG-14",
-          "RD-SG-15",
-          "RD-SG-18",
-          "RD-SG-20",
-          "FRD",
-          "FRD-SG-14",
-          "FRD-SG-15",
-          "FRD-SG-18",
-          "FRD-SG-20",
-          "DCNI",
-          "UCNI",
-          "TFNI"
-        ]
-      }
-    },
-    {
-      "@id": "_:560",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "NATO-U",
-          "NATO-R",
-          "NATO-C",
-          "NATO-S",
-          "NATO-TS"
-        ]
-      }
-    },
-    {
-      "@id": "_:5713",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "NATO-ATOMAL",
-          "NATO-BOHEMIA",
-          "NATO-BALK"
-        ]
-      }
-    },
-    {
-      "@id": "_:596",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "ICD-710",
-          "DoD-Dist-B",
-          "DoD-Dist-C",
-          "DoD-Dist-D",
-          "DoD-Dist-E",
-          "DoD-Dist-F"
-        ]
-      }
-    },
-    {
-      "@id": "_:6282",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "ACPI",
-          "AWP",
-          "CUSPI",
-          "DPPD",
-          "HVCO",
-          "SSS"
-        ]
-      }
-    },
-    {
-      "@id": "_:731",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "BUR",
-          "BUR-BLG",
-          "BUR-DTP",
-          "BUR-WRG",
-          "HCS",
-          "HCS-O",
-          "HCS-P",
-          "HCS-X",
-          "KLM",
-          "KLM-R",
-          "MVL",
-          "RSV",
-          "SI",
-          "SI-EU",
-          "SI-G",
-          "SI-NK",
-          "TK",
-          "TK-BLFH",
-          "TK-IDIT",
-          "TK-KAND"
-        ]
-      }
-    },
-    {
-      "@id": "_:7648",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "AIV",
-          "ADPO",
-          "CRITAN",
-          "ARCHR",
-          "FSEC",
-          "BUDG",
-          "FUND",
-          "CVI",
-          "CHLD",
-          "CCI",
-          "CONTRACT",
-          "SUB",
-          "CTI",
-          "CHRI",
-          "CEII",
-          "LDNA",
-          "EXPT",
-          "JURY",
-          "TAX",
-          "FISA",
-          "FISAB",
-          "FNC",
-          "INTEL",
-          "NUC",
-          "PRVCY",
-          "PROCURE",
-          "PROPIN",
-          "GENETIC",
-          "GEO",
-          "HLTH",
-          "HISTP",
-          "INF",
-          "PRIIG",
-          "IFNC",
-          "ID",
-          "INTL",
-          "INV",
-          "LFNC",
-          "NPSR",
-          "NNPI",
-          "SRI",
-          "PERS",
-          "MFC",
-          "PCII",
-          "LPROT",
-          "SGI",
-          "SSI",
-          "SSEL",
-          "STAT",
-          "STUD",
-          "TSCA",
-          "DCNI",
-          "UCNI",
-          "CENS",
-          "WHSTL",
-          "WIT",
-          "WDT"
-        ]
-      }
-    },
-    {
-      "@id": "_:7848",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "IC_710_MANDATORY_FDR",
-          "DOD_DISTRO_STATEMENT"
-        ]
-      }
-    },
-    {
-      "@id": "_:8224",
-      "@type": "rdfs:Datatype",
-      "owl:oneOf": {
-        "@list": [
-          "USA",
+          "FGI",
           "ABW",
           "AFG",
           "AGO",
@@ -1510,7 +780,138 @@
       }
     },
     {
-      "@id": "_:838",
+      "@id": "_:21",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "RS",
+          "FOUO",
+          "OC",
+          "OC-USGOV",
+          "IMC",
+          "NF",
+          "PR",
+          "REL",
+          "RELIDO",
+          "EYES",
+          "DSEN",
+          "RAWFISA",
+          "FISA",
+          "DISPLAYONLY",
+          "EXEMPT_FROM_ICD501_DISCOVERY",
+          "WAIVED",
+          "AC",
+          "AWP",
+          "DL_ONLY",
+          "FED_ONLY",
+          "FEDCON",
+          "NOCON"
+        ]
+      }
+    },
+    {
+      "@id": "_:282",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "ADPO",
+          "AG",
+          "ASYL",
+          "FSEC",
+          "BATT",
+          "CVI",
+          "CVIC",
+          "BARG",
+          "CMPRS",
+          "LCOMM",
+          "COMPT",
+          "DREC",
+          "DCRIT",
+          "XFER",
+          "EMGT",
+          "EXPT",
+          "EXPTR",
+          "JURY",
+          "FHFANPI",
+          "FSI",
+          "CRIT",
+          "FNC",
+          "INTEL",
+          "LEI",
+          "NUC",
+          "PRVCY",
+          "PROPIN",
+          "GENETIC",
+          "HLTH",
+          "CUI-PROVISIONAL-HSAI",
+          "CUI-PROVISIONAL-HSEI",
+          "INF",
+          "ISVI",
+          "CUI-PROVISIONAL-ISVIH",
+          "PRIIG",
+          "ID",
+          "CUI-PROVISIONAL-IAIH",
+          "FINT",
+          "INVENT",
+          "INV",
+          "SURV",
+          "JUV",
+          "PRIVILEGE",
+          "LMI",
+          "MERG",
+          "MIL",
+          "LNSL",
+          "NETW",
+          "NNPI",
+          "OPSEC",
+          "RECCOM",
+          "SRI",
+          "OCCMTO",
+          "SERV",
+          "CUI-PROVISIONAL-OSI",
+          "APP",
+          "TRACE",
+          "RESD",
+          "PERS",
+          "CUI-PROVISIONAL-PSI",
+          "PEST",
+          "PHYS",
+          "CUI-PROVISIONAL-PHYSH",
+          "PRE",
+          "PRIOR",
+          "CUI-PROVISIONAL-PRIVACY",
+          "POST",
+          "LPROT",
+          "RAIL",
+          "RTR",
+          "RWRD",
+          "SAFE",
+          "PSEC",
+          "CUI-PROVISIONAL-PII",
+          "SCV",
+          "SBIZ",
+          "SSEL",
+          "STAT",
+          "ADJ",
+          "STUD",
+          "CONREG",
+          "CONV",
+          "TAI",
+          "PROT",
+          "LSCRN",
+          "DCNI",
+          "UCNI",
+          "LVIC",
+          "IVIC",
+          "VISA",
+          "WATER",
+          "WHSTL",
+          "WIT"
+        ]
+      }
+    },
+    {
+      "@id": "_:369",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -1859,7 +1260,510 @@
       }
     },
     {
-      "@id": "_:963",
+      "@id": "_:45",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:528",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "USA",
+          "ABW",
+          "AFG",
+          "AGO",
+          "AIA",
+          "ALB",
+          "AND",
+          "ARE",
+          "ARG",
+          "ARM",
+          "ASM",
+          "ATA",
+          "ATF",
+          "ATG",
+          "AUS",
+          "AUT",
+          "AX2",
+          "AX3",
+          "AZE",
+          "BDI",
+          "BEL",
+          "BEN",
+          "BES",
+          "BFA",
+          "BGD",
+          "BGR",
+          "BHR",
+          "BHS",
+          "BIH",
+          "BLM",
+          "BLR",
+          "BLZ",
+          "BMU",
+          "BOL",
+          "BRA",
+          "BRB",
+          "BRN",
+          "BTN",
+          "BVT",
+          "BWA",
+          "CAF",
+          "CAN",
+          "CCK",
+          "CHE",
+          "CHL",
+          "CHN",
+          "CIV",
+          "CMR",
+          "COD",
+          "COG",
+          "COK",
+          "COL",
+          "COM",
+          "CPT",
+          "CPV",
+          "CRI",
+          "CUB",
+          "CUW",
+          "CXR",
+          "CYM",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DGA",
+          "DJI",
+          "DMA",
+          "DNK",
+          "DOM",
+          "DZA",
+          "ECU",
+          "EGY",
+          "ERI",
+          "ESH",
+          "ESP",
+          "EST",
+          "ETH",
+          "FIN",
+          "FJI",
+          "FLK",
+          "FRA",
+          "FRO",
+          "FSM",
+          "GAB",
+          "GBR",
+          "GEO",
+          "GGY",
+          "GHA",
+          "GIB",
+          "GIN",
+          "GLP",
+          "GMB",
+          "GNB",
+          "GNQ",
+          "GRC",
+          "GRD",
+          "GRL",
+          "GTM",
+          "GUF",
+          "GUM",
+          "GUY",
+          "HKG",
+          "HMD",
+          "HND",
+          "HRV",
+          "HTI",
+          "HUN",
+          "IDN",
+          "IMN",
+          "IND",
+          "IOT",
+          "IRL",
+          "IRN",
+          "IRQ",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "JEY",
+          "JOR",
+          "JPN",
+          "KAZ",
+          "KEN",
+          "KGZ",
+          "KHM",
+          "KIR",
+          "KNA",
+          "KOR",
+          "KWT",
+          "LAO",
+          "LBN",
+          "LBR",
+          "LBY",
+          "LCA",
+          "LIE",
+          "LKA",
+          "LSO",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MAC",
+          "MAF",
+          "MAR",
+          "MCO",
+          "MDA",
+          "MDG",
+          "MDV",
+          "MEX",
+          "MHL",
+          "MKD",
+          "MLI",
+          "MLT",
+          "MMR",
+          "MNE",
+          "MNG",
+          "MNP",
+          "MOZ",
+          "MRT",
+          "MSR",
+          "MTQ",
+          "MUS",
+          "MWI",
+          "MYS",
+          "MYT",
+          "NAM",
+          "NCL",
+          "NER",
+          "NFK",
+          "NGA",
+          "NIC",
+          "NIU",
+          "NLD",
+          "NOR",
+          "NPL",
+          "NRU",
+          "NZL",
+          "OMN",
+          "PAK",
+          "PAN",
+          "PCN",
+          "PER",
+          "PHL",
+          "PLW",
+          "PNG",
+          "POL",
+          "PRI",
+          "PRK",
+          "PRT",
+          "PRY",
+          "PYF",
+          "QAT",
+          "REU",
+          "ROU",
+          "RUS",
+          "RWA",
+          "SAU",
+          "SDN",
+          "SEN",
+          "SGP",
+          "SGS",
+          "SHN",
+          "SLB",
+          "SLE",
+          "SLV",
+          "SMR",
+          "SOM",
+          "SPM",
+          "SRB",
+          "SSD",
+          "STP",
+          "SUR",
+          "SVK",
+          "SVN",
+          "SWE",
+          "SWZ",
+          "SXM",
+          "SYC",
+          "SYR",
+          "TCA",
+          "TCD",
+          "TGO",
+          "THA",
+          "TJK",
+          "TKL",
+          "TKM",
+          "TLS",
+          "TON",
+          "TTO",
+          "TUN",
+          "TUR",
+          "TUV",
+          "TWN",
+          "TZA",
+          "UGA",
+          "UKR",
+          "URY",
+          "UZB",
+          "VAT",
+          "VCT",
+          "VEN",
+          "VGB",
+          "VIR",
+          "VNM",
+          "VUT",
+          "WLF",
+          "WSM",
+          "XAC",
+          "XAZ",
+          "XBI",
+          "XBK",
+          "XCR",
+          "XCS",
+          "XCY",
+          "XEU",
+          "XGL",
+          "XGZ",
+          "XHO",
+          "XJA",
+          "XJM",
+          "XJN",
+          "XJV",
+          "XKM",
+          "XKN",
+          "XKR",
+          "XKS",
+          "XMW",
+          "XNV",
+          "XPL",
+          "XPR",
+          "XQZ",
+          "XSP",
+          "XSV",
+          "XTR",
+          "XWB",
+          "XWK",
+          "XXD",
+          "YEM",
+          "ZAF",
+          "ZMB",
+          "ZWE",
+          "ACGU",
+          "AMSP",
+          "AOSC",
+          "APFS",
+          "ASEA",
+          "AUSTRALIA_GROUP",
+          "BHTF",
+          "BWCS",
+          "CFCK",
+          "CFOD",
+          "CFUP",
+          "CLFC",
+          "CMFC",
+          "CMFP",
+          "CPMT",
+          "CTOC",
+          "CWCS",
+          "ECTF",
+          "EFOR",
+          "EU",
+          "EUDA",
+          "FRME",
+          "FVEY",
+          "GCCH",
+          "GCTF",
+          "GFNX",
+          "GMIF",
+          "IESC",
+          "IMSC",
+          "IMSP",
+          "IPMC",
+          "IRKS",
+          "ISAF",
+          "ISSG",
+          "KFOR",
+          "MCFI",
+          "MESF",
+          "MGEU",
+          "MIFH",
+          "MLEC",
+          "MNTF",
+          "MPFL",
+          "NACT",
+          "NATO",
+          "NCFE",
+          "NKIC",
+          "NRDC",
+          "NSG",
+          "OSAG",
+          "OSTY",
+          "PAWA",
+          "PGMF",
+          "PSMX",
+          "RISC",
+          "RSMA",
+          "SFOR",
+          "SOFP",
+          "SPAA",
+          "TEYE",
+          "TFTC",
+          "UNCK"
+        ]
+      }
+    },
+    {
+      "@id": "_:5786",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "NATO-ATOMAL",
+          "NATO-BOHEMIA",
+          "NATO-BALK"
+        ]
+      }
+    },
+    {
+      "@id": "_:5853",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "ACPI",
+          "AWP",
+          "CUSPI",
+          "DPPD",
+          "HVCO",
+          "SSS"
+        ]
+      }
+    },
+    {
+      "@id": "_:5930",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "USGov",
+          "USIC",
+          "USDOD",
+          "OtherAuthority",
+          "USA-CUI-ONLY",
+          "USA-CUI"
+        ]
+      }
+    },
+    {
+      "@id": "_:6002",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "ICD-710",
+          "DoD-Dist-B",
+          "DoD-Dist-C",
+          "DoD-Dist-D",
+          "DoD-Dist-E",
+          "DoD-Dist-F"
+        ]
+      }
+    },
+    {
+      "@id": "_:6102",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "BP",
+          "MB"
+        ]
+      }
+    },
+    {
+      "@id": "_:62",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "R",
+          "C",
+          "S",
+          "TS",
+          "U"
+        ]
+      }
+    },
+    {
+      "@id": "_:6282",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "AIV",
+          "ADPO",
+          "CRITAN",
+          "ARCHR",
+          "FSEC",
+          "BUDG",
+          "FUND",
+          "CVI",
+          "CHLD",
+          "CCI",
+          "CONTRACT",
+          "SUB",
+          "CTI",
+          "CHRI",
+          "CEII",
+          "LDNA",
+          "EXPT",
+          "JURY",
+          "TAX",
+          "FISA",
+          "FISAB",
+          "FNC",
+          "INTEL",
+          "NUC",
+          "PRVCY",
+          "PROCURE",
+          "PROPIN",
+          "GENETIC",
+          "GEO",
+          "HLTH",
+          "HISTP",
+          "INF",
+          "PRIIG",
+          "IFNC",
+          "ID",
+          "INTL",
+          "INV",
+          "LFNC",
+          "NPSR",
+          "NNPI",
+          "SRI",
+          "PERS",
+          "MFC",
+          "PCII",
+          "LPROT",
+          "SGI",
+          "SSI",
+          "SSEL",
+          "STAT",
+          "STUD",
+          "TSCA",
+          "DCNI",
+          "UCNI",
+          "CENS",
+          "WHSTL",
+          "WIT",
+          "WDT"
+        ]
+      }
+    },
+    {
+      "@id": "_:634",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:6560",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -1888,32 +1792,128 @@
       }
     },
     {
-      "@id": "_:99",
+      "@id": "_:6762",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
-          "RS",
-          "FOUO",
-          "OC",
-          "OC-USGOV",
-          "IMC",
-          "NF",
-          "PR",
-          "REL",
-          "RELIDO",
-          "EYES",
-          "DSEN",
-          "RAWFISA",
+          "BUR",
+          "BUR-BLG",
+          "BUR-DTP",
+          "BUR-WRG",
+          "HCS",
+          "HCS-O",
+          "HCS-P",
+          "HCS-X",
+          "KLM",
+          "KLM-R",
+          "MVL",
+          "RSV",
+          "SI",
+          "SI-EU",
+          "SI-G",
+          "SI-NK",
+          "TK",
+          "TK-BLFH",
+          "TK-IDIT",
+          "TK-KAND"
+        ]
+      }
+    },
+    {
+      "@id": "_:72",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "RD",
+          "RD-CNWDI",
+          "RD-SG-14",
+          "RD-SG-15",
+          "RD-SG-18",
+          "RD-SG-20",
+          "FRD",
+          "FRD-SG-14",
+          "FRD-SG-15",
+          "FRD-SG-18",
+          "FRD-SG-20",
+          "DCNI",
+          "UCNI",
+          "TFNI"
+        ]
+      }
+    },
+    {
+      "@id": "_:869",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:8975",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "DS",
+          "XD",
+          "ND",
+          "SBU",
+          "SBU-NF",
+          "LES",
+          "LES-NF",
+          "SSI",
+          "NNPI"
+        ]
+      }
+    },
+    {
+      "@id": "_:9592",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
           "FISA",
-          "DISPLAYONLY",
-          "EXEMPT_FROM_ICD501_DISCOVERY",
-          "WAIVED",
-          "AC",
-          "AWP",
-          "DL_ONLY",
-          "FED_ONLY",
-          "FEDCON",
-          "NOCON"
+          "RAWFISA",
+          "IMC",
+          "CNWDI",
+          "RD",
+          "FRD",
+          "DS",
+          "LES",
+          "LES-NF",
+          "DSEN",
+          "DoD-Dist-A",
+          "DoD-Dist-B",
+          "DoD-Dist-C",
+          "DoD-Dist-D",
+          "DoD-Dist-E",
+          "DoD-Dist-F",
+          "US-Person",
+          "pre13526ORCON",
+          "POC",
+          "COMSEC",
+          "SSI",
+          "RSEN",
+          "IMCON_RSEN",
+          "GEOCAP",
+          "NATO",
+          "RC_Dissemination_Control_Required",
+          "ITAR-EAR"
+        ]
+      }
+    },
+    {
+      "@id": "_:9917",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
+    },
+    {
+      "@id": "_:9959",
+      "@type": "rdfs:Datatype",
+      "owl:oneOf": {
+        "@list": [
+          "IC_710_MANDATORY_FDR",
+          "DOD_DISTRO_STATEMENT"
         ]
       }
     },
@@ -2221,7 +2221,7 @@
     {
       "@id": "ism25x:CVEnumISM25XValues",
       "owl:equivalentClass": {
-        "@id": "_:3"
+        "@id": "_:0"
       }
     },
     {
@@ -2267,7 +2267,7 @@
     {
       "@id": "ismhighwaternato:CVEnumISMHighWaterNATOValues",
       "owl:equivalentClass": {
-        "@id": "_:560"
+        "@id": "_:1144"
       }
     },
     {
@@ -2367,7 +2367,7 @@
     {
       "@id": "ismatomic:CVEnumISMatomicEnergyMarkingsValues",
       "owl:equivalentClass": {
-        "@id": "_:56"
+        "@id": "_:72"
       }
     },
     {
@@ -2530,7 +2530,7 @@
     {
       "@id": "ismclassall:CVEnumISMClassificationAllValues",
       "owl:equivalentClass": {
-        "@id": "_:39"
+        "@id": "_:62"
       }
     },
     {
@@ -2597,7 +2597,7 @@
     {
       "@id": "ismcomplies:CVEnumISMCompliesWithValues",
       "owl:equivalentClass": {
-        "@id": "_:1824"
+        "@id": "_:5930"
       }
     },
     {
@@ -3132,7 +3132,7 @@
     {
       "@id": "ismcuibasic:CVEnumISMCUIBasicValues",
       "owl:equivalentClass": {
-        "@id": "_:2518"
+        "@id": "_:282"
       }
     },
     {
@@ -4072,7 +4072,7 @@
     {
       "@id": "ismcuispecified:CVEnumISMCUISpecifiedValues",
       "owl:equivalentClass": {
-        "@id": "_:7648"
+        "@id": "_:6282"
       }
     },
     {
@@ -4574,7 +4574,7 @@
     {
       "@id": "ismdissem:CVEnumISMDissemValues",
       "owl:equivalentClass": {
-        "@id": "_:99"
+        "@id": "_:21"
       }
     },
     {
@@ -4773,7 +4773,7 @@
     {
       "@id": "ismexempt:CVEnumISMExemptFromValues",
       "owl:equivalentClass": {
-        "@id": "_:7848"
+        "@id": "_:9959"
       }
     },
     {
@@ -4831,7 +4831,7 @@
     {
       "@id": "ismnonic:CVEnumISMNonICValues",
       "owl:equivalentClass": {
-        "@id": "_:252"
+        "@id": "_:8975"
       }
     },
     {
@@ -4934,7 +4934,7 @@
     {
       "@id": "ismnonus:CVEnumISMNonUSControlsValues",
       "owl:equivalentClass": {
-        "@id": "_:5713"
+        "@id": "_:5786"
       }
     },
     {
@@ -5073,7 +5073,7 @@
     {
       "@id": "ismnotice:CVEnumISMNoticeValues",
       "owl:equivalentClass": {
-        "@id": "_:1762"
+        "@id": "_:9592"
       }
     },
     {
@@ -5392,7 +5392,7 @@
     {
       "@id": "ismnoticeprose:CVEnumISMNoticeProseValues",
       "owl:equivalentClass": {
-        "@id": "_:963"
+        "@id": "_:6560"
       }
     },
     {
@@ -5594,7 +5594,7 @@
     {
       "@id": "ismpoctyp:CVEnumISMPocTypeValues",
       "owl:equivalentClass": {
-        "@id": "_:596"
+        "@id": "_:6002"
       }
     },
     {
@@ -5676,7 +5676,7 @@
     {
       "@id": "ismsar:CVEnumISMSARValues",
       "owl:equivalentClass": {
-        "@id": "_:5350"
+        "@id": "_:6102"
       }
     },
     {
@@ -5794,7 +5794,7 @@
     {
       "@id": "ismscicon:CVEnumISMSCIControlsValues",
       "owl:equivalentClass": {
-        "@id": "_:731"
+        "@id": "_:6762"
       }
     },
     {
@@ -5996,7 +5996,7 @@
     {
       "@id": "ismsecondbannerline:CVEnumISMSecondBannerLineValues",
       "owl:equivalentClass": {
-        "@id": "_:6282"
+        "@id": "_:5853"
       }
     },
     {
@@ -7725,7 +7725,7 @@
     {
       "@id": "ismcatfgio:CVEnumISMCATFGIOpenValues",
       "owl:equivalentClass": {
-        "@id": "_:55"
+        "@id": "_:17"
       }
     },
     {
@@ -8942,7 +8942,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:365"
+        "@id": "_:45"
       }
     },
     {
@@ -11823,7 +11823,7 @@
     {
       "@id": "ismcatfgip:CVEnumISMCATFGIProtectedValues",
       "owl:equivalentClass": {
-        "@id": "_:2072"
+        "@id": "_:195"
       }
     },
     {
@@ -13049,7 +13049,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:330"
+        "@id": "_:869"
       }
     },
     {
@@ -15933,7 +15933,7 @@
     {
       "@id": "ismcatownpro:CVEnumISMCATOwnerProducerValues",
       "owl:equivalentClass": {
-        "@id": "_:838"
+        "@id": "_:369"
       }
     },
     {
@@ -17159,7 +17159,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:207"
+        "@id": "_:9917"
       }
     },
     {
@@ -20049,7 +20049,7 @@
     {
       "@id": "ismcatrelto:CVEnumISMCATRelToValues",
       "owl:equivalentClass": {
-        "@id": "_:8224"
+        "@id": "_:528"
       }
     },
     {
@@ -21266,7 +21266,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:4511"
+        "@id": "_:634"
       }
     },
     {

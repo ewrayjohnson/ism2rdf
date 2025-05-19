@@ -44,11 +44,11 @@ ismsecondbannerline:SSS a skos:Concept ;
 ismsecondbannerline:CVEnumISMSecondBannerLineValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"ACPI"
-		"AWP"
-		"CUSPI"
-		"DPPD"
-		"HVCO"
-		"SSS"
-	) ;
+			"ACPI"
+			"AWP"
+			"CUSPI"
+			"DPPD"
+			"HVCO"
+			"SSS"
+		) ;
   ] .

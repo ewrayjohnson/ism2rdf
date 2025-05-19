@@ -39,10 +39,10 @@ ismhighwaternato:NATO-TS a skos:Concept ;
 ismhighwaternato:CVEnumISMHighWaterNATOValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"NATO-U"
-		"NATO-R"
-		"NATO-C"
-		"NATO-S"
-		"NATO-TS"
-	) ;
+			"NATO-U"
+			"NATO-R"
+			"NATO-C"
+			"NATO-S"
+			"NATO-TS"
+		) ;
   ] .

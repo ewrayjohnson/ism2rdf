@@ -44,11 +44,11 @@ ismcomplies:USA-CUI a skos:Concept ;
 ismcomplies:CVEnumISMCompliesWithValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"USGov"
-		"USIC"
-		"USDOD"
-		"OtherAuthority"
-		"USA-CUI-ONLY"
-		"USA-CUI"
-	) ;
+			"USGov"
+			"USIC"
+			"USDOD"
+			"OtherAuthority"
+			"USA-CUI-ONLY"
+			"USA-CUI"
+		) ;
   ] .

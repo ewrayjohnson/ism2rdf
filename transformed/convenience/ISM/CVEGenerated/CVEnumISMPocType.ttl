@@ -44,11 +44,11 @@ ismpoctype:DoD-Dist-F a skos:Concept ;
 ismpoctype:CVEnumISMPocTypeValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"ICD-710"
-		"DoD-Dist-B"
-		"DoD-Dist-C"
-		"DoD-Dist-D"
-		"DoD-Dist-E"
-		"DoD-Dist-F"
-	) ;
+			"ICD-710"
+			"DoD-Dist-B"
+			"DoD-Dist-C"
+			"DoD-Dist-D"
+			"DoD-Dist-E"
+			"DoD-Dist-F"
+		) ;
   ] .

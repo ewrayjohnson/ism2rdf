@@ -39,10 +39,10 @@ ismelements:NoticeExternalList a skos:Concept ;
 ismelements:CVEnumISMElementsValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"Notice"
-		"NoticeText"
-		"NoticeList"
-		"NoticeExternal"
-		"NoticeExternalList"
-	) ;
+			"Notice"
+			"NoticeText"
+			"NoticeList"
+			"NoticeExternal"
+			"NoticeExternalList"
+		) ;
   ] .

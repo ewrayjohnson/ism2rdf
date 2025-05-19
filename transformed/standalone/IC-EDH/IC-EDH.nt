@@ -7,5 +7,5 @@
 <urn:us:gov:ic:IC-EDH:IC-EDH> <http://www.w3.org/2002/07/owl#imports> <urn:us:gov:ic:../USAgency/USAgency.jsonld> .
 <urn:us:gov:ic:edh#ResponsibleEntityRoleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <urn:us:gov:ic:edh#ResponsibleEntityRoleType> <http://purl.org/dc/elements/1.1/title> "Role identifies the relationships of the ResponsibleEntity to the data item referenced by the EDH. The role of Originator represents that the ResponsibleEntity is the creator/originator/author of the data item referenced by the EDH. The role of Custodian represents that the ResponsibleEntity is responsible for the data item referenced by the EDH being on the network but is not necessarily the creator/originator/author of it. You must have one and only one Custodian, and you may have zero or one Originator." .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<urn:us:gov:ic:edh#ResponsibleEntityRoleTypeValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:8 .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:edh#ResponsibleEntityRoleTypeValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:0 .

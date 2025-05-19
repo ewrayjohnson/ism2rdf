@@ -84,19 +84,19 @@ ismatomic:TFNI a skos:Concept ;
 ismatomic:CVEnumISMatomicEnergyMarkingsValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"RD"
-		"RD-CNWDI"
-		"RD-SG-14"
-		"RD-SG-15"
-		"RD-SG-18"
-		"RD-SG-20"
-		"FRD"
-		"FRD-SG-14"
-		"FRD-SG-15"
-		"FRD-SG-18"
-		"FRD-SG-20"
-		"DCNI"
-		"UCNI"
-		"TFNI"
-	) ;
+			"RD"
+			"RD-CNWDI"
+			"RD-SG-14"
+			"RD-SG-15"
+			"RD-SG-18"
+			"RD-SG-20"
+			"FRD"
+			"FRD-SG-14"
+			"FRD-SG-15"
+			"FRD-SG-18"
+			"FRD-SG-20"
+			"DCNI"
+			"UCNI"
+			"TFNI"
+		) ;
   ] .

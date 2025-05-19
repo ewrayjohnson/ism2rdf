@@ -24,7 +24,7 @@ ismsar:MB a skos:Concept ;
 ismsar:CVEnumISMSARValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"BP"
-		"MB"
-	) ;
+			"BP"
+			"MB"
+		) ;
   ] .

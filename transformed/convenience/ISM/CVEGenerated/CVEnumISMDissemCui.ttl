@@ -69,16 +69,16 @@ ismdissemcui:RELIDO a skos:Concept ;
 ismdissemcui:CVEnumISMDissemCuiValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"AC"
-		"AWP"
-		"DISPLAYONLY"
-		"DL_ONLY"
-		"EXEMPT_FROM_ICD501_DISCOVERY"
-		"FED_ONLY"
-		"FEDCON"
-		"NF"
-		"NOCON"
-		"REL"
-		"RELIDO"
-	) ;
+			"AC"
+			"AWP"
+			"DISPLAYONLY"
+			"DL_ONLY"
+			"EXEMPT_FROM_ICD501_DISCOVERY"
+			"FED_ONLY"
+			"FEDCON"
+			"NF"
+			"NOCON"
+			"REL"
+			"RELIDO"
+		) ;
   ] .

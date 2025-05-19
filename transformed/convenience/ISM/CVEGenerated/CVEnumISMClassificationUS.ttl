@@ -34,9 +34,9 @@ ismclassus:U a skos:Concept ;
 ismclassus:CVEnumISMClassificationUSValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"TS"
-		"S"
-		"C"
-		"U"
-	) ;
+			"TS"
+			"S"
+			"C"
+			"U"
+		) ;
   ] .

@@ -59,14 +59,14 @@ ismnonic:NNPI a skos:Concept ;
 ismnonic:CVEnumISMNonICValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"DS"
-		"XD"
-		"ND"
-		"SBU"
-		"SBU-NF"
-		"LES"
-		"LES-NF"
-		"SSI"
-		"NNPI"
-	) ;
+			"DS"
+			"XD"
+			"ND"
+			"SBU"
+			"SBU-NF"
+			"LES"
+			"LES-NF"
+			"SSI"
+			"NNPI"
+		) ;
   ] .

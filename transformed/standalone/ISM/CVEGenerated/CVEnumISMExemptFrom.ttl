@@ -24,7 +24,7 @@ ismexempt:DOD_DISTRO_STATEMENT a skos:Concept ;
 ismexempt:CVEnumISMExemptFromValues owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
-		"IC_710_MANDATORY_FDR"
-		"DOD_DISTRO_STATEMENT"
-	) ;
+			"IC_710_MANDATORY_FDR"
+			"DOD_DISTRO_STATEMENT"
+		) ;
   ] .

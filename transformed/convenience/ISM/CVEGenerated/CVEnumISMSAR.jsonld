@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:1",
+      "@id": "_:10",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -48,9 +48,8 @@
     },
     {
       "@id": "ismsar:CVEnumISMSARValues",
-      "@type": "rdfs:Datatype",
       "owl:equivalentClass": {
-        "@id": "_:1"
+        "@id": "_:10"
       }
     },
     {

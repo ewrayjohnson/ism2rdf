@@ -10,7 +10,7 @@
   },
   "@graph": [
     {
-      "@id": "_:5",
+      "@id": "_:10",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -46,9 +46,8 @@
     },
     {
       "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues",
-      "@type": "rdfs:Datatype",
       "owl:equivalentClass": {
-        "@id": "_:5"
+        "@id": "_:10"
       }
     },
     {

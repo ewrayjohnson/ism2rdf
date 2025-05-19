@@ -2,34 +2,29 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMExemptFrom> a owl:Ontology .
 
 ismexempt:CVEnumISMExemptFrom a skos:ConceptScheme ;
-	dc:title "(U) ismexempt:CVEnumISMExemptFrom definition" ;
-	skos:hasTopConcept ismexempt:IC_710_MANDATORY_FDR ;
-	skos:hasTopConcept ismexempt:DOD_DISTRO_STATEMENT .
-
-ismexempt:CVEnumISMExemptFromValues a rdfs:Datatype ;
-	owl:equivalentClass [
-	rdf:type rdfs:Datatype ;
-		owl:oneOf ( 
-			"IC_710_MANDATORY_FDR"
-			"DOD_DISTRO_STATEMENT"
-		) ;
-	] .
-
-ismexempt:DOD_DISTRO_STATEMENT a skos:Concept ;
-	skos:inScheme ismexempt:CVEnumISMExemptFrom ;
-	skos:notation "DOD_DISTRO_STATEMENT" ;
-	skos:prefLabel "Document claims exemption from the rules in DoD5230.24 requiring DoD Distribution Statements that have been encoded into ISM." .
+  dc:title "(U) ismexempt:CVEnumISMExemptFrom definition" ;
+  skos:hasTopConcept ismexempt:IC_710_MANDATORY_FDR, ismexempt:DOD_DISTRO_STATEMENT .
 
 ismexempt:IC_710_MANDATORY_FDR a skos:Concept ;
-	skos:inScheme ismexempt:CVEnumISMExemptFrom ;
-	skos:notation "IC_710_MANDATORY_FDR" ;
-	skos:prefLabel "Document claims exemption from ICD-710 rules mandating the use of Foreign Disclosure and Release markings that have been encoded in ISM. Currently, the requirement for FD&R is only mandatory for Disseminated Analytic Product; however, it is strongly encouraged otherwise." .
+  skos:inScheme ismexempt:CVEnumISMExemptFrom ;
+  skos:notation "IC_710_MANDATORY_FDR" ;
+  skos:prefLabel "Document claims exemption from ICD-710 rules mandating the use of Foreign Disclosure and Release markings that have been encoded in ISM. Currently, the requirement for FD&R is only mandatory for Disseminated Analytic Product; however, it is strongly encouraged otherwise." .
 
+ismexempt:DOD_DISTRO_STATEMENT a skos:Concept ;
+  skos:inScheme ismexempt:CVEnumISMExemptFrom ;
+  skos:notation "DOD_DISTRO_STATEMENT" ;
+  skos:prefLabel "Document claims exemption from the rules in DoD5230.24 requiring DoD Distribution Statements that have been encoded into ISM." .
+
+ismexempt:CVEnumISMExemptFromValues owl:equivalentClass [
+    a rdfs:Datatype ;
+    owl:oneOf (
+		"IC_710_MANDATORY_FDR"
+		"DOD_DISTRO_STATEMENT"
+	) ;
+  ] .

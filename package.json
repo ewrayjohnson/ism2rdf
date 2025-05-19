@@ -8,15 +8,13 @@
     "@types/lodash": "^4.17.16",
     "@types/rdfjs__data-model": "^2.0.9",
     "@types/rdfjs__serializer-jsonld-ext": "^4.0.1",
-    "@types/rdfjs__serializer-turtle": "^1.1.0",
     "@types/xml2js": "^0.4.14",
     "typescript": "^5.5.4"
   },
   "dependencies": {
     "@entryscape/rdfjson": "^2.7.7",
-    "@rdfjs/prefix-map": "^0.1.2",
+    "@jeswr/pretty-turtle": "^1.6.2",
     "@rdfjs/serializer-jsonld-ext": "^4.0.1",
-    "@rdfjs/serializer-turtle": "^1.1.5",
     "get-stream": "^9.0.1",
     "lodash": "^4.17.21",
     "rdf-quad": "^2.0.0",

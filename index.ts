@@ -1,4 +1,5 @@
 import { Graph, namespaces } from '@entryscape/rdfjson';
+import { write } from '@jeswr/pretty-turtle';
 import rdf from '@rdfjs/data-model';
 import SerializerJsonld from '@rdfjs/serializer-jsonld-ext';
 import { Literal, NamedNode, Quad } from '@rdfjs/types';
@@ -35,7 +36,7 @@ type Import = {
 type Package = {
   g: typeof Graph;
   namespaces: { [key: string]: string };
-  importUris: string[];
+  imports: { [key: string]: [string, Package] };
 }
 type Packages = {
   standalone: Package;
@@ -75,11 +76,11 @@ let blankIndex = 0;
         standalone: {
           g: new Graph({}),
           namespaces: {},
-          importUris: [],
+          imports: {},
         }, convienence: {
           g: new Graph({}),
           namespaces: {},
-          importUris: [],
+          imports: {},
         }
       };
       processed.set(inputFilepath, p);
@@ -162,23 +163,13 @@ let blankIndex = 0;
             if (imports) {
               const all = imports.map((e: any) => e.$ as Import);
               const dirname = path.dirname(inputFilepath);
+              const merged = new Set();
               for (const importSpec of all) {
                 const schemaLocation = importSpec.schemaLocation;
                 const importPath: string = path.join(dirname, schemaLocation);
-                standalone.importUris.push(schemaLocation);
                 const imported = await input(importPath, processed);
-                Object.assign(convienence.namespaces, imported.convienence.namespaces);
-                imported.standalone.g.findAndRemove(null, IMPORTS_PROPERTY, null);
-                imported.convienence.g.findAndRemove(null, RDF_TYPE, ONTOLOGY_TYPE);
-                convienence.g.addAll(imported.convienence.g);
-                let removed;
-                while ((removed = deduplicateNodes(convienence.g, (s) => s.getSubject().startsWith('_:'), true)) > 0)
-                  console.log('removed ' + removed + ' bnodes');
-                // while ((removed = deduplicateNodes(convienence.g, (s) => s.getCleanObject().type === 'bnode', false)) > 0)
-                //   console.log('removed ' + removed + ' named nodes');
-                // const newer = new Graph({});
-                // newer.addAll(convienence.g);
-                // convienence.g = newer;
+                standalone.imports[schemaLocation] = [importPath, imported.standalone];
+                merge(merged, importPath, convienence, imported.standalone);
               }
             }
 
@@ -261,7 +252,7 @@ let blankIndex = 0;
 
               const allowedNotationsId = `${schemeId}Values`;
               standalone.namespaces[RDFS_URI] = 'rdfs';
-              standalone.g.add(allowedNotationsId, RDF_TYPE, 'rdfs:Datatype');  // optional
+              // standalone.g.add(allowedNotationsId, RDF_TYPE, 'rdfs:Datatype');  // optional
               const equivalentClass = standalone.g.add(null, 'rdf:type', 'rdfs:Datatype');
               standalone.g.add(allowedNotationsId, 'owl:equivalentClass', { type: 'bnode', value: equivalentClass._s });
               let rest = null;
@@ -302,7 +293,7 @@ let blankIndex = 0;
             Object.assign(convienence.namespaces, standalone.namespaces);
             await writeGraph(convienence, path.join(outputBase, 'convenience'));
 
-            standalone.importUris.forEach((uri) => {
+            Object.keys(standalone.imports).forEach((uri) => {
               const importUri = 'urn:us:gov:ic:' + uri.replace(/\.\w+$/, '.jsonld');
               standalone.g.add(ontologyUri, IMPORTS_PROPERTY, importUri);
             });
@@ -322,7 +313,6 @@ let blankIndex = 0;
               Object.entries(context).forEach((e: [string, string]) => {
                 prefixesArr.push([e[0], rdf.namedNode(e[1])]);
               });
-              // const prefixes = new PrefixMap(prefixesArr, { factory: rdf });
               const quads: Quad[] = [];
               p.g.find().forEach((triple: any) => {
                 const quad: Quad = rdf.quad(rdf.namedNode(triple._s), rdf.namedNode(triple._p),
@@ -348,8 +338,10 @@ let blankIndex = 0;
               const jsonld: string = await getStream(jsonldSerializer.import(input) as AnyStream);
               const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
               fs.writeFileSync(jsonldOutputFilepath, jsonld);
-              const turtle: string = saveTurtle(JSON.parse(jsonld));
 
+              const turtle: string =
+                // createTurtle(JSON.parse(jsonld));
+                convertRdfListToString(await write(quads, { prefixes: context }));
               const turtleOutputFilepath = path.join(outputDir, `${basename}.ttl`);
               fs.writeFileSync(turtleOutputFilepath, turtle);
 
@@ -362,78 +354,56 @@ let blankIndex = 0;
       }
     }
     return p;
+
+    function merge(merged: Set<unknown>, importPath: string, convienence: Package, standalone: Package) {
+      if (!merged.has(importPath)) {
+        merged.add(importPath);
+        for (const x of Object.entries(standalone.imports)) {
+          merge(merged, x[0] as string, convienence, x[1][1]);
+        }
+        Object.assign(convienence.namespaces, standalone.namespaces);
+        standalone.g.findAndRemove(null, IMPORTS_PROPERTY, null);
+        standalone.g.findAndRemove(null, RDF_TYPE, ONTOLOGY_TYPE);
+        convienence.g.addAll(standalone.g);
+      }
+    }
   }
 })();
 
-function deduplicateNodes(g: typeof Graph, isValid: (stmt: any) => any, descend: boolean): number {
-  const before = g.size();
-  const stmts = g.find();
-  const bnodeIdx: { [key: string]: string } = {};
-  stmts.filter(isValid).forEach((source: any) => {
-    const sourceURI = source.getSubject();
-    let { signature, candidates }: { signature: string; candidates: any; } = getSignature(sourceURI, descend);
-    const targetURI = bnodeIdx[signature];
-    if (targetURI) {
-      if (sourceURI !== targetURI) {
-        for (let j = 0; j < stmts.length; j++) {
-          const target = stmts[j];
-          const p2 = target.getPredicate();
-          if (p2 === sourceURI) {
-            target.setPredicate(targetURI);
-          }
-          const o2 = target.getObject();
-          if (o2.type === 'bnode' && o2.value === sourceURI) {
-            o2.value = targetURI;
-          }
-        }
-        candidates.forEach((stmt: any) => {
-          g.remove(stmt);
-        });
-      }
-    } else {
-      bnodeIdx[signature] = sourceURI;
-    }
-  });
-  return before - g.size();
+// function deduplicateBlankNodes(g: typeof Graph) {
+//   const stmts = g.find();
+//   const bnodeIdx: { [key: string]: string } = {};
+//   for (let i = 0; i < stmts.length; i++) {
+//     const stmt = stmts[i];
+//     let sourceURI = stmt.getSubject();
+//     let p = stmt.getPredicate();
+//     const o = stmt.getCleanObject();
+//     if (sourceURI.indexOf('_:') === 0) {
+//       const signature: string = JSON.stringify([p,o]);
+//       const targetURI: string = bnodeIdx[signature];
+//       if (targetURI) {
+//         const sourceURI = '', targetURI = '';
+//         g.forEach((s: any, p: any, o : any) => {
+//           if (o.type === 'uri' && o.value === sourceURI) {
+//             o.value = targetURI;
+//           }
+//           if (s === targetURI && o._statement) {
+//             o._statement._s = targetURI;
+//           }
+//         });
 
-  function getSignature(sourceURI: any, descend: boolean): { signature: string; candidates: any; } {
-    const candidates2 = g.find(sourceURI);
-    const signature = `{${candidates2.reduce((acc: [any], stmt: any) => {
-      const p = stmt.getPredicate();
-      let o = stmt.getCleanObject();
-      if (descend && o.type === 'bnode') {
-        const { signature: subsignature, candidates } = getSignature(o.value, descend);
-        candidates2.push(...candidates);
-        o.value = subsignature;
-      }
-
-      acc.push([p, o]);
-      return acc;
-    },
-      []).sort((a: any, b: any) => a[0].localeCompare(b[0])).reduce((acc: [string], e: any) => {
-        let o = e[1];
-        o = descend && o.type === 'bnode' ? o.value : comparableStringify(o);
-        acc.push(`${JSON.stringify(e[0])} : ${o}`);
-        return acc;
-      }
-        , []).join(',')}}`;
-    return { signature, candidates: candidates2 };
-  }
-}
-
-function comparableStringify(obj: any): string {
-  if (typeof obj !== 'object' || obj === null) {
-    return JSON.stringify(obj);
-  }
-
-  const orderedKeys = Object.keys(obj).sort();
-  const orderedObj: { [key: string]: any } = {};
-  for (const key of orderedKeys) {
-    orderedObj[key] = obj[key];
-  }
-
-  return JSON.stringify(orderedObj);
-}
+//       } else {
+//         bnodeIdx[signature] = sourceURI;
+//       }
+//     }
+//     // if (p.indexOf('_:') === 0) {
+//     //   debugger;  
+//     // }
+//     // if (o.type === 'bnode') {
+//     //   debugger;  
+//     // }
+//   }
+// }
 
 function removeWhitespace(documentation: any) {
   return (documentation['xhtml:p']?.[0]?._ || documentation).replace(/\s+/g, ' ').trim();
@@ -470,7 +440,8 @@ function tripleToString(quad: Quad): string {
     return objectString;
   }
 }
-function saveTurtle(jsonLd: any): string {
+
+function createTurtle(jsonLd: any): string {
   let turtle: string = '';
   const context = jsonLd['@context'];
   Object.entries(context).forEach((value: [string, any]) => {
@@ -481,70 +452,112 @@ function saveTurtle(jsonLd: any): string {
   if (graph) {
     graph.forEach((obj: any) => {
       const id = obj['@id'];
-      if (!id.startsWith('_:')) {
+      if (!id.startsWith('_:') || obj.hasOwnProperty('@type')) {
         writeObj(obj, id, '\t');
       }
+      // else {
+      //   debugger;
+      // }
     });
 
     function writeObj(obj: any, id: string, indention: string) {
-      if (obj) {
-        let type = obj['@type'];
-        if (type) {
-          if (!Array.isArray(type)) {
-            type = [type];
-          } else {
-            debugger;
-          }
-          const types = type.map((t: string) => {
-            if (t.startsWith('http://')) {
-              return `<${t}>`;
-            }
-            return `${t}`;
-          }
-          );
-          const isCurie = id.indexOf('://') < 0 && id.split(':').length === 2;
-          turtle += `${indention.substring(0, indention.length - 1)}` +
-            `${id.startsWith('_:') ? '' : isCurie ? id : `<${id}>`}` +
-            `${indention.length > 1 ? 'rdf:type' : ' a'} ` +
-            `${types.join(' ')} ;\n`;
-          Object.keys(obj).forEach((predicate: string) => {
-            if (predicate !== '@id' && predicate !== '@type') {
-              let objects = obj[predicate];
-              if (!Array.isArray(objects)) {
-                objects = [objects];
-              }
-              objects.forEach((object: any) => {
-                if (typeof object === 'object') {
-                  const list = object['@list'];
-                  if (list) {
-                    turtle += `${indention}${predicate} ( `;
-                    list.forEach((item: any) => {
-                      turtle += `\n${indention + '\t'}${item['@id'] || JSON.stringify(item)}`;
-                    });
-                    turtle += `\n${indention}) ;\n`;
-                    return;
-                  }
-                  const subId = object['@id'];
-                  if (subId.startsWith('_:')) {
-                    turtle += `${indention}${predicate} [\n`;
-                    writeObj(graph.find((o: any) => o['@id'] === subId), subId, indention + '\t');
-                    turtle += `${indention}] ;\n`;
-                    return;
-                  }
-                }
-                if (typeof object === 'string') {
-                  object = JSON.stringify(object);
-                }
-                turtle += `${indention}${predicate} ${object['@id'] || object} ;\n`;
-              });
-            }
-          });
-          if (indention.length <= 1) {
-            turtle = turtle.slice(0, -2) + '.\n\n';
-          }
+      let type = obj['@type'];
+      if (type) {
+        if (!Array.isArray(type)) {
+          type = [type];
         }
+      } else {
+        type = [];
       }
+      const types = type.map((t: string) => {
+        if (t.startsWith('http://')) {
+          return `<${t}>`;
+        }
+        return `${t}`;
+      }
+      );
+
+      if (types.length > 0) {
+        const isCurie = id.indexOf('://') < 0 && id.split(':').length === 2;
+        turtle += `${indention.substring(0, indention.length - 1)}` +
+          `${/*id.startsWith('_:') ? '' : */isCurie ? id : `<${id}>`}` +
+          `${indention.length > 1 ? 'rdf:type' : ' a'} ` +
+          `${types.join(' ')} ;\n`;
+      }
+      //else {
+      //   turtle += ' [\n';
+      // }
+      Object.keys(obj).forEach((predicate: string) => {
+        if (predicate !== '@id' && predicate !== '@type') {
+          let objects = obj[predicate];
+          if (!Array.isArray(objects)) {
+            objects = [objects];
+          }
+          objects.forEach((object: any) => {
+            if (typeof object === 'object') {
+              const list = object['@list'];
+              if (list) {
+                turtle += `${indention}${predicate} ( `;
+                list.forEach((item: any) => {
+                  turtle += `\n${indention + '\t'}${item['@id'] || JSON.stringify(item)}`;
+                });
+                turtle += `\n${indention}) ;\n`;
+                return;
+              }
+              const subId = object['@id'];
+              if (subId.startsWith('_:')) {
+                turtle += `${indention}${predicate} [\n`;
+                writeObj(graph.find((o: any) => o['@id'] === subId), subId, indention + '\t');
+                turtle += `${indention}] ;\n`;
+                return;
+              }
+            } else if (typeof object === 'string') {
+              object = JSON.stringify(object);
+            } else if (Array.isArray(object)) {
+              debugger;
+            }
+            turtle += `${indention}${predicate} ${object['@id'] || object} ;\n`;
+          });
+        }
+      });
+      if (indention.length <= 1) {
+        turtle = turtle.slice(0, -2) + '.\n\n';
+      }
+      // if (types.length == 0) {
+      //   turtle += `${indention.substring(0, indention.length - 1)}] ;`;
+      // }
+      // }
     }
   }
   return turtle;
 }
+
+function convertRdfListToString(rdfListString: string): string {
+  let match;
+  do {
+    // Regular expression to extract the RDF list part and the surrounding text
+    const regex = /(.*?)\s*\[\s*a rdf:List[\s\S]*?rdf:rest rdf:nil(\s*]\n)*(.*)/s;
+    match = rdfListString.match(regex);
+    if (match && match.length > 3) {
+      const prefix = match[1];
+      const suffix = match[3];
+
+      // Regular expression to extract the string values from rdf:first
+      const valueRegex = /rdf:first\s+("[^"]*"(?:\^\^(\w+(?:\:\w+)?))?)/g;
+      let valueMatch;
+      const extractedValues: string[] = [];
+
+      // Iterate through the matches and extract the values
+      while ((valueMatch = valueRegex.exec(rdfListString)) !== null) {
+        extractedValues.push(valueMatch[1]);
+      }
+
+      // Construct the output string
+      const listString = ` (\n\t\t${extractedValues.join('\n\t\t')}\n\t) ;\n`; // Added semicolon
+
+      rdfListString = prefix + listString + suffix;
+    }
+  } while (match);
+  return rdfListString; // Or throw an error, depending on the desired behavior
+}
+

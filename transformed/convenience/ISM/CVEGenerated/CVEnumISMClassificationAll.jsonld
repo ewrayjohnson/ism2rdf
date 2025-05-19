@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:5",
+      "@id": "_:3",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -60,9 +60,8 @@
     },
     {
       "@id": "ismclassall:CVEnumISMClassificationAllValues",
-      "@type": "rdfs:Datatype",
       "owl:equivalentClass": {
-        "@id": "_:5"
+        "@id": "_:3"
       }
     },
     {

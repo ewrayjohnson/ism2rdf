@@ -2,118 +2,101 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMAtomicEnergyMarkings> a owl:Ontology .
 
 ismatomic:CVEnumISMatomicEnergyMarkings a skos:ConceptScheme ;
-	dc:title "(U) ismatomic:CVEnumISMatomicEnergyMarkings definition" ;
-	skos:hasTopConcept ismatomic:RD ;
-	skos:hasTopConcept ismatomic:RD-CNWDI ;
-	skos:hasTopConcept ismatomic:RD-SG-14 ;
-	skos:hasTopConcept ismatomic:RD-SG-15 ;
-	skos:hasTopConcept ismatomic:RD-SG-18 ;
-	skos:hasTopConcept ismatomic:RD-SG-20 ;
-	skos:hasTopConcept ismatomic:FRD ;
-	skos:hasTopConcept ismatomic:FRD-SG-14 ;
-	skos:hasTopConcept ismatomic:FRD-SG-15 ;
-	skos:hasTopConcept ismatomic:FRD-SG-18 ;
-	skos:hasTopConcept ismatomic:FRD-SG-20 ;
-	skos:hasTopConcept ismatomic:DCNI ;
-	skos:hasTopConcept ismatomic:UCNI ;
-	skos:hasTopConcept ismatomic:TFNI .
-
-ismatomic:CVEnumISMatomicEnergyMarkingsValues a rdfs:Datatype ;
-	owl:equivalentClass [
-	rdf:type rdfs:Datatype ;
-		owl:oneOf ( 
-			"RD"
-			"RD-CNWDI"
-			"RD-SG-14"
-			"RD-SG-15"
-			"RD-SG-18"
-			"RD-SG-20"
-			"FRD"
-			"FRD-SG-14"
-			"FRD-SG-15"
-			"FRD-SG-18"
-			"FRD-SG-20"
-			"DCNI"
-			"UCNI"
-			"TFNI"
-		) ;
-	] .
-
-ismatomic:DCNI a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "DCNI" ;
-	skos:prefLabel "DoD CONTROLLED NUCLEAR INFORMATION" .
-
-ismatomic:FRD a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "FRD" ;
-	skos:prefLabel "FORMERLY RESTRICTED DATA" .
-
-ismatomic:FRD-SG-14 a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "FRD-SG-14" ;
-	skos:prefLabel "RD-SIGMA-14" .
-
-ismatomic:FRD-SG-15 a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "FRD-SG-15" ;
-	skos:prefLabel "RD-SIGMA-15" .
-
-ismatomic:FRD-SG-18 a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "FRD-SG-18" ;
-	skos:prefLabel "RD-SIGMA-18" .
-
-ismatomic:FRD-SG-20 a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "FRD-SG-20" ;
-	skos:prefLabel "RD-SIGMA-20" .
+  dc:title "(U) ismatomic:CVEnumISMatomicEnergyMarkings definition" ;
+  skos:hasTopConcept ismatomic:RD, ismatomic:RD-CNWDI, ismatomic:RD-SG-14, ismatomic:RD-SG-15, ismatomic:RD-SG-18, ismatomic:RD-SG-20, ismatomic:FRD, ismatomic:FRD-SG-14, ismatomic:FRD-SG-15, ismatomic:FRD-SG-18, ismatomic:FRD-SG-20, ismatomic:DCNI, ismatomic:UCNI, ismatomic:TFNI .
 
 ismatomic:RD a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "RD" ;
-	skos:prefLabel "RESTRICTED DATA" .
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "RD" ;
+  skos:prefLabel "RESTRICTED DATA" .
 
 ismatomic:RD-CNWDI a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "RD-CNWDI" ;
-	skos:prefLabel "RD-CRITICAL NUCLEAR WEAPON DESIGN INFORMATION" .
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "RD-CNWDI" ;
+  skos:prefLabel "RD-CRITICAL NUCLEAR WEAPON DESIGN INFORMATION" .
 
 ismatomic:RD-SG-14 a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "RD-SG-14" ;
-	skos:prefLabel "RD-SIGMA-14" .
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "RD-SG-14" ;
+  skos:prefLabel "RD-SIGMA-14" .
 
 ismatomic:RD-SG-15 a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "RD-SG-15" ;
-	skos:prefLabel "RD-SIGMA-15" .
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "RD-SG-15" ;
+  skos:prefLabel "RD-SIGMA-15" .
 
 ismatomic:RD-SG-18 a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "RD-SG-18" ;
-	skos:prefLabel "RD-SIGMA-18" .
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "RD-SG-18" ;
+  skos:prefLabel "RD-SIGMA-18" .
 
 ismatomic:RD-SG-20 a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "RD-SG-20" ;
-	skos:prefLabel "RD-SIGMA-20" .
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "RD-SG-20" ;
+  skos:prefLabel "RD-SIGMA-20" .
 
-ismatomic:TFNI a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "TFNI" ;
-	skos:prefLabel "TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION" .
+ismatomic:FRD a skos:Concept ;
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "FRD" ;
+  skos:prefLabel "FORMERLY RESTRICTED DATA" .
+
+ismatomic:FRD-SG-14 a skos:Concept ;
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "FRD-SG-14" ;
+  skos:prefLabel "RD-SIGMA-14" .
+
+ismatomic:FRD-SG-15 a skos:Concept ;
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "FRD-SG-15" ;
+  skos:prefLabel "RD-SIGMA-15" .
+
+ismatomic:FRD-SG-18 a skos:Concept ;
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "FRD-SG-18" ;
+  skos:prefLabel "RD-SIGMA-18" .
+
+ismatomic:FRD-SG-20 a skos:Concept ;
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "FRD-SG-20" ;
+  skos:prefLabel "RD-SIGMA-20" .
+
+ismatomic:DCNI a skos:Concept ;
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "DCNI" ;
+  skos:prefLabel "DoD CONTROLLED NUCLEAR INFORMATION" .
 
 ismatomic:UCNI a skos:Concept ;
-	skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
-	skos:notation "UCNI" ;
-	skos:prefLabel "DoE CONTROLLED NUCLEAR INFORMATION" .
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "UCNI" ;
+  skos:prefLabel "DoE CONTROLLED NUCLEAR INFORMATION" .
 
+ismatomic:TFNI a skos:Concept ;
+  skos:inScheme ismatomic:CVEnumISMatomicEnergyMarkings ;
+  skos:notation "TFNI" ;
+  skos:prefLabel "TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION" .
+
+ismatomic:CVEnumISMatomicEnergyMarkingsValues owl:equivalentClass [
+    a rdfs:Datatype ;
+    owl:oneOf (
+		"RD"
+		"RD-CNWDI"
+		"RD-SG-14"
+		"RD-SG-15"
+		"RD-SG-18"
+		"RD-SG-20"
+		"FRD"
+		"FRD-SG-14"
+		"FRD-SG-15"
+		"FRD-SG-18"
+		"FRD-SG-20"
+		"DCNI"
+		"UCNI"
+		"TFNI"
+	) ;
+  ] .

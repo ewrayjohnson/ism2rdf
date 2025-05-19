@@ -2,55 +2,47 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <urn:us:gov:ic:ISM:CVEGenerated:CVEnumISMElements> a owl:Ontology .
 
 ismelements:CVEnumISMElements a skos:ConceptScheme ;
-	dc:title "(U) All currently authorized ISM element names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMElements.xml" ;
-	skos:hasTopConcept ismelements:Notice ;
-	skos:hasTopConcept ismelements:NoticeText ;
-	skos:hasTopConcept ismelements:NoticeList ;
-	skos:hasTopConcept ismelements:NoticeExternal ;
-	skos:hasTopConcept ismelements:NoticeExternalList .
-
-ismelements:CVEnumISMElementsValues a rdfs:Datatype ;
-	owl:equivalentClass [
-	rdf:type rdfs:Datatype ;
-		owl:oneOf ( 
-			"Notice"
-			"NoticeText"
-			"NoticeList"
-			"NoticeExternal"
-			"NoticeExternalList"
-		) ;
-	] .
+  dc:title "(U) All currently authorized ISM element names. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMElements.xml" ;
+  skos:hasTopConcept ismelements:Notice, ismelements:NoticeText, ismelements:NoticeList, ismelements:NoticeExternal, ismelements:NoticeExternalList .
 
 ismelements:Notice a skos:Concept ;
-	skos:inScheme ismelements:CVEnumISMElements ;
-	skos:notation "Notice" ;
-	skos:prefLabel "Notice element" .
-
-ismelements:NoticeExternal a skos:Concept ;
-	skos:inScheme ismelements:CVEnumISMElements ;
-	skos:notation "NoticeExternal" ;
-	skos:prefLabel "NoticeExternal element" .
-
-ismelements:NoticeExternalList a skos:Concept ;
-	skos:inScheme ismelements:CVEnumISMElements ;
-	skos:notation "NoticeExternalList" ;
-	skos:prefLabel "NoticeExternalList element" .
-
-ismelements:NoticeList a skos:Concept ;
-	skos:inScheme ismelements:CVEnumISMElements ;
-	skos:notation "NoticeList" ;
-	skos:prefLabel "NoticeList element" .
+  skos:inScheme ismelements:CVEnumISMElements ;
+  skos:notation "Notice" ;
+  skos:prefLabel "Notice element" .
 
 ismelements:NoticeText a skos:Concept ;
-	skos:inScheme ismelements:CVEnumISMElements ;
-	skos:notation "NoticeText" ;
-	skos:prefLabel "NoticeText element" .
+  skos:inScheme ismelements:CVEnumISMElements ;
+  skos:notation "NoticeText" ;
+  skos:prefLabel "NoticeText element" .
 
+ismelements:NoticeList a skos:Concept ;
+  skos:inScheme ismelements:CVEnumISMElements ;
+  skos:notation "NoticeList" ;
+  skos:prefLabel "NoticeList element" .
+
+ismelements:NoticeExternal a skos:Concept ;
+  skos:inScheme ismelements:CVEnumISMElements ;
+  skos:notation "NoticeExternal" ;
+  skos:prefLabel "NoticeExternal element" .
+
+ismelements:NoticeExternalList a skos:Concept ;
+  skos:inScheme ismelements:CVEnumISMElements ;
+  skos:notation "NoticeExternalList" ;
+  skos:prefLabel "NoticeExternalList element" .
+
+ismelements:CVEnumISMElementsValues owl:equivalentClass [
+    a rdfs:Datatype ;
+    owl:oneOf (
+		"Notice"
+		"NoticeText"
+		"NoticeList"
+		"NoticeExternal"
+		"NoticeExternalList"
+	) ;
+  ] .

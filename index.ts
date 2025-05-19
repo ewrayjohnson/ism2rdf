@@ -11,8 +11,6 @@ import { Readable } from 'stream';
 import { fileURLToPath } from 'url';
 import xml2js from 'xml2js';
 
-// const require = createRequire(import.meta.url);
-
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
 
@@ -252,7 +250,6 @@ let blankIndex = 0;
 
               const allowedNotationsId = `${schemeId}Values`;
               standalone.namespaces[RDFS_URI] = 'rdfs';
-              // standalone.g.add(allowedNotationsId, RDF_TYPE, 'rdfs:Datatype');  // optional
               const equivalentClass = standalone.g.add(null, 'rdf:type', 'rdfs:Datatype');
               standalone.g.add(allowedNotationsId, 'owl:equivalentClass', { type: 'bnode', value: equivalentClass._s });
               let rest = null;
@@ -339,9 +336,9 @@ let blankIndex = 0;
               const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
               fs.writeFileSync(jsonldOutputFilepath, jsonld);
 
-              const turtle: string =
-                // createTurtle(JSON.parse(jsonld));
-                convertRdfListToString(await write(quads, { prefixes: context }));
+              let turtle: string = await write(quads, { prefixes: context });
+              // due to a bug in the turtle writer, we need to convert rdf lists to 
+              turtle = convertRdfListToTurtleList(turtle);
               const turtleOutputFilepath = path.join(outputDir, `${basename}.ttl`);
               fs.writeFileSync(turtleOutputFilepath, turtle);
 
@@ -369,41 +366,6 @@ let blankIndex = 0;
     }
   }
 })();
-
-// function deduplicateBlankNodes(g: typeof Graph) {
-//   const stmts = g.find();
-//   const bnodeIdx: { [key: string]: string } = {};
-//   for (let i = 0; i < stmts.length; i++) {
-//     const stmt = stmts[i];
-//     let sourceURI = stmt.getSubject();
-//     let p = stmt.getPredicate();
-//     const o = stmt.getCleanObject();
-//     if (sourceURI.indexOf('_:') === 0) {
-//       const signature: string = JSON.stringify([p,o]);
-//       const targetURI: string = bnodeIdx[signature];
-//       if (targetURI) {
-//         const sourceURI = '', targetURI = '';
-//         g.forEach((s: any, p: any, o : any) => {
-//           if (o.type === 'uri' && o.value === sourceURI) {
-//             o.value = targetURI;
-//           }
-//           if (s === targetURI && o._statement) {
-//             o._statement._s = targetURI;
-//           }
-//         });
-
-//       } else {
-//         bnodeIdx[signature] = sourceURI;
-//       }
-//     }
-//     // if (p.indexOf('_:') === 0) {
-//     //   debugger;  
-//     // }
-//     // if (o.type === 'bnode') {
-//     //   debugger;  
-//     // }
-//   }
-// }
 
 function removeWhitespace(documentation: any) {
   return (documentation['xhtml:p']?.[0]?._ || documentation).replace(/\s+/g, ' ').trim();
@@ -441,98 +403,18 @@ function tripleToString(quad: Quad): string {
   }
 }
 
-function createTurtle(jsonLd: any): string {
-  let turtle: string = '';
-  const context = jsonLd['@context'];
-  Object.entries(context).forEach((value: [string, any]) => {
-    turtle += `@prefix ${value[0]}: <${value[1]}> .\n`;
-  });
-  turtle += '\n';
-  const graph = jsonLd['@graph'];
-  if (graph) {
-    graph.forEach((obj: any) => {
-      const id = obj['@id'];
-      if (!id.startsWith('_:') || obj.hasOwnProperty('@type')) {
-        writeObj(obj, id, '\t');
-      }
-      // else {
-      //   debugger;
-      // }
-    });
+// This function converts RDF lists to a string representation
+// by extracting the values from rdf:first and formatting them.
+// It uses a regular expression to match the RDF list structure and
+// replaces it with a formatted string.
+// The function continues to process the input string until no more matches are found.
+// It returns the modified string with the RDF list converted to a string representation.
+// The function assumes that the input string is in a specific format,
+// and it may need to be adjusted if the input format changes.
+// Note: The function does not handle errors or malformed input.
+// If the input string does not match the expected format, it may return an empty string or throw an error.
 
-    function writeObj(obj: any, id: string, indention: string) {
-      let type = obj['@type'];
-      if (type) {
-        if (!Array.isArray(type)) {
-          type = [type];
-        }
-      } else {
-        type = [];
-      }
-      const types = type.map((t: string) => {
-        if (t.startsWith('http://')) {
-          return `<${t}>`;
-        }
-        return `${t}`;
-      }
-      );
-
-      if (types.length > 0) {
-        const isCurie = id.indexOf('://') < 0 && id.split(':').length === 2;
-        turtle += `${indention.substring(0, indention.length - 1)}` +
-          `${/*id.startsWith('_:') ? '' : */isCurie ? id : `<${id}>`}` +
-          `${indention.length > 1 ? 'rdf:type' : ' a'} ` +
-          `${types.join(' ')} ;\n`;
-      }
-      //else {
-      //   turtle += ' [\n';
-      // }
-      Object.keys(obj).forEach((predicate: string) => {
-        if (predicate !== '@id' && predicate !== '@type') {
-          let objects = obj[predicate];
-          if (!Array.isArray(objects)) {
-            objects = [objects];
-          }
-          objects.forEach((object: any) => {
-            if (typeof object === 'object') {
-              const list = object['@list'];
-              if (list) {
-                turtle += `${indention}${predicate} ( `;
-                list.forEach((item: any) => {
-                  turtle += `\n${indention + '\t'}${item['@id'] || JSON.stringify(item)}`;
-                });
-                turtle += `\n${indention}) ;\n`;
-                return;
-              }
-              const subId = object['@id'];
-              if (subId.startsWith('_:')) {
-                turtle += `${indention}${predicate} [\n`;
-                writeObj(graph.find((o: any) => o['@id'] === subId), subId, indention + '\t');
-                turtle += `${indention}] ;\n`;
-                return;
-              }
-            } else if (typeof object === 'string') {
-              object = JSON.stringify(object);
-            } else if (Array.isArray(object)) {
-              debugger;
-            }
-            turtle += `${indention}${predicate} ${object['@id'] || object} ;\n`;
-          });
-        }
-      });
-      if (indention.length <= 1) {
-        turtle = turtle.slice(0, -2) + '.\n\n';
-      }
-      // if (types.length == 0) {
-      //   turtle += `${indention.substring(0, indention.length - 1)}] ;`;
-      // }
-      // }
-    }
-  }
-  return turtle;
-}
-
-function convertRdfListToString(rdfListString: string): string {
+function convertRdfListToTurtleList(rdfListString: string): string {
   let match;
   do {
     // Regular expression to extract the RDF list part and the surrounding text

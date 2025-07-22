@@ -66,7 +66,8 @@ ismdissemcui:RELIDO a skos:Concept ;
   skos:notation "RELIDO" ;
   skos:prefLabel "RELEASABLE BY INFORMATION DISCLOSURE OFFICIAL" .
 
-ismdissemcui:CVEnumISMDissemCuiValues owl:equivalentClass [
+ismdissemcui:CVEnumISMDissemCuiValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"AC"
@@ -81,4 +82,7 @@ ismdissemcui:CVEnumISMDissemCuiValues owl:equivalentClass [
 			"REL"
 			"RELIDO"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismdissemcui:CVEnumISMDissemCui ;
+  dc:source ismdissemcui:CVEnumISMDissemCui ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:dissem:cui#CVEnumISMDissemCui." .

@@ -133,6 +133,14 @@
     },
     {
       "@id": "ismdissemcommingled:CVEnumISMDissemCommingledValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:dissem:commingled#CVEnumISMDissemCommingled.",
+      "rdfs:seeAlso": {
+        "@id": "ismdissemcommingled:CVEnumISMDissemCommingled"
+      },
       "owl:equivalentClass": {
         "@id": "_:5"
       }

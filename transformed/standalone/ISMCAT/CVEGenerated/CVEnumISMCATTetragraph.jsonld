@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:7",
+      "@id": "_:2",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -80,7 +80,7 @@
       }
     },
     {
-      "@id": "_:8",
+      "@id": "_:6",
       "sh:path": {
         "@id": "skos:notation"
       },
@@ -429,8 +429,16 @@
     },
     {
       "@id": "ismcattetra:CVEnumISMCATTetragraphValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph.",
+      "rdfs:seeAlso": {
+        "@id": "ismcattetra:CVEnumISMCATTetragraph"
+      },
       "owl:equivalentClass": {
-        "@id": "_:7"
+        "@id": "_:2"
       }
     },
     {
@@ -693,7 +701,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:8"
+        "@id": "_:6"
       }
     },
     {

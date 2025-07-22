@@ -325,7 +325,8 @@ ismcattetra:UNCK a skos:Concept ;
   skos:prefLabel "United Nations Command, Korea" ;
   skos:notation "UNCK" .
 
-ismcattetra:CVEnumISMCATTetragraphValues owl:equivalentClass [
+ismcattetra:CVEnumISMCATTetragraphValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"ACGU"
@@ -390,4 +391,7 @@ ismcattetra:CVEnumISMCATTetragraphValues owl:equivalentClass [
 			"TFTC"
 			"UNCK"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcattetra:CVEnumISMCATTetragraph ;
+  dc:source ismcattetra:CVEnumISMCATTetragraph ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:tetragraph#CVEnumISMCATTetragraph." .

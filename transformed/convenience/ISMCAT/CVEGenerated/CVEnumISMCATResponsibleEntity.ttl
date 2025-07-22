@@ -1411,7 +1411,8 @@ ismcatre:NATO a skos:Concept ;
   skos:notation "NATO" ;
   skos:prefLabel "North Atlantic Treaty Organization" .
 
-ismcatre:CVEnumISMCATResponsibleEntityValues owl:equivalentClass [
+ismcatre:CVEnumISMCATResponsibleEntityValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"ABW"
@@ -1695,4 +1696,7 @@ ismcatre:CVEnumISMCATResponsibleEntityValues owl:equivalentClass [
 			"ZWE"
 			"NATO"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcatre:CVEnumISMCATResponsibleEntity ;
+  dc:source ismcatre:CVEnumISMCATResponsibleEntity ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:responsibleentity#CVEnumISMCATResponsibleEntity." .

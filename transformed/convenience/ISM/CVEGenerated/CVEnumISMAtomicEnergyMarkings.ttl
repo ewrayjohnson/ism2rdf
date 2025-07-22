@@ -81,7 +81,8 @@ ismatomic:TFNI a skos:Concept ;
   skos:notation "TFNI" ;
   skos:prefLabel "TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION" .
 
-ismatomic:CVEnumISMatomicEnergyMarkingsValues owl:equivalentClass [
+ismatomic:CVEnumISMatomicEnergyMarkingsValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"RD"
@@ -99,4 +100,7 @@ ismatomic:CVEnumISMatomicEnergyMarkingsValues owl:equivalentClass [
 			"UCNI"
 			"TFNI"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismatomic:CVEnumISMatomicEnergyMarkings ;
+  dc:source ismatomic:CVEnumISMatomicEnergyMarkings ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings." .

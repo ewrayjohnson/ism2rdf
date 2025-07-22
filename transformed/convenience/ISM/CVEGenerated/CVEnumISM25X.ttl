@@ -136,7 +136,8 @@ ism25x:75X a skos:Concept ;
   skos:notation "75X" ;
   skos:prefLabel "Specific information that has been formally approved by the ISCAP as information that does not permit the automatic or unilateral declassification of information at 75 years." .
 
-ism25x:CVEnumISM25XValues owl:equivalentClass [
+ism25x:CVEnumISM25XValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"AEA"
@@ -165,4 +166,7 @@ ism25x:CVEnumISM25XValues owl:equivalentClass [
 			"50X9"
 			"75X"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ism25x:CVEnumISM25X ;
+  dc:source ism25x:CVEnumISM25X ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:25x#CVEnumISM25X." .

@@ -476,7 +476,8 @@ ismcuibasic:WIT a skos:Concept ;
   skos:notation "WIT" ;
   skos:prefLabel "Witness Protection. Information related to the secretive details associated with one who has testified or may testify under circumstances that require secrecy of that individual and details pertaining to that person." .
 
-ismcuibasic:CVEnumISMCUIBasicValues owl:equivalentClass [
+ismcuibasic:CVEnumISMCUIBasicValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"ADPO"
@@ -573,4 +574,7 @@ ismcuibasic:CVEnumISMCUIBasicValues owl:equivalentClass [
 			"WHSTL"
 			"WIT"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcuibasic:CVEnumISMCUIBasic ;
+  dc:source ismcuibasic:CVEnumISMCUIBasic ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic." .

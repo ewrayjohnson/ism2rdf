@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:4",
+      "@id": "_:3",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -82,8 +82,16 @@
     },
     {
       "@id": "ismsecondbannerline:CVEnumISMSecondBannerLineValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine.",
+      "rdfs:seeAlso": {
+        "@id": "ismsecondbannerline:CVEnumISMSecondBannerLine"
+      },
       "owl:equivalentClass": {
-        "@id": "_:4"
+        "@id": "_:3"
       }
     },
     {

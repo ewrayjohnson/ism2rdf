@@ -146,7 +146,8 @@ ismnotice:ITAR-EAR a skos:Concept ;
   skos:notation "ITAR-EAR" ;
   skos:prefLabel "Warning statement for International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR) in accordance with DoD 5230.24, Distribution Statements on Technical Documents." .
 
-ismnotice:CVEnumISMNoticeValues owl:equivalentClass [
+ismnotice:CVEnumISMNoticeValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"FISA"
@@ -177,4 +178,7 @@ ismnotice:CVEnumISMNoticeValues owl:equivalentClass [
 			"RC_Dissemination_Control_Required"
 			"ITAR-EAR"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismnotice:CVEnumISMNotice ;
+  dc:source ismnotice:CVEnumISMNotice ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice." .

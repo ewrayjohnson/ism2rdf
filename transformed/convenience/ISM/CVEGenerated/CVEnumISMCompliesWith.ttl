@@ -41,7 +41,8 @@ ismcomplies:USA-CUI a skos:Concept ;
   skos:notation "USA-CUI" ;
   skos:prefLabel "Document contains both NSI (National Security Information) and CUI according to DoD rules for CUI. Document claims compliance with 1. CUI rules according to DoD, and 2. USGOV and/or USDOD rules for classified environments." .
 
-ismcomplies:CVEnumISMCompliesWithValues owl:equivalentClass [
+ismcomplies:CVEnumISMCompliesWithValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"USGov"
@@ -51,4 +52,7 @@ ismcomplies:CVEnumISMCompliesWithValues owl:equivalentClass [
 			"USA-CUI-ONLY"
 			"USA-CUI"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcomplies:CVEnumISMCompliesWith ;
+  dc:source ismcomplies:CVEnumISMCompliesWith ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:complieswith#CVEnumISMCompliesWith." .

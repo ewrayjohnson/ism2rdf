@@ -36,7 +36,8 @@ ismelements:NoticeExternalList a skos:Concept ;
   skos:notation "NoticeExternalList" ;
   skos:prefLabel "NoticeExternalList element" .
 
-ismelements:CVEnumISMElementsValues owl:equivalentClass [
+ismelements:CVEnumISMElementsValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"Notice"
@@ -45,4 +46,7 @@ ismelements:CVEnumISMElementsValues owl:equivalentClass [
 			"NoticeExternal"
 			"NoticeExternalList"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismelements:CVEnumISMElements ;
+  dc:source ismelements:CVEnumISMElements ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:elements#CVEnumISMElements." .

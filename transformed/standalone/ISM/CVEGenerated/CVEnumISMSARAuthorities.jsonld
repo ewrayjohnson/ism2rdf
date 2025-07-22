@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:2",
+      "@id": "_:7",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -64,8 +64,16 @@
     },
     {
       "@id": "ismsar:CVEnumISMSARAuthoritiesValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismsar:CVEnumISMSARAuthorities"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSARAuthorities.",
+      "rdfs:seeAlso": {
+        "@id": "ismsar:CVEnumISMSARAuthorities"
+      },
       "owl:equivalentClass": {
-        "@id": "_:2"
+        "@id": "_:7"
       }
     },
     {

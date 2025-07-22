@@ -1135,6 +1135,14 @@
     },
     {
       "@id": "usagencyro:CVEnumAuditRoutingOrgValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "usagencyro:CVEnumAuditRoutingOrg"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:usagency:auditRoutingOrganization#CVEnumAuditRoutingOrg.",
+      "rdfs:seeAlso": {
+        "@id": "usagencyro:CVEnumAuditRoutingOrg"
+      },
       "owl:equivalentClass": {
         "@id": "_:0"
       }

@@ -36,7 +36,8 @@ ismhighwaternato:NATO-TS a skos:Concept ;
   skos:notation "NATO-TS" ;
   skos:prefLabel "NATO TOP SECRET" .
 
-ismhighwaternato:CVEnumISMHighWaterNATOValues owl:equivalentClass [
+ismhighwaternato:CVEnumISMHighWaterNATOValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"NATO-U"
@@ -45,4 +46,7 @@ ismhighwaternato:CVEnumISMHighWaterNATOValues owl:equivalentClass [
 			"NATO-S"
 			"NATO-TS"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismhighwaternato:CVEnumISMHighWaterNATO ;
+  dc:source ismhighwaternato:CVEnumISMHighWaterNATO ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO." .

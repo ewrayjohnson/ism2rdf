@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:6",
+      "@id": "_:4",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -592,8 +592,16 @@
     },
     {
       "@id": "ismcuibasic:CVEnumISMCUIBasicValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismcuibasic:CVEnumISMCUIBasic"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic.",
+      "rdfs:seeAlso": {
+        "@id": "ismcuibasic:CVEnumISMCUIBasic"
+      },
       "owl:equivalentClass": {
-        "@id": "_:6"
+        "@id": "_:4"
       }
     },
     {

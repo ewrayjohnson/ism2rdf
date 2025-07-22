@@ -1720,7 +1720,8 @@ ismcatfgip:UNCK a skos:Concept ;
   skos:prefLabel "United Nations Command, Korea" ;
   skos:notation "UNCK" .
 
-ismcatfgip:CVEnumISMCATFGIProtectedValues owl:equivalentClass [
+ismcatfgip:CVEnumISMCATFGIProtectedValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"FGI"
@@ -2064,4 +2065,7 @@ ismcatfgip:CVEnumISMCATFGIProtectedValues owl:equivalentClass [
 			"TFTC"
 			"UNCK"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcatfgip:CVEnumISMCATFGIProtected ;
+  dc:source ismcatfgip:CVEnumISMCATFGIProtected ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:fgiprotected#CVEnumISMCATFGIProtected." .

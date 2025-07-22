@@ -881,7 +881,8 @@ usgaa:USA.WHMO a skos:Concept ;
   skos:notation "USA.WHMO" ;
   skos:prefLabel "White House Military Office" .
 
-usgaa:CVEnumUSGOVAgencyAcronymValues owl:equivalentClass [
+usgaa:CVEnumUSGOVAgencyAcronymValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"USA.ABMC"
@@ -1059,4 +1060,7 @@ usgaa:CVEnumUSGOVAgencyAcronymValues owl:equivalentClass [
 			"USA.WHCPS"
 			"USA.WHMO"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso usgaa:CVEnumUSGOVAgencyAcronym ;
+  dc:source usgaa:CVEnumUSGOVAgencyAcronym ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym." .

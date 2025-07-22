@@ -30,7 +30,8 @@
   skos:notation "urn:us:gov:ic:ntk:profile:role" ;
   skos:prefLabel "ROLE" .
 
-<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues> owl:equivalentClass [
+<urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues> a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"urn:us:gov:ic:ntk:profile:agencydissem"
@@ -38,4 +39,7 @@
 			"urn:us:gov:ic:ntk:profile:grp-ind"
 			"urn:us:gov:ic:ntk:profile:role"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> ;
+  dc:source <urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes> ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes." .

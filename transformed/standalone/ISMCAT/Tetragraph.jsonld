@@ -16,7 +16,7 @@
   },
   "@graph": [
     {
-      "@id": "_:0",
+      "@id": "_:5",
       "@type": "rdfs:Datatype"
     },
     {
@@ -47,8 +47,16 @@
     },
     {
       "@id": "tetra:DecomposableTypeValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "tetra:DecomposableType"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:taxonomy:catt:tetragraph#DecomposableType.",
+      "rdfs:seeAlso": {
+        "@id": "tetra:DecomposableType"
+      },
       "http://www.w3.org/2002/07/owl#equivalentClass": {
-        "@id": "_:0"
+        "@id": "_:5"
       }
     }
   ]

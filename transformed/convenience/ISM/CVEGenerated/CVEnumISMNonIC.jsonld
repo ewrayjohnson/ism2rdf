@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:1",
+      "@id": "_:0",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -67,8 +67,16 @@
     },
     {
       "@id": "ismnonic:CVEnumISMNonICValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC.",
+      "rdfs:seeAlso": {
+        "@id": "ismnonic:CVEnumISMNonIC"
+      },
       "owl:equivalentClass": {
-        "@id": "_:1"
+        "@id": "_:0"
       }
     },
     {

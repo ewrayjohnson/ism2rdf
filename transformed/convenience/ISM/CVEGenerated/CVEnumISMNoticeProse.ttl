@@ -116,7 +116,8 @@ ismnoticeprose:DISPLAYONLY_00001 a skos:Concept ;
   skos:notation "DISPLAYONLY_00001" ;
   skos:prefLabel "Derivative use of this DISPLAY ONLY or REL TO in conjunction with DISPLAY ONLY marked information into other products is prohibited without prior authorization from the originating agency. Disclosure of DISPLAY ONLY or REL TO in conjunction with DISPLAY ONLY information is not authorized for other purposes or for disclosure or release and disclosure to other countries, international organizations, or coalitions not specified in the banner line or portion marking. Removal of this caveat is required once authorization is received by the originating agency." .
 
-ismnoticeprose:CVEnumISMNoticeProseValues owl:equivalentClass [
+ismnoticeprose:CVEnumISMNoticeProseValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"FISA_00001"
@@ -141,4 +142,7 @@ ismnoticeprose:CVEnumISMNoticeProseValues owl:equivalentClass [
 			"ITAR-EAR_00001"
 			"DISPLAYONLY_00001"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismnoticeprose:CVEnumISMNoticeProse ;
+  dc:source ismnoticeprose:CVEnumISMNoticeProse ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:noticeprose#CVEnumISMNoticeProse." .

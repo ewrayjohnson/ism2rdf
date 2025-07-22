@@ -18,6 +18,7 @@ const XML_SCHEMA_URI = 'http://www.w3.org/2001/XMLSchema';
 const RDF_URI = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
 const OWL_URI = 'http://www.w3.org/2002/07/owl#';
 const RDFS_URI = 'http://www.w3.org/2000/01/rdf-schema#';
+const DC_URI = 'http://purl.org/dc/elements/1.1/';
 const SHACL_URI = 'http://www.w3.org/ns/shacl#';
 const XSD_EXTENSION = '.xsd';
 const INPUT_DIR = '.ciartifacts';
@@ -134,6 +135,7 @@ let blankIndex = 0;
                         standalone.namespaces[OWL_URI] = 'owl';
                         standalone.namespaces[RDFS_URI] = 'rdfs';
                         standalone.namespaces[RDF_URI] = 'rdf';
+                        standalone.namespaces[DC_URI] = 'dc';
                         standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
                         if (attributeType.startsWith(`${xsdPrefix}:`)) {
                           namespaces.add(xsdPrefix, `${XML_SCHEMA_URI}#`);
@@ -250,8 +252,12 @@ let blankIndex = 0;
 
               const allowedNotationsId = `${schemeId}Values`;
               standalone.namespaces[RDFS_URI] = 'rdfs';
+              standalone.g.add(allowedNotationsId, RDF_TYPE, 'rdfs:Datatype');  // optional
               const equivalentClass = standalone.g.add(null, 'rdf:type', 'rdfs:Datatype');
               standalone.g.add(allowedNotationsId, 'owl:equivalentClass', { type: 'bnode', value: equivalentClass._s });
+              standalone.g.add(allowedNotationsId, 'rdfs:seeAlso', schemeId);
+              standalone.g.add(allowedNotationsId, 'dc:source', schemeId);
+              standalone.g.addL(allowedNotationsId, 'rdfs:comment', `Permissible literals aligned to skos:notation in ${schemeId}.`);
               let rest = null;
               for (const aConcept of concepts) {
                 standalone.g.add(schemeId, 'skos:hasTopConcept', aConcept.conceptId);

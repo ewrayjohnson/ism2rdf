@@ -56,7 +56,8 @@ ismnonic:NNPI a skos:Concept ;
   skos:notation "NNPI" ;
   skos:prefLabel "NAVAL NUCLEAR PROPULSION INFORMATION" .
 
-ismnonic:CVEnumISMNonICValues owl:equivalentClass [
+ismnonic:CVEnumISMNonICValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"DS"
@@ -69,4 +70,7 @@ ismnonic:CVEnumISMNonICValues owl:equivalentClass [
 			"SSI"
 			"NNPI"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismnonic:CVEnumISMNonIC ;
+  dc:source ismnonic:CVEnumISMNonIC ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC." .

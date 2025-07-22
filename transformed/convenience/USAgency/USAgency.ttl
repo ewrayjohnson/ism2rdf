@@ -1266,7 +1266,8 @@ usaa:USA.SLT a skos:Concept ;
   skos:notation "USA.SLT" ;
   skos:prefLabel "State, Local, Tribal Government" .
 
-usaa:CVEnumUSAgencyAcronymValues owl:equivalentClass [
+usaa:CVEnumUSAgencyAcronymValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"USA.ABMC"
@@ -1521,7 +1522,10 @@ usaa:CVEnumUSAgencyAcronymValues owl:equivalentClass [
 			"USA.OtherUSG"
 			"USA.SLT"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso usaa:CVEnumUSAgencyAcronym ;
+  dc:source usaa:CVEnumUSAgencyAcronym ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:usagency:agencyacronym#CVEnumUSAgencyAcronym." .
 
 usgaa:CVEnumUSGOVAgencyAcronym a skos:ConceptScheme ;
   dc:title "(U) All valid acronyms for use with US Government Offices. This list is only the agencies within the Executive Branches of the US Government. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumUSGOVAgencyAcronym.xml" ;
@@ -2397,7 +2401,8 @@ usgaa:USA.WHMO a skos:Concept ;
   skos:notation "USA.WHMO" ;
   skos:prefLabel "White House Military Office" .
 
-usgaa:CVEnumUSGOVAgencyAcronymValues owl:equivalentClass [
+usgaa:CVEnumUSGOVAgencyAcronymValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"USA.ABMC"
@@ -2575,14 +2580,17 @@ usgaa:CVEnumUSGOVAgencyAcronymValues owl:equivalentClass [
 			"USA.WHCPS"
 			"USA.WHMO"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso usgaa:CVEnumUSGOVAgencyAcronym ;
+  dc:source usgaa:CVEnumUSGOVAgencyAcronym ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym." .
 
 <urn:us:gov:ic:USAgency:USAgency> a owl:Ontology .
 
 usagency:usagency a owl:DatatypeProperty ;
-  rdfs:range usaa:CVEnumUSAgencyAcronymValues ;
-  rdfs:comment "An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies." .
+  rdfs:comment "An attribute limited to allowable agency acronyms for USA. Contains the Executive and Legistlative branch agencies." ;
+  rdfs:range usaa:CVEnumUSAgencyAcronymValues .
 
 usagency:usgovagency a owl:DatatypeProperty ;
-  rdfs:range usgaa:CVEnumUSGOVAgencyAcronymValues ;
-  rdfs:comment "An attribute limited to allowable agency acronyms for USA. Contains the Executive branch agencies." .
+  rdfs:comment "An attribute limited to allowable agency acronyms for USA. Contains the Executive branch agencies." ;
+  rdfs:range usgaa:CVEnumUSGOVAgencyAcronymValues .

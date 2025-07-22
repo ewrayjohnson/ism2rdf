@@ -157,7 +157,8 @@ ism25x:75X a skos:Concept ;
   skos:notation "75X" ;
   skos:prefLabel "Specific information that has been formally approved by the ISCAP as information that does not permit the automatic or unilateral declassification of information at 75 years." .
 
-ism25x:CVEnumISM25XValues owl:equivalentClass [
+ism25x:CVEnumISM25XValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"AEA"
@@ -186,7 +187,10 @@ ism25x:CVEnumISM25XValues owl:equivalentClass [
 			"50X9"
 			"75X"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ism25x:CVEnumISM25X ;
+  dc:source ism25x:CVEnumISM25X ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:25x#CVEnumISM25X." .
 
 ismatomic:CVEnumISMatomicEnergyMarkings a skos:ConceptScheme ;
   dc:title "(U) ismatomic:CVEnumISMatomicEnergyMarkings definition" ;
@@ -262,7 +266,8 @@ ismatomic:TFNI a skos:Concept ;
   skos:notation "TFNI" ;
   skos:prefLabel "TRANSCLASSIFIED FOREIGN NUCLEAR INFORMATION" .
 
-ismatomic:CVEnumISMatomicEnergyMarkingsValues owl:equivalentClass [
+ismatomic:CVEnumISMatomicEnergyMarkingsValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"RD"
@@ -280,7 +285,10 @@ ismatomic:CVEnumISMatomicEnergyMarkingsValues owl:equivalentClass [
 			"UCNI"
 			"TFNI"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismatomic:CVEnumISMatomicEnergyMarkings ;
+  dc:source ismatomic:CVEnumISMatomicEnergyMarkings ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:atomicEnergyMarkings#CVEnumISMatomicEnergyMarkings." .
 
 ismclassall:CVEnumISMClassificationAll a skos:ConceptScheme ;
   dc:title "(U) All currently valid classification marks. This CVE is used by @ism:classification. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMClassificationAll.xml" ;
@@ -311,7 +319,8 @@ ismclassall:U a skos:Concept ;
   skos:notation "U" ;
   skos:prefLabel "UNCLASSIFIED" .
 
-ismclassall:CVEnumISMClassificationAllValues owl:equivalentClass [
+ismclassall:CVEnumISMClassificationAllValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"R"
@@ -320,7 +329,10 @@ ismclassall:CVEnumISMClassificationAllValues owl:equivalentClass [
 			"TS"
 			"U"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismclassall:CVEnumISMClassificationAll ;
+  dc:source ismclassall:CVEnumISMClassificationAll ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:classification:all#CVEnumISMClassificationAll." .
 
 ismdissem:CVEnumISMDissem a skos:ConceptScheme ;
   dc:title "(U) ismdissem:CVEnumISMDissem definition" ;
@@ -436,7 +448,8 @@ ismdissem:NOCON a skos:Concept ;
   skos:notation "NOCON" ;
   skos:prefLabel "NOCON" .
 
-ismdissem:CVEnumISMDissemValues owl:equivalentClass [
+ismdissem:CVEnumISMDissemValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"RS"
@@ -462,7 +475,10 @@ ismdissem:CVEnumISMDissemValues owl:equivalentClass [
 			"FEDCON"
 			"NOCON"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismdissem:CVEnumISMDissem ;
+  dc:source ismdissem:CVEnumISMDissem ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:dissem#CVEnumISMDissem." .
 
 ismcatfgio:CVEnumISMCATFGIOpen a skos:ConceptScheme ;
   dc:title "(U) ismcatfgio:CVEnumISMCATFGIOpen definition" ;
@@ -2176,7 +2192,8 @@ ismcatfgio:UNCK a skos:Concept ;
   skos:notation "UNCK" ;
   skos:prefLabel "United Nations Command, Korea" .
 
-ismcatfgio:CVEnumISMCATFGIOpenValues owl:equivalentClass [
+ismcatfgio:CVEnumISMCATFGIOpenValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"ABW"
@@ -2520,7 +2537,10 @@ ismcatfgio:CVEnumISMCATFGIOpenValues owl:equivalentClass [
 			"TFTC"
 			"UNCK"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcatfgio:CVEnumISMCATFGIOpen ;
+  dc:source ismcatfgio:CVEnumISMCATFGIOpen ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:fgiopen#CVEnumISMCATFGIOpen." .
 
 ismcatfgip:CVEnumISMCATFGIProtected a skos:ConceptScheme ;
   dc:title "(U) ismcatfgip:CVEnumISMCATFGIProtected definition" ;
@@ -4234,7 +4254,8 @@ ismcatfgip:UNCK a skos:Concept ;
   skos:notation "UNCK" ;
   skos:prefLabel "United Nations Command, Korea" .
 
-ismcatfgip:CVEnumISMCATFGIProtectedValues owl:equivalentClass [
+ismcatfgip:CVEnumISMCATFGIProtectedValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"FGI"
@@ -4578,7 +4599,10 @@ ismcatfgip:CVEnumISMCATFGIProtectedValues owl:equivalentClass [
 			"TFTC"
 			"UNCK"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcatfgip:CVEnumISMCATFGIProtected ;
+  dc:source ismcatfgip:CVEnumISMCATFGIProtected ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:fgiprotected#CVEnumISMCATFGIProtected." .
 
 ismhighwaternato:CVEnumISMHighWaterNATO a skos:ConceptScheme ;
   dc:title "(U) The highest classification of any portion that has either @ism:ownerProducer contains NATO or @FGIsourceOpen contains NATO. The @ism:highWaterNATO attribute will be compared against an entity's fineAccessControls NATO value. PERMISSIBLE VALUES The permissible values for this simple type are defined in the Controlled Value Enumeration: CVEnumISMHighWaterNATO.xml" ;
@@ -4609,7 +4633,8 @@ ismhighwaternato:NATO-TS a skos:Concept ;
   skos:notation "NATO-TS" ;
   skos:prefLabel "NATO TOP SECRET" .
 
-ismhighwaternato:CVEnumISMHighWaterNATOValues owl:equivalentClass [
+ismhighwaternato:CVEnumISMHighWaterNATOValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"NATO-U"
@@ -4618,7 +4643,10 @@ ismhighwaternato:CVEnumISMHighWaterNATOValues owl:equivalentClass [
 			"NATO-S"
 			"NATO-TS"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismhighwaternato:CVEnumISMHighWaterNATO ;
+  dc:source ismhighwaternato:CVEnumISMHighWaterNATO ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO." .
 
 ismnonic:CVEnumISMNonIC a skos:ConceptScheme ;
   dc:title "(U) ismnonic:CVEnumISMNonIC definition" ;
@@ -4669,7 +4697,8 @@ ismnonic:NNPI a skos:Concept ;
   skos:notation "NNPI" ;
   skos:prefLabel "NAVAL NUCLEAR PROPULSION INFORMATION" .
 
-ismnonic:CVEnumISMNonICValues owl:equivalentClass [
+ismnonic:CVEnumISMNonICValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"DS"
@@ -4682,7 +4711,10 @@ ismnonic:CVEnumISMNonICValues owl:equivalentClass [
 			"SSI"
 			"NNPI"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismnonic:CVEnumISMNonIC ;
+  dc:source ismnonic:CVEnumISMNonIC ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:nonic#CVEnumISMNonIC." .
 
 ismnonus:CVEnumISMNonUSControls a skos:ConceptScheme ;
   dc:title "(U) ismnonus:CVEnumISMNonUSControls definition" ;
@@ -4703,14 +4735,18 @@ ismnonus:NATO-BALK a skos:Concept ;
   skos:notation "NATO-BALK" ;
   skos:prefLabel "NATO Balk mark" .
 
-ismnonus:CVEnumISMNonUSControlsValues owl:equivalentClass [
+ismnonus:CVEnumISMNonUSControlsValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"NATO-ATOMAL"
 			"NATO-BOHEMIA"
 			"NATO-BALK"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismnonus:CVEnumISMNonUSControls ;
+  dc:source ismnonus:CVEnumISMNonUSControls ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls." .
 
 ismnotice:CVEnumISMNotice a skos:ConceptScheme ;
   dc:title "(U) ismnotice:CVEnumISMNotice definition" ;
@@ -4851,7 +4887,8 @@ ismnotice:ITAR-EAR a skos:Concept ;
   skos:notation "ITAR-EAR" ;
   skos:prefLabel "Warning statement for International Traffic in Arms Regulations (ITAR) and Export Administration Regulations (EAR) in accordance with DoD 5230.24, Distribution Statements on Technical Documents." .
 
-ismnotice:CVEnumISMNoticeValues owl:equivalentClass [
+ismnotice:CVEnumISMNoticeValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"FISA"
@@ -4882,7 +4919,10 @@ ismnotice:CVEnumISMNoticeValues owl:equivalentClass [
 			"RC_Dissemination_Control_Required"
 			"ITAR-EAR"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismnotice:CVEnumISMNotice ;
+  dc:source ismnotice:CVEnumISMNotice ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice." .
 
 ismnoticeprose:CVEnumISMNoticeProse a skos:ConceptScheme ;
   dc:title "(U) ismnoticeprose:CVEnumISMNoticeProse definition" ;
@@ -4993,7 +5033,8 @@ ismnoticeprose:DISPLAYONLY_00001 a skos:Concept ;
   skos:notation "DISPLAYONLY_00001" ;
   skos:prefLabel "Derivative use of this DISPLAY ONLY or REL TO in conjunction with DISPLAY ONLY marked information into other products is prohibited without prior authorization from the originating agency. Disclosure of DISPLAY ONLY or REL TO in conjunction with DISPLAY ONLY information is not authorized for other purposes or for disclosure or release and disclosure to other countries, international organizations, or coalitions not specified in the banner line or portion marking. Removal of this caveat is required once authorization is received by the originating agency." .
 
-ismnoticeprose:CVEnumISMNoticeProseValues owl:equivalentClass [
+ismnoticeprose:CVEnumISMNoticeProseValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"FISA_00001"
@@ -5018,7 +5059,10 @@ ismnoticeprose:CVEnumISMNoticeProseValues owl:equivalentClass [
 			"ITAR-EAR_00001"
 			"DISPLAYONLY_00001"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismnoticeprose:CVEnumISMNoticeProse ;
+  dc:source ismnoticeprose:CVEnumISMNoticeProse ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:noticeprose#CVEnumISMNoticeProse." .
 
 ismcatownpro:CVEnumISMCATOwnerProducer a skos:ConceptScheme ;
   dc:title "(U) ismcatownpro:CVEnumISMCATOwnerProducer definition" ;
@@ -6737,7 +6781,8 @@ ismcatownpro:UNCK a skos:Concept ;
   skos:notation "UNCK" ;
   skos:prefLabel "United Nations Command, Korea" .
 
-ismcatownpro:CVEnumISMCATOwnerProducerValues owl:equivalentClass [
+ismcatownpro:CVEnumISMCATOwnerProducerValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"FGI"
@@ -7082,7 +7127,10 @@ ismcatownpro:CVEnumISMCATOwnerProducerValues owl:equivalentClass [
 			"TFTC"
 			"UNCK"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcatownpro:CVEnumISMCATOwnerProducer ;
+  dc:source ismcatownpro:CVEnumISMCATOwnerProducer ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:ownerproducer#CVEnumISMCATOwnerProducer." .
 
 ismpoctyp:CVEnumISMPocType a skos:ConceptScheme ;
   dc:title "(U) ismpoctype:CVEnumISMPocType definition" ;
@@ -7118,7 +7166,8 @@ ismpoctyp:DoD-Dist-F a skos:Concept ;
   skos:notation "DoD-Dist-F" ;
   skos:prefLabel "DoD Distribution statement F from DoD Directive 5230.24" .
 
-ismpoctyp:CVEnumISMPocTypeValues owl:equivalentClass [
+ismpoctyp:CVEnumISMPocTypeValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"ICD-710"
@@ -7128,7 +7177,10 @@ ismpoctyp:CVEnumISMPocTypeValues owl:equivalentClass [
 			"DoD-Dist-E"
 			"DoD-Dist-F"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismpoctyp:CVEnumISMPocType ;
+  dc:source ismpoctyp:CVEnumISMPocType ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:pocType#CVEnumISMPocType." .
 
 ismcatrelto:CVEnumISMCATRelTo a skos:ConceptScheme ;
   dc:title "(U) ismcatrelto:CVEnumISMCATRelTo definition" ;
@@ -8842,7 +8894,8 @@ ismcatrelto:UNCK a skos:Concept ;
   skos:notation "UNCK" ;
   skos:prefLabel "United Nations Command, Korea" .
 
-ismcatrelto:CVEnumISMCATRelToValues owl:equivalentClass [
+ismcatrelto:CVEnumISMCATRelToValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"USA"
@@ -9186,7 +9239,10 @@ ismcatrelto:CVEnumISMCATRelToValues owl:equivalentClass [
 			"TFTC"
 			"UNCK"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcatrelto:CVEnumISMCATRelTo ;
+  dc:source ismcatrelto:CVEnumISMCATRelTo ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:relto#CVEnumISMCATRelTo." .
 
 ismsar:CVEnumISMSAR a skos:ConceptScheme ;
   dc:title "(U) ismsar:CVEnumISMSAR definition" ;
@@ -9202,13 +9258,17 @@ ismsar:MB a skos:Concept ;
   skos:notation "MB" ;
   skos:prefLabel "MEDIAN BELL" .
 
-ismsar:CVEnumISMSARValues owl:equivalentClass [
+ismsar:CVEnumISMSARValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"BP"
 			"MB"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismsar:CVEnumISMSAR ;
+  dc:source ismsar:CVEnumISMSAR ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR." .
 
 ismscicon:CVEnumISMSCIControls a skos:ConceptScheme ;
   dc:title "(U) ismscicon:CVEnumISMSCIControls definition" ;
@@ -9314,7 +9374,8 @@ ismscicon:TK-KAND a skos:Concept ;
   skos:notation "TK-KAND" ;
   skos:prefLabel "KANDIK" .
 
-ismscicon:CVEnumISMSCIControlsValues owl:equivalentClass [
+ismscicon:CVEnumISMSCIControlsValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"BUR"
@@ -9338,7 +9399,10 @@ ismscicon:CVEnumISMSCIControlsValues owl:equivalentClass [
 			"TK-IDIT"
 			"TK-KAND"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismscicon:CVEnumISMSCIControls ;
+  dc:source ismscicon:CVEnumISMSCIControls ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:scicontrols#CVEnumISMSCIControls." .
 
 ismexempt:CVEnumISMExemptFrom a skos:ConceptScheme ;
   dc:title "(U) ismexempt:CVEnumISMExemptFrom definition" ;
@@ -9354,13 +9418,17 @@ ismexempt:DOD_DISTRO_STATEMENT a skos:Concept ;
   skos:notation "DOD_DISTRO_STATEMENT" ;
   skos:prefLabel "Document claims exemption from the rules in DoD5230.24 requiring DoD Distribution Statements that have been encoded into ISM." .
 
-ismexempt:CVEnumISMExemptFromValues owl:equivalentClass [
+ismexempt:CVEnumISMExemptFromValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"IC_710_MANDATORY_FDR"
 			"DOD_DISTRO_STATEMENT"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismexempt:CVEnumISMExemptFrom ;
+  dc:source ismexempt:CVEnumISMExemptFrom ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom." .
 
 ismcomplies:CVEnumISMCompliesWith a skos:ConceptScheme ;
   dc:title "(U) ismcomplies:CVEnumISMCompliesWith definition" ;
@@ -9396,7 +9464,8 @@ ismcomplies:USA-CUI a skos:Concept ;
   skos:notation "USA-CUI" ;
   skos:prefLabel "Document contains both NSI (National Security Information) and CUI according to DoD rules for CUI. Document claims compliance with 1. CUI rules according to DoD, and 2. USGOV and/or USDOD rules for classified environments." .
 
-ismcomplies:CVEnumISMCompliesWithValues owl:equivalentClass [
+ismcomplies:CVEnumISMCompliesWithValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"USGov"
@@ -9406,7 +9475,10 @@ ismcomplies:CVEnumISMCompliesWithValues owl:equivalentClass [
 			"USA-CUI-ONLY"
 			"USA-CUI"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcomplies:CVEnumISMCompliesWith ;
+  dc:source ismcomplies:CVEnumISMCompliesWith ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:complieswith#CVEnumISMCompliesWith." .
 
 ismcuibasic:CVEnumISMCUIBasic a skos:ConceptScheme ;
   dc:title "(U) ismcuibasic:CVEnumISMCUIBasic definition" ;
@@ -9877,7 +9949,8 @@ ismcuibasic:WIT a skos:Concept ;
   skos:notation "WIT" ;
   skos:prefLabel "Witness Protection. Information related to the secretive details associated with one who has testified or may testify under circumstances that require secrecy of that individual and details pertaining to that person." .
 
-ismcuibasic:CVEnumISMCUIBasicValues owl:equivalentClass [
+ismcuibasic:CVEnumISMCUIBasicValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"ADPO"
@@ -9974,7 +10047,10 @@ ismcuibasic:CVEnumISMCUIBasicValues owl:equivalentClass [
 			"WHSTL"
 			"WIT"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcuibasic:CVEnumISMCUIBasic ;
+  dc:source ismcuibasic:CVEnumISMCUIBasic ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic." .
 
 ismcuispecified:CVEnumISMCUISpecified a skos:ConceptScheme ;
   dc:title "(U) ismcuispecified:CVEnumISMCUISpecified definition" ;
@@ -10265,7 +10341,8 @@ ismcuispecified:WDT a skos:Concept ;
   skos:notation "WDT" ;
   skos:prefLabel "Written Determinations. Rulings, determination letters, technical advice memoranda or Chief Counsel Advice, as those terms are defined in Treasury Regulation 301.6110-2, which are made available for public inspection subject to the withholding of certain types of data as enumerated in Treasury Regulation 301-6110." .
 
-ismcuispecified:CVEnumISMCUISpecifiedValues owl:equivalentClass [
+ismcuispecified:CVEnumISMCUISpecifiedValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"AIV"
@@ -10326,7 +10403,10 @@ ismcuispecified:CVEnumISMCUISpecifiedValues owl:equivalentClass [
 			"WIT"
 			"WDT"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcuispecified:CVEnumISMCUISpecified ;
+  dc:source ismcuispecified:CVEnumISMCUISpecified ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:cuispecified#CVEnumISMCUISpecified." .
 
 ismsecondbannerline:CVEnumISMSecondBannerLine a skos:ConceptScheme ;
   dc:title "(U) ismsecondbannerline:CVEnumISMSecondBannerLine definition" ;
@@ -10362,7 +10442,8 @@ ismsecondbannerline:SSS a skos:Concept ;
   skos:notation "SSS" ;
   skos:prefLabel "SOURCE SELECTION SENSITIVE" .
 
-ismsecondbannerline:CVEnumISMSecondBannerLineValues owl:equivalentClass [
+ismsecondbannerline:CVEnumISMSecondBannerLineValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"ACPI"
@@ -10372,110 +10453,113 @@ ismsecondbannerline:CVEnumISMSecondBannerLineValues owl:equivalentClass [
 			"HVCO"
 			"SSS"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismsecondbannerline:CVEnumISMSecondBannerLine ;
+  dc:source ismsecondbannerline:CVEnumISMSecondBannerLine ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine." .
 
 ism:atomicEnergyMarkings a owl:DatatypeProperty ;
-  rdfs:range ismatomic:CVEnumISMatomicEnergyMarkingsValues ;
-  rdfs:comment "Applicable atomic energy information markings for a document or portion" .
+  rdfs:comment "Applicable atomic energy information markings for a document or portion" ;
+  rdfs:range ismatomic:CVEnumISMatomicEnergyMarkingsValues .
 
 ism:classification a owl:DatatypeProperty ;
-  rdfs:range ismclassall:CVEnumISMClassificationAllValues ;
-  rdfs:comment "The highest level of classification applicable to the containing document or portion" .
+  rdfs:comment "The highest level of classification applicable to the containing document or portion" ;
+  rdfs:range ismclassall:CVEnumISMClassificationAllValues .
 
 ism:compliesWith a owl:DatatypeProperty ;
-  rdfs:range ismcomplies:CVEnumISMCompliesWithValues ;
-  rdfs:comment "The ISM rule sets a document complies with" .
+  rdfs:comment "The ISM rule sets a document complies with" ;
+  rdfs:range ismcomplies:CVEnumISMCompliesWithValues .
 
 ism:cuiBasic a owl:DatatypeProperty ;
-  rdfs:range ismcuibasic:CVEnumISMCUIBasicValues ;
-  rdfs:comment "Applicable CUI Basic markings for a document or portion" .
+  rdfs:comment "Applicable CUI Basic markings for a document or portion" ;
+  rdfs:range ismcuibasic:CVEnumISMCUIBasicValues .
 
 ism:cuiSpecified a owl:DatatypeProperty ;
-  rdfs:range ismcuispecified:CVEnumISMCUISpecifiedValues ;
-  rdfs:comment "Applicable CUI Specified markings for a document or portion" .
+  rdfs:comment "Applicable CUI Specified markings for a document or portion" ;
+  rdfs:range ismcuispecified:CVEnumISMCUISpecifiedValues .
 
 ism:declassException a owl:DatatypeProperty ;
-  rdfs:range ism25x:CVEnumISM25XValues ;
-  rdfs:comment "The exemption from automatic declassification that is claimed for a document" .
+  rdfs:comment "The exemption from automatic declassification that is claimed for a document" ;
+  rdfs:range ism25x:CVEnumISM25XValues .
 
 ism:displayOnlyTo a owl:DatatypeProperty ;
-  rdfs:range ismcatrelto:CVEnumISMCATRelToValues ;
-  rdfs:comment "The set of countries and/or international organizations associated with a \"Display Only To\" marking" .
+  rdfs:comment "The set of countries and/or international organizations associated with a \"Display Only To\" marking" ;
+  rdfs:range ismcatrelto:CVEnumISMCATRelToValues .
 
 ism:disseminationControls a owl:DatatypeProperty ;
-  rdfs:range ismdissem:CVEnumISMDissemValues ;
-  rdfs:comment "Applicable dissemination control markings for a document or portion" .
+  rdfs:comment "Applicable dissemination control markings for a document or portion" ;
+  rdfs:range ismdissem:CVEnumISMDissemValues .
 
 ism:exemptFrom a owl:DatatypeProperty ;
-  rdfs:range ismexempt:CVEnumISMExemptFromValues ;
-  rdfs:comment "Specific exemptions within an ISM rule set that are claimed for a document" .
+  rdfs:comment "Specific exemptions within an ISM rule set that are claimed for a document" ;
+  rdfs:range ismexempt:CVEnumISMExemptFromValues .
 
 ism:FGIsourceOpen a owl:DatatypeProperty ;
-  rdfs:range ismcatfgio:CVEnumISMCATFGIOpenValues ;
-  rdfs:comment "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information is not concealed (also used for cases when the source is unknown)" .
+  rdfs:comment "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information is not concealed (also used for cases when the source is unknown)" ;
+  rdfs:range ismcatfgio:CVEnumISMCATFGIOpenValues .
 
 ism:FGIsourceProtected a owl:DatatypeProperty ;
-  rdfs:range ismcatfgip:CVEnumISMCATFGIProtectedValues ;
-  rdfs:comment "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information must be concealed" .
+  rdfs:comment "The set of countries and/or international organizations whose information is derivatively sourced in a document when the source of the information must be concealed" ;
+  rdfs:range ismcatfgip:CVEnumISMCATFGIProtectedValues .
 
 ism:handleViaChannels a owl:DatatypeProperty ;
-  rdfs:range xs:string ;
-  rdfs:comment "Handle VIA Channels that may appear in the second banner line." .
+  rdfs:comment "Handle VIA Channels that may appear in the second banner line." ;
+  rdfs:range xs:string .
 
 ism:hasApproximateMarkings a owl:DatatypeProperty ;
-  rdfs:range xs:boolean ;
-  rdfs:comment "When true, indicates the ISM markings specified are estimated (e.g. system high)." .
+  rdfs:comment "When true, indicates the ISM markings specified are estimated (e.g. system high)." ;
+  rdfs:range xs:boolean .
 
 ism:highWaterNATO a owl:DatatypeProperty ;
-  rdfs:range ismhighwaternato:CVEnumISMHighWaterNATOValues ;
-  rdfs:comment "Applicable NATO highwater markings for a document or portion" .
+  rdfs:comment "Applicable NATO highwater markings for a document or portion" ;
+  rdfs:range ismhighwaternato:CVEnumISMHighWaterNATOValues .
 
 ism:noAggregation a owl:DatatypeProperty ;
-  rdfs:range xs:boolean ;
-  rdfs:comment "When true, an indicator that there is no classification by compilation across any combination of portions extracted from the document." .
+  rdfs:comment "When true, an indicator that there is no classification by compilation across any combination of portions extracted from the document." ;
+  rdfs:range xs:boolean .
 
 ism:nonICmarkings a owl:DatatypeProperty ;
-  rdfs:range ismnonic:CVEnumISMNonICValues ;
-  rdfs:comment "One or more indicators of an expansion or limitation on the distribution of a document or portion originating from non-intelligence components" .
+  rdfs:comment "One or more indicators of an expansion or limitation on the distribution of a document or portion originating from non-intelligence components" ;
+  rdfs:range ismnonic:CVEnumISMNonICValues .
 
 ism:nonUSControls a owl:DatatypeProperty ;
-  rdfs:range ismnonus:CVEnumISMNonUSControlsValues ;
-  rdfs:comment "One or more indicators of an expansion or limitation on the distribution of a document or portion originating from non-US components (foreign government or international organization)." .
+  rdfs:comment "One or more indicators of an expansion or limitation on the distribution of a document or portion originating from non-US components (foreign government or international organization)." ;
+  rdfs:range ismnonus:CVEnumISMNonUSControlsValues .
 
 ism:noticeType a owl:DatatypeProperty ;
-  rdfs:range ismnotice:CVEnumISMNoticeValues ;
-  rdfs:comment "An indicator that the containing element contains a security-related notice. This attribute is used to categorize which of the required notices is specified in the element. These categories include those described in the Intelligence Community Markings System Register and Manual, as well as additional well-defined and formally recognized security notice types described in other directives, such as US-Person and DoD Distribution. The element could contain any structure that the implementing schema defines, and rendering details are relegated to the implementing schema. The permissible values for this attribute are defined in the ISM Notice CVE: CVEnumISMNotice.xml" .
+  rdfs:comment "An indicator that the containing element contains a security-related notice. This attribute is used to categorize which of the required notices is specified in the element. These categories include those described in the Intelligence Community Markings System Register and Manual, as well as additional well-defined and formally recognized security notice types described in other directives, such as US-Person and DoD Distribution. The element could contain any structure that the implementing schema defines, and rendering details are relegated to the implementing schema. The permissible values for this attribute are defined in the ISM Notice CVE: CVEnumISMNotice.xml" ;
+  rdfs:range ismnotice:CVEnumISMNoticeValues .
 
 ism:noticeProseID a owl:DatatypeProperty ;
-  rdfs:range ismnoticeprose:CVEnumISMNoticeProseValues ;
-  rdfs:comment "An indicator that can be used to identify a security-related notice in an out-of-band fashion without actually having the notice text in the record but rather a notice text prose identifier. This prose identifier maps to the notice text which is stored in a CVE. The permissible values for this attribute are defined in the ISM Notice Prose CVE: CVEnumISMNoticeProse.xml" .
+  rdfs:comment "An indicator that can be used to identify a security-related notice in an out-of-band fashion without actually having the notice text in the record but rather a notice text prose identifier. This prose identifier maps to the notice text which is stored in a CVE. The permissible values for this attribute are defined in the ISM Notice Prose CVE: CVEnumISMNoticeProse.xml" ;
+  rdfs:range ismnoticeprose:CVEnumISMNoticeProseValues .
 
 ism:ownerProducer a owl:DatatypeProperty ;
-  rdfs:range ismcatownpro:CVEnumISMCATOwnerProducerValues ;
-  rdfs:comment "The set of national governments and/or international organizations that have purview over the containing classification marking" .
+  rdfs:comment "The set of national governments and/or international organizations that have purview over the containing classification marking" ;
+  rdfs:range ismcatownpro:CVEnumISMCATOwnerProducerValues .
 
 ism:joint a owl:DatatypeProperty ;
-  rdfs:range xs:boolean ;
-  rdfs:comment "When true, an indicator that entities in the @ism:ownerProducer attribute are JOINT owners of the data" .
+  rdfs:comment "When true, an indicator that entities in the @ism:ownerProducer attribute are JOINT owners of the data" ;
+  rdfs:range xs:boolean .
 
 ism:pocType a owl:DatatypeProperty ;
-  rdfs:range ismpoctyp:CVEnumISMPocTypeValues ;
-  rdfs:comment "Indicates that the element specifies a point-of-contact (POC) and the methods with which to contact that individual. As certain POCs are required for different reasons (ICD-710 compliance, DoD Distribution statements, etc), the values for this attribute specify the reason(s) why the POC is provided." .
+  rdfs:comment "Indicates that the element specifies a point-of-contact (POC) and the methods with which to contact that individual. As certain POCs are required for different reasons (ICD-710 compliance, DoD Distribution statements, etc), the values for this attribute specify the reason(s) why the POC is provided." ;
+  rdfs:range ismpoctyp:CVEnumISMPocTypeValues .
 
 ism:releasableTo a owl:DatatypeProperty ;
-  rdfs:range ismcatrelto:CVEnumISMCATRelToValues ;
-  rdfs:comment "This attribute is used at both the resource and the portion levels. One or more indicators identifying the country or countries and/or international organization(s) to which classified information may be released based on the determination of an originator in accordance with established foreign disclosure procedures. This element is used in conjunction with the Dissemination Controls element. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMRelTo.xml" .
+  rdfs:comment "This attribute is used at both the resource and the portion levels. One or more indicators identifying the country or countries and/or international organization(s) to which classified information may be released based on the determination of an originator in accordance with established foreign disclosure procedures. This element is used in conjunction with the Dissemination Controls element. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMRelTo.xml" ;
+  rdfs:range ismcatrelto:CVEnumISMCATRelToValues .
 
 ism:SARIdentifier a owl:DatatypeProperty ;
-  rdfs:range ismsar:CVEnumISMSARValues ;
-  rdfs:comment "This attribute is used at both the resource and the portion levels. One or more indicators identifying the defense or intelligence programs for which special access is required. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSAR.xml" .
+  rdfs:comment "This attribute is used at both the resource and the portion levels. One or more indicators identifying the defense or intelligence programs for which special access is required. It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSAR.xml" ;
+  rdfs:range ismsar:CVEnumISMSARValues .
 
 ism:SCIcontrols a owl:DatatypeProperty ;
-  rdfs:range ismscicon:CVEnumISMSCIControlsValues ;
-  rdfs:comment "This attribute is used at both the resource and the portion levels. One or more indicators identifying sensitive compartmented information control system(s). It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSCIControls.xml" .
+  rdfs:comment "This attribute is used at both the resource and the portion levels. One or more indicators identifying sensitive compartmented information control system(s). It is manifested in portion marks and security banners. PERMISSIBLE VALUES The permissible values for this attribute are defined in the Controlled Value Enumeration: CVEnumISMSCIControls.xml" ;
+  rdfs:range ismscicon:CVEnumISMSCIControlsValues .
 
 ism:secondBannerLine a owl:DatatypeProperty ;
-  rdfs:range ismsecondbannerline:CVEnumISMSecondBannerLineValues ;
-  rdfs:comment "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner." .
+  rdfs:comment "Tokens that contain markings used to support administrative and legal processes for handling and protecting documents. When they appear in a document, these tokens form a second line that is placed below the banner." ;
+  rdfs:range ismsecondbannerline:CVEnumISMSecondBannerLineValues .
 
 <urn:us:gov:ic:Taxonomy:Taxonomy> a owl:Ontology .

@@ -4,27 +4,31 @@
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-ATOMAL> .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BOHEMIA> .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BALK> .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:1 <http://www.w3.org/2002/07/owl#oneOf> _:10 .
-<urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControlsValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:1 .
+<urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControlsValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControlsValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:10 .
+<urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControlsValues> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> .
+<urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControlsValues> <http://purl.org/dc/elements/1.1/source> <urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> .
+<urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControlsValues> <http://www.w3.org/2000/01/rdf-schema#comment> "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls." .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:10 <http://www.w3.org/2002/07/owl#oneOf> _:4 .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-ATOMAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-ATOMAL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-ATOMAL> <http://www.w3.org/2004/02/skos/core#notation> "NATO-ATOMAL" .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-ATOMAL> <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO Atomal mark" .
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-ATOMAL" .
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:3 .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-ATOMAL" .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:2 .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BOHEMIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BOHEMIA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BOHEMIA> <http://www.w3.org/2004/02/skos/core#notation> "NATO-BOHEMIA" .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BOHEMIA> <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO Bohemia mark" .
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-BOHEMIA" .
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:90 .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-BOHEMIA" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:5 .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BALK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BALK> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls> .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BALK> <http://www.w3.org/2004/02/skos/core#notation> "NATO-BALK" .
 <urn:us:gov:ic:cvenum:ism:nonuscontrols#NATO-BALK> <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO Balk mark" .
-_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-BALK" .
-_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-BALK" .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

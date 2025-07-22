@@ -1266,7 +1266,8 @@ usaa:USA.SLT a skos:Concept ;
   skos:notation "USA.SLT" ;
   skos:prefLabel "State, Local, Tribal Government" .
 
-usaa:CVEnumUSAgencyAcronymValues owl:equivalentClass [
+usaa:CVEnumUSAgencyAcronymValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"USA.ABMC"
@@ -1521,4 +1522,7 @@ usaa:CVEnumUSAgencyAcronymValues owl:equivalentClass [
 			"USA.OtherUSG"
 			"USA.SLT"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso usaa:CVEnumUSAgencyAcronym ;
+  dc:source usaa:CVEnumUSAgencyAcronym ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:usagency:agencyacronym#CVEnumUSAgencyAcronym." .

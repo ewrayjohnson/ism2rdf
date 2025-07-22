@@ -136,7 +136,8 @@ usaru:USA.TSA a skos:Concept ;
   skos:notation "USA.TSA" ;
   skos:prefLabel "United States Department of Homeland Security, Transportation Security Administration (Type: IC)" .
 
-usaru:CVEnumAuditRoutingUniqueValues owl:equivalentClass [
+usaru:CVEnumAuditRoutingUniqueValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"USA.USAFRICOM"
@@ -165,4 +166,7 @@ usaru:CVEnumAuditRoutingUniqueValues owl:equivalentClass [
 			"USA.INA"
 			"USA.TSA"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso usaru:CVEnumAuditRoutingUnique ;
+  dc:source usaru:CVEnumAuditRoutingUnique ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#CVEnumAuditRoutingUnique." .

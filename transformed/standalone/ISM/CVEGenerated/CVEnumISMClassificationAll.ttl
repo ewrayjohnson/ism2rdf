@@ -36,7 +36,8 @@ ismclassall:U a skos:Concept ;
   skos:notation "U" ;
   skos:prefLabel "UNCLASSIFIED" .
 
-ismclassall:CVEnumISMClassificationAllValues owl:equivalentClass [
+ismclassall:CVEnumISMClassificationAllValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"R"
@@ -45,4 +46,7 @@ ismclassall:CVEnumISMClassificationAllValues owl:equivalentClass [
 			"TS"
 			"U"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismclassall:CVEnumISMClassificationAll ;
+  dc:source ismclassall:CVEnumISMClassificationAll ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:classification:all#CVEnumISMClassificationAll." .

@@ -21,10 +21,14 @@ ismsar:MB a skos:Concept ;
   skos:notation "MB" ;
   skos:prefLabel "MEDIAN BELL" .
 
-ismsar:CVEnumISMSARValues owl:equivalentClass [
+ismsar:CVEnumISMSARValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"BP"
 			"MB"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismsar:CVEnumISMSAR ;
+  dc:source ismsar:CVEnumISMSAR ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR." .

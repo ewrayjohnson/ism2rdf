@@ -26,11 +26,15 @@ ismnonus:NATO-BALK a skos:Concept ;
   skos:notation "NATO-BALK" ;
   skos:prefLabel "NATO Balk mark" .
 
-ismnonus:CVEnumISMNonUSControlsValues owl:equivalentClass [
+ismnonus:CVEnumISMNonUSControlsValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"NATO-ATOMAL"
 			"NATO-BOHEMIA"
 			"NATO-BALK"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismnonus:CVEnumISMNonUSControls ;
+  dc:source ismnonus:CVEnumISMNonUSControls ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:nonuscontrols#CVEnumISMNonUSControls." .

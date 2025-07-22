@@ -41,7 +41,8 @@ ismpoctype:DoD-Dist-F a skos:Concept ;
   skos:notation "DoD-Dist-F" ;
   skos:prefLabel "DoD Distribution statement F from DoD Directive 5230.24" .
 
-ismpoctype:CVEnumISMPocTypeValues owl:equivalentClass [
+ismpoctype:CVEnumISMPocTypeValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"ICD-710"
@@ -51,4 +52,7 @@ ismpoctype:CVEnumISMPocTypeValues owl:equivalentClass [
 			"DoD-Dist-E"
 			"DoD-Dist-F"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismpoctype:CVEnumISMPocType ;
+  dc:source ismpoctype:CVEnumISMPocType ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:pocType#CVEnumISMPocType." .

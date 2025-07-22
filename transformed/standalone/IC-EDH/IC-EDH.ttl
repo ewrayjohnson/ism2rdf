@@ -10,6 +10,10 @@
 edh:ResponsibleEntityRoleType a skos:ConceptScheme ;
   dc:title "Role identifies the relationships of the ResponsibleEntity to the data item referenced by the EDH. The role of Originator represents that the ResponsibleEntity is the creator/originator/author of the data item referenced by the EDH. The role of Custodian represents that the ResponsibleEntity is responsible for the data item referenced by the EDH being on the network but is not necessarily the creator/originator/author of it. You must have one and only one Custodian, and you may have zero or one Originator." .
 
-edh:ResponsibleEntityRoleTypeValues owl:equivalentClass [
+edh:ResponsibleEntityRoleTypeValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype
-  ] .
+  ] ;
+  rdfs:seeAlso edh:ResponsibleEntityRoleType ;
+  dc:source edh:ResponsibleEntityRoleType ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:edh#ResponsibleEntityRoleType." .

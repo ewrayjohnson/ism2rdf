@@ -41,7 +41,8 @@ ismsecondbannerline:SSS a skos:Concept ;
   skos:notation "SSS" ;
   skos:prefLabel "SOURCE SELECTION SENSITIVE" .
 
-ismsecondbannerline:CVEnumISMSecondBannerLineValues owl:equivalentClass [
+ismsecondbannerline:CVEnumISMSecondBannerLineValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"ACPI"
@@ -51,4 +52,7 @@ ismsecondbannerline:CVEnumISMSecondBannerLineValues owl:equivalentClass [
 			"HVCO"
 			"SSS"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismsecondbannerline:CVEnumISMSecondBannerLine ;
+  dc:source ismsecondbannerline:CVEnumISMSecondBannerLine ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:secondbannerline#CVEnumISMSecondBannerLine." .

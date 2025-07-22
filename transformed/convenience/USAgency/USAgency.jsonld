@@ -274,7 +274,7 @@
       }
     },
     {
-      "@id": "_:348",
+      "@id": "_:341",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -1221,6 +1221,14 @@
     },
     {
       "@id": "usaa:CVEnumUSAgencyAcronymValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:usagency:agencyacronym#CVEnumUSAgencyAcronym.",
+      "rdfs:seeAlso": {
+        "@id": "usaa:CVEnumUSAgencyAcronym"
+      },
       "owl:equivalentClass": {
         "@id": "_:10"
       }
@@ -4015,8 +4023,16 @@
     },
     {
       "@id": "usgaa:CVEnumUSGOVAgencyAcronymValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "usgaa:CVEnumUSGOVAgencyAcronym"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:usagency:usgovagencyacronym#CVEnumUSGOVAgencyAcronym.",
+      "rdfs:seeAlso": {
+        "@id": "usgaa:CVEnumUSGOVAgencyAcronym"
+      },
       "owl:equivalentClass": {
-        "@id": "_:348"
+        "@id": "_:341"
       }
     },
     {

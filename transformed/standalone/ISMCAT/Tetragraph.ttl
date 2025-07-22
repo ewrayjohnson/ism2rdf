@@ -10,6 +10,10 @@
 tetra:DecomposableType a skos:ConceptScheme ;
   dc:title "Decomposition is the breaking down of a tetragraph into its component countries for the purposes of rollup. An example is decomposing FVEY into the five member countries. This decomposition allows a portion marked RELEASABLE TO USA, GBR and another portion marked RELEASEABLE TO USA, FVEY to rollup to RELEASABLE TO USA, GBR. If FVEY was not decomposable the rollup would have to have been NF. NA is \"Not Applicable\" and is applied to deprecated tetragraphs." .
 
-tetra:DecomposableTypeValues owl:equivalentClass [
+tetra:DecomposableTypeValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype
-  ] .
+  ] ;
+  rdfs:seeAlso tetra:DecomposableType ;
+  dc:source tetra:DecomposableType ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:taxonomy:catt:tetragraph#DecomposableType." .

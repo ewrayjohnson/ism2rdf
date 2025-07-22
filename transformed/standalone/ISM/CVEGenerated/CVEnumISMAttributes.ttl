@@ -246,7 +246,8 @@ ismattrib:handleViaChannels a skos:Concept ;
   skos:notation "handleViaChannels" ;
   skos:prefLabel "Handle VIA Channels that may appear in the second banner line." .
 
-ismattrib:CVEnumISMAttributesValues owl:equivalentClass [
+ismattrib:CVEnumISMAttributesValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"compliesWith"
@@ -297,4 +298,7 @@ ismattrib:CVEnumISMAttributesValues owl:equivalentClass [
 			"secondBannerLine"
 			"handleViaChannels"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismattrib:CVEnumISMAttributes ;
+  dc:source ismattrib:CVEnumISMAttributes ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:attributes#CVEnumISMAttributes." .

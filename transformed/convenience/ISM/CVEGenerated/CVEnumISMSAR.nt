@@ -3,20 +3,24 @@
 <urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR> <http://purl.org/dc/elements/1.1/title> "(U) ismsar:CVEnumISMSAR definition" .
 <urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:sar#BP> .
 <urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:sar#MB> .
-_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:0 <http://www.w3.org/2002/07/owl#oneOf> _:6 .
-<urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSARValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:0 .
+<urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSARValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSARValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:4 .
+<urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSARValues> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR> .
+<urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSARValues> <http://purl.org/dc/elements/1.1/source> <urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR> .
+<urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSARValues> <http://www.w3.org/2000/01/rdf-schema#comment> "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR." .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:4 <http://www.w3.org/2002/07/owl#oneOf> _:7 .
 <urn:us:gov:ic:cvenum:ism:sar#BP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:sar#BP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR> .
 <urn:us:gov:ic:cvenum:ism:sar#BP> <http://www.w3.org/2004/02/skos/core#notation> "BP" .
 <urn:us:gov:ic:cvenum:ism:sar#BP> <http://www.w3.org/2004/02/skos/core#prefLabel> "BUTTER POPCORN" .
-_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BP" .
-_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:9 .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BP" .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:1 .
 <urn:us:gov:ic:cvenum:ism:sar#MB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:sar#MB> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:sar#CVEnumISMSAR> .
 <urn:us:gov:ic:cvenum:ism:sar#MB> <http://www.w3.org/2004/02/skos/core#notation> "MB" .
 <urn:us:gov:ic:cvenum:ism:sar#MB> <http://www.w3.org/2004/02/skos/core#prefLabel> "MEDIAN BELL" .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "MB" .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "MB" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

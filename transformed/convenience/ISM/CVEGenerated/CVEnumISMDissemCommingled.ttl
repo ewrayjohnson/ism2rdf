@@ -116,7 +116,8 @@ ismdissemcommingled:NOCON a skos:Concept ;
   skos:notation "NOCON" ;
   skos:prefLabel "NOCON" .
 
-ismdissemcommingled:CVEnumISMDissemCommingledValues owl:equivalentClass [
+ismdissemcommingled:CVEnumISMDissemCommingledValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"RS"
@@ -141,4 +142,7 @@ ismdissemcommingled:CVEnumISMDissemCommingledValues owl:equivalentClass [
 			"FEDCON"
 			"NOCON"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismdissemcommingled:CVEnumISMDissemCommingled ;
+  dc:source ismdissemcommingled:CVEnumISMDissemCommingled ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:dissem:commingled#CVEnumISMDissemCommingled." .

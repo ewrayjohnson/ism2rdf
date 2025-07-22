@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:6",
+      "@id": "_:10",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -131,8 +131,16 @@
     },
     {
       "@id": "usaru:CVEnumAuditRoutingUniqueValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:usagency:auditRoutingUnique#CVEnumAuditRoutingUnique.",
+      "rdfs:seeAlso": {
+        "@id": "usaru:CVEnumAuditRoutingUnique"
+      },
       "owl:equivalentClass": {
-        "@id": "_:6"
+        "@id": "_:10"
       }
     },
     {

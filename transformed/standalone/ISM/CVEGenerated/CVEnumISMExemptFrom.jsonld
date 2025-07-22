@@ -39,6 +39,14 @@
     },
     {
       "@id": "ismexempt:CVEnumISMExemptFromValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismexempt:CVEnumISMExemptFrom"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:exemptfrom#CVEnumISMExemptFrom.",
+      "rdfs:seeAlso": {
+        "@id": "ismexempt:CVEnumISMExemptFrom"
+      },
       "owl:equivalentClass": {
         "@id": "_:2"
       }

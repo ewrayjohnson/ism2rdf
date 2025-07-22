@@ -10,7 +10,7 @@
   },
   "@graph": [
     {
-      "@id": "_:9",
+      "@id": "_:8",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -46,8 +46,16 @@
     },
     {
       "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDesValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes.",
+      "rdfs:seeAlso": {
+        "@id": "urn:us:gov:ic:cvenum:ntk:profiledes#CVEnumNTKProfileDes"
+      },
       "owl:equivalentClass": {
-        "@id": "_:9"
+        "@id": "_:8"
       }
     },
     {

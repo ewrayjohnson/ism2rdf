@@ -91,7 +91,8 @@ ismdissemicrm:WAIVED a skos:Concept ;
   skos:notation "WAIVED" ;
   skos:prefLabel "WAIVED" .
 
-ismdissemicrm:CVEnumISMDissemIcrmValues owl:equivalentClass [
+ismdissemicrm:CVEnumISMDissemIcrmValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"RS"
@@ -111,4 +112,7 @@ ismdissemicrm:CVEnumISMDissemIcrmValues owl:equivalentClass [
 			"EXEMPT_FROM_ICD501_DISCOVERY"
 			"WAIVED"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismdissemicrm:CVEnumISMDissemIcrm ;
+  dc:source ismdissemicrm:CVEnumISMDissemIcrm ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm." .

@@ -6,41 +6,45 @@
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-C> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-S> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-TS> .
-_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:4 <http://www.w3.org/2002/07/owl#oneOf> _:1 .
-<urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATOValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:4 .
+<urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATOValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATOValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:8 .
+<urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATOValues> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> .
+<urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATOValues> <http://purl.org/dc/elements/1.1/source> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> .
+<urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATOValues> <http://www.w3.org/2000/01/rdf-schema#comment> "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO." .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:8 <http://www.w3.org/2002/07/owl#oneOf> _:10 .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-U> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-U> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-U> <http://www.w3.org/2004/02/skos/core#notation> "NATO-U" .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-U> <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO UNCLASSIFIED" .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-U" .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:9 .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-U" .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-R> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-R> <http://www.w3.org/2004/02/skos/core#notation> "NATO-R" .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-R> <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO RESTRICTED" .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-R" .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:8 .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-R" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:64 .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-C> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-C> <http://www.w3.org/2004/02/skos/core#notation> "NATO-C" .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-C> <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO CONFIDENTIAL" .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-C" .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:70 .
+_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-C" .
+_:64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:2 .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-S> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-S> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-S> <http://www.w3.org/2004/02/skos/core#notation> "NATO-S" .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-S> <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO SECRET" .
-_:70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-S" .
-_:70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:7 .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-S" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:6 .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-TS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-TS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO> .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-TS> <http://www.w3.org/2004/02/skos/core#notation> "NATO-TS" .
 <urn:us:gov:ic:cvenum:ism:HighWaterNATO#NATO-TS> <http://www.w3.org/2004/02/skos/core#prefLabel> "NATO TOP SECRET" .
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-TS" .
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NATO-TS" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

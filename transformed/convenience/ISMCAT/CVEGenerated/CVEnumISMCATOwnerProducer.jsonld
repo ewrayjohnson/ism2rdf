@@ -12,13 +12,6 @@
   "@graph": [
     {
       "@id": "_:6",
-      "sh:path": {
-        "@id": "skos:notation"
-      },
-      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
-    },
-    {
-      "@id": "_:9",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -365,6 +358,13 @@
           "UNCK"
         ]
       }
+    },
+    {
+      "@id": "_:88",
+      "sh:path": {
+        "@id": "skos:notation"
+      },
+      "sh:pattern": "NATO:[a-zA-Z\\-_]{1,256}"
     },
     {
       "@id": "urn:us:gov:ic:ISMCAT:CVEGenerated:CVEnumISMCATOwnerProducer",
@@ -2062,8 +2062,16 @@
     },
     {
       "@id": "ismcatownpro:CVEnumISMCATOwnerProducerValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismcatownpro:CVEnumISMCATOwnerProducer"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:ownerproducer#CVEnumISMCATOwnerProducer.",
+      "rdfs:seeAlso": {
+        "@id": "ismcatownpro:CVEnumISMCATOwnerProducer"
+      },
       "owl:equivalentClass": {
-        "@id": "_:9"
+        "@id": "_:6"
       }
     },
     {
@@ -3289,7 +3297,7 @@
       },
       "skos:prefLabel": "North Atlantic Treaty Organization Special Words",
       "sh:property": {
-        "@id": "_:6"
+        "@id": "_:88"
       }
     },
     {

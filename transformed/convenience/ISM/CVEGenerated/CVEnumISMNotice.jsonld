@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:2",
+      "@id": "_:6",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -157,8 +157,16 @@
     },
     {
       "@id": "ismnotice:CVEnumISMNoticeValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:notice#CVEnumISMNotice.",
+      "rdfs:seeAlso": {
+        "@id": "ismnotice:CVEnumISMNotice"
+      },
       "owl:equivalentClass": {
-        "@id": "_:2"
+        "@id": "_:6"
       }
     },
     {

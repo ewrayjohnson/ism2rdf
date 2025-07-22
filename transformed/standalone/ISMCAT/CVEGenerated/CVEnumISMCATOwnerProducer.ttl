@@ -1725,7 +1725,8 @@ ismcatownpro:UNCK a skos:Concept ;
   skos:prefLabel "United Nations Command, Korea" ;
   skos:notation "UNCK" .
 
-ismcatownpro:CVEnumISMCATOwnerProducerValues owl:equivalentClass [
+ismcatownpro:CVEnumISMCATOwnerProducerValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"FGI"
@@ -2070,4 +2071,7 @@ ismcatownpro:CVEnumISMCATOwnerProducerValues owl:equivalentClass [
 			"TFTC"
 			"UNCK"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcatownpro:CVEnumISMCATOwnerProducer ;
+  dc:source ismcatownpro:CVEnumISMCATOwnerProducer ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:ownerproducer#CVEnumISMCATOwnerProducer." .

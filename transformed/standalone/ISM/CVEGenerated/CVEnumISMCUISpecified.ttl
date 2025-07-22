@@ -296,7 +296,8 @@ ismcuispecified:WDT a skos:Concept ;
   skos:notation "WDT" ;
   skos:prefLabel "Written Determinations. Rulings, determination letters, technical advice memoranda or Chief Counsel Advice, as those terms are defined in Treasury Regulation 301.6110-2, which are made available for public inspection subject to the withholding of certain types of data as enumerated in Treasury Regulation 301-6110." .
 
-ismcuispecified:CVEnumISMCUISpecifiedValues owl:equivalentClass [
+ismcuispecified:CVEnumISMCUISpecifiedValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"AIV"
@@ -357,4 +358,7 @@ ismcuispecified:CVEnumISMCUISpecifiedValues owl:equivalentClass [
 			"WIT"
 			"WDT"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismcuispecified:CVEnumISMCUISpecified ;
+  dc:source ismcuispecified:CVEnumISMCUISpecified ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:cuispecified#CVEnumISMCUISpecified." .

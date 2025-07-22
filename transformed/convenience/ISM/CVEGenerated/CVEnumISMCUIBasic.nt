@@ -94,657 +94,661 @@
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:cuibasic#WATER> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:cuibasic#WHSTL> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <urn:us:gov:ic:cvenum:ism:cuibasic#WIT> .
-_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:6 <http://www.w3.org/2002/07/owl#oneOf> _:5 .
-<urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasicValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:6 .
+<urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasicValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasicValues> <http://www.w3.org/2002/07/owl#equivalentClass> _:4 .
+<urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasicValues> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
+<urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasicValues> <http://purl.org/dc/elements/1.1/source> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
+<urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasicValues> <http://www.w3.org/2000/01/rdf-schema#comment> "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic." .
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:4 <http://www.w3.org/2002/07/owl#oneOf> _:5 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ADPO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ADPO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ADPO> <http://www.w3.org/2004/02/skos/core#notation> "ADPO" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ADPO> <http://www.w3.org/2004/02/skos/core#prefLabel> "Administrative Proceedings. Adjudication of agency-related matters including, but not limited to, dispute resolution, settlements, and issuances of orders." .
 _:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ADPO" .
-_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:3 .
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:1 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#AG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#AG> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#AG> <http://www.w3.org/2004/02/skos/core#notation> "AG" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#AG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Agriculture. Information related to the agricultural operation, farming or conservation practices, or the actual land of an agricultural producer or landowner." .
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "AG" .
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:2 .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "AG" .
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:8 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ASYL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ASYL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ASYL> <http://www.w3.org/2004/02/skos/core#notation> "ASYL" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ASYL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asylee. Related to refugee applications and associated hearings to grant asylum to foreign nationals in the United States to be recognized as asylees." .
-_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ASYL" .
-_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:63 .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ASYL" .
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:10 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FSEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FSEC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FSEC> <http://www.w3.org/2004/02/skos/core#notation> "FSEC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FSEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bank Secrecy. Information that is provided to the government pursuant to the Bank Secrecy Act, including but not limited to, suspicious activity reports (SAR), currency transaction reports (CTR), reports of international transportation of currency or monetary instruments (CMIR), reports of cash payment over $10,000 received in trade or business, and reports of foreign bank and financial accounts (FBAR). Reports filed under the Bank Secrecy Act (BSA), codified in relevant part at 31 U.S.C. § 5311 et seq, are specifically exempt from disclosure under the Freedom of Information Act, codified at 5 U.S.C. § 552, and also may not be disclosed under any State, local, tribal, or territorial “freedom of information,” “open government,” or similar law. See 31 U.S.C. § 5319; 5 U.S.C. § 552(b)(3). These reports (BSA Reports), are maintained in a system of records containing information compiled for law enforcement investigative purposes that has been exempted from the access provisions of the Privacy Act in accordance with 5 U.S.C. §§ 552a(j)(2) and (k)(2). BSA Reports may only be re-disseminated in strict accordance with guidelines established by the Financial Crimes Enforcement Network (FinCEN), the Treasury bureau that administers the BSA. Suspicious Activity Reports, one of the types of required reports filed under the BSA, are required to be kept confidential in accordance with 31 U.S.C. § 5318(g)(2) and implementing regulations. To the extent information falling under the purview of the BSA is collected, accessed, or used for any Federal tax administration purpose, it is also subject to the confidentiality provisions of the Internal Revenue Code, codified at 26 U.S.C. § 6103." .
-_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FSEC" .
-_:63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:4 .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FSEC" .
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:66 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#BATT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#BATT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#BATT> <http://www.w3.org/2004/02/skos/core#notation> "BATT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#BATT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Battered Spouse or Child. Related to information within applications and associated hearings provided by, or that could identify, a battered spouse or child of a US citizen or US permanent resident seeking independent protected status within the United States." .
-_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BATT" .
-_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:31 .
+_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BATT" .
+_:66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVI> <http://www.w3.org/2004/02/skos/core#notation> "CVI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chemical-terrorism Vulnerability Information. In accordance with Section 550(c) of the Department of Homeland Security Appropriations Act of 2007, the following information, whether transmitted verbally, electronically, or in written form, shall constitute CVI, see (1) - (9)." .
-_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CVI" .
-_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:7 .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CVI" .
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:9 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVIC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVIC> <http://www.w3.org/2004/02/skos/core#notation> "CVIC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CVIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Child Victim/Witness. Information pertaining to a minor who was a victim, witness, or potential witness to a criminal act." .
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CVIC" .
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:27 .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CVIC" .
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:38 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#BARG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#BARG> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#BARG> <http://www.w3.org/2004/02/skos/core#notation> "BARG" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#BARG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Collective Bargaining. Defining agencies' and representatives' duty to negotiate in good faith to include disclosure of certain labor relations training and guidance materials and limiting the issuance of certain subpoenas." .
-_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BARG" .
-_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:10 .
+_:38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BARG" .
+_:38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:69 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CMPRS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CMPRS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CMPRS> <http://www.w3.org/2004/02/skos/core#notation> "CMPRS" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CMPRS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Committed Person. Related to information concerning the mental condition of a person committed to a psychiatric facility." .
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CMPRS" .
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:81 .
+_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CMPRS" .
+_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:28 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LCOMM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LCOMM> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LCOMM> <http://www.w3.org/2004/02/skos/core#notation> "LCOMM" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LCOMM> <http://www.w3.org/2004/02/skos/core#prefLabel> "Communications. Related to the contents of any wire, oral, or electronic communication." .
-_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LCOMM" .
-_:81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:96 .
+_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LCOMM" .
+_:28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:18 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#COMPT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#COMPT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#COMPT> <http://www.w3.org/2004/02/skos/core#notation> "COMPT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#COMPT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comptroller General. Concerning the Officer of the United States Government who is charged with duties relating to fiscal affairs, including auditing, examining accounts, and reporting the financial status of the United States Government." .
-_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "COMPT" .
-_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:0 .
+_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "COMPT" .
+_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:26 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DREC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DREC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DREC> <http://www.w3.org/2004/02/skos/core#notation> "DREC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DREC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Death Records. Related to information contained within an official document issued by a public registry verifying that a person has died, with information such as the date and time of death, the cause of death, and the signature of the attending or examining physician." .
-_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DREC" .
-_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:49 .
+_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DREC" .
+_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:49 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DCRIT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DCRIT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DCRIT> <http://www.w3.org/2004/02/skos/core#notation> "DCRIT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DCRIT> <http://www.w3.org/2004/02/skos/core#prefLabel> "DoD Critical Infrastructure Security Information. Information that, if disclosed, would reveal vulnerabilities in the DoD critical infrastructure and, if exploited, would likely result in the significant disruption, destruction, or damage of or to DoD operations, property, or facilities, including information regarding the securing and safeguarding of explosives, hazardous chemicals, or pipelines, related to critical infrastructure or protected systems owned or operated on behalf of the DoD, including vulnerability assessments prepared by or on behalf of the DoD, explosives safety information (including storage and handling), and other site-specific information on or relating to installation security." .
 _:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DCRIT" .
-_:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:1 .
+_:49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:3 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#XFER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#XFER> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#XFER> <http://www.w3.org/2004/02/skos/core#notation> "XFER" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#XFER> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electronic Funds Transfer. Relating to the computer-based systems used to perform financial transactions electronically." .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "XFER" .
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:88 .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "XFER" .
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:948 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EMGT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EMGT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EMGT> <http://www.w3.org/2004/02/skos/core#notation> "EMGT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EMGT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Emergency Management. Related to information concerning the continuity of executive branch operations during all-hazards emergencies or other situations that may disrupt normal operations." .
-_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EMGT" .
-_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:92 .
+_:948 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:948 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EMGT" .
+_:948 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:7 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EXPT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EXPT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EXPT> <http://www.w3.org/2004/02/skos/core#notation> "EXPT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EXPT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Export Controlled. Unclassified information concerning certain items, commodities, technology, software, or other information whose export could reasonably be expected to adversely affect the United States national security and nonproliferation objectives. To include dual use items; items identified in export administration regulations, international traffic in arms regulations and the munitions list; license applications; and sensitive nuclear technology information." .
-_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EXPT" .
-_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:89 .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EXPT" .
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:59 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EXPTR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EXPTR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EXPTR> <http://www.w3.org/2004/02/skos/core#notation> "EXPTR" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#EXPTR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Export Controlled Research. Related to the systematic investigation into and study of materials and sources in order to establish facts and reach new conclusions." .
-_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EXPTR" .
-_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:50 .
+_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EXPTR" .
+_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:88 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#JURY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#JURY> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#JURY> <http://www.w3.org/2004/02/skos/core#notation> "JURY" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#JURY> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Grand Jury. Material obtained pursuant to a federal grand jury subpoena, which includes (1) any reference to a specific sitting grand jury; (2) any documentation or data obtained by a grand jury subpoena if disclosure of such material tends to reveal what transpired before or at the direction of the federal grand jury; (3) documentation prepared specifically for the federal grand jury; and (4) transcripts or other recordings of testimony presented to the federal grand jury." .
-_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "JURY" .
-_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:42 .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "JURY" .
+_:88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:2 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FHFANPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FHFANPI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FHFANPI> <http://www.w3.org/2004/02/skos/core#notation> "FHFANPI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FHFANPI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Federal Housing Finance Non-Public Information. Related to information that the Federal Housing Finance Agency (FHFA) has not made public that is created by, obtained by, or communicated to an FHFA employee in connection with the performance of official duties, regardless of who is in possession of the information, including confidential supervisory information. Confidential supervisory information includes FHFA reports of examination, inspection and visitation, confidential operating and condition reports, and any information derived from, related to, or contained in such reports, or gathered by FHFA in the course of any investigation, suspicious activity report, cease-and- desist order, civil money penalty enforcement order, suspension, removal or prohibition order, or other supervisory or enforcement orders or actions taken under the Federal Housing Enterprises Financial Safety and Soundness Act of 1992, and other conditions as set forth in 12 CFR Part 1214.1." .
-_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FHFANPI" .
-_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:53 .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FHFANPI" .
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:75 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FSI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FSI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FSI> <http://www.w3.org/2004/02/skos/core#notation> "FSI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FSI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Financial Supervision Information. Related to information connected to an agency's responsibilities to supervise, examine, and evaluate a financial institution." .
-_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FSI" .
-_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:17 .
+_:75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FSI" .
+_:75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:42 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CRIT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CRIT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CRIT> <http://www.w3.org/2004/02/skos/core#notation> "CRIT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CRIT> <http://www.w3.org/2004/02/skos/core#prefLabel> "General Critical Infrastructure Information. Systems and assets, whether physical or virtual, so vital that the incapacity or destruction of such may have a debilitating impact on the security, economy, public health or safety, environment, or any combination of these matters, across any Federal, State, regional, territorial, or local jurisdiction." .
-_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CRIT" .
-_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:18 .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CRIT" .
+_:42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:73 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FNC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FNC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FNC> <http://www.w3.org/2004/02/skos/core#notation> "FNC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FNC> <http://www.w3.org/2004/02/skos/core#prefLabel> "General Financial Information. Related to the duties, transactions, or otherwise falling under the purview of financial institutions or United States Government fiscal functions. Uses may include, but are not limited to, customer information held by a financial institution." .
-_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FNC" .
-_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:51 .
+_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FNC" .
+_:73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:27 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INTEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INTEL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INTEL> <http://www.w3.org/2004/02/skos/core#notation> "INTEL" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INTEL> <http://www.w3.org/2004/02/skos/core#prefLabel> "General Intelligence. Related to intelligence activities, sources, or methods." .
-_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INTEL" .
-_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:703 .
+_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INTEL" .
+_:27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:22 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LEI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LEI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LEI> <http://www.w3.org/2004/02/skos/core#notation> "LEI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LEI> <http://www.w3.org/2004/02/skos/core#prefLabel> "General Law Enforcement. Related to techniques and procedures for law enforcement operations, investigations, prosecutions, or enforcement actions." .
-_:703 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:703 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LEI" .
-_:703 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:23 .
+_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LEI" .
+_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:17 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NUC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NUC> <http://www.w3.org/2004/02/skos/core#notation> "NUC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NUC> <http://www.w3.org/2004/02/skos/core#prefLabel> "General Nuclear. Related to protection of information concerning nuclear reactors, materials, or security." .
-_:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NUC" .
-_:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:15 .
+_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NUC" .
+_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:6 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRVCY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRVCY> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRVCY> <http://www.w3.org/2004/02/skos/core#notation> "PRVCY" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRVCY> <http://www.w3.org/2004/02/skos/core#prefLabel> "General Privacy. Refers to personal information, or, in some cases, \"personally identifiable information,\" as defined in OMB M-17-12, or \"means of identification\" as defined in 18 USC 1028(d)(7)." .
-_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRVCY" .
-_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:554 .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRVCY" .
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:11 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PROPIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PROPIN> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PROPIN> <http://www.w3.org/2004/02/skos/core#notation> "PROPIN" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PROPIN> <http://www.w3.org/2004/02/skos/core#prefLabel> "General Proprietary Business Information. Material and information relating to, or associated with, a company's products, business, or activities, including but not limited to financial information; data or statements; trade secrets; product research and development; existing and future product designs and performance specifications." .
-_:554 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:554 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PROPIN" .
-_:554 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:82 .
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PROPIN" .
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:96 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#GENETIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#GENETIC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#GENETIC> <http://www.w3.org/2004/02/skos/core#notation> "GENETIC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#GENETIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Genetic Information. The term \"genetic information\" means, with respect to any individual, information about-- (i) such individual's genetic tests, (ii) the genetic tests of family members of such individual, and (iii) the manifestation of a disease or disorder in family members of such individual." .
-_:82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "GENETIC" .
-_:82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:19 .
+_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "GENETIC" .
+_:96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:72 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#HLTH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#HLTH> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#HLTH> <http://www.w3.org/2004/02/skos/core#notation> "HLTH" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#HLTH> <http://www.w3.org/2004/02/skos/core#prefLabel> "Health Information. As per 42 USC 1320d(4), \"health information\" means any information, whether oral or recorded in any form or medium, that (A) is created or received by a health care provider, health plan, public health authority, employer, life insurer, school or university, or health care clearinghouse; and (B) relates to the past, present, or future physical or mental health or condition of an individual, the provision of health care to an individual, or the past, present, or future payment for the provision of health care to an individual." .
-_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "HLTH" .
-_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:9 .
+_:72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "HLTH" .
+_:72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:84 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-HSAI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-HSAI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-HSAI> <http://www.w3.org/2004/02/skos/core#notation> "CUI-PROVISIONAL-HSAI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-HSAI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provisional - Homeland Security Agreement Information. Information DHS receives and is required to protect pursuant to an agreement with state, local, tribal, territorial, and private sector partners. DHS receives this information in furtherance of the missions of the Department, including but not limited to, support of the Fusion Center Initiative and activities for cyber information sharing consistent with the Cybersecurity Information Security Act." .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-HSAI" .
-_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:37 .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-HSAI" .
+_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:15 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-HSEI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-HSEI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-HSEI> <http://www.w3.org/2004/02/skos/core#notation> "CUI-PROVISIONAL-HSEI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-HSEI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provisional - Homeland Security Enforcement Information. Unclassified information of a sensitive nature lawfully created, possessed, or transmitted by DHS in furtherance of its immigration, customs, and other civil and criminal enforcement missions, the unauthorized disclosure of which could adversely impact the mission of the Department." .
-_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-HSEI" .
-_:37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:34 .
+_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-HSEI" .
+_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:91 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INF> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INF> <http://www.w3.org/2004/02/skos/core#notation> "INF" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Informant. Related to the identity of a human source." .
-_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INF" .
-_:34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:45 .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INF" .
+_:91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:36 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ISVI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ISVI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ISVI> <http://www.w3.org/2004/02/skos/core#notation> "ISVI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ISVI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Information Systems Vulnerability Information. Related to information that if not protected, could result in adverse effects to information systems. Information system means a discrete set of information resources organized for the collection, processing, maintenance, use, sharing, dissemination, or disposition of information." .
-_:45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ISVI" .
-_:45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:84 .
+_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ISVI" .
+_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:901 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-ISVIH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-ISVIH> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-ISVIH> <http://www.w3.org/2004/02/skos/core#notation> "CUI-PROVISIONAL-ISVIH" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-ISVIH> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provisional - Information Systems Vulnerability Information - Homeland. a. DHS information technology internal systems data revealing infrastructure used for servers, desktops, and networks; applications name, version and release; switching, router, and gateway information; interconnections and access methods; mission or business use/need. Examples of information are systems inventories and enterprise architecture models. Information pertaining to national security systems and eligible for classification under Executive Order 13526, will be classified as appropriate. b. Information regarding developing or current technology, the release of which could hinder the objectives of DHS, compromise a technological advantage or countermeasure, cause a denial of service, or provide an adversary with sufficient information to close, counterfeit, or circumvent a process or system." .
-_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-ISVIH" .
-_:84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:12 .
+_:901 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:901 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-ISVIH" .
+_:901 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:55 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIIG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIIG> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIIG> <http://www.w3.org/2004/02/skos/core#notation> "PRIIG" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIIG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inspector General Protected. Related to the identity of a person making a report to the Inspector General of any Executive agency." .
-_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRIIG" .
-_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:8 .
+_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRIIG" .
+_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:33 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ID> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ID> <http://www.w3.org/2004/02/skos/core#notation> "ID" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ID> <http://www.w3.org/2004/02/skos/core#prefLabel> "Internal Data. Refers to a category of information that is not intended to be disseminated beyond CIA channels that involves intelligence activities, sources, or methods. This information may also relate to the CIA's organization, functions, names, official titles, salaries, or numbers of personnel." .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ID" .
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:11 .
+_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ID" .
+_:33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:31 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-IAIH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-IAIH> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-IAIH> <http://www.w3.org/2004/02/skos/core#notation> "CUI-PROVISIONAL-IAIH" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-IAIH> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provisional - International Agreement Information - Homeland. Information DHS receives and is required to protect pursuant to an information sharing agreement or arrangement with a foreign government, an international organization of governments or any element thereof, an international or foreign public or judicial body, or an international or foreign private or non-governmental organization." .
-_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-IAIH" .
-_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:36 .
+_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-IAIH" .
+_:31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:90 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FINT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FINT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FINT> <http://www.w3.org/2004/02/skos/core#notation> "FINT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#FINT> <http://www.w3.org/2004/02/skos/core#prefLabel> "International Financial Institutions. Relating to entities that provide financial services for its clients or members, and were established (or chartered) by more than one country, and hence are subjects of international law." .
-_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FINT" .
-_:36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:83 .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FINT" .
+_:90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:97 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INVENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INVENT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INVENT> <http://www.w3.org/2004/02/skos/core#notation> "INVENT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INVENT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inventions. An invention is any art or process (way of doing or making things), machine, manufacture, design, or composition of matter, or any new and useful improvement thereof, or any variety of plant, which is or may be patentable under the patent laws of the United States, in which the federal government owns or may own a right, title, or interest." .
-_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INVENT" .
-_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:62 .
+_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INVENT" .
+_:97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:74 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INV> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INV> <http://www.w3.org/2004/02/skos/core#notation> "INV" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#INV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Investigation. Related to information obtained during the course of a law enforcement investigation or action, civil or criminal." .
-_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INV" .
-_:62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:98 .
+_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "INV" .
+_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:20 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SURV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SURV> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SURV> <http://www.w3.org/2004/02/skos/core#notation> "SURV" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SURV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Investment Survey. Information reported to Treasury, the Federal Reserve Board of Governors, or the Federal Reserve Banks as part of the Treasury International Capital (TIC) data reporting system." .
-_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SURV" .
-_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:759 .
+_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SURV" .
+_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:54 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#JUV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#JUV> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#JUV> <http://www.w3.org/2004/02/skos/core#notation> "JUV" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#JUV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Juvenile. Related to the identity of individual juvenile youths." .
-_:759 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:759 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "JUV" .
-_:759 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:260 .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "JUV" .
+_:54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:86 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIVILEGE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIVILEGE> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIVILEGE> <http://www.w3.org/2004/02/skos/core#notation> "PRIVILEGE" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIVILEGE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal Privilege. Per 12 USC 78x: The term \"privilege\" includes any work-product privilege, attorney-client privilege, governmental privilege, or other privilege recognized under Federal, State, or foreign law. Per 502(g): (1) \"attorney-client privilege\" means the protection that applicable law provides for confidential attorney-client communications; and (2) \"work-product protection\" means the protection that applicable law provides for tangible material (or its intangible equivalent) prepared in anticipation of litigation or for trial." .
-_:260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRIVILEGE" .
-_:260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:69 .
+_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRIVILEGE" .
+_:86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:78 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LMI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LMI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LMI> <http://www.w3.org/2004/02/skos/core#notation> "LMI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LMI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Legislative Materials. Data related to Congress’s legislative, investigatory or oversight responsibilities of the Executive branch of the Federal government. This includes data related to proposed or pending legislation as well as inquiries submitted by Congress to Federal agencies, agency responses to those inquiries and any other information which, if disclosed, would reveal the nature and scope of Congressional inquiries." .
-_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LMI" .
-_:69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:735 .
+_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LMI" .
+_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:60 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#MERG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#MERG> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#MERG> <http://www.w3.org/2004/02/skos/core#notation> "MERG" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#MERG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mergers. Relating to methods by which corporations legally unify ownership of assets formerly subject to separate controls." .
-_:735 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:735 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "MERG" .
-_:735 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:152 .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "MERG" .
+_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:25 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#MIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#MIL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#MIL> <http://www.w3.org/2004/02/skos/core#notation> "MIL" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#MIL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Military Personnel Records. Any member or former member of the armed forces or affiliated organization of the Department of Defense." .
-_:152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "MIL" .
-_:152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:58 .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "MIL" .
+_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:77 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LNSL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LNSL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LNSL> <http://www.w3.org/2004/02/skos/core#notation> "LNSL" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LNSL> <http://www.w3.org/2004/02/skos/core#prefLabel> "National Security Letter. Related to administrative orders sent to compel the recipients of the letters to provide information to federal investigators." .
-_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LNSL" .
-_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:59 .
+_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LNSL" .
+_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:87 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NETW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NETW> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NETW> <http://www.w3.org/2004/02/skos/core#notation> "NETW" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NETW> <http://www.w3.org/2004/02/skos/core#prefLabel> "Net Worth. Related to the net worth of an individual and/or their affiliates in certain administrative proceedings." .
-_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NETW" .
-_:59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:93 .
+_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NETW" .
+_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:93 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NNPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NNPI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NNPI> <http://www.w3.org/2004/02/skos/core#notation> "NNPI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#NNPI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Naval Nuclear Propulsion Information. Related to the safety of reactors and associated naval nuclear propulsion plants, and control of radiation and radioactivity associated with naval nuclear propulsion activities, including prescribing and enforcing standards and regulations for these areas as they affect the environment and the safety and health of workers, operators, and the general public." .
 _:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NNPI" .
-_:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:100 .
+_:93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:639 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#OPSEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#OPSEC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#OPSEC> <http://www.w3.org/2004/02/skos/core#notation> "OPSEC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#OPSEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Critical information determined to give evidence of the planning and execution of sensitive (frequently classified) government activities after going through a formal systematic vetting process in accordance with National Security Decision Directive Number 298. This process identifies unclassified information that must be protected. It almost always results from an agency’s official OPSEC program, or is otherwise commonly approved for use by the CUI Senior Agency Official." .
-_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "OPSEC" .
-_:100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:79 .
+_:639 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:639 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "OPSEC" .
+_:639 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:48 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RECCOM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RECCOM> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RECCOM> <http://www.w3.org/2004/02/skos/core#notation> "RECCOM" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RECCOM> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Recommendation Material. Related to recommendations to the Secretary of Energy with respect to Department of Energy defense nuclear facilities as determined necessary to ensure adequate protection of public health and safety." .
-_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RECCOM" .
-_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:52 .
+_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RECCOM" .
+_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:29 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SRI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SRI> <http://www.w3.org/2004/02/skos/core#notation> "SRI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SRI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuclear Security-Related Information. Related to information that could be useful, or could reasonably be expected to be useful, to a terrorist in a potential attack that does not qualify as Safeguards or classified information, including the exact location and quantities of radioactive material, certain detailed design drawings, information on nearby facilities, emergency planning information, and certain assessments of vulnerability and safety analyses." .
-_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SRI" .
-_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:55 .
+_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SRI" .
+_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:21 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#OCCMTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#OCCMTO> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#OCCMTO> <http://www.w3.org/2004/02/skos/core#notation> "OCCMTO" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#OCCMTO> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ocean Common Carrier and Marine Terminal Operator Agreements. Relating to agreements between or among ocean common carriers and marine terminal operators as referenced in 46 USC 40301 and 40306." .
-_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "OCCMTO" .
-_:55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:24 .
+_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "OCCMTO" .
+_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:23 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SERV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SERV> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SERV> <http://www.w3.org/2004/02/skos/core#notation> "SERV" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SERV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ocean Common Carrier Service Contracts. Relating to an agreement for the provision of services filed with the Federal Maritime Commission as referenced in 46 USC 40502(b), 46 CFR 530.4, and/or 46 CFR 531.4(a)." .
-_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SERV" .
-_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:35 .
+_:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SERV" .
+_:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:39 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-OSI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-OSI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-OSI> <http://www.w3.org/2004/02/skos/core#notation> "CUI-PROVISIONAL-OSI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-OSI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provisional - Operations Security Information. Unclassified information that could constitute an indicator of U.S. Government intentions, capabilities, operations, or activities or otherwise threaten/compromise operations security." .
-_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-OSI" .
-_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:14 .
+_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-OSI" .
+_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:67 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#APP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#APP> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#APP> <http://www.w3.org/2004/02/skos/core#notation> "APP" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#APP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Patent Applications. Application for patent filed under 35 U.S.C. 111(a) that includes all types of patent applications (i.e., utility, design, plant, and reissue) except provisional applications. The nonprovisional application establishes the filing date and initiates the examination process. A nonprovisional utility patent application must include a specification, including a claim or claims; drawings, when necessary; an oath or declaration; and the prescribed filing fee." .
-_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "APP" .
-_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:77 .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "APP" .
+_:67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:16 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#TRACE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#TRACE> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#TRACE> <http://www.w3.org/2004/02/skos/core#notation> "TRACE" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#TRACE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pen Register/Trap & Trace. Related to devices used to identify incoming and outgoing telephone numbers." .
-_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "TRACE" .
-_:77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:65 .
+_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "TRACE" .
+_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:44 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RESD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RESD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RESD> <http://www.w3.org/2004/02/skos/core#notation> "RESD" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RESD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Permanent Resident Status. Related to applications and associated hearings to grant permanent residency to foreign nationals living in the United States." .
-_:65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RESD" .
-_:65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:26 .
+_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RESD" .
+_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:56 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PERS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PERS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PERS> <http://www.w3.org/2004/02/skos/core#notation> "PERS" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PERS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Personnel Records. Related to the employees of federal agencies." .
-_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PERS" .
-_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:40 .
+_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PERS" .
+_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:94 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PSI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PSI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PSI> <http://www.w3.org/2004/02/skos/core#notation> "CUI-PROVISIONAL-PSI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PSI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provisional - Personnel Security Information. Information that could result in physical risk to DHS personnel or other individuals that DHS is responsible for protecting." .
-_:40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-PSI" .
-_:40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:39 .
+_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-PSI" .
+_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:71 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PEST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PEST> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PEST> <http://www.w3.org/2004/02/skos/core#notation> "PEST" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PEST> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pesticide Producer Survey. Related to the data gathered regarding the production of pesticides that specifies the non-disclosure of the identity and location of individual producers." .
-_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PEST" .
-_:39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:21 .
+_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PEST" .
+_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:565 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PHYS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PHYS> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PHYS> <http://www.w3.org/2004/02/skos/core#notation> "PHYS" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PHYS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical Security. Related to protection of federal buildings, grounds or property." .
-_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PHYS" .
-_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:48 .
+_:565 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:565 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PHYS" .
+_:565 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:19 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PHYSH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PHYSH> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PHYSH> <http://www.w3.org/2004/02/skos/core#notation> "CUI-PROVISIONAL-PHYSH" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PHYSH> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provisional - Physical Security - Homeland. Assessments or reports illustrating or disclosing facility infrastructure or security vulnerabilities related to the protection of federal buildings, grounds, or property, such as threat assessments, system security plans, contingency plans, risk management plans, business impact analysis studies, and certification and accreditation documentation." .
-_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-PHYSH" .
-_:48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:74 .
+_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-PHYSH" .
+_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:478 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRE> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRE> <http://www.w3.org/2004/02/skos/core#notation> "PRE" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRE> <http://www.w3.org/2004/02/skos/core#prefLabel> "Presentence Report. A report, generally prepared to assist the court in determining the most appropriate sentence for a defendant. It can include an assessment of the nature and seriousness of the offense and should contain details summarizing the background information of the defendant and the crime." .
-_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRE" .
-_:74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:71 .
+_:478 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:478 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRE" .
+_:478 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:535 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIOR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIOR> <http://www.w3.org/2004/02/skos/core#notation> "PRIOR" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PRIOR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prior Arrest. Information related to previous instances of law enforcement official's apprehension and formal processing of a suspect." .
-_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRIOR" .
-_:71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:837 .
+_:535 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:535 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PRIOR" .
+_:535 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:68 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PRIVACY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PRIVACY> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PRIVACY> <http://www.w3.org/2004/02/skos/core#notation> "CUI-PROVISIONAL-PRIVACY" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PRIVACY> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provisional - Privacy Information. Information referred to as Personally Identifiable Information (PII). PII embodies information that can be used to distinguish or trace an individual's identity, either alone or when combined with other information that is linked or linkable to a specific individual." .
-_:837 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:837 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-PRIVACY" .
-_:837 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:80 .
+_:68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-PRIVACY" .
+_:68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:226 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#POST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#POST> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#POST> <http://www.w3.org/2004/02/skos/core#notation> "POST" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#POST> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proprietary Postal. Concerning or related to the course of business of the United States Postal Service." .
-_:80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "POST" .
-_:80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:808 .
+_:226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "POST" .
+_:226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:35 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LPROT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LPROT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LPROT> <http://www.w3.org/2004/02/skos/core#notation> "LPROT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LPROT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Protective Order. Stipulation that certain information that would normally fall under discovery rules will not be disclosed for specifically stated reason." .
-_:808 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:808 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LPROT" .
-_:808 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:94 .
+_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LPROT" .
+_:35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:95 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RAIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RAIL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RAIL> <http://www.w3.org/2004/02/skos/core#notation> "RAIL" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RAIL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Railroad Safety Analysis Records. Related to the establishment, implementation, or modification of a railroad safety risk reduction program or pilot program, if the record is: (1) Supplied to the Secretary (of Transportation) pursuant to that safety risk reduction program or pilot program; or (2) made available for inspection and copying by an officer, employee, or agent of the Secretary pursuant to that safety risk reduction program or pilot program." .
-_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RAIL" .
-_:94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:20 .
+_:95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RAIL" .
+_:95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:92 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RTR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RTR> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RTR> <http://www.w3.org/2004/02/skos/core#notation> "RTR" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RTR> <http://www.w3.org/2004/02/skos/core#prefLabel> "Retirement. Related to post-employment funding provided by an employer." .
-_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RTR" .
-_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:569 .
+_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RTR" .
+_:92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:58 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RWRD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RWRD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RWRD> <http://www.w3.org/2004/02/skos/core#notation> "RWRD" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#RWRD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reward. Related to the identity of a recipient of a reward." .
-_:569 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:569 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RWRD" .
-_:569 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:29 .
+_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "RWRD" .
+_:58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:61 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SAFE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SAFE> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SAFE> <http://www.w3.org/2004/02/skos/core#notation> "SAFE" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SAFE> <http://www.w3.org/2004/02/skos/core#prefLabel> "SAFETY Act Information. Defined as “SAFETY Act Confidential Information” in 6 CFR Part 25, the regulations implementing the Support Anti-terrorism by Fostering Effective Technologies Act of 2002, SAFETY Act Information includes any and all information and data voluntarily submitted to the Department of Homeland Security under this part (including Applications, Pre-Applications, other forms, supporting documents and other materials relating to any of the foregoing, and responses to requests for additional information), including, but not limited to, inventions, devices, Technology, know-how, designs, copyrighted information, trade secrets, confidential business information, analyses, test and evaluation results, manuals, videotapes, contracts, letters, facsimile transmissions, electronic mail and other correspondence, financial information and projections, actuarial calculations, liability estimates, insurance quotations, and business and marketing plans." .
-_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SAFE" .
-_:29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:87 .
+_:61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SAFE" .
+_:61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:76 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PSEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PSEC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PSEC> <http://www.w3.org/2004/02/skos/core#notation> "PSEC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PSEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Secrecy Orders. An order by the Commissioner of Patents that an invention be kept secret and to withhold the publication of an application or the grant of a patent due to national security concerns." .
-_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PSEC" .
-_:87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:807 .
+_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PSEC" .
+_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:89 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PII> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PII> <http://www.w3.org/2004/02/skos/core#notation> "CUI-PROVISIONAL-PII" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CUI-PROVISIONAL-PII> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provisional - Sensitive Personally Identifiable Information. A subset of PII that, if lost, compromised or disclosed without authorization could result in substantial harm, embarrassment, inconvenience, or unfairness to an individual. Some forms of PII are sensitive as stand-alone elements. a. Examples of stand-alone PII include: Social Security Numbers (SSN), driver's license or state identification number; Alien Registration Numbers; financial account number; and biometric identifiers such as fingerprint, voiceprint, or iris scan. b. Additional examples of SPII include any groupings of information that contain an individual's name or other unique identifier plus one or more of the following elements: Truncated SSN (such as last four digits) Date of birth (month, day, and year) Citizenship or immigration status Ethnic or religious affiliation Sexual orientation Criminal history Medical information System authentication information such as mother's maiden name, account passwords, or personal identification numbers c. Other PII may be \"sensitive\" depending on its context, such in as a list of employees and their performance rating(s) or an unlisted home address or phone number. In contrast, a business card or public telephone directory of agency employees contains PII, but is not sensitive." .
-_:807 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:807 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-PII" .
-_:807 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:169 .
+_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CUI-PROVISIONAL-PII" .
+_:89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:51 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SCV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SCV> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SCV> <http://www.w3.org/2004/02/skos/core#notation> "SCV" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SCV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sex Crime Victim. Related to the identity of a victim of a sex offense." .
-_:169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SCV" .
-_:169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:955 .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SCV" .
+_:51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:50 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SBIZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SBIZ> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SBIZ> <http://www.w3.org/2004/02/skos/core#notation> "SBIZ" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SBIZ> <http://www.w3.org/2004/02/skos/core#prefLabel> "Small Business Research and Technology. Relating to certain \"Small Business Innovation Research Program\" and \"Small Business Technology Transfer Program\" information in a government database, as referenced in 15 USC 638(k)(2)." .
-_:955 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:955 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SBIZ" .
-_:955 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:76 .
+_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SBIZ" .
+_:50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:878 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SSEL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SSEL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SSEL> <http://www.w3.org/2004/02/skos/core#notation> "SSEL" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#SSEL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Source Selection. Per FAR 2.101: any of the following information that is prepared for use by an agency for the purpose of evaluating a bid or proposal to enter into an agency procurement contract, if that information has not been previously made available to the public or disclosed publicly: (Items 1-10)." .
-_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SSEL" .
-_:76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:78 .
+_:878 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:878 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SSEL" .
+_:878 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:79 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#STAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#STAT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#STAT> <http://www.w3.org/2004/02/skos/core#notation> "STAT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#STAT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistical Information. Refers to information collected by a Federal statistical agency, unit, or program for statistical purposes or used for statistical activities; under law, regulation, or Government-wide policy such 'Statistical' CUI requires: (1) protection from unauthorized disclosure; (2) special handling safeguards; and/or (3) prescribed limits on access or dissemination." .
-_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "STAT" .
-_:78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:60 .
+_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "STAT" .
+_:79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:458 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ADJ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ADJ> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ADJ> <http://www.w3.org/2004/02/skos/core#notation> "ADJ" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#ADJ> <http://www.w3.org/2004/02/skos/core#prefLabel> "Status Adjustment. Related to applications for the adjustment of immigration status." .
-_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ADJ" .
-_:60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:25 .
+_:458 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:458 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ADJ" .
+_:458 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:52 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#STUD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#STUD> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#STUD> <http://www.w3.org/2004/02/skos/core#notation> "STUD" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#STUD> <http://www.w3.org/2004/02/skos/core#prefLabel> "Student Records. As per 20 USC 1232g, the Family Educational Rights and Privacy Act of 1974, an education record which is comprised of those records which are directly related to a student." .
-_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "STUD" .
-_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:85 .
+_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "STUD" .
+_:52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:98 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CONREG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CONREG> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CONREG> <http://www.w3.org/2004/02/skos/core#notation> "CONREG" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CONREG> <http://www.w3.org/2004/02/skos/core#prefLabel> "System for Award Management. Relating to the primary United States Government system for contractor registration and awards." .
-_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CONREG" .
-_:85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:815 .
+_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CONREG" .
+_:98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:41 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CONV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CONV> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CONV> <http://www.w3.org/2004/02/skos/core#notation> "CONV" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#CONV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tax Convention. Related to any-- (A) agreement entered into with the competent authority of one or more foreign governments pursuant to a tax convention, (B) application for relief under a tax convention, (C) background information related to such agreement or application, (D) document implementing such agreement, and (E) other information exchanged pursuant to a tax convention which is treated as confidential or secret under the tax convention. Tax convention information originating with the IRS generally retains its confidential status even when it resides with agencies other than the IRS." .
-_:815 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:815 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CONV" .
-_:815 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:460 .
+_:41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CONV" .
+_:41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:994 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#TAI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#TAI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#TAI> <http://www.w3.org/2004/02/skos/core#notation> "TAI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#TAI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Taxpayer Advocate Information. A local taxpayer advocate (LTA) has the discretion to not disclose to the IRS contact with, or information provided by, a taxpayer. Such discretion may result in declinations of requests for information by IRS personnel including cases involving criminal tax investigations or those where the failure to provide information to the IRS would be beneficial to the taxpayer but to the detriment of the IRS. Such discretion does not extend to cases where the LTA believes a taxpayer is using the Taxpayer Advocate’s office to perpetuate a fraud on the government or in cases where the information is sought in litigation." .
-_:460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "TAI" .
-_:460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:856 .
+_:994 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:994 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "TAI" .
+_:994 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:728 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PROT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PROT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PROT> <http://www.w3.org/2004/02/skos/core#notation> "PROT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#PROT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Temporary Protected Status. Related to findings that conditions in a given country pose a danger to personal safety due to ongoing armed conflict or an environmental disaster and persons should receive special temporary status to remain in the United States." .
-_:856 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:856 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PROT" .
-_:856 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:13 .
+_:728 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:728 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "PROT" .
+_:728 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:329 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LSCRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LSCRN> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LSCRN> <http://www.w3.org/2004/02/skos/core#notation> "LSCRN" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LSCRN> <http://www.w3.org/2004/02/skos/core#prefLabel> "Terrorist Screening. Related to information gathering and analysis concerning possible threats or acts of a destructive nature." .
-_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LSCRN" .
-_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:99 .
+_:329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LSCRN" .
+_:329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:24 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DCNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DCNI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DCNI> <http://www.w3.org/2004/02/skos/core#notation> "DCNI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#DCNI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unclassified Controlled Nuclear Information - Defense. Relating to Department of Defense special nuclear material (SNM), equipment, and facilities, as defined by 32 CFR 223." .
-_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DCNI" .
-_:99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:780 .
+_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "DCNI" .
+_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:384 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#UCNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#UCNI> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#UCNI> <http://www.w3.org/2004/02/skos/core#notation> "UCNI" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#UCNI> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unclassified Controlled Nuclear Information - Energy. Relating to certain design and security information concerning nuclear facilities, materials, and weapons, specific to the Department of Energy." .
-_:780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "UCNI" .
-_:780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:160 .
+_:384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "UCNI" .
+_:384 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:53 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LVIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LVIC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LVIC> <http://www.w3.org/2004/02/skos/core#notation> "LVIC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#LVIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Victim. Information requiring protection of the name or other details that may identify one who was the victim of a crime." .
-_:160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LVIC" .
-_:160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:630 .
+_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "LVIC" .
+_:53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:83 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#IVIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#IVIC> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#IVIC> <http://www.w3.org/2004/02/skos/core#notation> "IVIC" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#IVIC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Victims of Human Trafficking. Related to identifiable information of persons who have been victims of human trafficking and their family members." .
-_:630 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:630 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IVIC" .
-_:630 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:44 .
+_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "IVIC" .
+_:83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:267 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#VISA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#VISA> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#VISA> <http://www.w3.org/2004/02/skos/core#notation> "VISA" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#VISA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Visas. Related to applications or permits to enter the United States." .
-_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "VISA" .
-_:44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:938 .
+_:267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "VISA" .
+_:267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:738 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WATER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WATER> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WATER> <http://www.w3.org/2004/02/skos/core#notation> "WATER" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WATER> <http://www.w3.org/2004/02/skos/core#prefLabel> "Water Assessments. Vulnerability Assessments on the risks and security of public drinking water systems, to include, but not be limited to, a review of pipes and constructed conveyances, physical barriers, water collection, pretreatment, treatment, storage and distribution facilities, electronic, computer or other automated systems which are utilized by the public water system, the use, storage, or handling of various chemicals, and the operation and maintenance of such system." .
-_:938 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:938 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "WATER" .
-_:938 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:364 .
+_:738 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:738 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "WATER" .
+_:738 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:183 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WHSTL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WHSTL> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WHSTL> <http://www.w3.org/2004/02/skos/core#notation> "WHSTL" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WHSTL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Whistleblower Identity. Identity of anyone providing information relating to a legal violation or illicit or unsafe activity, including information provided by a whistleblower which could reasonably be expected to reveal the identity of a whistleblower." .
-_:364 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:364 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "WHSTL" .
-_:364 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:56 .
+_:183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "WHSTL" .
+_:183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:47 .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WIT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WIT> <http://www.w3.org/2004/02/skos/core#inScheme> <urn:us:gov:ic:cvenum:ism:cuibasic#CVEnumISMCUIBasic> .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WIT> <http://www.w3.org/2004/02/skos/core#notation> "WIT" .
 <urn:us:gov:ic:cvenum:ism:cuibasic#WIT> <http://www.w3.org/2004/02/skos/core#prefLabel> "Witness Protection. Information related to the secretive details associated with one who has testified or may testify under circumstances that require secrecy of that individual and details pertaining to that person." .
-_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "WIT" .
-_:56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "WIT" .
+_:47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

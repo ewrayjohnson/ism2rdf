@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:9",
+      "@id": "_:3",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -95,8 +95,16 @@
     },
     {
       "@id": "ismdissemicrm:CVEnumISMDissemIcrmValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:dissem:icrm#CVEnumISMDissemIcrm.",
+      "rdfs:seeAlso": {
+        "@id": "ismdissemicrm:CVEnumISMDissemIcrm"
+      },
       "owl:equivalentClass": {
-        "@id": "_:9"
+        "@id": "_:3"
       }
     },
     {

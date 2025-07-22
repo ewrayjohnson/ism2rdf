@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:8",
+      "@id": "_:7",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -1664,8 +1664,16 @@
     },
     {
       "@id": "ismcatre:CVEnumISMCATResponsibleEntityValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ismcat:responsibleentity#CVEnumISMCATResponsibleEntity.",
+      "rdfs:seeAlso": {
+        "@id": "ismcatre:CVEnumISMCATResponsibleEntity"
+      },
       "owl:equivalentClass": {
-        "@id": "_:8"
+        "@id": "_:7"
       }
     },
     {

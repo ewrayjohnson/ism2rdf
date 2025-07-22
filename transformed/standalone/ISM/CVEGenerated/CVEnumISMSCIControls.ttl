@@ -111,7 +111,8 @@ ismscicon:TK-KAND a skos:Concept ;
   skos:notation "TK-KAND" ;
   skos:prefLabel "KANDIK" .
 
-ismscicon:CVEnumISMSCIControlsValues owl:equivalentClass [
+ismscicon:CVEnumISMSCIControlsValues a rdfs:Datatype ;
+  owl:equivalentClass [
     a rdfs:Datatype ;
     owl:oneOf (
 			"BUR"
@@ -135,4 +136,7 @@ ismscicon:CVEnumISMSCIControlsValues owl:equivalentClass [
 			"TK-IDIT"
 			"TK-KAND"
 		) ;
-  ] .
+  ] ;
+  rdfs:seeAlso ismscicon:CVEnumISMSCIControls ;
+  dc:source ismscicon:CVEnumISMSCIControls ;
+  rdfs:comment "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:scicontrols#CVEnumISMSCIControls." .

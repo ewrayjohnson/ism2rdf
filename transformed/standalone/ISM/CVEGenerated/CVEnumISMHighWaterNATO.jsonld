@@ -11,7 +11,7 @@
   },
   "@graph": [
     {
-      "@id": "_:4",
+      "@id": "_:8",
       "@type": "rdfs:Datatype",
       "owl:oneOf": {
         "@list": [
@@ -51,8 +51,16 @@
     },
     {
       "@id": "ismhighwaternato:CVEnumISMHighWaterNATOValues",
+      "@type": "rdfs:Datatype",
+      "dc:source": {
+        "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
+      },
+      "rdfs:comment": "Permissible literals aligned to skos:notation in urn:us:gov:ic:cvenum:ism:HighWaterNATO#CVEnumISMHighWaterNATO.",
+      "rdfs:seeAlso": {
+        "@id": "ismhighwaternato:CVEnumISMHighWaterNATO"
+      },
       "owl:equivalentClass": {
-        "@id": "_:4"
+        "@id": "_:8"
       }
     },
     {

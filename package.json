@@ -1,16 +1,40 @@
 {
-  "node": {
-    "version": ">=18.20.3"
-  },
-  "type": "module",
   "name": "ism2rdf",
-  "devDependencies": {
-    "@types/lodash": "^4.17.16",
-    "@types/rdfjs__data-model": "^2.0.9",
-    "@types/rdfjs__serializer-jsonld-ext": "^4.0.1",
-    "@types/xml2js": "^0.4.14",
-    "typescript": "^5.5.4"
+  "version": "1.0.0",
+  "description": "Transforms Intelligence Community XSD schemas into RDF/OWL/SHACL representations with JSON-LD, Turtle, and N-Triples output.",
+  "type": "module",
+  "main": "index.ts",
+  "bin": {
+    "ism2rdf": "./bin/ism2rdf.ts"
   },
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "RDF",
+    "XSD",
+    "OWL",
+    "SHACL",
+    "SKOS",
+    "IC-CIO",
+    "JSON-LD",
+    "Turtle",
+    "ontology",
+    "semantic-web"
+  ],
+  "author": "E. W. Johnson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ewrayjohnson/ism2rdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ewrayjohnson/ism2rdf/issues"
+  },
+  "homepage": "https://github.com/ewrayjohnson/ism2rdf#readme",
   "dependencies": {
     "@entryscape/rdfjson": "^2.7.7",
     "@jeswr/pretty-turtle": "^1.6.2",
@@ -19,5 +43,18 @@
     "lodash": "^4.17.21",
     "rdf-quad": "^2.0.0",
     "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.16",
+    "@types/rdfjs__data-model": "^2.0.9",
+    "@types/rdfjs__serializer-jsonld-ext": "^4.0.1",
+    "@types/xml2js": "^0.4.14",
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.1",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

@@ -26,6 +26,7 @@ Schemas are obtained from:
 👉 **[IC CIO Technical Specifications](https://www.dni.gov/index.php/who-we-are/organizations/ic-cio/ic-technical-specifications)**
 
 Examples include:
+- `IC-ISM.xsd`
 - `IC-EDH.xsd`
 - `Tetragraph.xsd`
 
@@ -49,10 +50,45 @@ Each directory includes:
 - 🔁 Recursive `xsd:import` resolution
 - 🔍 Semantic enrichment via:
   - `skos:ConceptScheme` and `skos:Concept`
-  - `sh:pattern` for regex validation
+  - `sh:pattern` for special regex enumeration patterns
   - `owl:DatatypeProperty` with range and comment
 - 📁 Multi-format output
 - 🧠 Intelligent prefix mapping and reuse
+
+## Controlled Vocabulary Enumeration (CVE) Pattern
+
+### 🧠 Conceptual Summary
+
+The Controlled Vocabulary Enumeration (CVE) pattern connects enumerated `rdfs:Datatype` definitions with SKOS-based concept schemes. This enables:
+
+- ✅ Formal data constraints using `owl:oneOf`
+- ✅ Semantic enrichment via `skos:Concept`
+- ✅ Vocabulary traceability using `dc:source` and `rdfs:seeAlso`
+- ✅ Validatable and machine-readable instance data
+- ✅ Alignment between literal values and concept identifiers
+
+This pattern allows an `owl:DatatypeProperty` to reference a custom datatype whose valid literal values are constrained to match the `skos:notation` of `skos:Concept`s from a referenced `skos:ConceptScheme`.
+
+---
+
+### 📌 CVE Pattern Facts
+
+1. **An `owl:DatatypeProperty` exists**  
+   - It has an `rdfs:range` of a **Custom Datatype**.
+
+2. **The Custom Datatype:**
+   - Is an instance of `rdfs:Datatype`.
+   - Uses `owl:equivalentClass → owl:oneOf` to declare allowed literals.
+   - Has `dc:source` and `rdfs:seeAlso` linking it to a `skos:ConceptScheme`.
+
+3. **The `skos:ConceptScheme`:**
+   - Contains multiple `skos:Concept`s.
+   - References these concepts via `skos:hasTopConcept`.
+
+4. **Each `skos:Concept`:**
+   - Belongs to the same `skos:ConceptScheme` via `skos:inScheme`.
+   - Has a `skos:notation` with a literal value.
+   - Each literal value matches one value listed in the `owl:oneOf` of the custom datatype.
 
 ## Installation
 

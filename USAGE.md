@@ -1,108 +1,151 @@
 # Usage Guide
 
-This guide outlines how to prepare, run, and interpret the results of the IC XSD to RDF Transformer.
+This guide covers setup, source acquisition, running the transformer, and interpreting outputs.
 
 ---
 
 ## 1. Project Setup
 
-### Clone the Repository
-
 ```bash
-git clone https://github.com/ewrayjohnson/ic-xsd-to-rdf.git
-cd ic-xsd-to-rdf
-```
-
-### Install Dependencies
-
-```bash
+git clone https://github.com/ewrayjohnson/ism2rdf.git
+cd ism2rdf
 npm install
 ```
 
-## 2. Preparing Input Files
+---
 
-Schemas should be placed under:
+## 2. Providing Authoritative Sources
 
-```
-.ciartifacts/schemas/{SchemaGroup}/
-```
+Authoritative source files (XSD schemas and Schematron rules) are **not stored in this repository**. You must supply a source on each run via one of these mechanisms, in order of precedence:
 
-For example:
-
-```
-.ciartifacts/schemas/IC-EDH/IC-EDH.xsd
-.ciartifacts/schemas/ISMCAT/Tetragraph.xsd
-```
-
-### Prefix Configuration
-
-Define known prefixes in:
-
-```
-.ciartifacts/config/defaultPrefixes.json
-```
-
-Example:
-
-```json
-{
-  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-  "owl": "http://www.w3.org/2002/07/owl#",
-  "xsd": "http://www.w3.org/2001/XMLSchema#",
-  "skos": "http://www.w3.org/2004/02/skos/core#",
-  "dc": "http://purl.org/dc/elements/1.1/",
-  "sh": "http://www.w3.org/ns/shacl#"
-}
-```
-
-## 3. Executing the Transformation
-
-Run the transformation script:
+### Option A — CLI argument
 
 ```bash
-node transform.js
+# URL (downloaded and cached automatically)
+npm start -- --source https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip --source-version Dec2022
+
+# Local ZIP
+npm start -- --source /path/to/ISM-Public-Standalone.zip --source-version Dec2022
+
+# Already-extracted directory
+npm start -- --source /path/to/ISM --source-version Dec2022
 ```
 
-Or, if you've set up an entry in `package.json`:
+### Option B — Environment variable
+
+```bash
+export ISM2RDF_SOURCE=https://www.dni.gov/.../ISM-Public-Standalone.zip
+export ISM2RDF_SOURCE_VERSION=Dec2022
+npm start
+```
+
+### Option C — `.env` file (create at project root)
+
+```ini
+ISM2RDF_SOURCE=https://www.dni.gov/.../ISM-Public-Standalone.zip
+ISM2RDF_SOURCE_VERSION=Dec2022
+```
+
+Then just:
 
 ```bash
 npm start
 ```
 
-## 4. Output Directory Structure
+### Option D — Pre-staged local folders (no source argument)
 
-Upon success, the following directory will be created:
+If `.ciartifacts/Schema` and `.ciartifacts/Schematron` are already populated from a previous run, the transformer reuses them directly:
 
+```bash
+npm start
 ```
-transformed/
-├── standalone/
-│   └── [schema-name].{jsonld,ttl,nt}
-├── convenience/
-│   └── [schema-name].{jsonld,ttl,nt}
-```
-
-- **standalone**: Independent graphs with imports declared.
-- **convenience**: Flattened graphs with imported content inlined.
-
-Each schema will be exported as:
-
-- `.jsonld`: Compact JSON-LD with reverse prefix context
-- `.ttl`: Human-readable Turtle (including pretty RDF lists)
-- `.nt`: N-Triples
-
-## 5. Customization Options
-
-- Add or modify schemas under `.ciartifacts/schemas/`
-- Customize defaultPrefixes.json for known namespaces
-- Extend the script to support additional metadata, SHACL shapes, or class axioms
-
-## 6. Troubleshooting
-
-- Ensure all referenced schemaLocation files exist relative to the importing XSD
-- Use Node.js v18+ for full ES module compatibility
-- Check the console for recursive import issues or malformed XSDs
 
 ---
 
-For any questions or enhancements, please submit a GitHub Issue or Pull Request.
+## 3. Source Acquisition Behaviour
+
+When a `--source` is given, the transformer:
+
+1. **Detects source type** (URL / ZIP / directory) automatically, or as overridden by `--source-type`.
+2. **Downloads** (URL only) to `.ciartifacts/downloads/`, using HTTP conditional requests (`If-None-Match` / `If-Modified-Since`) to avoid re-downloading unchanged content.
+3. **Extracts** only the required subtrees from a ZIP:
+   - `ISM/Schema/` → `.ciartifacts/Schema/`
+   - `ISM/Schematron/` → `.ciartifacts/Schematron/`
+4. **Skips extraction** if a `.ciartifacts/source-manifest.json` proves nothing changed since the last run.
+5. **Writes a manifest** recording source, version, hashes, HTTP metadata, and directory fingerprints for the next run.
+
+Use `--force-refresh` to override the freshness check and always re-download/re-extract.
+
+---
+
+## 4. All CLI Options
+
+| Option | Env variable | Description |
+|--------|-------------|-------------|
+| `--source <value>` | `ISM2RDF_SOURCE` | URL, ZIP path, or directory |
+| `--source-type <auto\|url\|zip\|dir>` | `ISM2RDF_SOURCE_TYPE` | Override auto-detection |
+| `--source-version <label>` | `ISM2RDF_SOURCE_VERSION` | Version label — also names the output subfolder |
+| `--force-refresh` | `ISM2RDF_FORCE_REFRESH=true` | Re-download and re-extract unconditionally |
+
+---
+
+## 5. Output Structure
+
+Outputs are written under a **version-named subdirectory** so different source releases never overwrite each other. When no version is provided the subfolder is named `current`.
+
+```
+out/transformed/
+└── <version>/                  # e.g. Dec2022, or "current"
+    ├── standalone/             # Each schema as its own owl:Ontology with owl:imports
+    │   └── ISM/
+    │       ├── IC-ISM.jsonld
+    │       ├── IC-ISM.ttl
+    │       ├── IC-ISM.nt
+    │       └── CVEGenerated/
+    ├── convenience/            # Same schemas with all imports inlined
+    └── schematron/
+        ├── standalone/         # Each .sch file as its own RDF graph
+        │   └── ISM/
+        │       ├── ISM_XML.jsonld
+        │       ├── ISM_XML.ttl
+        │       ├── ISM_XML.nt
+        │       ├── Lib/
+        │       └── Rules/
+        └── convenience/        # Schematron graphs with all includes merged
+```
+
+Each file is emitted in three formats:
+- `.jsonld` — Compact JSON-LD
+- `.ttl` — Human-readable Turtle
+- `.nt` — N-Triples
+
+The entire `out/` tree is excluded from Git.
+
+---
+
+## 6. Prefix Configuration
+
+Namespace prefixes used across all outputs are configured in:
+
+```
+.ciartifacts/config/defaultPrefixes.json
+```
+
+This file is tracked in Git and safe to edit.
+
+---
+
+## 7. Troubleshooting
+
+| Symptom | Likely cause | Fix |
+|---------|-------------|-----|
+| `No source provided` error | No `--source` and `.ciartifacts/Schema` or `Schematron` missing | Supply `--source` or populate the folders |
+| `ZIP source does not exist` | Path passed to `--source` is wrong | Use an absolute path or relative to project root |
+| `Could not locate required Schema/Schematron prefixes in ZIP` | Non-standard ZIP layout | Set `--source-type dir` and point to the extracted folder instead |
+| Stale outputs after source update | Freshness check reused old files | Re-run with `--force-refresh` |
+| Node.js module errors | Outdated Node.js | Use Node.js v18 or later |
+
+---
+
+For questions or contributions, open a [GitHub Issue](https://github.com/ewrayjohnson/ism2rdf/issues) or Pull Request.
 

@@ -1,0 +1,12 @@
+# Keep this file tracked
+!.gitignore
+
+# Authoritative source payloads (do not commit)
+*.zip
+Schema/**
+schemas/**
+Schematron/**
+
+# Optional source staging areas for other domains
+source/**
+downloads/**

@@ -1,9 +1,0 @@
-@prefix icid: <urn:us:gov:ic:id#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-<urn:us:gov:ic:IC-ID:IC-ID> a owl:Ontology .
-
-icid:identifier a owl:DatatypeProperty ;
-  rdfs:range icid:IcIdTypeValues ;
-  rdfs:comment "Attribute to hold the IC-ID of the data object." .

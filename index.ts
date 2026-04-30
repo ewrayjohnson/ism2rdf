@@ -1,7 +1,6 @@
-import { execFileSync } from 'child_process';
+﻿import { execFileSync } from 'child_process';
 import { createHash } from 'crypto';
 import { Graph, namespaces } from '@entryscape/rdfjson';
-import { write } from '@jeswr/pretty-turtle';
 import rdf from '@rdfjs/data-model';
 import SerializerJsonld from '@rdfjs/serializer-jsonld-ext';
 import type { Literal, NamedNode, Quad } from '@rdfjs/types';
@@ -27,6 +26,7 @@ const RDF_URI = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
 const OWL_URI = 'http://www.w3.org/2002/07/owl#';
 const RDFS_URI = 'http://www.w3.org/2000/01/rdf-schema#';
 const DC_URI = 'http://purl.org/dc/elements/1.1/';
+const DCTERMS_URI = 'http://purl.org/dc/terms/';
 const SHACL_URI = 'http://www.w3.org/ns/shacl#';
 const SKOS_URI = 'http://www.w3.org/2004/02/skos/core#';
 const XSD_EXTENSION = '.xsd';
@@ -38,19 +38,13 @@ const SCHEMATRON_DIR_NAME = 'Schematron';
 const SCHEMA_DIR = path.join(INPUT_DIR, SCHEMA_DIR_NAME);
 const LEGACY_SCHEMA_DIR = path.join(INPUT_DIR, LEGACY_SCHEMA_DIR_NAME);
 const SCHEMATRON_DIR = path.join(INPUT_DIR, SCHEMATRON_DIR_NAME);
-const DOWNLOADS_DIR = path.join(INPUT_DIR, 'downloads');
-const SOURCE_STAGE_DIR = path.join(INPUT_DIR, 'source');
-const SOURCE_MANIFEST_PATH = path.join(INPUT_DIR, 'source-manifest.json');
 const OUTPUT_BASE_DIR = path.join(WORKSPACE_ROOT, 'out', 'transformed');
+const OUTPUT_MANIFESTS_DIR = path.join(OUTPUT_BASE_DIR, 'manifests');
 const RDF_TYPE = 'rdf:type';
 const ONTOLOGY_TYPE = 'owl:Ontology';
 const IMPORTS_PROPERTY = 'owl:imports';
 const URI_PREFIX = 'urn:us:gov:ic';
 const SCHEMATRON_NS_URI = 'urn:us:gov:ic:ism2rdf:schematron#';
-const ENV_SOURCE_KEY = 'ISM2RDF_SOURCE';
-const ENV_SOURCE_TYPE_KEY = 'ISM2RDF_SOURCE_TYPE';
-const ENV_SOURCE_VERSION_KEY = 'ISM2RDF_SOURCE_VERSION';
-const ENV_FORCE_REFRESH_KEY = 'ISM2RDF_FORCE_REFRESH';
 
 type Import = {
   namespace: string;
@@ -71,37 +65,36 @@ type SchematronPackages = {
   convienence: Package;
 }
 
-type SourceKind = 'url' | 'zip' | 'dir';
-
-type SourceOptions = {
-  source?: string;
-  sourceType?: 'auto' | SourceKind;
-  sourceVersion?: string;
-  forceRefresh: boolean;
-}
-
-type SourceManifest = {
-  source: string;
-  sourceKind: SourceKind;
-  sourceVersion?: string;
-  cachedFilePath?: string;
-  cachedFileHash?: string;
-  cachedFileSize?: number;
-  cachedFileMtimeMs?: number;
-  etag?: string;
-  lastModified?: string;
-  schemaFingerprint?: string;
-  schematronFingerprint?: string;
-  extractedAt: string;
-}
-
 type PrepareSourceResult = {
   schemaRoot: string;
   schematronRoot: string;
-  manifest?: SourceManifest;
+}
+
+type TrigManifestEntry = {
+  graphName: string;
+  outputPath: string;
+  relativePath: string;
+  basename: string;
+  category: 'Schema';
+  mode: 'standalone' | 'convenience';
+  createdAt: string;
+}
+
+type TdfManifestEntry = {
+  graphName: string;
+  outputPath: string;
+  payloadPath: string;
+  payloadSha256: string;
+  relativePath: string;
+  basename: string;
+  category: 'Schema';
+  mode: 'standalone' | 'convenience';
+  createdAt: string;
 }
 
 let blankIndex = 0;
+const trigManifestEntries: TrigManifestEntry[] = [];
+const tdfManifestEntries: TdfManifestEntry[] = [];
 
 (async () => {
   const defaultPrefixes = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, 'config', 'defaultPrefixes.json'), 'utf8'));
@@ -109,15 +102,11 @@ let blankIndex = 0;
     namespaces.add(prefix, iri);
   }
 
-  const sourceOptions = resolveSourceOptions(process.argv.slice(2));
-  const sourceResult = await prepareAuthoritativeSources(sourceOptions);
-  if (sourceResult.manifest) {
-    fs.writeFileSync(SOURCE_MANIFEST_PATH, JSON.stringify(sourceResult.manifest, null, 2));
-  }
+  const sourceResult = await prepareAuthoritativeSources();
 
   const schemaRoot = sourceResult.schemaRoot;
   const schematronRoot = sourceResult.schematronRoot;
-  const outputDir = resolveOutputDir(sourceOptions.sourceVersion);
+  const outputDir = resolveOutputDir();
   console.log(`Output directory: ${outputDir}`);
 
   const processed: Map<string, Packages> = new Map();
@@ -135,6 +124,8 @@ let blankIndex = 0;
     await input(schemaFile, processed, processedSchematron);
   }
 
+  writeOutputManifests();
+
   console.log(`Processed ${processed.size} XSD documents`);
   console.log(`Processed ${processedSchematron.size} Schematron documents`);
 
@@ -150,11 +141,11 @@ let blankIndex = 0;
       p = {
         standalone: {
           g: new Graph({}),
-          namespaces: {},
+          namespaces: { [`${URI_PREFIX}:`]: 'ic' },
           imports: {},
         }, convienence: {
           g: new Graph({}),
-          namespaces: {},
+          namespaces: { [`${URI_PREFIX}:`]: 'ic' },
           imports: {},
         }
       };
@@ -164,6 +155,8 @@ let blankIndex = 0;
       standalone.g.add(ontologyUri, RDF_TYPE, ONTOLOGY_TYPE);
       const text = fs.readFileSync(inputFilepath, 'utf8');
       const json = await xml2js.parseStringPromise(text);
+      // Emit ontology-level metadata after the JSON is available but before per-construct
+      // processing so the triples land in every output that includes the ontology node.
       for (const entry of Object.entries(json)) {
         if (entry[0].endsWith(':schema')) {
           const schema: any = entry[1];
@@ -175,6 +168,12 @@ let blankIndex = 0;
               let ns: string = e[1];
               if (ns.startsWith('urn:')) {
                 ns += '#';
+              }
+              // Skip namespace URIs that contain '-StopBrowserRendering' — a deliberate
+              // fake suffix used in IC XSDs (e.g. xhtml) to prevent browser rendering.
+              // Such URIs are never used as RDF namespaces and produce invalid prefix decls.
+              if (ns.includes('-StopBrowserRendering')) {
+                return acc;
               }
               acc[ns] = (e[0] as string).split(':')[1];
             }
@@ -195,6 +194,70 @@ let blankIndex = 0;
           const idPrefix = `${defaultNs}`;
           const xsdPrefix = standalone.namespaces[XML_SCHEMA_URI];
           standalone.namespaces[`${XML_SCHEMA_URI}#`] = xsdPrefix;
+
+          // Map schema-level annotation to rdfs:comment on the owl:Ontology node.
+          // xml2js parses xs:annotation/xs:documentation as schema[xsdPrefix+':annotation'][0][...].
+          // The documentation may contain HTML (xhtml:p) so we use removeWhitespace to flatten it.
+          const schemaAnnotationDoc = schema[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
+          if (schemaAnnotationDoc) {
+            standalone.namespaces[RDFS_URI] = 'rdfs';
+            for (const doc of (Array.isArray(schemaAnnotationDoc) ? schemaAnnotationDoc : [schemaAnnotationDoc])) {
+              const text = removeWhitespace(doc);
+              if (text) {
+                standalone.g.addL(ontologyUri, 'rdfs:comment', text);
+              }
+            }
+          }
+
+          // Map xs:schema/@version to owl:versionInfo on the ontology node.
+          const schemaVersion = $['version'];
+          if (schemaVersion) {
+            standalone.namespaces[OWL_URI] = 'owl';
+            standalone.g.addL(ontologyUri, 'owl:versionInfo', schemaVersion);
+          }
+
+          // Map ISM self-marking attributes on the xs:schema root (e.g. ism:createDate,
+          // ism:DESVersion, ism:ISMCATCESVersion, ism:classification, ism:ownerProducer,
+          // ism:compliesWith) are mapped to standard predicates on the ontology node.
+          standalone.namespaces[DC_URI] = 'dc';
+          standalone.namespaces[DCTERMS_URI] = 'dcterms';
+          const ismCreateDate = $['ism:createDate'];
+          if (ismCreateDate) {
+            standalone.g.addL(ontologyUri, 'dc:date', ismCreateDate);
+          }
+          const ismDESVersion = $['ism:DESVersion'];
+          if (ismDESVersion) {
+            standalone.namespaces[OWL_URI] = 'owl';
+            standalone.g.addL(ontologyUri, 'owl:versionInfo', `DESVersion:${ismDESVersion}`);
+          }
+          const ismCESVersion = $['ism:ISMCATCESVersion'];
+          if (ismCESVersion) {
+            standalone.namespaces[OWL_URI] = 'owl';
+            standalone.g.addL(ontologyUri, 'owl:versionInfo', `ISMCATCESVersion:${ismCESVersion}`);
+          }
+          const ismClassification = $['ism:classification'];
+          if (ismClassification) {
+            standalone.g.addL(ontologyUri, 'dc:rights', ismClassification);
+          }
+          const ismOwnerProducer = $['ism:ownerProducer'];
+          if (ismOwnerProducer) {
+            standalone.g.addL(ontologyUri, 'dc:publisher', ismOwnerProducer);
+          }
+          const ismCompliesWith = $['ism:compliesWith'];
+          if (ismCompliesWith) {
+            const compliesNamespaceRaw = $['xmlns:ismcomplies'];
+            if (compliesNamespaceRaw) {
+              const compliesNamespace = String(compliesNamespaceRaw).endsWith('#')
+                ? String(compliesNamespaceRaw)
+                : `${String(compliesNamespaceRaw)}#`;
+              standalone.namespaces[compliesNamespace] = standalone.namespaces[compliesNamespace] ?? 'ismcomplies';
+              standalone.g.add(ontologyUri, 'dcterms:conformsTo', `${compliesNamespace}${ismCompliesWith}`);
+            } else {
+              // Fallback: preserve the value even if the expected namespace alias is absent.
+              standalone.g.addL(ontologyUri, 'dcterms:conformsTo', String(ismCompliesWith));
+            }
+          }
+
           if (xsdPrefix) {
             const elements = schema[`${xsdPrefix}:element`];
             const attributes = schema[`${xsdPrefix}:attribute`];
@@ -205,27 +268,36 @@ let blankIndex = 0;
                   if ($) {
                     const attributeName = $.name;
                     let attributeType = $.type;
-                    if (attributeType) {
-                      if (attributeName) {
-                        const attributeId = `${idPrefix}${attributeName}`;
-                        standalone.namespaces[OWL_URI] = 'owl';
-                        standalone.namespaces[RDFS_URI] = 'rdfs';
-                        standalone.namespaces[RDF_URI] = 'rdf';
-                        standalone.namespaces[DC_URI] = 'dc';
-                        standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
-                        if (attributeType.startsWith(`${xsdPrefix}:`)) {
-                          namespaces.add(xsdPrefix, `${XML_SCHEMA_URI}#`);
-                        }
-                        else {
-                          attributeType += 'Values';
-                        }
-                        standalone.g.add(attributeId, 'rdfs:range', `${attributeType}`);
-                        const documentation = anAttribute[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
-                        if (documentation) {
-                          for (const aComment of (Array.isArray(documentation) ? documentation : [documentation])) {
-                            const comment = removeWhitespace(aComment);
-                            standalone.g.addL(attributeId, 'rdfs:comment', comment);
-                          }
+
+                    // When no type="..." attribute is present the range is expressed as an
+                    // inline xs:simpleType child. Resolve its xs:restriction/@base as the range type.
+                    if (!attributeType) {
+                      const inlineSimpleType = anAttribute[`${xsdPrefix}:simpleType`]?.[0];
+                      const inlineBase = inlineSimpleType?.[`${xsdPrefix}:restriction`]?.[0]?.['$']?.base;
+                      if (inlineBase) {
+                        attributeType = inlineBase;
+                      }
+                    }
+
+                    if (attributeType && attributeName) {
+                      const attributeId = `${idPrefix}${attributeName}`;
+                      standalone.namespaces[OWL_URI] = 'owl';
+                      standalone.namespaces[RDFS_URI] = 'rdfs';
+                      standalone.namespaces[RDF_URI] = 'rdf';
+                      standalone.namespaces[DC_URI] = 'dc';
+                      standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
+                      if (attributeType.startsWith(`${xsdPrefix}:`)) {
+                        namespaces.add(xsdPrefix, `${XML_SCHEMA_URI}#`);
+                      }
+                      else {
+                        attributeType += 'Values';
+                      }
+                      standalone.g.add(attributeId, 'rdfs:range', `${attributeType}`);
+                      const documentation = anAttribute[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
+                      if (documentation) {
+                        for (const aComment of (Array.isArray(documentation) ? documentation : [documentation])) {
+                          const comment = removeWhitespace(aComment);
+                          standalone.g.addL(attributeId, 'rdfs:comment', comment);
                         }
                       }
                     }
@@ -235,9 +307,117 @@ let blankIndex = 0;
                 }
               }
             }
+            // Emit top-level xs:element declarations as owl:Class resources.
+            // Each element is typed with the named complexType or simpleType it references,
+            // expressed as rdfs:subClassOf when the type is local (no namespace prefix).
+            if (elements) {
+              standalone.namespaces[OWL_URI] = 'owl';
+              standalone.namespaces[RDFS_URI] = 'rdfs';
+              for (const anElement of elements) {
+                const elemAttrs = anElement?.['$'];
+                if (!elemAttrs?.name) {
+                  continue;
+                }
+                const elemId = `${idPrefix}${elemAttrs.name}`;
+                standalone.g.add(elemId, RDF_TYPE, 'owl:Class');
+                const elemDoc = anElement[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
+                if (elemDoc) {
+                  for (const d of (Array.isArray(elemDoc) ? elemDoc : [elemDoc])) {
+                    const comment = removeWhitespace(d);
+                    if (comment) {
+                      standalone.g.addL(elemId, 'rdfs:comment', comment);
+                    }
+                  }
+                }
+                if (elemAttrs.type) {
+                  // Strip the namespace prefix to get the local type name,
+                  // then form the type's URI in the same default namespace.
+                  const colonIdx = elemAttrs.type.indexOf(':');
+                  const typeLocalName = colonIdx >= 0 ? elemAttrs.type.substring(colonIdx + 1) : elemAttrs.type;
+                  standalone.g.add(elemId, 'rdfs:subClassOf', `${idPrefix}${typeLocalName}`);
+                }
+              }
+            }
+
+            // Emit xs:complexType declarations as owl:Class resources.
+            // simpleContent/complexContent extensions are mapped to rdfs:subClassOf the base class.
+            const complexTypes = schema[`${xsdPrefix}:complexType`];
+            if (complexTypes) {
+              standalone.namespaces[OWL_URI] = 'owl';
+              standalone.namespaces[RDFS_URI] = 'rdfs';
+              for (const aComplexType of complexTypes) {
+                const ctAttrs = aComplexType?.['$'];
+                if (!ctAttrs?.name) {
+                  continue;
+                }
+                const ctId = `${idPrefix}${ctAttrs.name}`;
+                standalone.g.add(ctId, RDF_TYPE, 'owl:Class');
+                const ctDoc = aComplexType[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
+                if (ctDoc) {
+                  for (const d of (Array.isArray(ctDoc) ? ctDoc : [ctDoc])) {
+                    const comment = removeWhitespace(d);
+                    if (comment) {
+                      standalone.g.addL(ctId, 'rdfs:comment', comment);
+                    }
+                  }
+                }
+                // Resolve xs:simpleContent/xs:extension and xs:complexContent/xs:extension @base.
+                const contentNode = aComplexType[`${xsdPrefix}:simpleContent`]?.[0]
+                  ?? aComplexType[`${xsdPrefix}:complexContent`]?.[0];
+                const extensionBase = contentNode?.[`${xsdPrefix}:extension`]?.[0]?.['$']?.base
+                  ?? contentNode?.[`${xsdPrefix}:restriction`]?.[0]?.['$']?.base;
+                if (extensionBase) {
+                  const colonIdx = extensionBase.indexOf(':');
+                  const baseLocalName = colonIdx >= 0 ? extensionBase.substring(colonIdx + 1) : extensionBase;
+                  standalone.g.add(ctId, 'rdfs:subClassOf', `${idPrefix}${baseLocalName}`);
+                }
+              }
+            }
+
+            // Emit xs:attributeGroup declarations as owl:Class grouping nodes.
+            // Member attributes (direct and via nested attributeGroup refs) are linked via
+            // rdfs:member so consumers can navigate the group structure.
+            const attributeGroups = schema[`${xsdPrefix}:attributeGroup`];
+            if (attributeGroups) {
+              standalone.namespaces[OWL_URI] = 'owl';
+              standalone.namespaces[RDFS_URI] = 'rdfs';
+              for (const anAttrGroup of attributeGroups) {
+                const agAttrs = anAttrGroup?.['$'];
+                if (!agAttrs?.name) {
+                  continue;
+                }
+                const agId = `${idPrefix}${agAttrs.name}`;
+                standalone.g.add(agId, RDF_TYPE, 'owl:Class');
+                const agDoc = anAttrGroup[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
+                if (agDoc) {
+                  for (const d of (Array.isArray(agDoc) ? agDoc : [agDoc])) {
+                    const comment = removeWhitespace(d);
+                    if (comment) {
+                      standalone.g.addL(agId, 'rdfs:comment', comment);
+                    }
+                  }
+                }
+                // Link member attributes as rdfs:member of this group.
+                for (const memberAttr of asArray(anAttrGroup[`${xsdPrefix}:attribute`])) {
+                  const memberName = memberAttr?.['$']?.name;
+                  if (memberName) {
+                    standalone.g.add(agId, 'rdfs:member', `${idPrefix}${memberName}`);
+                  }
+                }
+                // Link nested attributeGroup references by their @ref name.
+                for (const refGroup of asArray(anAttrGroup[`${xsdPrefix}:attributeGroup`])) {
+                  const refName = refGroup?.['$']?.ref;
+                  if (refName) {
+                    const colonIdx = refName.indexOf(':');
+                    const refLocalName = colonIdx >= 0 ? refName.substring(colonIdx + 1) : refName;
+                    standalone.g.add(agId, 'rdfs:subClassOf', `${idPrefix}${refLocalName}`);
+                  }
+                }
+              }
+            }
+
             const imports = schema[`${xsdPrefix}:import`];
-            if (imports) {
-              const all = imports.map((e: any) => e.$ as Import);
+            if (imports) {              const all = imports.map((e: any) => e.$ as Import);
               const dirname = path.dirname(inputFilepath);
               const merged = new Set();
               for (const importSpec of all) {
@@ -262,19 +442,17 @@ let blankIndex = 0;
                     const enums = aRestriction[`${xsdPrefix}:enumeration`];
                     if (enums) {
                       for (const anEnum of enums) {
+                        const notation = anEnum.$.value;
+                        const conceptId = notation.startsWith(URI_PREFIX) ? notation : `${idPrefix}${notation}`;
                         const annotation = anEnum[`${xsdPrefix}:annotation`];
                         const documentation = annotation && annotation[0][`${xsdPrefix}:documentation`];
+                        // Always emit the concept even when documentation is absent;
+                        // only skip the prefLabel assignment, and warn so the gap is visible.
                         if (!documentation) {
-                          continue;
+                          console.warn(`[WARN] Enumeration value "${notation}" in ${path.basename(inputFilepath)} has no documentation — concept emitted without prefLabel.`);
                         }
-                        const notation = anEnum.$.value;
-                        const prefLabel = removeWhitespace(documentation[0]);
-                        const conceptId = notation.startsWith(URI_PREFIX) ? notation : `${idPrefix}${notation}`;
-                        concepts.push({
-                          notation,
-                          prefLabel,
-                          conceptId
-                        });
+                        const prefLabel = documentation ? removeWhitespace(documentation[0]) : undefined;
+                        concepts.push({ notation, prefLabel, conceptId });
                       }
                       enumSource = inSimpleType;
                     } else if (aRestriction[`${xsdPrefix}:simpleType`] ?? [0].hasOwnProperty(`${xsdPrefix}:list`)) {
@@ -302,10 +480,30 @@ let blankIndex = 0;
                 handleRestrictions(aSimpleType);
                 const union = aSimpleType[`${xsdPrefix}:union`];
                 if (union) {
-                  const types = union[0][`${xsdPrefix}:simpleType`];
-                  if (types) {
-                    for (const aUnionSimpleType of types) {
+                  // Handle nested xs:simpleType children inside xs:union.
+                  const nestedTypes = union[0][`${xsdPrefix}:simpleType`];
+                  if (nestedTypes) {
+                    for (const aUnionSimpleType of nestedTypes) {
                       handleRestrictions(aUnionSimpleType);
+                    }
+                  }
+                  // Handle xs:union/@memberTypes — a space-delimited list of QName references
+                  // to named simpleTypes already in scope. Look each up and recurse into it.
+                  const memberTypesAttr: string | undefined = union[0]?.['$']?.memberTypes;
+                  if (memberTypesAttr) {
+                    for (const qname of memberTypesAttr.trim().split(/\s+/)) {
+                      // Skip XSD built-in types (xs:date, xs:string, etc.) — they carry no enumeration.
+                      if (qname.startsWith(`${xsdPrefix}:`)) {
+                        continue;
+                      }
+                      // Resolve prefix:localName using the namespaces collected for this schema.
+                      const colonIdx = qname.indexOf(':');
+                      const localName = colonIdx >= 0 ? qname.substring(colonIdx + 1) : qname;
+                      // Find the named simpleType in this schema's own simpleType list.
+                      const referencedType = simpleTypes?.find((st: any) => st?.['$']?.name === localName);
+                      if (referencedType) {
+                        handleRestrictions(referencedType);
+                      }
                     }
                   }
                 }
@@ -348,10 +546,16 @@ let blankIndex = 0;
                   rest = list;
                 } else if (aConcept.pattern) {
                   standalone.namespaces[SHACL_URI] = 'sh';
+                  const shapeId = `${aConcept.conceptId}:Shape`;
+                  standalone.g.add(shapeId, RDF_TYPE, 'sh:NodeShape');
+                  standalone.g.add(shapeId, 'sh:targetNode', aConcept.conceptId);
+
                   const restriction = standalone.g.addL(null, 'sh:pattern', aConcept.pattern);
-                  const blank = { type: 'bnode', value: restriction._s };
+                  standalone.g.add(restriction._s, RDF_TYPE, 'sh:PropertyShape');
                   standalone.g.add(restriction._s, 'sh:path', 'skos:notation');
-                  standalone.g.add(aConcept.conceptId, 'sh:property', blank);
+
+                  const blank = { type: 'bnode', value: restriction._s };
+                  standalone.g.add(shapeId, 'sh:property', blank);
                 }
                 if (aConcept.prefLabel) {
                   standalone.g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.prefLabel);
@@ -369,20 +573,28 @@ let blankIndex = 0;
 
             convienence.g.addAll(standalone.g);
             Object.assign(convienence.namespaces, standalone.namespaces);
-            await writeGraph(convienence, path.join(outputDir, 'convenience'));
+            await writeGraph(convienence, path.join(outputDir, 'Schema', 'convenience'), 'convenience');
 
-            Object.keys(standalone.imports).forEach((uri) => {
-              const importUri = 'urn:us:gov:ic:' + uri.replace(/\.\w+$/, '.jsonld');
-              standalone.g.add(ontologyUri, IMPORTS_PROPERTY, importUri);
+            Object.keys(standalone.imports).forEach((schemaLocation) => {
+              // Derive the import's ontology URI the same way the main ontologyUri is built
+              // (URI_PREFIX + path relative to schemaRoot with path separators replaced by colons)
+              // rather than splicing the raw schemaLocation string, which produced broken URIs like
+              // urn:us:gov:ic:../ISMCAT/Tetragraph.jsonld.
+              const [importAbsPath] = standalone.imports[schemaLocation];
+              const importOntologyUri = URI_PREFIX + importAbsPath
+                .substring(0, importAbsPath.lastIndexOf('.xsd'))
+                .substring(schemaRoot.length)
+                .replaceAll(path.sep, ':');
+              standalone.g.add(ontologyUri, IMPORTS_PROPERTY, importOntologyUri);
             });
-            await writeGraph(standalone, path.join(outputDir, 'standalone'));
+            await writeGraph(standalone, path.join(outputDir, 'Schema', 'standalone'), 'standalone');
 
             const schematronPath = discoverSchematronPath(text, inputFilepath, schematronRoot);
             if (schematronPath) {
               await inputSchematron(schematronPath, schematronRoot, outputDir, processedSchematron);
             }
 
-            async function writeGraph(p: Package, outputDir: string) {
+            async function writeGraph(p: Package, outputDir: string, mode: 'standalone' | 'convenience') {
               const context = _.invert(p.namespaces);
               if (!fs.existsSync(outputDir)) {
                 fs.mkdirSync(outputDir, { recursive: true });
@@ -409,28 +621,42 @@ let blankIndex = 0;
                 prettyPrint: true
               });
 
+              let pushedXsd = false;
               const input = new Readable({
                 objectMode: true,
                 read: () => {
-                  quads.forEach(quad => {
-                    input.push(quad);
-                  })
-                  input.push(null);
+                  if (!pushedXsd) {
+                    pushedXsd = true;
+                    quads.forEach(quad => { input.push(quad); });
+                    input.push(null);
+                  }
                 }
               })
               const jsonld: string = await getStream(jsonldSerializer.import(input) as AnyStream);
               const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
               fs.writeFileSync(jsonldOutputFilepath, jsonld);
 
-              let turtle: string = await write(quads, { prefixes: context });
-              // due to a bug in the turtle writer, we need to convert rdf lists to 
-              turtle = convertRdfListToTurtleList(turtle);
+              const turtle = writeTurtleFast(quads, context);
               const turtleOutputFilepath = path.join(outputDir, `${basename}.ttl`);
               fs.writeFileSync(turtleOutputFilepath, turtle);
 
               const triples = triplesToString(quads);
               const triplesOutputFilepath = path.join(outputDir, `${basename}.nt`);
               fs.writeFileSync(triplesOutputFilepath, triples);
+
+              const graphName = mode === 'standalone'
+                ? `${ontologyUri}:graph:standalone`
+                : `${ontologyUri}:graph:convenience`;
+              writeTrigAndTdfArtifacts(
+                quads,
+                context,
+                graphName,
+                outputDir,
+                basename,
+                relative,
+                'Schema',
+                mode,
+              );
             }
           }
         }
@@ -456,442 +682,38 @@ let blankIndex = 0;
   process.exit(1);
 });
 
-function resolveOutputDir(sourceVersion: string | undefined): string {
-  const versionSegment = sourceVersion
-    ? sourceVersion.replace(/[^a-zA-Z0-9._-]/g, '_')
-    : 'current';
-  return path.join(OUTPUT_BASE_DIR, versionSegment);
+/** Returns the root directory under which all transformed RDF artefacts are written. */
+function resolveOutputDir(): string {
+  return OUTPUT_BASE_DIR;
 }
 
-function resolveSourceOptions(args: string[]): SourceOptions {
-  const envFileValues = parseDotEnv(path.join(WORKSPACE_ROOT, '.env'));
-
-  let cliSource: string | undefined;
-  let cliSourceType: SourceOptions['sourceType'];
-  let cliSourceVersion: string | undefined;
-  let cliForceRefresh = false;
-
-  for (let i = 0; i < args.length; i += 1) {
-    const arg = args[i];
-    if (arg === '--force-refresh') {
-      cliForceRefresh = true;
-      continue;
-    }
-    if (arg.startsWith('--source=')) {
-      cliSource = arg.substring('--source='.length);
-      continue;
-    }
-    if (arg === '--source' && args[i + 1]) {
-      cliSource = args[i + 1];
-      i += 1;
-      continue;
-    }
-    if (arg.startsWith('--source-type=')) {
-      cliSourceType = arg.substring('--source-type='.length) as SourceOptions['sourceType'];
-      continue;
-    }
-    if (arg === '--source-type' && args[i + 1]) {
-      cliSourceType = args[i + 1] as SourceOptions['sourceType'];
-      i += 1;
-      continue;
-    }
-    if (arg.startsWith('--source-version=')) {
-      cliSourceVersion = arg.substring('--source-version='.length);
-      continue;
-    }
-    if (arg === '--source-version' && args[i + 1]) {
-      cliSourceVersion = args[i + 1];
-      i += 1;
-    }
-  }
-
-  const source = cliSource
-    ?? process.env[ENV_SOURCE_KEY]
-    ?? envFileValues[ENV_SOURCE_KEY];
-  const sourceType = cliSourceType
-    ?? (process.env[ENV_SOURCE_TYPE_KEY] as SourceOptions['sourceType'] | undefined)
-    ?? (envFileValues[ENV_SOURCE_TYPE_KEY] as SourceOptions['sourceType'] | undefined)
-    ?? 'auto';
-  const sourceVersion = cliSourceVersion
-    ?? process.env[ENV_SOURCE_VERSION_KEY]
-    ?? envFileValues[ENV_SOURCE_VERSION_KEY];
-  const forceRefresh = cliForceRefresh
-    || toBoolean(process.env[ENV_FORCE_REFRESH_KEY])
-    || toBoolean(envFileValues[ENV_FORCE_REFRESH_KEY]);
-
-  return {
-    source,
-    sourceType,
-    sourceVersion,
-    forceRefresh,
-  };
-}
-
-async function prepareAuthoritativeSources(options: SourceOptions): Promise<PrepareSourceResult> {
+async function prepareAuthoritativeSources(): Promise<PrepareSourceResult> {
   const existingSchemaDir = fs.existsSync(SCHEMA_DIR)
     ? SCHEMA_DIR
     : fs.existsSync(LEGACY_SCHEMA_DIR)
       ? LEGACY_SCHEMA_DIR
       : undefined;
 
-  if (!options.source) {
-    if (!existingSchemaDir || !fs.existsSync(SCHEMATRON_DIR)) {
-      throw new Error(
-        `No source provided. Set --source, ${ENV_SOURCE_KEY}, or .env ${ENV_SOURCE_KEY}, or ensure ${SCHEMA_DIR} and ${SCHEMATRON_DIR} are populated.`
-      );
-    }
-
-    if (existingSchemaDir === LEGACY_SCHEMA_DIR) {
-      console.warn(`Using legacy schema folder ${LEGACY_SCHEMA_DIR}. Prefer canonical ${SCHEMA_DIR}.`);
-    }
-
-    return {
-      schemaRoot: existingSchemaDir,
-      schematronRoot: SCHEMATRON_DIR,
-    };
+  if (!existingSchemaDir || !fs.existsSync(SCHEMATRON_DIR)) {
+    throw new Error(
+      `Expected staged source folders at ${SCHEMA_DIR} and ${SCHEMATRON_DIR}. Populate these directories before running the transformer.`
+    );
   }
 
-  const sourceKind = detectSourceKind(options.sourceType ?? 'auto', options.source);
-  const previousManifest = readSourceManifest();
-  ensureDir(DOWNLOADS_DIR);
-  ensureDir(SOURCE_STAGE_DIR);
-
-  if (sourceKind === 'url') {
-    const cachedZipPath = path.join(DOWNLOADS_DIR, normalizeCacheFileName(options.source, options.sourceVersion));
-    const downloadResult = await downloadUrlWithFreshness(options.source, cachedZipPath, previousManifest, options.forceRefresh);
-    if (downloadResult.downloaded || !directoriesCurrent(previousManifest, options.source, options.sourceVersion, sourceKind, options.forceRefresh)) {
-      await stageFromZip(cachedZipPath, SCHEMA_DIR, SCHEMATRON_DIR);
-    }
-    const manifest = buildManifest(options.source, sourceKind, options.sourceVersion, cachedZipPath, downloadResult.etag, downloadResult.lastModified);
-    return { schemaRoot: SCHEMA_DIR, schematronRoot: SCHEMATRON_DIR, manifest };
+  if (existingSchemaDir === LEGACY_SCHEMA_DIR) {
+    console.warn(`Using legacy schema folder ${LEGACY_SCHEMA_DIR}. Prefer canonical ${SCHEMA_DIR}.`);
   }
 
-  if (sourceKind === 'zip') {
-    const zipPath = path.resolve(options.source);
-    if (!fs.existsSync(zipPath)) {
-      throw new Error(`ZIP source does not exist: ${zipPath}`);
-    }
-    if (!directoriesCurrent(previousManifest, options.source, options.sourceVersion, sourceKind, options.forceRefresh)) {
-      await stageFromZip(zipPath, SCHEMA_DIR, SCHEMATRON_DIR);
-    }
-    const manifest = buildManifest(options.source, sourceKind, options.sourceVersion, zipPath);
-    return { schemaRoot: SCHEMA_DIR, schematronRoot: SCHEMATRON_DIR, manifest };
-  }
-
-  const sourceDir = path.resolve(options.source);
-  if (!fs.existsSync(sourceDir) || !fs.statSync(sourceDir).isDirectory()) {
-    throw new Error(`Directory source does not exist or is not a directory: ${sourceDir}`);
-  }
-  const sourceLayout = resolveSourceLayout(sourceDir);
-  if (!sourceLayout.schemaPath || !sourceLayout.schematronPath) {
-    throw new Error(`Could not locate Schema and Schematron paths inside directory source: ${sourceDir}`);
-  }
-  if (!directoriesCurrent(previousManifest, options.source, options.sourceVersion, sourceKind, options.forceRefresh)) {
-    stageFromDirectory(sourceLayout.schemaPath, sourceLayout.schematronPath, SCHEMA_DIR, SCHEMATRON_DIR);
-  }
-  const manifest = buildManifest(options.source, sourceKind, options.sourceVersion);
-  return { schemaRoot: SCHEMA_DIR, schematronRoot: SCHEMATRON_DIR, manifest };
-}
-
-function directoriesCurrent(
-  previousManifest: SourceManifest | undefined,
-  source: string,
-  sourceVersion: string | undefined,
-  sourceKind: SourceKind,
-  forceRefresh: boolean,
-): boolean {
-  if (forceRefresh || !previousManifest) {
-    return false;
-  }
-  if (
-    previousManifest.source !== source
-    || previousManifest.sourceKind !== sourceKind
-    || (previousManifest.sourceVersion ?? '') !== (sourceVersion ?? '')
-  ) {
-    return false;
-  }
-  if (!fs.existsSync(SCHEMA_DIR) || !fs.existsSync(SCHEMATRON_DIR)) {
-    return false;
-  }
-  const schemaFingerprint = computeDirectoryFingerprint(SCHEMA_DIR);
-  const schematronFingerprint = computeDirectoryFingerprint(SCHEMATRON_DIR);
-  return schemaFingerprint === previousManifest.schemaFingerprint
-    && schematronFingerprint === previousManifest.schematronFingerprint;
-}
-
-function buildManifest(
-  source: string,
-  sourceKind: SourceKind,
-  sourceVersion?: string,
-  cachedFilePath?: string,
-  etag?: string,
-  lastModified?: string,
-): SourceManifest {
-  const manifest: SourceManifest = {
-    source,
-    sourceKind,
-    sourceVersion,
-    extractedAt: new Date().toISOString(),
-    schemaFingerprint: computeDirectoryFingerprint(SCHEMA_DIR),
-    schematronFingerprint: computeDirectoryFingerprint(SCHEMATRON_DIR),
-  };
-
-  if (cachedFilePath && fs.existsSync(cachedFilePath)) {
-    const stats = fs.statSync(cachedFilePath);
-    manifest.cachedFilePath = cachedFilePath;
-    manifest.cachedFileHash = sha256File(cachedFilePath);
-    manifest.cachedFileSize = stats.size;
-    manifest.cachedFileMtimeMs = stats.mtimeMs;
-  }
-  if (etag) {
-    manifest.etag = etag;
-  }
-  if (lastModified) {
-    manifest.lastModified = lastModified;
-  }
-  return manifest;
-}
-
-async function downloadUrlWithFreshness(
-  sourceUrl: string,
-  destinationPath: string,
-  previousManifest: SourceManifest | undefined,
-  forceRefresh: boolean,
-): Promise<{ downloaded: boolean; etag?: string; lastModified?: string }> {
-  const headers: Record<string, string> = {};
-  if (!forceRefresh && previousManifest?.source === sourceUrl && previousManifest.etag) {
-    headers['If-None-Match'] = previousManifest.etag;
-  }
-  if (!forceRefresh && previousManifest?.source === sourceUrl && previousManifest.lastModified) {
-    headers['If-Modified-Since'] = previousManifest.lastModified;
-  }
-
-  const response = await httpRequest(sourceUrl, headers, 0);
-  if (response.statusCode === 304 && fs.existsSync(destinationPath)) {
-    return {
-      downloaded: false,
-      etag: previousManifest?.etag,
-      lastModified: previousManifest?.lastModified,
-    };
-  }
-
-  if (response.statusCode < 200 || response.statusCode >= 300 || !response.body) {
-    throw new Error(`Failed to download source URL ${sourceUrl}. HTTP ${response.statusCode}.`);
-  }
-
-  fs.writeFileSync(destinationPath, response.body);
   return {
-    downloaded: true,
-    etag: response.headers.etag,
-    lastModified: response.headers['last-modified'],
+    schemaRoot: existingSchemaDir,
+    schematronRoot: SCHEMATRON_DIR,
   };
 }
 
-async function httpRequest(urlString: string, headers: Record<string, string>, redirectCount: number): Promise<{
-  statusCode: number;
-  headers: http.IncomingHttpHeaders;
-  body?: Buffer;
-}> {
-  if (redirectCount > 5) {
-    throw new Error(`Too many redirects while requesting ${urlString}`);
-  }
-
-  const url = new URL(urlString);
-  const transport = url.protocol === 'https:' ? https : http;
-
-  return await new Promise((resolve, reject) => {
-    const request = transport.request(url, { method: 'GET', headers }, response => {
-      if (response.statusCode && response.statusCode >= 300 && response.statusCode < 400 && response.headers.location) {
-        response.resume();
-        const redirectedUrl = new URL(response.headers.location, url).toString();
-        httpRequest(redirectedUrl, headers, redirectCount + 1).then(resolve).catch(reject);
-        return;
-      }
-
-      const chunks: Buffer[] = [];
-      response.on('data', chunk => chunks.push(Buffer.from(chunk)));
-      response.on('end', () => {
-        resolve({
-          statusCode: response.statusCode ?? 0,
-          headers: response.headers,
-          body: Buffer.concat(chunks),
-        });
-      });
-    });
-    request.on('error', reject);
-    request.end();
-  });
-}
-
-async function stageFromZip(zipPath: string, schemaTargetDir: string, schematronTargetDir: string) {
-  const extractionTemp = path.join(SOURCE_STAGE_DIR, '.extract-temp');
-  removeDirIfExists(extractionTemp);
-  ensureDir(extractionTemp);
-
-  const zipEntries = listZipEntries(zipPath);
-  const schemaPrefix = findPrefix(zipEntries, ['ISM/Schema/', 'Schema/', 'schemas/', 'BuildDependencies/ISM/Schema/']);
-  const schematronPrefix = findPrefix(zipEntries, ['ISM/Schematron/', 'Schematron/', 'BuildDependencies/ISM/Schematron/']);
-
-  if (!schemaPrefix || !schematronPrefix) {
-    throw new Error(`Could not locate required Schema/Schematron prefixes in ZIP ${zipPath}`);
-  }
-
-  const extractTargets = new Set<string>([
-    schemaPrefix.replace(/\/$/, ''),
-    schematronPrefix.replace(/\/$/, ''),
-  ]);
-
-  execFileSync('tar', ['-xf', zipPath, '-C', extractionTemp, ...extractTargets], {
-    cwd: WORKSPACE_ROOT,
-    stdio: 'inherit',
-  });
-
-  const extractedSchema = path.join(extractionTemp, ...schemaPrefix.split('/').filter(Boolean));
-  const extractedSchematron = path.join(extractionTemp, ...schematronPrefix.split('/').filter(Boolean));
-  stageFromDirectory(extractedSchema, extractedSchematron, schemaTargetDir, schematronTargetDir);
-}
-
-function listZipEntries(zipPath: string): string[] {
-  const output = execFileSync('tar', ['-tf', zipPath], { cwd: WORKSPACE_ROOT });
-  return output.toString('utf8').split(/\r?\n/).map(line => line.trim()).filter(Boolean);
-}
-
-function findPrefix(entries: string[], candidates: string[]): string | undefined {
-  for (const candidate of candidates) {
-    const normalizedCandidate = candidate.replaceAll('\\', '/');
-    if (entries.some(entry => entry.startsWith(normalizedCandidate))) {
-      return normalizedCandidate;
-    }
-  }
-  return undefined;
-}
-
-function stageFromDirectory(schemaSourceDir: string, schematronSourceDir: string, schemaTargetDir: string, schematronTargetDir: string) {
-  if (!fs.existsSync(schemaSourceDir)) {
-    throw new Error(`Schema source directory missing: ${schemaSourceDir}`);
-  }
-  if (!fs.existsSync(schematronSourceDir)) {
-    throw new Error(`Schematron source directory missing: ${schematronSourceDir}`);
-  }
-
-  removeDirIfExists(schemaTargetDir);
-  removeDirIfExists(schematronTargetDir);
-  ensureDir(path.dirname(schemaTargetDir));
-  ensureDir(path.dirname(schematronTargetDir));
-
-  fs.cpSync(schemaSourceDir, schemaTargetDir, { recursive: true });
-  fs.cpSync(schematronSourceDir, schematronTargetDir, { recursive: true });
-}
-
-function resolveSourceLayout(baseDir: string): { schemaPath?: string; schematronPath?: string } {
-  const candidates = [
-    {
-      schemaPath: path.join(baseDir, SCHEMA_DIR_NAME),
-      schematronPath: path.join(baseDir, SCHEMATRON_DIR_NAME),
-    },
-    {
-      schemaPath: path.join(baseDir, LEGACY_SCHEMA_DIR_NAME),
-      schematronPath: path.join(baseDir, SCHEMATRON_DIR_NAME),
-    },
-    {
-      schemaPath: path.join(baseDir, 'ISM', 'Schema'),
-      schematronPath: path.join(baseDir, 'ISM', 'Schematron'),
-    },
-    {
-      schemaPath: path.join(baseDir, 'BuildDependencies', 'ISM', 'Schema'),
-      schematronPath: path.join(baseDir, 'BuildDependencies', 'ISM', 'Schematron'),
-    },
-  ];
-
-  for (const candidate of candidates) {
-    if (fs.existsSync(candidate.schemaPath) && fs.existsSync(candidate.schematronPath)) {
-      return candidate;
-    }
-  }
-  return {};
-}
-
-function detectSourceKind(sourceType: SourceOptions['sourceType'], source: string): SourceKind {
-  if (sourceType && sourceType !== 'auto') {
-    return sourceType;
-  }
-  if (/^https?:\/\//i.test(source)) {
-    return 'url';
-  }
-
-  const resolvedPath = path.resolve(source);
-  if (fs.existsSync(resolvedPath) && fs.statSync(resolvedPath).isDirectory()) {
-    return 'dir';
-  }
-  if (source.toLowerCase().endsWith('.zip') || (fs.existsSync(resolvedPath) && fs.statSync(resolvedPath).isFile())) {
-    return 'zip';
-  }
-
-  throw new Error(`Unable to detect source kind for ${source}. Set --source-type explicitly.`);
-}
-
-function parseDotEnv(envPath: string): Record<string, string> {
-  if (!fs.existsSync(envPath)) {
-    return {};
-  }
-  const parsed: Record<string, string> = {};
-  const lines = fs.readFileSync(envPath, 'utf8').split(/\r?\n/);
-  for (const rawLine of lines) {
-    const line = rawLine.trim();
-    if (!line || line.startsWith('#')) {
-      continue;
-    }
-    const equalsIndex = line.indexOf('=');
-    if (equalsIndex <= 0) {
-      continue;
-    }
-    const key = line.substring(0, equalsIndex).trim();
-    let value = line.substring(equalsIndex + 1).trim();
-    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith('\'') && value.endsWith('\''))) {
-      value = value.substring(1, value.length - 1);
-    }
-    parsed[key] = value;
-  }
-  return parsed;
-}
-
-function readSourceManifest(): SourceManifest | undefined {
-  if (!fs.existsSync(SOURCE_MANIFEST_PATH)) {
-    return undefined;
-  }
-  try {
-    return JSON.parse(fs.readFileSync(SOURCE_MANIFEST_PATH, 'utf8')) as SourceManifest;
-  } catch {
-    return undefined;
-  }
-}
-
-function normalizeCacheFileName(source: string, sourceVersion?: string): string {
-  const sourceUrl = new URL(source);
-  const basename = path.basename(sourceUrl.pathname || 'source.zip') || 'source.zip';
-  const safeBase = basename.replace(/[^a-zA-Z0-9._-]/g, '_');
-  const hash = createHash('sha256').update(source).digest('hex').substring(0, 12);
-  const versionSuffix = sourceVersion ? `-${sourceVersion.replace(/[^a-zA-Z0-9._-]/g, '_')}` : '';
-  return `${safeBase}${versionSuffix}-${hash}.zip`;
-}
-
-function toBoolean(value: string | undefined): boolean {
-  if (!value) {
-    return false;
-  }
-  return ['1', 'true', 'yes', 'on'].includes(value.trim().toLowerCase());
-}
-
-function ensureDir(dirPath: string) {
-  fs.mkdirSync(dirPath, { recursive: true });
-}
-
-function removeDirIfExists(dirPath: string) {
-  if (fs.existsSync(dirPath)) {
-    fs.rmSync(dirPath, { recursive: true, force: true });
-  }
-}
-
+/**
+ * Returns the absolute paths of every file (not directory) under `dirPath`,
+ * using an iterative depth-first traversal to avoid call-stack limits on deep trees.
+ */
 function listFilesRecursive(dirPath: string): string[] {
   const results: string[] = [];
   const stack = [dirPath];
@@ -912,6 +734,14 @@ function listFilesRecursive(dirPath: string): string[] {
   return results;
 }
 
+/**
+ * Computes a SHA-256 fingerprint for the contents of `dirPath` by hashing each file's
+ * relative path, size, and mtime in stable sorted order.
+ *
+ * The fingerprint changes when any file is added, removed, renamed, or has its content or
+ * modification time changed. It is stored in the source manifest so subsequent runs can
+ * detect whether re-extraction is necessary without inspecting file content.
+ */
 function computeDirectoryFingerprint(dirPath: string): string {
   if (!fs.existsSync(dirPath)) {
     return '';
@@ -930,12 +760,24 @@ function computeDirectoryFingerprint(dirPath: string): string {
   return hash.digest('hex');
 }
 
+/** Returns the hex-encoded SHA-256 hash of the file at `filePath`. */
 function sha256File(filePath: string): string {
   const hash = createHash('sha256');
   hash.update(fs.readFileSync(filePath));
   return hash.digest('hex');
 }
 
+/**
+ * Attempts to locate the Schematron file associated with an XSD by inspecting the
+ * `<?xml-model ...?>` processing instruction embedded in the schema text.
+ *
+ * Resolution order:
+ * 1. Direct resolution of the `href` value relative to the XSD file's directory.
+ * 2. Extraction of the path segment after `Schematron/` and resolution under `schematronRoot`.
+ * 3. Fallback to the well-known master Schematron at `<schematronRoot>/ISM/ISM_XML.sch`.
+ *
+ * Returns `undefined` when no `xml-model` processing instruction is found.
+ */
 function discoverSchematronPath(schemaText: string, schemaPath: string, schematronRoot: string): string | undefined {
   const xmlModelMatch = schemaText.match(/<\?xml-model\s+href="([^"]+)"[^>]*schematypens="http:\/\/purl\.oclc\.org\/dsdl\/schematron"/i);
   if (!xmlModelMatch) {
@@ -963,6 +805,25 @@ function discoverSchematronPath(schemaText: string, schemaPath: string, schematr
   return fs.existsSync(ismFallback) ? ismFallback : undefined;
 }
 
+/**
+ * Parses a single Schematron (`.sch`) file and converts it to RDF, writing both
+ * `standalone` (self-contained) and `convenience` (includes merged inline) output graphs.
+ *
+ * The emitted RDF captures:
+ * - Schema-level metadata: `ismsch:SchematronDocument`, `dc:title`, `ismsch:relativePath`,
+ *   `ismsch:queryBinding`.
+ * - Execution phases parsed from the `<?schematron-phases phaseids="...">` processing
+ *   instruction as `ismsch:ExecutionPhase` resources.
+ * - Namespace declarations as `ismsch:NamespaceDeclaration` resources.
+ * - Patterns (`ismsch:Pattern` / `ismsch:AbstractPattern`), rules (`ismsch:Rule`),
+ *   asserts (`ismsch:Assert`), and reports (`ismsch:Report`), preserving `id`,
+ *   `context`, `test`, `flag`, `role`, and human-readable text.
+ * - `sch:include` chains, resolved recursively; each included file is processed and
+ *   its URI linked via `ismsch:includes`.
+ *
+ * Already-processed files (by normalised path) are returned from the map without
+ * re-parsing, preventing duplicate processing for shared included libraries.
+ */
 async function inputSchematron(inputPath: string, schematronRoot: string, outputDir: string, processedSchematron: Map<string, SchematronPackages>): Promise<SchematronPackages> {
   const normalizedPath = path.normalize(inputPath);
   console.log(`[SCH] Processing: ${path.basename(normalizedPath)}`);
@@ -974,12 +835,12 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
   const packages: SchematronPackages = {
     standalone: {
       g: new Graph({}),
-      namespaces: {},
+      namespaces: { [`${URI_PREFIX}:`]: 'ic' },
       imports: {},
     },
     convienence: {
       g: new Graph({}),
-      namespaces: {},
+      namespaces: { [`${URI_PREFIX}:`]: 'ic' },
       imports: {},
     },
   };
@@ -1007,20 +868,19 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
   standalone.g.addL(docUri, 'dc:title', path.basename(normalizedPath));
   standalone.g.addL(docUri, 'ismsch:relativePath', path.relative(schematronRoot, normalizedPath).replaceAll(path.sep, '/'));
 
-  const phaseMatch = text.match(/<\?schematron-phases\s+phaseids="([^"]+)"\?>/i);
-  if (phaseMatch) {
-    for (const phaseId of phaseMatch[1].split(/\s+/).filter(Boolean)) {
-      const phaseUri = `${docUri}#phase-${encodeURIComponent(phaseId)}`;
-      standalone.g.add(phaseUri, 'rdf:type', 'ismsch:ExecutionPhase');
-      standalone.g.add(docUri, 'ismsch:hasExecutionPhase', phaseUri);
-      standalone.g.addL(phaseUri, 'ismsch:phaseId', phaseId);
-    }
-  }
+  // Some Schematron files expose phase hints via processing instruction, while others define
+  // explicit <sch:phase> blocks. We parse explicit phase blocks per schema and use PI values
+  // only as a fallback when no explicit phase block is present.
+  const phaseIdsFromPi = (text.match(/<\?schematron-phases\s+phaseids="([^"]+)"\?>/i)?.[1] ?? '')
+    .split(/\s+/)
+    .filter(Boolean);
 
+  let processedSchemaRoot = false;
   for (const [rootKey, rootValue] of Object.entries(json as Record<string, any>)) {
     if (!rootKey.endsWith(':schema')) {
       continue;
     }
+    processedSchemaRoot = true;
 
     const schema = rootValue as any;
     const schemaUri = `${docUri}#schema`;
@@ -1045,12 +905,17 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
       }
     }
 
+    addParagraphNodes(schemaUri, asArray(schema['sch:p']), 'schema-p');
+    addVariableNodes(schemaUri, asArray(schema['sch:let']), 'schema-let');
+
+    const patternUriById = new Map<string, string>();
     let patternIndex = 0;
     for (const patternNode of asArray(schema['sch:pattern'])) {
       patternIndex += 1;
       const patternAttributes = patternNode.$ ?? {};
       const patternId = patternAttributes.id ?? `pattern-${patternIndex}`;
       const patternUri = `${schemaUri}#pattern-${encodeURIComponent(patternId)}`;
+      patternUriById.set(patternId, patternUri);
       standalone.g.add(patternUri, 'rdf:type', 'ismsch:Pattern');
       standalone.g.add(schemaUri, 'ismsch:hasPattern', patternUri);
       standalone.g.addL(patternUri, 'ismsch:patternId', patternId);
@@ -1059,6 +924,24 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
       }
       if (patternAttributes['is-a']) {
         standalone.g.addL(patternUri, 'ismsch:instantiatesPattern', patternAttributes['is-a']);
+      }
+
+      addParagraphNodes(patternUri, asArray(patternNode['sch:p']), 'pattern-p');
+      addVariableNodes(patternUri, asArray(patternNode['sch:let']), 'pattern-let');
+
+      let paramIndex = 0;
+      for (const paramNode of asArray(patternNode['sch:param'])) {
+        paramIndex += 1;
+        const paramAttributes = paramNode.$ ?? {};
+        const paramName = paramAttributes.name ?? `param-${paramIndex}`;
+        const paramUri = `${patternUri}#param-${encodeURIComponent(paramName)}-${paramIndex}`;
+        standalone.g.add(paramUri, 'rdf:type', 'ismsch:Parameter');
+        standalone.g.add(patternUri, 'ismsch:hasParameter', paramUri);
+        standalone.g.addL(paramUri, 'ismsch:paramName', paramName);
+        if (paramAttributes.value) {
+          standalone.g.addL(paramUri, 'ismsch:paramValue', paramAttributes.value);
+          linkCveDependencies(paramUri, String(paramAttributes.value));
+        }
       }
 
       let ruleIndex = 0;
@@ -1075,6 +958,22 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
         }
         if (ruleAttributes.abstract === 'true') {
           standalone.g.add(ruleUri, 'rdf:type', 'ismsch:AbstractRule');
+        }
+
+        addVariableNodes(ruleUri, asArray(ruleNode['sch:let']), 'rule-let');
+
+        let extendIndex = 0;
+        for (const extendsNode of asArray(ruleNode['sch:extends'])) {
+          extendIndex += 1;
+          const extendsAttributes = extendsNode.$ ?? {};
+          const extendsRule = extendsAttributes.rule;
+          const extendsUri = `${ruleUri}#extends-${extendIndex}`;
+          standalone.g.add(extendsUri, 'rdf:type', 'ismsch:RuleExtension');
+          standalone.g.add(ruleUri, 'ismsch:hasExtension', extendsUri);
+          if (extendsRule) {
+            standalone.g.addL(extendsUri, 'ismsch:extendsRule', extendsRule);
+            standalone.g.addL(ruleUri, 'ismsch:extendsRule', extendsRule);
+          }
         }
 
         let assertIndex = 0;
@@ -1123,6 +1022,54 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
       }
     }
 
+    const explicitPhases = asArray(schema['sch:phase']);
+    if (explicitPhases.length > 0) {
+      let phaseIndex = 0;
+      for (const phaseNode of explicitPhases) {
+        phaseIndex += 1;
+        const phaseAttributes = phaseNode.$ ?? {};
+        const phaseId = phaseAttributes.id ?? `phase-${phaseIndex}`;
+        const phaseUri = `${schemaUri}#phase-${encodeURIComponent(phaseId)}`;
+        standalone.g.add(phaseUri, 'rdf:type', 'ismsch:ExecutionPhase');
+        standalone.g.add(docUri, 'ismsch:hasExecutionPhase', phaseUri);
+        standalone.g.add(schemaUri, 'ismsch:hasPhase', phaseUri);
+        standalone.g.addL(phaseUri, 'ismsch:phaseId', phaseId);
+
+        let activationIndex = 0;
+        for (const activeNode of asArray(phaseNode['sch:active'])) {
+          activationIndex += 1;
+          const activeAttributes = activeNode.$ ?? {};
+          const activePatternId = activeAttributes.pattern ?? `pattern-${activationIndex}`;
+          const activeUri = `${phaseUri}#active-${encodeURIComponent(activePatternId)}-${activationIndex}`;
+          standalone.g.add(activeUri, 'rdf:type', 'ismsch:PhaseActivation');
+          standalone.g.add(phaseUri, 'ismsch:hasActivation', activeUri);
+          standalone.g.addL(activeUri, 'ismsch:activePatternId', activePatternId);
+          const targetPatternUri = patternUriById.get(activePatternId);
+          if (targetPatternUri) {
+            standalone.g.add(activeUri, 'ismsch:targetsPattern', targetPatternUri);
+            standalone.g.add(phaseUri, 'ismsch:activatesPattern', targetPatternUri);
+          } else {
+            // Many phase activations reference pattern IDs defined in included .sch files.
+            // Emit a stable placeholder pattern-reference node so the graph preserves the
+            // activation edge even when the concrete pattern resource is external.
+            const patternRefUri = `${docUri}#pattern-ref-${encodeURIComponent(activePatternId)}`;
+            standalone.g.add(patternRefUri, 'rdf:type', 'ismsch:PatternReference');
+            standalone.g.addL(patternRefUri, 'ismsch:patternId', activePatternId);
+            standalone.g.add(activeUri, 'ismsch:targetsPattern', patternRefUri);
+            standalone.g.add(phaseUri, 'ismsch:activatesPattern', patternRefUri);
+          }
+        }
+      }
+    } else {
+      for (const phaseId of phaseIdsFromPi) {
+        const phaseUri = `${schemaUri}#phase-${encodeURIComponent(phaseId)}`;
+        standalone.g.add(phaseUri, 'rdf:type', 'ismsch:ExecutionPhase');
+        standalone.g.add(docUri, 'ismsch:hasExecutionPhase', phaseUri);
+        standalone.g.add(schemaUri, 'ismsch:hasPhase', phaseUri);
+        standalone.g.addL(phaseUri, 'ismsch:phaseId', phaseId);
+      }
+    }
+
     for (const includeNode of asArray(schema['sch:include'])) {
       const includeAttributes = includeNode.$ ?? {};
       if (!includeAttributes.href) {
@@ -1143,17 +1090,205 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
     }
   }
 
+  // Many included Schematron files are root <sch:pattern> documents instead of <sch:schema>.
+  // Capture those as a synthetic schema container so pattern/rule/param/extends metadata isn't lost.
+  if (!processedSchemaRoot) {
+    const schemaUri = `${docUri}#schema`;
+    standalone.g.add(schemaUri, 'rdf:type', 'ismsch:Schema');
+    standalone.g.add(docUri, 'ismsch:definesSchema', schemaUri);
+
+    let patternIndex = 0;
+    for (const [rootKey, rootValue] of Object.entries(json as Record<string, any>)) {
+      if (!rootKey.endsWith(':pattern')) {
+        continue;
+      }
+      for (const patternNode of asArray(rootValue as any)) {
+        patternIndex += 1;
+        const patternAttributes = patternNode.$ ?? {};
+        const patternId = patternAttributes.id ?? `pattern-${patternIndex}`;
+        const patternUri = `${schemaUri}#pattern-${encodeURIComponent(patternId)}`;
+        standalone.g.add(patternUri, 'rdf:type', 'ismsch:Pattern');
+        standalone.g.add(schemaUri, 'ismsch:hasPattern', patternUri);
+        standalone.g.addL(patternUri, 'ismsch:patternId', patternId);
+        if (patternAttributes.abstract === 'true') {
+          standalone.g.add(patternUri, 'rdf:type', 'ismsch:AbstractPattern');
+        }
+        if (patternAttributes['is-a']) {
+          standalone.g.addL(patternUri, 'ismsch:instantiatesPattern', patternAttributes['is-a']);
+        }
+
+        addParagraphNodes(patternUri, asArray(patternNode['sch:p']), 'pattern-p');
+        addVariableNodes(patternUri, asArray(patternNode['sch:let']), 'pattern-let');
+
+        let paramIndex = 0;
+        for (const paramNode of asArray(patternNode['sch:param'])) {
+          paramIndex += 1;
+          const paramAttributes = paramNode.$ ?? {};
+          const paramName = paramAttributes.name ?? `param-${paramIndex}`;
+          const paramUri = `${patternUri}#param-${encodeURIComponent(paramName)}-${paramIndex}`;
+          standalone.g.add(paramUri, 'rdf:type', 'ismsch:Parameter');
+          standalone.g.add(patternUri, 'ismsch:hasParameter', paramUri);
+          standalone.g.addL(paramUri, 'ismsch:paramName', paramName);
+          if (paramAttributes.value) {
+            const value = String(paramAttributes.value);
+            standalone.g.addL(paramUri, 'ismsch:paramValue', value);
+            linkCveDependencies(paramUri, value);
+          }
+        }
+
+        let ruleIndex = 0;
+        for (const ruleNode of asArray(patternNode['sch:rule'])) {
+          ruleIndex += 1;
+          const ruleAttributes = ruleNode.$ ?? {};
+          const ruleId = ruleAttributes.id ?? `rule-${ruleIndex}`;
+          const ruleUri = `${patternUri}#rule-${encodeURIComponent(ruleId)}`;
+          standalone.g.add(ruleUri, 'rdf:type', 'ismsch:Rule');
+          standalone.g.add(patternUri, 'ismsch:hasRule', ruleUri);
+          standalone.g.addL(ruleUri, 'ismsch:ruleId', ruleId);
+          if (ruleAttributes.context) {
+            standalone.g.addL(ruleUri, 'ismsch:context', ruleAttributes.context);
+          }
+          if (ruleAttributes.abstract === 'true') {
+            standalone.g.add(ruleUri, 'rdf:type', 'ismsch:AbstractRule');
+          }
+
+          addVariableNodes(ruleUri, asArray(ruleNode['sch:let']), 'rule-let');
+
+          let extendIndex = 0;
+          for (const extendsNode of asArray(ruleNode['sch:extends'])) {
+            extendIndex += 1;
+            const extendsAttributes = extendsNode.$ ?? {};
+            const extendsRule = extendsAttributes.rule;
+            const extendsUri = `${ruleUri}#extends-${extendIndex}`;
+            standalone.g.add(extendsUri, 'rdf:type', 'ismsch:RuleExtension');
+            standalone.g.add(ruleUri, 'ismsch:hasExtension', extendsUri);
+            if (extendsRule) {
+              standalone.g.addL(extendsUri, 'ismsch:extendsRule', extendsRule);
+              standalone.g.addL(ruleUri, 'ismsch:extendsRule', extendsRule);
+            }
+          }
+
+          let assertIndex = 0;
+          for (const assertNode of asArray(ruleNode['sch:assert'])) {
+            assertIndex += 1;
+            const assertAttributes = assertNode.$ ?? {};
+            const assertUri = `${ruleUri}#assert-${assertIndex}`;
+            standalone.g.add(assertUri, 'rdf:type', 'ismsch:Assert');
+            standalone.g.add(ruleUri, 'ismsch:hasAssert', assertUri);
+            if (assertAttributes.test) {
+              standalone.g.addL(assertUri, 'ismsch:test', assertAttributes.test);
+            }
+            if (assertAttributes.flag) {
+              standalone.g.addL(assertUri, 'ismsch:flag', assertAttributes.flag);
+            }
+            if (assertAttributes.role) {
+              standalone.g.addL(assertUri, 'ismsch:role', assertAttributes.role);
+            }
+            const textValue = normalizeSchematronNodeText(assertNode);
+            if (textValue) {
+              standalone.g.addL(assertUri, 'ismsch:text', textValue);
+            }
+          }
+
+          let reportIndex = 0;
+          for (const reportNode of asArray(ruleNode['sch:report'])) {
+            reportIndex += 1;
+            const reportAttributes = reportNode.$ ?? {};
+            const reportUri = `${ruleUri}#report-${reportIndex}`;
+            standalone.g.add(reportUri, 'rdf:type', 'ismsch:Report');
+            standalone.g.add(ruleUri, 'ismsch:hasReport', reportUri);
+            if (reportAttributes.test) {
+              standalone.g.addL(reportUri, 'ismsch:test', reportAttributes.test);
+            }
+            if (reportAttributes.flag) {
+              standalone.g.addL(reportUri, 'ismsch:flag', reportAttributes.flag);
+            }
+            if (reportAttributes.role) {
+              standalone.g.addL(reportUri, 'ismsch:role', reportAttributes.role);
+            }
+            const textValue = normalizeSchematronNodeText(reportNode);
+            if (textValue) {
+              standalone.g.addL(reportUri, 'ismsch:text', textValue);
+            }
+          }
+        }
+      }
+    }
+  }
+
   convienence.g.addAll(standalone.g);
   Object.assign(convienence.namespaces, standalone.namespaces);
 
+  // Deferred work implementation: expand abstract pattern instantiations,
+  // emit SHACL for safely translatable constraints, and add schema-term alignments.
+  applySchematronDeferredEnhancements(standalone);
+  applySchematronDeferredEnhancements(convienence);
+
   const relativeDir = path.relative(schematronRoot, path.dirname(normalizedPath));
   const basename = path.basename(normalizedPath, SCH_EXTENSION);
-  await writeGraphPackage(convienence, path.join(outputDir, 'schematron', 'convenience'), relativeDir, basename);
-  await writeGraphPackage(standalone, path.join(outputDir, 'schematron', 'standalone'), relativeDir, basename);
+  await writeGraphPackage(convienence, path.join(outputDir, 'Schematron', 'convenience'), relativeDir, basename);
+  await writeGraphPackage(standalone, path.join(outputDir, 'Schematron', 'standalone'), relativeDir, basename);
 
   return packages;
+
+  function addParagraphNodes(ownerUri: string, paragraphNodes: any[], prefix: string) {
+    let index = 0;
+    for (const pNode of paragraphNodes) {
+      index += 1;
+      const pAttrs = pNode?.$ ?? {};
+      const paragraphUri = `${ownerUri}#${prefix}-${index}`;
+      standalone.g.add(paragraphUri, 'rdf:type', 'ismsch:Paragraph');
+      standalone.g.add(ownerUri, 'ismsch:hasParagraph', paragraphUri);
+      if (pAttrs.class) {
+        standalone.g.addL(paragraphUri, 'ismsch:paragraphClass', pAttrs.class);
+      }
+      const textValue = normalizeSchematronNodeText(pNode);
+      if (textValue) {
+        standalone.g.addL(paragraphUri, 'ismsch:text', textValue);
+      }
+    }
+  }
+
+  function addVariableNodes(ownerUri: string, variableNodes: any[], prefix: string) {
+    let index = 0;
+    for (const letNode of variableNodes) {
+      index += 1;
+      const letAttrs = letNode?.$ ?? {};
+      const variableName = letAttrs.name ?? `var-${index}`;
+      const variableUri = `${ownerUri}#${prefix}-${encodeURIComponent(variableName)}-${index}`;
+      standalone.g.add(variableUri, 'rdf:type', 'ismsch:Variable');
+      standalone.g.add(ownerUri, 'ismsch:hasVariable', variableUri);
+      standalone.g.addL(variableUri, 'ismsch:variableName', variableName);
+      if (letAttrs.value) {
+        const value = String(letAttrs.value);
+        standalone.g.addL(variableUri, 'ismsch:variableValue', value);
+        linkCveDependencies(variableUri, value);
+      }
+    }
+  }
+
+  function linkCveDependencies(ownerUri: string, expression: string) {
+    const matches = expression.match(/CVEnum[A-Za-z0-9_]+/g);
+    if (!matches) {
+      return;
+    }
+    for (const cveName of new Set(matches)) {
+      const cveUri = `${URI_PREFIX}:ISM:CVEGenerated:${cveName}`;
+      standalone.g.add(ownerUri, 'ismsch:dependsOnConceptScheme', cveUri);
+    }
+  }
 }
 
+/**
+ * Extracts the human-readable text content from a Schematron `sch:assert` or `sch:report`
+ * node as parsed by xml2js.
+ *
+ * xml2js represents mixed-content nodes (text interleaved with child elements) with a `_`
+ * property for direct text and named child arrays for elements. This function walks the
+ * entire node tree, collecting all text fragments and `sch:value-of` placeholders.
+ *
+ * Returns a single whitespace-normalised string.
+ */
 function normalizeSchematronNodeText(node: any): string {
   if (!node) {
     return '';
@@ -1200,6 +1335,13 @@ function normalizeSchematronNodeText(node: any): string {
   return values.join(' ').replace(/\s+/g, ' ').trim();
 }
 
+/**
+ * Recursively merges a `standalone` Schematron graph (and all its transitive includes)
+ * into a `convenience` graph so that the convenience output is fully self-contained.
+ *
+ * Uses the `merged` set to guard against processing the same file more than once
+ * when the include graph contains shared libraries.
+ */
 function mergeSchematron(merged: Set<string>, importPath: string, convienence: Package, standalone: Package) {
   if (!merged.has(importPath)) {
     merged.add(importPath);
@@ -1211,6 +1353,394 @@ function mergeSchematron(merged: Set<string>, importPath: string, convienence: P
   }
 }
 
+/**
+ * Applies post-parse enhancement passes for deferred Schematron work:
+ * 1) abstract pattern resolution with parameter substitution
+ * 2) SHACL translation for a safe constraint subset (with preservation markers otherwise)
+ * 3) alignment links from rule/assert/report expressions to schema-term candidate IRIs
+ */
+function applySchematronDeferredEnhancements(pkg: Package) {
+  pkg.namespaces[SCHEMATRON_NS_URI] = 'ismsch';
+  pkg.namespaces[SHACL_URI] = 'sh';
+  pkg.namespaces[RDF_URI] = 'rdf';
+  pkg.namespaces[RDFS_URI] = 'rdfs';
+  pkg.namespaces[XML_SCHEMA_URI + '#'] = pkg.namespaces[XML_SCHEMA_URI + '#'] ?? 'xsd';
+
+  resolveAbstractPatternInstantiations(pkg);
+  emitShaclFromSchematron(pkg);
+  emitRuleAlignmentLinks(pkg);
+
+  for (const [iri, prefix] of Object.entries(pkg.namespaces)) {
+    namespaces.add(prefix, iri);
+  }
+}
+
+function resolveAbstractPatternInstantiations(pkg: Package) {
+  const patternUris = subjectsOfType(pkg, 'ismsch:Pattern');
+  const abstractPatternUris = new Set(subjectsOfType(pkg, 'ismsch:AbstractPattern'));
+  const patternById = new Map<string, string>();
+
+  for (const patternUri of patternUris) {
+    const patternId = firstLiteral(pkg, patternUri, 'ismsch:patternId');
+    if (patternId) {
+      patternById.set(patternId, patternUri);
+    }
+  }
+
+  for (const concretePatternUri of patternUris) {
+    const abstractPatternId = firstLiteral(pkg, concretePatternUri, 'ismsch:instantiatesPattern');
+    if (!abstractPatternId) {
+      continue;
+    }
+
+    const abstractPatternUri = patternById.get(abstractPatternId);
+    if (!abstractPatternUri || !abstractPatternUris.has(abstractPatternUri)) {
+      continue;
+    }
+
+    const paramMap = collectPatternParams(pkg, concretePatternUri);
+    const templateRules = objectsOf(pkg, abstractPatternUri, 'ismsch:hasRule');
+    let derivedIndex = 0;
+    for (const templateRuleUri of templateRules) {
+      derivedIndex += 1;
+      const templateRuleId = firstLiteral(pkg, templateRuleUri, 'ismsch:ruleId') ?? `template-${derivedIndex}`;
+      const derivedRuleUri = `${concretePatternUri}#resolved-rule-${encodeURIComponent(templateRuleId)}-${derivedIndex}`;
+      pkg.g.add(derivedRuleUri, 'rdf:type', 'ismsch:Rule');
+      pkg.g.add(derivedRuleUri, 'rdf:type', 'ismsch:ResolvedRule');
+      pkg.g.add(concretePatternUri, 'ismsch:hasRule', derivedRuleUri);
+      pkg.g.add(derivedRuleUri, 'ismsch:derivedFromRule', templateRuleUri);
+      pkg.g.add(derivedRuleUri, 'ismsch:derivedFromPattern', abstractPatternUri);
+      pkg.g.addL(derivedRuleUri, 'ismsch:ruleId', `${templateRuleId}#resolved`);
+
+      const templateContext = firstLiteral(pkg, templateRuleUri, 'ismsch:context');
+      if (templateContext) {
+        pkg.g.addL(derivedRuleUri, 'ismsch:context', substituteSchematronParams(templateContext, paramMap));
+      }
+
+      cloneConstraintNodes(pkg, templateRuleUri, derivedRuleUri, 'ismsch:hasAssert', 'ismsch:Assert', 'assert', paramMap);
+      cloneConstraintNodes(pkg, templateRuleUri, derivedRuleUri, 'ismsch:hasReport', 'ismsch:Report', 'report', paramMap);
+    }
+  }
+}
+
+function emitShaclFromSchematron(pkg: Package) {
+  const ruleUris = subjectsOfType(pkg, 'ismsch:Rule');
+  let shapeIndex = 0;
+  for (const ruleUri of ruleUris) {
+    if (hasType(pkg, ruleUri, 'ismsch:AbstractRule')) {
+      continue;
+    }
+
+    shapeIndex += 1;
+    const shapeUri = `${ruleUri}#shape-${shapeIndex}`;
+    pkg.g.add(shapeUri, 'rdf:type', 'sh:NodeShape');
+    pkg.g.add(ruleUri, 'ismsch:translatedToShape', shapeUri);
+
+    const context = firstLiteral(pkg, ruleUri, 'ismsch:context');
+    const contextAttr = extractSingleAttributeRef(context);
+    if (contextAttr) {
+      const contextPath = schemaCandidatePropertyUri(contextAttr);
+      if (contextPath) {
+        pkg.g.add(shapeUri, 'sh:targetSubjectsOf', contextPath);
+      }
+    }
+
+    let translatedAny = false;
+    let constraintIndex = 0;
+    const constraintPredicates = ['ismsch:hasAssert', 'ismsch:hasReport'];
+    for (const pred of constraintPredicates) {
+      for (const constraintUri of objectsOf(pkg, ruleUri, pred)) {
+        constraintIndex += 1;
+        const test = firstLiteral(pkg, constraintUri, 'ismsch:test');
+        if (!test) {
+          continue;
+        }
+
+        const exists = test.match(/^@([A-Za-z_][\w.\-:]*)$/);
+        if (exists) {
+          const attr = exists[1];
+          const path = schemaCandidatePropertyUri(attr);
+          if (!path) {
+            pkg.g.addL(constraintUri, 'ismsch:translationStatus', 'preserved');
+            pkg.g.addL(constraintUri, 'ismsch:translationReason', 'Attribute path could not be normalized to a schema term IRI');
+            continue;
+          }
+          const propShapeUri = `${shapeUri}#property-${constraintIndex}`;
+          pkg.g.add(propShapeUri, 'rdf:type', 'sh:PropertyShape');
+          pkg.g.add(shapeUri, 'sh:property', propShapeUri);
+          pkg.g.add(propShapeUri, 'sh:path', path);
+          pkg.g.addL(propShapeUri, 'sh:minCount', '1');
+          translatedAny = true;
+          continue;
+        }
+
+        const equals = test.match(/^@([A-Za-z_][\w.\-:]*)\s*=\s*['\"]([^'\"]+)['\"]$/);
+        if (equals) {
+          const attr = equals[1];
+          const value = equals[2];
+          const path = schemaCandidatePropertyUri(attr);
+          if (!path) {
+            pkg.g.addL(constraintUri, 'ismsch:translationStatus', 'preserved');
+            pkg.g.addL(constraintUri, 'ismsch:translationReason', 'Attribute path could not be normalized to a schema term IRI');
+            continue;
+          }
+          const propShapeUri = `${shapeUri}#property-${constraintIndex}`;
+          pkg.g.add(propShapeUri, 'rdf:type', 'sh:PropertyShape');
+          pkg.g.add(shapeUri, 'sh:property', propShapeUri);
+          pkg.g.add(propShapeUri, 'sh:path', path);
+          pkg.g.addL(propShapeUri, 'sh:hasValue', value);
+          translatedAny = true;
+          continue;
+        }
+
+        const matches = test.match(/matches\s*\(\s*@([A-Za-z_][\w.\-:]*)\s*,\s*['\"]([^'\"]+)['\"]/i);
+        if (matches) {
+          const attr = matches[1];
+          const regex = matches[2];
+          const path = schemaCandidatePropertyUri(attr);
+          if (!path) {
+            pkg.g.addL(constraintUri, 'ismsch:translationStatus', 'preserved');
+            pkg.g.addL(constraintUri, 'ismsch:translationReason', 'Attribute path could not be normalized to a schema term IRI');
+            continue;
+          }
+          const propShapeUri = `${shapeUri}#property-${constraintIndex}`;
+          pkg.g.add(propShapeUri, 'rdf:type', 'sh:PropertyShape');
+          pkg.g.add(shapeUri, 'sh:property', propShapeUri);
+          pkg.g.add(propShapeUri, 'sh:path', path);
+          pkg.g.addL(propShapeUri, 'sh:pattern', regex);
+          translatedAny = true;
+          continue;
+        }
+
+        // Preserve non-translatable constraints explicitly so no rule semantics are silently dropped.
+        pkg.g.addL(constraintUri, 'ismsch:translationStatus', 'preserved');
+        pkg.g.addL(constraintUri, 'ismsch:translationReason', 'No safe automatic SHACL mapping for this test expression');
+      }
+    }
+
+    if (!translatedAny) {
+      pkg.g.addL(shapeUri, 'ismsch:translationStatus', 'preserved');
+      pkg.g.addL(shapeUri, 'ismsch:translationReason', 'Rule captured as source-faithful RDF only');
+    }
+  }
+}
+
+function emitRuleAlignmentLinks(pkg: Package) {
+  const owners = [
+    ...subjectsOfType(pkg, 'ismsch:Rule'),
+    ...subjectsOfType(pkg, 'ismsch:Assert'),
+    ...subjectsOfType(pkg, 'ismsch:Report'),
+  ];
+
+  for (const ownerUri of owners) {
+    const expressions: string[] = [];
+    const context = firstLiteral(pkg, ownerUri, 'ismsch:context');
+    const test = firstLiteral(pkg, ownerUri, 'ismsch:test');
+    const text = firstLiteral(pkg, ownerUri, 'ismsch:text');
+    if (context) expressions.push(context);
+    if (test) expressions.push(test);
+    if (text) expressions.push(text);
+
+    const attrs = new Set<string>();
+    const qnames = new Set<string>();
+    for (const expression of expressions) {
+      for (const match of expression.matchAll(/@([A-Za-z_][\w.\-:]*)/g)) {
+        attrs.add(match[1]);
+      }
+      for (const match of expression.matchAll(/\b([A-Za-z_][\w\-]*)\:([A-Za-z_][\w\-.]*)\b/g)) {
+        qnames.add(`${match[1]}:${match[2]}`);
+      }
+    }
+
+    for (const attr of attrs) {
+      pkg.g.addL(ownerUri, 'ismsch:referencesAttribute', attr);
+      const aligned = schemaCandidatePropertyUri(attr);
+      if (aligned) {
+        pkg.g.add(ownerUri, 'ismsch:alignsToSchemaTerm', aligned);
+      }
+    }
+    for (const qname of qnames) {
+      pkg.g.addL(ownerUri, 'ismsch:referencesQName', qname);
+      const local = qname.includes(':') ? qname.substring(qname.indexOf(':') + 1) : qname;
+      const aligned = schemaCandidatePropertyUri(local);
+      if (aligned) {
+        pkg.g.add(ownerUri, 'ismsch:alignsToSchemaTerm', aligned);
+      }
+    }
+  }
+}
+
+function cloneConstraintNodes(
+  pkg: Package,
+  fromRuleUri: string,
+  toRuleUri: string,
+  linkPredicate: string,
+  typePredicate: string,
+  fragmentPrefix: string,
+  paramMap: Map<string, string>,
+) {
+  let index = 0;
+  for (const sourceConstraintUri of objectsOf(pkg, fromRuleUri, linkPredicate)) {
+    index += 1;
+    const targetConstraintUri = `${toRuleUri}#${fragmentPrefix}-${index}`;
+    pkg.g.add(targetConstraintUri, 'rdf:type', typePredicate);
+    pkg.g.add(toRuleUri, linkPredicate, targetConstraintUri);
+    pkg.g.add(targetConstraintUri, 'ismsch:derivedFromConstraint', sourceConstraintUri);
+
+    const test = firstLiteral(pkg, sourceConstraintUri, 'ismsch:test');
+    const flag = firstLiteral(pkg, sourceConstraintUri, 'ismsch:flag');
+    const role = firstLiteral(pkg, sourceConstraintUri, 'ismsch:role');
+    const text = firstLiteral(pkg, sourceConstraintUri, 'ismsch:text');
+    if (test) pkg.g.addL(targetConstraintUri, 'ismsch:test', substituteSchematronParams(test, paramMap));
+    if (flag) pkg.g.addL(targetConstraintUri, 'ismsch:flag', flag);
+    if (role) pkg.g.addL(targetConstraintUri, 'ismsch:role', role);
+    if (text) pkg.g.addL(targetConstraintUri, 'ismsch:text', substituteSchematronParams(text, paramMap));
+  }
+}
+
+function collectPatternParams(pkg: Package, patternUri: string): Map<string, string> {
+  const paramMap = new Map<string, string>();
+  for (const paramUri of objectsOf(pkg, patternUri, 'ismsch:hasParameter')) {
+    const name = firstLiteral(pkg, paramUri, 'ismsch:paramName');
+    const value = firstLiteral(pkg, paramUri, 'ismsch:paramValue');
+    if (name && value !== undefined) {
+      paramMap.set(name, value);
+    }
+  }
+  return paramMap;
+}
+
+function substituteSchematronParams(text: string, paramMap: Map<string, string>): string {
+  let result = text;
+  for (const [name, value] of paramMap.entries()) {
+    const pattern = new RegExp(`\\$${name}\\b`, 'g');
+    result = result.replace(pattern, value);
+  }
+  return result;
+}
+
+function subjectsOfType(pkg: Package, typeIriOrQName: string): string[] {
+  return pkg.g.find(null, 'rdf:type', typeIriOrQName).map((t: any) => t._s);
+}
+
+function hasType(pkg: Package, subject: string, typeIriOrQName: string): boolean {
+  return pkg.g.find(subject, 'rdf:type', typeIriOrQName).length > 0;
+}
+
+function objectsOf(pkg: Package, subject: string, predicate: string): string[] {
+  return pkg.g.find(subject, predicate, null).map((t: any) => t._o?.value).filter(Boolean);
+}
+
+function firstLiteral(pkg: Package, subject: string, predicate: string): string | undefined {
+  const match = pkg.g.find(subject, predicate, null)[0] as any;
+  if (!match || !match._o) {
+    return undefined;
+  }
+  return String(match._o.value ?? '');
+}
+
+function extractSingleAttributeRef(expression: string | undefined): string | undefined {
+  if (!expression) {
+    return undefined;
+  }
+  const match = expression.match(/^@([A-Za-z_][\w.\-:]*)$/);
+  return match?.[1];
+}
+
+function schemaCandidatePropertyUri(nameOrQName: string): string | undefined {
+  const local = nameOrQName.includes(':') ? nameOrQName.substring(nameOrQName.indexOf(':') + 1) : nameOrQName;
+  const normalized = local.trim();
+  if (!normalized || !/^[A-Za-z_][\w.\-]*$/.test(normalized)) {
+    return undefined;
+  }
+  return `${URI_PREFIX}:ISM:${normalized}`;
+}
+
+/**
+ * Fast synchronous Turtle serialiser used by writeGraphPackage.
+ *
+ * Produces valid Turtle with prefix declarations and subject/predicate grouping.
+ * Blank nodes are emitted as anonymous `[]` when they appear only as objects of
+ * a single triple (simple nesting), or as `_:bX` labels otherwise.
+ */
+function writeTurtleFast(quads: Quad[], prefixes: Record<string, string>): string {
+  // prefixes is { prefix_label: iri }. Build reverse map iri→prefix for abbreviation.
+  const iriToPrefix = new Map<string, string>();
+  for (const [px, ns] of Object.entries(prefixes)) {
+    iriToPrefix.set(ns, px);
+  }
+
+  function abbrev(iri: string): string {
+    for (const [ns, px] of iriToPrefix) {
+      if (iri.startsWith(ns)) {
+        const local = iri.slice(ns.length);
+        // Only use prefixed form when the local part is a valid PN_LOCAL
+        if (local && /^[A-Za-z0-9_\-./~!$&'()*+,;=@]/.test(local)) {
+          return `${px}:${local}`;
+        }
+      }
+    }
+    return `<${iri}>`;
+  }
+
+  function termStr(term: Quad['subject'] | Quad['object']): string {
+    if (term.termType === 'NamedNode') {
+      return abbrev(term.value);
+    }
+    if (term.termType === 'BlankNode') {
+      return `_:${term.value}`;
+    }
+    if (term.termType === 'Literal') {
+      const escaped = term.value.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n').replace(/\r/g, '\\r');
+      if (term.language) return `"${escaped}"@${term.language}`;
+      const dt = term.datatype?.value;
+      if (dt && dt !== 'http://www.w3.org/2001/XMLSchema#string') {
+        return `"${escaped}"^^${abbrev(dt)}`;
+      }
+      return `"${escaped}"`;
+    }
+    return `<${(term as unknown as NamedNode).value}>`;
+  }
+
+  const lines: string[] = [];
+  for (const [px, ns] of Object.entries(prefixes).sort((a, b) => a[0].localeCompare(b[0]))) {
+    // Skip namespace URIs that don't end with a valid RDF namespace terminator character.
+    if (!/[/#_=:]$/.test(ns)) continue;
+    lines.push(`@prefix ${px}: <${ns}> .`);
+  }
+  lines.push('');
+
+  // Group by subject
+  const bySubject = new Map<string, Array<[string, string]>>();
+  for (const q of quads) {
+    const s = termStr(q.subject);
+    if (!bySubject.has(s)) bySubject.set(s, []);
+    bySubject.get(s)!.push([termStr(q.predicate), termStr(q.object)]);
+  }
+
+  for (const [subject, pos] of bySubject) {
+    if (pos.length === 1) {
+      lines.push(`${subject} ${pos[0][0]} ${pos[0][1]} .`);
+    } else {
+      lines.push(`${subject}`);
+      for (let i = 0; i < pos.length; i++) {
+        const sep = i < pos.length - 1 ? ' ;' : ' .';
+        lines.push(`    ${pos[i][0]} ${pos[i][1]}${sep}`);
+      }
+    }
+    lines.push('');
+  }
+
+  return lines.join('\n');
+}
+
+/**
+ * Serialises a {@link Package}'s RDF graph to all three output formats (JSON-LD, Turtle,
+ * N-Triples) and writes the files under `<outputDir>/<relative>/<basename>.{jsonld,ttl,nt}`.
+ *
+ * Handles blank nodes in the graph by mapping `_:` prefixed values appropriately
+ * for each serialiser.
+ */
 async function writeGraphPackage(p: Package, outputDir: string, relative: string, basename: string) {
   const context = _.invert(p.namespaces);
   if (!fs.existsSync(outputDir)) {
@@ -1243,27 +1773,134 @@ async function writeGraphPackage(p: Package, outputDir: string, relative: string
     prettyPrint: true
   });
 
+  // Guard against read() being called multiple times by the stream machinery
+  let pushed = false;
   const input = new Readable({
     objectMode: true,
     read: () => {
-      quads.forEach(quad => {
-        input.push(quad);
-      });
-      input.push(null);
+      if (!pushed) {
+        pushed = true;
+        quads.forEach(quad => { input.push(quad); });
+        input.push(null);
+      }
     }
   });
 
   const jsonld: string = await getStream(jsonldSerializer.import(input) as AnyStream);
   fs.writeFileSync(path.join(outputDir, `${basename}.jsonld`), jsonld);
 
-  let turtle: string = await write(quads, { prefixes: context });
-  turtle = convertRdfListToTurtleList(turtle);
+  // Use fast synchronous Turtle serializer to avoid hangs on large merged graphs.
+  const turtle = writeTurtleFast(quads, context);
   fs.writeFileSync(path.join(outputDir, `${basename}.ttl`), turtle);
 
   const triples = triplesToString(quads);
   fs.writeFileSync(path.join(outputDir, `${basename}.nt`), triples);
+
 }
 
+function writeTrigAndTdfArtifacts(
+  quads: Quad[],
+  context: Record<string, string>,
+  graphName: string,
+  outputDir: string,
+  basename: string,
+  relativePath: string,
+  category: 'Schema',
+  mode: 'standalone' | 'convenience',
+) {
+  const trigText = writeTrigSingleGraph(quads, context, graphName);
+  const trigOutputPath = path.join(outputDir, `${basename}.trig`);
+  fs.writeFileSync(trigOutputPath, trigText);
+
+  const tdfObject = {
+    packageVersion: '1.0.0',
+    payloadMediaType: 'application/trig',
+    payloadEncoding: 'utf8',
+    payloadBase64: Buffer.from(trigText, 'utf8').toString('base64'),
+    payloadSha256: sha256String(trigText),
+    graphName,
+    category,
+    mode,
+    relativePath: relativePath.replaceAll(path.sep, '/'),
+    basename,
+    createdAt: new Date().toISOString(),
+  };
+  const tdfOutputPath = path.join(outputDir, `${basename}.tdf`);
+  fs.writeFileSync(tdfOutputPath, JSON.stringify(tdfObject, null, 2));
+
+  trigManifestEntries.push({
+    graphName,
+    outputPath: toWorkspaceRelativePath(trigOutputPath),
+    relativePath: relativePath.replaceAll(path.sep, '/'),
+    basename,
+    category,
+    mode,
+    createdAt: tdfObject.createdAt,
+  });
+
+  tdfManifestEntries.push({
+    graphName,
+    outputPath: toWorkspaceRelativePath(tdfOutputPath),
+    payloadPath: toWorkspaceRelativePath(trigOutputPath),
+    payloadSha256: tdfObject.payloadSha256,
+    relativePath: relativePath.replaceAll(path.sep, '/'),
+    basename,
+    category,
+    mode,
+    createdAt: tdfObject.createdAt,
+  });
+}
+
+function writeTrigSingleGraph(quads: Quad[], prefixes: Record<string, string>, graphName: string): string {
+  const lines: string[] = [];
+  const prefixEntries = Object.entries(prefixes).sort((a, b) => a[0].localeCompare(b[0]));
+  for (const [prefix, iri] of prefixEntries) {
+    // Skip namespace URIs that don't end with a valid RDF namespace terminator character.
+    if (!/[/#_=:]$/.test(iri)) continue;
+    lines.push(`@prefix ${prefix}: <${iri}> .`);
+  }
+  lines.push('');
+  lines.push(`GRAPH <${graphName}> {`);
+  for (const quad of quads) {
+    lines.push(`  ${tripleToString(quad).trimEnd()}`);
+  }
+  lines.push('}');
+  lines.push('');
+  return lines.join('\n');
+}
+
+function sha256String(value: string): string {
+  const hash = createHash('sha256');
+  hash.update(value, 'utf8');
+  return hash.digest('hex');
+}
+
+function toWorkspaceRelativePath(absolutePath: string): string {
+  return path.relative(WORKSPACE_ROOT, absolutePath).replaceAll(path.sep, '/');
+}
+
+function writeOutputManifests() {
+  if (!fs.existsSync(OUTPUT_MANIFESTS_DIR)) {
+    fs.mkdirSync(OUTPUT_MANIFESTS_DIR, { recursive: true });
+  }
+
+  const sortedTrig = [...trigManifestEntries].sort((a, b) => a.outputPath.localeCompare(b.outputPath));
+  const sortedTdf = [...tdfManifestEntries].sort((a, b) => a.outputPath.localeCompare(b.outputPath));
+
+  fs.writeFileSync(
+    path.join(OUTPUT_MANIFESTS_DIR, 'trig-manifest.json'),
+    JSON.stringify({ generatedAt: new Date().toISOString(), count: sortedTrig.length, entries: sortedTrig }, null, 2),
+  );
+  fs.writeFileSync(
+    path.join(OUTPUT_MANIFESTS_DIR, 'tdf-manifest.json'),
+    JSON.stringify({ generatedAt: new Date().toISOString(), count: sortedTdf.length, entries: sortedTdf }, null, 2),
+  );
+}
+
+/**
+ * Normalises an xml2js value that may be a single item, an array, or absent into
+ * a consistently typed array. Returns an empty array for `null` / `undefined`.
+ */
 function asArray<T>(value: T | T[] | undefined): T[] {
   if (!value) {
     return [];
@@ -1271,79 +1908,81 @@ function asArray<T>(value: T | T[] | undefined): T[] {
   return Array.isArray(value) ? value : [value];
 }
 
-function removeWhitespace(documentation: any) {
-  return (documentation['xhtml:p']?.[0]?._ || documentation).replace(/\s+/g, ' ').trim();
+function removeWhitespace(documentation: any): string {
+  // If already a plain string (e.g. from a bare xs:documentation text node), normalise directly.
+  if (typeof documentation === 'string') {
+    return documentation.replace(/\s+/g, ' ').trim();
+  }
+  // Prefer xhtml:p text content (the common case for attribute documentation).
+  // Schema-level annotation blocks use xhtml:h1 or other block elements instead of xhtml:p,
+  // so fall back to a general recursive text extractor when xhtml:p is absent.
+  const p = documentation?.['xhtml:p']?.[0];
+  const pText: string | undefined = typeof p === 'string' ? p : p?._;
+  if (pText) {
+    return pText.replace(/\s+/g, ' ').trim();
+  }
+  return extractAllText(documentation).replace(/\s+/g, ' ').trim();
 }
 
+/**
+ * Recursively collects all text content (the `_` property in xml2js output) from a
+ * documentation node that may contain arbitrary xhtml child elements.
+ */
+function extractAllText(node: any): string {
+  if (!node) {
+    return '';
+  }
+  if (typeof node === 'string') {
+    return node;
+  }
+  const parts: string[] = [];
+  if (typeof node._ === 'string') {
+    parts.push(node._);
+  }
+  for (const [key, value] of Object.entries(node)) {
+    if (key === '$' || key === '_') {
+      continue;
+    }
+    for (const child of (Array.isArray(value) ? value : [value])) {
+      parts.push(extractAllText(child));
+    }
+  }
+  return parts.join(' ');
+}
+
+/** Serialises an array of quads to N-Triples format. */
 function triplesToString(triples: Quad[]): string {
   return triples.map(tripleToString).join('');
 }
 
+/** Serialises a single quad to a one-line N-Triples statement. */
 function tripleToString(quad: Quad): string {
   return `${tri(quad.subject)} ${tri(quad.predicate)} ${tri(quad.object)} .\n`;
 
   function tri(x: any) {
-    const val = x.value;
-    let objectString: string;
-
-    switch (quad.object.constructor.name) {
-      case 'Literal':
+    const val: string = x.value;
+    // Switch on the current term's own type, not quad.object's type.
+    switch (x.termType ?? x.constructor?.name) {
+      case 'Literal': {
         const literal: Literal = x;
-        if (literal.datatype && literal.datatype.value === `${XML_SCHEMA_URI}#string`) {
-          objectString = JSON.stringify(literal.value);
-          break;
+        const escaped = val
+          .replace(/\\/g, '\\\\')
+          .replace(/"/g, '\\"')
+          .replace(/\n/g, '\\n')
+          .replace(/\r/g, '\\r');
+        if (literal.language) return `"${escaped}"@${literal.language}`;
+        const dt = literal.datatype?.value;
+        if (dt && dt !== `${XML_SCHEMA_URI}#string`) {
+          return `"${escaped}"^^<${dt}>`;
         }
-
-      case 'NamedNode':
-        if (val.startsWith('_:')) {
-          objectString = val;
-          break;
-        }
-
+        return `"${escaped}"`;
+      }
+      case 'BlankNode':
+        return val.startsWith('_:') ? val : `_:${val}`;
       default:
-        objectString = `<${val}>`;
+        return `<${val}>`;
     }
-    return objectString;
   }
 }
 
-// This function converts RDF lists to a string representation
-// by extracting the values from rdf:first and formatting them.
-// It uses a regular expression to match the RDF list structure and
-// replaces it with a formatted string.
-// The function continues to process the input string until no more matches are found.
-// It returns the modified string with the RDF list converted to a string representation.
-// The function assumes that the input string is in a specific format,
-// and it may need to be adjusted if the input format changes.
-// Note: The function does not handle errors or malformed input.
-// If the input string does not match the expected format, it may return an empty string or throw an error.
-
-function convertRdfListToTurtleList(rdfListString: string): string {
-  let match;
-  do {
-    // Regular expression to extract the RDF list part and the surrounding text
-    const regex = /(.*?)(\s*\[\s*a rdf:List[\s\S]*?rdf:rest rdf:nil)(\s*]\n)*(.*)/s;
-    match = rdfListString.match(regex);
-    if (match && match.length > 4) {
-      const prefix = match[1];
-      const suffix = match[4];
-
-      // Regular expression to extract the string values from rdf:first
-      const valueRegex = /rdf:first\s+("[^"]*"(?:\^\^(\w+(?:\:\w+)?))?)/g;
-      let valueMatch;
-      const extractedValues: string[] = [];
-
-      // Iterate through the matches and extract the values
-      while ((valueMatch = valueRegex.exec(match[2])) !== null) {
-        extractedValues.push(valueMatch[1]);
-      }
-
-      // Construct the output string
-      const listString = ` (\n\t\t\t${extractedValues.join('\n\t\t\t')}\n\t\t) ;\n`; // Added semicolon
-
-      rdfListString = prefix + listString + suffix;
-    }
-  } while (match);
-  return rdfListString; // Or throw an error, depending on the desired behavior
-}
 

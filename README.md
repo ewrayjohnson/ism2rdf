@@ -3,7 +3,7 @@
 ![Made with RDF.js](https://img.shields.io/badge/RDF.js-powered-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
-ism2rdf transforms IC XML Schema Definition (XSD) and Schematron source files published by the [U.S. Intelligence Community CIO (IC CIO)](https://www.dni.gov/index.php/who-we-are/organizations/ic-cio/ic-technical-specifications) into RDF/OWL/SKOS/SHACL representations for use in Linked Data, semantic reasoning, and ontology-driven validation systems.
+ism2rdf transforms IC XML Schema Definition (XSD) and Schematron source files published by the [U.S. Intelligence Community CIO (IC CIO)](https://www.dni.gov/index.php/who-we-are/organizations/ic-cio/ic-technical-specifications) into RDF/OWL/SKOS representations, plus XSD-derived SHACL constraints, for use in Linked Data, semantic reasoning, and ontology-driven validation systems.
 
 ---
 
@@ -16,23 +16,49 @@ For each XSD schema processed, the transformer emits:
 - **SHACL pattern constraints** — regex restrictions become `sh:pattern` properties
 - **Typed custom datatypes** — `rdfs:Datatype` with `owl:oneOf` enumerations linked back to concept schemes via `dc:source` and `rdfs:seeAlso`
 
-For each Schematron document processed, the transformer emits a source-faithful RDF representation covering: schemas, namespace declarations, include chains, phases, patterns, rules, assertions, reports, variables, parameters, and paragraphs.
+For each Schematron document processed, the transformer emits source-faithful RDF for schemas, namespace declarations, include chains, phases, patterns, rules, assertions, and reports, plus derived enhancement artifacts:
+
+- **Resolved abstract-pattern rules** (`ismsch:ResolvedRule`) with parameter substitution
+- **SHACL shapes for safely translatable constraints** (`sh:minCount`, `sh:hasValue`, `sh:pattern`)
+- **Explicit preservation markers** (`ismsch:translationStatus`, `ismsch:translationReason`) for constraints that are not safely auto-translated
+- **Schema-term alignment links** (`ismsch:alignsToSchemaTerm`) extracted from rule expressions
+
+### Schema Root Metadata Mapping (GAP-07 Decision)
+
+The transformer maps ISM self-marking attributes on `xs:schema` to ontology metadata using standard predicates:
+
+- `ism:createDate` -> `dc:date`
+- `ism:DESVersion` -> `owl:versionInfo` (prefixed literal `DESVersion:...`)
+- `ism:ISMCATCESVersion` -> `owl:versionInfo` (prefixed literal `ISMCATCESVersion:...`)
+- `ism:classification` -> `dc:rights`
+- `ism:ownerProducer` -> `dc:publisher`
+- `ism:compliesWith` -> `dcterms:conformsTo`
+
+For `ism:compliesWith`, the object is emitted as a URI when the schema declares `xmlns:ismcomplies` (for example, `urn:us:gov:ic:cvenum:ism:complieswith#USGov`). If the namespace alias is missing, the transformer falls back to a literal so source intent is still preserved.
+
+Rationale for review/debate/change:
+
+- `dcterms:conformsTo` is the closest standard semantic for "complies with".
+- Using the CVE namespace URI keeps the value linkable to controlled-vocabulary resources.
+- Literal fallback prevents silent data loss in non-standard schema variants.
+
+If a different predicate or URI pattern is preferred (for example a custom `ism:` property), this behavior is isolated and can be changed without affecting the rest of the schema conversion pipeline.
 
 All outputs are written in three formats per file: compact **JSON-LD**, human-readable **Turtle**, and triple-store-compatible **N-Triples**.
 
-Output is written under a version-named subdirectory so each release of the authoritative source produces a discrete, non-overwriting output set:
+Output is written directly under `out/transformed`:
 
 ```
 out/transformed/
-└── <version>/             # e.g. Dec2022, or "current" when no version is specified
-    ├── standalone/        # Each schema as a self-contained owl:Ontology with owl:imports
-    ├── convenience/       # Same schemas merged — all imports inlined for direct querying
-    └── schematron/
-        ├── standalone/    # Each Schematron document as its own RDF graph
-        └── convenience/   # Same Schematron graphs with all includes merged inline
+├── Schema/
+│   ├── standalone/        # Each schema as a self-contained owl:Ontology with owl:imports
+│   └── convenience/       # Same schemas merged — all imports inlined for direct querying
+└── Schematron/
+    ├── standalone/        # Each Schematron document as its own RDF graph
+    └── convenience/       # Same Schematron graphs with all includes merged inline
 ```
 
-The version segment is derived from `--source-version` (or `ISM2RDF_SOURCE_VERSION`). When no version is provided it defaults to `current`. The entire `out/` tree is excluded from Git.
+The entire `out/` tree is excluded from Git.
 
 ---
 
@@ -59,10 +85,10 @@ The CVE pattern facts in detail:
 
 ## Authoritative Sources
 
-Authoritative source payloads are **not stored in this repository**. They must be provided at runtime. The transformer supports three source modes and resolves them in this precedence order:
+Authoritative source payloads are **not stored in this repository**. The transformer resolves source configuration in this precedence order:
 
 ```
-CLI argument  →  environment variable  →  .env file  →  existing local folders
+CLI argument  →  environment variable  →  .env file  →  built-in default URL
 ```
 
 ### Source Modes
@@ -126,6 +152,20 @@ npm install
 
 ## Running the Transformer
 
+### Default run (no arguments)
+
+By default, `npm start` uses this authoritative source URL:
+
+```
+https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip
+```
+
+```bash
+npm start
+```
+
+Note: some environments may receive HTTP 403 from direct DNI downloads. If default-source download fails and local staged folders already exist (`.ciartifacts/Schema` plus `.ciartifacts/Schematron`), the runtime automatically falls back to those local sources. Otherwise, provide a local ZIP or alternate source explicitly.
+
 ### With a URL source (downloaded and cached automatically)
 
 ```bash
@@ -149,7 +189,6 @@ npm start -- --source /path/to/ISM
 ```ini
 # .env
 ISM2RDF_SOURCE=https://www.dni.gov/.../ISM-Public-Standalone.zip
-ISM2RDF_SOURCE_VERSION=Dec2022
 ```
 
 ```bash
@@ -162,13 +201,18 @@ npm start
 npm start -- --source <value> --force-refresh
 ```
 
-### No source argument — use existing local folders
+### Local fallback behavior
 
-If `.ciartifacts/Schema` and `.ciartifacts/Schematron` are already populated (e.g. from a previous run), the transformer uses them directly with no source argument required:
+If default-source download fails (for example HTTP 403) and local staged folders already exist, the runtime automatically falls back to them:
 
 ```bash
 npm start
 ```
+
+Fallback roots are:
+
+- `.ciartifacts/Schema` (or legacy `.ciartifacts/schemas`)
+- `.ciartifacts/Schematron`
 
 ### All CLI options
 
@@ -176,7 +220,7 @@ npm start
 |--------|-------------|-------------|
 | `--source <value>` | `ISM2RDF_SOURCE` | URL, ZIP path, or directory path |
 | `--source-type <auto\|url\|zip\|dir>` | `ISM2RDF_SOURCE_TYPE` | Override auto-detection |
-| `--source-version <label>` | `ISM2RDF_SOURCE_VERSION` | Version label — used as the output subfolder name (e.g. `Dec2022`) |
+| `--source-version <label>` | `ISM2RDF_SOURCE_VERSION` | Version label for source selection, caching, and manifest metadata |
 | `--force-refresh` | `ISM2RDF_FORCE_REFRESH=true` | Force re-download and re-extract |
 
 ---
@@ -223,100 +267,6 @@ Default RDF namespace prefixes are configured in:
 This file is tracked in Git and should not contain authoritative source content.
 
 ---
-
-## License
-
-MIT License © 2025 E. Wray Johnson
-
-### Source Input Precedence
-
-Source can be provided by:
-
-1. CLI argument
-2. Environment variable
-3. `.env`
-
-Precedence is exactly in that order.
-
-Supported keys:
-
-- `--source` or `ISM2RDF_SOURCE`
-- `--source-type` or `ISM2RDF_SOURCE_TYPE` (`auto`, `url`, `zip`, `dir`)
-- `--source-version` or `ISM2RDF_SOURCE_VERSION`
-- `--force-refresh` or `ISM2RDF_FORCE_REFRESH`
-
-Examples:
-
-```bash
-# URL source
-npm start -- --source https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip
-
-# Local ZIP source
-npm start -- --source C:/data/ISM-Public-Standalone.zip --source-type zip
-
-# Local extracted source directory
-npm start -- --source C:/data/ISM --source-type dir
-
-# Force refresh from remote
-npm start -- --source https://example.org/source.zip --force-refresh
-```
-
-## Retrieval, Extraction, and Normalization
-
-When a source is provided, the runtime performs these phases:
-
-1. Resolve source kind (`url`, `zip`, `dir`).
-2. Acquire payload if needed:
-   - URL downloads to `.ciartifacts/downloads/`.
-   - ZIP and directory sources are validated directly.
-3. For ZIP sources, selectively extract only relevant prefixes.
-4. Normalize into canonical local processing roots:
-   - `.ciartifacts/Schema`
-   - `.ciartifacts/Schematron`
-5. Process those canonical folders into RDF outputs under `out/transformed/`.
-
-For ISM standalone ZIPs, expected mappings are:
-
-- `ISM/Schema/...` -> `.ciartifacts/Schema/...`
-- `ISM/Schematron/...` -> `.ciartifacts/Schematron/...`
-
-Legacy local path `.ciartifacts/schemas` is still accepted for compatibility when no explicit source is provided.
-
-## Freshness and Run Intent
-
-The runtime keeps a source manifest at `.ciartifacts/source-manifest.json` and uses it to detect whether cached/extracted inputs are still current for the requested source/version.
-
-If unchanged, staging is reused.
-If changed (or forced), content is re-acquired/re-staged.
-
-## Local Data Policy
-
-Authoritative source payloads and extracted source trees are ignored by Git in `.ciartifacts/.gitignore`.
-
-This keeps the repository focused on code, config, and generated outputs policy while still allowing deterministic local runs.
-
-## Controlled Vocabulary Enumeration (CVE) Pattern
-
-The CVE modeling approach in this repository aligns schema-enumerated datatypes with SKOS concept schemes and notations.
-
-For the detailed prescriptive description used in this project, see:
-
-- [Prescriptive _CVE_Pattern.pdf](Prescriptive%20_CVE_Pattern.pdf)
-
-At a high level, the transform emits:
-
-- `owl:DatatypeProperty` with constrained range datatypes
-- `owl:oneOf` literal sets where appropriate
-- `skos:ConceptScheme` and `skos:Concept` resources
-- traceability links via `dc:source` and `rdfs:seeAlso`
-
-## Configuration
-
-Default prefix mappings are loaded from:
-
-- `.ciartifacts/config/defaultPrefixes.json`
-
-Optional source keys may be supplied in `.env`.
 
 ## Build and Run
 

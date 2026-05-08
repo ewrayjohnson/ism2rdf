@@ -44,21 +44,47 @@ Rationale for review/debate/change:
 
 If a different predicate or URI pattern is preferred (for example a custom `ism:` property), this behavior is isolated and can be changed without affecting the rest of the schema conversion pipeline.
 
-All outputs are written in three formats per file: compact **JSON-LD**, human-readable **Turtle**, and triple-store-compatible **N-Triples**.
+All outputs are written in five formats per file: compact **JSON-LD**, human-readable **Turtle**, **N-Triples**, **TriG** (named-graph serialization), and **TDF** (Trusted Data Format payload wrapping the TriG).
 
-Output is written directly under `out/transformed`:
+Output is written directly under `out/`:
 
 ```
-out/transformed/
-├── Schema/
-│   ├── standalone/        # Each schema as a self-contained owl:Ontology with owl:imports
-│   └── convenience/       # Same schemas merged — all imports inlined for direct querying
-└── Schematron/
-    ├── standalone/        # Each Schematron document as its own RDF graph
-    └── convenience/       # Same Schematron graphs with all includes merged inline
+out/
+├── jsonld/
+│   ├── standalone/        # Each schema/schematron as a self-contained graph
+│   │   ├── Schema/
+│   │   └── Schematron/
+│   └── convenience/       # All imports/includes merged inline
+│       ├── Schema/
+│       └── Schematron/
+├── ttl/
+│   ├── standalone/
+│   │   ├── Schema/
+│   │   └── Schematron/
+│   └── convenience/
+│       ├── Schema/
+│       └── Schematron/
+├── nt/
+│   ├── standalone/
+│   │   ├── Schema/
+│   │   └── Schematron/
+│   └── convenience/
+│       ├── Schema/
+│       └── Schematron/
+└── trig/                  # TriG + TDF pairs
+    ├── standalone/
+    │   ├── Schema/
+    │   ├── Schematron/
+    │   └── manifest.json  # Combined TriG+TDF manifest for standalone mode
+    └── convenience/
+        ├── Schema/
+        ├── Schematron/
+        └── manifest.json  # Combined TriG+TDF manifest for convenience mode
 ```
 
-The entire `out/` tree is excluded from Git.
+Each `manifest.json` records a single entry per artifact pair with `trigPath`, `tdfPath`, `payloadSha256`, `graphName`, `category`, `mode`, and `createdAt`.
+
+TypeScript compiler output goes to `dist/`. The entire `out/` and `dist/` trees are excluded from Git.
 
 ---
 

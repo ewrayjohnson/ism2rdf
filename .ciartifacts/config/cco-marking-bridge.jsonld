@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ism": "urn:us:gov:ic:ism#",
+    "ismclassall": "urn:us:gov:ic:cvenum:ism:classification:all#",
+    "ismcatownpro": "urn:us:gov:ic:cvenum:ismcat:ownerproducer#",
+    "ismscicon": "urn:us:gov:ic:cvenum:ism:scicontrols#",
+    "ismsar": "urn:us:gov:ic:cvenum:ism:sar#",
+    "ismcomplies": "urn:us:gov:ic:cvenum:ism:complieswith#",
+    "cco": "http://www.ontologyrepository.com/CommonCoreOntologies/"
+  },
+  "@graph": [
+    {
+      "@id": "ism:classification",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "cco:InformationContentEntity"
+      },
+      "rdfs:range": {
+        "@id": "ismclassall:CVEnumISMClassificationAllValues"
+      }
+    },
+    {
+      "@id": "ism:ownerProducer",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "cco:InformationContentEntity"
+      },
+      "rdfs:range": {
+        "@id": "ismcatownpro:CVEnumISMCATOwnerProducerValues"
+      }
+    },
+    {
+      "@id": "ism:SCIcontrols",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "cco:InformationContentEntity"
+      },
+      "rdfs:range": {
+        "@id": "ismscicon:CVEnumISMSCIControlsValues"
+      }
+    },
+    {
+      "@id": "ism:SARIdentifier",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "cco:InformationContentEntity"
+      },
+      "rdfs:range": {
+        "@id": "ismsar:CVEnumISMSARValues"
+      }
+    },
+    {
+      "@id": "ism:compliesWith",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "cco:InformationContentEntity"
+      },
+      "rdfs:range": {
+        "@id": "ismcomplies:CVEnumISMCompliesWithValues"
+      }
+    }
+  ]
+}

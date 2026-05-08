@@ -38,13 +38,91 @@ const SCHEMATRON_DIR_NAME = 'Schematron';
 const SCHEMA_DIR = path.join(INPUT_DIR, SCHEMA_DIR_NAME);
 const LEGACY_SCHEMA_DIR = path.join(INPUT_DIR, LEGACY_SCHEMA_DIR_NAME);
 const SCHEMATRON_DIR = path.join(INPUT_DIR, SCHEMATRON_DIR_NAME);
-const OUTPUT_BASE_DIR = path.join(WORKSPACE_ROOT, 'out', 'transformed');
-const OUTPUT_MANIFESTS_DIR = path.join(OUTPUT_BASE_DIR, 'manifests');
+const OUTPUT_BASE_DIR = path.join(WORKSPACE_ROOT, 'out');
+const CCO_MARKING_BRIDGE_SOURCE = path.join(INPUT_DIR, 'config', 'cco-marking-bridge.jsonld');
 const RDF_TYPE = 'rdf:type';
 const ONTOLOGY_TYPE = 'owl:Ontology';
 const IMPORTS_PROPERTY = 'owl:imports';
 const URI_PREFIX = 'urn:us:gov:ic';
 const SCHEMATRON_NS_URI = 'urn:us:gov:ic:ism2rdf:schematron#';
+const DATATYPE_PROPERTY_LABEL_OVERRIDES: Record<string, string> = {
+  atomicEnergyMarkings: 'Atomic Energy Markings',
+  CESVersion: 'CES Version',
+  classification: 'Classification',
+  classificationReason: 'Classification Reason',
+  classifiedBy: 'Classified By',
+  compilationReason: 'Compilation Reason',
+  compliesWith: 'Complies With',
+  createDate: 'Create Date',
+  cuiBasic: 'CUI Basic',
+  cuiControlledBy: 'CUI Controlled By',
+  cuiControlledByOffice: 'CUI Controlled By Office',
+  cuiDecontrolDate: 'CUI Decontrol Date',
+  cuiDecontrolEvent: 'CUI Decontrol Event',
+  cuiPOC: 'CUI POC',
+  cuiSpecified: 'CUI Specified',
+  declassDate: 'Declass Date',
+  declassEvent: 'Declass Event',
+  declassException: 'Declass Exception',
+  derivativelyClassifiedBy: 'Derivatively Classified By',
+  derivedFrom: 'Derived From',
+  DESVersion: 'DES Version',
+  displayOnlyTo: 'Display Only To',
+  disseminationControls: 'Dissemination Controls',
+  excludeFromRollup: 'Exclude From Rollup',
+  exemptFrom: 'Exempt From',
+  externalNotice: 'External Notice',
+  FGIsourceOpen: 'FGI Source Open',
+  FGIsourceProtected: 'FGI Source Protected',
+  handleViaChannels: 'Handle Via Channels',
+  hasApproximateMarkings: 'Has Approximate Markings',
+  highWaterNATO: 'High Water NATO',
+  id: 'ID',
+  identifier: 'Identifier',
+  IDReference: 'ID Reference',
+  ISMCATCESVersion: 'ISMCAT CES Version',
+  joint: 'Joint',
+  noAggregation: 'No Aggregation',
+  nonICmarkings: 'Non IC Markings',
+  nonUSControls: 'Non US Controls',
+  noticeDate: 'Notice Date',
+  noticeProseID: 'Notice Prose ID',
+  noticeReason: 'Notice Reason',
+  noticeType: 'Notice Type',
+  ownerProducer: 'Owner Producer',
+  pocType: 'POC Type',
+  qualifier: 'Qualifier',
+  releasableTo: 'Releasable To',
+  resourceElement: 'Resource Element',
+  SARIdentifier: 'SAR Identifier',
+  SCIcontrols: 'SCI Controls',
+  secondBannerLine: 'Second Banner Line',
+  TESVersion: 'TES Version',
+  unregisteredNoticeType: 'Unregistered Notice Type',
+  usagency: 'US Agency',
+  usgovagency: 'US Gov Agency',
+};
+const DATATYPE_PROPERTY_LABEL_TOKEN_OVERRIDES: Record<string, string> = {
+  CES: 'CES',
+  CUI: 'CUI',
+  DES: 'DES',
+  FGI: 'FGI',
+  IC: 'IC',
+  ID: 'ID',
+  ISMCAT: 'ISMCAT',
+  NATO: 'NATO',
+  POC: 'POC',
+  SAR: 'SAR',
+  SCI: 'SCI',
+  TES: 'TES',
+  US: 'US',
+  URI: 'URI',
+  URL: 'URL',
+  XML: 'XML',
+  XSD: 'XSD',
+};
+type OutputCategory = 'Schema' | 'Schematron';
+type OutputMode = 'standalone' | 'convenience';
 
 type Import = {
   namespace: string;
@@ -70,31 +148,20 @@ type PrepareSourceResult = {
   schematronRoot: string;
 }
 
-type TrigManifestEntry = {
+type TrigTdfManifestEntry = {
   graphName: string;
-  outputPath: string;
-  relativePath: string;
-  basename: string;
-  category: 'Schema' | 'Schematron';
-  mode: 'standalone' | 'convenience';
-  createdAt: string;
-}
-
-type TdfManifestEntry = {
-  graphName: string;
-  outputPath: string;
-  payloadPath: string;
+  trigPath: string;
+  tdfPath: string;
   payloadSha256: string;
   relativePath: string;
   basename: string;
-  category: 'Schema' | 'Schematron';
-  mode: 'standalone' | 'convenience';
+  category: OutputCategory;
+  mode: OutputMode;
   createdAt: string;
 }
 
 let blankIndex = 0;
-const trigManifestEntries: TrigManifestEntry[] = [];
-const tdfManifestEntries: TdfManifestEntry[] = [];
+const trigTdfManifestEntries: TrigTdfManifestEntry[] = [];
 
 (async () => {
   const defaultPrefixes = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, 'config', 'defaultPrefixes.json'), 'utf8'));
@@ -125,6 +192,7 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
   }
 
   writeOutputManifests();
+  copySchemaBridgeArtifacts();
 
   console.log(`Processed ${processed.size} XSD documents`);
   console.log(`Processed ${processedSchematron.size} Schematron documents`);
@@ -288,6 +356,7 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
                       standalone.namespaces[RDF_URI] = 'rdf';
                       standalone.namespaces[DC_URI] = 'dc';
                       standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
+                      standalone.g.addL(attributeId, 'rdfs:label', buildDatatypePropertyLabel(attributeName));
                       if (attributeType.startsWith(`${xsdPrefix}:`)) {
                         namespaces.add(xsdPrefix, `${XML_SCHEMA_URI}#`);
                       }
@@ -536,7 +605,12 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
               standalone.g.addL(allowedNotationsId, 'rdfs:comment', `Permissible literals aligned to skos:notation in ${schemeId}.`);
               let rest = null;
               for (const aConcept of concepts) {
-                standalone.g.add(schemeId, 'skos:hasTopConcept', aConcept.conceptId);
+                // Only concrete notation concepts should be top concepts.
+                // Pattern-only pseudo concepts are modeled for SHACL validation,
+                // but strict upsert validators may reject them in skos:hasTopConcept.
+                if (aConcept.notation) {
+                  standalone.g.add(schemeId, 'skos:hasTopConcept', aConcept.conceptId);
+                }
                 standalone.namespaces[OWL_URI] = 'owl';
                 standalone.g.add(aConcept.conceptId, RDF_TYPE, 'skos:Concept');
                 standalone.g.add(aConcept.conceptId, 'skos:inScheme', schemeId);
@@ -575,7 +649,7 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
 
             convienence.g.addAll(standalone.g);
             Object.assign(convienence.namespaces, standalone.namespaces);
-            await writeGraph(convienence, path.join(outputDir, 'Schema', 'convenience'), 'convenience');
+            await writeGraph(convienence, 'Schema', 'convenience');
 
             Object.keys(standalone.imports).forEach((schemaLocation) => {
               // Derive the import's ontology URI the same way the main ontologyUri is built
@@ -590,22 +664,19 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
               registerOntologyDocumentNamespace(standalone.namespaces, importOntologyUri);
               standalone.g.add(ontologyUri, IMPORTS_PROPERTY, importOntologyUri);
             });
-            await writeGraph(standalone, path.join(outputDir, 'Schema', 'standalone'), 'standalone');
+            await writeGraph(standalone, 'Schema', 'standalone');
 
             const schematronPath = discoverSchematronPath(text, inputFilepath, schematronRoot);
             if (schematronPath) {
               await inputSchematron(schematronPath, schematronRoot, outputDir, processedSchematron);
             }
 
-            async function writeGraph(p: Package, outputDir: string, mode: 'standalone' | 'convenience') {
+            async function writeGraph(p: Package, category: OutputCategory, mode: OutputMode) {
               const context = _.invert(p.namespaces);
-              if (!fs.existsSync(outputDir)) {
-                fs.mkdirSync(outputDir, { recursive: true });
-              }
-              outputDir = path.join(outputDir, relative);
-              if (!fs.existsSync(outputDir)) {
-                fs.mkdirSync(outputDir, { recursive: true });
-              }
+              const jsonldOutputDir = ensureArtifactOutputDir('jsonld', mode, category, relative);
+              const ttlOutputDir = ensureArtifactOutputDir('ttl', mode, category, relative);
+              const ntOutputDir = ensureArtifactOutputDir('nt', mode, category, relative);
+              const trigOutputDir = ensureArtifactOutputDir('trig', mode, category, relative);
 
               const prefixesArr: Array<[string, NamedNode]> = [];
               Object.entries(context).forEach((e: [string, string]) => {
@@ -636,15 +707,15 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
                 }
               })
               const jsonld: string = await getStream(jsonldSerializer.import(input) as AnyStream);
-              const jsonldOutputFilepath = path.join(outputDir, `${basename}.jsonld`);
+              const jsonldOutputFilepath = path.join(jsonldOutputDir, `${basename}.jsonld`);
               fs.writeFileSync(jsonldOutputFilepath, jsonld);
 
               const turtle = writeTurtleFast(quads, context);
-              const turtleOutputFilepath = path.join(outputDir, `${basename}.ttl`);
+              const turtleOutputFilepath = path.join(ttlOutputDir, `${basename}.ttl`);
               fs.writeFileSync(turtleOutputFilepath, turtle);
 
               const triples = triplesToString(quads);
-              const triplesOutputFilepath = path.join(outputDir, `${basename}.nt`);
+              const triplesOutputFilepath = path.join(ntOutputDir, `${basename}.nt`);
               fs.writeFileSync(triplesOutputFilepath, triples);
 
               const graphName = mode === 'standalone'
@@ -654,10 +725,10 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
                 quads,
                 context,
                 graphName,
-                outputDir,
+                trigOutputDir,
                 basename,
                 relative,
-                'Schema',
+                category,
                 mode,
               );
             }
@@ -1255,8 +1326,8 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
 
   const relativeDir = path.relative(schematronRoot, path.dirname(normalizedPath));
   const basename = path.basename(normalizedPath, SCH_EXTENSION);
-  await writeGraphPackage(convienence, path.join(outputDir, 'Schematron', 'convenience'), relativeDir, basename, 'convenience', docUri);
-  await writeGraphPackage(standalone, path.join(outputDir, 'Schematron', 'standalone'), relativeDir, basename, 'standalone', docUri);
+  await writeGraphPackage(convienence, relativeDir, basename, 'convenience', docUri);
+  await writeGraphPackage(standalone, relativeDir, basename, 'standalone', docUri);
 
   return packages;
 
@@ -1770,15 +1841,12 @@ function writeTurtleFast(quads: Quad[], prefixes: Record<string, string>): strin
  * Handles blank nodes in the graph by mapping `_:` prefixed values appropriately
  * for each serialiser.
  */
-async function writeGraphPackage(p: Package, outputDir: string, relative: string, basename: string, mode?: 'standalone' | 'convenience', docUri?: string) {
+async function writeGraphPackage(p: Package, relative: string, basename: string, mode?: OutputMode, docUri?: string) {
   const context = _.invert(p.namespaces);
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
-  outputDir = path.join(outputDir, relative);
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
+  const jsonldOutputDir = ensureArtifactOutputDir('jsonld', mode ?? 'standalone', 'Schematron', relative);
+  const ttlOutputDir = ensureArtifactOutputDir('ttl', mode ?? 'standalone', 'Schematron', relative);
+  const ntOutputDir = ensureArtifactOutputDir('nt', mode ?? 'standalone', 'Schematron', relative);
+  const trigOutputDir = ensureArtifactOutputDir('trig', mode ?? 'standalone', 'Schematron', relative);
 
   const quads: Quad[] = [];
   p.g.find().forEach((triple: any) => {
@@ -1816,18 +1884,18 @@ async function writeGraphPackage(p: Package, outputDir: string, relative: string
   });
 
   const jsonld: string = await getStream(jsonldSerializer.import(input) as AnyStream);
-  fs.writeFileSync(path.join(outputDir, `${basename}.jsonld`), jsonld);
+  fs.writeFileSync(path.join(jsonldOutputDir, `${basename}.jsonld`), jsonld);
 
   // Use fast synchronous Turtle serializer to avoid hangs on large merged graphs.
   const turtle = writeTurtleFast(quads, context);
-  fs.writeFileSync(path.join(outputDir, `${basename}.ttl`), turtle);
+  fs.writeFileSync(path.join(ttlOutputDir, `${basename}.ttl`), turtle);
 
   const triples = triplesToString(quads);
-  fs.writeFileSync(path.join(outputDir, `${basename}.nt`), triples);
+  fs.writeFileSync(path.join(ntOutputDir, `${basename}.nt`), triples);
 
   if (mode && docUri) {
     const graphName = `${docUri}:graph:${mode}`;
-    writeTrigAndTdfArtifacts(quads, context, graphName, outputDir, basename, relative, 'Schematron', mode);
+    writeTrigAndTdfArtifacts(quads, context, graphName, trigOutputDir, basename, relative, 'Schematron', mode);
   }
 
 }
@@ -1839,8 +1907,8 @@ function writeTrigAndTdfArtifacts(
   outputDir: string,
   basename: string,
   relativePath: string,
-  category: 'Schema' | 'Schematron',
-  mode: 'standalone' | 'convenience',
+  category: OutputCategory,
+  mode: OutputMode,
 ) {
   const trigText = writeTrigSingleGraph(quads, context, graphName);
   const trigOutputPath = path.join(outputDir, `${basename}.trig`);
@@ -1862,20 +1930,11 @@ function writeTrigAndTdfArtifacts(
   const tdfOutputPath = path.join(outputDir, `${basename}.tdf`);
   fs.writeFileSync(tdfOutputPath, JSON.stringify(tdfObject, null, 2));
 
-  trigManifestEntries.push({
+  const manifestDir = path.join(OUTPUT_BASE_DIR, 'trig', mode);
+  trigTdfManifestEntries.push({
     graphName,
-    outputPath: toWorkspaceRelativePath(trigOutputPath),
-    relativePath: relativePath.replaceAll(path.sep, '/'),
-    basename,
-    category,
-    mode,
-    createdAt: tdfObject.createdAt,
-  });
-
-  tdfManifestEntries.push({
-    graphName,
-    outputPath: toWorkspaceRelativePath(tdfOutputPath),
-    payloadPath: toWorkspaceRelativePath(trigOutputPath),
+    trigPath: path.relative(manifestDir, trigOutputPath).replaceAll(path.sep, '/'),
+    tdfPath: path.relative(manifestDir, tdfOutputPath).replaceAll(path.sep, '/'),
     payloadSha256: tdfObject.payloadSha256,
     relativePath: relativePath.replaceAll(path.sep, '/'),
     basename,
@@ -1914,22 +1973,44 @@ function toWorkspaceRelativePath(absolutePath: string): string {
 }
 
 function writeOutputManifests() {
-  if (!fs.existsSync(OUTPUT_MANIFESTS_DIR)) {
-    fs.mkdirSync(OUTPUT_MANIFESTS_DIR, { recursive: true });
+  for (const mode of ['standalone', 'convenience'] as OutputMode[]) {
+    const manifestPath = path.join(OUTPUT_BASE_DIR, 'trig', mode, 'manifest.json');
+    const entries = trigTdfManifestEntries
+      .filter(entry => entry.mode === mode)
+      .sort((a, b) => a.trigPath.localeCompare(b.trigPath));
+    fs.writeFileSync(
+      manifestPath,
+      JSON.stringify({ generatedAt: new Date().toISOString(), count: entries.length, entries }, null, 2),
+    );
+  }
+}
+
+function ensureArtifactOutputDir(format: 'jsonld' | 'ttl' | 'nt' | 'trig', mode: OutputMode, category: OutputCategory, relativePath: string): string {
+  const outputDir = path.join(OUTPUT_BASE_DIR, format, mode, category, relativePath);
+  fs.mkdirSync(outputDir, { recursive: true });
+  return outputDir;
+}
+
+function copySchemaBridgeArtifacts() {
+  if (!fs.existsSync(CCO_MARKING_BRIDGE_SOURCE)) {
+    throw new Error(`Missing required bridge file: ${CCO_MARKING_BRIDGE_SOURCE}`);
   }
 
-  const sortedTrig = [...trigManifestEntries].sort((a, b) => a.outputPath.localeCompare(b.outputPath));
-  const sortedTdf = [...tdfManifestEntries].sort((a, b) => a.outputPath.localeCompare(b.outputPath));
+  const bridgeFilename = path.basename(CCO_MARKING_BRIDGE_SOURCE);
+  const formats = ['jsonld', 'ttl', 'nt', 'trig'] as const;
+  const modes: OutputMode[] = ['standalone', 'convenience'];
 
-  fs.writeFileSync(
-    path.join(OUTPUT_MANIFESTS_DIR, 'trig-manifest.json'),
-    JSON.stringify({ generatedAt: new Date().toISOString(), count: sortedTrig.length, entries: sortedTrig }, null, 2),
-  );
-  fs.writeFileSync(
-    path.join(OUTPUT_MANIFESTS_DIR, 'tdf-manifest.json'),
-    JSON.stringify({ generatedAt: new Date().toISOString(), count: sortedTdf.length, entries: sortedTdf }, null, 2),
-  );
+  for (const format of formats) {
+    for (const mode of modes) {
+      const schemaRootDir = path.join(OUTPUT_BASE_DIR, format, mode, 'Schema');
+      fs.mkdirSync(schemaRootDir, { recursive: true });
+      // Preserve source bytes exactly (including BOM/newline style) for encoding fidelity.
+      fs.copyFileSync(CCO_MARKING_BRIDGE_SOURCE, path.join(schemaRootDir, bridgeFilename));
+    }
+  }
 }
+
+
 
 /**
  * Normalises an xml2js value that may be a single item, an array, or absent into
@@ -1956,6 +2037,36 @@ function removeWhitespace(documentation: any): string {
     return pText.replace(/\s+/g, ' ').trim();
   }
   return extractAllText(documentation).replace(/\s+/g, ' ').trim();
+}
+
+function buildDatatypePropertyLabel(localName: string): string {
+  const override = DATATYPE_PROPERTY_LABEL_OVERRIDES[localName];
+  if (override) {
+    return override;
+  }
+
+  const tokens = splitDatatypePropertyLocalName(localName);
+  if (tokens.length === 0) {
+    return localName;
+  }
+
+  return tokens
+    .map(token => {
+      const uppercaseToken = token.toUpperCase();
+      const tokenOverride = DATATYPE_PROPERTY_LABEL_TOKEN_OVERRIDES[uppercaseToken];
+      if (tokenOverride) {
+        return tokenOverride;
+      }
+      if (/^[A-Z]+$/.test(token)) {
+        return token;
+      }
+      return token.charAt(0).toUpperCase() + token.slice(1).toLowerCase();
+    })
+    .join(' ');
+}
+
+function splitDatatypePropertyLocalName(localName: string): string[] {
+  return Array.from(localName.matchAll(/[A-Z]{2,}(?=[A-Z][a-z]|[a-z]|[0-9]|$)|[A-Z]?[a-z]+|[0-9]+/g), match => match[0]);
 }
 
 /**

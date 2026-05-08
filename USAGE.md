@@ -138,29 +138,60 @@ Note: Schematron output remains source-faithful as the baseline model, and now a
 
 ## 6. Output Layout
 
-Outputs are written under:
+Outputs are written directly under `out/`, organized by format first:
 
 ```text
-out/transformed/
+out/
+├── jsonld/
+│   ├── standalone/
+│   │   ├── Schema/
+│   │   └── Schematron/
+│   └── convenience/
+│       ├── Schema/
+│       └── Schematron/
+├── ttl/
+│   ├── standalone/
+│   │   ├── Schema/
+│   │   └── Schematron/
+│   └── convenience/
+│       ├── Schema/
+│       └── Schematron/
+├── nt/
+│   ├── standalone/
+│   │   ├── Schema/
+│   │   └── Schematron/
+│   └── convenience/
+│       ├── Schema/
+│       └── Schematron/
+└── trig/
+    ├── standalone/
+    │   ├── Schema/
+    │   ├── Schematron/
+    │   └── manifest.json
+    └── convenience/
+        ├── Schema/
+        ├── Schematron/
+        └── manifest.json
 ```
 
-Layout:
+Formats emitted per file:
 
-```text
-out/transformed/
-├── Schema/
-│   ├── standalone/      # Per-schema graph with imports
-│   └── convenience/     # Per-schema graph with imports merged inline
-└── Schematron/
-    ├── standalone/      # Per-document .sch RDF graph
-    └── convenience/     # Per-document graph with includes merged inline
-```
+| Format | Extension | Description |
+|--------|-----------|-------------|
+| JSON-LD | `.jsonld` | Compact, context-mapped |
+| Turtle | `.ttl` | Human-readable |
+| N-Triples | `.nt` | Triple-store compatible |
+| TriG | `.trig` | Named-graph serialization |
+| TDF | `.tdf` | Trusted Data Format wrapper around the TriG payload |
 
-Each graph is emitted in all three formats:
+The `manifest.json` in each `trig/{mode}/` directory records every TriG+TDF pair with fields: `graphName`, `trigPath`, `tdfPath`, `payloadSha256`, `category`, `mode`, `relativePath`, `basename`, and `createdAt`.
 
-- `.jsonld`
-- `.ttl`
-- `.nt`
+**Modes:**
+
+- `standalone` — each schema/schematron document as its own self-contained graph with `owl:imports` / `ismsch:includes` triples preserved.
+- `convenience` — same graphs with all imports and includes merged inline for direct querying without resolving external references.
+
+TypeScript compiler output is written to `dist/` (not `out/`).
 
 ---
 
@@ -169,7 +200,7 @@ Each graph is emitted in all three formats:
 A successful full run prints:
 
 ```text
-Output directory: ...\out\transformed
+Output directory: ...\out
 Processed <N> XSD documents
 Processed <M> Schematron documents
 ```

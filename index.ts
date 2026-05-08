@@ -75,7 +75,7 @@ type TrigManifestEntry = {
   outputPath: string;
   relativePath: string;
   basename: string;
-  category: 'Schema';
+  category: 'Schema' | 'Schematron';
   mode: 'standalone' | 'convenience';
   createdAt: string;
 }
@@ -87,7 +87,7 @@ type TdfManifestEntry = {
   payloadSha256: string;
   relativePath: string;
   basename: string;
-  category: 'Schema';
+  category: 'Schema' | 'Schematron';
   mode: 'standalone' | 'convenience';
   createdAt: string;
 }
@@ -141,14 +141,16 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
       p = {
         standalone: {
           g: new Graph({}),
-          namespaces: { [`${URI_PREFIX}:`]: 'ic' },
+          namespaces: {},
           imports: {},
         }, convienence: {
           g: new Graph({}),
-          namespaces: { [`${URI_PREFIX}:`]: 'ic' },
+          namespaces: {},
           imports: {},
         }
       };
+      registerOntologyDocumentNamespace(p.standalone.namespaces, ontologyUri);
+      registerOntologyDocumentNamespace(p.convienence.namespaces, ontologyUri);
       processed.set(inputFilepath, p);
       const standalone = p.standalone;
       const convienence = p.convienence;
@@ -585,6 +587,7 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
                 .substring(0, importAbsPath.lastIndexOf('.xsd'))
                 .substring(schemaRoot.length)
                 .replaceAll(path.sep, ':');
+              registerOntologyDocumentNamespace(standalone.namespaces, importOntologyUri);
               standalone.g.add(ontologyUri, IMPORTS_PROPERTY, importOntologyUri);
             });
             await writeGraph(standalone, path.join(outputDir, 'Schema', 'standalone'), 'standalone');
@@ -685,6 +688,32 @@ const tdfManifestEntries: TdfManifestEntry[] = [];
 /** Returns the root directory under which all transformed RDF artefacts are written. */
 function resolveOutputDir(): string {
   return OUTPUT_BASE_DIR;
+}
+
+function registerOntologyDocumentNamespace(namespaceMap: Record<string, string>, ontologyIri: string): void {
+  const lastColon = ontologyIri.lastIndexOf(':');
+  if (lastColon <= URI_PREFIX.length) {
+    return;
+  }
+
+  const namespaceIri = ontologyIri.substring(0, lastColon + 1);
+  if (namespaceMap[namespaceIri]) {
+    return;
+  }
+
+  const basePrefix = namespaceIri
+    .substring(URI_PREFIX.length)
+    .replace(/[^A-Za-z0-9]+/g, '')
+    .toLowerCase() || 'icdoc';
+
+  let candidate = /^[A-Za-z]/.test(basePrefix) ? basePrefix : `ns${basePrefix}`;
+  let suffix = 2;
+  while (Object.entries(namespaceMap).some(([iri, prefix]) => iri !== namespaceIri && prefix === candidate)) {
+    candidate = `${basePrefix}${suffix}`;
+    suffix += 1;
+  }
+
+  namespaceMap[namespaceIri] = candidate;
 }
 
 async function prepareAuthoritativeSources(): Promise<PrepareSourceResult> {
@@ -835,12 +864,12 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
   const packages: SchematronPackages = {
     standalone: {
       g: new Graph({}),
-      namespaces: { [`${URI_PREFIX}:`]: 'ic' },
+      namespaces: {},
       imports: {},
     },
     convienence: {
       g: new Graph({}),
-      namespaces: { [`${URI_PREFIX}:`]: 'ic' },
+      namespaces: {},
       imports: {},
     },
   };
@@ -1226,8 +1255,8 @@ async function inputSchematron(inputPath: string, schematronRoot: string, output
 
   const relativeDir = path.relative(schematronRoot, path.dirname(normalizedPath));
   const basename = path.basename(normalizedPath, SCH_EXTENSION);
-  await writeGraphPackage(convienence, path.join(outputDir, 'Schematron', 'convenience'), relativeDir, basename);
-  await writeGraphPackage(standalone, path.join(outputDir, 'Schematron', 'standalone'), relativeDir, basename);
+  await writeGraphPackage(convienence, path.join(outputDir, 'Schematron', 'convenience'), relativeDir, basename, 'convenience', docUri);
+  await writeGraphPackage(standalone, path.join(outputDir, 'Schematron', 'standalone'), relativeDir, basename, 'standalone', docUri);
 
   return packages;
 
@@ -1741,7 +1770,7 @@ function writeTurtleFast(quads: Quad[], prefixes: Record<string, string>): strin
  * Handles blank nodes in the graph by mapping `_:` prefixed values appropriately
  * for each serialiser.
  */
-async function writeGraphPackage(p: Package, outputDir: string, relative: string, basename: string) {
+async function writeGraphPackage(p: Package, outputDir: string, relative: string, basename: string, mode?: 'standalone' | 'convenience', docUri?: string) {
   const context = _.invert(p.namespaces);
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
@@ -1796,6 +1825,11 @@ async function writeGraphPackage(p: Package, outputDir: string, relative: string
   const triples = triplesToString(quads);
   fs.writeFileSync(path.join(outputDir, `${basename}.nt`), triples);
 
+  if (mode && docUri) {
+    const graphName = `${docUri}:graph:${mode}`;
+    writeTrigAndTdfArtifacts(quads, context, graphName, outputDir, basename, relative, 'Schematron', mode);
+  }
+
 }
 
 function writeTrigAndTdfArtifacts(
@@ -1805,7 +1839,7 @@ function writeTrigAndTdfArtifacts(
   outputDir: string,
   basename: string,
   relativePath: string,
-  category: 'Schema',
+  category: 'Schema' | 'Schematron',
   mode: 'standalone' | 'convenience',
 ) {
   const trigText = writeTrigSingleGraph(quads, context, graphName);

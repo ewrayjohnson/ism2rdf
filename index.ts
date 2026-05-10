@@ -160,8 +160,17 @@ type TrigTdfManifestEntry = {
   createdAt: string;
 }
 
+type SimpleTypeInfo = {
+  isTokenList: boolean;
+  listItemType?: string;
+}
+
 let blankIndex = 0;
 const trigTdfManifestEntries: TrigTdfManifestEntry[] = [];
+
+// Global map accumulated across all processed XSD files so cross-schema type lookups work.
+// e.g. releasableTo in IC-ISM.xsd references CVEnumISMCATRelTo defined in a different imported file.
+const globalSimpleTypeInfoByLocalName = new Map<string, SimpleTypeInfo>();
 
 (async () => {
   const defaultPrefixes = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, 'config', 'defaultPrefixes.json'), 'utf8'));
@@ -329,8 +338,26 @@ const trigTdfManifestEntries: TrigTdfManifestEntry[] = [];
           }
 
           if (xsdPrefix) {
+            // Process imports first so that imported simple types (e.g. CVEnumISMCATRelTo
+            // from ISMCAT) are in globalSimpleTypeInfoByLocalName before this schema's
+            // attributes and groups are emitted and token-list detection is performed.
+            const importsEarly = schema[`${xsdPrefix}:import`];
+            if (importsEarly) {
+              const allEarly = (importsEarly as any[]).map((e: any) => e.$ as Import);
+              const dirnameEarly = path.dirname(inputFilepath);
+              const mergedEarly = new Set<string>();
+              for (const importSpec of allEarly) {
+                const schemaLocation = importSpec.schemaLocation;
+                const importPath: string = path.join(dirnameEarly, schemaLocation);
+                const imported = await input(importPath, processed, processedSchematron);
+                standalone.imports[schemaLocation] = [importPath, imported.standalone];
+                merge(mergedEarly, importPath, convienence, imported.standalone);
+              }
+            }
+
             const elements = schema[`${xsdPrefix}:element`];
             const attributes = schema[`${xsdPrefix}:attribute`];
+            const simpleTypeInfoByName = collectSimpleTypeInfo(schema, xsdPrefix);
             if (attributes) {
               for (const anAttribute of attributes) {
                 if (anAttribute) {
@@ -338,6 +365,7 @@ const trigTdfManifestEntries: TrigTdfManifestEntry[] = [];
                   if ($) {
                     const attributeName = $.name;
                     let attributeType = $.type;
+                    let listItemType: string | undefined;
 
                     // When no type="..." attribute is present the range is expressed as an
                     // inline xs:simpleType child. Resolve its xs:restriction/@base as the range type.
@@ -347,6 +375,10 @@ const trigTdfManifestEntries: TrigTdfManifestEntry[] = [];
                       if (inlineBase) {
                         attributeType = inlineBase;
                       }
+                      const inlineListItemType = findListItemTypeInSimpleType(inlineSimpleType, xsdPrefix);
+                      if (inlineListItemType) {
+                        listItemType = inlineListItemType;
+                      }
                     }
 
                     if (attributeType && attributeName) {
@@ -355,15 +387,34 @@ const trigTdfManifestEntries: TrigTdfManifestEntry[] = [];
                       standalone.namespaces[RDFS_URI] = 'rdfs';
                       standalone.namespaces[RDF_URI] = 'rdf';
                       standalone.namespaces[DC_URI] = 'dc';
+                      standalone.namespaces[SHACL_URI] = 'sh';
                       standalone.g.add(attributeId, RDF_TYPE, 'owl:DatatypeProperty');
                       standalone.g.addL(attributeId, 'rdfs:label', buildDatatypePropertyLabel(attributeName));
-                      if (attributeType.startsWith(`${xsdPrefix}:`)) {
-                        namespaces.add(xsdPrefix, `${XML_SCHEMA_URI}#`);
+                      const rangeType = normalizeAttributeRangeType(attributeType, xsdPrefix);
+                      standalone.g.add(attributeId, 'rdfs:range', rangeType);
+
+                      const referencedTypeLocalName = toLocalName(attributeType);
+                      const typeInfo = referencedTypeLocalName
+                        ? (simpleTypeInfoByName.get(referencedTypeLocalName) ?? globalSimpleTypeInfoByLocalName.get(referencedTypeLocalName))
+                        : undefined;
+                      const supportsTokenList = Boolean(listItemType || typeInfo?.isTokenList);
+                      const resolvedListItemType = listItemType || typeInfo?.listItemType;
+                      if (!supportsTokenList) {
+                        standalone.g.add(attributeId, RDF_TYPE, 'owl:FunctionalProperty');
                       }
-                      else {
-                        attributeType += 'Values';
+                      if (supportsTokenList) {
+                        const tokenPropertyId = `${attributeId}Token`;
+                        standalone.g.add(tokenPropertyId, RDF_TYPE, 'owl:DatatypeProperty');
+                        standalone.g.addL(tokenPropertyId, 'rdfs:label', `${buildDatatypePropertyLabel(attributeName)} Token`);
+                        standalone.g.addL(tokenPropertyId, 'rdfs:comment', `One token value from ${attributeId}.`);
+                        standalone.g.add(attributeId, 'rdfs:seeAlso', tokenPropertyId);
+
+                        if (resolvedListItemType) {
+                          standalone.g.add(tokenPropertyId, 'rdfs:range', normalizeAttributeRangeType(resolvedListItemType, xsdPrefix));
+                        } else {
+                          standalone.g.add(tokenPropertyId, 'rdfs:range', rangeType);
+                        }
                       }
-                      standalone.g.add(attributeId, 'rdfs:range', `${attributeType}`);
                       const documentation = anAttribute[`${xsdPrefix}:annotation`]?.[0]?.[`${xsdPrefix}:documentation`];
                       if (documentation) {
                         for (const aComment of (Array.isArray(documentation) ? documentation : [documentation])) {
@@ -442,6 +493,42 @@ const trigTdfManifestEntries: TrigTdfManifestEntry[] = [];
                   const baseLocalName = colonIdx >= 0 ? extensionBase.substring(colonIdx + 1) : extensionBase;
                   standalone.g.add(ctId, 'rdfs:subClassOf', `${idPrefix}${baseLocalName}`);
                 }
+
+                for (const memberAttr of asArray(aComplexType[`${xsdPrefix}:attribute`])) {
+                  const memberName = memberAttr?.['$']?.name ?? toLocalName(memberAttr?.['$']?.ref ?? '');
+                  if (!memberName) {
+                    continue;
+                  }
+                  const memberPropertyId = `${idPrefix}${memberName}`;
+                  const card = resolveCardinalityFromUse(memberAttr?.['$']?.use);
+                  const isList = isTokenListAttribute(schema, xsdPrefix, memberName, simpleTypeInfoByName);
+                  addOwlCardinalityRestriction(standalone, ctId, memberPropertyId, card.min, card.max, !isList);
+
+                  if (isList) {
+                    const tokenPropertyId = `${memberPropertyId}Token`;
+                    const tokenMin = card.min > 0 ? 1 : 0;
+                    addOwlCardinalityRestriction(standalone, ctId, tokenPropertyId, tokenMin);
+                  }
+                }
+
+                const extensionNode = contentNode?.[`${xsdPrefix}:extension`]?.[0]
+                  ?? contentNode?.[`${xsdPrefix}:restriction`]?.[0];
+                for (const memberAttr of asArray(extensionNode?.[`${xsdPrefix}:attribute`])) {
+                  const memberName = memberAttr?.['$']?.name ?? toLocalName(memberAttr?.['$']?.ref ?? '');
+                  if (!memberName) {
+                    continue;
+                  }
+                  const memberPropertyId = `${idPrefix}${memberName}`;
+                  const card = resolveCardinalityFromUse(memberAttr?.['$']?.use);
+                  const isList = isTokenListAttribute(schema, xsdPrefix, memberName, simpleTypeInfoByName);
+                  addOwlCardinalityRestriction(standalone, ctId, memberPropertyId, card.min, card.max, !isList);
+
+                  if (isList) {
+                    const tokenPropertyId = `${memberPropertyId}Token`;
+                    const tokenMin = card.min > 0 ? 1 : 0;
+                    addOwlCardinalityRestriction(standalone, ctId, tokenPropertyId, tokenMin);
+                  }
+                }
               }
             }
 
@@ -470,9 +557,19 @@ const trigTdfManifestEntries: TrigTdfManifestEntry[] = [];
                 }
                 // Link member attributes as rdfs:member of this group.
                 for (const memberAttr of asArray(anAttrGroup[`${xsdPrefix}:attribute`])) {
-                  const memberName = memberAttr?.['$']?.name;
+                  const memberName = memberAttr?.['$']?.name ?? toLocalName(memberAttr?.['$']?.ref ?? '');
                   if (memberName) {
-                    standalone.g.add(agId, 'rdfs:member', `${idPrefix}${memberName}`);
+                    const memberPropertyId = `${idPrefix}${memberName}`;
+                    standalone.g.add(agId, 'rdfs:member', memberPropertyId);
+                    const card = resolveCardinalityFromUse(memberAttr?.['$']?.use);
+                    const isList = isTokenListAttribute(schema, xsdPrefix, memberName, simpleTypeInfoByName);
+                    addOwlCardinalityRestriction(standalone, agId, memberPropertyId, card.min, card.max, !isList);
+
+                    if (isList) {
+                      const tokenPropertyId = `${memberPropertyId}Token`;
+                      const tokenMin = card.min > 0 ? 1 : 0;
+                      addOwlCardinalityRestriction(standalone, agId, tokenPropertyId, tokenMin);
+                    }
                   }
                 }
                 // Link nested attributeGroup references by their @ref name.
@@ -484,19 +581,6 @@ const trigTdfManifestEntries: TrigTdfManifestEntry[] = [];
                     standalone.g.add(agId, 'rdfs:subClassOf', `${idPrefix}${refLocalName}`);
                   }
                 }
-              }
-            }
-
-            const imports = schema[`${xsdPrefix}:import`];
-            if (imports) {              const all = imports.map((e: any) => e.$ as Import);
-              const dirname = path.dirname(inputFilepath);
-              const merged = new Set();
-              for (const importSpec of all) {
-                const schemaLocation = importSpec.schemaLocation;
-                const importPath: string = path.join(dirname, schemaLocation);
-                const imported = await input(importPath, processed, processedSchematron);
-                standalone.imports[schemaLocation] = [importPath, imported.standalone];
-                merge(merged, importPath, convienence, imported.standalone);
               }
             }
 
@@ -1574,6 +1658,41 @@ function emitShaclFromSchematron(pkg: Package) {
           continue;
         }
 
+        const tokenizedCount = test.match(/^count\s*\(\s*tokenize\s*\(\s*normalize-space\s*\(\s*string\s*\(\s*@([A-Za-z_][\w.\-:]*)\s*\)\s*\)\s*,\s*['"]\s+['"]\s*\)\s*\)\s*(>=|>|<=|<|=)\s*(\d+)\s*$/i);
+        if (tokenizedCount) {
+          const attr = tokenizedCount[1];
+          const operator = tokenizedCount[2];
+          const threshold = Number.parseInt(tokenizedCount[3], 10);
+          const propShapeUri = `${shapeUri}#property-${constraintIndex}`;
+          pkg.g.add(propShapeUri, 'rdf:type', 'sh:PropertyShape');
+          pkg.g.add(shapeUri, 'sh:property', propShapeUri);
+          pkg.g.add(propShapeUri, 'sh:path', schemaTokenPropertyUri(attr));
+
+          let translated = false;
+          if (operator === '>') {
+            pkg.g.addL(propShapeUri, 'sh:minCount', String(threshold + 1));
+            translated = true;
+          } else if (operator === '>=') {
+            pkg.g.addL(propShapeUri, 'sh:minCount', String(threshold));
+            translated = true;
+          } else if (operator === '=') {
+            pkg.g.addL(propShapeUri, 'sh:minCount', String(threshold));
+            pkg.g.addL(propShapeUri, 'sh:maxCount', String(threshold));
+            translated = true;
+          } else if (operator === '<=') {
+            pkg.g.addL(propShapeUri, 'sh:maxCount', String(threshold));
+            translated = true;
+          } else if (operator === '<') {
+            pkg.g.addL(propShapeUri, 'sh:maxCount', String(Math.max(0, threshold - 1)));
+            translated = true;
+          }
+
+          if (translated) {
+            translatedAny = true;
+            continue;
+          }
+        }
+
         const equals = test.match(/^@([A-Za-z_][\w.\-:]*)\s*=\s*['\"]([^'\"]+)['\"]$/);
         if (equals) {
           const attr = equals[1];
@@ -1754,6 +1873,117 @@ function schemaCandidatePropertyUri(nameOrQName: string): string | undefined {
     return undefined;
   }
   return `${URI_PREFIX}:ISM:${normalized}`;
+}
+
+function schemaTokenPropertyUri(nameOrQName: string): string {
+  const local = nameOrQName.includes(':') ? nameOrQName.substring(nameOrQName.indexOf(':') + 1) : nameOrQName;
+  return `${URI_PREFIX}:ISM:${local.trim()}Token`;
+}
+
+function normalizeAttributeRangeType(attributeType: string, xsdPrefix: string): string {
+  if (attributeType.startsWith(`${xsdPrefix}:`)) {
+    namespaces.add(xsdPrefix, `${XML_SCHEMA_URI}#`);
+    return attributeType;
+  }
+  return `${attributeType}Values`;
+}
+
+function toLocalName(qname: string): string {
+  const colonIdx = qname.indexOf(':');
+  return colonIdx >= 0 ? qname.substring(colonIdx + 1) : qname;
+}
+
+function resolveCardinalityFromUse(use?: string): { min: number; max?: number } {
+  const normalized = (use ?? 'optional').trim();
+  if (normalized === 'required') {
+    return { min: 1, max: 1 };
+  }
+  if (normalized === 'prohibited') {
+    return { min: 0, max: 0 };
+  }
+  return { min: 0, max: 1 };
+}
+
+function addOwlCardinalityRestriction(pkg: Package, classId: string, propertyId: string, min: number, max?: number, suppressMax?: boolean) {
+  pkg.namespaces[OWL_URI] = 'owl';
+  pkg.namespaces[RDFS_URI] = 'rdfs';
+  pkg.namespaces[RDF_URI] = 'rdf';
+  pkg.namespaces[`${XML_SCHEMA_URI}#`] = pkg.namespaces[`${XML_SCHEMA_URI}#`] ?? 'xsd';
+
+  const restriction = pkg.g.add(null, 'rdf:type', 'owl:Restriction');
+  pkg.g.add(classId, 'rdfs:subClassOf', { type: 'bnode', value: restriction._s });
+  pkg.g.add(restriction._s, 'owl:onProperty', propertyId);
+  pkg.g.addL(restriction._s, 'owl:minCardinality', String(min));
+  if (Number.isFinite(max) && !suppressMax) {
+    pkg.g.addL(restriction._s, 'owl:maxCardinality', String(max));
+    if (max === min) {
+      pkg.g.addL(restriction._s, 'owl:cardinality', String(min));
+    }
+  }
+}
+
+function collectSimpleTypeInfo(schema: any, xsdPrefix: string): Map<string, SimpleTypeInfo> {
+  const infoByName = new Map<string, SimpleTypeInfo>();
+  const simpleTypes = asArray(schema[`${xsdPrefix}:simpleType`]);
+  for (const simpleType of simpleTypes) {
+    const typeName = simpleType?.['$']?.name;
+    if (!typeName) {
+      continue;
+    }
+    const listItemType = findListItemTypeInSimpleType(simpleType, xsdPrefix);
+    const info: SimpleTypeInfo = {
+      isTokenList: Boolean(listItemType),
+      listItemType,
+    };
+    infoByName.set(typeName, info);
+    // Accumulate into the global map so importing schemas can look up types from imported files.
+    globalSimpleTypeInfoByLocalName.set(typeName, info);
+  }
+  return infoByName;
+}
+
+function findListItemTypeInSimpleType(simpleType: any, xsdPrefix: string): string | undefined {
+  if (!simpleType) {
+    return undefined;
+  }
+
+  const restrictionNode = simpleType?.[`${xsdPrefix}:restriction`]?.[0];
+  const nestedSimpleType = restrictionNode?.[`${xsdPrefix}:simpleType`]?.[0];
+  const listItemType = nestedSimpleType?.[`${xsdPrefix}:list`]?.[0]?.['$']?.itemType;
+  if (listItemType) {
+    return String(listItemType);
+  }
+
+  const directListItemType = simpleType?.[`${xsdPrefix}:list`]?.[0]?.['$']?.itemType;
+  if (directListItemType) {
+    return String(directListItemType);
+  }
+
+  return undefined;
+}
+
+function isTokenListAttribute(schema: any, xsdPrefix: string, attributeName: string, simpleTypeInfoByName: Map<string, SimpleTypeInfo>): boolean {
+  const attributes = asArray(schema[`${xsdPrefix}:attribute`]);
+  for (const attr of attributes) {
+    const attrs = attr?.['$'] ?? {};
+    if (attrs.name !== attributeName) {
+      continue;
+    }
+
+    const inlineSimpleType = attr?.[`${xsdPrefix}:simpleType`]?.[0];
+    if (findListItemTypeInSimpleType(inlineSimpleType, xsdPrefix)) {
+      return true;
+    }
+
+    const typeName = toLocalName(attrs.type ?? '');
+    if (!typeName) {
+      return false;
+    }
+
+    const info = simpleTypeInfoByName.get(typeName) ?? globalSimpleTypeInfoByLocalName.get(typeName);
+    return Boolean(info?.isTokenList);
+  }
+  return false;
 }
 
 /**

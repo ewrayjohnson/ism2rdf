@@ -23,6 +23,30 @@ For each Schematron document processed, the transformer emits source-faithful RD
 - **Explicit preservation markers** (`ismsch:translationStatus`, `ismsch:translationReason`) for constraints that are not safely auto-translated
 - **Schema-term alignment links** (`ismsch:alignsToSchemaTerm`) extracted from rule expressions
 
+### Schematron Processing Pipeline (Implemented)
+
+Schematron processing is fully integrated into the main runtime flow and runs alongside XSD processing:
+
+1. Discover Schematron references from XSD `xml-model` processing instructions.
+2. Parse Schematron schemas and recursively resolve `<include>` chains.
+3. Emit source-faithful RDF terms for schema structure and constraints.
+4. Apply deferred enhancement passes to emit derived rule and validation artifacts.
+5. Write standalone and convenience artifacts in all serializer targets (`jsonld`, `ttl`, `nt`, `trig` + `tdf`).
+
+The emitted Schematron vocabulary includes document and structural terms such as:
+
+- `ismsch:SchematronDocument`, `ismsch:Schema`, `ismsch:NamespaceDeclaration`
+- `ismsch:Pattern`, `ismsch:AbstractPattern`, `ismsch:Rule`, `ismsch:AbstractRule`, `ismsch:ResolvedRule`
+- `ismsch:Assert`, `ismsch:Report`, `ismsch:Include`, `ismsch:ExecutionPhase`
+- `ismsch:Variable`, `ismsch:Parameter`, `ismsch:Paragraph`
+
+Deferred enhancement passes include:
+
+- **Abstract-pattern instantiation**: emits `ismsch:ResolvedRule` with parameter-substituted context/test/text.
+- **Safe-subset SHACL translation**: emits linked `sh:NodeShape` constraints for supported checks (`sh:minCount`, `sh:hasValue`, `sh:pattern`).
+- **Constraint preservation metadata**: records `ismsch:translationStatus` and `ismsch:translationReason` for non-translated constraints.
+- **Rule-to-schema alignment extraction**: emits `ismsch:referencesAttribute`, `ismsch:referencesQName`, and `ismsch:alignsToSchemaTerm` candidates.
+
 ### Schema Root Metadata Mapping (GAP-07 Decision)
 
 The transformer maps ISM self-marking attributes on `xs:schema` to ontology metadata using standard predicates:
@@ -109,60 +133,25 @@ The CVE pattern facts in detail:
 
 ---
 
-## Authoritative Sources
+## Source Inputs
 
-Authoritative source payloads are **not stored in this repository**. The transformer resolves source configuration in this precedence order:
+Authoritative source payloads are **not stored in this repository**. The current implementation expects staged local source folders to already exist under `.ciartifacts/`:
 
-```
-CLI argument  →  environment variable  →  .env file  →  built-in default URL
-```
+- `.ciartifacts/Schema`
+- `.ciartifacts/Schematron`
 
-### Source Modes
+If `.ciartifacts/Schema` is missing, the runtime also accepts the legacy fallback `.ciartifacts/schemas`.
 
-| Mode | Description | Example value |
-|------|-------------|---------------|
-| `url` | Download from HTTP/HTTPS, cache locally | `https://www.dni.gov/.../ISM-Public-Standalone.zip` |
-| `zip` | Use a local ZIP archive | `.ciartifacts/ISM-Public-Standalone.zip` or an absolute path |
-| `dir` | Use an already-extracted directory | `/path/to/ISM` |
+If required staged folders are missing, the transformer exits with an error and does not attempt network download, ZIP extraction, `.env` resolution, or CLI source selection.
 
-Source type is auto-detected from the value, or can be overridden with `--source-type`.
+### Overlaying Source Files
 
-### Where to Get the Source
+In environments where source content differs from the public baseline (for example classified or disconnected enclaves, or later ISM releases), stage and overlay the local authoritative files directly into:
 
-For the public ISM domain, the authoritative release package is published at the IC CIO technical specifications page:
+- `.ciartifacts/Schema`
+- `.ciartifacts/Schematron`
 
-> **[https://www.dni.gov/index.php/who-we-are/organizations/ic-cio/ic-technical-specifications](https://www.dni.gov/index.php/who-we-are/organizations/ic-cio/ic-technical-specifications)**
-
-A specific release ZIP URL looks like:
-
-```
-https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip
-```
-
-Different versions live at different paths. In some classified or restricted domains, the source may not be a ZIP and may arrive as a folder or a web path with a different layout.
-
-### ZIP Internal Layout
-
-The transformer knows how to extract the required subsets from a standard ISM release ZIP. It searches for these prefixes automatically:
-
-| ZIP path prefix | Extracted to |
-|-----------------|-------------|
-| `ISM/Schema/` | `.ciartifacts/Schema/` |
-| `ISM/Schematron/` | `.ciartifacts/Schematron/` |
-
-Only those two subtrees are extracted — the rest of the archive (CVE raw data, XSL transforms, examples, schema guides, XSPEC tests) is ignored.
-
-### Freshness and Caching
-
-On every run, the transformer decides whether to re-download or re-extract by checking a manifest stored at `.ciartifacts/source-manifest.json`. It records:
-
-- Source URL/path and version
-- HTTP ETag and Last-Modified (for URL sources)
-- SHA-256 hash and size of the cached file
-- Directory content fingerprints for `Schema` and `Schematron` folders
-- Extraction timestamp
-
-If the manifest matches the current request and neither folder has changed since extraction, the existing staged files are reused. Use `--force-refresh` to override.
+The transformer always reads whatever is currently staged in those folders. This lets you keep one codebase while supplying environment-specific source overlays without changing runtime flags.
 
 ---
 
@@ -178,76 +167,19 @@ npm install
 
 ## Running the Transformer
 
-### Default run (no arguments)
-
-By default, `npm start` uses this authoritative source URL:
-
-```
-https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip
-```
+Run from the repository root:
 
 ```bash
 npm start
 ```
 
-Note: some environments may receive HTTP 403 from direct DNI downloads. If default-source download fails and local staged folders already exist (`.ciartifacts/Schema` plus `.ciartifacts/Schematron`), the runtime automatically falls back to those local sources. Otherwise, provide a local ZIP or alternate source explicitly.
+Current runtime behavior:
 
-### With a URL source (downloaded and cached automatically)
+- Uses staged folders only (`.ciartifacts/Schema` + `.ciartifacts/Schematron`, or legacy `.ciartifacts/schemas` for schema root)
+- Writes output under `out/`
+- Prints processed XSD and Schematron document counts
 
-```bash
-npm start -- --source https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip
-```
-
-### With a local ZIP
-
-```bash
-npm start -- --source /path/to/ISM-Public-Standalone.zip
-```
-
-### With a local extracted directory
-
-```bash
-npm start -- --source /path/to/ISM
-```
-
-### Using environment variable or `.env`
-
-```ini
-# .env
-ISM2RDF_SOURCE=https://www.dni.gov/.../ISM-Public-Standalone.zip
-```
-
-```bash
-npm start
-```
-
-### Force re-download and re-extract even if nothing changed
-
-```bash
-npm start -- --source <value> --force-refresh
-```
-
-### Local fallback behavior
-
-If default-source download fails (for example HTTP 403) and local staged folders already exist, the runtime automatically falls back to them:
-
-```bash
-npm start
-```
-
-Fallback roots are:
-
-- `.ciartifacts/Schema` (or legacy `.ciartifacts/schemas`)
-- `.ciartifacts/Schematron`
-
-### All CLI options
-
-| Option | Env variable | Description |
-|--------|-------------|-------------|
-| `--source <value>` | `ISM2RDF_SOURCE` | URL, ZIP path, or directory path |
-| `--source-type <auto\|url\|zip\|dir>` | `ISM2RDF_SOURCE_TYPE` | Override auto-detection |
-| `--source-version <label>` | `ISM2RDF_SOURCE_VERSION` | Version label for source selection, caching, and manifest metadata |
-| `--force-refresh` | `ISM2RDF_FORCE_REFRESH=true` | Force re-download and re-extract |
+The current implementation does not consume source-selection CLI flags (`--source`, `--source-type`, `--source-version`, `--force-refresh`) and does not read `.env` source settings.
 
 ---
 
@@ -274,8 +206,8 @@ After acquisition and extraction, the transformer expects these canonical folder
 │       ├── Lib/      # Abstract pattern libraries
 │       └── Rules/    # Concrete rules by jurisdiction and profile
 ├── config/
-│   └── defaultPrefixes.json
-└── source-manifest.json   # Written after each acquisition run
+│   ├── defaultPrefixes.json
+│   └── cco-marking-bridge.jsonld
 ```
 
 These folders are excluded from Git via `.ciartifacts/.gitignore`.

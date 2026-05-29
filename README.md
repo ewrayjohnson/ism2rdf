@@ -5,49 +5,51 @@
 
 ism2rdf transforms IC XML Schema Definition (XSD) and Schematron source files published by the [U.S. Intelligence Community CIO (IC CIO)](https://www.dni.gov/index.php/who-we-are/organizations/ic-cio/ic-technical-specifications) into RDF/OWL/SKOS representations, plus XSD-derived SHACL constraints, for use in Linked Data, semantic reasoning, and ontology-driven validation systems.
 
+The XSDs are the primary input and the design center of the transformer: every OWL property, datatype, concept scheme, and SHACL pattern derives from the schema. Schematron is processed as a supplementary input that records the IC's constraint rules in RDF and lowers the safely translatable subset to SHACL.
+
 ---
 
 ## What It Produces
 
-For each XSD schema processed, the transformer emits:
+The primary output is **schema-derived**: for each XSD processed, the transformer emits a self-contained RDF/OWL/SKOS rendering of the schema's types, attributes, enumerations, and facets.
 
-- **OWL ontologies** — `owl:DatatypeProperty` for each schema attribute
-- **SKOS concept schemes** — enumerations become `skos:ConceptScheme` + `skos:Concept` resources
-- **SHACL pattern constraints** — regex restrictions become `sh:pattern` properties
-- **Typed custom datatypes** — `rdfs:Datatype` with `owl:oneOf` enumerations linked back to concept schemes via `dc:source` and `rdfs:seeAlso`
+### From each XSD schema
 
-For each Schematron document processed, the transformer emits source-faithful RDF for schemas, namespace declarations, include chains, phases, patterns, rules, assertions, and reports, plus derived enhancement artifacts:
+- **OWL ontologies** — one `owl:DatatypeProperty` per schema attribute, with `rdfs:range` pointing at a generated custom datatype.
+- **Custom datatypes** — `rdfs:Datatype` declarations with `owl:oneOf` enumerations linked back to the corresponding `skos:ConceptScheme` via `dc:source` and `rdfs:seeAlso`.
+- **SKOS concept schemes** — XSD enumerations become `skos:ConceptScheme` resources whose `skos:Concept` members carry `skos:notation` and (when XSD documentation is present) `skos:prefLabel`.
+- **SHACL pattern constraints** — regex facets on simple types become `sh:pattern` properties on the matching shape, derived directly from the XSD without hand authoring.
+  - **Schema header metadata** — ISM self-marking attributes on `xs:schema` are mapped to standard predicates on the emitted `owl:Ontology` (see [Schema Root Metadata Mapping](#schema-root-metadata-mapping) below).
 
-- **Resolved abstract-pattern rules** (`ismsch:ResolvedRule`) with parameter substitution
-- **SHACL shapes for safely translatable constraints** (`sh:minCount`, `sh:hasValue`, `sh:pattern`)
-- **Explicit preservation markers** (`ismsch:translationStatus`, `ismsch:translationReason`) for constraints that are not safely auto-translated
-- **Schema-term alignment links** (`ismsch:alignsToSchemaTerm`) extracted from rule expressions
+The full pattern that ties these pieces together — datatype property → custom datatype → concept scheme — is documented in [CVE Pattern](#cve-pattern).
 
-### Schematron Processing Pipeline (Implemented)
+### From each Schematron document (supplementary)
 
-Schematron processing is fully integrated into the main runtime flow and runs alongside XSD processing:
+Schematron processing runs alongside XSD processing and captures the IC's published rule set in RDF form for use by validators and reviewers.
 
-1. Discover Schematron references from XSD `xml-model` processing instructions.
-2. Parse Schematron schemas and recursively resolve `<include>` chains.
-3. Emit source-faithful RDF terms for schema structure and constraints.
-4. Apply deferred enhancement passes to emit derived rule and validation artifacts.
+- Source-faithful RDF for Schematron schemas, namespaces, includes, phases, patterns, rules, asserts, and reports.
+- Resolved abstract-pattern rules (`ismsch:ResolvedRule`) with parameter substitution.
+- SHACL shapes for the safely translatable subset (`sh:minCount`, `sh:hasValue`, `sh:pattern`).
+- Preservation markers (`ismsch:translationStatus`, `ismsch:translationReason`) on constraints that cannot be auto-translated.
+- Schema-term alignment links (`ismsch:alignsToSchemaTerm`) connecting rule expressions back to the schema attributes they reference.
+
+### Processing Pipeline
+
+XSD processing is the main pipeline; Schematron processing runs as a deferred pass against the schema-derived graph so its outputs can reference the same IRIs.
+
+1. Load staged XSDs from `.ciartifacts/Schema` and walk imports/includes.
+2. Emit OWL, SKOS, custom datatypes, SHACL `sh:pattern` shapes, and ontology header metadata for every schema.
+3. Discover Schematron references from XSD `xml-model` processing instructions; parse the Schematron schemas and recursively resolve `<include>` chains.
+4. Emit source-faithful Schematron RDF, then run the deferred enhancement passes:
+   - abstract-pattern instantiation (`ismsch:ResolvedRule`),
+   - safe-subset SHACL translation,
+   - constraint preservation metadata,
+   - rule-to-schema alignment extraction.
 5. Write standalone and convenience artifacts in all serializer targets (`jsonld`, `ttl`, `nt`, `trig` + `tdf`).
 
-The emitted Schematron vocabulary includes document and structural terms such as:
+The emitted Schematron vocabulary covers document and structural terms such as `ismsch:SchematronDocument`, `ismsch:Schema`, `ismsch:NamespaceDeclaration`, `ismsch:Pattern`, `ismsch:AbstractPattern`, `ismsch:Rule`, `ismsch:AbstractRule`, `ismsch:ResolvedRule`, `ismsch:Assert`, `ismsch:Report`, `ismsch:Include`, `ismsch:ExecutionPhase`, `ismsch:Variable`, `ismsch:Parameter`, and `ismsch:Paragraph`.
 
-- `ismsch:SchematronDocument`, `ismsch:Schema`, `ismsch:NamespaceDeclaration`
-- `ismsch:Pattern`, `ismsch:AbstractPattern`, `ismsch:Rule`, `ismsch:AbstractRule`, `ismsch:ResolvedRule`
-- `ismsch:Assert`, `ismsch:Report`, `ismsch:Include`, `ismsch:ExecutionPhase`
-- `ismsch:Variable`, `ismsch:Parameter`, `ismsch:Paragraph`
-
-Deferred enhancement passes include:
-
-- **Abstract-pattern instantiation**: emits `ismsch:ResolvedRule` with parameter-substituted context/test/text.
-- **Safe-subset SHACL translation**: emits linked `sh:NodeShape` constraints for supported checks (`sh:minCount`, `sh:hasValue`, `sh:pattern`).
-- **Constraint preservation metadata**: records `ismsch:translationStatus` and `ismsch:translationReason` for non-translated constraints.
-- **Rule-to-schema alignment extraction**: emits `ismsch:referencesAttribute`, `ismsch:referencesQName`, and `ismsch:alignsToSchemaTerm` candidates.
-
-### Schema Root Metadata Mapping (GAP-07 Decision)
+### Schema Root Metadata Mapping
 
 The transformer maps ISM self-marking attributes on `xs:schema` to ontology metadata using standard predicates:
 
@@ -59,6 +61,8 @@ The transformer maps ISM self-marking attributes on `xs:schema` to ontology meta
 - `ism:compliesWith` -> `dcterms:conformsTo`
 
 For `ism:compliesWith`, the object is emitted as a URI when the schema declares `xmlns:ismcomplies` (for example, `urn:us:gov:ic:cvenum:ism:complieswith#USGov`). If the namespace alias is missing, the transformer falls back to a literal so source intent is still preserved.
+
+- **Detection Principle:** The presence of `ism:classification` is sufficient to detect and process both classified and CUI-marked content. All marked data, including CUI, can be reliably identified by this property.
 
 Rationale for review/debate/change:
 
@@ -214,6 +218,26 @@ These folders are excluded from Git via `.ciartifacts/.gitignore`.
 
 ---
 
+## ISM Package Types and Implementation Alignment
+
+The Office of the Director of National Intelligence (ODNI) issues ISM (Information Security Markings) technical specifications in three package types: Standalone, Convenience, and Light.
+
+- **Standalone Package:** Contains all formal normative documents, XML schemas, and data dictionaries required strictly for strict compliance and implementation.
+- **Convenience Package:** Includes everything in the Standalone Package plus additional non-normative resources (like implementation examples and stylesheets) designed to simplify integration.
+- **Light Package:** (Not yet implemented in the proof of concept) Intended to provide a minimal subset for lightweight consumers.
+
+The `ism2rdf` proof of concept follows the XML pattern by producing both Standalone and Convenience outputs, mirroring the official ODNI package structure. The Light package is not yet supported.
+
+### CCO Marking Bridge (`cco-marking-bridge.jsonld`)
+
+The file `cco-marking-bridge.jsonld` in `.ciartifacts/config/` provides a mapping (bridge) between CCO (Controlled Classification Overlay) marking concepts and the ISM/OWL vocabulary used by this transformer. It enables interoperability and translation between CCO-based security markings and the ISM2RDF output, ensuring that CCO-specific attributes or concepts can be represented in the RDF/OWL model. This bridge is used during transformation to supplement or align ISM attributes with CCO requirements, especially in environments where both marking systems are in use.
+
+- Location: `.ciartifacts/config/cco-marking-bridge.jsonld`
+- Purpose: Mapping/translation between CCO and ISM/OWL vocabularies for security markings
+- Usage: Loaded automatically by the transformer to ensure CCO-aligned attributes are correctly represented in the output RDF/OWL artifacts
+
+---
+
 ## Configuration
 
 Default RDF namespace prefixes are configured in:
@@ -223,8 +247,6 @@ Default RDF namespace prefixes are configured in:
 ```
 
 This file is tracked in Git and should not contain authoritative source content.
-
----
 
 ## Build and Run
 

@@ -343,44 +343,48 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
 
           // Map ISM self-marking attributes on the xs:schema root (e.g. ism:createDate,
           // ism:DESVersion, ism:ISMCATCESVersion, ism:classification, ism:ownerProducer,
-          // ism:compliesWith) are mapped to standard predicates on the ontology node.
-          standalone.namespaces[DC_URI] = 'dc';
-          standalone.namespaces[DCTERMS_URI] = 'dcterms';
+          // ism:compliesWith) are emitted directly as ism:* predicates on the ontology node.
+          // Emit ISM self-marking attributes directly as ism:* predicates on the ontology node.
+                    // Also emit rdfs:subPropertyOf links for ISM header properties to generic superproperties for interoperability.
+                    // Only do this for properties where the mapping is semantically appropriate.
+                    // This is done once per ontology document (not per instance).
+                    // These are the mappings:
+                    // ism:classification rdfs:subPropertyOf dc:rights
+                    // ism:ownerProducer  rdfs:subPropertyOf dc:publisher
+                    // ism:createDate     rdfs:subPropertyOf dc:date
+                    // ism:compliesWith   rdfs:subPropertyOf dcterms:conformsTo
+                    // (DESVersion and ISMCATCESVersion are not mapped, as there is no clear generic parent)
+                    // Add these triples to the ontology graph:
+                    standalone.namespaces[RDFS_URI] = 'rdfs';
+                    standalone.namespaces[DC_URI] = 'dc';
+                    standalone.namespaces[DCTERMS_URI] = 'dcterms';
+                    standalone.g.add('ism:classification', 'rdfs:subPropertyOf', 'dc:rights');
+                    standalone.g.add('ism:ownerProducer', 'rdfs:subPropertyOf', 'dc:publisher');
+                    standalone.g.add('ism:createDate', 'rdfs:subPropertyOf', 'dc:date');
+                    standalone.g.add('ism:compliesWith', 'rdfs:subPropertyOf', 'dcterms:conformsTo');
           const ismCreateDate = $['ism:createDate'];
           if (ismCreateDate) {
-            standalone.g.addL(ontologyUri, 'dc:date', ismCreateDate);
+            standalone.g.addL(ontologyUri, 'ism:createDate', ismCreateDate);
           }
           const ismDESVersion = $['ism:DESVersion'];
           if (ismDESVersion) {
-            standalone.namespaces[OWL_URI] = 'owl';
-            standalone.g.addL(ontologyUri, 'owl:versionInfo', `DESVersion:${ismDESVersion}`);
+            standalone.g.addL(ontologyUri, 'ism:DESVersion', ismDESVersion);
           }
           const ismCESVersion = $['ism:ISMCATCESVersion'];
           if (ismCESVersion) {
-            standalone.namespaces[OWL_URI] = 'owl';
-            standalone.g.addL(ontologyUri, 'owl:versionInfo', `ISMCATCESVersion:${ismCESVersion}`);
+            standalone.g.addL(ontologyUri, 'ism:ISMCATCESVersion', ismCESVersion);
           }
           const ismClassification = $['ism:classification'];
           if (ismClassification) {
-            standalone.g.addL(ontologyUri, 'dc:rights', ismClassification);
+            standalone.g.addL(ontologyUri, 'ism:classification', ismClassification);
           }
           const ismOwnerProducer = $['ism:ownerProducer'];
           if (ismOwnerProducer) {
-            standalone.g.addL(ontologyUri, 'dc:publisher', ismOwnerProducer);
+            standalone.g.addL(ontologyUri, 'ism:ownerProducer', ismOwnerProducer);
           }
           const ismCompliesWith = $['ism:compliesWith'];
           if (ismCompliesWith) {
-            const compliesNamespaceRaw = $['xmlns:ismcomplies'];
-            if (compliesNamespaceRaw) {
-              const compliesNamespace = String(compliesNamespaceRaw).endsWith('#')
-                ? String(compliesNamespaceRaw)
-                : `${String(compliesNamespaceRaw)}#`;
-              standalone.namespaces[compliesNamespace] = standalone.namespaces[compliesNamespace] ?? 'ismcomplies';
-              standalone.g.add(ontologyUri, 'dcterms:conformsTo', `${compliesNamespace}${ismCompliesWith}`);
-            } else {
-              // Fallback: preserve the value even if the expected namespace alias is absent.
-              standalone.g.addL(ontologyUri, 'dcterms:conformsTo', String(ismCompliesWith));
-            }
+            standalone.g.addL(ontologyUri, 'ism:compliesWith', ismCompliesWith);
           }
 
           if (xsdPrefix) {

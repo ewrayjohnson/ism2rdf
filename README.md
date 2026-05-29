@@ -159,46 +159,14 @@ The transformer always reads whatever is currently staged in those folders. This
 
 ---
 
-## Installation
-
-```bash
-git clone https://github.com/ewrayjohnson/ism2rdf.git
-cd ism2rdf
-npm install
-```
-
----
-
-## Running the Transformer
-
-Run from the repository root:
-
-```bash
-npm start
-```
-
-Current runtime behavior:
-
-- Uses staged folders only (`.ciartifacts/Schema` + `.ciartifacts/Schematron`, or legacy `.ciartifacts/schemas` for schema root)
-- Writes output under `out/`
-- Prints processed XSD and Schematron document counts
-
-The current implementation does not consume source-selection CLI flags (`--source`, `--source-type`, `--source-version`, `--force-refresh`) and does not read `.env` source settings.
-
----
-
 ## Local Source Folder Layout
 
-After acquisition and extraction, the transformer expects these canonical folders:
+All required source files must be manually staged in the following canonical folders before running the transformer:
 
 ```
 .ciartifacts/
 ├── Schema/           # XSD schemas (maps from ISM/Schema/ inside ZIP)
 │   ├── ISM/
-│   │   ├── IC-ISM.xsd
-│   │   ├── IC-ARH.xsd
-│   │   ├── IC-NTK.xsd
-│   │   └── CVEGenerated/
 │   ├── ISMCAT/
 │   ├── IC-EDH/
 │   ├── IC-ID/
@@ -206,68 +174,37 @@ After acquisition and extraction, the transformer expects these canonical folder
 │   └── USAgency/
 ├── Schematron/       # Schematron rules (maps from ISM/Schematron/ inside ZIP)
 │   └── ISM/
-│       ├── ISM_XML.sch
 │       ├── Lib/      # Abstract pattern libraries
 │       └── Rules/    # Concrete rules by jurisdiction and profile
 ├── config/
-│   ├── defaultPrefixes.json
-│   └── cco-marking-bridge.jsonld
 ```
 
 These folders are excluded from Git via `.ciartifacts/.gitignore`.
 
----
-
-## ISM Package Types and Implementation Alignment
-
-The Office of the Director of National Intelligence (ODNI) issues ISM (Information Security Markings) technical specifications in three package types: Standalone, Convenience, and Light.
-
-- **Standalone Package:** Contains all formal normative documents, XML schemas, and data dictionaries required strictly for strict compliance and implementation.
-- **Convenience Package:** Includes everything in the Standalone Package plus additional non-normative resources (like implementation examples and stylesheets) designed to simplify integration.
-- **Light Package:** (Not yet implemented in the proof of concept) Intended to provide a minimal subset for lightweight consumers.
-
-The `ism2rdf` proof of concept follows the XML pattern by producing both Standalone and Convenience outputs, mirroring the official ODNI package structure. The Light package is not yet supported.
-
-### CCO Marking Bridge (`cco-marking-bridge.jsonld`)
-
-The file `cco-marking-bridge.jsonld` in `.ciartifacts/config/` provides a mapping (bridge) between CCO (Controlled Classification Overlay) marking concepts and the ISM/OWL vocabulary used by this transformer. It enables interoperability and translation between CCO-based security markings and the ISM2RDF output, ensuring that CCO-specific attributes or concepts can be represented in the RDF/OWL model. This bridge is used during transformation to supplement or align ISM attributes with CCO requirements, especially in environments where both marking systems are in use.
-
-- Location: `.ciartifacts/config/cco-marking-bridge.jsonld`
-- Purpose: Mapping/translation between CCO and ISM/OWL vocabularies for security markings
-- Usage: Loaded automatically by the transformer to ensure CCO-aligned attributes are correctly represented in the output RDF/OWL artifacts
+The transformer always reads whatever is currently staged in those folders. No automated acquisition or extraction is performed; users are responsible for ensuring the correct files are present.
 
 ---
-
-## Configuration
-
-Default RDF namespace prefixes are configured in:
-
-```
-.ciartifacts/config/defaultPrefixes.json
-```
-
-This file is tracked in Git and should not contain authoritative source content.
 
 ## Build and Run
 
-Install:
+Install dependencies and build the project:
 
 ```bash
+git clone https://github.com/ewrayjohnson/ism2rdf.git
+cd ism2rdf
 npm install
-```
-
-Build:
-
-```bash
 npm run build
 ```
 
-Run:
+Run the transformer from the repository root:
 
 ```bash
 npm start
 ```
 
-## License
+Current runtime behavior:
+- Uses staged folders only (`.ciartifacts/Schema` + `.ciartifacts/Schematron`, or legacy `.ciartifacts/schemas` for schema root)
+- Writes output under `out/`
+- Prints processed XSD and Schematron document counts
 
-MIT License © 2025 E. Wray Johnson
+The current implementation does not consume source-selection CLI flags (`--source`, `--source-type`, `--source-version`, `--force-refresh`) and does not read `.env` source settings.

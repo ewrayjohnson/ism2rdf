@@ -341,50 +341,38 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
             standalone.g.addL(ontologyUri, 'owl:versionInfo', schemaVersion);
           }
 
-          // Map ISM self-marking attributes on the xs:schema root (e.g. ism:createDate,
-          // ism:DESVersion, ism:ISMCATCESVersion, ism:classification, ism:ownerProducer,
-          // ism:compliesWith) are emitted directly as ism:* predicates on the ontology node.
-          // Emit ISM self-marking attributes directly as ism:* predicates on the ontology node.
-                    // Also emit rdfs:subPropertyOf links for ISM header properties to generic superproperties for interoperability.
-                    // Only do this for properties where the mapping is semantically appropriate.
-                    // This is done once per ontology document (not per instance).
-                    // These are the mappings:
-                    // ism:classification rdfs:subPropertyOf dc:rights
-                    // ism:ownerProducer  rdfs:subPropertyOf dc:publisher
-                    // ism:createDate     rdfs:subPropertyOf dc:date
-                    // ism:compliesWith   rdfs:subPropertyOf dcterms:conformsTo
-                    // (DESVersion and ISMCATCESVersion are not mapped, as there is no clear generic parent)
-                    // Add these triples to the ontology graph:
-                    standalone.namespaces[RDFS_URI] = 'rdfs';
-                    standalone.namespaces[DC_URI] = 'dc';
-                    standalone.namespaces[DCTERMS_URI] = 'dcterms';
-                    standalone.g.add('ism:classification', 'rdfs:subPropertyOf', 'dc:rights');
-                    standalone.g.add('ism:ownerProducer', 'rdfs:subPropertyOf', 'dc:publisher');
-                    standalone.g.add('ism:createDate', 'rdfs:subPropertyOf', 'dc:date');
-                    standalone.g.add('ism:compliesWith', 'rdfs:subPropertyOf', 'dcterms:conformsTo');
+          // Map ISM self-marking attributes on the xs:schema root to generic ontology metadata.
+          // Keep rdfs:subPropertyOf links for ISM header properties to support interoperability.
+          standalone.namespaces[RDFS_URI] = 'rdfs';
+          standalone.namespaces[DC_URI] = 'dc';
+          standalone.namespaces[DCTERMS_URI] = 'dcterms';
+          standalone.g.add('ism:classification', 'rdfs:subPropertyOf', 'dc:rights');
+          standalone.g.add('ism:ownerProducer', 'rdfs:subPropertyOf', 'dc:publisher');
+          standalone.g.add('ism:createDate', 'rdfs:subPropertyOf', 'dc:date');
+          standalone.g.add('ism:compliesWith', 'rdfs:subPropertyOf', 'dcterms:conformsTo');
           const ismCreateDate = $['ism:createDate'];
           if (ismCreateDate) {
-            standalone.g.addL(ontologyUri, 'ism:createDate', ismCreateDate);
+            standalone.g.addL(ontologyUri, 'dc:date', ismCreateDate);
           }
           const ismDESVersion = $['ism:DESVersion'];
           if (ismDESVersion) {
-            standalone.g.addL(ontologyUri, 'ism:DESVersion', ismDESVersion);
+            standalone.g.addL(ontologyUri, 'owl:versionInfo', `DESVersion:${ismDESVersion}`);
           }
           const ismCESVersion = $['ism:ISMCATCESVersion'];
           if (ismCESVersion) {
-            standalone.g.addL(ontologyUri, 'ism:ISMCATCESVersion', ismCESVersion);
+            standalone.g.addL(ontologyUri, 'owl:versionInfo', `ISMCATCESVersion:${ismCESVersion}`);
           }
           const ismClassification = $['ism:classification'];
           if (ismClassification) {
-            standalone.g.addL(ontologyUri, 'ism:classification', ismClassification);
+            standalone.g.addL(ontologyUri, 'dc:rights', ismClassification);
           }
           const ismOwnerProducer = $['ism:ownerProducer'];
           if (ismOwnerProducer) {
-            standalone.g.addL(ontologyUri, 'ism:ownerProducer', ismOwnerProducer);
+            standalone.g.addL(ontologyUri, 'dc:publisher', ismOwnerProducer);
           }
           const ismCompliesWith = $['ism:compliesWith'];
           if (ismCompliesWith) {
-            standalone.g.addL(ontologyUri, 'ism:compliesWith', ismCompliesWith);
+            standalone.g.addL(ontologyUri, 'dcterms:conformsTo', ismCompliesWith);
           }
 
           if (xsdPrefix) {
@@ -809,7 +797,8 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
                   }
                 }
               })
-              const jsonld: string = await getStream(jsonldSerializer.import(input) as AnyStream);
+              const jsonldRaw: string = await getStream(jsonldSerializer.import(input) as AnyStream);
+              const jsonld = normalizeJsonldForIngest(jsonldRaw);
               const jsonldOutputFilepath = path.join(jsonldOutputDir, `${basename}.jsonld`);
               fs.writeFileSync(jsonldOutputFilepath, jsonld);
 
@@ -2146,7 +2135,8 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
     }
   });
 
-  const jsonld: string = await getStream(jsonldSerializer.import(input) as AnyStream);
+  const jsonldRaw: string = await getStream(jsonldSerializer.import(input) as AnyStream);
+  const jsonld = normalizeJsonldForIngest(jsonldRaw);
   fs.writeFileSync(path.join(jsonldOutputDir, `${basename}.jsonld`), jsonld);
 
   // Use fast synchronous Turtle serializer to avoid hangs on large merged graphs.
@@ -2161,6 +2151,49 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
     writeTrigAndTdfArtifacts(quads, context, graphName, trigOutputDir, basename, relative, 'Schematron', mode);
   }
 
+}
+
+/**
+ * Normalizes JSON-LD node ordering for compatibility with ingest pipelines that
+ * resolve predicates in a single pass.
+ */
+function normalizeJsonldForIngest(jsonldText: string): string {
+  try {
+    const parsed = JSON.parse(jsonldText);
+    if (!parsed || !Array.isArray(parsed['@graph'])) {
+      return jsonldText;
+    }
+
+    const graph = parsed['@graph'] as Array<Record<string, unknown>>;
+    const propertyTypes = new Set(['owl:DatatypeProperty', 'owl:ObjectProperty', 'rdf:Property']);
+    graph.sort((a, b) => {
+      const rankA = nodeSortRank(a, propertyTypes);
+      const rankB = nodeSortRank(b, propertyTypes);
+      if (rankA !== rankB) {
+        return rankA - rankB;
+      }
+      const idA = typeof a['@id'] === 'string' ? a['@id'] : '';
+      const idB = typeof b['@id'] === 'string' ? b['@id'] : '';
+      return idA.localeCompare(idB);
+    });
+
+    return `${JSON.stringify(parsed, null, 2)}\n`;
+  } catch {
+    return jsonldText;
+  }
+}
+
+function nodeSortRank(node: Record<string, unknown>, propertyTypes: Set<string>): number {
+  const types = node['@type'];
+  const typeList = Array.isArray(types) ? types : (typeof types === 'string' ? [types] : []);
+  if (typeList.some((t) => typeof t === 'string' && propertyTypes.has(t))) {
+    return 0;
+  }
+  const id = node['@id'];
+  if (typeof id === 'string' && id.startsWith('_:')) {
+    return 2;
+  }
+  return 1;
 }
 
 function writeTrigAndTdfArtifacts(

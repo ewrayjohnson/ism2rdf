@@ -837,8 +837,6 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
           merge(merged, x[0] as string, convienence, x[1][1]);
         }
         Object.assign(convienence.namespaces, standalone.namespaces);
-        standalone.g.findAndRemove(null, IMPORTS_PROPERTY, null);
-        standalone.g.findAndRemove(null, RDF_TYPE, ONTOLOGY_TYPE);
         convienence.g.addAll(standalone.g);
       }
     }

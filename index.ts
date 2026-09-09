@@ -14,6 +14,7 @@ import path from 'path';
 import { Readable } from 'stream';
 import { fileURLToPath } from 'url';
 import xml2js from 'xml2js';
+import { UriMapping } from './uri-mapping.js';
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
@@ -43,7 +44,8 @@ const CCO_MARKING_BRIDGE_SOURCE = path.join(INPUT_DIR, 'config', 'cco-marking-br
 const RDF_TYPE = 'rdf:type';
 const ONTOLOGY_TYPE = 'owl:Ontology';
 const IMPORTS_PROPERTY = 'owl:imports';
-const URI_PREFIX = 'urn:us:gov:ic';
+const URI_PREFIX = process.env.ISM2RDF_URN_AUTHORITY ?? 'urn:us:gov:ic';
+const uriMapping = new UriMapping(URI_PREFIX);
 const SCHEMATRON_NS_URI = 'urn:us:gov:ic:ism2rdf:schematron#';
 const DATATYPE_PROPERTY_LABEL_OVERRIDES: Record<string, string> = {
   atomicEnergyMarkings: 'Atomic Energy Markings',
@@ -181,6 +183,7 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
   const defaultPrefixes = JSON.parse(fs.readFileSync(path.join(INPUT_DIR, 'config', 'defaultPrefixes.json'), 'utf8'));
   for (const [prefix, iri] of Object.entries(defaultPrefixes)) {
     namespaces.add(prefix, iri);
+    uriMapping.source(String(iri), prefix);
   }
 
   const sourceResult = await prepareAuthoritativeSources();
@@ -226,6 +229,13 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
 
       const schema: any = schemaEntry[1];
       const attrs = schema?.$ ?? {};
+      for (const [key, value] of Object.entries(attrs)) {
+        if (!key.startsWith('xmlns:') || String(value).includes('-StopBrowserRendering')) continue;
+        const iri = String(value);
+        uriMapping.source(iri === XML_SCHEMA_URI || iri.startsWith('urn:') ? iri + '#' : iri, key.slice(6));
+      }
+      const documentIri = URI_PREFIX + schemaFilepath.slice(schemaRoot.length).replaceAll(path.sep, ':').replace(/\.xsd$/, '');
+      uriMapping.document(documentIri.slice(0, documentIri.lastIndexOf(':') + 1));
       const xsdPrefixEntry = Object.entries(attrs).find(([k, v]) => k.startsWith('xmlns:') && v === XML_SCHEMA_URI);
       const xsdPrefix = xsdPrefixEntry ? xsdPrefixEntry[0].split(':')[1] : 'xs';
       parsedSchemas.push({ schema, xsdPrefix });
@@ -763,7 +773,7 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
             }
 
             async function writeGraph(p: Package, category: OutputCategory, mode: OutputMode) {
-              const context = _.invert(p.namespaces);
+              const context = uriMapping.context(p.namespaces);
               const jsonldOutputDir = ensureArtifactOutputDir('jsonld', mode, category, relative);
               const ttlOutputDir = ensureArtifactOutputDir('ttl', mode, category, relative);
               const ntOutputDir = ensureArtifactOutputDir('nt', mode, category, relative);
@@ -774,9 +784,10 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
                 prefixesArr.push([e[0], rdf.namedNode(e[1])]);
               });
               const quads: Quad[] = [];
+              const resource = (id: string) => id.startsWith('_:') ? rdf.blankNode(id.slice(2)) : rdf.namedNode(uriMapping.uri(id));
               p.g.find().forEach((triple: any) => {
-                const quad: Quad = rdf.quad(rdf.namedNode(triple._s), rdf.namedNode(triple._p),
-                  triple._o.type === 'literal' ? rdf.literal(triple._o.value) : rdf.namedNode(triple._o.value));
+                const quad: Quad = rdf.quad(resource(triple._s), rdf.namedNode(uriMapping.uri(triple._p)),
+                  triple._o.type === 'literal' ? rdf.literal(triple._o.value) : resource(triple._o.value));
                 quads.push(quad);
               });
               const jsonldSerializer = new SerializerJsonld({
@@ -867,14 +878,9 @@ function registerOntologyDocumentNamespace(namespaceMap: Record<string, string>,
     .replace(/[^A-Za-z0-9]+/g, '')
     .toLowerCase() || 'icdoc';
 
-  let candidate = /^[A-Za-z]/.test(basePrefix) ? basePrefix : `ns${basePrefix}`;
-  let suffix = 2;
-  while (Object.entries(namespaceMap).some(([iri, prefix]) => iri !== namespaceIri && prefix === candidate)) {
-    candidate = `${basePrefix}${suffix}`;
-    suffix += 1;
-  }
-
-  namespaceMap[namespaceIri] = candidate;
+  // Resolve aliases against the complete source/document set at serialization.
+  uriMapping.document(namespaceIri);
+  namespaceMap[namespaceIri] = basePrefix;
 }
 
 async function prepareAuthoritativeSources(): Promise<PrepareSourceResult> {
@@ -2092,7 +2098,7 @@ function writeTurtleFast(quads: Quad[], prefixes: Record<string, string>): strin
  * for each serialiser.
  */
 async function writeGraphPackage(p: Package, relative: string, basename: string, mode?: OutputMode, docUri?: string) {
-  const context = _.invert(p.namespaces);
+  const context = uriMapping.context(p.namespaces);
   const jsonldOutputDir = ensureArtifactOutputDir('jsonld', mode ?? 'standalone', 'Schematron', relative);
   const ttlOutputDir = ensureArtifactOutputDir('ttl', mode ?? 'standalone', 'Schematron', relative);
   const ntOutputDir = ensureArtifactOutputDir('nt', mode ?? 'standalone', 'Schematron', relative);
@@ -2100,15 +2106,15 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
 
   const quads: Quad[] = [];
   p.g.find().forEach((triple: any) => {
-    const subject = triple._s.startsWith('_:') ? rdf.blankNode(triple._s.slice(2)) : rdf.namedNode(triple._s);
-    const predicate = rdf.namedNode(triple._p);
+    const subject = triple._s.startsWith('_:') ? rdf.blankNode(triple._s.slice(2)) : rdf.namedNode(uriMapping.uri(triple._s));
+    const predicate = rdf.namedNode(uriMapping.uri(triple._p));
     let object: any;
     if (triple._o.type === 'literal') {
       object = rdf.literal(triple._o.value);
     } else if (triple._o.type === 'bnode' || triple._o.value.startsWith('_:')) {
       object = rdf.blankNode(triple._o.value.replace(/^_:/, ''));
     } else {
-      object = rdf.namedNode(triple._o.value);
+      object = rdf.namedNode(uriMapping.uri(triple._o.value));
     }
     quads.push(rdf.quad(subject, predicate, object));
   });
@@ -2204,6 +2210,7 @@ function writeTrigAndTdfArtifacts(
   category: OutputCategory,
   mode: OutputMode,
 ) {
+  graphName = uriMapping.uri(graphName);
   const trigText = writeTrigSingleGraph(quads, context, graphName);
   const trigOutputPath = path.join(outputDir, `${basename}.trig`);
   fs.writeFileSync(trigOutputPath, trigText);
@@ -2291,6 +2298,12 @@ function copySchemaBridgeArtifacts() {
   }
 
   const bridgeFilename = path.basename(CCO_MARKING_BRIDGE_SOURCE);
+  const bridge = JSON.parse(fs.readFileSync(CCO_MARKING_BRIDGE_SOURCE, 'utf8').replace(/^\uFEFF/, ''));
+  for (const [prefix, iri] of Object.entries(bridge['@context'])) {
+    if (typeof iri !== 'string') throw new Error(`Unsupported bridge context definition: ${prefix}`);
+    bridge['@context'][prefix] = uriMapping.namespace(iri);
+  }
+  const bridgeText = JSON.stringify(bridge, null, 2) + '\n';
   const formats = ['jsonld', 'ttl', 'nt', 'trig'] as const;
   const modes: OutputMode[] = ['standalone', 'convenience'];
 
@@ -2298,8 +2311,7 @@ function copySchemaBridgeArtifacts() {
     for (const mode of modes) {
       const schemaRootDir = path.join(OUTPUT_BASE_DIR, format, mode, 'Schema');
       fs.mkdirSync(schemaRootDir, { recursive: true });
-      // Preserve source bytes exactly (including BOM/newline style) for encoding fidelity.
-      fs.copyFileSync(CCO_MARKING_BRIDGE_SOURCE, path.join(schemaRootDir, bridgeFilename));
+      fs.writeFileSync(path.join(schemaRootDir, bridgeFilename), bridgeText);
     }
   }
 }

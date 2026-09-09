@@ -5,21 +5,23 @@
 
 ism2rdf transforms IC XML Schema Definition (XSD) and Schematron source files published by the [U.S. Intelligence Community CIO (IC CIO)](https://www.dni.gov/index.php/who-we-are/organizations/ic-cio/ic-technical-specifications) into RDF/OWL/SKOS representations, plus XSD-derived SHACL constraints, for use in Linked Data, semantic reasoning, and ontology-driven validation systems.
 
-The XSDs are the primary input and the design center of the transformer: every OWL property, datatype, concept scheme, and SHACL pattern derives from the schema. Schematron is processed as a supplementary input that records the IC's constraint rules in RDF and lowers the safely translatable subset to SHACL.
+XSD conversion is the primary pipeline. Schematron is processed as a supplementary input that records constraint rules in RDF and lowers a supported subset to SHACL. This is a transformer, not a complete XML validator or an authorization engine.
+
+**Existing users:** resource identifiers now use normalized HTTPS namespaces. Read [MIGRATION.md](MIGRATION.md) before replacing existing output. Compact property names remain familiar, but their expanded RDF identities change.
 
 ---
 
 ## What It Produces
 
-The primary output is **schema-derived**: for each XSD processed, the transformer emits a self-contained RDF/OWL/SKOS rendering of the schema's types, attributes, enumerations, and facets.
+The primary output is **schema-derived**: the transformer emits the supported type, attribute, enumeration, and pattern mappings. Standalone output retains import references; convenience output merges imported graphs. Namespace normalization does not extend the underlying XSD conversion coverage.
 
 ### From each XSD schema
 
-- **OWL ontologies** — one `owl:DatatypeProperty` per schema attribute, with `rdfs:range` pointing at a generated custom datatype.
+- **OWL declarations** — ontology documents, named element/type/group classes, and global attributes with builtin or generated datatype ranges. Local attribute uses receive cardinality restrictions; not every local declaration or anonymous type is emitted as a standalone resource.
 - **Custom datatypes** — `rdfs:Datatype` declarations with `owl:oneOf` enumerations linked back to the corresponding `skos:ConceptScheme` via `dc:source` and `rdfs:seeAlso`.
 - **SKOS concept schemes** — XSD enumerations become `skos:ConceptScheme` resources whose `skos:Concept` members carry `skos:notation` and (when XSD documentation is present) `skos:prefLabel`.
 - **SHACL pattern constraints** — regex facets on simple types become `sh:pattern` properties on the matching shape, derived directly from the XSD without hand authoring.
-  - **Schema header metadata** — ISM self-marking attributes on `xs:schema` are mapped to standard predicates on the emitted `owl:Ontology` (see [Schema Root Metadata Mapping](#schema-root-metadata-mapping) below).
+- **Schema header metadata** — ISM self-marking attributes on `xs:schema` are mapped to standard predicates on the emitted `owl:Ontology` (see [Schema Root Metadata Mapping](#schema-root-metadata-mapping) below).
 
 The full pattern that ties these pieces together — datatype property → custom datatype → concept scheme — is documented in [CVE Pattern](#cve-pattern).
 
@@ -45,7 +47,7 @@ XSD processing is the main pipeline; Schematron processing runs as a deferred pa
    - safe-subset SHACL translation,
    - constraint preservation metadata,
    - rule-to-schema alignment extraction.
-5. Write standalone and convenience artifacts in all serializer targets (`jsonld`, `ttl`, `nt`, `trig` + `tdf`).
+5. Normalize resource URIs and resolve namespace aliases, then write standalone and convenience artifacts in all serializer targets (`jsonld`, `ttl`, `nt`, `trig` + `tdf`). Literal values are unchanged.
 
 The emitted Schematron vocabulary covers document and structural terms such as `ismsch:SchematronDocument`, `ismsch:Schema`, `ismsch:NamespaceDeclaration`, `ismsch:Pattern`, `ismsch:AbstractPattern`, `ismsch:Rule`, `ismsch:AbstractRule`, `ismsch:ResolvedRule`, `ismsch:Assert`, `ismsch:Report`, `ismsch:Include`, `ismsch:ExecutionPhase`, `ismsch:Variable`, `ismsch:Parameter`, and `ismsch:Paragraph`.
 
@@ -60,26 +62,20 @@ The transformer maps ISM self-marking attributes on `xs:schema` to ontology meta
 - `ism:ownerProducer` -> `dc:publisher`
 - `ism:compliesWith` -> `dcterms:conformsTo`
 
-For `ism:compliesWith`, the object is emitted as a URI when the schema declares `xmlns:ismcomplies` (for example, `urn:us:gov:ic:cvenum:ism:complieswith#USGov`). If the namespace alias is missing, the transformer falls back to a literal so source intent is still preserved.
+The current implementation emits the `ism:compliesWith` value as a literal on
+`dcterms:conformsTo`. Source-URI strings in literals are not changed by URI
+normalization. Header metadata mapping does not enforce access decisions.
 
-- **Detection Principle:** The presence of `ism:classification` is sufficient to detect and process both classified and CUI-marked content. All marked data, including CUI, can be reliably identified by this property.
-
-Rationale for review/debate/change:
-
-- `dcterms:conformsTo` is the closest standard semantic for "complies with".
-- Using the CVE namespace URI keeps the value linkable to controlled-vocabulary resources.
-- Literal fallback prevents silent data loss in non-standard schema variants.
-
-If a different predicate or URI pattern is preferred (for example a custom `ism:` property), this behavior is isolated and can be changed without affecting the rest of the schema conversion pipeline.
-
-All outputs are written in five formats per file: compact **JSON-LD**, human-readable **Turtle**, **N-Triples**, **TriG** (named-graph serialization), and **TDF** (Trusted Data Format payload wrapping the TriG).
+Generated documents are written as compact **JSON-LD**, **Turtle**, **N-Triples**,
+**TriG**, and a **TDF** JSON wrapper containing the base64 TriG payload, SHA-256
+hash, graph identifier and metadata. This wrapper does not provide encryption.
 
 Output is written directly under `out/`:
 
 ```
 out/
 ├── jsonld/
-│   ├── standalone/        # Each schema/schematron as a self-contained graph
+│   ├── standalone/        # Per-document graphs retaining import references
 │   │   ├── Schema/
 │   │   └── Schematron/
 │   └── convenience/       # All imports/includes merged inline
@@ -112,13 +108,56 @@ out/
 
 Each `manifest.json` records a single entry per artifact pair with `trigPath`, `tdfPath`, `payloadSha256`, `graphName`, `category`, `mode`, and `createdAt`.
 
+The configured CCO bridge is copied as a `.jsonld` file under each format/mode's
+`Schema/` directory, with a normalized context. It is not converted into a
+separate Turtle, N-Triples, TriG or TDF document. Generation overwrites current
+artifacts but does not remove obsolete files from earlier source sets.
+
 TypeScript compiler output goes to `dist/`. The entire `out/` and `dist/` trees are excluded from Git.
+
+### RDF URI normalization
+
+URN resource identifiers are normalized before serialization. The authority is
+explicit: `ISM2RDF_URN_AUTHORITY`, defaulting to the generator's existing
+`urn:us:gov:ic` authority. Its colon-separated labels become the HTTPS hostname.
+Remaining namespace components are joined with underscores; local identifiers
+are retained after `#`.
+
+| Existing namespace | Output namespace | Prefix |
+| --- | --- | --- |
+| `urn:us:gov:ic:ism#` | `https://urn.us.gov.ic/ism#` | `ism` |
+| `urn:us:gov:ic:ISM:` | `https://urn.us.gov.ic/ISM#` | `ISM` |
+| `urn:us:gov:ic:IC-ID:` | `https://urn.us.gov.ic/IC-ID#` | `ICID` |
+| `urn:us:gov:ic:USAgency:` | `https://urn.us.gov.ic/USAgency#` | `USAgency` |
+| `urn:us:gov:ic:ISM:CVEGenerated:` | `https://urn.us.gov.ic/ISM_CVEGenerated#` | `ismcvegenerated` |
+
+Thus `ism:releasableTo` keeps its spelling but now identifies
+`https://urn.us.gov.ic/ism#releasableTo`. This is an RDF identity migration:
+downstream stores must regenerate or migrate references to the old URNs.
+HTTP/HTTPS identifiers, including external ontologies, remain unchanged.
+
+Source vocabulary aliases are reserved before document aliases are assigned.
+Existing generated aliases are retained when available; conflicts try the
+case-preserving namespace components, then underscore-separated components.
+No ontology-specific alias table or numeric suffixes are used. Ambiguous aliases
+or URI collisions stop generation with the conflicting identifiers. URNs outside
+the configured authority also stop generation rather than being silently rewritten.
+
+JSON-LD, Turtle, N-Triples, TriG, TDF graph names and payloads, and the copied
+bridge context use the same mapping. Literal strings and source files are not
+rewritten. A namespace declaration alone does not import another ontology.
+
+After generation, run `npm run build` and
+`node --test test/uri-mapping.test.mjs test/uri-output.test.mjs`.
 
 ---
 
 ## CVE Pattern
 
-The Controlled Vocabulary Enumeration (CVE) pattern is the core design connecting XSD enumerations to semantic RDF structures. It is described in detail in [Prescriptive _CVE_Pattern.pdf](Prescriptive%20_CVE_Pattern.pdf) included in this repository.
+The Controlled Vocabulary Enumeration (CVE) pattern connects XSD enumerations
+to RDF structures. [Prescriptive _CVE_Pattern.pdf](Prescriptive%20_CVE_Pattern.pdf)
+is the background design reference; the current URI and launch contracts are
+documented here, in [MIGRATION.md](MIGRATION.md), and in [USAGE.md](USAGE.md).
 
 ### Summary
 
@@ -139,7 +178,8 @@ The CVE pattern facts in detail:
 
 ## Source Inputs
 
-Authoritative source payloads are **not stored in this repository**. The current implementation expects staged local source folders to already exist under `.ciartifacts/`:
+This checkout contains tracked source payloads. The loader expects local source
+folders to exist under `.ciartifacts/`:
 
 - `.ciartifacts/Schema`
 - `.ciartifacts/Schematron`
@@ -161,7 +201,7 @@ The transformer always reads whatever is currently staged in those folders. This
 
 ## Local Source Folder Layout
 
-All required source files must be manually staged in the following canonical folders before running the transformer:
+Ensure the intended source files are present in these folders before running:
 
 ```
 .ciartifacts/
@@ -176,10 +216,14 @@ All required source files must be manually staged in the following canonical fol
 │   └── ISM/
 │       ├── Lib/      # Abstract pattern libraries
 │       └── Rules/    # Concrete rules by jurisdiction and profile
-├── config/
+└── config/
+    ├── defaultPrefixes.json
+    └── cco-marking-bridge.jsonld
 ```
 
-These folders are excluded from Git via `.ciartifacts/.gitignore`.
+The `Schema/`, `Schematron/`, and configuration files include tracked content.
+The local ignore file excludes ZIPs, downloads, legacy `schemas/`, and optional
+`source/` staging; it does not make edits to tracked payloads private.
 
 The transformer always reads whatever is currently staged in those folders. No automated acquisition or extraction is performed; users are responsible for ensuring the correct files are present.
 
@@ -196,11 +240,9 @@ npm install
 npm run build
 ```
 
-Run the transformer from the repository root:
-
-```bash
-npm start
-```
+Run from the repository root using [USAGE.md](USAGE.md#run). The existing
+`npm start` script uses `ts-node`; the usage guide includes the verified ESM
+loader command for Node.js 24 and the current lint limitation.
 
 Current runtime behavior:
 - Uses staged folders only (`.ciartifacts/Schema` + `.ciartifacts/Schematron`, or legacy `.ciartifacts/schemas` for schema root)

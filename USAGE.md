@@ -1,237 +1,135 @@
 # Usage Guide
 
-This guide describes how to run the current ism2rdf implementation end-to-end, including source acquisition, CLI options, output layout, and validation checks.
+For output semantics, see [README](README.md). Existing consumers should read
+[Migration from URN output](MIGRATION.md) before replacing generated artifacts.
 
----
+## Setup and local sources
 
-## 1. Setup
+The package declares Node.js 18 or newer. Install Node.js dependencies and check
+the TypeScript build from the repository root:
 
-```bash
-git clone https://github.com/ewrayjohnson/ism2rdf.git
-cd ism2rdf
+```sh
 npm install
+npm run build
 ```
 
----
+The active loader reads these local paths:
 
-## 2. Source Resolution
+| Path | Purpose |
+| --- | --- |
+| `.ciartifacts/Schema/` | XSD source tree, including relative imports/includes |
+| `.ciartifacts/Schematron/` | Schematron source tree and included rules |
+| `.ciartifacts/config/defaultPrefixes.json` | Initial RDF prefix mappings |
+| `.ciartifacts/config/cco-marking-bridge.jsonld` | Required JSON-LD bridge copied into output |
 
-Authoritative XSD and Schematron sources are not committed to this repo. Runtime source selection precedence is:
+This checkout includes tracked source files. If `Schema/` is absent, the loader
+accepts the legacy `.ciartifacts/schemas/` directory. Both the schema tree and
+Schematron tree must exist. An empty schema tree fails generation.
 
-```text
-CLI flag -> environment variable -> .env -> built-in default URL
-```
+For classified, disconnected, or updated source sets, replace the local source
+trees while retaining their relative paths. No code change or source-selection
+flag is needed. Review Git status before committing: replacing tracked files
+creates changes eligible for commit. Dependency installation may require a
+network connection or a locally provisioned npm cache; transformation reads
+staged files without downloading source packages.
 
-Default URL used by `npm start` when no source is provided:
+## Run
 
-```text
-https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip
-```
+The existing npm script invokes `ts-node index.ts`:
 
-### CLI examples
-
-```bash
-# URL source (download + cache)
-npm start -- --source https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip
-
-# Local ZIP source
-npm start -- --source /path/to/ISM-Public-Standalone.zip
-
-# Local extracted directory source
-npm start -- --source /path/to/ISM
-```
-
-### Environment variable examples
-
-```bash
-# Linux/macOS
-export ISM2RDF_SOURCE=https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip
+```sh
 npm start
 ```
+
+On Node.js 24, that entry point can fail with an unknown `.ts` extension. The
+following source-entry command was used to validate the current implementation.
+Build first because `TS_NODE_TRANSPILE_ONLY` skips runtime type checking.
+
+PowerShell:
 
 ```powershell
-# PowerShell
-$env:ISM2RDF_SOURCE = "https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip"
-npm start
+npm run build
+$env:TS_NODE_TRANSPILE_ONLY = 'true'
+node --loader ts-node/esm index.ts
+Remove-Item Env:TS_NODE_TRANSPILE_ONLY
 ```
 
-### `.env` example
+POSIX shell:
 
-```ini
-ISM2RDF_SOURCE=https://www.dni.gov/files/documents/CIO/ICEA/Dec2022/ISM/ISM-Public-Standalone.zip
-ISM2RDF_SOURCE_VERSION=Dec2022
+```sh
+npm run build
+TS_NODE_TRANSPILE_ONLY=true node --loader ts-node/esm index.ts
 ```
 
-Then run:
+Use the source entry point from the repository root. Directly running
+`node dist/index.js` is not an equivalent launch command in the current code:
+workspace-root detection does not account for `dist/`.
 
-```bash
-npm start
+## Configuration
+
+`ISM2RDF_URN_AUTHORITY` is read from the process environment before generation.
+It defaults to `urn:us:gov:ic`, which maps to the hostname `urn.us.gov.ic`.
+It also supplies the generator's document-URI authority. Set it only when the
+source URNs use the corresponding authority.
+
+```powershell
+$env:ISM2RDF_URN_AUTHORITY = 'urn:example:org'
 ```
 
----
+The value must contain `urn:` followed by colon-separated hostname labels.
+See [URI normalization](README.md#rdf-uri-normalization) for the mapping and
+collision rules. Existing HTTP/HTTPS identifiers are not rewritten.
 
-## 3. Acquisition and Freshness Behavior
+The loader does **not** read `.env` files or use these former options:
 
-When a source is provided, the runtime:
+- `--source`, `--source-type`, `--source-version`, `--force-refresh`
+- `ISM2RDF_SOURCE`, `ISM2RDF_SOURCE_TYPE`, `ISM2RDF_SOURCE_VERSION`, `ISM2RDF_FORCE_REFRESH`
 
-1. Detects source kind (`url`, `zip`, `dir`) unless overridden.
-2. Downloads URL sources to `.ciartifacts/downloads/` using conditional HTTP headers (`If-None-Match`, `If-Modified-Since`).
-3. Extracts only required ZIP subtrees:
-   - `ISM/Schema/` -> `.ciartifacts/Schema/`
-   - `ISM/Schematron/` -> `.ciartifacts/Schematron/`
-4. Writes `.ciartifacts/source-manifest.json` with source metadata and staged-directory fingerprints.
-5. Skips re-extraction when manifest + fingerprints match current request.
+Those arguments/settings do not select or refresh sources. There is no active
+download, ZIP extraction, conditional HTTP refresh, or source-manifest cache.
+Always stage the actual files before running.
 
-Force refresh:
+## Outputs and checks
 
-```bash
-npm start -- --source <value> --force-refresh
-```
-
-If default URL download fails (for example HTTP 403) and local staged folders already exist, the runtime automatically falls back to local staged sources:
-
-- `.ciartifacts/Schema` (or legacy `.ciartifacts/schemas`)
-- `.ciartifacts/Schematron`
-
----
-
-## 4. CLI Options
-
-| Option | Env variable | Description |
-|--------|-------------|-------------|
-| `--source <value>` | `ISM2RDF_SOURCE` | URL, ZIP path, or directory path |
-| `--source-type <auto\|url\|zip\|dir>` | `ISM2RDF_SOURCE_TYPE` | Override auto-detection |
-| `--source-version <label>` | `ISM2RDF_SOURCE_VERSION` | Version label used for source metadata and cache naming |
-| `--force-refresh` | `ISM2RDF_FORCE_REFRESH=true` | Force re-download/re-extract even when manifest is current |
-
----
-
-## 5. What Gets Emitted
-
-### XSD conversion output
-
-Per schema, the runtime emits RDF/OWL/SKOS artifacts (plus XSD-derived SHACL pattern constraints), including:
-
-- `owl:Ontology`
-- `owl:DatatypeProperty` for attributes
-- `skos:ConceptScheme` / `skos:Concept` for enumerations
-- `rdfs:Datatype` + `owl:oneOf` for constrained value sets
-
-### Schematron conversion output
-
-Per `.sch` file, the runtime emits source-faithful RDF model elements, including:
-
-- `ismsch:SchematronDocument`
-- `ismsch:Schema`
-- `ismsch:Pattern`, `ismsch:Rule`, `ismsch:Assert`, `ismsch:Report`
-- `ismsch:Variable`, `ismsch:Parameter`, `ismsch:Paragraph`
-- `ismsch:ExecutionPhase`, `ismsch:PhaseActivation`, `ismsch:PatternReference`
-- `ismsch:Include`
-
-Note: Schematron output remains source-faithful as the baseline model, and now also includes:
-
-- resolved abstract-pattern rule expansions (`ismsch:ResolvedRule`),
-- SHACL translation for a safe subset (`sh:minCount`, `sh:hasValue`, `sh:pattern`), and
-- explicit preservation markers for non-translated constraints (`ismsch:translationStatus`, `ismsch:translationReason`).
-
----
-
-## 6. Output Layout
-
-Outputs are written directly under `out/`, organized by format first:
+The [README output layout](README.md#what-it-produces) describes all five formats.
+The primary merged file is:
 
 ```text
-out/
-├── jsonld/
-│   ├── standalone/
-│   │   ├── Schema/
-│   │   └── Schematron/
-│   └── convenience/
-│       ├── Schema/
-│       └── Schematron/
-├── ttl/
-│   ├── standalone/
-│   │   ├── Schema/
-│   │   └── Schematron/
-│   └── convenience/
-│       ├── Schema/
-│       └── Schematron/
-├── nt/
-│   ├── standalone/
-│   │   ├── Schema/
-│   │   └── Schematron/
-│   └── convenience/
-│       ├── Schema/
-│       └── Schematron/
-└── trig/
-    ├── standalone/
-    │   ├── Schema/
-    │   ├── Schematron/
-    │   └── manifest.json
-    └── convenience/
-        ├── Schema/
-        ├── Schematron/
-        └── manifest.json
+out/jsonld/convenience/Schema/IC-EDH/IC-EDH.jsonld
 ```
 
-Formats emitted per file:
+TriG and its `.tdf` wrapper are stored together under `out/trig/{mode}/`.
+Each mode has a `manifest.json` with relative artifact paths, graph identifiers,
+timestamps and payload hashes. The wrapper is the generator's JSON envelope
+containing a base64 TriG payload and SHA-256 hash; it does not implement
+encryption or an authorization engine.
 
-| Format | Extension | Description |
-|--------|-----------|-------------|
-| JSON-LD | `.jsonld` | Compact, context-mapped |
-| Turtle | `.ttl` | Human-readable |
-| N-Triples | `.nt` | Triple-store compatible |
-| TriG | `.trig` | Named-graph serialization |
-| TDF | `.tdf` | Trusted Data Format wrapper around the TriG payload |
+The bridge remains a `.jsonld` file even when copied under `ttl`, `nt`, or `trig`
+directories. Its context is normalized, while its source file is unchanged.
 
-The `manifest.json` in each `trig/{mode}/` directory records every TriG+TDF pair with fields: `graphName`, `trigPath`, `tdfPath`, `payloadSha256`, `category`, `mode`, `relativePath`, `basename`, and `createdAt`.
+A successful run prints processed XSD and Schematron document counts. The staged
+source set used for validation produced 44 XSD and 451 Schematron documents;
+counts depend on the supplied files and reachable includes.
 
-**Modes:**
+Run the regression checks after building and generating:
 
-- `standalone` — each schema/schematron document as its own self-contained graph with `owl:imports` / `ismsch:includes` triples preserved.
-- `convenience` — same graphs with all imports and includes merged inline for direct querying without resolving external references.
-
-TypeScript compiler output is written to `dist/` (not `out/`).
-
----
-
-## 7. Runtime Signals
-
-A successful full run prints:
-
-```text
-Output directory: ...\out
-Processed <N> XSD documents
-Processed <M> Schematron documents
+```sh
+node --test test/uri-mapping.test.mjs test/uri-output.test.mjs
 ```
 
-The current implementation commonly reports values such as 44 XSD and 451 Schematron documents depending on source contents.
+The mapping tests use arbitrary namespaces. The output tests use the staged IC
+source set and check the agreed ISM identifiers and cross-format URI handling.
+Different source sets may require different integration-test fixtures.
 
-Warnings can appear for specific enumeration entries with missing documentation and do not necessarily indicate run failure.
+## Troubleshooting
 
----
-
-## 8. Configuration File
-
-Default RDF prefixes are loaded from:
-
-```text
-.ciartifacts/config/defaultPrefixes.json
-```
-
----
-
-## 9. Troubleshooting
-
-| Symptom | Likely cause | Fix |
-|---------|--------------|-----|
-| `No source provided` error | Neither source flags/env nor staged folders exist | Provide `--source` or populate staged folders |
-| `ZIP source does not exist` | Bad file path | Use correct absolute/relative path |
-| `Could not locate required Schema/Schematron prefixes in ZIP` | ZIP layout does not match expected prefixes | Use `--source-type dir` with an extracted folder containing Schema + Schematron trees |
-| Output appears stale | Manifest freshness check reused staged source | Run with `--force-refresh` |
-| Default URL fails with HTTP 403 | Network restrictions | Use local ZIP/dir source or rely on staged-folder fallback |
-
----
-
-For issues or enhancements, open a GitHub issue or PR.
-
+| Symptom | Current behavior / action |
+| --- | --- |
+| Missing staged-folder error | Supply both source trees at the paths above. |
+| Missing prefix configuration or bridge | Restore the required files under `.ciartifacts/config/`. |
+| Unknown `.ts` extension | Use the ESM loader command above. |
+| Namespace or URI collision | Read the two conflicting identifiers in the error. Correct the source/configuration; the generator does not append numeric suffixes. |
+| URN outside configured authority | Check the source URN and `ISM2RDF_URN_AUTHORITY`; unrelated URN authorities are not silently remapped. |
+| Old files remain in `out/` | Generation overwrites current artifacts but does not clean obsolete files. Archive or remove old output before a clean generation. |
+| Missing enumeration documentation warning | The concept is still emitted, but may lack a preferred label. |
+| `npm run lint` cannot find configuration | The current checkout has an ESLint script/dependency but no configuration. Lint has not passed; build and regression tests are separate checks. |

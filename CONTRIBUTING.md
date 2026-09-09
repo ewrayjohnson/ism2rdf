@@ -30,8 +30,8 @@ Thank you for your interest in contributing to the **IC XSD to RDF Transformer**
 1. **Fork the repository**
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/ewrayjohnson/ic-xsd-to-rdf.git
-   cd ic-xsd-to-rdf
+   git clone https://github.com/ewrayjohnson/ism2rdf.git
+   cd ism2rdf
    ```
 3. **Create a branch**
    ```bash
@@ -54,12 +54,16 @@ Thank you for your interest in contributing to the **IC XSD to RDF Transformer**
 - Use ES6+ features, with top-level `async/await` for all asynchronous logic
 - Keep commits focused and descriptive
 - Avoid introducing unused dependencies
+- Keep namespace derivation generic; do not hardcode vocabulary-specific prefix mappings.
+- Preserve local names and literal values. Document RDF identity changes in [MIGRATION.md](MIGRATION.md) and [CHANGELOG.md](CHANGELOG.md).
 
 ## Testing Guidelines
 
-- Run the transformer against multiple `.xsd` files
-- Validate output formats (Turtle, JSON-LD, N-Triples)
-- Check RDF validity using tools like [rdf-validate](https://www.npmjs.com/package/rdf-validate)
+- Follow [USAGE.md](USAGE.md) to stage sources, build, and run the transformer.
+- Run `node --test test/uri-mapping.test.mjs test/uri-output.test.mjs` after generation.
+- Validate JSON-LD, Turtle, N-Triples, TriG and TDF, including graph identifiers, payload hashes and URI consistency.
+- Run `npm run lint`; the current checkout lacks an ESLint configuration, so report that limitation rather than claiming lint passes.
+- Review source overlays before committing because staged payloads include tracked files. Keep generated `out/` and `dist/` artifacts out of commits.
 
 ---
 

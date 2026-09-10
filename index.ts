@@ -45,7 +45,7 @@ const RDF_TYPE = 'rdf:type';
 const ONTOLOGY_TYPE = 'owl:Ontology';
 const IMPORTS_PROPERTY = 'owl:imports';
 const URI_PREFIX = process.env.ISM2RDF_URN_AUTHORITY ?? 'urn:us:gov:ic';
-const uriMapping = new UriMapping(URI_PREFIX);
+const uriMapping = new UriMapping(URI_PREFIX, process.env.ISM2RDF_HTTPS_BASE);
 const SCHEMATRON_NS_URI = 'urn:us:gov:ic:ism2rdf:schematron#';
 const DATATYPE_PROPERTY_LABEL_OVERRIDES: Record<string, string> = {
   atomicEnergyMarkings: 'Atomic Energy Markings',
@@ -204,17 +204,62 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
     throw new Error(`No schema files found under ${schemaRoot}`);
   }
 
+  const schemaNamespaces = new Map<string, string>();
+  const ontologyDependencies = new Map<string, Set<string>>();
   await preloadGlobalTypeAndAttributeListInfo(schemaFiles);
 
   for (const schemaFile of schemaFiles) {
     await input(schemaFile, processed, processedSchematron);
   }
 
+  await writeSchemaOntologies();
   writeOutputManifests();
   copySchemaBridgeArtifacts();
 
   console.log(`Processed ${processed.size} XSD documents`);
   console.log(`Processed ${processedSchematron.size} Schematron documents`);
+
+  async function writeSchemaOntologies() {
+    const assembled = new Map<string, Package>();
+    const emptyPackage = (): Package => ({ g: new Graph({}), namespaces: {}, imports: {} });
+    const addPackage = (target: Package, source: Package) => {
+      target.g.addAll(source.g);
+      Object.assign(target.namespaces, source.namespaces);
+    };
+    for (const [file, packages] of processed) {
+      const namespace = schemaNamespaces.get(file)!;
+      if (!assembled.has(namespace)) assembled.set(namespace, emptyPackage());
+      addPackage(assembled.get(namespace)!, packages.standalone);
+    }
+    const outputPaths = new Map<string, string>();
+    for (const namespace of [...assembled.keys()].sort()) {
+      const standalone = assembled.get(namespace)!;
+      const convenience = emptyPackage();
+      const visited = new Set<string>();
+      const include = (dependency: string) => {
+        if (visited.has(dependency)) return;
+        visited.add(dependency);
+        const source = assembled.get(dependency);
+        if (!source) throw new Error(`Missing assembled ontology: ${dependency}`);
+        addPackage(convenience, source);
+        for (const imported of [...ontologyDependencies.get(dependency)!].sort()) include(imported);
+      };
+      include(namespace);
+      // Packaging mirrors the source tree; all files for one namespace publish
+      // the same assembled ontology and graph at alternate artifact locations.
+      for (const file of schemaFiles.filter(file => schemaNamespaces.get(file) === namespace)) {
+        const relative = path.relative(schemaRoot, path.dirname(file));
+        const basename = path.basename(file, path.extname(file));
+        const key = path.join(relative, basename).toLowerCase();
+        const previous = outputPaths.get(key);
+        if (previous && previous !== file) throw new Error(`Schema output path collision: ${previous} and ${file}`);
+        outputPaths.set(key, file);
+        await writeGraphPackage(standalone, relative, basename, 'standalone', namespace, 'Schema');
+        await writeGraphPackage(convenience, relative, basename, 'convenience', namespace, 'Schema');
+      }
+    }
+    console.log(`Assembled ${assembled.size} schema ontologies`);
+  }
 
   async function preloadGlobalTypeAndAttributeListInfo(schemaFilepaths: string[]) {
     const parsedSchemas: Array<{ schema: any; xsdPrefix: string }> = [];
@@ -234,8 +279,10 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
         const iri = String(value);
         uriMapping.source(iri === XML_SCHEMA_URI || iri.startsWith('urn:') ? iri + '#' : iri, key.slice(6));
       }
-      const documentIri = URI_PREFIX + schemaFilepath.slice(schemaRoot.length).replaceAll(path.sep, ':').replace(/\.xsd$/, '');
-      uriMapping.document(documentIri.slice(0, documentIri.lastIndexOf(':') + 1));
+      if (!attrs.targetNamespace) throw new Error(`Schema has no targetNamespace: ${schemaFilepath}`);
+      schemaNamespaces.set(path.normalize(schemaFilepath), attrs.targetNamespace);
+      uriMapping.ontology(attrs.targetNamespace);
+      if (!ontologyDependencies.has(attrs.targetNamespace)) ontologyDependencies.set(attrs.targetNamespace, new Set());
       const xsdPrefixEntry = Object.entries(attrs).find(([k, v]) => k.startsWith('xmlns:') && v === XML_SCHEMA_URI);
       const xsdPrefix = xsdPrefixEntry ? xsdPrefixEntry[0].split(':')[1] : 'xs';
       parsedSchemas.push({ schema, xsdPrefix });
@@ -266,9 +313,9 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
     if (processed.size % 10 === 0 || !processed.has(path.normalize(inputFilepath))) {
       console.log(`[${processed.size}] Processing: ${path.basename(inputFilepath)}`);
     }
-    const ontologyUri = URI_PREFIX + inputFilepath.substring(0, inputFilepath.lastIndexOf('.xsd')).
-      substring(schemaRoot.length).replaceAll(path.sep, ':');
     inputFilepath = path.normalize(inputFilepath);
+    const ontologyUri = schemaNamespaces.get(inputFilepath);
+    if (!ontologyUri) throw new Error(`Schema is not in the staged namespace inventory: ${inputFilepath}`);
     let p: Packages | undefined = processed.get(inputFilepath);
     if (!p) {
       p = {
@@ -282,12 +329,12 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
           imports: {},
         }
       };
-      registerOntologyDocumentNamespace(p.standalone.namespaces, ontologyUri);
-      registerOntologyDocumentNamespace(p.convienence.namespaces, ontologyUri);
+      // Vocabulary aliases come from source declarations, never directory names.
       processed.set(inputFilepath, p);
       const standalone = p.standalone;
-      const convienence = p.convienence;
       standalone.g.add(ontologyUri, RDF_TYPE, ONTOLOGY_TYPE);
+      standalone.namespaces[DCTERMS_URI] = 'dcterms';
+      standalone.g.addL(ontologyUri, 'dcterms:source', path.relative(schemaRoot, inputFilepath).split(path.sep).join('/'));
       const text = fs.readFileSync(inputFilepath, 'utf8');
       const json = await xml2js.parseStringPromise(text);
       // Emit ontology-level metadata after the JSON is available but before per-construct
@@ -393,13 +440,22 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
             if (importsEarly) {
               const allEarly = (importsEarly as any[]).map((e: any) => e.$ as Import);
               const dirnameEarly = path.dirname(inputFilepath);
-              const mergedEarly = new Set<string>();
               for (const importSpec of allEarly) {
-                const schemaLocation = importSpec.schemaLocation;
-                const importPath: string = path.join(dirnameEarly, schemaLocation);
-                const imported = await input(importPath, processed, processedSchematron);
-                standalone.imports[schemaLocation] = [importPath, imported.standalone];
-                merge(mergedEarly, importPath, convienence, imported.standalone);
+                const importedNamespace = importSpec.namespace;
+                if (!importedNamespace || !ontologyDependencies.has(importedNamespace)) {
+                  throw new Error(`Import namespace is not staged: ${importedNamespace} in ${inputFilepath}`);
+                }
+                if (importSpec.schemaLocation) {
+                  const importPath = path.normalize(path.join(dirnameEarly, importSpec.schemaLocation));
+                  if (schemaNamespaces.get(importPath) !== importedNamespace) {
+                    throw new Error(`Import namespace does not match schemaLocation: ${importSpec.schemaLocation} in ${inputFilepath}`);
+                  }
+                  await input(importPath, processed, processedSchematron);
+                }
+                if (importedNamespace !== ontologyUri) {
+                  ontologyDependencies.get(ontologyUri)!.add(importedNamespace);
+                  standalone.g.add(ontologyUri, IMPORTS_PROPERTY, importedNamespace);
+                }
               }
             }
 
@@ -743,114 +799,15 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
               }
             }
             delete standalone.namespaces[XML_SCHEMA_URI];
-            const extname = path.extname(inputFilepath);
-            const dirname = path.dirname(inputFilepath);
-            const basename = path.basename(inputFilepath, extname);
-            const relative = path.relative(schemaRoot, dirname);
-
-            convienence.g.addAll(standalone.g);
-            Object.assign(convienence.namespaces, standalone.namespaces);
-            await writeGraph(convienence, 'Schema', 'convenience');
-
-            Object.keys(standalone.imports).forEach((schemaLocation) => {
-              // Derive the import's ontology URI the same way the main ontologyUri is built
-              // (URI_PREFIX + path relative to schemaRoot with path separators replaced by colons)
-              // rather than splicing the raw schemaLocation string, which produced broken URIs like
-              // urn:us:gov:ic:../ISMCAT/Tetragraph.jsonld.
-              const [importAbsPath] = standalone.imports[schemaLocation];
-              const importOntologyUri = URI_PREFIX + importAbsPath
-                .substring(0, importAbsPath.lastIndexOf('.xsd'))
-                .substring(schemaRoot.length)
-                .replaceAll(path.sep, ':');
-              registerOntologyDocumentNamespace(standalone.namespaces, importOntologyUri);
-              standalone.g.add(ontologyUri, IMPORTS_PROPERTY, importOntologyUri);
-            });
-            await writeGraph(standalone, 'Schema', 'standalone');
-
             const schematronPath = discoverSchematronPath(text, inputFilepath, schematronRoot);
             if (schematronPath) {
               await inputSchematron(schematronPath, schematronRoot, outputDir, processedSchematron);
-            }
-
-            async function writeGraph(p: Package, category: OutputCategory, mode: OutputMode) {
-              const context = uriMapping.context(p.namespaces);
-              const jsonldOutputDir = ensureArtifactOutputDir('jsonld', mode, category, relative);
-              const ttlOutputDir = ensureArtifactOutputDir('ttl', mode, category, relative);
-              const ntOutputDir = ensureArtifactOutputDir('nt', mode, category, relative);
-              const trigOutputDir = ensureArtifactOutputDir('trig', mode, category, relative);
-
-              const prefixesArr: Array<[string, NamedNode]> = [];
-              Object.entries(context).forEach((e: [string, string]) => {
-                prefixesArr.push([e[0], rdf.namedNode(e[1])]);
-              });
-              const quads: Quad[] = [];
-              const resource = (id: string) => id.startsWith('_:') ? rdf.blankNode(id.slice(2)) : rdf.namedNode(uriMapping.uri(id));
-              p.g.find().forEach((triple: any) => {
-                const quad: Quad = rdf.quad(resource(triple._s), rdf.namedNode(uriMapping.uri(triple._p)),
-                  triple._o.type === 'literal' ? rdf.literal(triple._o.value) : resource(triple._o.value));
-                quads.push(quad);
-              });
-              const jsonldSerializer = new SerializerJsonld({
-                context,
-                compact: true,
-                encoding: 'string',
-                prettyPrint: true
-              });
-
-              let pushedXsd = false;
-              const input = new Readable({
-                objectMode: true,
-                read: () => {
-                  if (!pushedXsd) {
-                    pushedXsd = true;
-                    quads.forEach(quad => { input.push(quad); });
-                    input.push(null);
-                  }
-                }
-              })
-              const jsonldRaw: string = await getStream(jsonldSerializer.import(input) as AnyStream);
-              const jsonld = normalizeJsonldForIngest(jsonldRaw);
-              const jsonldOutputFilepath = path.join(jsonldOutputDir, `${basename}.jsonld`);
-              fs.writeFileSync(jsonldOutputFilepath, jsonld);
-
-              const turtle = writeTurtleFast(quads, context);
-              const turtleOutputFilepath = path.join(ttlOutputDir, `${basename}.ttl`);
-              fs.writeFileSync(turtleOutputFilepath, turtle);
-
-              const triples = triplesToString(quads);
-              const triplesOutputFilepath = path.join(ntOutputDir, `${basename}.nt`);
-              fs.writeFileSync(triplesOutputFilepath, triples);
-
-              const graphName = mode === 'standalone'
-                ? `${ontologyUri}:graph:standalone`
-                : `${ontologyUri}:graph:convenience`;
-              writeTrigAndTdfArtifacts(
-                quads,
-                context,
-                graphName,
-                trigOutputDir,
-                basename,
-                relative,
-                category,
-                mode,
-              );
             }
           }
         }
       }
     }
     return p;
-
-    function merge(merged: Set<unknown>, importPath: string, convienence: Package, standalone: Package) {
-      if (!merged.has(importPath)) {
-        merged.add(importPath);
-        for (const x of Object.entries(standalone.imports)) {
-          merge(merged, x[0] as string, convienence, x[1][1]);
-        }
-        Object.assign(convienence.namespaces, standalone.namespaces);
-        convienence.g.addAll(standalone.g);
-      }
-    }
   }
 })().catch(error => {
   console.error(error instanceof Error ? error.message : error);
@@ -860,27 +817,6 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
 /** Returns the root directory under which all transformed RDF artefacts are written. */
 function resolveOutputDir(): string {
   return OUTPUT_BASE_DIR;
-}
-
-function registerOntologyDocumentNamespace(namespaceMap: Record<string, string>, ontologyIri: string): void {
-  const lastColon = ontologyIri.lastIndexOf(':');
-  if (lastColon <= URI_PREFIX.length) {
-    return;
-  }
-
-  const namespaceIri = ontologyIri.substring(0, lastColon + 1);
-  if (namespaceMap[namespaceIri]) {
-    return;
-  }
-
-  const basePrefix = namespaceIri
-    .substring(URI_PREFIX.length)
-    .replace(/[^A-Za-z0-9]+/g, '')
-    .toLowerCase() || 'icdoc';
-
-  // Resolve aliases against the complete source/document set at serialization.
-  uriMapping.document(namespaceIri);
-  namespaceMap[namespaceIri] = basePrefix;
 }
 
 async function prepareAuthoritativeSources(): Promise<PrepareSourceResult> {
@@ -2097,12 +2033,12 @@ function writeTurtleFast(quads: Quad[], prefixes: Record<string, string>): strin
  * Handles blank nodes in the graph by mapping `_:` prefixed values appropriately
  * for each serialiser.
  */
-async function writeGraphPackage(p: Package, relative: string, basename: string, mode?: OutputMode, docUri?: string) {
+async function writeGraphPackage(p: Package, relative: string, basename: string, mode?: OutputMode, docUri?: string, category: OutputCategory = 'Schematron') {
   const context = uriMapping.context(p.namespaces);
-  const jsonldOutputDir = ensureArtifactOutputDir('jsonld', mode ?? 'standalone', 'Schematron', relative);
-  const ttlOutputDir = ensureArtifactOutputDir('ttl', mode ?? 'standalone', 'Schematron', relative);
-  const ntOutputDir = ensureArtifactOutputDir('nt', mode ?? 'standalone', 'Schematron', relative);
-  const trigOutputDir = ensureArtifactOutputDir('trig', mode ?? 'standalone', 'Schematron', relative);
+  const jsonldOutputDir = ensureArtifactOutputDir('jsonld', mode ?? 'standalone', category, relative);
+  const ttlOutputDir = ensureArtifactOutputDir('ttl', mode ?? 'standalone', category, relative);
+  const ntOutputDir = ensureArtifactOutputDir('nt', mode ?? 'standalone', category, relative);
+  const trigOutputDir = ensureArtifactOutputDir('trig', mode ?? 'standalone', category, relative);
 
   const quads: Quad[] = [];
   p.g.find().forEach((triple: any) => {
@@ -2151,8 +2087,10 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
   fs.writeFileSync(path.join(ntOutputDir, `${basename}.nt`), triples);
 
   if (mode && docUri) {
-    const graphName = `${docUri}:graph:${mode}`;
-    writeTrigAndTdfArtifacts(quads, context, graphName, trigOutputDir, basename, relative, 'Schematron', mode);
+    const graphName = category === 'Schema'
+      ? `${uriMapping.uri(docUri)}/graph/${mode}`
+      : `${docUri}:graph:${mode}`;
+    writeTrigAndTdfArtifacts(quads, context, graphName, trigOutputDir, basename, relative, category, mode);
   }
 
 }

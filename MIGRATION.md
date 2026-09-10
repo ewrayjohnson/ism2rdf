@@ -1,47 +1,40 @@
-# Migration from URN output
+# Migration to namespace-based ontology assembly
 
-The current unreleased change normalizes RDF resource URNs into HTTPS identifiers.
-It preserves the committed schema conversion model; it does not add a separate
-NTK converter, a policy evaluator, or expanded XML content-model support.
+The unreleased transformer now assembles one schema ontology per XSD target
+namespace. This replaces document identities derived from relative filenames
+and assembly folders. See [README](README.md#ontology-assembly-and-dependencies)
+for the assembly contract and [USAGE](USAGE.md) for execution and configuration.
 
-## What changes
+## Identity changes
 
-With the default authority, namespace components after `urn:us:gov:ic` form an
-underscore-separated path under `https://urn.us.gov.ic/`. Local identifiers remain
-after `#`. The configured authority boundary is explicit, not inferred by counting
-components in each input URI.
+The configurable HTTPS base defaults to `https://ns.dni.ic.gov/`, a proposed
+proof-of-concept root. CVEnum namespaces place the owning vocabulary first.
 
-| Before | After |
+| Previous output | New output |
 | --- | --- |
-| `urn:us:gov:ic:ism#releasableTo` | `https://urn.us.gov.ic/ism#releasableTo` |
-| `urn:us:gov:ic:ntk#Access` | `https://urn.us.gov.ic/ntk#Access` |
-| `urn:us:gov:ic:ISM:IC-NTK` | `https://urn.us.gov.ic/ISM#IC-NTK` |
-| `urn:us:gov:ic:IC-ID:IC-ID` | `https://urn.us.gov.ic/IC-ID#IC-ID` |
-| `urn:us:gov:ic:USAgency:USAgency` | `https://urn.us.gov.ic/USAgency#USAgency` |
-| `urn:us:gov:ic:ISM:IC-NTK:graph:standalone` | `https://urn.us.gov.ic/ISM#IC-NTK:graph:standalone` |
+| `https://ns.dni.ic.gov/ISM#IC-ISM` | `https://ns.dni.ic.gov/ism` |
+| `https://ns.dni.ic.gov/USAgency#USAgency` | `https://ns.dni.ic.gov/usagency` |
+| `https://ns.dni.ic.gov/ISM/CVEGenerated#CVEnumISMSAR` | `https://ns.dni.ic.gov/ism/cvenum/sar` |
+| `https://ns.dni.ic.gov/ISM/CVEGenerated#CVEnumISMSARAuthorities` | `https://ns.dni.ic.gov/ism/cvenum/sar` |
+| `https://ns.dni.ic.gov/cvenum/ism/classification/all#CVEnumISMClassificationAll` | `https://ns.dni.ic.gov/ism/cvenum/classification/all#CVEnumISMClassificationAll` |
+| `https://ns.dni.ic.gov/ISM#IC-ISM:graph:standalone` | `https://ns.dni.ic.gov/ism/graph/standalone` |
 
-These are new RDF identities, even where the compact spelling stays the same.
-The generator does not emit equivalence assertions or update downstream data.
+Earlier output used URNs or `https://urn.us.gov.ic/` with underscore-separated
+namespace paths. Those also require migration; changing the displayed prefix
+alone does not update stored RDF identities. No equivalence assertions or
+automatic downstream migrations are emitted.
 
-Document aliases no longer disappear through collisions with source aliases:
+Source prefixes are preserved, but their expansions can change. For example,
+`ismclassall` now expands to
+`https://ns.dni.ic.gov/ism/cvenum/classification/all#`.
+Directory-derived prefixes such as `ISM`, `ICID`, `USAgency`,
+`ismcvegenerated`, `ismcatcvegenerated`, and `usagencycvegenerated` disappear.
+Their ontology subjects use full HTTPS identifiers without `#`.
 
-| Document namespace | Current alias | Distinct source vocabulary alias |
-| --- | --- | --- |
-| `https://urn.us.gov.ic/ISM#` | `ISM` | `ism` |
-| `https://urn.us.gov.ic/IC-ID#` | `ICID` | `icid` |
-| `https://urn.us.gov.ic/ISMCAT#` | `ISMCAT` | `ismcat` |
-| `https://urn.us.gov.ic/USAgency#` | `USAgency` | `usagency` |
+## ISM consumer compatibility
 
-Old outputs could omit a document alias or use a numeric suffix in some contexts.
-Use the generated context rather than carrying those old aliases forward.
-Prefixes are case-sensitive. The code preserves existing generated names when
-available, tries source-derived case and component boundaries for collisions,
-and errors if no distinct candidate remains.
-
-## What stays the same
-
-These compact property names retain their exact spelling and case. All now expand
-under `https://urn.us.gov.ic/ism#`:
+The `ism` binding remains `https://ns.dni.ic.gov/ism#` from the preceding
+HTTPS-base change. These properties retain their exact spelling and identity:
 
 ```text
 ism:releasableTo
@@ -57,48 +50,63 @@ ism:cuiSpecified
 ism:cuiDecontrolEvent
 ```
 
-- Existing source vocabulary aliases, including `ntk`, remain in use.
-- `ismcvegenerated`, `ismcatcvegenerated`, and `usagencycvegenerated` retain their spelling. Their namespace URIs are normalized.
-- Local names, including the complete `...:Shape` suffix, are not shortened.
-- `skos:notation` and enumeration values retain their plain-string form. No new typed-literal wrappers are introduced.
-- Existing HTTP/HTTPS identifiers, such as RDF, OWL, BFO and CCO terms, remain unchanged.
-- Literal strings and source files are unchanged. Source-URI text inside a literal is not a resource reference and is not rewritten.
-- Output directories and extensions remain the same. Blank-node labels are internal identifiers and may vary between runs.
+Consumers still using `urn:us:gov:ic:ism#` or `https://urn.us.gov.ic/ism#`
+must update their namespace bindings and migrate stored expanded identifiers.
+ISM has its own outputs and does not require loading EDH. Convenience output
+follows only the ontology's transitive source imports.
 
-The XSD serializer now emits proper blank-node terms instead of invalid
-`<_:...>` IRIs in N-Triples. JSON-LD blank-node references remain reference objects.
+## Assembly and output changes
 
-## Update a consumer
+The staged 44 XSDs produce 43 ontologies. The two SAR schemas share one ontology,
+retaining both sets of definitions and source metadata. Metadata values from
+multiple files are combined; differing values are not silently discarded.
+Ontology imports follow declared namespaces rather than directory-derived
+document URIs. Source locations remain `dcterms:source` literals.
 
-1. Preserve the old output and record its namespace mappings before replacing it.
-2. Stage the intended source set and regenerate all formats using [USAGE](USAGE.md).
-   Use a clean output tree when sources were removed or renamed; generation does
-   not remove obsolete artifacts.
-3. Deploy the matching ontology files, normalized bridge, and TriG/TDF manifests
-   together. TDF payload hashes change when resource identifiers change.
-4. Update namespace registries and any stored full-URN references in queries,
-   rules, data, caches and graph names. Updating the displayed prefix alone is
-   insufficient when a consumer stores expanded identifiers.
-5. Rebuild or migrate the downstream dataset through that project's own procedure.
-   Do not treat a mixture of old URNs and new HTTPS identifiers as one identity.
-6. Verify expanded identities and persisted counts, not just successful parsing.
-   For example, confirm that `ism:releasableTo` resolves to
-   `https://urn.us.gov.ic/ism#releasableTo` and that all referenced ontology
-   documents are retained.
+Schema outputs retain the original source folders and filenames:
 
-For compact identifiers, resolve a declared prefix at the first colon and keep
-the entire remainder. `ISM:IC-NTK:graph:standalone` has prefix `ISM` and local name
-`IC-NTK:graph:standalone`. Full HTTP/HTTPS IRIs are already absolute. Blank-node
-references are handled separately from prefix expansion.
+```text
+out/jsonld/standalone/Schema/ISM/IC-ISM.jsonld
+out/jsonld/convenience/Schema/ISM/IC-ISM.jsonld
+out/jsonld/standalone/Schema/ISM/CVEGenerated/CVEnumISMSAR.jsonld
+```
 
-This repository does not alter RDF9 or any other consumer automatically.
-`ISM2RDF_URN_AUTHORITY` selects the input authority; it is not a switch that restores
-legacy URN output. Returning to old identities requires the previous generator
-and a matching downstream dataset.
+The two SAR source paths both contain the same assembled SAR ontology. Manifests
+list both as alternate artifact locations with the same graph identifier and
+payload hash. Load one artifact per graph identifier to avoid duplicate ingestion.
+The staged sources yield 44 schema artifact locations for 43 ontologies per mode.
 
-## Previous launch/source instructions
+Other formats use the same relative paths. Schema graphs use
+`<ontology URI>/graph/<mode>`. TriG/TDF manifests, payloads and hashes therefore
+change. Schematron document assembly and graph naming remain unchanged.
 
-Older usage documentation described URL downloads, ZIP inputs, `.env` source
-settings, `--source` and `--force-refresh`. Those paths are not used by the current
-loader. See [USAGE](USAGE.md) for manual staging, source replacement in disconnected
-environments, the supported authority setting, and the Node.js ESM launch command.
+## What stays unchanged
+
+- Explicit source vocabulary aliases, case, and local term names.
+- Plain-string enumeration values, notation, and other literal values.
+- External HTTP/HTTPS vocabulary identifiers, including the existing CCO bridge
+  namespace. This is not a migration to CCO v2 identifiers.
+- Source files, assembly folders, and the local staged-source loader.
+- Generated local names containing colons, including `...:Shape`. A consumer
+  that rejects these still needs a separate compatibility change.
+
+## Update consumers
+
+1. Preserve the old dataset and namespace mappings.
+2. Build and regenerate using [USAGE](USAGE.md). Archive old output first or
+   publish only artifacts in the new manifests plus the bridge: generation
+   overwrites current files but does not remove obsolete per-document outputs.
+3. Deploy matching ontology artifacts, bridge context and TriG/TDF manifests.
+4. Update stored URNs, previous HTTPS identifiers, import targets, graph names,
+   namespace registries and artifact paths. Regenerate or migrate downstream
+   data using that consumer's own procedure.
+5. Run the documented regressions. Verify ISM CURIE expansions, both SAR source
+   definitions, import closure, and payload hashes.
+
+For compact identifiers, split at the first colon and preserve the remainder
+of the local name. Absolute HTTP/HTTPS identifiers and blank nodes are handled
+separately. Namespace spelling and physical hosting location are independent;
+changing `ISM2RDF_HTTPS_BASE` changes canonical RDF identities.
+
+Older download, ZIP, `.env`, and source-selection flag instructions are inactive.
+See [USAGE](USAGE.md) for the supported local staging and launch commands.

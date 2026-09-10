@@ -68,15 +68,24 @@ workspace-root detection does not account for `dist/`.
 ## Configuration
 
 `ISM2RDF_URN_AUTHORITY` is read from the process environment before generation.
-It defaults to `urn:us:gov:ic`, which maps to the hostname `urn.us.gov.ic`.
-It also supplies the generator's document-URI authority. Set it only when the
-source URNs use the corresponding authority.
+It defaults to `urn:us:gov:ic` and supplies the generator's document-URI authority.
+Set it only when the source URNs use the corresponding authority.
+
+`ISM2RDF_HTTPS_BASE` independently sets the output namespace root, defaulting to
+`https://ns.dni.ic.gov/`. This is a proposed proof-of-concept namespace, not an
+assigned or verified endpoint. The base must be an absolute HTTPS URL without
+credentials, a query, or a fragment. A missing trailing slash is added. A path
+base is supported, for example `https://example.org/ns/`.
+
+Choose the canonical base before publishing: changing it changes RDF identities.
+Rehosting vocabulary files in an enclave need not change their canonical base.
 
 ```powershell
 $env:ISM2RDF_URN_AUTHORITY = 'urn:example:org'
+$env:ISM2RDF_HTTPS_BASE = 'https://example.org/ns/'
 ```
 
-The value must contain `urn:` followed by colon-separated hostname labels.
+The `ISM2RDF_URN_AUTHORITY` value must contain `urn:` followed by colon-separated hostname labels.
 See [URI normalization](README.md#rdf-uri-normalization) for the mapping and
 collision rules. Existing HTTP/HTTPS identifiers are not rewritten.
 
@@ -92,24 +101,35 @@ Always stage the actual files before running.
 ## Outputs and checks
 
 The [README output layout](README.md#what-it-produces) describes all five formats.
-The primary merged file is:
+Each schema ontology has its own standalone and convenience output. Examples:
 
 ```text
+out/jsonld/convenience/Schema/ISM/IC-ISM.jsonld
 out/jsonld/convenience/Schema/IC-EDH/IC-EDH.jsonld
+out/jsonld/standalone/Schema/ISM/CVEGenerated/CVEnumISMSAR.jsonld
 ```
 
 TriG and its `.tdf` wrapper are stored together under `out/trig/{mode}/`.
 Each mode has a `manifest.json` with relative artifact paths, graph identifiers,
-timestamps and payload hashes. The wrapper is the generator's JSON envelope
+timestamps and payload hashes. Schema paths mirror the original XSD folders and
+filenames. Shared-namespace schemas have alternate output locations for the same
+graph: load one artifact per graph identifier. The staged set has 44 schema
+artifact locations and 43 distinct schema graphs per mode. The wrapper is the generator's JSON envelope
 containing a base64 TriG payload and SHA-256 hash; it does not implement
 encryption or an authorization engine.
 
 The bridge remains a `.jsonld` file even when copied under `ttl`, `nt`, or `trig`
 directories. Its context is normalized, while its source file is unchanged.
 
-A successful run prints processed XSD and Schematron document counts. The staged
-source set used for validation produced 44 XSD and 451 Schematron documents;
-counts depend on the supplied files and reachable includes.
+A successful run prints assembled ontology and processed source counts. The staged
+source set produces 43 schema ontologies from 44 XSD files, plus 451 processed
+Schematron documents. Counts depend on the supplied files and reachable includes.
+See [ontology assembly](README.md#ontology-assembly-and-dependencies) for grouping,
+metadata, import boundaries, and graph naming.
+
+Archive old output before publishing a regenerated set, or deploy only artifacts
+listed in the new manifests plus the copied bridge. Generation does not delete
+obsolete per-file outputs from earlier runs.
 
 Run the regression checks after building and generating:
 
@@ -118,7 +138,8 @@ node --test test/uri-mapping.test.mjs test/uri-output.test.mjs
 ```
 
 The mapping tests use arbitrary namespaces. The output tests use the staged IC
-source set and check the agreed ISM identifiers and cross-format URI handling.
+source set and check the agreed ISM identifiers, namespace assembly, source imports,
+ISM independence, and cross-format URI handling.
 Different source sets may require different integration-test fixtures.
 
 ## Troubleshooting

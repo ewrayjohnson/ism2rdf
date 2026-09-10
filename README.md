@@ -47,7 +47,7 @@ XSD processing is the main pipeline; Schematron processing runs as a deferred pa
    - safe-subset SHACL translation,
    - constraint preservation metadata,
    - rule-to-schema alignment extraction.
-5. Normalize resource URIs and resolve namespace aliases, then write standalone and convenience artifacts in all serializer targets (`jsonld`, `ttl`, `nt`, `trig` + `tdf`). Literal values are unchanged.
+5. Assemble XSDs by target namespace, then write each ontology standalone and with its transitive imports. Normalize resource URIs in all serializer targets (`jsonld`, `ttl`, `nt`, `trig` + `tdf`). Literal values are unchanged.
 
 The emitted Schematron vocabulary covers document and structural terms such as `ismsch:SchematronDocument`, `ismsch:Schema`, `ismsch:NamespaceDeclaration`, `ismsch:Pattern`, `ismsch:AbstractPattern`, `ismsch:Rule`, `ismsch:AbstractRule`, `ismsch:ResolvedRule`, `ismsch:Assert`, `ismsch:Report`, `ismsch:Include`, `ismsch:ExecutionPhase`, `ismsch:Variable`, `ismsch:Parameter`, and `ismsch:Paragraph`.
 
@@ -75,7 +75,7 @@ Output is written directly under `out/`:
 ```
 out/
 ├── jsonld/
-│   ├── standalone/        # Per-document graphs retaining import references
+│   ├── standalone/        # Per-ontology schema graphs; per-document Schematron
 │   │   ├── Schema/
 │   │   └── Schematron/
 │   └── convenience/       # All imports/includes merged inline
@@ -117,38 +117,70 @@ TypeScript compiler output goes to `dist/`. The entire `out/` and `dist/` trees 
 
 ### RDF URI normalization
 
-URN resource identifiers are normalized before serialization. The authority is
-explicit: `ISM2RDF_URN_AUTHORITY`, defaulting to the generator's existing
-`urn:us:gov:ic` authority. Its colon-separated labels become the HTTPS hostname.
-Remaining namespace components are joined with underscores; local identifiers
-are retained after `#`.
+The input authority is `ISM2RDF_URN_AUTHORITY`, defaulting to `urn:us:gov:ic`.
+The independent `ISM2RDF_HTTPS_BASE` defaults to `https://ns.dni.ic.gov/`, a
+proposed proof-of-concept root, not an assigned endpoint. See
+[USAGE](USAGE.md#configuration) for configuration.
 
-| Existing namespace | Output namespace | Prefix |
+XSD target namespaces determine ontology identity. Namespace components become
+case-preserving path segments, except `cvenum:<vocabulary>:<remainder>`, which
+becomes `<vocabulary>/cvenum/<remainder>`. Term namespaces append `#`; local
+names and explicitly declared source aliases are preserved.
+
+| Source namespace | Ontology identifier | Term prefix |
 | --- | --- | --- |
-| `urn:us:gov:ic:ism#` | `https://urn.us.gov.ic/ism#` | `ism` |
-| `urn:us:gov:ic:ISM:` | `https://urn.us.gov.ic/ISM#` | `ISM` |
-| `urn:us:gov:ic:IC-ID:` | `https://urn.us.gov.ic/IC-ID#` | `ICID` |
-| `urn:us:gov:ic:USAgency:` | `https://urn.us.gov.ic/USAgency#` | `USAgency` |
-| `urn:us:gov:ic:ISM:CVEGenerated:` | `https://urn.us.gov.ic/ISM_CVEGenerated#` | `ismcvegenerated` |
+| `urn:us:gov:ic:ism` | `https://ns.dni.ic.gov/ism` | `ism` |
+| `urn:us:gov:ic:usagency` | `https://ns.dni.ic.gov/usagency` | `usagency` |
+| `urn:us:gov:ic:cvenum:ism:classification:all` | `https://ns.dni.ic.gov/ism/cvenum/classification/all` | `ismclassall` |
+| `urn:us:gov:ic:cvenum:ism:sar` | `https://ns.dni.ic.gov/ism/cvenum/sar` | `ismsar` |
 
-Thus `ism:releasableTo` keeps its spelling but now identifies
-`https://urn.us.gov.ic/ism#releasableTo`. This is an RDF identity migration:
-downstream stores must regenerate or migrate references to the old URNs.
-HTTP/HTTPS identifiers, including external ontologies, remain unchanged.
+Thus `ism:releasableTo` identifies `https://ns.dni.ic.gov/ism#releasableTo`.
+External HTTP/HTTPS vocabulary identifiers, including the existing CCO bridge
+terms, are unchanged. Different source namespaces mapping to one URI, conflicting
+prefix assignments, and case-insensitive output-path collisions stop generation.
 
-Source vocabulary aliases are reserved before document aliases are assigned.
-Existing generated aliases are retained when available; conflicts try the
-case-preserving namespace components, then underscore-separated components.
-No ontology-specific alias table or numeric suffixes are used. Ambiguous aliases
-or URI collisions stop generation with the conflicting identifiers. URNs outside
-the configured authority also stop generation rather than being silently rewritten.
+### Ontology assembly and dependencies
 
-JSON-LD, Turtle, N-Triples, TriG, TDF graph names and payloads, and the copied
-bridge context use the same mapping. Literal strings and source files are not
-rewritten. A namespace declaration alone does not import another ontology.
+All staged XSDs sharing a target namespace contribute to one `owl:Ontology`.
+For example, the two SAR schemas contribute definitions and metadata to one SAR
+ontology. Header metadata is combined; different source values are retained as
+multiple assertions rather than choosing a version silently. Source paths are
+recorded as `dcterms:source` literals relative to the schema root.
 
-After generation, run `npm run build` and
-`node --test test/uri-mapping.test.mjs test/uri-output.test.mjs`.
+Assembly folders such as `CVEGenerated` do not create semantic namespaces.
+Directory-derived aliases such as `ISM`, `USAgency`, and `ismcvegenerated` are
+no longer generated. The corresponding explicit vocabulary aliases remain.
+
+Imports identify ontologies using `xs:import/@namespace`. When supplied,
+`schemaLocation` locates the source and must match its declared target namespace.
+Imported namespaces must be staged locally. A namespace declaration alone does
+not import an ontology; imports within the same target namespace do not create
+self-imports.
+
+Every schema ontology gets a standalone output with its own content and import
+references, plus a convenience output with only its transitive imports merged.
+ISM can be consumed independently of EDH: EDH importing ISM never makes ISM
+import EDH. Graph identifiers append `/graph/standalone` or
+`/graph/convenience` to the ontology identifier.
+
+Schema artifacts mirror source folders and filenames, changing only the extension:
+`Schema/ISM/IC-ISM.xsd` produces `Schema/ISM/IC-ISM.jsonld`. Assembly folders
+such as `CVEGenerated` remain physical output folders, not semantic namespaces.
+Files sharing a target namespace publish identical assembled content at their
+respective source-mirrored paths. The manifest records each location with the
+same graph identifier; consumers should load only one location per graph.
+The staged sources therefore produce 44 schema artifact locations for 43
+distinct ontology graphs in each mode.
+Schematron remains document-oriented with its existing identifiers and layout.
+The manifests enumerate the current artifacts; obsolete files are not deleted.
+
+JSON-LD, Turtle, N-Triples, TriG, TDF payloads and the copied bridge context use
+the same namespace mapping. Literal strings and source files are not rewritten.
+Existing generated local names containing colons, including `...:Shape`, remain
+unchanged; this change does not assert complete RDF9 compatibility for those names.
+
+Read [MIGRATION](MIGRATION.md) before replacing existing output, then run the
+[validation commands](USAGE.md#outputs-and-checks).
 
 ---
 

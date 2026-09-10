@@ -3,14 +3,18 @@ export class UriMapping {
   private readonly namespaces = new Map<string, string>();
   private readonly identities = new Map<string, string>();
   private readonly sources = new Map<string, string>();
-  private readonly documents = new Set<string>();
-  private readonly host: string;
+  private readonly ontologies = new Map<string, string>();
+  private readonly base: string;
 
-  constructor(private readonly authority: string) {
+  constructor(private readonly authority: string, httpsBase = 'https://ns.dni.ic.gov/') {
     if (!/^urn:[A-Za-z0-9-]+(?::[A-Za-z0-9-]+)*$/.test(authority)) {
       throw new Error('URN authority must contain colon-separated hostname labels');
     }
-    this.host = `https://${authority.replace(/:/g, '.').toLowerCase()}`;
+    const base = new URL(httpsBase);
+    if (base.protocol !== 'https:' || base.username || base.password || httpsBase.includes('?') || httpsBase.includes('#')) {
+      throw new Error('HTTPS base must be an HTTPS URL without credentials, query or fragment');
+    }
+    this.base = base.href.endsWith('/') ? base.href : base.href + '/';
   }
 
   private belongs(iri: string): boolean {
@@ -31,8 +35,15 @@ export class UriMapping {
     const existing = this.namespaces.get(iri);
     if (existing) return existing;
     const suffix = iri.slice(this.authority.length).replace(/^:/, '').replace(/[:#]$/, '');
-    const path = suffix.split(':').map(encodeURIComponent).join('_');
-    const result = this.unique(iri, this.host + (path ? '/' + path : '') + '#');
+    const components = suffix.split(':');
+    if (components[0] === 'cvenum' && components.length >= 3) {
+      [components[0], components[1]] = [components[1], components[0]];
+    }
+    const path = components.map(component => {
+      if (component === '.' || component === '..') throw new Error('Namespace cannot contain dot path segments');
+      return encodeURIComponent(component);
+    }).join('/');
+    const result = this.unique(iri, this.base + path + '#');
     this.namespaces.set(iri, result);
     return result;
   }
@@ -44,12 +55,19 @@ export class UriMapping {
     this.namespace(iri);
   }
 
-  document(iri: string): void {
-    this.documents.add(iri);
-    this.namespace(iri);
+  ontology(iri: string): string {
+    if (/^urn:/i.test(iri) && !this.belongs(iri)) throw new Error(`URN outside configured authority ${this.authority}: ${iri}`);
+    const existing = this.ontologies.get(iri);
+    if (existing) return existing;
+    const result = this.belongs(iri) ? this.namespace(iri + '#').slice(0, -1) : iri;
+    this.unique(iri, result);
+    this.ontologies.set(iri, result);
+    return result;
   }
 
   uri(iri: string): string {
+    const ontology = this.ontologies.get(iri);
+    if (ontology) return ontology;
     if (!this.belongs(iri)) {
       if (/^urn:/i.test(iri)) throw new Error(`URN outside configured authority ${this.authority}: ${iri}`);
       // Detect a source HTTPS identifier colliding with a rewritten identifier too.
@@ -63,22 +81,13 @@ export class UriMapping {
   }
 
   context(namespaceMap: Record<string, string>): Record<string, string> {
-    const aliases = new Map(this.sources);
-    const generated = new Map<string, string>();
-    // Sort the complete document set so aliases cannot depend on import order.
-    for (const iri of [...this.documents].sort()) {
-      const parts = iri.slice(this.authority.length).split(':').filter(Boolean);
-      const caseName = parts.join('').replace(/[^A-Za-z0-9]/g, '');
-      const candidates = [caseName.toLowerCase(), caseName, parts.join('_').replace(/[^A-Za-z0-9_]/g, '')]
-        .map(name => /^[A-Za-z]/.test(name) ? name : `ns${name}`);
-      const prefix = candidates.find(name => !aliases.has(name) || aliases.get(name) === iri);
-      if (!prefix) throw new Error(`Cannot derive a distinct document prefix for ${iri}`);
-      aliases.set(prefix, iri);
-      generated.set(iri, prefix);
-    }
     const context: Record<string, string> = Object.create(null);
-    for (const [iri, originalPrefix] of Object.entries(namespaceMap)) {
-      const prefix = generated.get(iri) ?? originalPrefix;
+    const entries = Object.entries(namespaceMap).map(([iri, prefix]) => [prefix, iri]);
+    // Keep all explicit aliases for namespaces present in this package.
+    for (const [prefix, iri] of this.sources) {
+      if (Object.prototype.hasOwnProperty.call(namespaceMap, iri)) entries.push([prefix, iri]);
+    }
+    for (const [prefix, iri] of entries) {
       const normalized = this.namespace(iri);
       if (context[prefix] !== undefined && context[prefix] !== normalized) {
         throw new Error(`Namespace prefix collision: ${prefix} names ${context[prefix]} and ${normalized}`);

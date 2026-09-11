@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DEVELOPMENT DATA: all groups and member tokens are preserved from the prior JSON.
+     XML-only metadata is notional. In particular, dateLastVerified=2022-11-02
+     does not assert actual verification, and decomposable=No is a notional
+     placeholder, not a source-derived status. Replace with an approved taxonomy. -->
+<tetra:Tetragraphs xmlns:tetra="urn:us:gov:ic:taxonomy:catt:tetragraph"
+                  xmlns:arh="urn:us:gov:ic:arh"
+                  xmlns:tax="urn:us:gov:ic:taxonomy:common"
+                  xmlns:ism="urn:us:gov:ic:ism"
+                  tetra:TESVersion="202211">
+  <arh:Security ism:classification="U" ism:ownerProducer="USA"
+                ism:resourceElement="true" ism:createDate="2000-01-01"
+                ism:DESVersion="202111"/>
+  <tax:IRM>
+    <tax:URN>urn:example:ism2rdf:tetragraph-fixture</tax:URN>
+    <tax:Title ism:classification="U" ism:ownerProducer="USA">Development membership dataset converted from JSON</tax:Title>
+    <tax:Created>2000-01-01</tax:Created>
+    <tax:PointOfContact ism:classification="U" ism:ownerProducer="USA">
+      <tax:Name>Example maintainer, not an operational contact</tax:Name>
+    </tax:PointOfContact>
+  </tax:IRM>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">ACGU</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">ACGU membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">AMSP</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">AMSP membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>AUT</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>EST</tetra:Country>
+      <tetra:Country>FIN</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>ROU</tetra:Country>
+      <tetra:Country>SWE</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">AOSC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">AOSC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">APFS</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">APFS membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">ASEA</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">ASEA membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>BRN</tetra:Country>
+      <tetra:Country>IDN</tetra:Country>
+      <tetra:Country>KHM</tetra:Country>
+      <tetra:Country>LAO</tetra:Country>
+      <tetra:Country>MMR</tetra:Country>
+      <tetra:Country>MYS</tetra:Country>
+      <tetra:Country>PHL</tetra:Country>
+      <tetra:Country>SGP</tetra:Country>
+      <tetra:Country>THA</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+      <tetra:Country>VNM</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">AUSTRALIA_GROUP</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">AUSTRALIA_GROUP membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>ARG</tetra:Country>
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>AUT</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>BGR</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>CHE</tetra:Country>
+      <tetra:Country>CYP</tetra:Country>
+      <tetra:Country>CZE</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>EST</tetra:Country>
+      <tetra:Country>FIN</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>HRV</tetra:Country>
+      <tetra:Country>HUN</tetra:Country>
+      <tetra:Country>IRL</tetra:Country>
+      <tetra:Country>ISL</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>LTU</tetra:Country>
+      <tetra:Country>LUX</tetra:Country>
+      <tetra:Country>LVA</tetra:Country>
+      <tetra:Country>MLT</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>POL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>ROU</tetra:Country>
+      <tetra:Country>SVK</tetra:Country>
+      <tetra:Country>SVN</tetra:Country>
+      <tetra:Country>SWE</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>UKR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">BHTF</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">BHTF membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">BWCS</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">BWCS membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AFG</tetra:Country>
+      <tetra:Country>AGO</tetra:Country>
+      <tetra:Country>ALB</tetra:Country>
+      <tetra:Country>AND</tetra:Country>
+      <tetra:Country>ARE</tetra:Country>
+      <tetra:Country>ARG</tetra:Country>
+      <tetra:Country>ARM</tetra:Country>
+      <tetra:Country>ATG</tetra:Country>
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>AUT</tetra:Country>
+      <tetra:Country>AZE</tetra:Country>
+      <tetra:Country>BDI</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>BEN</tetra:Country>
+      <tetra:Country>BFA</tetra:Country>
+      <tetra:Country>BGD</tetra:Country>
+      <tetra:Country>BGR</tetra:Country>
+      <tetra:Country>BHR</tetra:Country>
+      <tetra:Country>BHS</tetra:Country>
+      <tetra:Country>BIH</tetra:Country>
+      <tetra:Country>BLR</tetra:Country>
+      <tetra:Country>BLZ</tetra:Country>
+      <tetra:Country>BOL</tetra:Country>
+      <tetra:Country>BRA</tetra:Country>
+      <tetra:Country>BRB</tetra:Country>
+      <tetra:Country>BRN</tetra:Country>
+      <tetra:Country>BTN</tetra:Country>
+      <tetra:Country>BWA</tetra:Country>
+      <tetra:Country>CAF</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>CHE</tetra:Country>
+      <tetra:Country>CHL</tetra:Country>
+      <tetra:Country>CHN</tetra:Country>
+      <tetra:Country>CIV</tetra:Country>
+      <tetra:Country>CMR</tetra:Country>
+      <tetra:Country>COD</tetra:Country>
+      <tetra:Country>COG</tetra:Country>
+      <tetra:Country>COK</tetra:Country>
+      <tetra:Country>COL</tetra:Country>
+      <tetra:Country>CPV</tetra:Country>
+      <tetra:Country>CRI</tetra:Country>
+      <tetra:Country>CUB</tetra:Country>
+      <tetra:Country>CYP</tetra:Country>
+      <tetra:Country>CZE</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DMA</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>DOM</tetra:Country>
+      <tetra:Country>DZA</tetra:Country>
+      <tetra:Country>ECU</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>EST</tetra:Country>
+      <tetra:Country>ETH</tetra:Country>
+      <tetra:Country>FIN</tetra:Country>
+      <tetra:Country>FJI</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GAB</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GEO</tetra:Country>
+      <tetra:Country>GHA</tetra:Country>
+      <tetra:Country>GIN</tetra:Country>
+      <tetra:Country>GMB</tetra:Country>
+      <tetra:Country>GNB</tetra:Country>
+      <tetra:Country>GNQ</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>GRD</tetra:Country>
+      <tetra:Country>GTM</tetra:Country>
+      <tetra:Country>GUY</tetra:Country>
+      <tetra:Country>HND</tetra:Country>
+      <tetra:Country>HRV</tetra:Country>
+      <tetra:Country>HUN</tetra:Country>
+      <tetra:Country>IDN</tetra:Country>
+      <tetra:Country>IND</tetra:Country>
+      <tetra:Country>IRL</tetra:Country>
+      <tetra:Country>IRN</tetra:Country>
+      <tetra:Country>IRQ</tetra:Country>
+      <tetra:Country>ISL</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>JAM</tetra:Country>
+      <tetra:Country>JOR</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>KAZ</tetra:Country>
+      <tetra:Country>KEN</tetra:Country>
+      <tetra:Country>KGZ</tetra:Country>
+      <tetra:Country>KHM</tetra:Country>
+      <tetra:Country>KNA</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>KWT</tetra:Country>
+      <tetra:Country>LAO</tetra:Country>
+      <tetra:Country>LBN</tetra:Country>
+      <tetra:Country>LBR</tetra:Country>
+      <tetra:Country>LBY</tetra:Country>
+      <tetra:Country>LCA</tetra:Country>
+      <tetra:Country>LIE</tetra:Country>
+      <tetra:Country>LKA</tetra:Country>
+      <tetra:Country>LSO</tetra:Country>
+      <tetra:Country>LTU</tetra:Country>
+      <tetra:Country>LUX</tetra:Country>
+      <tetra:Country>LVA</tetra:Country>
+      <tetra:Country>MAR</tetra:Country>
+      <tetra:Country>MCO</tetra:Country>
+      <tetra:Country>MDA</tetra:Country>
+      <tetra:Country>MDG</tetra:Country>
+      <tetra:Country>MDV</tetra:Country>
+      <tetra:Country>MEX</tetra:Country>
+      <tetra:Country>MHL</tetra:Country>
+      <tetra:Country>MKD</tetra:Country>
+      <tetra:Country>MLI</tetra:Country>
+      <tetra:Country>MLT</tetra:Country>
+      <tetra:Country>MMR</tetra:Country>
+      <tetra:Country>MNE</tetra:Country>
+      <tetra:Country>MNG</tetra:Country>
+      <tetra:Country>MOZ</tetra:Country>
+      <tetra:Country>MRT</tetra:Country>
+      <tetra:Country>MUS</tetra:Country>
+      <tetra:Country>MWI</tetra:Country>
+      <tetra:Country>MYS</tetra:Country>
+      <tetra:Country>NER</tetra:Country>
+      <tetra:Country>NGA</tetra:Country>
+      <tetra:Country>NIC</tetra:Country>
+      <tetra:Country>NIU</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NPL</tetra:Country>
+      <tetra:Country>NRU</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>OMN</tetra:Country>
+      <tetra:Country>PAK</tetra:Country>
+      <tetra:Country>PAN</tetra:Country>
+      <tetra:Country>PER</tetra:Country>
+      <tetra:Country>PHL</tetra:Country>
+      <tetra:Country>PLW</tetra:Country>
+      <tetra:Country>PNG</tetra:Country>
+      <tetra:Country>POL</tetra:Country>
+      <tetra:Country>PRK</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>PRY</tetra:Country>
+      <tetra:Country>QAT</tetra:Country>
+      <tetra:Country>ROU</tetra:Country>
+      <tetra:Country>RUS</tetra:Country>
+      <tetra:Country>RWA</tetra:Country>
+      <tetra:Country>SAU</tetra:Country>
+      <tetra:Country>SDN</tetra:Country>
+      <tetra:Country>SEN</tetra:Country>
+      <tetra:Country>SGP</tetra:Country>
+      <tetra:Country>SLB</tetra:Country>
+      <tetra:Country>SLE</tetra:Country>
+      <tetra:Country>SLV</tetra:Country>
+      <tetra:Country>SMR</tetra:Country>
+      <tetra:Country>SRB</tetra:Country>
+      <tetra:Country>STP</tetra:Country>
+      <tetra:Country>SUR</tetra:Country>
+      <tetra:Country>SVK</tetra:Country>
+      <tetra:Country>SVN</tetra:Country>
+      <tetra:Country>SWE</tetra:Country>
+      <tetra:Country>SWZ</tetra:Country>
+      <tetra:Country>SYC</tetra:Country>
+      <tetra:Country>TGO</tetra:Country>
+      <tetra:Country>THA</tetra:Country>
+      <tetra:Country>TJK</tetra:Country>
+      <tetra:Country>TKM</tetra:Country>
+      <tetra:Country>TLS</tetra:Country>
+      <tetra:Country>TON</tetra:Country>
+      <tetra:Country>TTO</tetra:Country>
+      <tetra:Country>TUN</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>TZA</tetra:Country>
+      <tetra:Country>UGA</tetra:Country>
+      <tetra:Country>UKR</tetra:Country>
+      <tetra:Country>URY</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+      <tetra:Country>UZB</tetra:Country>
+      <tetra:Country>VAT</tetra:Country>
+      <tetra:Country>VCT</tetra:Country>
+      <tetra:Country>VEN</tetra:Country>
+      <tetra:Country>VNM</tetra:Country>
+      <tetra:Country>VUT</tetra:Country>
+      <tetra:Country>WSM</tetra:Country>
+      <tetra:Country>YEM</tetra:Country>
+      <tetra:Country>ZAF</tetra:Country>
+      <tetra:Country>ZMB</tetra:Country>
+      <tetra:Country>ZWE</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">CFCK</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">CFCK membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">CFOD</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">CFOD membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">CFUP</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">CFUP membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">CLFC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">CLFC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">CMFC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">CMFC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>ARE</tetra:Country>
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>BHR</tetra:Country>
+      <tetra:Country>BRA</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>EGY</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>IDN</tetra:Country>
+      <tetra:Country>IND</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>JOR</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>KWT</tetra:Country>
+      <tetra:Country>MYS</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>PAK</tetra:Country>
+      <tetra:Country>PHL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>QAT</tetra:Country>
+      <tetra:Country>SAU</tetra:Country>
+      <tetra:Country>SGP</tetra:Country>
+      <tetra:Country>SYC</tetra:Country>
+      <tetra:Country>THA</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">CMFP</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">CMFP membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>BRN</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>CHL</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>IDN</tetra:Country>
+      <tetra:Country>IND</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>MYS</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>PER</tetra:Country>
+      <tetra:Country>PHL</tetra:Country>
+      <tetra:Country>SGP</tetra:Country>
+      <tetra:Country>THA</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">CPMT</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">CPMT membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>IRL</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">CTOC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">CTOC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">CWCS</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">CWCS membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AFG</tetra:Country>
+      <tetra:Country>AGO</tetra:Country>
+      <tetra:Country>ALB</tetra:Country>
+      <tetra:Country>AND</tetra:Country>
+      <tetra:Country>ARE</tetra:Country>
+      <tetra:Country>ARG</tetra:Country>
+      <tetra:Country>ARM</tetra:Country>
+      <tetra:Country>ATG</tetra:Country>
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>AUT</tetra:Country>
+      <tetra:Country>AZE</tetra:Country>
+      <tetra:Country>BDI</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>BEN</tetra:Country>
+      <tetra:Country>BFA</tetra:Country>
+      <tetra:Country>BGD</tetra:Country>
+      <tetra:Country>BGR</tetra:Country>
+      <tetra:Country>BHR</tetra:Country>
+      <tetra:Country>BHS</tetra:Country>
+      <tetra:Country>BIH</tetra:Country>
+      <tetra:Country>BLR</tetra:Country>
+      <tetra:Country>BLZ</tetra:Country>
+      <tetra:Country>BOL</tetra:Country>
+      <tetra:Country>BRA</tetra:Country>
+      <tetra:Country>BRB</tetra:Country>
+      <tetra:Country>BRN</tetra:Country>
+      <tetra:Country>BTN</tetra:Country>
+      <tetra:Country>BWA</tetra:Country>
+      <tetra:Country>CAF</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>CHE</tetra:Country>
+      <tetra:Country>CHL</tetra:Country>
+      <tetra:Country>CHN</tetra:Country>
+      <tetra:Country>CIV</tetra:Country>
+      <tetra:Country>CMR</tetra:Country>
+      <tetra:Country>COD</tetra:Country>
+      <tetra:Country>COG</tetra:Country>
+      <tetra:Country>COK</tetra:Country>
+      <tetra:Country>COL</tetra:Country>
+      <tetra:Country>COM</tetra:Country>
+      <tetra:Country>CPV</tetra:Country>
+      <tetra:Country>CRI</tetra:Country>
+      <tetra:Country>CUB</tetra:Country>
+      <tetra:Country>CYP</tetra:Country>
+      <tetra:Country>CZE</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DJI</tetra:Country>
+      <tetra:Country>DMA</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>DOM</tetra:Country>
+      <tetra:Country>DZA</tetra:Country>
+      <tetra:Country>ECU</tetra:Country>
+      <tetra:Country>ERI</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>EST</tetra:Country>
+      <tetra:Country>ETH</tetra:Country>
+      <tetra:Country>FIN</tetra:Country>
+      <tetra:Country>FJI</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>FSM</tetra:Country>
+      <tetra:Country>GAB</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GEO</tetra:Country>
+      <tetra:Country>GHA</tetra:Country>
+      <tetra:Country>GIN</tetra:Country>
+      <tetra:Country>GMB</tetra:Country>
+      <tetra:Country>GNB</tetra:Country>
+      <tetra:Country>GNQ</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>GRD</tetra:Country>
+      <tetra:Country>GTM</tetra:Country>
+      <tetra:Country>GUY</tetra:Country>
+      <tetra:Country>HND</tetra:Country>
+      <tetra:Country>HRV</tetra:Country>
+      <tetra:Country>HTI</tetra:Country>
+      <tetra:Country>HUN</tetra:Country>
+      <tetra:Country>IDN</tetra:Country>
+      <tetra:Country>IND</tetra:Country>
+      <tetra:Country>IRL</tetra:Country>
+      <tetra:Country>IRN</tetra:Country>
+      <tetra:Country>IRQ</tetra:Country>
+      <tetra:Country>ISL</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>JAM</tetra:Country>
+      <tetra:Country>JOR</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>KAZ</tetra:Country>
+      <tetra:Country>KEN</tetra:Country>
+      <tetra:Country>KGZ</tetra:Country>
+      <tetra:Country>KHM</tetra:Country>
+      <tetra:Country>KIR</tetra:Country>
+      <tetra:Country>KNA</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>KWT</tetra:Country>
+      <tetra:Country>LAO</tetra:Country>
+      <tetra:Country>LBN</tetra:Country>
+      <tetra:Country>LBR</tetra:Country>
+      <tetra:Country>LBY</tetra:Country>
+      <tetra:Country>LCA</tetra:Country>
+      <tetra:Country>LIE</tetra:Country>
+      <tetra:Country>LKA</tetra:Country>
+      <tetra:Country>LSO</tetra:Country>
+      <tetra:Country>LTU</tetra:Country>
+      <tetra:Country>LUX</tetra:Country>
+      <tetra:Country>LVA</tetra:Country>
+      <tetra:Country>MAR</tetra:Country>
+      <tetra:Country>MCO</tetra:Country>
+      <tetra:Country>MDA</tetra:Country>
+      <tetra:Country>MDG</tetra:Country>
+      <tetra:Country>MDV</tetra:Country>
+      <tetra:Country>MEX</tetra:Country>
+      <tetra:Country>MHL</tetra:Country>
+      <tetra:Country>MKD</tetra:Country>
+      <tetra:Country>MLI</tetra:Country>
+      <tetra:Country>MLT</tetra:Country>
+      <tetra:Country>MMR</tetra:Country>
+      <tetra:Country>MNE</tetra:Country>
+      <tetra:Country>MNG</tetra:Country>
+      <tetra:Country>MOZ</tetra:Country>
+      <tetra:Country>MRT</tetra:Country>
+      <tetra:Country>MUS</tetra:Country>
+      <tetra:Country>MWI</tetra:Country>
+      <tetra:Country>MYS</tetra:Country>
+      <tetra:Country>NAM</tetra:Country>
+      <tetra:Country>NER</tetra:Country>
+      <tetra:Country>NGA</tetra:Country>
+      <tetra:Country>NIC</tetra:Country>
+      <tetra:Country>NIU</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NPL</tetra:Country>
+      <tetra:Country>NRU</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>OMN</tetra:Country>
+      <tetra:Country>PAK</tetra:Country>
+      <tetra:Country>PAN</tetra:Country>
+      <tetra:Country>PER</tetra:Country>
+      <tetra:Country>PHL</tetra:Country>
+      <tetra:Country>PLW</tetra:Country>
+      <tetra:Country>PNG</tetra:Country>
+      <tetra:Country>POL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>PRY</tetra:Country>
+      <tetra:Country>QAT</tetra:Country>
+      <tetra:Country>ROU</tetra:Country>
+      <tetra:Country>RUS</tetra:Country>
+      <tetra:Country>RWA</tetra:Country>
+      <tetra:Country>SAU</tetra:Country>
+      <tetra:Country>SDN</tetra:Country>
+      <tetra:Country>SEN</tetra:Country>
+      <tetra:Country>SGP</tetra:Country>
+      <tetra:Country>SLB</tetra:Country>
+      <tetra:Country>SLE</tetra:Country>
+      <tetra:Country>SLV</tetra:Country>
+      <tetra:Country>SMR</tetra:Country>
+      <tetra:Country>SOM</tetra:Country>
+      <tetra:Country>SRB</tetra:Country>
+      <tetra:Country>STP</tetra:Country>
+      <tetra:Country>SUR</tetra:Country>
+      <tetra:Country>SVK</tetra:Country>
+      <tetra:Country>SVN</tetra:Country>
+      <tetra:Country>SWE</tetra:Country>
+      <tetra:Country>SWZ</tetra:Country>
+      <tetra:Country>SYC</tetra:Country>
+      <tetra:Country>SYR</tetra:Country>
+      <tetra:Country>TCD</tetra:Country>
+      <tetra:Country>TGO</tetra:Country>
+      <tetra:Country>THA</tetra:Country>
+      <tetra:Country>TJK</tetra:Country>
+      <tetra:Country>TKM</tetra:Country>
+      <tetra:Country>TLS</tetra:Country>
+      <tetra:Country>TON</tetra:Country>
+      <tetra:Country>TTO</tetra:Country>
+      <tetra:Country>TUN</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>TUV</tetra:Country>
+      <tetra:Country>TZA</tetra:Country>
+      <tetra:Country>UGA</tetra:Country>
+      <tetra:Country>UKR</tetra:Country>
+      <tetra:Country>URY</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+      <tetra:Country>UZB</tetra:Country>
+      <tetra:Country>VAT</tetra:Country>
+      <tetra:Country>VCT</tetra:Country>
+      <tetra:Country>VEN</tetra:Country>
+      <tetra:Country>VNM</tetra:Country>
+      <tetra:Country>VUT</tetra:Country>
+      <tetra:Country>WSM</tetra:Country>
+      <tetra:Country>YEM</tetra:Country>
+      <tetra:Country>ZAF</tetra:Country>
+      <tetra:Country>ZMB</tetra:Country>
+      <tetra:Country>ZWE</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">ECTF</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">ECTF membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">EFOR</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">EFOR membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">EU</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">EU membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">EUDA</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">EUDA membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">FRME</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">FRME membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">FVEY</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">FVEY membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">GCCH</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">GCCH membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">GCTF</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">GCTF membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">GFNX</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">GFNX membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">GMIF</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">GMIF membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>ALB</tetra:Country>
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>BGR</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>CZE</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>EST</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>HRV</tetra:Country>
+      <tetra:Country>HUN</tetra:Country>
+      <tetra:Country>ISL</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>LTU</tetra:Country>
+      <tetra:Country>LUX</tetra:Country>
+      <tetra:Country>LVA</tetra:Country>
+      <tetra:Country>MKD</tetra:Country>
+      <tetra:Country>MNE</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>POL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>ROU</tetra:Country>
+      <tetra:Country>SVK</tetra:Country>
+      <tetra:Country>SVN</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">IESC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">IESC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">IMSC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">IMSC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">IMSP</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">IMSP membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>PHL</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">IPMC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">IPMC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">IRKS</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">IRKS membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">ISAF</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">ISAF membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">ISSG</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">ISSG membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">KFOR</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">KFOR membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">MCFI</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">MCFI membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">MESF</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">MESF membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">MGEU</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">MGEU membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">MIFH</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">MIFH membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">MLEC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">MLEC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">MNTF</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">MNTF membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">MPFL</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">MPFL membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">NACT</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">NACT membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">NATO</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">NATO membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>ALB</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>BGR</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>CZE</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>EST</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>HRV</tetra:Country>
+      <tetra:Country>HUN</tetra:Country>
+      <tetra:Country>ISL</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>LTU</tetra:Country>
+      <tetra:Country>LUX</tetra:Country>
+      <tetra:Country>LVA</tetra:Country>
+      <tetra:Country>MKD</tetra:Country>
+      <tetra:Country>MNE</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>POL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>ROU</tetra:Country>
+      <tetra:Country>SVK</tetra:Country>
+      <tetra:Country>SVN</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">NCFE</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">NCFE membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>BGR</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>CZE</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>HUN</tetra:Country>
+      <tetra:Country>ISL</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>LUX</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>POL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>ROU</tetra:Country>
+      <tetra:Country>SVK</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">NKIC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">NKIC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">NRDC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">NRDC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">NSG</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">NSG membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>ARG</tetra:Country>
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>AUT</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>BGR</tetra:Country>
+      <tetra:Country>BLR</tetra:Country>
+      <tetra:Country>BRA</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>CHE</tetra:Country>
+      <tetra:Country>CHN</tetra:Country>
+      <tetra:Country>CYP</tetra:Country>
+      <tetra:Country>CZE</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>EST</tetra:Country>
+      <tetra:Country>FIN</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>HRV</tetra:Country>
+      <tetra:Country>HUN</tetra:Country>
+      <tetra:Country>IRL</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>KAZ</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>LTU</tetra:Country>
+      <tetra:Country>LUX</tetra:Country>
+      <tetra:Country>LVA</tetra:Country>
+      <tetra:Country>MLT</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>POL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>ROU</tetra:Country>
+      <tetra:Country>RUS</tetra:Country>
+      <tetra:Country>SVK</tetra:Country>
+      <tetra:Country>SVN</tetra:Country>
+      <tetra:Country>SWE</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>UKR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+      <tetra:Country>ZAF</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">OSAG</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">OSAG membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">OSTY</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">OSTY membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>BGR</tetra:Country>
+      <tetra:Country>BIH</tetra:Country>
+      <tetra:Country>BLR</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>CZE</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>EST</tetra:Country>
+      <tetra:Country>FIN</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GEO</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>HRV</tetra:Country>
+      <tetra:Country>HUN</tetra:Country>
+      <tetra:Country>ISL</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>LTU</tetra:Country>
+      <tetra:Country>LUX</tetra:Country>
+      <tetra:Country>LVA</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>POL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>ROU</tetra:Country>
+      <tetra:Country>RUS</tetra:Country>
+      <tetra:Country>SVK</tetra:Country>
+      <tetra:Country>SVN</tetra:Country>
+      <tetra:Country>SWE</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>UKR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">PAWA</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">PAWA membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUT</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>ESP</tetra:Country>
+      <tetra:Country>EST</tetra:Country>
+      <tetra:Country>FIN</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>PRT</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">PGMF</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">PGMF membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">PSMX</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">PSMX membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>DEU</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>JPN</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">RISC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">RISC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">RSMA</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">RSMA membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">SFOR</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">SFOR membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">SOFP</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">SOFP membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">SPAA</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">SPAA membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Description ism:classification="U" ism:ownerProducer="USA"/>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">TEYE</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">TEYE membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">TFTC</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">TFTC membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>ARE</tetra:Country>
+      <tetra:Country>BHR</tetra:Country>
+      <tetra:Country>KWT</tetra:Country>
+      <tetra:Country>OMN</tetra:Country>
+      <tetra:Country>QAT</tetra:Country>
+      <tetra:Country>SAU</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+  <tetra:Tetragraph decomposable="No" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">UNCK</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">UNCK membership.</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>BEL</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>COL</tetra:Country>
+      <tetra:Country>DNK</tetra:Country>
+      <tetra:Country>FRA</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>GRC</tetra:Country>
+      <tetra:Country>ITA</tetra:Country>
+      <tetra:Country>KOR</tetra:Country>
+      <tetra:Country>NLD</tetra:Country>
+      <tetra:Country>NOR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>PHL</tetra:Country>
+      <tetra:Country>THA</tetra:Country>
+      <tetra:Country>TUR</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+      <tetra:Country>ZAF</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+</tetra:Tetragraphs>

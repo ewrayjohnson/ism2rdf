@@ -46,17 +46,19 @@
     "get-stream": "^9.0.1",
     "lodash": "^4.17.21",
     "rdf-quad": "^2.0.0",
-    "xml2js": "^0.6.2"
+    "xml2js": "^0.6.2",
+    "xmllint-wasm": "^5.3.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.16",
     "@types/rdfjs__data-model": "^2.0.9",
     "@types/rdfjs__serializer-jsonld-ext": "^4.0.1",
     "@types/xml2js": "^0.4.14",
-    "typescript": "^5.5.4",
-    "ts-node": "^10.9.1",
     "eslint": "^8.56.0",
-    "prettier": "^3.2.5"
+    "n3": "^1.25.2",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.5.4"
   },
   "engines": {
     "node": ">=18.0.0"

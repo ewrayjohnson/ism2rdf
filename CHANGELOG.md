@@ -10,6 +10,37 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- Preserve empty schema-defined text as empty strings, compacting empty
+  descriptions to literals while keeping empty marker elements as nodes.
+
+- Remove fabricated missing-membership prose from the development XML; retain
+  all records using schema-valid empty descriptions and regenerate all formats.
+
+- Collapse metadata-free text wrappers to direct literals in compact taxonomy
+  output, consistently across all formats; retain nested values with metadata.
+
+- Default taxonomy output to compact mode: omit the exact U/USA pair only when
+  there are no other ISM properties on that object. `compact: false` retains full
+  metadata. Apply the same rule across all output formats and packages.
+
+- Remove invented taxonomy record URLs. XML instance elements now use RDF blank
+  nodes, nested without record IDs in JSON-LD, while preserving their metadata
+  and equivalent triples in every format. Blank-node labels are not update keys.
+
+- Add an optional replaceable Tetragraph XML importer with full validation against
+  the staged Tetragraph.xsd and local imports using Node.js/WebAssembly. RDF mirrors
+  the XML elements, attributes and nesting, retaining supplied metadata and literal
+  membership tokens without CVE references. The XML preserves all 61 original JSON groups and 766
+  memberships, including 36 unspecified groups, with explicitly notional XML-only
+  metadata and last-verified date 2022-11-02. Description and suppression alternatives
+  retain their distinct XML structure. The instance is serialized in all formats,
+  separately and alongside its schema in configured convenience outputs including
+  IC-EDH. Source imports and CVEs are unchanged. This replaces the experimental
+  direct `rdfs:member` assertions and CVE-referencing collection records.
+
+- Remove the Python XML helper, interpreter setting and pip requirements. Runtime
+  validation and all tests remain Node.js-only using `xmllint-wasm` and `xml2js`.
+
 - Use the configurable `ISM2RDF_HTTPS_BASE` (default `https://ns.dni.ic.gov/`) and case-preserving slash-separated namespace paths instead of the previous authority-derived host and underscore flattening. The default is a proposed proof-of-concept namespace, not an assigned endpoint.
 
 - Normalize resource URNs under the configured authority into HTTPS namespaces across JSON-LD, Turtle, N-Triples, TriG, TDF graph names/manifests, and the copied bridge context.

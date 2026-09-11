@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SYNTHETIC DEVELOPMENT EXAMPLE. The last-verified date 2022-11-02 is notional.
+     Dates and metadata are test values,
+     not authoritative verification or security determinations. Replace this
+     entire file with a locally approved Tetragraphs XML instance. -->
+<tetra:Tetragraphs xmlns:tetra="urn:us:gov:ic:taxonomy:catt:tetragraph"
+                  xmlns:arh="urn:us:gov:ic:arh"
+                  xmlns:tax="urn:us:gov:ic:taxonomy:common"
+                  xmlns:ism="urn:us:gov:ic:ism"
+                  tetra:TESVersion="202211">
+  <arh:Security ism:classification="U" ism:ownerProducer="USA"
+                ism:resourceElement="true" ism:createDate="2000-01-01"
+                ism:DESVersion="202111"/>
+  <tax:IRM>
+    <tax:URN>urn:example:ism2rdf:tetragraph-fixture</tax:URN>
+    <tax:Title ism:classification="U" ism:ownerProducer="USA">Synthetic development example</tax:Title>
+    <tax:Created>2000-01-01</tax:Created>
+    <tax:PointOfContact ism:classification="U" ism:ownerProducer="USA">
+      <tax:Name>Example maintainer, not an operational contact</tax:Name>
+    </tax:PointOfContact>
+  </tax:IRM>
+  <tetra:Tetragraph decomposable="Yes" ism:classification="U" ism:ownerProducer="USA">
+    <tetra:TetraToken ism:classification="U" ism:ownerProducer="USA">FVEY</tetra:TetraToken>
+    <tetra:TetraDescription ism:classification="U" ism:ownerProducer="USA">FIVE EYES</tetra:TetraDescription>
+    <tetra:Membership dateLastVerified="2022-11-02" ism:classification="U" ism:ownerProducer="USA">
+      <tetra:Country>AUS</tetra:Country>
+      <tetra:Country>CAN</tetra:Country>
+      <tetra:Country>GBR</tetra:Country>
+      <tetra:Country>NZL</tetra:Country>
+      <tetra:Country>USA</tetra:Country>
+    </tetra:Membership>
+  </tetra:Tetragraph>
+</tetra:Tetragraphs>

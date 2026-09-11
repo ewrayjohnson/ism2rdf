@@ -67,6 +67,157 @@ workspace-root detection does not account for `dist/`.
 
 ## Configuration
 
+### Tetragraph membership XML
+
+The source is a replaceable XML file, selected by `file` in
+`.ciartifacts/config/membership-map.json`. The default is
+`.ciartifacts/tetragraph-memberships.xml`; paths are resolved relative to
+`.ciartifacts/` and may also be absolute local paths. JSON membership maps are
+not accepted as sources.
+
+The supplied XML preserves all 61 groups and 766 member relationships from the
+previous development JSON dataset, including its 36 groups with no supplied
+members. Those groups use a description-only Membership alternative; no member
+relationships, suppression, or empty real-world membership are inferred.
+This is not an authoritative taxonomy release. Required XML-only metadata
+(dates, security markings and the uniform decomposable="No" placeholder) is
+notional, not a source-derived assertion or rollup instruction.
+The last-verified date, `2022-11-02` (November 2, 2022), is **notional** and does
+not assert that membership was actually verified on that date.
+Replace the complete file with an approved XML instance; the importer never fills
+missing metadata or infers status from absent members.
+
+The input must validate against `.ciartifacts/Schema/ISMCAT/Tetragraph.xsd`
+(or the corresponding legacy schema-root path) and its local imports. This checks
+the `Tetragraphs` root, security/IRM headers, required metadata, element order,
+membership choices, country/organization codes and data types. XML namespace
+URIs are used, so prefix spellings can differ. Validation does not run Schematron
+or make authorization decisions. DTDs are rejected and network retrieval is disabled.
+
+Full XSD validation runs inside Node.js using the npm dependency `xmllint-wasm`.
+It loads the staged XSD imports/includes into an in-memory filesystem; it requires
+no system XML validator, native compilation, or separate interpreter. `npm install`
+supplies the validator, and `xml2js` reads the instance after validation succeeds.
+
+The implementation and tests must remain Node.js-only. This project does not use
+and must not introduce Python scripts, Python subprocesses, pip requirements, or
+Python-based test helpers. All validation and tests run through Node.js/npm.
+
+`.ciartifacts/config/membership-map.json` selects `file`, `schemaNamespace`, the
+instance `graph` identifier and `includeIn` convenience namespaces. The default
+includes IC-EDH. The RDF mirrors the XML: each complex element has its schema
+element type, child elements use their schema names as predicates, and supplied
+attributes retain their names and values except for the default compaction below. Unqualified attributes use the owning
+element's namespace. Simple child values are literals; text on an element with
+attributes uses `rdf:value`. Empty elements such as `MembershipSupressed` retain
+a typed node. Namespace declarations become serialization context, not data.
+
+Country and organization tokens remain literals, without CVE lookup, identifiers,
+or replicated membership on CVEs. Description, suppression, `decomposable` and
+`deprecated` retain their distinct source meanings. Suppression is not deprecation.
+Duplicate tetragraph records fail. RDF set semantics collapse identical statements;
+XML sibling order, comments and formatting are not represented.
+The importer makes no authorization or marking-rollup decisions.
+
+**Membership is independent of CVEs.** Encode the supplied taxonomy once per
+package, not once per CVE. Multiple CVEs may use the same taxonomy through a
+consumer's expansion configuration. Do not add CVE references, resolve tokens
+against CVE coverage, or filter source records based on a CVE. Description-only
+records (including NRDC in the development fixture) are preserved as supplied;
+they assert neither empty membership nor suppression. Changing the fixture's
+synthetic metadata is a separate source-data decision, not a converter rule.
+The development fixture uses empty schema-valid `Description` elements for
+unsupplied memberships. It contains no explanatory prose pretending to be source
+membership data. The transformer does not invent replacement descriptions.
+
+Generation writes `standalone/Membership/memberships` in JSON-LD, Turtle,
+N-Triples, TriG, and TDF. Convenience packages whose dependency closure contains
+the taxonomy schema, and those explicitly named in `includeIn`, contain that same
+instance plus its defining schema and dependencies. This packaging does not add
+imports to source XSDs or change standalone schema graphs.
+XML instance elements use anonymous RDF blank nodes. JSON-LD embeds them as
+nested objects without record `@id` values; other serializers may use local
+blank-node labels. Those labels are not durable identities or update keys.
+Tokens such as `ACGU` occur as literal XML values, never as minted record URLs.
+The configured `graph` names only the standalone artifact's graph in TriG/TDF;
+it is not a namespace for instance identifiers. All formats serialize equivalent RDF.
+
+**Compact output is the default.** Set `"compact": false` in
+`.ciartifacts/config/membership-map.json` for full metadata output; omitting the
+setting is equivalent to `true`. After validating XML, the converter omits
+`ism:classification = "U"` and `ism:ownerProducer = "USA"` together only when
+these are the sole ISM properties on that same RDF object. Any additional ISM
+property, different value, or incomplete pair prevents omission. Namespace URIs,
+not prefix spellings, identify ISM properties. Children are evaluated separately.
+After this omission, a text element with only its matching element type and
+`rdf:value` becomes a direct literal on its parent; for example,
+`"tetra:TetraToken": "IPMC"`. Any remaining metadata keeps the nested object.
+Empty marker elements stay nodes. Empty schema-defined text elements become empty-string literals in compact
+mode, for example `"tetra:Description": ""`. Schema types distinguish text from
+markers such as `MembershipSupressed`; empty text does not imply suppression.
+This simplifies the RDF in all formats. `compact: false` retains the original
+attributed text nodes and markings. No other source values are removed. This applies to the
+taxonomy instance in every format and package, not to schema definitions.
+
+This is an intentional exception to retaining every supplied XML property.
+Within the compact-taxonomy import contract, an omitted qualifying pair denotes
+the explicit U/USA defaults; it must not trigger parent-marking inheritance.
+Consumers must know the import's compact/full mode and source schema; absence on
+unmarked structural nodes does not assert defaults, and arbitrary RDF resources
+must not acquire these defaults. Use full mode when explicit source markings are
+required or a consumer cannot apply this scoped contract.
+
+All other supplied XML header metadata, dates, descriptions and flags are retained.
+Attributes declared directly as `xs:date` in the staged schemas use RDF `xsd:date`;
+JSON-LD context coercion permits plain date strings. Other values retain their
+lexical strings, including union-typed date fields such as `tax:Created`; the
+included schema describes their allowed types. No missing dates or flags are
+invented. The TDF timestamp describes generation, not membership verification.
+
+Replace the selected XML and rerun generation to change membership. Remove the optional
+configuration file to generate schema-only outputs; previously generated
+supplementary files are not automatically deleted. Consumers must select the
+current run's manifest rather than assume every leftover output file is active.
+No runtime database import or deployment is performed by this change.
+
+With the optional fixture configured, run its checks after building and generating:
+
+```sh
+node --test test/membership-map.test.mjs test/membership-output.test.mjs
+```
+
+The output check uses the manifests to verify every
+schema artifact in both modes, plus the standalone supplement. It checks every
+supplied XML element and attribute against RDF, compares instance triples in
+JSON-LD, Turtle, N-Triples and TriG, verifies decoded TDF and JSON-LD date coercion, and
+checks inclusion alongside the defining schema and absence of CVE references.
+
+This artifact represents membership data, not a complete runtime publication
+protocol. rdf9 must supply ownership, expected-revision checks and explicit
+snapshot/delta semantics before using it for updates. Omitting a record must not
+be interpreted as deletion or deprecation without that contract. Earlier output
+attached `rdfs:member` to CVEs; existing consumers need an explicit provenance-aware
+migration to remove those old assertions. Regeneration alone does not remove
+previously imported data from a database.
+
+Handoff order: generate and review ism2rdf output, obtain the user's approval,
+then the user copies the approved artifacts to rdf9. Only then implement rdf9's
+consumer changes. rdf9 must reconcile anonymous source records within their
+import scope using source content (for example, the literal token), not blank-node
+labels or invented public identifiers in the interchange output.
+
+The bundled-data regression checks all group/member values against a fingerprint
+of the original JSON, not merely their counts:
+
+```sh
+node --test test/tetragraph-source.test.mjs
+```
+
+If intentionally replacing the bundled dataset, update this fixture-specific
+expectation; XML validation and output checks continue to use the replacement.
+
+### URI configuration
+
 `ISM2RDF_URN_AUTHORITY` is read from the process environment before generation.
 It defaults to `urn:us:gov:ic` and supplies the generator's document-URI authority.
 Set it only when the source URNs use the corresponding authority.

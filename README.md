@@ -7,6 +7,10 @@ ism2rdf transforms IC XML Schema Definition (XSD) and Schematron source files pu
 
 XSD conversion is the primary pipeline. Schematron is processed as a supplementary input that records constraint rules in RDF and lowers a supported subset to SHACL. This is a transformer, not a complete XML validator or an authorization engine.
 
+Implementation and tests are Node.js-only. Do not introduce Python code or Python
+runtime/test dependencies. Membership XSD validation uses an npm-packaged
+WebAssembly validator inside Node.js, without external executables.
+
 **Existing users:** resource identifiers now use normalized HTTPS namespaces. Read [MIGRATION.md](MIGRATION.md) before replacing existing output. Compact property names remain familiar, but their expanded RDF identities change.
 
 ---
@@ -24,6 +28,24 @@ The primary output is **schema-derived**: the transformer emits the supported ty
 - **Schema header metadata** — ISM self-marking attributes on `xs:schema` are mapped to standard predicates on the emitted `owl:Ontology` (see [Schema Root Metadata Mapping](#schema-root-metadata-mapping) below).
 
 The full pattern that ties these pieces together — datatype property → custom datatype → concept scheme — is documented in [CVE Pattern](#cve-pattern).
+
+### Supplementary membership data
+
+Membership data can be staged as a replaceable XML instance validated against
+`Schema/ISMCAT/Tetragraph.xsd`. Its RDF mirrors the XML elements, attributes,
+metadata and nesting; country and organization tokens remain literal values.
+Instance elements are blank nodes, nested in JSON-LD without minted record URLs.
+Compact output defaults to omitting the exact U/USA pair when it is an object's
+only ISM metadata; set `compact: false` to preserve it. This is a scoped taxonomy
+output convention, not a global marking default.
+Compact mode also represents text elements left without metadata as direct
+literals, such as `"tetra:TetraToken": "IPMC"`.
+The instance is exported separately and included alongside its schema in
+configured convenience outputs, including IC-EDH. Multiple CVEs can use the same
+independent taxonomy; membership records are not copied per CVE or filtered by
+CVE coverage. CVEs contain no membership facts. See
+[Tetragraph membership XML](USAGE.md#tetragraph-membership-xml)
+for input, output, and semantic boundaries.
 
 ### From each Schematron document (supplementary)
 

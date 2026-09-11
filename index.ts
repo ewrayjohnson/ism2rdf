@@ -15,6 +15,7 @@ import { Readable } from 'stream';
 import { fileURLToPath } from 'url';
 import xml2js from 'xml2js';
 import { UriMapping } from './uri-mapping.js';
+import { taxonomyRdf } from './membership-map.js';
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
@@ -123,7 +124,7 @@ const DATATYPE_PROPERTY_LABEL_TOKEN_OVERRIDES: Record<string, string> = {
   XML: 'XML',
   XSD: 'XSD',
 };
-type OutputCategory = 'Schema' | 'Schematron';
+type OutputCategory = 'Schema' | 'Schematron' | 'Membership';
 type OutputMode = 'standalone' | 'convenience';
 
 type Import = {
@@ -134,6 +135,8 @@ type Package = {
   g: typeof Graph;
   namespaces: { [key: string]: string };
   imports: { [key: string]: [string, Package] };
+  instanceQuads?: Quad[];
+  datePredicates?: string[];
 }
 type Packages = {
   standalone: Package;
@@ -231,6 +234,35 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
       if (!assembled.has(namespace)) assembled.set(namespace, emptyPackage());
       addPackage(assembled.get(namespace)!, packages.standalone);
     }
+    // Optional supplementary data, deliberately separate from XSD assertions.
+    const membershipConfigPath = path.join(INPUT_DIR, 'config', 'membership-map.json');
+    let supplement: Package | undefined;
+    let supplementSchema = '';
+    let includeIn: string[] = [];
+    if (fs.existsSync(membershipConfigPath)) {
+      const config = JSON.parse(fs.readFileSync(membershipConfigPath, 'utf8'));
+      if (typeof config.file !== 'string' || typeof config.schemaNamespace !== 'string' ||
+          typeof config.graph !== 'string' || !/^https:\/\//.test(config.graph)) {
+        throw new Error('Invalid membership-map configuration');
+      }
+      supplementSchema = config.schemaNamespace;
+      if (!assembled.has(supplementSchema)) throw new Error(`Taxonomy schema not found: ${supplementSchema}`);
+      if (!Array.isArray(config.includeIn) || config.includeIn.some((ns: unknown) => typeof ns !== 'string' || !assembled.has(ns))) {
+        throw new Error('Membership includeIn must reference staged schema namespaces');
+      }
+      includeIn = config.includeIn;
+      if (config.compact !== undefined && typeof config.compact !== 'boolean') {
+        throw new Error('Membership compact must be a boolean');
+      }
+      const xml = fs.readFileSync(path.resolve(INPUT_DIR, config.file), 'utf8');
+      const membership = emptyPackage();
+      const instance = await taxonomyRdf(xml, path.join(schemaRoot, 'ISMCAT', 'Tetragraph.xsd'), uriMapping, { compact: config.compact });
+      Object.assign(membership.namespaces, instance.namespaces, { [RDF_URI]: 'rdf', [XML_SCHEMA_URI + '#']: 'xsd' });
+      membership.instanceQuads = instance.quads;
+      membership.datePredicates = instance.datePredicates;
+      supplement = membership;
+      await writeGraphPackage(membership, '', 'memberships', 'standalone', config.graph, 'Membership');
+    }
     const outputPaths = new Map<string, string>();
     for (const namespace of [...assembled.keys()].sort()) {
       const standalone = assembled.get(namespace)!;
@@ -245,6 +277,13 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
         for (const imported of [...ontologyDependencies.get(dependency)!].sort()) include(imported);
       };
       include(namespace);
+      if (supplement && (visited.has(supplementSchema) || includeIn.includes(namespace))) {
+        include(supplementSchema);
+        Object.assign(convenience.namespaces, supplement.namespaces);
+        convenience.instanceQuads = supplement.instanceQuads;
+        convenience.datePredicates = supplement.datePredicates;
+      }
+      // Enrich the shared graph by dependency, before any format is serialized.
       // Packaging mirrors the source tree; all files for one namespace publish
       // the same assembled ontology and graph at alternate artifact locations.
       for (const file of schemaFiles.filter(file => schemaNamespaces.get(file) === namespace)) {
@@ -2055,8 +2094,19 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
     quads.push(rdf.quad(subject, predicate, object));
   });
 
+  const instanceIds = new Set((p.instanceQuads ?? []).map(q => q.subject.value));
+  if (quads.some(q => [q.subject, q.object].some(term => term.termType === 'BlankNode' && instanceIds.has(term.value)))) {
+    throw new Error('Taxonomy instance blank-node label collides with schema output');
+  }
+  quads.push(...(p.instanceQuads ?? []));
+  const jsonContext: Record<string, any> = { ...context };
+  for (const predicate of p.datePredicates ?? []) {
+    const prefix = Object.entries(context).find(([, ns]) => predicate.startsWith(ns));
+    const key = prefix ? prefix[0] + ':' + predicate.slice(prefix[1].length) : predicate;
+    jsonContext[key] = { '@id': predicate, '@type': XML_SCHEMA_URI + '#date' };
+  }
   const jsonldSerializer = new SerializerJsonld({
-    context,
+    context: jsonContext,
     compact: true,
     encoding: 'string',
     prettyPrint: true
@@ -2076,7 +2126,7 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
   });
 
   const jsonldRaw: string = await getStream(jsonldSerializer.import(input) as AnyStream);
-  const jsonld = normalizeJsonldForIngest(jsonldRaw);
+  const jsonld = normalizeJsonldForIngest(jsonldRaw, instanceIds);
   fs.writeFileSync(path.join(jsonldOutputDir, `${basename}.jsonld`), jsonld);
 
   // Use fast synchronous Turtle serializer to avoid hangs on large merged graphs.
@@ -2099,7 +2149,7 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
  * Normalizes JSON-LD node ordering for compatibility with ingest pipelines that
  * resolve predicates in a single pass.
  */
-function normalizeJsonldForIngest(jsonldText: string): string {
+function normalizeJsonldForIngest(jsonldText: string, instanceIds = new Set<string>()): string {
   try {
     const parsed = JSON.parse(jsonldText);
     if (!parsed || !Array.isArray(parsed['@graph'])) {
@@ -2107,8 +2157,28 @@ function normalizeJsonldForIngest(jsonldText: string): string {
     }
 
     const graph = parsed['@graph'] as Array<Record<string, unknown>>;
+    // The taxonomy is an XML tree: embed its anonymous nodes in JSON-LD while
+    // leaving schema nodes and their references untouched.
+    const instances = new Map(graph.filter(node => typeof node['@id'] === 'string' &&
+      instanceIds.has(node['@id'].slice(2))).map(node => [node['@id'] as string, node]));
+    const referenced = new Set<string>();
+    for (const node of instances.values()) {
+      for (const value of Object.values(node)) {
+        for (const item of Array.isArray(value) ? value : [value]) {
+          if (item && typeof item === 'object' && instances.has(item['@id'])) referenced.add(item['@id']);
+        }
+      }
+    }
+    const embed = (node: Record<string, unknown>): Record<string, unknown> => Object.fromEntries(
+      Object.entries(node).filter(([key]) => key !== '@id').map(([key, value]) => {
+        const nested = (item: any): any => item && typeof item === 'object' && instances.has(item['@id'])
+          ? embed(instances.get(item['@id'])!) : item;
+        return [key, Array.isArray(value) ? value.map(nested) : nested(value)];
+      }));
+    parsed['@graph'] = graph.filter(node => !instances.has(node['@id'] as string)).concat(
+      [...instances].filter(([id]) => !referenced.has(id)).map(([, node]) => embed(node)));
     const propertyTypes = new Set(['owl:DatatypeProperty', 'owl:ObjectProperty', 'rdf:Property']);
-    graph.sort((a, b) => {
+    parsed['@graph'].sort((a: Record<string, unknown>, b: Record<string, unknown>) => {
       const rankA = nodeSortRank(a, propertyTypes);
       const rankB = nodeSortRank(b, propertyTypes);
       if (rankA !== rankB) {

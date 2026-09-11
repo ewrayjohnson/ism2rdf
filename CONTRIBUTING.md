@@ -50,6 +50,9 @@ Thank you for your interest in contributing to the **IC XSD to RDF Transformer**
 
 ## Coding Guidelines
 
+- Keep implementation, validation, and tests Node.js-only. Do not add Python
+  scripts, Python subprocesses, pip requirements, or Python test helpers. Use
+  Node.js/npm equivalents; WebAssembly dependencies must run inside Node.js.
 - Follow the existing code style
 - Use ES6+ features, with top-level `async/await` for all asynchronous logic
 - Keep commits focused and descriptive

@@ -110,3 +110,49 @@ changing `ISM2RDF_HTTPS_BASE` changes canonical RDF identities.
 
 Older download, ZIP, `.env`, and source-selection flag instructions are inactive.
 See [USAGE](USAGE.md) for the supported local staging and launch commands.
+# Membership supplement separation
+
+Taxonomy output now defaults to `compact: true` in the membership configuration.
+Only an object's isolated `ism:classification = "U"` / `ism:ownerProducer = "USA"`
+pair is omitted. Set `compact: false` to retain full metadata. Consumers must
+handle this as an explicit compact-taxonomy convention rather than interpreting
+omission as inheritance or globally defaulting unmarked resources. See USAGE for
+the exact rule and import scope.
+In compact mode, text elements left with only their matching type and `rdf:value`
+become direct literals on the parent predicate. Consumers must accept the direct
+value or a nested value with retained metadata. Full mode preserves attributed
+text nodes. Empty marker elements remain nodes in either mode.
+
+The taxonomy instance now mirrors the validated XML, including supplied metadata,
+instead of attaching `rdfs:member` to CVEs or generating `skos:Collection` records
+that resolve tokens to CVEs. Country and organization tokens remain literal values.
+Configuration replaces `namespace` with `schemaNamespace` and `includeIn`.
+The instance is exported separately and included with its defining schema and
+dependencies in selected convenience packages, including IC-EDH. Source XSD imports
+and CVE identifiers remain unchanged. See [the output contract](USAGE.md#tetragraph-membership-xml).
+
+The experimental `/tetragraph/<token>` and nested instance URLs are also removed.
+XML instance elements are anonymous blank nodes, embedded in JSON-LD. Blank-node
+labels have document scope and must not become persistent update keys. Consumers
+must explicitly reconcile the source import rather than append new blank nodes
+on each refresh; do not modify the source interchange model to impose database IDs.
+Review and approve regenerated output before copying it into rdf9 or implementing
+that consumer's changes.
+
+The approved IC-EDH output was copied to rdf9 on 2026-09-10. rdf9's consumer
+binds the anonymous taxonomy root to an internal governed resource through
+configuration, retains the embedded source records, and derives a shared SQL
+compiled ABAC attribute expansion cache from explicit literal memberships.
+The cache is a dedicated PostgreSQL `enforcement_cache` table, not an RDF resource;
+source records and configuration remain governed resources. Publication is
+transactional and shared across API servers, without CAS or per-server membership
+copies. Normal server startup does not reseed defaults. Consumer operations and
+limitations are documented in rdf9's `docs/ABAC_ATTRIBUTE_EXPANSION.md`. This does not add identifiers,
+CVE links, or authorization policy to ism2rdf output. Source metadata remains
+source-defined. Subsequent imports update the same consumer-owned source resource;
+runtime database publication and validation belong to rdf9, not this transformer.
+
+Consumers of the earlier experimental output must explicitly migrate assertions
+owned by that import. An ontology upsert that omits the old membership predicates
+is not sufficient to remove them, and must not delete independently owned user
+assertions. No database migration is performed by the transformer.

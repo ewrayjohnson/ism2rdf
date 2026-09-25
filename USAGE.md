@@ -35,14 +35,14 @@ staged files without downloading source packages.
 
 ## Run
 
-The existing npm script invokes `ts-node index.ts`:
+The npm start command builds JavaScript into `dist/`, then runs the transformer
+to write RDF artifacts into `out/`:
 
 ```sh
 npm start
 ```
 
-On Node.js 24, that entry point can fail with an unknown `.ts` extension. The
-following source-entry command was used to validate the current implementation.
+To run the TypeScript source directly, use the ESM loader commands below.
 Build first because `TS_NODE_TRANSPILE_ONLY` skips runtime type checking.
 
 PowerShell:
@@ -61,9 +61,16 @@ npm run build
 TS_NODE_TRANSPILE_ONLY=true node --loader ts-node/esm index.ts
 ```
 
-Use the source entry point from the repository root. Directly running
-`node dist/index.js` is not an equivalent launch command in the current code:
-workspace-root detection does not account for `dist/`.
+Alternatively, build and run the compiled entry point:
+
+```sh
+npm run build
+node dist/index.js
+```
+
+The VS Code launch configuration also builds and runs `dist/index.js`.
+JavaScript left in `out/` by older builds is stale; `out/` now holds generated
+RDF artifacts, while `dist/` holds compiler output.
 
 ## Configuration
 
@@ -282,10 +289,11 @@ Archive old output before publishing a regenerated set, or deploy only artifacts
 listed in the new manifests plus the copied bridge. Generation does not delete
 obsolete per-file outputs from earlier runs.
 
-Run the regression checks after building and generating:
+Build, regenerate artifacts, and run all regression checks:
 
 ```sh
-node --test test/uri-mapping.test.mjs test/uri-output.test.mjs
+npm test
+npm run lint
 ```
 
 The mapping tests use arbitrary namespaces. The output tests use the staged IC
@@ -304,4 +312,3 @@ Different source sets may require different integration-test fixtures.
 | URN outside configured authority | Check the source URN and `ISM2RDF_URN_AUTHORITY`; unrelated URN authorities are not silently remapped. |
 | Old files remain in `out/` | Generation overwrites current artifacts but does not clean obsolete files. Archive or remove old output before a clean generation. |
 | Missing enumeration documentation warning | The concept is still emitted, but may lack a preferred label. |
-| `npm run lint` cannot find configuration | The current checkout has an ESLint script/dependency but no configuration. Lint has not passed; build and regression tests are separate checks. |

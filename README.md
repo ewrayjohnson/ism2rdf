@@ -294,9 +294,9 @@ npm install
 npm run build
 ```
 
-Run from the repository root using [USAGE.md](USAGE.md#run). The existing
-`npm start` script uses `ts-node`; the usage guide includes the verified ESM
-loader command for Node.js 24 and the current lint limitation.
+Run `npm start` from the repository root to build JavaScript into `dist/` and
+generate RDF artifacts in `out/`. See [USAGE.md](USAGE.md#run) for direct launch
+commands and validation instructions.
 
 Current runtime behavior:
 - Uses staged folders only (`.ciartifacts/Schema` + `.ciartifacts/Schematron`, or legacy `.ciartifacts/schemas` for schema root)

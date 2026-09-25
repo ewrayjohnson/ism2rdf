@@ -1,25 +1,24 @@
-﻿import { execFileSync } from 'child_process';
+#!/usr/bin/env node
+
+import { execFileSync } from 'child_process';
 import { createHash } from 'crypto';
 import { Graph, namespaces } from '@entryscape/rdfjson';
 import rdf from '@rdfjs/data-model';
-import SerializerJsonld from '@rdfjs/serializer-jsonld-ext';
 import type { Literal, NamedNode, Quad } from '@rdfjs/types';
 import fs from 'fs';
-import getStream from 'get-stream';
-import type { AnyStream } from 'get-stream';
 import http from 'http';
 import https from 'https';
 import _ from 'lodash';
 import path from 'path';
-import { Readable } from 'stream';
 import { fileURLToPath } from 'url';
 import xml2js from 'xml2js';
 import { UriMapping } from './uri-mapping.js';
 import { taxonomyRdf } from './membership-map.js';
+import { serializeJsonld } from './jsonld-output.js';
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
-const WORKSPACE_ROOT = path.basename(__dirname).toLowerCase() === 'out'
+const WORKSPACE_ROOT = ['out', 'dist'].includes(path.basename(__dirname).toLowerCase())
   ? path.join(__dirname, '..')
   : __dirname;
 
@@ -554,8 +553,6 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
                       }
                     }
                   }
-                } else {
-                  debugger;
                 }
               }
             }
@@ -702,7 +699,7 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
             const simpleTypes = schema[`${xsdPrefix}:simpleType`];
             if (simpleTypes) {
               for (const aSimpleType of simpleTypes) {
-                function handleRestrictions(inSimpleType: any) {
+                const handleRestrictions = (inSimpleType: any) => {
                   const restrictions = inSimpleType[`${xsdPrefix}:restriction`];
                   if (restrictions) {
                     const aRestriction = restrictions[0];
@@ -722,7 +719,7 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
                         concepts.push({ notation, prefLabel, conceptId });
                       }
                       enumSource = inSimpleType;
-                    } else if (aRestriction[`${xsdPrefix}:simpleType`] ?? [0].hasOwnProperty(`${xsdPrefix}:list`)) {
+                    } else if (aRestriction[`${xsdPrefix}:simpleType`]?.[0]?.[`${xsdPrefix}:list`]) {
                       listSource = inSimpleType;
                     } else {
                       const patternSpec = aRestriction[`${xsdPrefix}:pattern`];
@@ -743,7 +740,7 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
                       }
                     }
                   }
-                }
+                };
                 handleRestrictions(aSimpleType);
                 const union = aSimpleType[`${xsdPrefix}:union`];
                 if (union) {
@@ -1652,7 +1649,7 @@ function emitShaclFromSchematron(pkg: Package) {
           continue;
         }
 
-        const equals = test.match(/^@([A-Za-z_][\w.\-:]*)\s*=\s*['\"]([^'\"]+)['\"]$/);
+        const equals = test.match(/^@([A-Za-z_][\w.\-:]*)\s*=\s*['"]([^'"]+)['"]$/);
         if (equals) {
           const attr = equals[1];
           const value = equals[2];
@@ -1671,7 +1668,7 @@ function emitShaclFromSchematron(pkg: Package) {
           continue;
         }
 
-        const matches = test.match(/matches\s*\(\s*@([A-Za-z_][\w.\-:]*)\s*,\s*['\"]([^'\"]+)['\"]/i);
+        const matches = test.match(/matches\s*\(\s*@([A-Za-z_][\w.\-:]*)\s*,\s*['"]([^'"]+)['"]/i);
         if (matches) {
           const attr = matches[1];
           const regex = matches[2];
@@ -1725,7 +1722,7 @@ function emitRuleAlignmentLinks(pkg: Package) {
       for (const match of expression.matchAll(/@([A-Za-z_][\w.\-:]*)/g)) {
         attrs.add(match[1]);
       }
-      for (const match of expression.matchAll(/\b([A-Za-z_][\w\-]*)\:([A-Za-z_][\w\-.]*)\b/g)) {
+      for (const match of expression.matchAll(/\b([A-Za-z_][\w-]*):([A-Za-z_][\w.-]*)\b/g)) {
         qnames.add(`${match[1]}:${match[2]}`);
       }
     }
@@ -1828,7 +1825,7 @@ function extractSingleAttributeRef(expression: string | undefined): string | und
 function schemaCandidatePropertyUri(nameOrQName: string): string | undefined {
   const local = nameOrQName.includes(':') ? nameOrQName.substring(nameOrQName.indexOf(':') + 1) : nameOrQName;
   const normalized = local.trim();
-  if (!normalized || !/^[A-Za-z_][\w.\-]*$/.test(normalized)) {
+  if (!normalized || !/^[A-Za-z_][\w.-]*$/.test(normalized)) {
     return undefined;
   }
   return `${URI_PREFIX}:ISM:${normalized}`;
@@ -2105,28 +2102,7 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
     const key = prefix ? prefix[0] + ':' + predicate.slice(prefix[1].length) : predicate;
     jsonContext[key] = { '@id': predicate, '@type': XML_SCHEMA_URI + '#date' };
   }
-  const jsonldSerializer = new SerializerJsonld({
-    context: jsonContext,
-    compact: true,
-    encoding: 'string',
-    prettyPrint: true
-  });
-
-  // Guard against read() being called multiple times by the stream machinery
-  let pushed = false;
-  const input = new Readable({
-    objectMode: true,
-    read: () => {
-      if (!pushed) {
-        pushed = true;
-        quads.forEach(quad => { input.push(quad); });
-        input.push(null);
-      }
-    }
-  });
-
-  const jsonldRaw: string = await getStream(jsonldSerializer.import(input) as AnyStream);
-  const jsonld = normalizeJsonldForIngest(jsonldRaw, instanceIds);
+  const jsonld = await serializeJsonld(quads, jsonContext, instanceIds);
   fs.writeFileSync(path.join(jsonldOutputDir, `${basename}.jsonld`), jsonld);
 
   // Use fast synchronous Turtle serializer to avoid hangs on large merged graphs.
@@ -2143,69 +2119,6 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
     writeTrigAndTdfArtifacts(quads, context, graphName, trigOutputDir, basename, relative, category, mode);
   }
 
-}
-
-/**
- * Normalizes JSON-LD node ordering for compatibility with ingest pipelines that
- * resolve predicates in a single pass.
- */
-function normalizeJsonldForIngest(jsonldText: string, instanceIds = new Set<string>()): string {
-  try {
-    const parsed = JSON.parse(jsonldText);
-    if (!parsed || !Array.isArray(parsed['@graph'])) {
-      return jsonldText;
-    }
-
-    const graph = parsed['@graph'] as Array<Record<string, unknown>>;
-    // The taxonomy is an XML tree: embed its anonymous nodes in JSON-LD while
-    // leaving schema nodes and their references untouched.
-    const instances = new Map(graph.filter(node => typeof node['@id'] === 'string' &&
-      instanceIds.has(node['@id'].slice(2))).map(node => [node['@id'] as string, node]));
-    const referenced = new Set<string>();
-    for (const node of instances.values()) {
-      for (const value of Object.values(node)) {
-        for (const item of Array.isArray(value) ? value : [value]) {
-          if (item && typeof item === 'object' && instances.has(item['@id'])) referenced.add(item['@id']);
-        }
-      }
-    }
-    const embed = (node: Record<string, unknown>): Record<string, unknown> => Object.fromEntries(
-      Object.entries(node).filter(([key]) => key !== '@id').map(([key, value]) => {
-        const nested = (item: any): any => item && typeof item === 'object' && instances.has(item['@id'])
-          ? embed(instances.get(item['@id'])!) : item;
-        return [key, Array.isArray(value) ? value.map(nested) : nested(value)];
-      }));
-    parsed['@graph'] = graph.filter(node => !instances.has(node['@id'] as string)).concat(
-      [...instances].filter(([id]) => !referenced.has(id)).map(([, node]) => embed(node)));
-    const propertyTypes = new Set(['owl:DatatypeProperty', 'owl:ObjectProperty', 'rdf:Property']);
-    parsed['@graph'].sort((a: Record<string, unknown>, b: Record<string, unknown>) => {
-      const rankA = nodeSortRank(a, propertyTypes);
-      const rankB = nodeSortRank(b, propertyTypes);
-      if (rankA !== rankB) {
-        return rankA - rankB;
-      }
-      const idA = typeof a['@id'] === 'string' ? a['@id'] : '';
-      const idB = typeof b['@id'] === 'string' ? b['@id'] : '';
-      return idA.localeCompare(idB);
-    });
-
-    return `${JSON.stringify(parsed, null, 2)}\n`;
-  } catch {
-    return jsonldText;
-  }
-}
-
-function nodeSortRank(node: Record<string, unknown>, propertyTypes: Set<string>): number {
-  const types = node['@type'];
-  const typeList = Array.isArray(types) ? types : (typeof types === 'string' ? [types] : []);
-  if (typeList.some((t) => typeof t === 'string' && propertyTypes.has(t))) {
-    return 0;
-  }
-  const id = node['@id'];
-  if (typeof id === 'string' && id.startsWith('_:')) {
-    return 2;
-  }
-  return 1;
 }
 
 function writeTrigAndTdfArtifacts(

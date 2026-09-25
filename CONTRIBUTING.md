@@ -63,9 +63,9 @@ Thank you for your interest in contributing to the **IC XSD to RDF Transformer**
 ## Testing Guidelines
 
 - Follow [USAGE.md](USAGE.md) to stage sources, build, and run the transformer.
-- Run `node --test test/uri-mapping.test.mjs test/uri-output.test.mjs` after generation.
+- Run `npm test` to build, regenerate artifacts, and run all regression tests.
 - Validate JSON-LD, Turtle, N-Triples, TriG and TDF, including graph identifiers, payload hashes and URI consistency.
-- Run `npm run lint`; the current checkout lacks an ESLint configuration, so report that limitation rather than claiming lint passes.
+- Run `npm run lint` to check the TypeScript sources with ESLint.
 - Review source overlays before committing because staged payloads include tracked files. Keep generated `out/` and `dist/` artifacts out of commits.
 
 ---

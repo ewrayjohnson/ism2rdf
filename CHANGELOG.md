@@ -18,6 +18,12 @@ This project adheres to [Semantic Versioning](https://semver.org/).
   configured vocabularies, and report missing or ambiguous names. Preserve
   concept-text language tags across all serializers. See the concept text
   compatibility notes in [MIGRATION.md](MIGRATION.md).
+- Keep compiled JavaScript in `dist/` and generated RDF in `out/`; align npm and
+  debugger entry points, remove the obsolete `bin/` wrapper, and build before start.
+- Serialize RDF/JS blank nodes directly through JSON-LD to avoid duplicate `_:`
+  prefixes and restore anonymous nested taxonomy output without changing RDF identities.
+- Add reproducible build/generation/regression checks via `npm test`, configure
+  TypeScript linting, and declare directly imported dependencies explicitly.
 
 - Preserve empty schema-defined text as empty strings, compacting empty
   descriptions to literals while keeping empty marker elements as nodes.

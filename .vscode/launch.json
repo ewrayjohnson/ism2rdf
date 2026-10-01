@@ -11,12 +11,12 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/index.ts",
+            "program": "${workspaceFolder}/dist/index.js",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
-                "${workspaceFolder}/out/**/*.js"
-            ]
-            ,"console": "integratedTerminal"
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "console": "integratedTerminal"
         }
     ]
 }

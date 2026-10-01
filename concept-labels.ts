@@ -96,7 +96,7 @@ export function classifyDocumentation(value: string): { kind: 'label' | 'definit
   if (value.length > 120 || value.split(/\s+/).length > 15) {
     return { kind: 'ambiguous', reason: 'length-review' };
   }
-  if (value.split(/\s+/).length <= 8 && /^[\p{L}\p{N}\s,'’()&/\-]+[.!]?$/u.test(value)) {
+  if (value.split(/\s+/).length <= 8 && /^[\p{L}\p{N}\s,'’()&/-]+[.!]?$/u.test(value)) {
     return { kind: 'label', reason: 'short-name-like-documentation' };
   }
   return { kind: 'ambiguous', reason: 'unclassified-documentation' };

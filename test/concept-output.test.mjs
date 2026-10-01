@@ -70,7 +70,7 @@ test('multilingual source names and definitions survive the complete generator a
   const output = path.resolve(root, 'out');
   const fixture = await mkdtemp(path.join(output, 'concept-language-test-'));
   try {
-    for (const name of ['index.js', 'uri-mapping.js', 'membership-map.js', 'concept-labels.js']) {
+    for (const name of ['index.js', 'uri-mapping.js', 'membership-map.js', 'concept-labels.js', 'jsonld-output.js']) {
       await copyFile(path.join(root, 'dist', name), path.join(fixture, name));
     }
     await writeFile(path.join(fixture, 'package.json'), '{"type":"module"}');

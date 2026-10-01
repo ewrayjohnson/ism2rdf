@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "Transforms Intelligence Community XSD schemas into RDF/OWL/SHACL representations with JSON-LD, Turtle, and N-Triples output.",
   "type": "module",
-  "main": "index.ts",
+  "main": "./dist/index.js",
   "bin": {
-    "ism2rdf": "./bin/ism2rdf.ts"
+    "ism2rdf": "./dist/index.js"
   },
   "scripts": {
-    "start": "ts-node index.ts",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
     "build": "tsc",
+    "test": "npm run build && node dist/index.js && node --test",
+    "prepack": "npm run build",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write ."
   },
@@ -42,8 +45,8 @@
   "dependencies": {
     "@entryscape/rdfjson": "^2.7.7",
     "@jeswr/pretty-turtle": "^1.6.2",
-    "@rdfjs/serializer-jsonld-ext": "^4.0.1",
-    "get-stream": "^9.0.1",
+    "@rdfjs/data-model": "^2.1.0",
+    "jsonld": "^9.0.0",
     "lodash": "^4.17.21",
     "rdf-quad": "^2.0.0",
     "xml2js": "^0.6.2",
@@ -52,7 +55,10 @@
   "devDependencies": {
     "@types/lodash": "^4.17.16",
     "@types/rdfjs__data-model": "^2.0.9",
-    "@types/rdfjs__serializer-jsonld-ext": "^4.0.1",
+    "@types/jsonld": "^1.5.15",
+    "@types/node": "^18.19.0",
+    "@rdfjs/types": "^2.0.1",
+    "@typescript-eslint/parser": "~8.46.0",
     "@types/xml2js": "^0.4.14",
     "eslint": "^8.56.0",
     "n3": "^1.25.2",

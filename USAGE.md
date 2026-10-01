@@ -216,6 +216,47 @@ node --test test/tetragraph-source.test.mjs
 If intentionally replacing the bundled dataset, update this fixture-specific
 expectation; XML validation and output checks continue to use the replacement.
 
+### Concept labels
+
+The optional `.ciartifacts/config/concept-labels.json` supplies reviewed naming
+decisions. Its `propertyLabelVocabularies` array contains `{ "namespace": "…",
+"language": "en" }` entries. Only these vocabularies reuse the existing
+`DATATYPE_PROPERTY_LABEL_OVERRIDES` by exact notation; generated camel-case labels
+are not used as concept names. The bundled entry covers the ISM attribute-name
+vocabulary, so `cuiControlledByOffice` receives “CUI Controlled By Office”.
+
+`reviewed` entries have this shape:
+
+```json
+{
+  "namespace": "urn:example:catalog",
+  "notation": "ABC",
+  "labels": [{ "value": "Approved Name", "language": "en" }],
+  "source": "Reference to the authoritative source or approval"
+}
+```
+
+An empty language string denotes untagged text. Match namespace and notation
+exactly; a name from one vocabulary never applies merely because another uses
+the same notation. An absent configuration enables source/documentation handling
+without curated overrides. No source download or CVE XML ingestion is introduced.
+See [the resolution rules](README.md#concept-names-and-definitions).
+
+After generation, review `out/concept-label-report.json`. OPSEC's paragraph, for
+example, becomes a complete `skos:definition` with no inferred preferred name.
+The console reports the number of facets with missing names. Run the additional
+regressions after building and regenerating all outputs:
+
+```sh
+node --test test/concept-labels.test.mjs test/concept-output.test.mjs
+```
+
+The output regression includes a fingerprint of all non-text RDF statements from
+the staged schema set before this change, covering identities, membership,
+notation and enumeration lists in both modes, including IC-EDH. Intentional source
+changes require reviewing and updating that baseline. Multilingual fixtures run
+the complete generator in an isolated directory within `out/`.
+
 ### URI configuration
 
 `ISM2RDF_URN_AUTHORITY` is read from the process environment before generation.
@@ -303,5 +344,5 @@ Different source sets may require different integration-test fixtures.
 | Namespace or URI collision | Read the two conflicting identifiers in the error. Correct the source/configuration; the generator does not append numeric suffixes. |
 | URN outside configured authority | Check the source URN and `ISM2RDF_URN_AUTHORITY`; unrelated URN authorities are not silently remapped. |
 | Old files remain in `out/` | Generation overwrites current artifacts but does not clean obsolete files. Archive or remove old output before a clean generation. |
-| Missing enumeration documentation warning | The concept is still emitted, but may lack a preferred label. |
+| Missing concept names | Inspect `out/concept-label-report.json`; concepts remain emitted and consumers can fall back to notation. |
 | `npm run lint` cannot find configuration | The current checkout has an ESLint script/dependency but no configuration. Lint has not passed; build and regression tests are separate checks. |

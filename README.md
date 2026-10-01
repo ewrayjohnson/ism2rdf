@@ -23,7 +23,7 @@ The primary output is **schema-derived**: the transformer emits the supported ty
 
 - **OWL declarations** — ontology documents, named element/type/group classes, and global attributes with builtin or generated datatype ranges. Local attribute uses receive cardinality restrictions; not every local declaration or anonymous type is emitted as a standalone resource.
 - **Custom datatypes** — `rdfs:Datatype` declarations with `owl:oneOf` enumerations linked back to the corresponding `skos:ConceptScheme` via `dc:source` and `rdfs:seeAlso`.
-- **SKOS concept schemes** — XSD enumerations become `skos:ConceptScheme` resources whose `skos:Concept` members carry `skos:notation` and (when XSD documentation is present) `skos:prefLabel`.
+- **SKOS concept schemes** — XSD enumerations become `skos:ConceptScheme` resources whose `skos:Concept` members carry `skos:notation`, optional concise `skos:prefLabel` values, and explanatory `skos:definition` values. See [concept names and definitions](#concept-names-and-definitions).
 - **SHACL pattern constraints** — regex facets on simple types become `sh:pattern` properties on the matching shape, derived directly from the XSD without hand authoring.
 - **Schema header metadata** — ISM self-marking attributes on `xs:schema` are mapped to standard predicates on the emitted `owl:Ontology` (see [Schema Root Metadata Mapping](#schema-root-metadata-mapping) below).
 
@@ -226,7 +226,39 @@ The CVE pattern facts in detail:
 1. An `owl:DatatypeProperty` has `rdfs:range` pointing to a **custom datatype**.
 2. The custom datatype is an `rdfs:Datatype` with `owl:equivalentClass → owl:oneOf` listing allowed literals, plus `dc:source` / `rdfs:seeAlso` linking to a `skos:ConceptScheme`.
 3. The `skos:ConceptScheme` references all concepts via `skos:hasTopConcept`.
-4. Each `skos:Concept` has `skos:inScheme`, a `skos:notation` matching one `owl:oneOf` literal, and a `skos:prefLabel` from XSD documentation annotations.
+4. Each `skos:Concept` has `skos:inScheme` and a `skos:notation` matching one `owl:oneOf` literal. Names and definitions follow the rules below.
+
+### Concept names and definitions
+
+Every enumeration and emitted pattern concept uses the same resolver. It prefers
+explicit `skos:prefLabel` elements in XSD `appinfo`, then reviewed names with source
+provenance, then existing property-label overrides in explicitly configured
+attribute vocabularies. Names are resolved separately for each language. The
+configuration format is documented in [USAGE](USAGE.md#concept-labels).
+
+Without an explicit name, documentation is classified conservatively. Multiple
+sentences, explanatory constructions, modal verbs and reference language indicate
+definitions. Text over 120 characters or 15 words requires review; otherwise a
+simple phrase of at most eight words is a label candidate. Other text is ambiguous.
+These are review heuristics, not a linguistic guarantee or a source of authoritative
+names. A trailing period alone does not disqualify a label. Supplied label wording
+is retained, and prose is never truncated or converted into an acronym expansion.
+
+Documentation not selected as a label is preserved in `skos:definition`, including
+when a curated name is available. Mixed text order and paragraph boundaries are
+preserved as whitespace-normalized text. Explicit and inherited `xml:lang` values,
+including empty-language resets, survive in every format.
+English concept text uses property-specific JSON-LD language defaults to avoid
+repeated value wrappers; notation and other literals receive no language default.
+Conflicting names of equal priority in one language produce a reported gap rather than an arbitrary
+preferred label. Consumers should fall back to notation when a label is absent.
+
+`out/concept-label-report.json` records source path, namespace, type, facet,
+notation, text, selected labels, reasons and missing languages for each processed
+facet. Facets that the existing schema mapper does not emit can also appear in
+this report. Review ambiguous cases and add sourced names through configuration.
+This changes text annotations only, not concept identities, scheme membership,
+XSD enumeration values or ontology dependencies.
 
 ---
 

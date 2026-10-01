@@ -10,6 +10,15 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- Compact English concept labels and definitions as JSON-LD strings using
+  property-specific language defaults, preserving RDF language tags and untagged notation.
+
+- Resolve concept names consistently across enumeration and pattern facets;
+  preserve prose as `skos:definition`, reuse curated property names only in
+  configured vocabularies, and report missing or ambiguous names. Preserve
+  concept-text language tags across all serializers. See the concept text
+  compatibility notes in [MIGRATION.md](MIGRATION.md).
+
 - Preserve empty schema-defined text as empty strings, compacting empty
   descriptions to literals while keeping empty marker elements as nodes.
 

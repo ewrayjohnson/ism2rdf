@@ -5,6 +5,23 @@ namespace. This replaces document identities derived from relative filenames
 and assembly folders. See [README](README.md#ontology-assembly-and-dependencies)
 for the assembly contract and [USAGE](USAGE.md) for execution and configuration.
 
+## Concept text correction
+
+Enumeration documentation no longer automatically becomes `skos:prefLabel`.
+Concise names are retained or supplied by sourced naming decisions; prose and
+ambiguous text become `skos:definition`. Some concepts, including OPSEC in the
+staged CUI Basic vocabulary, therefore have no preferred label. Consumers should
+fall back to `skos:notation`. See [the resolution rules](README.md#concept-names-and-definitions).
+
+Concept text now retains explicit and inherited language tags. JSON-LD uses
+property-specific English defaults for `skos:prefLabel` and `skos:definition`,
+so English text is represented as plain strings. Other languages and explicitly
+untagged text retain value objects when needed; consumers must honor the context.
+Notation and `owl:oneOf` literals remain untagged and unchanged. Concept identities,
+scheme membership and import closures are unchanged. Replace previously imported
+text assertions within their source-owned scope; regeneration does not delete
+old paragraph labels from a downstream store.
+
 ## Identity changes
 
 The configurable HTTPS base defaults to `https://ns.dni.ic.gov/`, a proposed

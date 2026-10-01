@@ -16,6 +16,7 @@ import { fileURLToPath } from 'url';
 import xml2js from 'xml2js';
 import { UriMapping } from './uri-mapping.js';
 import { taxonomyRdf } from './membership-map.js';
+import { facetKey, readConceptAnnotations, resolveConceptLabels, validateLabelConfig } from './concept-labels.js';
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
@@ -195,6 +196,11 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
   const schematronRoot = sourceResult.schematronRoot;
   const outputDir = resolveOutputDir();
   console.log(`Output directory: ${outputDir}`);
+  const labelConfigPath = path.join(INPUT_DIR, 'config', 'concept-labels.json');
+  const labelConfig = validateLabelConfig(fs.existsSync(labelConfigPath)
+    ? JSON.parse(fs.readFileSync(labelConfigPath, 'utf8'))
+    : { propertyLabelVocabularies: [], reviewed: [] });
+  const labelReport = new Map<string, any>();
 
   const processed: Map<string, Packages> = new Map();
   const processedSchematron: Map<string, SchematronPackages> = new Map();
@@ -216,6 +222,10 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
   }
 
   await writeSchemaOntologies();
+  const labelEntries = [...labelReport.values()];
+  fs.writeFileSync(path.join(outputDir, 'concept-label-report.json'), JSON.stringify(labelEntries, null, 2) + '\n');
+  const missingLabels = labelEntries.filter(entry => entry.missingLanguages.length).length;
+  console.log(`Concept labels: ${missingLabels} facets have missing names; see out/concept-label-report.json`);
   writeOutputManifests();
   copySchemaBridgeArtifacts();
 
@@ -375,6 +385,7 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
       standalone.namespaces[DCTERMS_URI] = 'dcterms';
       standalone.g.addL(ontologyUri, 'dcterms:source', path.relative(schemaRoot, inputFilepath).split(path.sep).join('/'));
       const text = fs.readFileSync(inputFilepath, 'utf8');
+      const conceptAnnotations = await readConceptAnnotations(text);
       const json = await xml2js.parseStringPromise(text);
       // Emit ontology-level metadata after the JSON is available but before per-construct
       // processing so the triples land in every output that includes the ontology node.
@@ -706,20 +717,22 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
                   const restrictions = inSimpleType[`${xsdPrefix}:restriction`];
                   if (restrictions) {
                     const aRestriction = restrictions[0];
+                    const conceptText = (kind: string, value: string) => {
+                      const type = inSimpleType.$?.name ?? aSimpleType.$?.name ?? '';
+                      const resolved = resolveConceptLabels(ontologyUri!, value,
+                        conceptAnnotations.get(facetKey(type, kind, value)), labelConfig, DATATYPE_PROPERTY_LABEL_OVERRIDES);
+                      const source = path.relative(schemaRoot, inputFilepath).split(path.sep).join('/');
+                      labelReport.set(JSON.stringify([source, type, kind, value]), {
+                        source, namespace: ontologyUri, type, kind, notation: value, ...resolved,
+                      });
+                      return resolved;
+                    };
                     const enums = aRestriction[`${xsdPrefix}:enumeration`];
                     if (enums) {
                       for (const anEnum of enums) {
                         const notation = anEnum.$.value;
                         const conceptId = notation.startsWith(URI_PREFIX) ? notation : `${idPrefix}${notation}`;
-                        const annotation = anEnum[`${xsdPrefix}:annotation`];
-                        const documentation = annotation && annotation[0][`${xsdPrefix}:documentation`];
-                        // Always emit the concept even when documentation is absent;
-                        // only skip the prefLabel assignment, and warn so the gap is visible.
-                        if (!documentation) {
-                          console.warn(`[WARN] Enumeration value "${notation}" in ${path.basename(inputFilepath)} has no documentation — concept emitted without prefLabel.`);
-                        }
-                        const prefLabel = documentation ? removeWhitespace(documentation[0]) : undefined;
-                        concepts.push({ notation, prefLabel, conceptId });
+                        concepts.push({ notation, ...conceptText('enumeration', notation), conceptId });
                       }
                       enumSource = inSimpleType;
                     } else if (aRestriction[`${xsdPrefix}:simpleType`] ?? [0].hasOwnProperty(`${xsdPrefix}:list`)) {
@@ -729,15 +742,10 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
                       if (patternSpec) {
                         const pattern = patternSpec[0]['$'].value;
                         const conceptId = defaultNs + encodeURIComponent(pattern);
-                        const annotation = patternSpec[0][`${xsdPrefix}:annotation`];
-                        let prefLabel = annotation && annotation[0][`${xsdPrefix}:documentation`];
-                        if (prefLabel) {
-                          prefLabel = removeWhitespace(prefLabel[0]);
-                        }
                         patterns++;
                         concepts.push({
                           pattern,
-                          prefLabel,
+                          ...conceptText('pattern', pattern),
                           conceptId
                         });
                       }
@@ -829,8 +837,11 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
                   const blank = { type: 'bnode', value: restriction._s };
                   standalone.g.add(shapeId, 'sh:property', blank);
                 }
-                if (aConcept.prefLabel) {
-                  standalone.g.addL(aConcept.conceptId, 'skos:prefLabel', aConcept.prefLabel);
+                for (const label of aConcept.labels) {
+                  standalone.g.addL(aConcept.conceptId, 'skos:prefLabel', label.value, label.language || undefined);
+                }
+                for (const definition of aConcept.definitions) {
+                  standalone.g.addL(aConcept.conceptId, 'skos:definition', definition.value, definition.language || undefined);
                 }
               }
               if (rest) {
@@ -2085,7 +2096,7 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
     const predicate = rdf.namedNode(uriMapping.uri(triple._p));
     let object: any;
     if (triple._o.type === 'literal') {
-      object = rdf.literal(triple._o.value);
+      object = rdf.literal(triple._o.value, triple._o.lang || undefined);
     } else if (triple._o.type === 'bnode' || triple._o.value.startsWith('_:')) {
       object = rdf.blankNode(triple._o.value.replace(/^_:/, ''));
     } else {
@@ -2100,6 +2111,13 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
   }
   quads.push(...(p.instanceQuads ?? []));
   const jsonContext: Record<string, any> = { ...context };
+  // Compact English concept text without assigning language to notation or other literals.
+  for (const name of ['prefLabel', 'definition']) {
+    if (quads.some(quad => quad.predicate.value === SKOS_URI + name)) {
+      jsonContext.skos = SKOS_URI;
+      jsonContext[`skos:${name}`] = { '@id': SKOS_URI + name, '@language': 'en' };
+    }
+  }
   for (const predicate of p.datePredicates ?? []) {
     const prefix = Object.entries(context).find(([, ns]) => predicate.startsWith(ns));
     const key = prefix ? prefix[0] + ':' + predicate.slice(prefix[1].length) : predicate;

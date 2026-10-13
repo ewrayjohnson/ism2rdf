@@ -152,11 +152,26 @@ names and explicitly declared source aliases are preserved.
 | Source namespace | Ontology identifier | Term prefix |
 | --- | --- | --- |
 | `urn:us:gov:ic:ism` | `https://ns.dni.ic.gov/ism` | `ism` |
+| `urn:us:gov:ic:ntk` | `https://ns.dni.ic.gov/ntk` | `ntk` |
 | `urn:us:gov:ic:usagency` | `https://ns.dni.ic.gov/usagency` | `usagency` |
 | `urn:us:gov:ic:cvenum:ism:classification:all` | `https://ns.dni.ic.gov/ism/cvenum/classification/all` | `ismclassall` |
 | `urn:us:gov:ic:cvenum:ism:sar` | `https://ns.dni.ic.gov/ism/cvenum/sar` | `ismsar` |
 
 Thus `ism:releasableTo` identifies `https://ns.dni.ic.gov/ism#releasableTo`.
+The table gives examples, not an exhaustive mapping registry; every staged XSD
+target namespace is mapped by the same rules. For example,
+`CVEnumNTKAccessPolicy.xsd` declares `urn:us:gov:ic:cvenum:ntk:accesspolicy`,
+whose ontology identifier is `https://ns.dni.ic.gov/ntk/cvenum/accesspolicy`.
+The `urn:us:gov:ic:aces:ntk:` prefix in that schema names access policies,
+not an XSD target namespace. Their RDF concepts use the fixed term namespace
+`https://ns.dni.ic.gov/aces/ntk#` with prefix `acesntk`. The complete remaining
+policy name is URI-component encoded: `acesntk:enterprise%3Arole%3Apermissive`
+contains one colon. The original URN remains a literal `skos:notation` value.
+Enumeration literals, regex patterns, and Schematron expressions retain their
+source text; these bindings do not create a separate `aces/ntk` ontology.
+See [resource namespace configuration](USAGE.md#resource-namespace-bindings)
+and the [rdf9 consumer handoff](MIGRATION.md#rdf9-consumer-handoff).
+
 External HTTP/HTTPS vocabulary identifiers, including the existing CCO bridge
 terms, are unchanged. Different source namespaces mapping to one URI, conflicting
 prefix assignments, and case-insensitive output-path collisions stop generation.
@@ -180,7 +195,9 @@ not import an ontology; imports within the same target namespace do not create
 self-imports.
 
 Every schema ontology gets a standalone output with its own content and import
-references, plus a convenience output with only its transitive imports merged.
+references, plus a convenience output with its transitive imports merged.
+Explicit [packaging dependencies](USAGE.md#outputs-and-checks) additionally include
+the NTK policy and profile vocabularies in IC-EDH convenience output for enforcement.
 ISM can be consumed independently of EDH: EDH importing ISM never makes ISM
 import EDH. Graph identifiers append `/graph/standalone` or
 `/graph/convenience` to the ontology identifier.

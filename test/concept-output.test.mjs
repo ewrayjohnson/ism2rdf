@@ -11,9 +11,11 @@ import { artifact, isConceptText, readOutput, schemaEntries, skos, structuralSig
 const textSignature = quads => [...new Set(quads.filter(isConceptText).map(q =>
   JSON.stringify([q.subject.value, q.predicate.value, q.object.value, q.object.language])))].sort();
 
-test('all schema identities, notation, scheme memberships and enumeration lists match the pre-change baseline', async () => {
-  // Captured from all 88 schema artifacts before the label change, including IC-EDH.
-  assert.equal(await structuralSignature(), 'bcdb4f30be5eeebe283a5d763f6c007ab125a30ba21e7d992db81899046d1f43');
+test('all schema identities, notation, scheme memberships and enumeration lists match the reviewed baseline', async () => {
+  // Includes restored union enumerations, encoded shape fragments, and the two
+  // explicit NTK vocabulary additions to the IC-EDH convenience package.
+  // Policy identifiers and retained literals are independently checked in policy-output.test.mjs.
+  assert.equal(await structuralSignature(), '45b7d26845cd4b7125f48481fe29f84500b95dfdef7e3a648f6932b8a691a644');
 });
 
 test('every generated schema format retains identical concept text and language tags', async () => {

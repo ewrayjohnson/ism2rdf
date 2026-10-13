@@ -2,6 +2,37 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { UriMapping } from '../dist/uri-mapping.js';
 
+test('explicit resource boundaries retain nested names with reversible encoding', () => {
+  const mapping = new UriMapping('urn:example:org', 'https://example.org/ns/');
+  mapping.resourceNamespace('urn:example:org:policy:', 'policy');
+  for (const name of ['permissive', 'enterprise:role:permissive', 'propin:1', 'propin:Acme:a+b', 'literal%3Acolon']) {
+    const iri = mapping.uri('urn:example:org:policy:' + name);
+    assert.equal(iri, 'https://example.org/ns/policy#' + encodeURIComponent(name));
+    assert.equal(decodeURIComponent(iri.split('#')[1]), name);
+    assert.ok(!iri.split('#')[1].includes(':'));
+  }
+  const context = {};
+  mapping.resourceContext(context, [mapping.uri('urn:example:org:policy:propin:1')]);
+  assert.deepEqual(context, { policy: 'https://example.org/ns/policy#' });
+  assert.throws(() => mapping.resourceContext({ policy: 'https://other.example/' },
+    [mapping.uri('urn:example:org:policy:permissive')]), /prefix collision/);
+});
+
+test('inferred namespace mapping is independent of sibling order', () => {
+  for (const names of [['a:one', 'a:b:two'], ['a:b:two', 'a:one']]) {
+    const mapping = new UriMapping('urn:example:org');
+    for (const name of names) mapping.uri('urn:example:org:' + name);
+    assert.equal(mapping.uri('urn:example:org:a:b:two'), 'https://ns.dni.ic.gov/a/b#two');
+  }
+});
+
+test('generated fragments encode colons and reject encoded identity collisions', () => {
+  const mapping = new UriMapping('urn:example:org');
+  mapping.source('urn:example:org:catalog#', 'cat');
+  assert.equal(mapping.uri('urn:example:org:catalog#Pattern:Shape'), 'https://ns.dni.ic.gov/catalog#Pattern%3AShape');
+  assert.throws(() => mapping.uri('urn:example:org:catalog#Pattern%3AShape'), /normalization collision/);
+});
+
 test('normalizes namespace structure while preserving local names and HTTP identities', () => {
   const mapping = new UriMapping('urn:example:org', 'https://example.org/ns/');
   mapping.source('urn:example:org:catalog#', 'cat');

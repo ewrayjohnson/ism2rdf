@@ -10,6 +10,15 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- Include NTK policy and profile vocabularies in IC-EDH convenience output through
+  explicit packaging configuration, preserving standalone graphs and source imports.
+
+- Map URN-valued policy concepts through configured fixed namespace boundaries,
+  encoding nested names into single-colon CURIEs and emitting missing namespace
+  bindings. Preserve source notation and validation literals. Restore concept
+  emission for anonymous enumeration branches inside named XSD union types.
+  See the [rdf9 consumer handoff](MIGRATION.md#rdf9-consumer-handoff).
+
 - Compact English concept labels and definitions as JSON-LD strings using
   property-specific language defaults, preserving RDF language tags and untagged notation.
 

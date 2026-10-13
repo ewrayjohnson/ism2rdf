@@ -190,6 +190,13 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
   }
 
   const sourceResult = await prepareAuthoritativeSources();
+  const resourceNamespacesPath = path.join(INPUT_DIR, 'config', 'resource-namespaces.json');
+  if (fs.existsSync(resourceNamespacesPath)) {
+    const bindings = JSON.parse(fs.readFileSync(resourceNamespacesPath, 'utf8'));
+    for (const [prefix, namespace] of Object.entries(bindings)) {
+      uriMapping.resourceNamespace(String(namespace), prefix);
+    }
+  }
 
   const schemaRoot = sourceResult.schemaRoot;
   const schematronRoot = sourceResult.schematronRoot;
@@ -272,6 +279,15 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
       supplement = membership;
       await writeGraphPackage(membership, '', 'memberships', 'standalone', config.graph, 'Membership');
     }
+    const packagingPath = path.join(INPUT_DIR, 'config', 'convenience-dependencies.json');
+    const packaging: Record<string, string[]> = fs.existsSync(packagingPath)
+      ? JSON.parse(fs.readFileSync(packagingPath, 'utf8')) : {};
+    for (const [owner, dependencies] of Object.entries(packaging)) {
+      if (!assembled.has(owner) || !Array.isArray(dependencies)
+        || dependencies.some(dependency => typeof dependency !== 'string' || !assembled.has(dependency))) {
+        throw new Error(`Convenience dependencies must reference staged schema namespaces: ${owner}`);
+      }
+    }
     const outputPaths = new Map<string, string>();
     for (const namespace of [...assembled.keys()].sort()) {
       const standalone = assembled.get(namespace)!;
@@ -286,6 +302,8 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
         for (const imported of [...ontologyDependencies.get(dependency)!].sort()) include(imported);
       };
       include(namespace);
+      // Packaging additions are not source imports and never alter standalone graphs.
+      for (const dependency of packaging[namespace] ?? []) include(dependency);
       if (supplement && (visited.has(supplementSchema) || includeIn.includes(namespace))) {
         include(supplementSchema);
         Object.assign(convenience.namespaces, supplement.namespaces);
@@ -731,7 +749,7 @@ const globalAttributeListInfoByLocalName = new Map<string, AttributeListInfo>();
                         const conceptId = notation.startsWith(URI_PREFIX) ? notation : `${idPrefix}${notation}`;
                         concepts.push({ notation, ...conceptText('enumeration', notation), conceptId });
                       }
-                      enumSource = inSimpleType;
+                      enumSource = inSimpleType.$?.name ? inSimpleType : aSimpleType;
                     } else if (aRestriction[`${xsdPrefix}:simpleType`]?.[0]?.[`${xsdPrefix}:list`]) {
                       listSource = inSimpleType;
                     } else {
@@ -2013,8 +2031,10 @@ function writeTurtleFast(quads: Quad[], prefixes: Record<string, string>): strin
     for (const [ns, px] of iriToPrefix) {
       if (iri.startsWith(ns)) {
         const local = iri.slice(ns.length);
-        // Only use prefixed form when the local part is a valid PN_LOCAL
-        if (local && /^[A-Za-z0-9_\-./~!$&'()*+,;=@]/.test(local)) {
+        // Use a conservative complete PN_LOCAL match; regex-derived names can
+        // contain parentheses and other punctuation requiring a full IRI.
+        if (/^(?:[A-Za-z0-9_]|%[0-9A-Fa-f]{2})(?:[A-Za-z0-9_.-]|%[0-9A-Fa-f]{2})*$/.test(local)
+          && !local.endsWith('.')) {
           return `${px}:${local}`;
         }
       }
@@ -2107,6 +2127,8 @@ async function writeGraphPackage(p: Package, relative: string, basename: string,
     throw new Error('Taxonomy instance blank-node label collides with schema output');
   }
   quads.push(...(p.instanceQuads ?? []));
+  uriMapping.resourceContext(context, quads.flatMap(quad =>
+    [quad.subject, quad.predicate, quad.object].filter(term => term.termType === 'NamedNode').map(term => term.value)));
   const jsonContext: Record<string, any> = { ...context };
   // Compact English concept text without assigning language to notation or other literals.
   for (const name of ['prefLabel', 'definition']) {

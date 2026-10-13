@@ -297,7 +297,41 @@ Those arguments/settings do not select or refresh sources. There is no active
 download, ZIP extraction, conditional HTTP refresh, or source-manifest cache.
 Always stage the actual files before running.
 
+### Resource namespace bindings
+
+The optional `.ciartifacts/config/resource-namespaces.json` maps prefix names
+to source namespaces. A trailing `:` defines a fixed boundary for URN resource
+names; a trailing `#` supplies a schema term alias. Bindings must belong to the
+configured URN authority; replace this configuration when changing authorities.
+Vocabulary-specific choices live in configuration, not in the mapping algorithm.
+
+For example, `"acesntk": "urn:us:gov:ic:aces:ntk:"` maps policy resources into
+`https://ns.dni.ic.gov/aces/ntk#`. The complete suffix is encoded with
+`encodeURIComponent`, so `propin:1` becomes `acesntk:propin%3A1`. Nested policy
+names do not create further namespace boundaries. The bundled configuration
+also covers NTK profiles and supplies aliases for otherwise unbound vocabulary
+references. Bindings appear in artifact contexts when their terms are used.
+Other emitted HTTPS term namespaces receive source aliases where available,
+or deterministic `ns_` aliases derived from their paths. Collisions fail generation.
+
+Generated fragment names encode raw colons as `%3A`; existing encoded fragments
+are preserved. Literals never pass through identifier normalization. See
+[the rdf9 handoff](MIGRATION.md#rdf9-consumer-handoff) for expansion, migration,
+and removal of downstream compatibility workarounds.
+
 ## Outputs and checks
+
+The optional `.ciartifacts/config/convenience-dependencies.json` maps a package's
+source target namespace to additional staged vocabulary namespaces. Each listed
+vocabulary and its transitive XSD imports is included in that package's convenience
+output only. All configured namespaces must be staged; invalid references fail
+generation. The bundled configuration adds NTK access-policy and profile-description
+vocabularies to IC-EDH for enforcement consumers. It does not add source imports,
+modify standalone graphs, or assert that all Schematron enforcement is implemented.
+
+The temporary rdf9 handoff materials belong under `out/` and are not part of
+the committed transformer. See the [rdf9 handoff](MIGRATION.md#rdf9-consumer-handoff)
+for artifact selection and operand rules.
 
 The [README output layout](README.md#what-it-produces) describes all five formats.
 Each schema ontology has its own standalone and convenience output. Examples:

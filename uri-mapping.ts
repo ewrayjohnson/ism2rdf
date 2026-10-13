@@ -4,6 +4,7 @@ export class UriMapping {
   private readonly identities = new Map<string, string>();
   private readonly sources = new Map<string, string>();
   private readonly ontologies = new Map<string, string>();
+  private readonly resourceNamespaces = new Map<string, string>();
   private readonly base: string;
 
   constructor(private readonly authority: string, httpsBase = 'https://ns.dni.ic.gov/') {
@@ -65,6 +66,15 @@ export class UriMapping {
     return result;
   }
 
+  /** Explicit boundaries for URN-valued resources, independent of schema namespaces. */
+  resourceNamespace(iri: string, prefix: string): void {
+    if (!this.belongs(iri) || !/[:#]$/.test(iri) || !/^[A-Za-z][A-Za-z0-9_]*$/.test(prefix)) {
+      throw new Error(`Invalid resource namespace binding: ${prefix} = ${iri}`);
+    }
+    this.source(iri, prefix);
+    if (iri.endsWith(':')) this.resourceNamespaces.set(iri, prefix);
+  }
+
   uri(iri: string): string {
     const ontology = this.ontologies.get(iri);
     if (ontology) return ontology;
@@ -73,11 +83,19 @@ export class UriMapping {
       // Detect a source HTTPS identifier colliding with a rewritten identifier too.
       return this.unique(iri, iri);
     }
-    const namespace = [...this.namespaces.keys()].filter(ns => iri.startsWith(ns)).sort((a, b) => b.length - a.length)[0];
-    if (namespace) return this.unique(iri, this.namespaces.get(namespace)! + iri.slice(namespace.length));
+    const resourceNamespace = [...this.resourceNamespaces.keys()]
+      .filter(ns => iri.startsWith(ns)).sort((a, b) => b.length - a.length)[0];
+    if (resourceNamespace) {
+      return this.unique(iri, this.namespace(resourceNamespace) + encodeURIComponent(iri.slice(resourceNamespace.length)));
+    }
+    // Only fragment namespaces have a known boundary. Inferred colon namespaces
+    // must not make mapping depend on which sibling identifier was seen first.
+    const namespace = [...this.namespaces.keys()].filter(ns => ns.endsWith('#') && iri.startsWith(ns))
+      .sort((a, b) => b.length - a.length)[0];
+    if (namespace) return this.unique(iri, this.namespaces.get(namespace)! + iri.slice(namespace.length).replaceAll(':', '%3A'));
     if (iri === this.authority) return this.namespace(iri);
     const split = iri.indexOf('#') >= 0 ? iri.indexOf('#') : iri.lastIndexOf(':');
-    return this.unique(iri, this.namespace(iri.slice(0, split + 1)) + iri.slice(split + 1));
+    return this.unique(iri, this.namespace(iri.slice(0, split + 1)) + iri.slice(split + 1).replaceAll(':', '%3A'));
   }
 
   context(namespaceMap: Record<string, string>): Record<string, string> {
@@ -95,5 +113,28 @@ export class UriMapping {
       context[prefix] = normalized;
     }
     return context;
+  }
+
+  /** Include every emitted HTTPS term namespace, preserving available source aliases. */
+  resourceContext(context: Record<string, string>, iris: string[]): void {
+    const required = new Set(iris.filter(iri => iri.startsWith(this.base) && iri.includes('#'))
+      .map(iri => iri.slice(0, iri.indexOf('#') + 1)));
+    for (const namespace of [...required].sort()) {
+      for (const [prefix, source] of this.sources) {
+        if (this.namespace(source) !== namespace) continue;
+        if (context[prefix] !== undefined && context[prefix] !== namespace) {
+          throw new Error(`Namespace prefix collision: ${prefix} names ${context[prefix]} and ${namespace}`);
+        }
+        context[prefix] = namespace;
+      }
+      if (Object.values(context).includes(namespace)) continue;
+      // Encode punctuation in generated aliases so distinct paths cannot collapse.
+      const prefix = 'ns_' + namespace.slice(this.base.length, -1)
+        .replace(/[^A-Za-z0-9]/g, character => '_' + character.charCodeAt(0).toString(16) + '_');
+      if (context[prefix] !== undefined && context[prefix] !== namespace) {
+        throw new Error(`Namespace prefix collision: ${prefix} names ${context[prefix]} and ${namespace}`);
+      }
+      context[prefix] = namespace;
+    }
   }
 }

@@ -24,6 +24,17 @@ old paragraph labels from a downstream store.
 
 ## Identity changes
 
+### CCO marking bridge
+
+The [bridge configuration](.ciartifacts/config/cco-marking-bridge.jsonld) now
+uses the canonical IC HTTPS namespace bindings directly. Its five property
+domains use `https://www.commoncoreontologies.org/ont00000958` (Information
+Content Entity), replacing
+`http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity`
+according to the [CCO v2 mapping](https://github.com/CommonCoreOntology/CommonCoreOntologies/releases/tag/v2.0-2024-11-06).
+Replace old bridge domain assertions and update CCO prefix bindings together;
+changing only the namespace leaves the obsolete descriptive local name.
+
 ### rdf9 consumer handoff
 
 The producer now emits policy concept identifiers using fixed HTTPS namespaces
@@ -219,8 +230,8 @@ change. Schematron document assembly and graph naming remain unchanged.
 
 - Explicit source vocabulary aliases, case, and local term names.
 - Plain-string enumeration values, notation, and other literal values.
-- External HTTP/HTTPS vocabulary identifiers, including the existing CCO bridge
-  namespace. This is not a migration to CCO v2 identifiers.
+- External HTTP/HTTPS vocabulary identifiers other than the CCO marking bridge
+  migration described above.
 - Source files, assembly folders, and the local staged-source loader.
 - Generated local names containing colons, including `...:Shape`. A consumer
   that rejects these still needs a separate compatibility change.

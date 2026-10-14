@@ -44,7 +44,10 @@ test('JSON-LD, Turtle, N-Triples, TriG and TDF use the same resource and graph U
   const bridge = JSON.parse(await read('jsonld/convenience/Schema/cco-marking-bridge.jsonld'));
   assert.equal(bridge['@context'].ism, doc['@context'].ism);
   assert.equal(bridge['@context'].ismclassall, 'https://ns.dni.ic.gov/ism/cvenum/classification/all#');
-  assert.equal(bridge['@context'].cco, 'http://www.ontologyrepository.com/CommonCoreOntologies/');
+  assert.equal(bridge['@context'].cco, 'https://www.commoncoreontologies.org/');
+  for (const node of bridge['@graph']) {
+    assert.equal(node['rdfs:domain']['@id'], 'cco:ont00000958');
+  }
 });
 
 const readOntology = async (namespace, mode = 'standalone') => {

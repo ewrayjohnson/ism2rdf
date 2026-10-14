@@ -4,20 +4,20 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "ism": "urn:us:gov:ic:ism#",
-    "ismclassall": "urn:us:gov:ic:cvenum:ism:classification:all#",
-    "ismcatownpro": "urn:us:gov:ic:cvenum:ismcat:ownerproducer#",
-    "ismscicon": "urn:us:gov:ic:cvenum:ism:scicontrols#",
-    "ismsar": "urn:us:gov:ic:cvenum:ism:sar#",
-    "ismcomplies": "urn:us:gov:ic:cvenum:ism:complieswith#",
-    "cco": "http://www.ontologyrepository.com/CommonCoreOntologies/"
+    "ism": "https://ns.dni.ic.gov/ism#",
+    "ismclassall": "https://ns.dni.ic.gov/ism/cvenum/classification/all#",
+    "ismcatownpro": "https://ns.dni.ic.gov/ismcat/cvenum/ownerproducer#",
+    "ismscicon": "https://ns.dni.ic.gov/ism/cvenum/scicontrols#",
+    "ismsar": "https://ns.dni.ic.gov/ism/cvenum/sar#",
+    "ismcomplies": "https://ns.dni.ic.gov/ism/cvenum/complieswith#",
+    "cco": "https://www.commoncoreontologies.org/"
   },
   "@graph": [
     {
       "@id": "ism:classification",
       "@type": "owl:DatatypeProperty",
       "rdfs:domain": {
-        "@id": "cco:InformationContentEntity"
+        "@id": "cco:ont00000958"
       },
       "rdfs:range": {
         "@id": "ismclassall:CVEnumISMClassificationAllValues"
@@ -27,7 +27,7 @@
       "@id": "ism:ownerProducer",
       "@type": "owl:DatatypeProperty",
       "rdfs:domain": {
-        "@id": "cco:InformationContentEntity"
+        "@id": "cco:ont00000958"
       },
       "rdfs:range": {
         "@id": "ismcatownpro:CVEnumISMCATOwnerProducerValues"
@@ -37,7 +37,7 @@
       "@id": "ism:SCIcontrols",
       "@type": "owl:DatatypeProperty",
       "rdfs:domain": {
-        "@id": "cco:InformationContentEntity"
+        "@id": "cco:ont00000958"
       },
       "rdfs:range": {
         "@id": "ismscicon:CVEnumISMSCIControlsValues"
@@ -47,7 +47,7 @@
       "@id": "ism:SARIdentifier",
       "@type": "owl:DatatypeProperty",
       "rdfs:domain": {
-        "@id": "cco:InformationContentEntity"
+        "@id": "cco:ont00000958"
       },
       "rdfs:range": {
         "@id": "ismsar:CVEnumISMSARValues"
@@ -57,7 +57,7 @@
       "@id": "ism:compliesWith",
       "@type": "owl:DatatypeProperty",
       "rdfs:domain": {
-        "@id": "cco:InformationContentEntity"
+        "@id": "cco:ont00000958"
       },
       "rdfs:range": {
         "@id": "ismcomplies:CVEnumISMCompliesWithValues"

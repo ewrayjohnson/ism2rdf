@@ -10,6 +10,9 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- Update the CCO marking bridge to canonical IC HTTPS bindings and the CCO v2
+  Information Content Entity identifier. See [migration guidance](MIGRATION.md#cco-marking-bridge).
+
 - Include NTK policy and profile vocabularies in IC-EDH convenience output through
   explicit packaging configuration, preserving standalone graphs and source imports.
 
